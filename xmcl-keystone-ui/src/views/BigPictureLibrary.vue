@@ -33,38 +33,10 @@
           </h1>
 
           <div class="bp-hero-chips">
-            <!-- Bedrock Edition Chips -->
-            <template v-if="isBedrockInstance">
-              <span class="bp-chip bp-chip--primary">
-                <v-icon size="16">view_in_ar</v-icon>
-                Minecraft Bedrock Edition
-              </span>
-              <span v-if="!bedrockSupported" class="bp-chip text-warning">
-                <v-icon size="16">warning</v-icon>
-                {{ t('instances.editionBedrockWindowsOnly') }}
-              </span>
-              <span v-else-if="bedrockInstallation.installed" class="bp-chip text-success">
-                <v-icon size="16">check_circle</v-icon>
-                {{ t('bedrock.installed', { version: bedrockInstallation.version || '—' }) }}
-              </span>
-              <span v-else class="bp-chip text-warning">
-                <v-icon size="16">download</v-icon>
-                {{ t('bedrock.install') }}
-              </span>
-            </template>
-
-            <!-- Java Edition Chips -->
-            <template v-else>
-              <span v-if="currentInstance.runtime.minecraft" class="bp-chip bp-chip--primary">
-                <img :src="BuiltinImages.minecraft" class="w-4 h-4 object-contain inline-block mr-1" alt="MC" />
-                Minecraft {{ currentInstance.runtime.minecraft }}
-              </span>
-              <span v-if="modLoaderBadge" class="bp-chip">
-                <img v-if="modLoaderImage" :src="modLoaderImage" class="w-4 h-4 object-contain inline-block mr-1" alt="Loader" />
-                <v-icon v-else size="16">extension</v-icon>
-                {{ modLoaderBadge }}
-              </span>
-            </template>
+            <span class="bp-chip bp-chip--primary">
+              <img :src="BuiltinImages.minecraft" class="w-4 h-4 object-contain inline-block mr-1" alt="Zenith" />
+              Zenith
+            </span>
 
             <span v-if="currentInstance.server" class="bp-chip">
               <v-icon size="16">dns</v-icon>
@@ -89,30 +61,8 @@
           <div class="bp-hero-actions">
             <!-- Row 1: Primary Actions -->
             <div class="bp-hero-actions-main">
-              <!-- Bedrock Install Button if Bedrock not installed -->
-              <button
-                v-if="isBedrockInstance && !bedrockInstallation.installed"
-                type="button"
-                class="bp-play-btn"
-                :disabled="bedrockInstalling || !bedrockSupported"
-                tabindex="0"
-                data-gamepad-focusable
-                @click="onInstallBedrock"
-              >
-                <span v-if="gamepadConnected" class="bp-glyph bp-glyph--a">{{ buttonALabel }}</span>
-                <v-progress-circular
-                  v-if="bedrockInstalling"
-                  indeterminate
-                  size="20"
-                  width="3"
-                  color="white"
-                />
-                <v-icon v-else size="24">get_app</v-icon>
-                <span>{{ t('bedrock.install') }}</span>
-              </button>
-
               <!-- Game Running: Stop & Force Close Buttons -->
-              <template v-else-if="isRunning(currentInstance.path)">
+              <template v-if="isRunning(currentInstance.path)">
                 <button
                   type="button"
                   class="bp-play-btn bp-play-btn--stop"
@@ -225,7 +175,7 @@
             </div>
 
             <!-- Row 2: Console Game Content Strip (Mods, Shaders, Saves, Blueprints) -->
-            <div v-if="!isBedrockInstance" class="bp-content-strip">
+            <div class="bp-content-strip">
               <!-- Manage Mods Button -->
               <button
                 type="button"
@@ -411,8 +361,7 @@
               {{ inst.name || 'Minecraft' }}
             </div>
             <div class="bp-card-meta flex items-center justify-between">
-              <span v-if="inst.edition === 'bedrock'" class="text-primary font-bold">Bedrock</span>
-              <span v-else>{{ inst.runtime.minecraft ? `MC ${inst.runtime.minecraft}` : 'Default' }}</span>
+              <span>{{ inst.runtime.minecraft ? `MC ${inst.runtime.minecraft}` : 'Default' }}</span>
               <span
                 v-if="getInstanceFolder(inst.path)"
                 class="bp-card-folder-badge"
@@ -557,7 +506,7 @@
           </div>
         </div>
         <p class="text-sm text-white/70">
-          {{ isBedrockInstance ? t('instance.deleteHintBedrock') : t('instance.deleteHint') }}
+          {{ t('instance.deleteHint') }}
         </p>
         <div class="bg-white/5 p-3 rounded-xl border border-white/10">
           <div class="font-bold text-white">{{ heroName }}</div>
@@ -616,7 +565,7 @@ import { useService } from '@/composables/service'
 import { getInstanceIcon } from '@/util/favicon'
 import { injection } from '@/util/inject'
 import { BuiltinImages } from '@/constant'
-import { BaseServiceKey, LaunchServiceKey, BedrockServiceKey, InstanceServiceKey, type BedrockInstallation } from '@xmcl/runtime-api'
+import { BaseServiceKey, LaunchServiceKey, InstanceServiceKey } from '@xmcl/runtime-api'
 import type { Instance } from '@xmcl/instance'
 
 const emit = defineEmits<{
@@ -634,44 +583,12 @@ const { t } = useI18n()
 const router = useRouter()
 const { notify } = useNotifier()
 const { hasMinecraftLicense } = useHasMinecraftLicense()
-const {
-  isSupported: isBedrockSupported,
-  getInstallation: getBedrockInstallation,
-  install: installBedrockService,
-} = useService(BedrockServiceKey)
-
-const bedrockSupported = ref(false)
-const bedrockInstallation = ref<BedrockInstallation>({
-  installed: false,
-  version: '',
-  packageFullName: '',
-  aumid: '',
-})
-const bedrockInstalling = ref(false)
-
-async function refreshBedrockStatus() {
-  bedrockSupported.value = await isBedrockSupported().catch(() => false)
-  if (bedrockSupported.value) {
-    bedrockInstallation.value = await getBedrockInstallation().catch(() => ({
-      installed: false,
-      version: '',
-      packageFullName: '',
-      aumid: '',
-    }))
-  }
-}
-
-onMounted(() => {
-  refreshBedrockStatus()
-})
-
 const { instances } = injection(kInstances)
 const { path: selectedPath, select } = injection(kInstance)
 const { isLaunching, isRunning } = injection(kInstanceLaunchCoordinator)
 const { onClick: onLaunchClick } = injection(kLaunchButton)
 const { kill: killJavaLaunch, abort: abortJavaLaunch } = injection(kInstanceLaunch)
 const { getGameProcesses, kill: killProcess } = useService(LaunchServiceKey)
-const { killGame: killBedrockGame } = useService(BedrockServiceKey)
 
 const gamepad = useGamepad()
 const gamepadConnected = gamepad.connected
@@ -871,9 +788,7 @@ async function onStopGame(force = false) {
   if (!currentInstance.value) return
   const targetPath = currentInstance.value.path
   try {
-    if (currentInstance.value.edition === 'bedrock') {
-      await killBedrockGame()
-    } else {
+    {
       const processes = await getGameProcesses().catch(() => [])
       const matched = processes.filter((p) => p.options.gameDirectory === targetPath)
       if (matched.length > 0) {
@@ -910,20 +825,6 @@ function onCardEnter(path: string) {
     onPlayClick()
   } else {
     select(path)
-  }
-}
-
-const isBedrockInstance = computed(() => currentInstance.value?.edition === 'bedrock')
-
-async function onInstallBedrock() {
-  bedrockInstalling.value = true
-  try {
-    await installBedrockService()
-    await refreshBedrockStatus()
-  } catch (e: any) {
-    notify({ level: 'error', title: t('bedrock.installFailed'), body: e?.message })
-  } finally {
-    bedrockInstalling.value = false
   }
 }
 
@@ -965,7 +866,7 @@ interface FolderTab {
 }
 
 const folderTabs = computed<FolderTab[]>(() => {
-  const allList = instances.value.filter((i) => (i.edition === 'bedrock' ? hasMinecraftLicense.value : true))
+  const allList = instances.value
   const groupsList = groups.value || []
 
   const namedFolders: FolderTab[] = []
@@ -1029,12 +930,7 @@ function selectFolder(id: string) {
 }
 
 const displayInstances = computed(() => {
-  const base = instances.value.filter((i) => {
-    if (i.edition === 'bedrock') {
-      return hasMinecraftLicense.value
-    }
-    return true
-  })
+  const base = instances.value
 
   if (selectedFolderId.value === 'all') {
     return base
@@ -1085,9 +981,6 @@ const carouselRef = ref<HTMLElement | null>(null)
 
 // Auto-scroll selected card into view
 watch(selectedPath, (newPath) => {
-  if (currentInstance.value?.edition === 'bedrock') {
-    refreshBedrockStatus()
-  }
   if (!newPath || !carouselRef.value) return
   const idx = displayInstances.value.findIndex((i) => i.path === newPath)
   if (idx >= 0) {

@@ -23,11 +23,10 @@
     </div>
     <AppContextMenu />
     <AppNotifier />
-    <AppOmniDialog :agent-enabled="true" />
+    <AppOmniDialog />
     <AppAddInstanceDialog />
     <AppGameExitDialog />
     <AppUnauthenticatedWarningDialog />
-    <AppMultiplayerLoginDialog />
     <AppImageDialog />
     <InstanceScreenshots />
     <AppSharedTooltip />
@@ -56,8 +55,6 @@ import AppImageDialog from '@/components/AppImageDialog.vue'
 import InstanceScreenshots from '@/views/InstanceScreenshots.vue'
 import AppSharedTooltip from '@/components/AppSharedTooltip.vue'
 import { useAuthProfileImportNotification } from '@/composables/authProfileImport'
-import { useAgentChatHotkey } from '@/composables/agentChat'
-import { kAgent, installAgentDevLauncher, useAgent } from '@/composables/agent'
 import { useCommandPaletteHotkey } from '@/composables/commandPalette'
 import { kDialogModel } from '@/composables/dialog'
 import { useDefaultErrorHandler } from '@/composables/errorHandler'
@@ -79,7 +76,6 @@ import AppBackground from '@/views/AppBackground.vue'
 import AppOmniDialog from '@/views/AppOmniDialog.vue'
 import AppContextMenu from '@/views/AppContextMenu.vue'
 import AppGameExitDialog from '@/views/AppGameExitDialog.vue'
-import AppMultiplayerLoginDialog from '@/views/AppMultiplayerLoginDialog.vue'
 import AppUnauthenticatedWarningDialog from '@/views/AppUnauthenticatedWarningDialog.vue'
 import UserProfileDialog from '@/components/UserProfileDialog.vue'
 import AppNotifier from '@/views/AppNotifier.vue'
@@ -89,7 +85,6 @@ import AppSystemBar from '@/views/AppSystemBar.vue'
 import Setup from '@/views/Setup.vue'
 import { useLocalStorage, useMediaQuery, usePreferredColorScheme, usePreferredDark } from '@vueuse/core'
 import { kInstanceLauncher, useInstanceLauncher } from '@/composables/instanceLauncher'
-import { kMinecraftFriends, useMinecraftFriendsImpl } from '@/composables/minecraftFriends'
 import { useUserMenuControl } from '@/composables/userMenu'
 import { UserSkinRenderPaused } from '@/composables/userSkin'
 import AppSideBarGroupSettingDialog from '@/views/AppSideBarGroupSettingDialog.vue'
@@ -97,24 +92,18 @@ import AppGamepadPrompt from '@/views/AppGamepadPrompt.vue'
 import AppBigPictureView from '@/views/AppBigPictureView.vue'
 import { kBigPicture, useBigPicture } from '@/composables/bigPicture'
 import { useInstanceGroupDefaultColor } from '@/composables/instanceGroup'
-import { kMultiplayerEntry, useMultiplayerEntry } from '@/composables/multiplayerEntry'
 
 const lazyDialogComponents = {
   'task': defineAsyncComponent(() => import('@/views/AppTaskDialog.vue')),
   'feedback': defineAsyncComponent(() => import('@/views/AppFeedbackDialog.vue')),
-  'share-instance': defineAsyncComponent(() => import('@/views/AppShareInstanceDialog.vue')),
   'delete-instance': defineAsyncComponent(() => import('@/views/AppInstanceDeleteDialog.vue')),
   'launch-blocked': defineAsyncComponent(() => import('@/views/AppLaunchBlockedDialog.vue')),
   'InstanceInstallSkipDialog': defineAsyncComponent(() => import('@/views/AppInstallSkipDialog.vue')),
   'modpack-update-or-create': defineAsyncComponent(() => import('@/views/AppModpackUpdateDialog.vue')),
   'instance-server-edit': defineAsyncComponent(() => import('@/views/AppJoinServerDialog.vue')),
   'migrate-wizard': defineAsyncComponent(() => import('@/views/AppMigrateWizardDialog.vue')),
-  'minecraft-friends': defineAsyncComponent(() => import('@/views/AppMinecraftFriendsDialog.vue')),
   'mod-group-select': defineAsyncComponent(() => import('@/views/ModGroupSelectDialog.vue')),
   'modrinth-login': defineAsyncComponent(() => import('@/views/AppModrinthLoginDialog.vue')),
-  'modrinth-project-create': defineAsyncComponent(() => import('@/views/AppModrinthProjectCreateDialog.vue')),
-  'modrinth-project-bind': defineAsyncComponent(() => import('@/views/AppModrinthProjectBindDialog.vue')),
-  'modrinth-version-publish': defineAsyncComponent(() => import('@/views/AppModrinthVersionPublishDialog.vue')),
 }
 
 const showSetup = ref(location.search.indexOf('bootstrap') !== -1)
@@ -131,15 +120,6 @@ const { isBigPicture } = bigPicture
 provide('streamerMode', useLocalStorage('streamerMode', false, { writeDefaults: false }))
 provide(kLocalizedContent, useLocalizedContentControl())
 provide(kInstanceLauncher, useInstanceLauncher())
-provide(kMinecraftFriends, useMinecraftFriendsImpl())
-
-// Agent must run in App.vue (not Context.ts) because its tool factory
-// injects kInstance/kInstanceMods/... which are provided by Context itself,
-// and `inject` only resolves on descendants.
-const agent = useAgent()
-provide(kAgent, agent)
-// Keep the window.__xmcl_agent debug surface restricted to developer mode.
-installAgentDevLauncher(agent, developerMode)
 
 // User profile dialog — moved from AppSystemBarUserMenu to App root
 const userMenu = useUserMenuControl()
@@ -152,8 +132,6 @@ provide(UserSkinRenderPaused, computed(() => !userProfileDialogShown.value && ro
 
 // Bind Ctrl/Cmd+Shift+C to open the command palette.
 useCommandPaletteHotkey()
-// Bind Ctrl/Cmd+Shift+A to open the agent chat panel.
-useAgentChatHotkey()
 
 const defaultColor = useInstanceGroupDefaultColor()
 
@@ -180,7 +158,6 @@ provide(kInFocusMode, computed({
 
 provide(kLaunchButton, useLaunchButton())
 provide(kInstanceLaunchCoordinator, useInstanceLaunchCoordinator())
-provide(kMultiplayerEntry, useMultiplayerEntry())
 
 const sidebarSettings = useSidebarSettings()
 provide(kSidebarSettings, sidebarSettings)

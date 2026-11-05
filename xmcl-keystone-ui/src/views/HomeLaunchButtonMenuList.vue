@@ -45,9 +45,8 @@
         min-width="220"
       >
         <v-list-item
-          v-if="!isBedrock || bedrockStorage"
           role="menuitem"
-          :title="isBedrock ? t('instance.openLogFolder') : t('logsCrashes.title')"
+          :title="t('logsCrashes.title')"
           @click="showLogs"
         >
           <template #prepend>
@@ -57,7 +56,6 @@
           </template>
         </v-list-item>
         <v-list-item
-          v-if="!isBedrock || bedrockStorage"
           role="menuitem"
           :title="t('instance.showInstance')"
           @click="showInstanceFolder"
@@ -65,30 +63,6 @@
           <template #prepend>
             <v-icon size="20">
               folder
-            </v-icon>
-          </template>
-        </v-list-item>
-        <v-list-item
-          v-if="!isBedrock"
-          role="menuitem"
-          :title="t('modpack.export')"
-          to="/base-setting?target=modpack"
-        >
-          <template #prepend>
-            <v-icon size="20">
-              share
-            </v-icon>
-          </template>
-        </v-list-item>
-        <v-list-item
-          v-if="!isBedrock"
-          role="menuitem"
-          :title="t('server.export')"
-          to="/base-setting?target=server"
-        >
-          <template #prepend>
-            <v-icon size="20">
-              ios_share
             </v-icon>
           </template>
         </v-list-item>
@@ -106,31 +80,10 @@
         </v-list-item>
       </v-list>
     </v-menu>
-    <v-list-item
-      v-if="instance && !instance.upstream && !isBedrock"
-      role="menuitem"
-      :title="t('instance.installModpack')"
-      :disabled="installing"
-      @click="onClickInstallFromModpack()"
-    >
-      <template #prepend>
-        <v-icon size="20">
-          drive_folder_upload
-        </v-icon>
-      </template>
-    </v-list-item>
+    <v-divider role="presentation" class="my-1" />
 
-    <v-divider v-if="!isBedrock" role="presentation" class="my-1" />
-
-    <v-list-item v-if="!isBedrock" role="menuitem" :title="text" @click="onStartLocalhost">
-      <template #prepend>
-        <v-icon size="20">
-          {{ serverCount > 0 ? 'cancel' : 'play_arrow' }}
-        </v-icon>
-      </template>
-    </v-list-item>
     <v-menu
-      v-if="otherUsers.length > 0 && !isBedrock"
+      v-if="otherUsers.length > 0"
       sub menu
       :close-on-content-click="true"
       open-on-hover      :open-on-focus="false"      :open-delay="200"
@@ -271,13 +224,10 @@ import { kInstanceSave } from '@/composables/instanceSave'
 import { kInstanceServerInfo } from '@/composables/instanceServerInfo'
 import { kServerStatusCache } from '@/composables/serverStatus'
 import { kUserContext } from '@/composables/user';
-import { InstanceInstallDialog } from '@/composables/instanceUpdate'
-import { useInstanceVersionServerInstall } from '@/composables/instanceVersionServerInstall'
 import { join } from '@/util/basename';
 import { getInstanceIcon } from '@/util/favicon';
 import { injection } from '@/util/inject'
-import { BaseServiceKey, BedrockServiceKey, BedrockStoragePaths, InstanceOptionsServiceKey, LaunchServiceKey, ModpackServiceKey, parseServerAddress, UserProfile, waitModpackFiles } from '@xmcl/runtime-api';
-import { isBedrockInstance } from '@xmcl/instance';
+import { BaseServiceKey, LaunchServiceKey, parseServerAddress, UserProfile } from '@xmcl/runtime-api';
 
 const { t } = useI18n()
 defineProps<{}>()
@@ -368,36 +318,10 @@ function onLaunchToWorld(world: { name: string }) {
   launch('client', { world: world.name })
 }
 
-const text = computed(() => {
-  if (serverCount.value > 0) {
-    return t('server.stop')
-  }
-  return t('server.launch')
-})
-const { getEULA } = useService(InstanceOptionsServiceKey)
-const { install: installServer } = useInstanceVersionServerInstall()
-const router = useRouter()
-const onStartLocalhost = async () => {
-  if (serverCount.value > 0) {
-    kill('server')
-    return
-  }
-  // If the local server was never configured (EULA not yet accepted), send the
-  // user to the dedicated server tab to set it up. Otherwise launch directly.
-  const eula = await getEULA(path.value)
-  if (!eula) {
-    router.push({ path: '/base-setting', query: { target: 'server' } })
-    return
-  }
-  const version = await installServer()
-  await launch('server', { version })
-}
 
-const isBedrock = computed(() => isBedrockInstance(instance.value))
 const { createLaunchShortcut } = useService(LaunchServiceKey)
 
 const { getDesktopDirectory, openDirectory } = useService(BaseServiceKey)
-const { getStoragePaths } = useService(BedrockServiceKey)
 const env = injection(kEnvironment)
 const onCreateShortcut = async () => {
   const dir = await getDesktopDirectory()
@@ -443,61 +367,14 @@ const onCreateShortcut = async () => {
   })
 }
 
-// Instance actions (settings / logs / folder / export / install)
+// Instance actions (settings / logs / folder)
 const { show: showLogDialog } = useDialog('log')
-const { show: showInstanceInstallDialog } = useDialog(InstanceInstallDialog)
-const { openModpack } = useService(ModpackServiceKey)
-
-const bedrockStorage = ref<BedrockStoragePaths>()
-watch(isBedrock, async (bedrock) => {
-  bedrockStorage.value = undefined
-  if (bedrock) {
-    bedrockStorage.value = await getStoragePaths()
-  }
-}, { immediate: true })
 
 function showInstanceFolder() {
-  openDirectory(isBedrock.value ? bedrockStorage.value!.dataPath : path.value)
+  openDirectory(path.value)
 }
 
 function showLogs() {
-  if (isBedrock.value) {
-    openDirectory(bedrockStorage.value!.logsPath)
-    return
-  }
   showLogDialog()
-}
-
-const installing = ref(false)
-function onClickInstallFromModpack() {
-  installing.value = true
-  windowController
-    .showOpenDialog({
-      properties: ['openFile'],
-      filters: [
-        {
-          name: 'Modpack',
-          extensions: ['zip', 'mrpack'],
-        },
-      ],
-    })
-    .then(async (result) => {
-      const file = result.canceled ? undefined : result.filePaths[0]
-      if (!file) {
-        return
-      }
-      const modpack = await openModpack(file)
-      const files = await waitModpackFiles(modpack)
-
-      showInstanceInstallDialog({
-        type: 'updates',
-        oldFiles: [],
-        files,
-        id: '',
-      })
-    })
-    .finally(() => {
-      installing.value = false
-    })
 }
 </script>

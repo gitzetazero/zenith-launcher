@@ -146,7 +146,6 @@ const tokens = injection(kSurfaceTokens)
 
 onMounted(() => {
   suppressed.value = true
-  revealRouteTarget()
 })
 onUnmounted(() => {
   suppressed.value = false
@@ -169,16 +168,6 @@ const sections = [
   { id: 'backup', title: 'backup.title', icon: 'archive' },
   { id: 'about', title: 'setting.about', icon: 'info' },
 ]
-
-async function revealRouteTarget() {
-  if (route.query.target !== 'agent') return
-  await nextTick()
-  const target = document.getElementById('agent-settings')
-  target?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-  target?.querySelector<HTMLElement>('input')?.focus()
-}
-
-watch(() => route.query.target, revealRouteTarget)
 
 function scrollTo(id: string) {
   const el = document.getElementById(id)

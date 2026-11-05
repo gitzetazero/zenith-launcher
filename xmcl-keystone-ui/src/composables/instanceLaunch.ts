@@ -1,9 +1,8 @@
 import { useService } from '@/composables'
 import { ModFile } from '@/util/mod'
-import { Instance, isBedrockInstance } from '@xmcl/instance'
+import { Instance } from '@xmcl/instance'
 import {
   AuthlibInjectorServiceKey,
-  BedrockServiceKey,
   JavaRecord,
   LaunchOptions,
   LaunchServiceKey,
@@ -47,7 +46,6 @@ export function useInstanceLaunch(
   const { refreshUser } = useService(UserServiceKey)
   const { launch, kill, on, removeListener, getGameProcess, getGameProcesses } =
     useService(LaunchServiceKey)
-  const { launch: launchBedrock } = useService(BedrockServiceKey)
   const {
     globalAssignMemory,
     globalMaxMemory,
@@ -225,24 +223,6 @@ export function useInstanceLaunch(
     overrides?: Partial<LaunchOptions>,
   ) {
     const token = getLaunchToken(user, instancePath)
-    // Bedrock instances are launched through the Microsoft Store UWP package
-    // (Windows only). They have no JVM, version or asset pipeline, so bypass
-    // the Java launch flow entirely.
-    if (isBedrockInstance(instance.value)) {
-      try {
-        error.value = undefined
-        assignStatus(token, 'spawning-process', undefined, state)
-        await action.run(() => launchBedrock())
-      } catch (e) {
-        if (state.aborted) return
-        if (!(e instanceof LaunchStageCancelled) && !state.aborted && !isRuntimeServiceError(e)) console.error(e)
-        if (allLaunchingStatus.value[token] === state) error.value = e as any
-        throw e
-      } finally {
-        assignStatus(token, '', undefined, state)
-      }
-      return { operationId }
-    }
     try {
       error.value = undefined
       const options = await generateLaunchOptions(

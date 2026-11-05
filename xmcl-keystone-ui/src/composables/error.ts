@@ -1,4 +1,4 @@
-import { isException, ModpackException, NetworkErrorCode, NetworkException, BedrockException, UserException } from '@xmcl/runtime-api'
+import { isException, ModpackException, NetworkErrorCode, NetworkException, UserException } from '@xmcl/runtime-api'
 
 export function useLocaleError() {
   const { t } = useI18n()
@@ -20,10 +20,6 @@ export function useLocaleError() {
       if (e.exception.type === 'invalidModpack') return t('errors.BadInstanceType', {
         type: e.exception.path
       })
-    }
-    if (isException(BedrockException, e)) {
-      const ex = e.exception
-      return t(`errors.${ex.type}`)
     }
     if (isException(UserException, e) && e.exception.type === 'userAccessTokenExpired') {
       return t('user.tokenExpired')

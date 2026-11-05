@@ -108,11 +108,6 @@ export function useTaskIcon() {
       return { type: 'icon', icon: 'security', bgClass: 'bg-cyan-500/15 text-cyan-400' }
     }
 
-    // 10. Bedrock
-    if (task.type === 'installBedrock' || task.type === 'installBedrockVersion') {
-      return { type: 'image', src: BuiltinImages.minecraft }
-    }
-
     // 11. Mod metadata DB
     if (task.type === 'downloadModMetadataDb') {
       return { type: 'icon', icon: 'cloud_sync', bgClass: 'bg-indigo-500/15 text-indigo-400' }

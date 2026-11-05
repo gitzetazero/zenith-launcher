@@ -58,9 +58,6 @@
             class="visible-scroll surface-rounded-item col-span-12 lg:col-span-8 overflow-auto p-4 m-0 text-xs leading-relaxed log-pre min-w-0 min-h-0 max-h-full"
             >{{ content }}</pre
           >
-          <div class="visible-scroll col-span-12 lg:col-span-4 min-w-0 min-h-0 max-h-full overflow-auto">
-            <AppCrashAIHint :useCNAI="useCNAI" :getPrompt="getPrompt" :getAgentPrompt="getAgentPrompt" @close="hideDialog" />
-          </div>
         </div>
       </div>
     </Transition>
@@ -71,12 +68,10 @@
 import { parseLog } from '@/util/log'
 import LogView from '@/components/LogView.vue'
 import HomeLogDialogTabItem from './HomeLogDialogTabItem.vue'
-import AppCrashAIHint from '@/components/AppCrashAIHint.vue'
 import { kEnvironment } from '@/composables/environment'
 import { kInstance } from '@/composables/instance'
 import { kSettingsState } from '@/composables/setting'
 import { useDialog } from '@/composables/dialog'
-import { getCrashPrompt, getCrashAgentPrompt, toVirtualInstancePath } from '@/util/crashPrompt'
 import { injection } from '@/util/inject'
 import { vSharedTooltip } from '@/directives/sharedTooltip'
 
@@ -138,31 +133,6 @@ function copyContent() {
   }, 2000)
 }
 
-const env = injection(kEnvironment)
-const useCNAI = computed(() => {
-  return env.value?.gfw || env.value?.region === 'zh-CN'
-})
-
-const { state } = injection(kSettingsState)
-function getPrompt(raw?: boolean) {
-  if (raw) {
-    return content.value
-  }
-  return getCrashPrompt(useCNAI.value, content.value, '', state.value?.locale || 'en-US')
-}
-function getAgentPrompt() {
-  const currentPath = showedFile.value || ''
-  if (!currentPath) return getCrashAgentPrompt(content.value, '')
-
-  const virtualDir = props.log ? 'logs' : 'crash-reports'
-
-  const currentFilePath = toVirtualInstancePath(`${path.value}/${currentPath}`, path.value)
-  const virtualPath = currentFilePath === currentPath
-    ? `${virtualDir}/${currentPath}`
-    : currentFilePath
-
-  return getCrashAgentPrompt(content.value, '', virtualPath, undefined, launchId.value || undefined)
-}
 
 watch(
   () => props.visible,

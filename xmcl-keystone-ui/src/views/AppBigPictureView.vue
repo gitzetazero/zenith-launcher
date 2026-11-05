@@ -231,7 +231,6 @@
           v-else-if="currentTab === 'discover'"
           :initial-category="marketCategory"
         />
-        <BigPictureMultiplayer v-else-if="currentTab === 'multiplayer'" />
         <BigPictureSettings v-else-if="currentTab === 'settings'" />
       </transition>
     </main>
@@ -318,7 +317,7 @@
 <script setup lang="ts">
 import { computed, onMounted, onUnmounted, ref, watch } from 'vue'
 import { useRouter } from 'vue-router'
-import { BaseServiceKey, LaunchServiceKey, BedrockServiceKey, TaskState } from '@xmcl/runtime-api'
+import { BaseServiceKey, LaunchServiceKey, TaskState } from '@xmcl/runtime-api'
 import { useService } from '@/composables/service'
 import { useBigPicture } from '@/composables/bigPicture'
 import { useGamepad } from '@/composables/gamepad'
@@ -337,7 +336,6 @@ import { injection } from '@/util/inject'
 import PlayerAvatar from '@/components/PlayerAvatar.vue'
 import BigPictureLibrary from './BigPictureLibrary.vue'
 import BigPictureMarket from './BigPictureMarket.vue'
-import BigPictureMultiplayer from './BigPictureMultiplayer.vue'
 import BigPictureSettings from './BigPictureSettings.vue'
 import BigPictureHelpDialog from './BigPictureHelpDialog.vue'
 import BigPictureFeedbackDialog from './BigPictureFeedbackDialog.vue'
@@ -416,7 +414,6 @@ const { instances } = injection(kInstances)
 const { isRunning, isLaunching } = injection(kInstanceLaunchCoordinator)
 const { kill: killJavaLaunch, abort: abortJavaLaunch } = injection(kInstanceLaunch)
 const { getGameProcesses, kill: killProcess } = useService(LaunchServiceKey)
-const { killGame: killBedrockGame } = useService(BedrockServiceKey)
 const { notify } = useNotifier()
 
 const primaryRunningInstance = computed(() => {
@@ -438,13 +435,8 @@ async function forceKillInstance(instancePath?: string) {
   const targetPath = instancePath || primaryRunningInstance.value?.path || currentInstance.value?.path
   if (!targetPath) return
 
-  const targetInstance = instances.value.find((i) => i.path === targetPath)
-  const isBedrockTarget = targetInstance?.edition === 'bedrock'
-
   try {
-    if (isBedrockTarget) {
-      await killBedrockGame()
-    } else {
+    {
       const processes = await getGameProcesses().catch(() => [])
       const matched = processes.filter((p) => p.options.gameDirectory === targetPath)
       if (matched.length > 0) {
@@ -472,7 +464,6 @@ function onGamepadForceKill() {
   }
 }
 
-const isBedrock = computed(() => currentInstance.value?.edition === 'bedrock')
 const gameProfileName = computed(() => gameProfile.value.name || userProfile.value?.username || '')
 const avatarUrl = computed(() => userProfile.value?.profiles[userProfile.value?.selectedProfile]?.textures?.SKIN?.url)
 
@@ -482,27 +473,18 @@ function openUserProfile() {
 }
 
 // Navigation Tabs
-type BigPictureTab = 'library' | 'discover' | 'multiplayer' | 'settings'
+type BigPictureTab = 'library' | 'discover' | 'settings'
 
 const tabs = computed(() => {
   const list: { id: BigPictureTab; label: string; icon: string }[] = [
     { id: 'library', label: 'bigPicture.library', icon: 'sports_esports' },
     { id: 'discover', label: 'bigPicture.discover', icon: 'explore' },
   ]
-  if (!isBedrock.value) {
-    list.push({ id: 'multiplayer', label: 'bigPicture.multiplayer', icon: 'hub' })
-  }
   list.push({ id: 'settings', label: 'bigPicture.settings', icon: 'settings' })
   return list
 })
 
 const currentTab = ref<BigPictureTab>('library')
-
-watch(isBedrock, (bedrock) => {
-  if (bedrock && currentTab.value === 'multiplayer') {
-    currentTab.value = 'library'
-  }
-})
 
 function nextTab() {
   const list = tabs.value

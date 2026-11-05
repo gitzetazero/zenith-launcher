@@ -194,10 +194,6 @@ export function useSettings() {
     get: () => state.value?.apiSetsPreference ?? '',
     set: v => state.value?.apiSetsPreferenceSet(v),
   })
-  const replaceNative = computed({
-    get: () => state.value?.replaceNatives ?? 'legacy-only' as string | false,
-    set: v => state.value?.replaceNativesSet(v as any),
-  })
   const maxSockets = ref(state.value?.maxSockets)
   const maxAPISockets = ref(state.value?.maxAPISockets)
   const proxy = ref(getProxy())
@@ -208,14 +204,6 @@ export function useSettings() {
   const developerMode = computed({
     get: () => state.value?.developerMode ?? false,
     set: v => state.value?.developerModeSet(v),
-  })
-  const disableTelemetry = computed({
-    get: () => state.value?.disableTelemetry ?? false,
-    set: v => state.value?.disableTelemetrySet(v),
-  })
-  const multiplayerTransport = computed({
-    get: () => state.value?.multiplayerTransport ?? 'webrtc',
-    set: v => state.value?.multiplayerTransportSet(v),
   })
   const enableDiscord = computed({
     get: () => state.value?.discordPresence ?? false,
@@ -265,12 +253,9 @@ export function useSettings() {
     maxAPISockets,
     locales,
     proxy,
-    replaceNative,
     selectedLocale,
     apiSetsPreference,
     apiSets,
-    disableTelemetry,
-    multiplayerTransport,
     error,
     isValidating,
   }

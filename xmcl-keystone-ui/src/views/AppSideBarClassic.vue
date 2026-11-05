@@ -47,35 +47,6 @@
         </v-icon>
       </AppSideBarItem>
 
-      <AppSideBarItem
-        data-testid="nav-agent"
-        v-shared-tooltip.right="agentTooltip"
-        clickable
-        :aria-label="agentAriaLabel"
-        @click="openAgent"
-      >
-        <v-badge
-          v-if="agentConfirmationPending"
-          data-testid="nav-agent-confirmation"
-          color="warning"
-          dot
-          location="top end"
-        >
-          <v-icon class="sidebar-item__icon" color="warning" :size="23">priority_high</v-icon>
-        </v-badge>
-        <v-progress-circular
-          v-else-if="agentRunningInBackground"
-          data-testid="nav-agent-running"
-          class="sidebar-item__icon"
-          color="primary"
-          indeterminate
-          :size="22"
-          :width="2"
-        />
-        <v-icon v-else class="sidebar-item__icon" :size="23">
-          smart_toy
-        </v-icon>
-      </AppSideBarItem>
     </div>
 
     <div class="sidebar__divider" />
@@ -92,19 +63,6 @@
     <div class="sidebar__divider" />
 
     <div v-roving-tabindex role="group" class="sidebar__section">
-      <AppSideBarItem
-        data-testid="nav-multiplayer"
-        v-shared-tooltip.right="() => t('multiplayer.togetherName')"
-        clickable
-        :active="isMultiplayerActive"
-        :aria-label="multiplayerAriaLabel"
-        @click="goMultiplayer"
-      >
-        <v-icon class="sidebar-item__icon" :size="23">
-          hub
-        </v-icon>
-      </AppSideBarItem>
-
       <AppSideBarItem
         data-testid="nav-settings"
         v-shared-tooltip.right="() => t('setting.name', 2)"
@@ -185,46 +143,6 @@
       <v-divider vertical class="mx-2 h-6" />
 
       <v-btn
-        data-testid="nav-agent"
-        v-shared-tooltip.bottom="agentTooltip"
-        icon
-        :aria-label="agentAriaLabel"
-        class="non-moveable mr-1"
-        @click="openAgent"
-      >
-        <v-badge
-          v-if="agentConfirmationPending"
-          data-testid="nav-agent-confirmation"
-          color="warning"
-          dot
-          location="top end"
-        >
-          <v-icon color="warning" :size="23">priority_high</v-icon>
-        </v-badge>
-        <v-progress-circular
-          v-else-if="agentRunningInBackground"
-          data-testid="nav-agent-running"
-          color="primary"
-          indeterminate
-          :size="22"
-          :width="2"
-        />
-        <v-icon v-else :size="23">smart_toy</v-icon>
-      </v-btn>
-
-      <v-btn
-        data-testid="nav-multiplayer"
-        v-shared-tooltip.bottom="t('multiplayer.togetherName')"
-        icon
-        :active="isMultiplayerActive"
-        :aria-label="multiplayerAriaLabel"
-        class="non-moveable mr-1"
-        @click="goMultiplayer"
-      >
-        <v-icon :size="23">hub</v-icon>
-      </v-btn>
-
-      <v-btn
         data-testid="nav-settings"
         v-shared-tooltip.bottom="t('setting.name', 2)"
         icon
@@ -254,9 +172,7 @@
 
 <script lang="ts" setup>
 import PlayerAvatar from '@/components/PlayerAvatar.vue'
-import { useAgentChatEntry, useAgentChatStatus } from '@/composables/agentChat'
 import { useDragAutoScroll } from '@/composables/dragAutoScroll'
-import { kMultiplayerEntry } from '@/composables/multiplayerEntry'
 import { kSettingsState } from '@/composables/setting'
 import { useInjectSidebarSettings } from '@/composables/sidebarSettings'
 import { kTheme } from '@/composables/theme'
@@ -272,7 +188,6 @@ import AppSideBarItem from './AppSideBarItem.vue'
 const { blurSidebar, sideBarColor } = injection(kTheme)
 const { state } = injection(kSettingsState)
 const { gameProfile } = injection(kUserContext)
-const { request: openMultiplayer } = injection(kMultiplayerEntry)
 const { position } = useInjectSidebarSettings()
 
 const isHorizontal = computed(() => position.value === 'top' || position.value === 'bottom')
@@ -281,10 +196,6 @@ const accountMenu = ref<InstanceType<typeof AppSideBarAccountMenu>>()
 function onAccountContextMenu(event: MouseEvent) {
   accountMenu.value?.open(event)
 }
-const { open: openAgent } = useAgentChatEntry()
-const agentChatStatus = useAgentChatStatus()
-const agentRunningInBackground = computed(() => agentChatStatus.running.value && !agentChatStatus.shown.value)
-const agentConfirmationPending = agentChatStatus.confirmationPending
 
 const { t } = useI18n()
 const { back } = useRouter()
@@ -294,18 +205,10 @@ const navigationAriaLabel = 'Sidebar navigation'
 const backAriaLabel = computed(() => t('shared.back'))
 const myStuffAriaLabel = computed(() => t('myStuff'))
 const storeAriaLabel = computed(() => t('store.name', 2))
-const agentAriaLabel = computed(() => agentConfirmationPending.value ? `${t('agent.title')}: ${t('agent.confirmPending')}` : t('agent.title'))
-const agentTooltip = () => agentAriaLabel.value
-const multiplayerAriaLabel = computed(() => t('multiplayer.togetherName'))
-const isMultiplayerActive = computed(() => route.path === '/multiplayer')
 const settingsAriaLabel = computed(() => t('setting.name', 2))
 
 function goBack() {
   back()
-}
-
-function goMultiplayer() {
-  openMultiplayer()
 }
 
 // Global hotkey: Alt+Left arrow goes back, mirroring the back button.

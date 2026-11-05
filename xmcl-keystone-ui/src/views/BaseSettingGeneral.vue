@@ -45,11 +45,11 @@
           variant="outlined"
           density="compact"
           hide-details
-          :placeholder="isBedrock ? t('instances.editionBedrock') : `Minecraft ${data.runtime.minecraft}`"
+          :placeholder="'Zenith'"
         />
       </template>
     </SettingItem>
-    <template v-if="!isBedrock">
+    <template v-if="true">
       <v-divider class="my-3" />
       <div class="base-setting-general__section-heading">
         <v-icon size="small" color="primary">flash_on</v-icon>
@@ -145,7 +145,6 @@ const {
 } = injection(InstanceEditInjectionKey)
 const { userProfile } = injection(kUserContext)
 const { instance } = injection(kInstance)
-const isBedrock = computed(() => instance.value.edition === 'bedrock')
 
 const isThirdparty = computed(() => userProfile.value.authority !== AUTHORITY_MICROSOFT)
 const isElyBy = computed(() => userProfile.value.authority.startsWith('https://authserver.ely.by'))

@@ -33,6 +33,7 @@ import { VersionMetadataService } from '~/install/VersionMetadataService'
 import { ExposeServiceKey, ServiceStateManager, Singleton, StatefulService } from '~/service'
 import { validateDirectory } from '~/util/validate'
 import { LauncherApp } from '../app/LauncherApp'
+import { enforceZenithInstance } from '../zenith/only'
 import { ENOENT_ERROR, exists, isDirectory, isPathDiskRootPath, linkOrCopyFile, readdirEnsured } from '../util/fs'
 import { getMediaIconPath, resolveInstanceIcon, serializeInstanceIcon, toMediaIconUrl } from './instanceIcon'
 import { requireObject, requireString } from '../util/object'
@@ -364,8 +365,15 @@ export class InstanceService extends StatefulService<InstanceState> implements I
       throw new TypeError('payload.name should not be empty!')
     }
 
+    // zenith: only Zenith instances can be created (throws for loaders, Bedrock, modpack upstreams)
+    const zenithPayload = enforceZenithInstance(payload, {
+      env: process.env,
+      appData: this.app.host.getPath('appData'),
+      platform: process.platform,
+    })
+
     const instance = createInstance(
-      payload,
+      zenithPayload,
       (v) => this.getCandidatePath(v),
       this.versionMetadataService.getLatestRelease,
     )

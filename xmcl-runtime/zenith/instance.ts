@@ -63,13 +63,10 @@ export async function ensureZenithInstance(o: EnsureZenithInstanceOptions): Prom
     o.log(`Zenith bridge not found at ${o.bridgeExe}; the Zenith instance is not created.`)
     return 'no-bridge'
   }
-  if (o.instances.instances.some((i) => i.name === ZENITH_INSTANCE_NAME)) {
-    // keep the shim current when the launcher (and so the bridge) was updated
-    await installJavaShim(o.bridgeExe, o.home)
-    return 'exists'
-  }
-  if (existsSync(o.markerPath)) return 'skipped'
+  // the shim is the "Java" of every Zenith instance: keep it current when the launcher (and so the bridge) was updated
   const java = await installJavaShim(o.bridgeExe, o.home)
+  if (o.instances.instances.some((i) => i.name === ZENITH_INSTANCE_NAME)) return 'exists'
+  if (existsSync(o.markerPath)) return 'skipped'
   await o.instances.createInstance({
     name: ZENITH_INSTANCE_NAME,
     description: 'Zenith (Minecraft in Rust), installed and updated by the Zenith bridge.',

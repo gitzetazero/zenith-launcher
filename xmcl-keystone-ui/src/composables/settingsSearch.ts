@@ -153,22 +153,6 @@ export function useSettingsSearchItems() {
       items: s.locales.map(l => ({ text: l.name, value: l.locale })),
     })
 
-    list.push({
-      kind: 'switch',
-      id: 'setting.disableTelemetry',
-      title: t('setting.disableTelemetry'),
-      description: t('setting.disableTelemetryDescription'),
-      icon: 'privacy_tip',
-      group: groupGeneral.value,
-      keywords: 'telemetry analytics privacy data collection',
-      get value() {
-        return s.disableTelemetry
-      },
-      set value(v: boolean) {
-        s.disableTelemetrySet(v)
-      },
-    })
-
     if (env.value?.os === 'linux' || env.value?.os === 'windows') {
       list.push({
         kind: 'switch',
@@ -233,29 +217,6 @@ export function useSettingsSearchItems() {
       set value(v: boolean) {
         streamerMode.value = v
       },
-    })
-
-    list.push({
-      kind: 'select',
-      id: 'setting.replaceNative',
-      title: t('setting.replaceNative'),
-      description: t('setting.replaceNativeDescription'),
-      icon: 'swap_horiz',
-      group: groupGeneral.value,
-      keywords: 'native libraries replace lwjgl arch arm',
-      get value() {
-        const v = s.replaceNatives
-        return v === false ? '' : v
-      },
-      set value(v: string) {
-        const target = !v ? false : (v as 'legacy-only' | 'all')
-        s.replaceNativesSet(target)
-      },
-      items: [
-        { text: t('shared.disable'), value: '' },
-        { text: t('setting.replaceNatives.legacy'), value: 'legacy-only' },
-        { text: t('setting.replaceNatives.all'), value: 'all' },
-      ],
     })
 
     // ── Global Instance Settings ────────────────────────────────────────────

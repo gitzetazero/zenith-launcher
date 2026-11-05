@@ -253,37 +253,16 @@
           </div>
         </template>
 
-        <v-list-item
-          v-if="showAiResult"
-          :active="selectedIndex === preMarketResultCount"
-          :data-palette-index="preMarketResultCount"
-          data-testid="command-palette-ask-ai"
-          :aria-label="`${t('agent.title')}: ${query.trim()}`"
-          @click="askAi"
-          @mouseenter="selectedIndex = preMarketResultCount"
-        >
-          <template #prepend>
-            <div class="palette-cmd-icon palette-ai-icon">
-              <v-icon size="18">smart_toy</v-icon>
-            </div>
-          </template>
-          <v-list-item-title>{{ t('agent.title') }}</v-list-item-title>
-          <v-list-item-subtitle class="palette-ai-query">{{ query.trim() }}</v-list-item-subtitle>
-          <template #append>
-            <span class="text-caption text-medium-emphasis">{{ t('commandPalette.hintInvoke') }}</span>
-          </template>
-        </v-list-item>
-
         <template v-if="!pendingInstanceAction && !pendingInstancePath && !pendingSettingId && modrinthResults.length > 0">
           <div role="group" :aria-label="t('commandPalette.modrinth')">
           <v-list-subheader>{{ t('commandPalette.modrinth') }}</v-list-subheader>
           <v-list-item
             v-for="(p, idx) in modrinthResults"
             :key="p.project_id"
-            :active="selectedIndex === preMarketResultCount + (showAiResult ? 1 : 0) + idx"
-            :data-palette-index="preMarketResultCount + (showAiResult ? 1 : 0) + idx"
+            :active="selectedIndex === preMarketResultCount + idx"
+            :data-palette-index="preMarketResultCount + idx"
             @click="openModrinthProject(p)"
-            @mouseenter="selectedIndex = preMarketResultCount + (showAiResult ? 1 : 0) + idx"
+            @mouseenter="selectedIndex = preMarketResultCount + idx"
           >
             <template #prepend>
               <v-avatar size="36" rounded="lg" class="palette-avatar">
@@ -368,10 +347,6 @@
             <span class="palette-footer__label">{{ t('commandPalette.hintClose') }}</span>
           </span>
           <v-spacer />
-          <span v-if="canAskAi" class="palette-footer__group">
-            <kbd>Alt</kbd><kbd>Enter</kbd>
-            <span class="palette-footer__label">{{ t('commandPalette.hintAskAgent') }}</span>
-          </span>
         </template>
       </div>
       </Teleport>
@@ -381,7 +356,6 @@
 <script lang="ts" setup>
 import { useNotifier } from '@/composables/notifier'
 import { useLocaleError } from '@/composables/error'
-import { useAgentChatOpen } from '@/composables/agentChat'
 import { useCommandPaletteVisible } from '@/composables/commandPalette'
 import { useOmniDialog } from '@/composables/omniDialog'
 import { useRendererCommandHost } from '@/composables/commandHost'
@@ -407,14 +381,6 @@ import { useRouter } from 'vue-router'
 import { useRtl } from 'vuetify'
 import './gamepad.css'
 
-const props = withDefaults(defineProps<{
-  agentEnabled?: boolean
-}>(), {
-  agentEnabled: true,
-})
-
-const agentEnabled = computed(() => props.agentEnabled)
-
 const { t, te, locale } = useI18n()
 const isShown = useCommandPaletteVisible()
 const surface = useOmniDialog()
@@ -422,7 +388,6 @@ const query = surface.commandInput
 const debouncedQuery = useDebounce(query, 250)
 const selectedIndex = ref(0)
 const router = useRouter()
-const { open: openAgentChat } = useAgentChatOpen()
 const { notify } = useNotifier()
 const tError = useLocaleError()
 
@@ -586,26 +551,16 @@ const preMarketResultCount = computed(() =>
 const normalResultCount = computed(() =>
   preMarketResultCount.value + modrinthResults.value.length,
 )
-const showAiResult = computed(() => {
-  if (!canAskAi.value) return false
-  return query.value.trim().length >= 2
-})
-const canAskAi = computed(() =>
-  agentEnabled.value &&
-  !pendingInstanceAction.value &&
-  !pendingInstancePath.value &&
-  !pendingSettingId.value,
-)
 
 const totalResultCount = computed(() => {
   if (pendingInstancePath.value) return pendingInstance.value ? 4 : 0
   if (pendingSettingId.value) return settingOptionResults.value.length
   if (pendingInstanceAction.value) return instanceResults.value.length
-  return normalResultCount.value + (showAiResult.value ? 1 : 0)
+  return normalResultCount.value
 })
 const hasAnyResult = computed(() => totalResultCount.value > 0)
 
-watch([recentResults, commandResults, settingsResults, instanceResults, modrinthResults, settingOptionResults, pendingInstancePath, showAiResult], () => {
+watch([recentResults, commandResults, settingsResults, instanceResults, modrinthResults, settingOptionResults, pendingInstancePath], () => {
   if (selectedIndex.value >= totalResultCount.value) selectedIndex.value = 0
 })
 
@@ -641,16 +596,6 @@ async function invoke(c: { id: string }) {
   } catch (e) {
     notify({ title: tError(e), level: 'error' })
   }
-}
-
-function switchToAgent() {
-  const prompt = query.value.trim()
-  openAgentChat(prompt ? { prompt } : undefined)
-}
-
-function askAi() {
-  if (!canAskAi.value || !query.value.trim()) return
-  switchToAgent()
 }
 
 function enterInstanceMenu(inst: Instance) {
@@ -781,10 +726,8 @@ function invokeSelected() {
     } else {
       enterInstanceMenu(inst)
     }
-  } else if (showAiResult.value && idx === preMarketResultCount.value) {
-    askAi()
-  } else if (idx < preMarketResultCount.value + (showAiResult.value ? 1 : 0) + modrinthResults.value.length) {
-    openModrinthProject(modrinthResults.value[idx - preMarketResultCount.value - (showAiResult.value ? 1 : 0)])
+  } else if (idx < preMarketResultCount.value + modrinthResults.value.length) {
+    openModrinthProject(modrinthResults.value[idx - preMarketResultCount.value])
   }
 }
 
@@ -891,7 +834,6 @@ const inputReadonly = computed(() => !!pendingInstancePath.value)
 
 defineExpose({
   inputReadonly,
-  askAi,
   invokeSelected,
   moveSelection,
   onArrowForward,

@@ -59,26 +59,17 @@
           </div>
           <pre class="surface-rounded-item overflow-auto bg-[rgba(0,0,0,0.1)] p-5 hover:bg-[rgba(0,0,0,0.2)]">{{ data.log }}</pre>
         </div>
-        <AppCrashAIHint
-          class="col-span-3 mt-2"
-          :useCNAI="useCNAI"
-          :getPrompt="getPrompt"
-          :getAgentPrompt="getAgentPrompt"
-          @close="data.isShown = false"
-        />
       </v-card-text>
     </v-card>
   </v-dialog>
 </template>
 
 <script lang=ts setup>
-import AppCrashAIHint from '@/components/AppCrashAIHint.vue'
 import { useService } from '@/composables'
 import { kEnvironment } from '@/composables/environment'
 import { kInstance } from '@/composables/instance'
 import { kInstanceLaunch } from '@/composables/instanceLaunch'
 import { kSettingsState } from '@/composables/setting'
-import { getCrashPrompt, getCrashAgentPrompt, toVirtualInstancePath } from '@/util/crashPrompt'
 import { injection } from '@/util/inject'
 import { BaseServiceKey, InstanceLogServiceKey, LaunchServiceKey } from '@xmcl/runtime-api'
 
@@ -165,23 +156,6 @@ function openFolder() {
   }
 }
 
-const env = injection(kEnvironment)
-const useCNAI = computed(() => {
-  return env.value?.gfw || env.value?.region === 'zh-CN'
-})
-
-const { state } = injection(kSettingsState)
-function getPrompt(raw?: boolean) {
-  if (raw) {
-    return data.errorLog
-  }
-  return getCrashPrompt(useCNAI.value, data.log, data.errorLog, state.value?.locale || 'en-US')
-}
-function getAgentPrompt() {
-  const crashPath = data.crashReportLocation ? toVirtualInstancePath(data.crashReportLocation, path.value) : undefined
-  const logPath = toVirtualInstancePath(`${path.value}/${data.isServer ? 'server/logs' : 'logs'}/latest.log`, path.value)
-  return getCrashAgentPrompt(data.log, data.errorLog, crashPath, logPath, data.launchId || undefined)
-}
 </script>
 
 <style>
