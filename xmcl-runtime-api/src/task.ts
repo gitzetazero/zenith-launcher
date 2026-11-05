@@ -21,7 +21,6 @@ import { InstallAuthlibInjectorTask } from './services/AuthlibInjectorService'
 import { DownloadModMetadataDbTask } from './services/ModMetadataService'
 import { DuplicateInstanceTask } from './services/InstanceService'
 import { InstallModrinthFileTask, InstallCurseforgeFileTask } from './services/MarketService'
-import { InstallBedrockTask, InstallBedrockVersionTask } from './services/BedrockService'
 import { InstallBlueprintTask } from './services/BlueprintMarketService'
 
 export enum TaskState {
@@ -119,8 +118,6 @@ export type Tasks =
   | DuplicateInstanceTask
   | InstallModrinthFileTask
   | InstallCurseforgeFileTask
-  | InstallBedrockTask
-  | InstallBedrockVersionTask
   | InstallBlueprintTask
 
 export function isTask<T extends Tasks>(key: T['type'], task: Tasks): task is T {

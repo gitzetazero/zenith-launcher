@@ -3,7 +3,7 @@ import { isRuntimeServiceError, setRendererActionEnabled } from './rendererActio
 
 export { isRuntimeServiceError } from './rendererAction'
 
-let enabled = true
+let enabled = false // zenith: hard-off
 
 const vuetifyDetachedOverlayMessage =
   "Failed to execute 'getComputedStyle' on 'Window': parameter 1 is not of type 'Element'."

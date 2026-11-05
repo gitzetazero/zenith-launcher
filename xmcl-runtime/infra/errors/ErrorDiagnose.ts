@@ -65,7 +65,7 @@ export class ErrorDiagnose {
     // users in 0.56.4). Also covers EPERM/EBUSY on the same path —
     // OneDrive / antivirus holding the lock file open mid-install
     // (0.56.7 telemetry: 38 users, mostly Windows users with
-    // `Users\<name>\.minecraftx\instances\<inst>\.install-profile`).
+    // `Users\<name>\.minecraftz\instances\<inst>\.install-profile`).
     // Must come BEFORE the generic EPERM throttle below — otherwise
     // the first 3 are still reported, which is exactly what we want
     // to suppress entirely for this well-understood failure mode.

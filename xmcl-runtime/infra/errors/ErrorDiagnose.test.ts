@@ -62,7 +62,7 @@ describe('ErrorDiagnose - new regression suppressions', () => {
     const err = namedSysErr(
       'InstallInstanceFilesError',
       'EPERM',
-      "EPERM: operation not permitted, open 'C:\\Users\\x\\.minecraftx\\instances\\foo\\.install-profile'",
+      "EPERM: operation not permitted, open 'C:\\Users\\x\\.minecraftz\\instances\\foo\\.install-profile'",
     )
     expect(d.processError(err)).toBe(true)
   })
@@ -74,7 +74,7 @@ describe('ErrorDiagnose - new regression suppressions', () => {
     // into the generic EPERM throttle (3 events visible per session).
     const err = sysErr(
       'EPERM',
-      "EPERM: operation not permitted, stat 'C:\\Users\\range\\.minecraftx\\instances\\1.12.2-forge14.23.5.2859\\.install-profile'",
+      "EPERM: operation not permitted, stat 'C:\\Users\\range\\.minecraftz\\instances\\1.12.2-forge14.23.5.2859\\.install-profile'",
     )
     expect(d.processError(err)).toBe(true)
     expect(d.processError(err)).toBe(true)

@@ -1,5 +1,4 @@
 import { type InvalidDirectoryErrorCode } from '../services/BaseService'
-import { DEFAULT_AGENT_ENDPOINT, DEFAULT_AGENT_MODEL } from '../services/AgentService'
 import { type SettingSchema } from './setting.schema'
 import { type ReleaseInfo, type UpdateCapability } from './update'
 
@@ -27,10 +26,6 @@ export class Settings implements SettingSchema {
   globalResolution: { width?: number; height?: number; fullscreen?: boolean; monitor?: string } = {}
   discordPresence = false
   developerMode = false
-  disableTelemetry = false
-  multiplayerTransport: import('../multiplayer').MultiplayerTransport = 'webrtc'
-  agentEndpoint = DEFAULT_AGENT_ENDPOINT
-  agentModel = DEFAULT_AGENT_MODEL
   linuxTitlebar = false
   windowTranslucent = false
   quickActionShortcut = ''
@@ -121,10 +116,6 @@ export class Settings implements SettingSchema {
     this.globalEnv = config.globalEnv
     this.discordPresence = config.discordPresence
     this.developerMode = config.developerMode
-    this.disableTelemetry = config.disableTelemetry
-    this.multiplayerTransport = config.multiplayerTransport
-    this.agentEndpoint = config.agentEndpoint
-    this.agentModel = config.agentModel
     this.linuxTitlebar = config.linuxTitlebar
     this.windowTranslucent = config.windowTranslucent
     this.enableDedicatedGPUOptimization = config.enableDedicatedGPUOptimization
@@ -224,19 +215,6 @@ export class Settings implements SettingSchema {
 
   maxAPISocketsSet(val: number) {
     this.maxAPISockets = val
-  }
-
-  disableTelemetrySet(disable: boolean) {
-    this.disableTelemetry = disable
-  }
-
-  multiplayerTransportSet(transport: import('../multiplayer').MultiplayerTransport) {
-    this.multiplayerTransport = transport
-  }
-
-  agentProviderSet(provider: { endpoint: string; model: string }) {
-    this.agentEndpoint = provider.endpoint
-    this.agentModel = provider.model
   }
 
   linuxTitlebarSet(enabled: boolean) {

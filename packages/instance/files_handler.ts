@@ -19,7 +19,7 @@ export interface InstanceFileOperationHandlerContext {
 
   getCachedResource(sha1: string): Promise<string | undefined>
 
-  getPeerActualUrl: (peerUrl: string) => Promise<string | undefined>
+  getPeerActualUrl?: (peerUrl: string) => Promise<string | undefined>
 
   unzipFiles: (p: UnzipTaskPayload[], finished: Set<string>, signal: AbortSignal) => Promise<void>
 
@@ -488,7 +488,7 @@ export class InstanceFileOperationHandler {
     const peerUrl = file.downloads!.find((u) => u.startsWith('peer://'))
 
     if (peerUrl) {
-      const url = await this.context.getPeerActualUrl(peerUrl)
+      const url = await this.context.getPeerActualUrl?.(peerUrl)
       if (url) {
         urls.push(url)
       }

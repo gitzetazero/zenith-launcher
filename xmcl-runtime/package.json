@@ -46,7 +46,6 @@
         "@xmcl/mod-parser": "workspace:*",
         "@xmcl/model": "workspace:*",
         "@xmcl/modrinth": "workspace:*",
-        "@xmcl/multiplayer-core": "workspace:*",
         "@xmcl/nat-api": "workspace:*",
         "@xmcl/nbt": "workspace:*",
         "@xmcl/resource": "workspace:*",

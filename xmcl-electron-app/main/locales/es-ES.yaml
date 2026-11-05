@@ -21,5 +21,4 @@ title: XMCL
 urlFailed: >-
   URL no encontrada {url}. Revisa la URL o contacta al desarrollador.
 urlSuccess: '¡Hecho! Ya puedes cerrar esta ventana y volver al lanzador.'
-multiplayer: Multijugador P2P
 makeDesktopShortcut: Crear acceso directo en el escritorio

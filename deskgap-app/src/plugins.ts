@@ -1,4 +1,3 @@
-import { pluginAgentProtocol } from '@xmcl/runtime/agent'
 import type { LauncherAppPlugin } from '@xmcl/runtime/app'
 import { pluginApiFallback } from '@xmcl/runtime/app/pluginApiFallback'
 import { pluginCommonProtocol } from '@xmcl/runtime/app/pluginCommonProtocol'
@@ -48,7 +47,6 @@ const pluginLocalization: LauncherAppPlugin = async (app) => {
 }
 
 export const plugins: LauncherAppPlugin[] = [
-  pluginAgentProtocol,
   pluginCommandHost({ services: definedServices }),
   pluginCli,
   pluginApiFallback,

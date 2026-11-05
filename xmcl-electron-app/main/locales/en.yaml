@@ -20,5 +20,4 @@ task:
 title: XMCL
 urlFailed: Unknown url {url}. Please check your url or contact developer!
 urlSuccess: Success! You can return to the launcher.
-multiplayer: P2P Multiplayer
 makeDesktopShortcut: Make Desktop Shortcut

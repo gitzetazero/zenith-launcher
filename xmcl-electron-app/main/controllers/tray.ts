@@ -65,13 +65,6 @@ export const trayPlugin: ControllerPlugin = function (this: ElectronController) 
         enabled: !!checkUpdate,
       },
       {
-        label: t('multiplayer'),
-        type: 'normal',
-        click: () => {
-          this.openMultiplayer()
-        },
-      },
-      {
         label: t('makeDesktopShortcut'),
         type: 'normal',
         click: () => {

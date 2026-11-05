@@ -1,6 +1,7 @@
+import { zenithDataPath } from '../zenith/dataFolder'
 import { getPlatform } from '@xmcl/core'
 import type { InstallEvent } from '@xmcl/installer'
-import { AgentRunTrace, InstalledAppManifest, Platform, createPromiseSignal } from '@xmcl/runtime-api'
+import { InstalledAppManifest, Platform, createPromiseSignal } from '@xmcl/runtime-api'
 import { EventEmitter } from 'events'
 import { ensureDir, readFile, writeFile } from 'fs-extra'
 import { Server, createServer } from 'http'
@@ -60,7 +61,6 @@ export interface LauncherApp {
   on(channel: 'download-cdn', listener: (reason: string, file: string) => void): this
   on(channel: 'download-performance', listener: (payload: DownloadPerformanceTelemetryEvent) => void): this
   on(channel: 'install-manifest', listener: (event: InstallEvent) => void): this
-  on(channel: 'agent-run-trace', listener: (payload: AgentRunTrace) => void): this
   on(channel: 'microsoft-auth-telemetry', listener: (payload: MicrosoftAuthTelemetryEvent) => void): this
   on(channel: 'second-instance', listener: (argv: string[]) => void): this
   on(channel: 'direct-launch', listener: (data: any) => void): this
@@ -73,7 +73,6 @@ export interface LauncherApp {
   once(channel: 'download-cdn', listener: (reason: string, file: string) => void): this
   once(channel: 'download-performance', listener: (payload: DownloadPerformanceTelemetryEvent) => void): this
   once(channel: 'install-manifest', listener: (event: InstallEvent) => void): this
-  once(channel: 'agent-run-trace', listener: (payload: AgentRunTrace) => void): this
   once(channel: 'microsoft-auth-telemetry', listener: (payload: MicrosoftAuthTelemetryEvent) => void): this
   once(channel: 'second-instance', listener: (argv: string[]) => void): this
   once(channel: 'direct-launch', listener: (data: any) => void): this
@@ -86,7 +85,6 @@ export interface LauncherApp {
   emit(channel: 'download-cdn', reason: string, file: string): this
   emit(channel: 'download-performance', payload: DownloadPerformanceTelemetryEvent): this
   emit(channel: 'install-manifest', event: InstallEvent): this
-  emit(channel: 'agent-run-trace', payload: AgentRunTrace): this
   emit(channel: 'microsoft-auth-telemetry', payload: MicrosoftAuthTelemetryEvent): this
   emit(channel: 'second-instance', argv: string[]): this
   emit(channel: 'direct-launch', data: any): this
@@ -109,7 +107,7 @@ export class LauncherApp extends EventEmitter {
   readonly appDataPath: string
 
   /**
-   * The .minecraft folder in Windows or minecraft folder in linux/mac
+   * Zenith's game data folder (`.minecraftz` under appData)
    */
   readonly minecraftDataPath: string
 
@@ -228,7 +226,7 @@ export class LauncherApp extends EventEmitter {
     }
     this.appDataPath = join(appData, LAUNCHER_NAME)
     setZenithConfigDirectory(this.appDataPath) // zenith
-    this.minecraftDataPath = join(appData, this.platform.os === 'osx' ? 'minecraft' : '.minecraft')
+    this.minecraftDataPath = zenithDataPath(appData, this.platform.os) // zenith: .minecraftz
 
     this.registry.register(LauncherAppKey, this)
     this.controller = getController(this)

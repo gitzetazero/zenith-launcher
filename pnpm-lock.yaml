@@ -1075,9 +1075,6 @@ importers:
       '@xmcl/installer':
         specifier: workspace:*
         version: link:../packages/installer
-      '@xmcl/multiplayer-core':
-        specifier: workspace:*
-        version: link:../packages/multiplayer-core
       '@xmcl/nat-api':
         specifier: workspace:*
         version: link:../packages/nat-api
@@ -1102,9 +1099,6 @@ importers:
       '@xmcl/windows-utils':
         specifier: ^0.0.15
         version: 0.0.15
-      '@xmcl/wrtc-multiplayer':
-        specifier: workspace:*
-        version: link:../packages/wrtc-multiplayer
       app-builder-lib:
         specifier: ~26.15.3
         version: 26.15.3(dmg-builder@26.15.3)(electron-builder-squirrel-windows@26.15.3)
@@ -1463,9 +1457,6 @@ importers:
       '@xmcl/modrinth':
         specifier: workspace:*
         version: link:../packages/modrinth
-      '@xmcl/multiplayer-core':
-        specifier: workspace:*
-        version: link:../packages/multiplayer-core
       '@xmcl/nat-api':
         specifier: workspace:*
         version: link:../packages/nat-api
@@ -3302,6 +3293,7 @@ packages:
   '@smithy/core@3.29.7':
     resolution: {integrity: sha512-BiEE2bnnGoPKdlGe3L+gOYORDHFGPuYVRLP7iUow/Sflm0B4hC4XY3FC1MRuc7ltzpW2xNnXopKi34TTkULlKQ==}
     engines: {node: '>=18.0.0'}
+    deprecated: Deprecated due to a bug in custom logger data redaction. See https://github.com/aws/aws-sdk-js-v3/issues/8393.
 
   '@smithy/credential-provider-imds@4.4.12':
     resolution: {integrity: sha512-ZZPDbl/aRp77aycuoMlo3BTayT4CE2a3uoqETYZU5ySnVbhpl5IJiY7dCZedn+ZusyDLqVv44IvKBiXd2/nK0Q==}

@@ -1,14 +1,11 @@
 import { pluginAutoUpdate } from './pluginAutoUpdate'
-import { pluginAgentDocuments } from './pluginAgentDocuments'
 import { pluginIconProtocol } from './pluginIconProtocol'
 import { pluginDiscreteGPULinux } from './pluginDiscreteGPULinux'
 import { pluginLinuxDisplay } from './pluginLinuxDisplay'
 import { pluginPowerMonitor } from './pluginPowerMonitor'
-import { pluginMultiplayer } from './pluginMultiplayer'
 import { pluginZenith } from './pluginZenith'
 
 import { pluginApiFallback } from '@xmcl/runtime/app/pluginApiFallback'
-import { pluginAgentProtocol } from '@xmcl/runtime/agent'
 import { pluginCommonProtocol } from '@xmcl/runtime/app/pluginCommonProtocol'
 import { pluginMediaProtocol } from '@xmcl/runtime/app/pluginMediaProtocol'
 import { pluginCli } from '@xmcl/runtime/commands/pluginCli'
@@ -52,9 +49,6 @@ import { definedServices } from './definedServices'
 
 export const definedPlugins: LauncherAppPlugin[] = [
   pluginZenith, // zenith
-  pluginMultiplayer,
-  pluginAgentDocuments,
-  pluginAgentProtocol,
   pluginCommandHost({ services: definedServices }),
   pluginCli,
   pluginAutoUpdate,
