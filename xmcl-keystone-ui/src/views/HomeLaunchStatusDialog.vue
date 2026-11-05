@@ -1,7 +1,7 @@
 <template>
   <v-dialog
     v-model="isShown"
-    :width="javaIssue ? 580 : 380"
+    :width="380"
   >
     <v-card class="h-full flex select-none flex-col launch-status-card">
       <v-card-item v-if="exiting">
@@ -10,13 +10,13 @@
         </v-card-title>
       </v-card-item>
       <AppLoadingCircular
-        v-if="launching || !windowReady || javaIssue"
+        v-if="launching || !windowReady"
         class="mb-4"
         :texts="launchingSteps"
         :secondary-hint="launchingStatus !== ''"
         :hint="hint"
       >
-        <template v-if="!javaIssue">
+        <template v-if="true">
           <div class="mx-10 my-3 flex flex-col items-center justify-center gap-1">
             <VTypical
               class="blink"
@@ -31,33 +31,10 @@
             </div>
           </div>
         </template>
-        <div
-          v-else
-          class="mt-5 flex flex-col items-center justify-center"
-        >
-          <div class="flex items-center gap-1">
-            <v-icon
-              size="15"
-              color="red"
-            >
-              warning
-            </v-icon>
-            {{ javaHints[0] }}
-            <v-icon
-              size="15"
-              color="red"
-            >
-              warning
-            </v-icon>
-          </div>
-          <v-card-text class="py-1 text-center">
-            {{ javaHints[1] }}
-          </v-card-text>
-        </div>
       </AppLoadingCircular>
 
       <v-alert
-        v-if="showElyByWarning && !javaIssue"
+        v-if="showElyByWarning"
         type="warning"
         dense
         outlined
@@ -72,7 +49,7 @@
         class="flex p-3 gap-3"
       >
         <v-btn
-          v-if="exiting || javaIssue"
+          v-if="exiting"
           @click="onCancel"
          variant="text">
           {{ t('shared.cancel') }}
@@ -98,32 +75,6 @@
           </v-icon>
           {{ t('launch.forceKill') }}
         </v-btn>
-        <template v-if="javaIssue && !selected">
-          <v-btn
-            v-if="javaIssue !== 'missing'"
-            color="warning"
-            :loading="selected"
-            @click="onLaunchAnyway"
-           variant="text">
-            <v-icon start>
-              play_arrow
-            </v-icon>
-            {{ t('launch.launchAnyway') }}
-          </v-btn>
-          <v-btn
-            v-if="status?.preferredJava"
-            color="primary"
-            :loading="selected"
-            @click="selectLocalJava"
-          >
-            <v-icon start>
-              play_arrow
-            </v-icon>
-            {{ t('HomeJavaIssueDialog.optionSwitch.name', {
-              version: status?.javaVersion ?
-                status?.javaVersion.majorVersion : status?.javaVersion ? status?.javaVersion.majorVersion : '' }) }}
-          </v-btn>
-        </template>
         <v-btn
           v-if="refreshUserTimeout"
           color="primary"
@@ -149,28 +100,21 @@
 <script lang=ts setup>
 import AppLoadingCircular from '@/components/AppLoadingCircular.vue'
 import VTypical from '@/components/VTyping.vue'
-import { useService } from '@/composables'
 import { kInstance } from '@/composables/instance'
-import { kInstanceJava } from '@/composables/instanceJava'
 import { kInstanceLaunch } from '@/composables/instanceLaunch'
 import { injection } from '@/util/inject'
-import { InstanceServiceKey } from '@xmcl/runtime-api'
 import { useDialog } from '../composables/dialog'
 import { LaunchStatusDialogKey } from '../composables/launch'
-import { kInstanceJavaDiagnose, type InstanceJavaIssue } from '@/composables/instanceJavaDiagnose'
 import { kUserContext } from '@/composables/user'
 import { kSettingsState } from '@/composables/setting'
 
 const { t } = useI18n()
-const { launching, windowReady, kill, launchingStatus, launch, skipRefresh, skipAuthLib } = injection(kInstanceLaunch)
-const { bypass } = injection(kInstanceJavaDiagnose)
+const { launching, windowReady, kill, launchingStatus, skipRefresh, skipAuthLib } = injection(kInstanceLaunch)
 const { userProfile } = injection(kUserContext)
 const { state: settings } = injection(kSettingsState)
 const { instance } = injection(kInstance)
 
 const exiting = ref(false)
-const selected = ref(false)
-const javaIssue = ref<InstanceJavaIssue | undefined>()
 
 const isElyBy = computed(() => userProfile.value.authority.indexOf('authserver.ely.by') !== -1)
 const disableElyByAuthlib = computed(() => instance.value.disableElybyAuthlib ?? settings.value?.globalDisableElyByAuthlib ?? false)
@@ -178,27 +122,11 @@ const showElyByWarning = computed(() => isElyBy.value && !disableElyByAuthlib.va
 
 const { isShown, show, hide } = useDialog(LaunchStatusDialogKey, (param) => {
   exiting.value = !!param?.isKill
-  javaIssue.value = param?.javaIssue
 }, () => {
   exiting.value = false
-  selected.value = false
   refreshUserTimeout.value = false
   authLibTimeout.value = false
-  javaIssue.value = undefined
 })
-
-const { path } = injection(kInstance)
-const { editInstance } = useService(InstanceServiceKey)
-async function selectLocalJava() {
-  selected.value = true
-  if (status.value?.preferredJava) {
-    const javaPath = status.value.preferredJava.path
-    await editInstance({ instancePath: path.value, java: javaPath })
-    await launch('client', {
-      java: javaPath,
-    })
-  }
-}
 
 const refreshUserTimeout = ref(false)
 const authLibTimeout = ref(false)
@@ -233,36 +161,6 @@ const hint = computed(() => launchingStatus.value === 'preparing-authlib'
         ? t('launchStatus.spawningProcess')
         : '')
 
-const { status } = injection(kInstanceJava)
-const javaHints = computed(() => {
-  const type = javaIssue.value
-  if (!type) {
-    return []
-  }
-
-  const stat = status.value
-  if (!stat) {
-    return []
-  }
-
-  if (type === 'invalid') {
-    return [t('diagnosis.invalidJava.name')]
-  }
-  if (type === 'incompatible') {
-    return [
-      t('HomeJavaIssueDialog.incompatibleJava', { javaVersion: stat.java?.version ?? stat.javaPath ?? '' }),
-      t('diagnosis.incompatibleJava.name', { version: stat.preference.requirement, javaVersion: stat.java?.version || '' }),
-    ]
-  }
-  if (type === 'missing') {
-    return [
-      t('HomeJavaIssueDialog.missingJava'),
-      t('HomeJavaIssueDialog.missingJavaHint'),
-    ]
-  }
-  return []
-})
-
 const launchingSteps = computed(() => [
   t('launchStatus.launching'),
   4000,
@@ -285,12 +183,6 @@ watch(windowReady, (ready) => {
     hide()
   }
 })
-
-function onLaunchAnyway() {
-  selected.value = true
-  launch()
-  bypass()
-}
 </script>
 
 <style scoped="true">

@@ -14,7 +14,6 @@ import {
 } from '@/composables/instanceDefaultSource'
 import { kInstanceFiles, useInstanceFiles } from '@/composables/instanceFiles'
 import { kInstanceJava, useInstanceJava } from '@/composables/instanceJava'
-import { kInstanceJavaDiagnose, useInstanceJavaDiagnose } from '@/composables/instanceJavaDiagnose'
 import { kInstanceLaunch, useInstanceLaunch } from '@/composables/instanceLaunch'
 import { kInstanceModsContext, useInstanceMods } from '@/composables/instanceMods'
 import { kInstanceOptions, useInstanceOptions } from '@/composables/instanceOptions'
@@ -110,7 +109,6 @@ export default defineComponent({
       java.all,
       computed(() => settings.state.value?.globalJava),
     )
-    provide(kInstanceJavaDiagnose, useInstanceJavaDiagnose(instanceJava))
     const instanceDefaultSource = useInstanceDefaultSource(instance.path)
     const options = useInstanceOptions(instance.path)
     const saves = useInstanceSaves(instance.path)

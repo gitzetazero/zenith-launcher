@@ -76,6 +76,7 @@ describe('InstanceService icon storage', () => {
       appDataPath,
       registryDisposer: vi.fn(),
       minecraftDataPath: appDataPath,
+      host: { getPath: () => appDataPath },
       getLogger: () => logger,
       controller: { broadcast: vi.fn() },
       mutex: { of: vi.fn() },
@@ -170,7 +171,7 @@ describe('InstanceService icon storage', () => {
     expect(await readFile(join(instancePath, 'icon.gif'))).toEqual(animatedGif)
   })
 
-  test('persists an animated remote thumbnail when creating a modpack instance', async () => {
+  test('persists an animated remote thumbnail when creating a Zenith instance', async () => {
     const state = new InstanceState() as InstanceState & { subscribe: ReturnType<typeof vi.fn> }
     state.subscribe = vi.fn()
     const icon = 'https://media.forgecdn.net/avatars/thumbnails/1735/273/256/256/icon_animated.gif'
@@ -180,15 +181,25 @@ describe('InstanceService icon storage', () => {
     const service = createService(state, fetch)
 
     const path = await service.createInstance({
-      name: 'GIF modpack',
-      runtime: { minecraft: '1.20.1' },
+      name: 'GIF instance',
       icon,
-      upstream: { type: 'curseforge-modpack', modId: 385053, fileId: 8813051 },
     })
 
     expect(fetch).toHaveBeenCalledExactlyOnceWith(icon)
     expect(state.all[path].icon).toBe(`http://launcher/media?path=${join(path, 'icon.gif')}`)
     expect((await readJson(join(path, 'instance.json'))).icon).toBe('icon.gif')
     expect(await readFile(join(path, 'icon.gif'))).toEqual(animatedGif)
+  })
+
+  // zenith: createInstance only ever creates Zenith instances (xmcl-runtime/zenith/only.ts)
+  test('createInstance refuses a Forge instance and pins a plain one to Zenith', async () => {
+    const state = new InstanceState() as InstanceState & { subscribe: ReturnType<typeof vi.fn> }
+    state.subscribe = vi.fn()
+    const service = createService(state)
+    await expect(service.createInstance({ name: 'Forge', runtime: { minecraft: '1.20.1', forge: '47.0.0' } } as any))
+      .rejects.toThrow(/only create Zenith instances/)
+    const path = await service.createInstance({ name: 'Old', runtime: { minecraft: '1.12.2' } })
+    expect(state.all[path].runtime.minecraft).toBe('26.3')
+    expect(state.all[path].prependCommand).toBe('')
   })
 })

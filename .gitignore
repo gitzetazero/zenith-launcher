@@ -24,8 +24,10 @@ package-lock.json
 ## CODE EDITORS
 !.vscode/
 !.zed/
-/docs/
+/docs/*
 !/docs/tutorial/
+!/docs/branding/
+!/docs/ZENITH-LAUNCHER.md
 
 # e2e artifacts
 e2e/artifacts/

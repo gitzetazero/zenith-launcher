@@ -55,18 +55,12 @@
         @container-resized="onResized"
         @resized="onResized"
       >
-        <HomeModCard
-          v-if="isType(item.i, CardType.Mod)"
-          :row-count="modRowCount"
-          :row="item.h - 4"
-        />
         <HomeResourcePacksCard
-          v-else-if="isType(item.i, CardType.ResourcePack)"
+          v-if="isType(item.i, CardType.ResourcePack)"
           :row-count="resourcePackRowCount"
           :row="item.h - 4"
         />
         <HomeShaderPackCard v-else-if="isType(item.i, CardType.ShaderPack)" />
-        <HomeBlueprintCard v-else-if="isType(item.i, CardType.Blueprint)" />
         <HomeSavesCard
           v-else-if="isType(item.i, CardType.Save)"
           :row-count="saveRowCount"
@@ -109,14 +103,12 @@ import { injection } from '@/util/inject'
 import { useLocalStorage, useResizeObserver } from '@vueuse/core'
 import { useDebounceFn } from '@vueuse/core'
 import { GridItem, GridLayout } from 'grid-layout-plus'
-import HomeModCard from './HomeModCard.vue'
 import HomeResourcePacksCard from './HomeResourcePacksCard.vue'
 import HomeSavesCard from './HomeSavesCard.vue'
 import HomeScreenshotCard from './HomeScreenshotCard.vue'
 import HomeServerCard from './HomeServerCard.vue'
 import HomeShaderPackCard from './HomeShaderPackCard.vue'
 import HomeWorldCard from './HomeWorldCard.vue'
-import HomeBlueprintCard from './HomeBlueprintCard.vue'
 
 const { t } = useI18n()
 const { instance, path: instancePath } = injection(kInstance)
@@ -390,7 +382,6 @@ const onResized = (i: string, newH: number, newW: number, newHPx: number, newWPx
 
 const getRowCount = (width: number) => (width ? Math.floor((width - 34) / 30) : 7)
 const resourcePackRowCount = computed(() => getRowCount(containerWidths[CardType.ResourcePack]))
-const modRowCount = computed(() => getRowCount(containerWidths[CardType.Mod]))
 const saveRowCount = computed(() => getRowCount(containerWidths[CardType.Save]))
 
 function hideCard(id: string) {

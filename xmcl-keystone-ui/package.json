@@ -28,8 +28,6 @@
         "i18n:daemon": "node ./scripts/i18n.mjs daemon"
     },
     "dependencies": {
-        "@earendil-works/pi-agent-core": "0.81.1",
-        "@earendil-works/pi-ai": "0.81.1",
         "@mdi/font": "^7.4.47",
         "@vueuse/core": "^14.3.0",
         "@xmcl/core": "workspace:*",

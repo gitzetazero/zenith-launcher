@@ -6,6 +6,7 @@ import { kSettings } from '~/settings'
 import { LauncherApp } from '../app/LauncherApp'
 import { LaunchService } from '../launch/LaunchService'
 import { getZenithConfig } from '../zenith/config'
+import { buildZenithActivity, isPresenceConfigured } from '../zenith/presence'
 
 @ExposeServiceKey(PresenceServiceKey)
 export class PresenceService extends AbstractService implements IPresenceService {
@@ -13,13 +14,14 @@ export class PresenceService extends AbstractService implements IPresenceService
   private current: SetActivity = {
   }
   private runningGameCount = 0
+  private configured = false
 
   constructor(@Inject(LauncherAppKey) app: LauncherApp,
     @Inject(kSettings) private settings: SharedState<Settings>,
     @Inject(LaunchService) launchService: LaunchService,
   ) {
     super(app, async () => {
-      if (settings.discordPresence) {
+      if (settings.discordPresence && this.configured) {
         try {
           await this.discord.connect()
         } catch (e) {
@@ -30,11 +32,12 @@ export class PresenceService extends AbstractService implements IPresenceService
 
     // Initialize Discord client first before setting up event listeners
     // zenith: XMCL's Discord application id is not carried over; presence stays off until ZENITH_DISCORD_CLIENT_ID is set
-    this.discord = new Client({
-      clientId: getZenithConfig('discordClientId'),
-    })
+    const clientId = getZenithConfig('discordClientId')
+    this.configured = isPresenceConfigured(clientId)
+    this.discord = new Client({ clientId })
 
     settings.subscribe('discordPresenceSet', async (state) => {
+      if (!this.configured) return
       if (state) {
         await this.discord.connect().catch((e: any) => {
           this.warn('Fail to connect to discord. %o', e)
@@ -92,7 +95,7 @@ export class PresenceService extends AbstractService implements IPresenceService
   }
 
   async setActivity(activity: string): Promise<void> {
-    if (!this.settings.discordPresence) {
+    if (!this.settings.discordPresence || !this.configured) {
       return
     }
     // Don't update Discord presence if any game is running
@@ -107,10 +110,7 @@ export class PresenceService extends AbstractService implements IPresenceService
         return
       }
     }
-    const param = this.current
-    this.current.largeImageKey = 'dark_512'
-    this.current.startTimestamp = Date.now()
-    this.current.details = activity
+    const param = this.current = buildZenithActivity(activity, Date.now())
     await this.discord.user?.setActivity(param).catch((e: any) => {
       this.warn('Fail to set discord presence. %o', e)
     })

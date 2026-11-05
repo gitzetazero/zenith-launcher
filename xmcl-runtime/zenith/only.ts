@@ -30,7 +30,7 @@ export function zenithJavaPath({ env, appData, platform }: ZenithGuardEnv): stri
  * Turns the creation payload into a Zenith instance or throws. The Minecraft version is always Zenith's pinned one,
  * `java` is the bridge shim and nothing Java-specific (arguments, memory, command) is accepted.
  */
-export function enforceZenithInstance<T extends Record<string, any>>(payload: T, guard: ZenithGuardEnv): T {
+export function enforceZenithInstance<T extends Record<string, any>>(payload: T, guard: ZenithGuardEnv): T & Record<string, any> {
   if (payload.edition && payload.edition !== 'java') throw new ZenithOnlyError(`edition "${payload.edition}"`)
   if (payload.upstream) throw new ZenithOnlyError('modpack upstreams are not supported')
   if (payload.server) throw new ZenithOnlyError('server presets are not supported')

@@ -38,8 +38,8 @@
 
       <AppSideBarItem
         data-testid="nav-store"
-        v-shared-tooltip.right="() => t('store.name', 2)"
-        to="/store"
+        v-shared-tooltip.right="() => t('zenithMarket.name')"
+        to="/market"
         :aria-label="storeAriaLabel"
       >
         <v-icon class="sidebar-item__icon" :size="28">
@@ -123,9 +123,9 @@
 
       <v-btn
         data-testid="nav-store"
-        v-shared-tooltip.bottom="t('store.name', 2)"
+        v-shared-tooltip.bottom="t('zenithMarket.name')"
         icon
-        to="/store"
+        to="/market"
         :aria-label="storeAriaLabel"
         class="non-moveable mr-1"
       >
@@ -204,7 +204,7 @@ const route = useRoute()
 const navigationAriaLabel = 'Sidebar navigation'
 const backAriaLabel = computed(() => t('shared.back'))
 const myStuffAriaLabel = computed(() => t('myStuff'))
-const storeAriaLabel = computed(() => t('store.name', 2))
+const storeAriaLabel = computed(() => t('zenithMarket.name'))
 const settingsAriaLabel = computed(() => t('setting.name', 2))
 
 function goBack() {

@@ -647,28 +647,8 @@ async function deleteInstance(inst: Instance) {
 async function openModrinthProject(p: SearchResultHit) {
   hide()
   await nextTick()
-  const localRoute = localPageForProjectType(p.project_type)
-  if (localRoute) {
-    await router.push({
-      path: localRoute,
-      query: {
-        source: 'remote',
-        keyword: p.title,
-        id: `modrinth:${p.project_id}`,
-      },
-    })
-  } else {
-    await router.push(`/store/modrinth/${p.project_id}`)
-  }
-}
-
-function localPageForProjectType(type: string): string | undefined {
-  switch (type) {
-    case 'mod': return '/mods'
-    case 'resourcepack': return '/resourcepacks'
-    case 'shader': return '/shaderpacks'
-    default: return undefined
-  }
+  // zenith: Modrinth projects open in the Zenith Market
+  await router.push({ path: `/market/modrinth/${p.project_id}`, query: p.project_type === 'resourcepack' ? { kind: 'resourcepack' } : p.project_type === 'shader' ? { kind: 'shader' } : {} })
 }
 
 function invokeSetting(s: SettingsSearchItem) {

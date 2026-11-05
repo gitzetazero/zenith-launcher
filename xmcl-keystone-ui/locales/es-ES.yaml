@@ -2449,3 +2449,48 @@ bigPicture:
 
 zenith:
   aboutCredit: Zenith Launcher se basa en X Minecraft Launcher (XMCL) de Voxelum, licencia MIT
+  about:
+    author: Autor y mantenedor
+    credits: Créditos
+    horizon: El motor de juego de Zenith es un fork de Horizon, la reimplementación de Minecraft en Rust.
+    license: Licencia
+    repository: Repositorio de Zenith
+    version: Versión
+    xmcl: Zenith Launcher se basa en X Minecraft Launcher (XMCL) de Voxelum / ci010, licencia MIT.
+  create:
+    action: Crear
+    exists: Ya existe una instancia con este nombre.
+    hint: Zenith Launcher solo juega a Zenith. La versión del juego, los archivos y los ajustes de lanzamiento se gestionan por ti.
+    title: Crear una instancia de Zenith
+zenithMarket:
+  downloads: "{count} descargas"
+  empty: No se encontró nada
+  emptyHint: Prueba otra búsqueda, otra categoría o activa «Mostrar todo».
+  install: Instalar
+  installed: "{name} instalado"
+  installFailed: "No se pudo instalar {name}"
+  kind:
+    datapack: Paquetes de datos
+    mod: Mods
+    modpack: Modpacks
+    nativeMod: Mods nativos
+    resourcepack: Paquetes de recursos
+    shader: Paquetes de shaders
+  name: Zenith Market
+  nativeNote: Los mods nativos se compilan dentro del juego, así que necesitan una recompilación de Zenith. Se muestran pero aún no se pueden instalar desde el launcher.
+  noWorlds: Esta instancia aún no tiene mundos
+  openPage: Abrir la página del proyecto
+  pickWorld: Instalar en el mundo
+  recommended: Recomendada
+  requiresRebuild: Requiere recompilación
+  searchHint: Buscar en Zenith Market...
+  showEverything: Mostrar todo
+  source:
+    zenith: Registro de Zenith
+  sourceError: "No se pudo conectar con {source}."
+  support:
+    no: No funciona
+    partial: Parcial
+    works: Funciona
+  tagline: Mods, shaders, paquetes de recursos y paquetes de datos que funcionan en Zenith.
+  versions: Versiones

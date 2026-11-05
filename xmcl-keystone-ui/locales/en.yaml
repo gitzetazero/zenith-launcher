@@ -2828,3 +2828,48 @@ bigPicture:
 
 zenith:
   aboutCredit: Zenith Launcher is based on X Minecraft Launcher (XMCL) by Voxelum, MIT license
+  about:
+    author: Author and maintainer
+    credits: Credits
+    horizon: Zenith's game engine is a fork of Horizon, the Rust reimplementation of Minecraft.
+    license: Licence
+    repository: Zenith repository
+    version: Version
+    xmcl: Zenith Launcher is based on X Minecraft Launcher (XMCL) by Voxelum / ci010, MIT license.
+  create:
+    action: Create
+    exists: An instance with this name already exists.
+    hint: Zenith Launcher plays Zenith only. The game version, files and launch settings are managed for you.
+    title: Create a Zenith instance
+zenithMarket:
+  downloads: "{count} downloads"
+  empty: Nothing found
+  emptyHint: Try another search, another category or turn on "Show everything".
+  install: Install
+  installed: "{name} installed"
+  installFailed: "Could not install {name}"
+  kind:
+    datapack: Data packs
+    mod: Mods
+    modpack: Modpacks
+    nativeMod: Native mods
+    resourcepack: Resource packs
+    shader: Shader packs
+  name: Zenith Market
+  nativeNote: Native mods are compiled into the game, so they need a Zenith rebuild. They are listed but cannot be installed from the launcher yet.
+  noWorlds: This instance has no worlds yet
+  openPage: Open the project page
+  pickWorld: Install into world
+  recommended: Recommended
+  requiresRebuild: Requires rebuild
+  searchHint: Search the Zenith Market...
+  showEverything: Show everything
+  source:
+    zenith: Zenith registry
+  sourceError: "{source} could not be reached."
+  support:
+    no: Doesn't run
+    partial: Partly
+    works: Works
+  tagline: Mods, shader packs, resource packs and data packs that run in Zenith.
+  versions: Versions

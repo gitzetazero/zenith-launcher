@@ -550,20 +550,11 @@ const items = computed<FooterItem[]>(() => {
       },
     ] : [
       {
-        id: String(CardType.Mod),
-        icon: 'extension',
-        tooltip: t('mod.name'),
-        text: dragover.value ? t('mod.dropHint') : t('mod.enabled', { count: enabledMods.value.length }),
-        install: () => push('/mods?source=remote'),
-        setting: () => push('/mods'),
-        drop: onDropMod,
-      },
-      {
         id: String(CardType.ResourcePack),
         icon: 'palette',
         tooltip: t('resourcepack.name'),
         text: dragover.value ? t('resourcepack.dropHint') : t('resourcepack.enable', { count: enabledResourcePacks.value.length }),
-        install: () => push('/resourcepacks?source=remote'),
+        install: () => push('/market'),
         setting: () => push('/resourcepacks'),
         drop: onDropResourcePack,
       },
@@ -572,7 +563,7 @@ const items = computed<FooterItem[]>(() => {
         icon: 'gradient',
         tooltip: t('shaderPack.name'),
         text: dragover.value ? t('shaderPack.dropHint') : (shaderPack.value || t('shaderPack.empty')),
-        install: () => push('/shaderpacks?source=remote'),
+        install: () => push('/market'),
         setting: () => push('/shaderpacks'),
         drop: onDropShaderPack,
       },
@@ -584,15 +575,6 @@ const items = computed<FooterItem[]>(() => {
         install: () => push('/save?source=remote'),
         setting: () => push('/save'),
         drop: onDropSave,
-      },
-      {
-        id: String(CardType.Blueprint),
-        icon: 'view_in_ar',
-        tooltip: t('blueprint.name', 2),
-        text: t('blueprint.name', 2),
-        install: () => push('/blueprints?source=market'),
-        setting: () => push('/blueprints'),
-        drop: () => {},
       },
     ]
 
@@ -679,15 +661,7 @@ const items = computed<FooterItem[]>(() => {
       }
     })
   } else {
-    return [{
-      icon: 'extension',
-      tooltip: t('mod.name'),
-      text: dragover.value ? t('mod.dropHint') : t('mod.enabled', { count: enabledMods.value.length }),
-      highlighted: false,
-      install: () => push('/mods?source=remote'),
-      setting: () => push('/mods'),
-      drop: onDropMod
-    }]
+    return []
   }
 })
 

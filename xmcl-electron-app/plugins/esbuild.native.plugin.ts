@@ -236,51 +236,6 @@ module.exports = require(findFile(${JSON.stringify(iconvName)}))`,
         },
       )
 
-      // Intercept node_modules\node-datachannel\dist\esm\polyfill\RTCPeerConnection.mjs
-      build.onLoad(
-        { filter: /^.+node-datachannel[\\/]dist[\\/]esm[\\/]polyfill[\\/]RTCPeerConnection\.mjs$/ },
-        async ({ path }) => {
-          let content = (await
-            readFile(path, 'utf-8'))
-
-          // replace `constructor(init = {}) {` to `constructor(init = {}, PeerConnection) {`
-          content = content.replace('constructor(config = { iceServers: [], iceTransportPolicy: "all" }) {', 'constructor(config = { iceServers: [], iceTransportPolicy: "all" }, PeerConnection) {')
-          // remove the line `import { PeerConnection } from '../lib/index.mjs';`
-          content = content.replace(/import { PeerConnection } from '..\/lib\/index.mjs';/, '')
-
-          return {
-            contents: content,
-            loader: 'js',
-          }
-        },
-      )
-
-      // Intercept node_modules\node-datachannel\dist\esm\lib\node-datachannel.mjs
-      build.onLoad(
-        { filter: /^.+node-datachannel[\\/]dist[\\/]esm[\\/]lib[\\/]node-datachannel\.mjs$/ },
-        async ({ path }) => {
-          return {
-            contents: `
-            import mod from '../../../build/Release/node_datachannel.node';
-            export default mod;
-            `,
-            loader: 'js',
-          }
-        },
-      )
-
-      // Intercept node_modules\node-datachannel\dist\esm\lib\index.mjs
-      // manually tree shaking
-      build.onLoad(
-        { filter: /^.+node-datachannel[\\/]dist[\\/]esm[\\/]lib[\\/]node-datachannel\.mjs$/ },
-        async ({ path }) => {
-          return {
-            contents: `import nodeDataChannel from './node-datachannel.mjs'; const PeerConnection = nodeDataChannel.PeerConnection; export { PeerConnection };`,
-            loader: 'js',
-          }
-        },
-      )
-
       if (!isDev) {
         const opts = build.initialOptions
         opts.loader = opts.loader || {}

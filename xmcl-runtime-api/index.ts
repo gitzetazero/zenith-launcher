@@ -75,6 +75,7 @@ export * from './src/services/UserService'
 export * from './src/services/VersionMetadataService'
 export * from './src/services/VersionService'
 export * from './src/services/XUpdateService'
+export * from './src/services/ZenithMarketService'
 
 export * from './src/apps'
 export * from './migration'

@@ -46,8 +46,8 @@
           data-testid="nav-store"
           icon="store"
           :icon-size="iconSize"
-          :tooltip="() => ({ text: t('store.name', 2), direction: tooltipDirection })"
-          to="/store"
+          :tooltip="() => ({ text: t('zenithMarket.name'), direction: tooltipDirection })"
+          to="/market"
         />
 
         <div class="sidebar-notch__divider moveable" />

@@ -83,13 +83,12 @@ export interface CardDescriptor {
   label: string
 }
 
+// zenith: Java mods and blueprints (schematics) are not part of Zenith; their card types stay in the enum so saved layouts keep their numbers
 export const SINGLETON_TYPES = [
-  CardType.Mod,
   CardType.ResourcePack,
   CardType.ShaderPack,
   CardType.Save,
   CardType.Screenshots,
-  CardType.Blueprint,
 ]
 
 export function useAllCards() {

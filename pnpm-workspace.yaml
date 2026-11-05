@@ -22,7 +22,7 @@ allowBuilds:
   esbuild: true
   keytar: true
   koffi: true
-  node-datachannel: true
+  node-datachannel: set this to true or false
   protobufjs: true
   ssh2: true
   vue-demi: true

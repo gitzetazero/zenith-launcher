@@ -36,6 +36,7 @@ import { ServerStatusService } from '@xmcl/runtime/serverStatus'
 import { ThemeService } from '@xmcl/runtime/theme'
 import { BackupService } from '@xmcl/runtime/backup'
 import { LocalSkinService, OfficialUserService, UserService } from '@xmcl/runtime/user'
+import { ZenithMarketService } from '@xmcl/runtime/zenith'
 import { ServerService } from './ServerService'
 
 export const definedServices = [
@@ -80,4 +81,5 @@ export const definedServices = [
   ThemeService,
   InstanceThemeService,
   BackupService,
+  ZenithMarketService, // zenith
 ]

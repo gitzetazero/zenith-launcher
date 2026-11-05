@@ -6,9 +6,6 @@ import HomeActions from '@/views/HomeActions.vue'
 import HomeExtension from '@/views/HomeExtension.vue'
 import HomeLayout from '@/views/HomeLayout.vue'
 import Me from '@/views/Me.vue'
-import Mod from '@/views/Mod.vue'
-import ModActions from '@/views/ModActions.vue'
-import ModExtension from '@/views/ModExtension.vue'
 import ResourcePack from '@/views/ResourcePack.vue'
 import ResourcePackActions from '@/views/ResourcePackActions.vue'
 import ResourcePackExtension from '@/views/ResourcePackExtension.vue'
@@ -19,7 +16,9 @@ import Setting from '@/views/Setting.vue'
 import ShaderPack from '@/views/ShaderPack.vue'
 import ShaderPackActions from '@/views/ShaderPackActions.vue'
 import ShaderPackExtension from '@/views/ShaderPackExtension.vue'
-import Store from '@/views/Store.vue'
+import Market from '@/views/Market.vue'
+import MarketEntry from '@/views/MarketEntry.vue'
+import MarketProject from '@/views/MarketProject.vue'
 import { createRouter, createWebHashHistory } from 'vue-router'
 
 export const router = createRouter({
@@ -46,14 +45,6 @@ export const router = createRouter({
           },
         },
         {
-          path: 'mods',
-          components: {
-            default: Mod,
-            extensions: ModExtension,
-            actions: ModActions,
-          },
-        },
-        {
           path: 'resourcepacks',
           components: {
             default: ResourcePack,
@@ -69,15 +60,8 @@ export const router = createRouter({
             actions: ShaderPackActions,
           },
         },
-        {
-          path: 'blueprints',
-          meta: { blueprintState: true },
-          components: {
-            default: () => import('@/views/Blueprint.vue'),
-            extensions: () => import('@/views/BlueprintExtension.vue'),
-            actions: () => import('@/views/BlueprintActions.vue'),
-          },
-        },
+        { path: 'mods', redirect: '/' },
+        { path: 'blueprints', redirect: '/' },
         {
           path: 'screenshots',
           redirect: '/',
@@ -97,30 +81,21 @@ export const router = createRouter({
       ],
     },
     {
-      path: '/store',
-      component: Store,
+      path: '/market',
+      component: Market,
       children: [
         {
           path: '',
-          component: () => import('@/views/StoreEntry.vue'),
+          component: MarketEntry,
         },
         {
-          path: 'modrinth/:id',
-          component: () => import('@/views/StoreProjectModrinth.vue'),
-          props: (route) => ({ id: route.params.id }),
-        },
-        {
-          path: 'curseforge/:id',
-          component: () => import('@/views/StoreProjectCurseforge.vue'),
-          props: (route) => ({ id: Number(route.params.id) }),
-        },
-        {
-          path: 'ftb/:id',
-          component: () => import('@/views/StoreProjectFeedTheBeast.vue'),
-          props: (route) => ({ id: Number(route.params.id) }),
+          path: ':source/:id',
+          component: MarketProject,
+          props: (route) => ({ source: route.params.source, id: route.params.id }),
         },
       ],
     },
+    { path: '/store:rest(.*)*', redirect: '/market' },
     {
       path: '/setting',
       component: Setting,

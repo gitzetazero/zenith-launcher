@@ -27,7 +27,7 @@ const { isShown: taskShown, show: showTasks, hide: hideTasks } = useDialog('task
 const toggleTasks = () => (taskShown.value ? hideTasks() : showTasks())
 
 // Top level tabs the bumpers (L1/R1) cycle through.
-const ROUTES = ['/me', '/store', '/', '/setting']
+const ROUTES = ['/me', '/market', '/', '/setting']
 function navigateTab(direction: 'prev' | 'next') {
   const currentPath = router.currentRoute.value.path
   let idx = ROUTES.indexOf(currentPath)

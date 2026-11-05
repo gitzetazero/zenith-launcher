@@ -1,5 +1,5 @@
 import type { RendererTelemetryChannel } from '@xmcl/runtime-api'
-import { afterEach, describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { startRendererServiceTrace, withRendererAction } from './rendererAction'
 import { setRendererTelemetryEnabled, trackRendererException } from './telemetry'
 
@@ -12,6 +12,8 @@ vi.mock('./i18n', () => ({
 }))
 
 describe('renderer telemetry bridge', () => {
+  // zenith: telemetry is off by default; these tests exercise the bridge itself
+  beforeEach(() => setRendererTelemetryEnabled(true))
   afterEach(() => {
     setRendererTelemetryEnabled(true)
     vi.unstubAllGlobals()
@@ -138,5 +140,17 @@ describe('renderer telemetry bridge', () => {
         origin: 'runtime-service',
       },
     })
+  })
+})
+
+describe('zenith: renderer telemetry is hard-off by default', () => {
+  it('never forwards anything until something enables it (nothing does)', async () => {
+    vi.resetModules()
+    const fresh = await import('./telemetry')
+    const channel = { trackException: vi.fn(), flush: vi.fn(), startAction: vi.fn(), endAction: vi.fn() }
+    vi.stubGlobal('rendererTelemetry', channel)
+    await fresh.trackRendererException(new Error('boom'))
+    expect(channel.trackException).not.toHaveBeenCalled()
+    vi.unstubAllGlobals()
   })
 })
