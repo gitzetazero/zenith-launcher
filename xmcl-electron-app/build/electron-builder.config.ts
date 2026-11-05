@@ -98,7 +98,7 @@ export const config = {
   win: {
     signtoolOptions: {
       certificateFile: undefined as string | undefined,
-      publisherName: 'CI010',
+      publisherName: 'Zenith Launcher', // zenith: unsigned builds; XMCL's publisher is not used
     },
     icon: 'icons/dark.ico',
     electronLanguages: ['en-US'],
