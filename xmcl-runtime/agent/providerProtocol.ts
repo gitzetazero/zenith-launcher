@@ -3,7 +3,7 @@ import type { Handler } from '~/app'
 import type { ResolvedAgentProvider } from './AgentService'
 
 const builtinUrl = new URL(BUILTIN_AGENT_ENDPOINT)
-const builtinProviderUrl = 'https://ai.xmcl.app/v1/chat/completions'
+const builtinProviderUrl = BUILTIN_AGENT_ENDPOINT // zenith: disabled endpoint
 
 export interface AgentXmclAuthorization {
   accessToken: string

@@ -32,7 +32,7 @@ HomeLaunchMultiInstanceDialog:
 SettingMigrationDialog:
   selectRootDirectory: রুট ডিরেক্টরি নির্বাচন করুন
 agent:
-  accessRequiredHint: বিল্ট-ইন এজেন্ট ব্যবহার করতে XMCL-এ সাবস্ক্রাইব করুন, অথবা সেটিংসে নিজের AI প্রদানকারী কনফিগার করুন।
+  accessRequiredHint: বিল্ট-ইন এজেন্ট ব্যবহার করতে Zenith Launcher-এ সাবস্ক্রাইব করুন, অথবা সেটিংসে নিজের AI প্রদানকারী কনফিগার করুন।
   subscribeXmcl: XMCL-এ সাবস্ক্রাইব করুন
   callingTool: '{name}-কে কল করা হচ্ছে…'
   disabledPlaceholder: এজেন্ট নিষ্ক্রিয়
@@ -50,7 +50,7 @@ agent:
   suggestion2: আমার মডগুলো ক্র্যাশ করছে — কারণটি খুঁজুন এবং কীভাবে এটি ঠিক করা যায় তা আমাকে বলুন
   suggestion3: 'একটি মডপ্যাক তৈরি করুন: আমার পছন্দের ফিচারের জন্য মড খুঁজুন এবং সেগুলো এই ইনস্ট্যান্সে ইনস্টল করুন'
   thinking: ভাবছে…
-  title: XMCL এজেন্ট
+  title: Zenith Launcher এজেন্ট
   toggleHint: টগল করার জন্য
 ago:
   day: '{duration} দিন আগে | {duration} দিন আগে'
@@ -500,7 +500,7 @@ importModpack:
   selectVersionDescription: 'ইনস্টল করার জন্য {name}-এর সংস্করণ বেছে নিন:'
   pmcProtected: Planet Minecraft সাইটটি Cloudflare দ্বারা সুরক্ষিত। পৃষ্ঠা থেকে সরাসরি ডাউনলোড লিঙ্ক বা মিরর লিঙ্ক কপি করুন।
   netdiskTitle: ক্লাউড ড্রাইভ থেকে ডাউনলোড
-  netdiskDescription: মডপ্যাকের এই সংস্করণটি একটি বাহ্যিক ক্লাউড ড্রাইভে রাখা আছে। ব্রাউজারে ডাউনলোড পৃষ্ঠা খুলতে নিচে ক্লিক করুন, তারপর ডাউনলোড করা .zip বা .mrpack ফাইলটি টেনে XMCL-এ ছেড়ে দিন।
+  netdiskDescription: মডপ্যাকের এই সংস্করণটি একটি বাহ্যিক ক্লাউড ড্রাইভে রাখা আছে। ব্রাউজারে ডাউনলোড পৃষ্ঠা খুলতে নিচে ক্লিক করুন, তারপর ডাউনলোড করা .zip বা .mrpack ফাইলটি টেনে Zenith Launcher-এ ছেড়ে দিন।
   openNetdisk: ক্লাউড ড্রাইভ খুলুন
   netdiskOpened: ক্লাউড ড্রাইভের লিঙ্ক ব্রাউজারে খোলা হয়েছে এবং ক্লিপবোর্ডে কপি করা হয়েছে।
   noReleasesFound: এই রিপোজিটরিতে .mrpack বা .zip মডপ্যাক রিলিজ পাওয়া যায়নি।
@@ -664,7 +664,7 @@ instances:
   addModrinthDescription: বিদ্যমান Modrinth ইন্সট্যান্স ইম্পোর্ট করুন। আপনাকে Modrinth রুট ডেটা ফোল্ডারটি নির্বাচন করতে হবে।
   addPrismDescription: বিদ্যমান PrismLauncher ইন্সট্যান্স ইম্পোর্ট করুন।
   addVanilla: ভ্যানিলা-সদৃশ Minecraft থেকে তৈরি করুন
-  addVanillaDescription: সাধারণ .minecraft ফোল্ডার থেকে ইম্পোর্ট করুন। এটি আসল গেম প্রোফাইলটিকে XMCL-এ অনুলিপি (duplicate) করবে।
+  addVanillaDescription: সাধারণ .minecraft ফোল্ডার থেকে ইম্পোর্ট করুন। এটি আসল গেম প্রোফাইলটিকে Zenith Launcher-এ অনুলিপি (duplicate) করবে।
   edition: সংস্করণ
   editionJava: জাভা সংস্করণ
   editionBedrock: বেডরক সংস্করণ
@@ -1155,7 +1155,7 @@ multiplayer:
   openConsumerPortal: কনজিউমার পোর্টাল খুলুন
   refundHint: রিফান্ড প্রয়োজন? আপনার অর্ডার ও সাবস্ক্রিপশন পরিচালনা করতে Waffo কনজিউমার পোর্টালে যান।
   togetherSupportHint: মাল্টিপ্লেয়ার কাজ না করলে Discord-এ যোগ দিয়ে ডেভেলপমেন্ট টিমের সঙ্গে যোগাযোগ করুন। আমরা সমস্যা সমাধানে সাহায্য করব।
-  autoShareAmbiguous: একাধিক গেম চলছে। XMCL যাতে শেয়ার করতে পারে, ল্যান ওয়ার্ল্ড হোস্ট করা ইনস্ট্যান্সটি নির্বাচন করুন।
+  autoShareAmbiguous: একাধিক গেম চলছে। Zenith Launcher যাতে শেয়ার করতে পারে, ল্যান ওয়ার্ল্ড হোস্ট করা ইনস্ট্যান্সটি নির্বাচন করুন।
   editSharingScope: শেয়ারের পরিধি সম্পাদনা করুন
   gameAvailable: ল্যান গেম উপলভ্য
   joinGame: গেমে যোগ দিন
@@ -1192,7 +1192,7 @@ multiplayer:
     available: বিনামূল্যের ট্রায়াল উপলভ্য
     expired: ট্রায়াল ব্যবহার করা হয়েছে
     unavailable: ট্রায়াল উপলভ্য নয়
-  loginRequiredDescription: P2P মাল্টিপ্লেয়ার XMCL অনলাইন পরিষেবা ব্যবহার করে। চালিয়ে যেতে একটি XMCL অ্যাকাউন্টে সাইন ইন করুন।
+  loginRequiredDescription: P2P মাল্টিপ্লেয়ার Zenith Launcher অনলাইন পরিষেবা ব্যবহার করে। চালিয়ে যেতে একটি Zenith Launcher অ্যাকাউন্টে সাইন ইন করুন।
   loginRequiredTitle: P2P মাল্টিপ্লেয়ারের জন্য সাইন ইন করুন
   complete: সম্পন্ন
   confirm: নিশ্চিত করুন
@@ -1868,7 +1868,7 @@ setup:
   appearance:
     name: '@:setting.appearance'
   dataRoot:
-    description: ডাটা রুট কোনো সাধারণ .minecraft ডিরেক্টরি নয়। যেহেতু XMCL ডাটা ডিরেক্টরি গঠন ভ্যানিলা থেকে আলাদা, তাই আমরা ডাটা রুট হিসেবে সাধারণ .minecraft ডিরেক্টরি ব্যবহার করার পরামর্শ দিই না।
+    description: ডাটা রুট কোনো সাধারণ .minecraft ডিরেক্টরি নয়। যেহেতু Zenith Launcher ডাটা ডিরেক্টরি গঠন ভ্যানিলা থেকে আলাদা, তাই আমরা ডাটা রুট হিসেবে সাধারণ .minecraft ডিরেক্টরি ব্যবহার করার পরামর্শ দিই না।
     drives: সুপারিশকৃত অবস্থানসমূহ
     name: ডাটা ডিরেক্টরি সেট করুন
   defaultLayoutDescription: ডিফল্ট লেআউটটি গেমের "ইনস্ট্যান্স" ধারণাকে উন্নত করার চেষ্টা করে। এটি ডিসকর্ড এর মতো অ্যাপের মতো দেখায়। এটি স্টিম ইত্যাদি অন্যান্য গেম লঞ্চার অ্যাপ দ্বারাও অনুপ্রাণিত।

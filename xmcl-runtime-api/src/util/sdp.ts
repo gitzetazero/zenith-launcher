@@ -1,15 +1,15 @@
 export function createOfferLauncherUrl(description: string) {
-  return `xmcl://peer/offer/${description}`
+  return `zenith-launcher://peer/offer/${description}`
 }
 
 export function createAnswerLauncherUrl(description: string) {
-  return `xmcl://peer/answer/${description}`
+  return `zenith-launcher://peer/answer/${description}`
 }
 
 export function createOfferAppUrl(description: string, inviter: string) {
-  return `https://xmcl.app/peer?description=${description}?type=offer?inviter=${inviter}`
+  return `zenith-launcher://peer/offer/${description}`
 }
 
 export function createAnswerAppUrl(description: string, inviter: string) {
-  return `https://xmcl.app/peer?description=${description}?type=answer?inviter=${inviter}`
+  return `zenith-launcher://peer/answer/${description}`
 }

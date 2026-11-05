@@ -1,4 +1,6 @@
 import { kFlights } from '~/infra'
+import { isBlockedUpstreamUrl } from '~/zenith/blockedHosts'
+import { getZenithConfig } from '~/zenith/config'
 import { kXmclSessionAuthorization, XmclAccountService } from '~/xmclAccount/XmclAccountService'
 import type { LauncherAppPlugin } from './LauncherAppPlugin'
 import type { Handler, Response as LauncherResponse } from './LauncherProtocolHandler'
@@ -57,7 +59,12 @@ export const pluginApiFallback: LauncherAppPlugin = (app) => {
       setHeader(request.headers, 'Authorization', `${tokenType} ${authorization.accessToken}`)
       setHeader(request.headers, 'DPoP', authorization.dpopProof)
     } else if (request.url.host === 'api.curseforge.com') {
-      request.headers['x-api-key'] = process.env.CURSEFORGE_API_KEY || ''
+      request.headers['x-api-key'] = getZenithConfig('curseforgeApiKey')
+    }
+    // zenith: after the (upstream) auth handling above, refuse XMCL-hosted services and telemetry, also from the renderer
+    if (isBlockedUpstreamUrl(request.url.href)) {
+      response.status = 403
+      response.handled = true
     }
   }
   app.protocol.registerHandler('https', handler)

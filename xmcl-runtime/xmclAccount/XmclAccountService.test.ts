@@ -314,7 +314,7 @@ describe('XmclAccountService automatic session refresh', () => {
 
     const authorization = await (service as any)[kXmclSessionAuthorization]({
       method: 'POST',
-      url: 'https://signaling.xmcl.app/v1/rtc/official',
+      url: 'https://signaling.xmcl.disabled.invalid/v1/rtc/official',
     })
 
     const payload = JSON.parse(

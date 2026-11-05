@@ -18,11 +18,11 @@ describe('database downloads', () => {
   it('uses GitHub releases before the XMCL streaming proxy', () => {
     expect(getModMetadataDownloadUrls('db.sqlite')).toEqual([
       'https://github.com/Voxelum/minecraft-mods-database/releases/latest/download/db.sqlite',
-      'https://api.xmcl.app/downloads/databases/mod-metadata/db.sqlite',
+      'https://api.xmcl.disabled.invalid/downloads/databases/mod-metadata/db.sqlite',
     ])
     expect(getProjectMappingDownloadUrls('zh-cn.sqlite.gz')).toEqual([
       'https://github.com/Voxelum/xmcl-commuity-content-i18n/releases/latest/download/zh-cn.sqlite.gz',
-      'https://api.xmcl.app/downloads/databases/project-mapping/zh-cn.sqlite.gz',
+      'https://api.xmcl.disabled.invalid/downloads/databases/project-mapping/zh-cn.sqlite.gz',
     ])
   })
 
@@ -33,7 +33,7 @@ describe('database downloads', () => {
       .mockResolvedValueOnce(new Response(' checksum\n'))
 
     await expect(
-      fetchDatabaseText(fetcher, ['https://github.com/db', 'https://api.xmcl.app/db']),
+      fetchDatabaseText(fetcher, ['https://github.com/db', 'https://api.xmcl.disabled.invalid/db']),
     ).resolves.toBe('checksum')
     expect(fetcher).toHaveBeenCalledTimes(2)
   })
@@ -42,7 +42,7 @@ describe('database downloads', () => {
     const fetcher = vi.fn().mockResolvedValue(new Response(null, { status: 404 }))
 
     await expect(
-      databaseAssetExists(fetcher, ['https://github.com/missing', 'https://api.xmcl.app/missing']),
+      databaseAssetExists(fetcher, ['https://github.com/missing', 'https://api.xmcl.disabled.invalid/missing']),
     ).resolves.toBe(false)
     expect(fetcher).toHaveBeenCalledTimes(1)
   })
@@ -50,7 +50,7 @@ describe('database downloads', () => {
   it('moves slow or stalled GitHub payloads to the fallback only', () => {
     const controller = createDatabaseDownloadController()
     expect(controller.isAbortable?.('https://github.com')).toBe(true)
-    expect(controller.isAbortable?.('https://api.xmcl.app')).toBe(false)
+    expect(controller.isAbortable?.('https://api.xmcl.disabled.invalid')).toBe(false)
     expect(
       controller.onSample?.({
         origin: 'https://github.com',
@@ -62,7 +62,7 @@ describe('database downloads', () => {
     ).toBe('abort')
     expect(
       controller.onSample?.({
-        origin: 'https://api.xmcl.app',
+        origin: 'https://api.xmcl.disabled.invalid',
         received: 64 * 1024,
         total: 1024 * 1024,
         speed: 64 * 1024,

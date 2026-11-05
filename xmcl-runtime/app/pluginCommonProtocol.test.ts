@@ -27,11 +27,11 @@ describe('common protocol', () => {
     pluginCommonProtocol({ protocol, fetch } as any, {} as any)
 
     await protocol.handle({
-      url: 'https://api.xmcl.app/translation',
+      url: 'https://api.xmcl.disabled.invalid/translation',
       cache: 'force-cache',
     })
 
-    expect(fetch).toHaveBeenCalledWith('https://api.xmcl.app/translation', expect.objectContaining({
+    expect(fetch).toHaveBeenCalledWith('https://api.xmcl.disabled.invalid/translation', expect.objectContaining({
       cache: 'force-cache',
     }))
   })

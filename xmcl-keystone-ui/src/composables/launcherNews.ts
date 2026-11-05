@@ -21,7 +21,9 @@ export function useLauncherNews() {
   const env = injection(kEnvironment)
   const { state } = injection(kSettingsState)
   const { data, error, isValidating, mutate } = useSWRV('/launcher-news', async () => {
-    const url = new URL('https://api.xmcl.app/news')
+    // zenith: XMCL's news feed (and the system info it was sent) is not used
+    if (!import.meta.env.VITE_ZENITH_NEWS_URL) return [] as LauncherNews[]
+    const url = new URL(import.meta.env.VITE_ZENITH_NEWS_URL as string)
     if (env.value) {
       url.searchParams.append('version', env.value.version)
       url.searchParams.append('osRelease', env.value.osRelease)

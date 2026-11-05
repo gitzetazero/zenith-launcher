@@ -1,7 +1,6 @@
 import { UpdateResourcePayload } from '@xmcl/resource'
 import {
   AGENT_TELEMETRY_FLIGHT,
-  APP_INSIGHT_KEY,
   Exception,
   LaunchService as ILaunchService,
   type RendererActionEnd,
@@ -9,14 +8,10 @@ import {
   type RendererExceptionTelemetry,
   type XmclAccountSnapshot,
 } from '@xmcl/runtime-api'
-import {
-  AzureMonitorLogExporter,
-  AzureMonitorTraceExporter,
-} from '@azure/monitor-opentelemetry-exporter'
 import { logs } from '@opentelemetry/api-logs'
 import { resourceFromAttributes } from '@opentelemetry/resources'
-import { BatchLogRecordProcessor, LoggerProvider } from '@opentelemetry/sdk-logs'
-import { BatchSpanProcessor, ParentBasedSampler } from '@opentelemetry/sdk-trace-base'
+import { LoggerProvider } from '@opentelemetry/sdk-logs'
+import { ParentBasedSampler } from '@opentelemetry/sdk-trace-base'
 import { NodeTracerProvider } from '@opentelemetry/sdk-trace-node'
 import { randomUUID } from 'crypto'
 import { LauncherAppPlugin } from '~/app'
@@ -89,24 +84,13 @@ export const pluginTelemetry: LauncherAppPlugin = async (app) => {
     sampler: new ParentBasedSampler({
       root: new XmclRootTraceSampler(),
     }),
-    spanProcessors: [
-      new BatchSpanProcessor(
-        new AzureMonitorTraceExporter({
-          connectionString: APP_INSIGHT_KEY,
-        }),
-      ),
-    ],
+    // zenith: telemetry is disabled; no exporter is attached, so nothing leaves the machine
+    spanProcessors: [],
   })
   traceProvider.register()
   const logProvider = new LoggerProvider({
     resource,
-    processors: [
-      new BatchLogRecordProcessor({
-        exporter: new AzureMonitorLogExporter({
-          connectionString: APP_INSIGHT_KEY,
-        }),
-      }),
-    ],
+    processors: [],
   })
   logs.setGlobalLoggerProvider(logProvider)
   setRuntimeTelemetryIdentity(clientSession)

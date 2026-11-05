@@ -5,6 +5,7 @@ import { pluginDiscreteGPULinux } from './pluginDiscreteGPULinux'
 import { pluginLinuxDisplay } from './pluginLinuxDisplay'
 import { pluginPowerMonitor } from './pluginPowerMonitor'
 import { pluginMultiplayer } from './pluginMultiplayer'
+import { pluginZenith } from './pluginZenith'
 
 import { pluginApiFallback } from '@xmcl/runtime/app/pluginApiFallback'
 import { pluginAgentProtocol } from '@xmcl/runtime/agent'
@@ -50,6 +51,7 @@ import { LauncherAppPlugin } from '~/app'
 import { definedServices } from './definedServices'
 
 export const definedPlugins: LauncherAppPlugin[] = [
+  pluginZenith, // zenith
   pluginMultiplayer,
   pluginAgentDocuments,
   pluginAgentProtocol,

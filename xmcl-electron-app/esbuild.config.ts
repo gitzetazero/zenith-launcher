@@ -27,7 +27,9 @@ const config = {
   define: {
     'process.env.BUILD_NUMBER': JSON.stringify(process.env.BUILD_NUMBER) ?? '0',
     'process.env.NODE_ENV': JSON.stringify(process.env.NODE_ENV) ?? '"development"',
-    'process.env.CURSEFORGE_API_KEY': JSON.stringify(process.env.CURSEFORGE_API_KEY),
+    // zenith: optional build-time values (empty by default; see xmcl-runtime/zenith/config.ts)
+    'process.env.CURSEFORGE_API_KEY_BUILD': JSON.stringify(process.env.CURSEFORGE_API_KEY ?? ''),
+    'process.env.ZENITH_MSA_CLIENT_ID_BUILD': JSON.stringify(process.env.ZENITH_MSA_CLIENT_ID ?? ''),
   } as Record<string, string>,
   platform: 'node',
   loader: {

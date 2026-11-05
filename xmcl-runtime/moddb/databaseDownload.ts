@@ -1,7 +1,7 @@
 import type { DownloadController, DownloadSample } from '@xmcl/file-transfer'
 
 const GITHUB_ORIGIN = 'https://github.com'
-const DATABASE_PROXY_ORIGIN = 'https://api.xmcl.app'
+const DATABASE_PROXY_ORIGIN = 'https://api.xmcl.disabled.invalid' // zenith: XMCL's proxy is not used; GitHub is the only source
 const DATABASE_FETCH_TIMEOUT = 8_000
 const SLOW_DOWNLOAD_THRESHOLD = 128 * 1024
 

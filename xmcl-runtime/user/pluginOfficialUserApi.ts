@@ -4,12 +4,13 @@ import { LauncherAppPlugin } from '~/app'
 import { kNetworkInterface } from '~/network'
 import { AnyError } from '@xmcl/utils'
 import { UserService } from './UserService'
+import { getZenithConfig } from '~/zenith/config'
 import { MicrosoftAccountSystem } from './accountSystems/MicrosoftAccountSystem'
 import { MicrosoftOAuthClient } from './accountSystems/MicrosoftOAuthClient'
 import { kUserTokenStorage } from './userTokenStore'
 import { withRetry } from './utils/withRetry'
 
-const CLIENT_ID = '1363d629-5b06-48a9-a5fb-c65de945f13e'
+// zenith: XMCL's Microsoft client id is NOT used; configure ZENITH_MSA_CLIENT_ID (see docs/ZENITH-LAUNCHER.md)
 const XBOX_DEVICE_STORAGE_SERVICE = 'xmcl/xbox-device'
 const XBOX_DEVICE_STORAGE_ACCOUNT = 'XMCL_XBOX_DEVICE'
 
@@ -56,7 +57,7 @@ export const pluginOfficialUserApi: LauncherAppPlugin = async (app) => {
     new MicrosoftOAuthClient(
       (...args) => app.fetch(...args),
       logger,
-      CLIENT_ID,
+      getZenithConfig('msaClientId'),
       async (url, redirectUri, signal, authAttemptId) => {
         if (app.controller.openMicrosoftLogin) {
           return app.controller.openMicrosoftLogin(url, redirectUri, signal, authAttemptId)
@@ -80,8 +81,7 @@ export const pluginOfficialUserApi: LauncherAppPlugin = async (app) => {
       },
       async (directRedirectToLauncher) => {
         const port = await app.serverPort ?? 25555
-        directRedirectToLauncher = true // force to use localhost before the website is fixed
-        return (directRedirectToLauncher ? `http://localhost:${port}/auth` : `https://xmcl.app/auth?port=${port}`)
+        return `http://localhost:${port}/auth`
       },
       (response) => {
         userService.emit('device-code', response)

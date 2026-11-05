@@ -18,7 +18,7 @@ describe('LauncherProtocolHandler', () => {
     protocol.registerHandler('https', skipped)
     protocol.registerHandler('http', sink, true)
 
-    const response = await protocol.handle({ url: 'https://ai.xmcl.app/v1/chat/completions', signal: controller.signal })
+    const response = await protocol.handle({ url: 'https://ai.xmcl.disabled.invalid/v1/chat/completions', signal: controller.signal })
 
     expect(skipped).not.toHaveBeenCalled()
     expect(sink).toHaveBeenCalledOnce()
@@ -38,7 +38,7 @@ describe('LauncherProtocolHandler', () => {
     protocol.registerHandler('https', sink, true)
 
     const response = await protocol.handle({
-      url: 'https://api.xmcl.app/translation',
+      url: 'https://api.xmcl.disabled.invalid/translation',
       cache: 'force-cache',
     })
 
@@ -58,7 +58,7 @@ describe('LauncherProtocolHandler', () => {
     protocol.registerHandler('https', skipped)
     protocol.registerHandler('https', sink, true)
 
-    const response = await protocol.handle({ url: 'https://ai.xmcl.app/v1/chat/completions' })
+    const response = await protocol.handle({ url: 'https://ai.xmcl.disabled.invalid/v1/chat/completions' })
 
     expect(skipped).not.toHaveBeenCalled()
     expect(sink).not.toHaveBeenCalled()

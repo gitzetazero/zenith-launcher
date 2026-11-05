@@ -13,23 +13,25 @@ const linuxPackageScripts = {
 }
 
 export const config = {
-  productName: 'XMCL',
-  appId: 'xmcl',
+  // zenith: Zenith Launcher identity (fork of XMCL, see docs/ZENITH-LAUNCHER.md)
+  productName: 'Zenith Launcher',
+  appId: 'dev.zenith.launcher',
+  copyright: 'Copyright (c) Zenith contributors. Based on XMCL, Copyright (c) 2019 Voxelum (MIT)',
   directories: {
     output: 'build/output',
     buildResources: 'build',
     app: '.',
   },
   protocols: {
-    name: 'XMCL',
-    schemes: ['xmcl'],
+    name: 'Zenith Launcher',
+    schemes: ['zenith-launcher'],
   },
   // assign publish for auto-updater
   // set this to your own repo!
   publish: [{
     provider: 'github',
-    owner: 'voxelum',
-    repo: 'x-minecraft-launcher',
+    owner: 'gitzetazero',
+    repo: 'zenith-launcher',
   }],
   files: [{
     from: 'dist',
@@ -44,19 +46,24 @@ export const config = {
     from: 'main/agent-documents',
     to: 'agent-documents',
     filter: ['**/*.md'],
+  }, {
+    // zenith: the verified Zenith bridge, downloaded by the release workflow (tools/zenith/fetch-bridge.mjs)
+    from: 'build/zenith',
+    to: 'zenith',
+    filter: ['zenith-bridge-windows-x64.exe'],
   }],
-  artifactName: 'xmcl-${version}-${platform}-${arch}.${ext}',
+  artifactName: 'Zenith-Launcher-${platform}-${arch}.${ext}',
   appx: {
-    displayName: 'XMCL',
-    applicationId: 'xmcl',
-    identityName: 'xmcl',
+    displayName: 'Zenith Launcher',
+    applicationId: 'zenith-launcher',
+    identityName: 'zenith-launcher',
     backgroundColor: 'transparent',
     publisher: process.env.PUBLISHER,
     publisherDisplayName: 'CI010',
     setBuildNumber: true,
   },
   dmg: {
-    artifactName: 'xmcl-${version}-${arch}.${ext}',
+    artifactName: 'zenith-launcher-${version}-${arch}.${ext}',
     contents: [
       {
         x: 410,
@@ -95,16 +102,22 @@ export const config = {
     },
     icon: 'icons/dark.ico',
     electronLanguages: ['en-US'],
+    // zenith: NSIS installer (per user, no admin) + portable exe, x64 only
     target: [
-      {
-        target: 'zip',
-        arch: [
-          'x64',
-          'ia32',
-        ],
-      },
-      'appx',
+      { target: 'nsis', arch: ['x64'] },
+      { target: 'portable', arch: ['x64'] },
     ],
+  },
+  nsis: {
+    oneClick: false,
+    perMachine: false,
+    allowElevation: false,
+    allowToChangeInstallationDirectory: true,
+    shortcutName: 'Zenith Launcher',
+    artifactName: 'Zenith-Launcher-Setup-x64.${ext}',
+  },
+  portable: {
+    artifactName: 'Zenith-Launcher-Portable-x64.${ext}',
   },
   linux: {
     executableName: 'xmcl',
@@ -117,7 +130,7 @@ export const config = {
     },
     category: 'Game',
     icon: 'icons/dark.icns',
-    artifactName: 'xmcl-${version}-${arch}.${ext}',
+    artifactName: 'zenith-launcher-${version}-${arch}.${ext}',
     target: [
       { target: 'deb', arch: ['x64', 'arm64'] },
       { target: 'rpm', arch: ['x64', 'arm64'] },

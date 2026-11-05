@@ -93,8 +93,8 @@ backup:
   noInstancesFound: Nem található példány az indítóban.
   excludeLibrariesNotice: Az alapvető könyvtárak, Minecraft-elemek és ideiglenes gyorsítótárak automatikusan kimaradnak a tömörség érdekében.
   create: Mentés létrehozása
-  createTitle: XMCL biztonsági mentés létrehozása
-  saveDialogTitle: XMCL biztonsági mentés mentése
+  createTitle: Zenith Launcher biztonsági mentés létrehozása
+  saveDialogTitle: Zenith Launcher biztonsági mentés mentése
   fileFilterName: 'XMCL biztonsági mentés (*.xmclbackup, *.zip)'
   createError: Nem sikerült létrehozni a biztonsági mentést
   loadManifestError: Nem sikerült beolvasni a biztonsági mentést
@@ -136,7 +136,7 @@ backup:
   selectBackupFilePrompt: Válasszon biztonsági mentést a visszaállításhoz
   selectBackupFileDescription: Válasszon egy .xmclbackup vagy .zip fájlt az XMCL adataival.
   selectFile: Fájl kiválasztása
-  selectBackupFileTitle: XMCL biztonsági mentés megnyitása
+  selectBackupFileTitle: Zenith Launcher biztonsági mentés megnyitása
   createdOn: 'Létrehozva: {date}'
   changeFile: Fájl módosítása
   dataToRestore: Visszaállítandó adatok
@@ -447,7 +447,7 @@ importModpack:
   selectVersionDescription: 'Válaszd ki a(z) {name} telepítendő verzióját:'
   pmcProtected: A Planet Minecraftot a Cloudflare védi. Másold ki az oldalról a közvetlen letöltési vagy tükörhivatkozást.
   netdiskTitle: Letöltés felhőtárhelyről
-  netdiskDescription: Ez a modcsomagverzió külső felhőtárhelyen található. Kattints alább a letöltési oldal böngészőben való megnyitásához, majd húzd a letöltött .zip vagy .mrpack fájlt az XMCL-be.
+  netdiskDescription: Ez a modcsomagverzió külső felhőtárhelyen található. Kattints alább a letöltési oldal böngészőben való megnyitásához, majd húzd a letöltött .zip vagy .mrpack fájlt az Zenith Launcher-be.
   openNetdisk: Felhőtárhely megnyitása
   netdiskOpened: A felhőtárhely hivatkozása megnyílt a böngészőben, és a vágólapra lett másolva.
   noReleasesFound: Nem található .mrpack vagy .zip modcsomagkiadás ebben a tárolóban.
@@ -612,7 +612,7 @@ instances:
     Importálja a meglévő Modrinth példányt.
     Ki kell választania a Modrinth gyökér adatmappát.
   addVanilla: Létrehozás vanilla-szerű Minecraftból
-  addVanillaDescription: Importálás a közös .minecraft mappából. Ez duplikálja az eredeti játékprofilt az XMCL-be.
+  addVanillaDescription: Importálás a közös .minecraft mappából. Ez duplikálja az eredeti játékprofilt az Zenith Launcher-be.
   fix: Javítás
   folder: Mappa
   folderSetting: Mappa beállításai
@@ -1082,7 +1082,7 @@ multiplayer:
   openConsumerPortal: Ügyfélportál megnyitása
   refundHint: Visszatérítést szeretnél? Rendeléseid és előfizetéseid kezeléséhez keresd fel a Waffo ügyfélportálját.
   togetherSupportHint: Ha a többjátékos mód nem működik, csatlakozz a Discordunkhoz, és lépj kapcsolatba a fejlesztőcsapattal. Segítünk megoldani a problémát.
-  autoShareAmbiguous: Több játék is fut. Válaszd ki a LAN-világot futtató példányt, hogy az XMCL megoszthassa.
+  autoShareAmbiguous: Több játék is fut. Válaszd ki a LAN-világot futtató példányt, hogy az Zenith Launcher megoszthassa.
   editSharingScope: Megosztási kör szerkesztése
   gameAvailable: LAN-játék érhető el
   joinGame: Csatlakozás a játékhoz
@@ -1119,7 +1119,7 @@ multiplayer:
     available: Ingyenes próbaidőszak érhető el
     expired: A próbaidőszak felhasználva
     unavailable: A próbaidőszak nem érhető el
-  loginRequiredDescription: A P2P többjátékos mód az XMCL online szolgáltatásait használja. A folytatáshoz jelentkezzen be egy XMCL-fiókba.
+  loginRequiredDescription: A P2P többjátékos mód az Zenith Launcher online szolgáltatásait használja. A folytatáshoz jelentkezzen be egy Zenith Launcher-fiókba.
   loginRequiredTitle: Bejelentkezés a P2P többjátékos módhoz
   complete: Kész
   confirm: Megerősítés
@@ -1474,7 +1474,7 @@ serverStatus:
   refuse: §4A szerver elutasítot!
   timeout: §4Szerver csatlakozási időtúllépés!
 agent:
-  accessRequiredHint: Fizess elő az XMCL-re a beépített ügynök használatához, vagy állítsd be a saját AI-szolgáltatódat a beállításokban.
+  accessRequiredHint: Fizess elő az Zenith Launcher-re a beépített ügynök használatához, vagy állítsd be a saját AI-szolgáltatódat a beállításokban.
   subscribeXmcl: Előfizetés az XMCL-re
   notConfiguredHint: Állítson be egy API-kulcsot, modellt és OpenAI-kompatibilis végpontot a Beállítások → Általános → AI ügynök alatt. Használhat például OpenAI-t vagy Claude-kompatibilis átjárót.
 setting:
@@ -1688,7 +1688,7 @@ setup:
   appearance:
     name: '@:setting.appearance'
   dataRoot:
-    description: Az adatgyökér nem egy közös .minecraft könyvtár. Mivel az XMCL adatok könyvtárszerkezet különbözik a vanilla könyvtárszerkezettől, nem javasoljuk, hogy a a közös .minecraft könyvtárat adatgyökérként használni.
+    description: Az adatgyökér nem egy közös .minecraft könyvtár. Mivel az Zenith Launcher adatok könyvtárszerkezet különbözik a vanilla könyvtárszerkezettől, nem javasoljuk, hogy a a közös .minecraft könyvtárat adatgyökérként használni.
     drives: Ajánlott helyek
     name: Adatmappa beállítása
   defaultLayoutDescription: Az alapértelmezett elrendezés a játék "példány" koncepcióját próbálja erősíteni. Úgy néz ki, mint az olyan alkalmazások, mint a Discord. Más játékindító alkalmazások, mint a Steam stb. is inspirálták.
@@ -1816,8 +1816,8 @@ theme:
   selectImage: Válassza a Kép lehetőséget
   selectMusic: Válassza a Zene lehetőséget
   selectVideo: Válassza a Videó lehetőséget
-  title: XMCL
-title: XMCL
+  title: Zenith Launcher
+title: Zenith Launcher
 transportType:
   host: Kiszolgáló jelölt
   prflx: Peer Reflexív jelölt
@@ -2169,7 +2169,7 @@ gamepad:
   steamAddedNotify: Launcher added to Steam Library successfully! Please restart Steam to see it.
   steamAlreadyAddedNotify: Launcher is already in your Steam Library.
   steamDeckTitle: Steam Deck Detected
-  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add XMCL to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
+  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add Zenith Launcher to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
   steamDeckAddBtn: Add to Steam ({btn})
   steamDeckCancelBtn: Cancel ({btn})
 bigPicture:

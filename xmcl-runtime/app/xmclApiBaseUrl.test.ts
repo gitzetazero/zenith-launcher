@@ -26,7 +26,7 @@ describe('resolveXmclApiBaseUrl', () => {
   })
 
   it('defines a separate production signaling origin', () => {
-    expect(DEFAULT_XMCL_SIGNALING_API_BASE_URL).toBe('https://signaling.xmcl.app')
+    expect(DEFAULT_XMCL_SIGNALING_API_BASE_URL).toBe('https://signaling.xmcl.disabled.invalid')
   })
 
   it('resolves all production service origins together', () => {

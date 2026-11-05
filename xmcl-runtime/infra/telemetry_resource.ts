@@ -15,18 +15,14 @@ import { LaunchService } from '~/launch'
 import { ModMetadataService } from '~/moddb/ModMetadataService'
 import { ServiceStateManager } from '~/service'
 import { ResourceTelemetryBatch, type ResourceTracingPayload } from './resourceTelemetryBatch'
-import { AzureMonitorLogExporter } from '@azure/monitor-opentelemetry-exporter'
 import { SeverityNumber } from '@opentelemetry/api-logs'
 import { resourceFromAttributes } from '@opentelemetry/resources'
-import { BatchLogRecordProcessor, LoggerProvider } from '@opentelemetry/sdk-logs'
+import { LoggerProvider } from '@opentelemetry/sdk-logs'
 import { IS_DEV } from '~/constant'
 import {
   isDeterministicallySampled,
   RESOURCE_METADATA_SAMPLE_RATE,
 } from './telemetry_sampling'
-
-const RESOURCE_TELEMETRY_CLIENT_STRING =
-  'InstrumentationKey=f0634ffa-7578-4751-8f64-581fd90bf347;IngestionEndpoint=https://eastasia-0.in.applicationinsights.azure.com/;LiveEndpoint=https://eastasia.livediagnostics.monitor.azure.com/;ApplicationId=4f19b6fd-9974-4da8-a399-77aac5b3e800'
 
 // resource data are enormous, so we need to handle them separately
 export async function setupResourceTelemetryClient(
@@ -45,13 +41,8 @@ export async function setupResourceTelemetryClient(
       'os.type': app.platform.os,
       'os.version': app.platform.osRelease,
     }),
-    processors: [
-      new BatchLogRecordProcessor({
-        exporter: new AzureMonitorLogExporter({
-          connectionString: RESOURCE_TELEMETRY_CLIENT_STRING,
-        }),
-      }),
-    ],
+    // zenith: telemetry is disabled; no exporter is attached
+    processors: [],
   })
   const telemetryLogger = provider.getLogger('xmcl-resource')
   const flights = await app.registry.get(kFlights)

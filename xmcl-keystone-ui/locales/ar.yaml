@@ -85,8 +85,8 @@ backup:
   noInstancesFound: لم يتم العثور على نسخ في المشغل.
   excludeLibrariesNotice: يتم استبعاد ملفات المكتبات الأساسية وأصول ماينكرافت وذاكرة التخزين المؤقت تلقائيًا للحفاظ على صغر حجم الأرشيف.
   create: إنشاء نسخة احتياطية
-  createTitle: إنشاء أرشيف نسخ احتياطي XMCL
-  saveDialogTitle: حفظ أرشيف النسخ الاحتياطي XMCL
+  createTitle: إنشاء أرشيف نسخ احتياطي Zenith Launcher
+  saveDialogTitle: حفظ أرشيف النسخ الاحتياطي Zenith Launcher
   fileFilterName: 'أرشيف النسخ الاحتياطي XMCL (*.xmclbackup, *.zip)'
   createError: فشل إنشاء النسخة الاحتياطية
   loadManifestError: فشل قراءة أرشيف النسخة الاحتياطية
@@ -128,7 +128,7 @@ backup:
   selectBackupFilePrompt: حدد أرشيف نسخة احتياطية لاستعادته
   selectBackupFileDescription: اختر ملف .xmclbackup أو .zip يحتوي على بيانات ونسخ XMCL المحفوظة.
   selectFile: اختر ملفًا
-  selectBackupFileTitle: فتح أرشيف النسخ الاحتياطي XMCL
+  selectBackupFileTitle: فتح أرشيف النسخ الاحتياطي Zenith Launcher
   createdOn: 'تم الإنشاء في {date}'
   changeFile: تغيير الملف
   dataToRestore: البيانات المراد استعادتها
@@ -452,7 +452,7 @@ importModpack:
   selectVersionDescription: 'اختر إصدار {name} المراد تثبيته:'
   pmcProtected: موقع Planet Minecraft محمي بواسطة Cloudflare. يرجى نسخ رابط التنزيل المباشر أو رابط بديل من الصفحة.
   netdiskTitle: التنزيل من التخزين السحابي
-  netdiskDescription: هذا الإصدار من حزمة التعديلات مستضاف على خدمة تخزين سحابي خارجية. انقر أدناه لفتح صفحة التنزيل في المتصفح، ثم اسحب ملف .zip أو .mrpack الذي نزّلته وأفلته في XMCL.
+  netdiskDescription: هذا الإصدار من حزمة التعديلات مستضاف على خدمة تخزين سحابي خارجية. انقر أدناه لفتح صفحة التنزيل في المتصفح، ثم اسحب ملف .zip أو .mrpack الذي نزّلته وأفلته في Zenith Launcher.
   openNetdisk: فتح التخزين السحابي
   netdiskOpened: فُتح رابط التخزين السحابي في المتصفح ونُسخ إلى الحافظة.
   noReleasesFound: لم يُعثر على إصدارات حزم تعديلات بصيغة .mrpack أو .zip في هذا المستودع.
@@ -615,7 +615,7 @@ instances:
   addModrinthDescription: استيراد مثيل Modrinth الموجود. تحتاج إلى تحديد مجلد البيانات الجذر Modrinth.
   addPrismDescription: استيراد مثيل PrismLauncher الموجود.
   addVanilla: اصنع من لعبة Minecraft الشبيهة بالفانيليا
-  addVanillaDescription: قم بالاستيراد من مجلد .minecraft المشترك. سيؤدي هذا إلى تكرار ملف تعريف اللعبة الأصلي إلى XMCL.
+  addVanillaDescription: قم بالاستيراد من مجلد .minecraft المشترك. سيؤدي هذا إلى تكرار ملف تعريف اللعبة الأصلي إلى Zenith Launcher.
   fix: بصلح
   folder: مجلد
   folderSetting: إعدادات المجلد
@@ -1082,7 +1082,7 @@ multiplayer:
   openConsumerPortal: افتح بوابة المستهلك
   refundHint: هل تحتاج إلى استرداد أموالك؟ تفضل بزيارة بوابة Waffo للمستهلك لإدارة طلباتك واشتراكاتك.
   togetherSupportHint: إذا لم يعمل اللعب الجماعي، انضم إلى Discord وتواصل مع فريق التطوير. سنساعدك في حل المشكلة.
-  autoShareAmbiguous: هناك عدة ألعاب قيد التشغيل. حدد النسخة التي تستضيف عالم الشبكة المحلية لكي يتمكن XMCL من مشاركتها.
+  autoShareAmbiguous: هناك عدة ألعاب قيد التشغيل. حدد النسخة التي تستضيف عالم الشبكة المحلية لكي يتمكن Zenith Launcher من مشاركتها.
   editSharingScope: تحرير نطاق المشاركة
   gameAvailable: لعبة شبكة محلية متاحة
   joinGame: الانضمام إلى اللعبة
@@ -1119,7 +1119,7 @@ multiplayer:
     available: تجربة مجانية متاحة
     expired: تم استخدام التجربة
     unavailable: التجربة غير متاحة
-  loginRequiredDescription: تستخدم لعبة P2P الجماعية خدمات XMCL عبر الإنترنت. سجّل الدخول إلى حساب XMCL للمتابعة.
+  loginRequiredDescription: تستخدم لعبة P2P الجماعية خدمات Zenith Launcher عبر الإنترنت. سجّل الدخول إلى حساب Zenith Launcher للمتابعة.
   loginRequiredTitle: تسجيل الدخول للعب الجماعي عبر P2P
   complete: مكتمل
   confirm: يتأكد
@@ -1482,7 +1482,7 @@ serverStatus:
   refuse: §4تم رفض الخادم!
   timeout: §4 مهلة خادم الاتصال!
 agent:
-  accessRequiredHint: اشترك في XMCL لاستخدام العميل المدمج، أو قم بتهيئة موفر الذكاء الاصطناعي الخاص بك في الإعدادات.
+  accessRequiredHint: اشترك في Zenith Launcher لاستخدام العميل المدمج، أو قم بتهيئة موفر الذكاء الاصطناعي الخاص بك في الإعدادات.
   subscribeXmcl: الاشتراك في XMCL
   notConfiguredHint: اضبط مفتاح API والنموذج ونقطة نهاية متوافقة مع OpenAI في الإعدادات → عام → عميل الذكاء الاصطناعي. على سبيل المثال، استخدم OpenAI أو بوابة متوافقة مع Claude.
 setting:
@@ -1694,7 +1694,7 @@ setup:
   appearance:
     name: '@:الإعدادات.المظهر'
   dataRoot:
-    description: جذر البيانات ليس دليلاً شائعًا لـ .minecraft. نظرًا لأن بنية دليل بيانات XMCL تختلف عن الفانيليا، فإننا لا نوصي باستخدام دليل .minecraft الشائع كجذر للبيانات.
+    description: جذر البيانات ليس دليلاً شائعًا لـ .minecraft. نظرًا لأن بنية دليل بيانات Zenith Launcher تختلف عن الفانيليا، فإننا لا نوصي باستخدام دليل .minecraft الشائع كجذر للبيانات.
     drives: يوصي المواقع
     name: قم بتعيين دليل البيانات
   defaultLayoutDescription: يحاول التخطيط الافتراضي تحسين مفهوم "مثيل" اللعبة. يبدو أن تطبيقات مثل Discord. كما أنها مستوحاة أيضًا من تطبيقات تشغيل الألعاب الأخرى مثل Steam وما إلى ذلك.
@@ -2186,7 +2186,7 @@ gamepad:
   steamAddedNotify: Launcher added to Steam Library successfully! Please restart Steam to see it.
   steamAlreadyAddedNotify: Launcher is already in your Steam Library.
   steamDeckTitle: Steam Deck Detected
-  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add XMCL to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
+  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add Zenith Launcher to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
   steamDeckAddBtn: Add to Steam ({btn})
   steamDeckCancelBtn: Cancel ({btn})
 bigPicture:

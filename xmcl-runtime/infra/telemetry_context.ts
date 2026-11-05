@@ -315,7 +315,7 @@ export function classifyExternalProvider(input: string | URL) {
   if (matches('minecraftforge.net')) return 'forge'
   if (matches('neoforged.net')) return 'neoforge'
   if (matches('github.com', 'githubusercontent.com')) return 'github'
-  if (matches('xmcl.app', 'azurewebsites.net')) return 'xmcl'
+  if (matches('xmcl.disabled.invalid')) return 'xmcl'
   if (matches('bmclapi2.bangbang93.com')) return 'bmclapi'
   if (matches('littleskin.cn')) return 'littleskin'
   if (matches('ely.by')) return 'elyby'

@@ -32,8 +32,8 @@ import {
   type XmclDpopKey,
 } from './XmclAccountDpop'
 import { ProviderCredentialExchangeCache } from './ProviderCredentialExchangeCache'
+import { getZenithConfig } from '~/zenith/config'
 
-const MICROSOFT_LAUNCHER_CLIENT_ID = '1363d629-5b06-48a9-a5fb-c65de945f13e'
 const SESSION_SERVICE = 'xmcl-xmcl-account'
 const SESSION_ACCOUNT = 'current-session'
 const DPOP_KEY_SERVICE = 'xmcl-xmcl-account'
@@ -206,7 +206,7 @@ export class XmclAccountService
     const oauthClient = new MicrosoftOAuthClient(
       (...args) => this.app.fetch(...args),
       this.app.getLogger('XmclMicrosoftIdentity'),
-      MICROSOFT_LAUNCHER_CLIENT_ID,
+      getZenithConfig('msaClientId'), // zenith: no embedded client id
       async (url, redirectUri, signal, authAttemptId) => {
         const openMicrosoftLogin = this.app.controller.openMicrosoftLogin
         if (!openMicrosoftLogin) {

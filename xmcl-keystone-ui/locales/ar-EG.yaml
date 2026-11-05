@@ -32,7 +32,7 @@ HomeLaunchMultiInstanceDialog:
 SettingMigrationDialog:
   selectRootDirectory: اختر المجلد الرئيسي
 agent:
-  accessRequiredHint: اشترك في XMCL عشان تستخدم العميل المدمج، أو ظبّط مزود الذكاء الاصطناعي بتاعك في الإعدادات.
+  accessRequiredHint: اشترك في Zenith Launcher عشان تستخدم العميل المدمج، أو ظبّط مزود الذكاء الاصطناعي بتاعك في الإعدادات.
   subscribeXmcl: اشترك في XMCL
   callingTool: بيستدعي {name}…
   disabledPlaceholder: العميل معطل
@@ -50,7 +50,7 @@ agent:
   suggestion2: المودات بتاعتي بتعمل كراش — اعرف لي السبب وقول لي أصلحه إزاي
   suggestion3: 'عمل حزمة مودات (Modpack): دور على مودات بمميزات معينة وثبتها في النسخة دي'
   thinking: بيفكر…
-  title: عميل XMCL
+  title: عميل Zenith Launcher
   toggleHint: للتبديل
 ago:
   day: من {duration} يوم | من {duration} يوم
@@ -117,8 +117,8 @@ backup:
   noInstancesFound: لم يتم العثور على نسخ في المشغل.
   excludeLibrariesNotice: يتم استبعاد ملفات المكتبات الأساسية وأصول ماينكرافت وذاكرة التخزين المؤقت تلقائيًا للحفاظ على صغر حجم الأرشيف.
   create: إنشاء نسخة احتياطية
-  createTitle: إنشاء أرشيف نسخ احتياطي XMCL
-  saveDialogTitle: حفظ أرشيف النسخ الاحتياطي XMCL
+  createTitle: إنشاء أرشيف نسخ احتياطي Zenith Launcher
+  saveDialogTitle: حفظ أرشيف النسخ الاحتياطي Zenith Launcher
   fileFilterName: 'أرشيف النسخ الاحتياطي XMCL (*.xmclbackup, *.zip)'
   createError: فشل إنشاء النسخة الاحتياطية
   loadManifestError: فشل قراءة أرشيف النسخة الاحتياطية
@@ -160,7 +160,7 @@ backup:
   selectBackupFilePrompt: حدد أرشيف نسخة احتياطية لاستعادته
   selectBackupFileDescription: اختر ملف .xmclbackup أو .zip يحتوي على بيانات ونسخ XMCL المحفوظة.
   selectFile: اختر ملفًا
-  selectBackupFileTitle: فتح أرشيف النسخ الاحتياطي XMCL
+  selectBackupFileTitle: فتح أرشيف النسخ الاحتياطي Zenith Launcher
   createdOn: 'تم الإنشاء في {date}'
   changeFile: تغيير الملف
   dataToRestore: البيانات المراد استعادتها
@@ -500,7 +500,7 @@ importModpack:
   selectVersionDescription: 'اختار إصدار {name} اللي عايز تثبّته:'
   pmcProtected: موقع Planet Minecraft محمي بـ Cloudflare. انسخ لينك التحميل المباشر أو لينك بديل من الصفحة.
   netdiskTitle: تحميل من التخزين السحابي
-  netdiskDescription: الإصدار ده من حزمة المودات موجود على خدمة تخزين سحابي خارجية. اضغط تحت عشان تفتح صفحة التحميل في المتصفح، وبعدها اسحب ملف .zip أو .mrpack اللي حمّلته وحطّه في XMCL.
+  netdiskDescription: الإصدار ده من حزمة المودات موجود على خدمة تخزين سحابي خارجية. اضغط تحت عشان تفتح صفحة التحميل في المتصفح، وبعدها اسحب ملف .zip أو .mrpack اللي حمّلته وحطّه في Zenith Launcher.
   openNetdisk: افتح التخزين السحابي
   netdiskOpened: لينك التخزين السحابي اتفتح في المتصفح واتنسخ في الحافظة.
   noReleasesFound: مفيش إصدارات حزم مودات بصيغة .mrpack أو .zip في المستودع ده.
@@ -664,7 +664,7 @@ instances:
   addModrinthDescription: استيراد نسخة Modrinth موجودة. لازم تختار مجلد البيانات الرئيسي لـ Modrinth.
   addPrismDescription: استيراد نسخة PrismLauncher موجودة.
   addVanilla: إنشاء من لعبة ماينكرافت فانيلا
-  addVanillaDescription: استيراد من مجلد .minecraft المعتاد. العملية دي هتكرر ملف اللعبة الأصلي لـ XMCL.
+  addVanillaDescription: استيراد من مجلد .minecraft المعتاد. العملية دي هتكرر ملف اللعبة الأصلي لـ Zenith Launcher.
   edition: الإصدار (Edition)
   editionJava: نسخة الجافا (Java Edition)
   editionBedrock: نسخة البيدروك (Bedrock Edition)
@@ -1155,7 +1155,7 @@ multiplayer:
   openConsumerPortal: افتح بوابة المستهلك
   refundHint: هل تحتاج إلى استرداد أموالك؟ تفضل بزيارة بوابة Waffo للمستهلك لإدارة طلباتك واشتراكاتك.
   togetherSupportHint: إذا لم يعمل اللعب الجماعي، انضم إلى Discord وتواصل مع فريق التطوير. سنساعدك في حل المشكلة.
-  autoShareAmbiguous: هناك عدة ألعاب قيد التشغيل. حدد النسخة التي تستضيف عالم الشبكة المحلية لكي يتمكن XMCL من مشاركتها.
+  autoShareAmbiguous: هناك عدة ألعاب قيد التشغيل. حدد النسخة التي تستضيف عالم الشبكة المحلية لكي يتمكن Zenith Launcher من مشاركتها.
   editSharingScope: تحرير نطاق المشاركة
   gameAvailable: لعبة شبكة محلية متاحة
   joinGame: الانضمام إلى اللعبة
@@ -1192,7 +1192,7 @@ multiplayer:
     available: التجربة المجانية متاحة
     expired: تم استخدام التجربة
     unavailable: التجربة غير متاحة
-  loginRequiredDescription: تستخدم لعبة P2P الجماعية خدمات XMCL عبر الإنترنت. سجّل الدخول إلى حساب XMCL للمتابعة.
+  loginRequiredDescription: تستخدم لعبة P2P الجماعية خدمات Zenith Launcher عبر الإنترنت. سجّل الدخول إلى حساب Zenith Launcher للمتابعة.
   loginRequiredTitle: سجّل الدخول لاستخدام اللعب الجماعي عبر P2P
   complete: اكتمل
   confirm: تأكيد
@@ -1866,7 +1866,7 @@ setup:
   appearance:
     name: '@:setting.appearance'
   dataRoot:
-    description: مجلد البيانات الرئيسي مش هو مجلد .minecraft المعتاد. عشان هيكل مجلد بيانات XMCL مختلف عن الفانيلا، مش بننصح باستخدام مجلد .minecraft المعتاد كمجلد رئيسي للبيانات.
+    description: مجلد البيانات الرئيسي مش هو مجلد .minecraft المعتاد. عشان هيكل مجلد بيانات Zenith Launcher مختلف عن الفانيلا، مش بننصح باستخدام مجلد .minecraft المعتاد كمجلد رئيسي للبيانات.
     drives: المواقع المقترحة
     name: تحديد مجلد البيانات
   defaultLayoutDescription: التخطيط الافتراضي بيحاول يعزز مفهوم "النسخة" للعبة. تصميمه قريب من تطبيقات زي ديسكورد، ومستوحى برضه من لانشرات ألعاب تانية زي Steam وغيره.
@@ -2278,7 +2278,7 @@ gamepad:
   steamAddedNotify: اللانشر انضاف لمكتبة Steam بنجاح! يا ريت ترستر Steam عشان تشوفه.
   steamAlreadyAddedNotify: اللانشر موجود بالفعل في مكتبة Steam بتاعتك.
   steamDeckTitle: تم اكتشاف جهاز Steam Deck
-  steamDeckDesc: اكتشفنا إنك بتشغل اللعبة على Steam Deck. تحب تضيف XMCL لمكتبة Steam كأداة مش من Steam عشان تستمتع بمميزات الـ Steam overlay ودعم الدراع الكامل في Gaming Mode؟
+  steamDeckDesc: اكتشفنا إنك بتشغل اللعبة على Steam Deck. تحب تضيف Zenith Launcher لمكتبة Steam كأداة مش من Steam عشان تستمتع بمميزات الـ Steam overlay ودعم الدراع الكامل في Gaming Mode؟
   steamDeckAddBtn: إضافة لـ Steam ({btn})
   steamDeckCancelBtn: إلغاء ({btn})
   disconnected: Controller Disconnected

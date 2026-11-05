@@ -32,7 +32,7 @@ HomeLaunchMultiInstanceDialog:
 SettingMigrationDialog:
   selectRootDirectory: Pilih Direktori Utama
 agent:
-  accessRequiredHint: Berlangganan XMCL untuk menggunakan Agen bawaan, atau konfigurasikan penyedia AI Anda sendiri di Pengaturan.
+  accessRequiredHint: Berlangganan Zenith Launcher untuk menggunakan Agen bawaan, atau konfigurasikan penyedia AI Anda sendiri di Pengaturan.
   subscribeXmcl: Berlangganan XMCL
   callingTool: memanggil {name}…
   disabledPlaceholder: Agen dinonaktifkan
@@ -50,7 +50,7 @@ agent:
   suggestion2: Mod saya mengalami crash — cari penyebabnya dan beri tahu saya cara memperbaikinya
   suggestion3: 'Buat modpack: cari mod untuk fitur yang saya inginkan dan pasang ke dalam instansi ini'
   thinking: berpikir…
-  title: Agen XMCL
+  title: Agen Zenith Launcher
   toggleHint: untuk beralih
 ago:
   day: '{duration} hari yang lalu | {duration} hari yang lalu'
@@ -117,8 +117,8 @@ backup:
   noInstancesFound: Tidak ada instance yang ditemukan di peluncur.
   excludeLibrariesNotice: File pustaka inti, aset Minecraft, dan cache sementara dikecualikan secara otomatis agar ukuran arsip tetap ringkas.
   create: Buat Cadangan
-  createTitle: Buat Arsip Cadangan XMCL
-  saveDialogTitle: Simpan Arsip Cadangan XMCL
+  createTitle: Buat Arsip Cadangan Zenith Launcher
+  saveDialogTitle: Simpan Arsip Cadangan Zenith Launcher
   fileFilterName: 'Arsip Cadangan XMCL (*.xmclbackup, *.zip)'
   createError: Gagal membuat cadangan
   loadManifestError: Gagal membaca arsip cadangan
@@ -160,7 +160,7 @@ backup:
   selectBackupFilePrompt: Pilih arsip cadangan untuk dipulihkan
   selectBackupFileDescription: Pilih file .xmclbackup atau .zip yang berisi data dan instance XMCL Anda.
   selectFile: Pilih File
-  selectBackupFileTitle: Buka Arsip Cadangan XMCL
+  selectBackupFileTitle: Buka Arsip Cadangan Zenith Launcher
   createdOn: 'Dibuat pada {date}'
   changeFile: Ganti File
   dataToRestore: Data untuk Dipulihkan
@@ -500,7 +500,7 @@ importModpack:
   selectVersionDescription: 'Pilih versi {name} yang ingin dipasang:'
   pmcProtected: Planet Minecraft dilindungi oleh Cloudflare. Salin tautan unduhan langsung atau tautan cermin dari halaman tersebut.
   netdiskTitle: Unduh dari penyimpanan awan
-  netdiskDescription: Versi modpack ini tersedia di penyimpanan awan eksternal. Klik di bawah untuk membuka halaman unduhan di peramban, lalu seret dan lepas berkas .zip atau .mrpack yang telah diunduh ke XMCL.
+  netdiskDescription: Versi modpack ini tersedia di penyimpanan awan eksternal. Klik di bawah untuk membuka halaman unduhan di peramban, lalu seret dan lepas berkas .zip atau .mrpack yang telah diunduh ke Zenith Launcher.
   openNetdisk: Buka penyimpanan awan
   netdiskOpened: Tautan penyimpanan awan telah dibuka di peramban dan disalin ke papan klip.
   noReleasesFound: Tidak ditemukan rilis modpack .mrpack atau .zip di repositori ini.
@@ -664,7 +664,7 @@ instances:
   addModrinthDescription: Impor instansi Modrinth yang ada. Anda perlu memilih folder data utama Modrinth.
   addPrismDescription: Impor instansi PrismLauncher yang ada.
   addVanilla: Buat dari Minecraft mirip vanilla
-  addVanillaDescription: Impor dari folder .minecraft umum. Ini akan menduplikat profil game asli ke XMCL.
+  addVanillaDescription: Impor dari folder .minecraft umum. Ini akan menduplikat profil game asli ke Zenith Launcher.
   edition: Edisi
   editionJava: Edisi Java
   editionBedrock: Edisi Bedrock
@@ -1155,7 +1155,7 @@ multiplayer:
   openConsumerPortal: Buka Portal Konsumen
   refundHint: Perlu pengembalian dana? Kunjungi Portal Konsumen Waffo untuk mengelola pesanan dan langganan Anda.
   togetherSupportHint: Jika multipemain tidak berfungsi, bergabunglah ke Discord kami dan hubungi tim pengembang. Kami akan membantu menyelesaikan masalahnya.
-  autoShareAmbiguous: Beberapa game sedang berjalan. Pilih instans yang menghosting dunia LAN agar XMCL dapat membagikannya.
+  autoShareAmbiguous: Beberapa game sedang berjalan. Pilih instans yang menghosting dunia LAN agar Zenith Launcher dapat membagikannya.
   editSharingScope: Edit cakupan berbagi
   gameAvailable: Game LAN tersedia
   joinGame: Gabung ke game
@@ -1192,7 +1192,7 @@ multiplayer:
     available: Uji coba gratis tersedia
     expired: Uji coba telah digunakan
     unavailable: Uji coba tidak tersedia
-  loginRequiredDescription: Multipemain P2P menggunakan layanan online XMCL. Masuk ke Akun XMCL untuk melanjutkan.
+  loginRequiredDescription: Multipemain P2P menggunakan layanan online Zenith Launcher. Masuk ke Akun Zenith Launcher untuk melanjutkan.
   loginRequiredTitle: Masuk untuk multipemain P2P
   complete: Selesai
   confirm: Konfirmasi
@@ -1868,7 +1868,7 @@ setup:
   appearance:
     name: '@:setting.appearance'
   dataRoot:
-    description: Folder data utama bukanlah direktori .minecraft umum. Karena struktur direktori data XMCL berbeda dari vanilla, kami tidak menyarankan menggunakan direktori .minecraft umum sebagai folder data utama.
+    description: Folder data utama bukanlah direktori .minecraft umum. Karena struktur direktori data Zenith Launcher berbeda dari vanilla, kami tidak menyarankan menggunakan direktori .minecraft umum sebagai folder data utama.
     drives: Lokasi yang Direkomendasikan
     name: Atur Direktori Data
   defaultLayoutDescription: Tata letak default mencoba untuk meningkatkan konsep "instansi" game. Terlihat seperti aplikasi seperti Discord. Ini juga terinspirasi oleh aplikasi peluncur game lain seperti Steam, dll.
@@ -2000,8 +2000,8 @@ theme:
   selectImage: Pilih Gambar
   selectMusic: Pilih Musik
   selectVideo: Pilih Video
-  title: XMCL
-title: XMCL
+  title: Zenith Launcher
+title: Zenith Launcher
 transportType:
   host: Kandidat Host
   prflx: Kandidat Peer Reflexive
@@ -2280,7 +2280,7 @@ gamepad:
   steamAddedNotify: Peluncur berhasil ditambahkan ke Perpustakaan Steam! Silakan mulai ulang Steam untuk melihatnya.
   steamAlreadyAddedNotify: Peluncur sudah ada di Perpustakaan Steam Anda.
   steamDeckTitle: Steam Deck Terdeteksi
-  steamDeckDesc: Kami mendeteksi bahwa Anda berjalan di Steam Deck. Apakah Anda ingin menambahkan XMCL ke Perpustakaan Steam Anda sebagai game non-Steam untuk integrasi overlay Steam dan pengontrol penuh dalam Mode Game?
+  steamDeckDesc: Kami mendeteksi bahwa Anda berjalan di Steam Deck. Apakah Anda ingin menambahkan Zenith Launcher ke Perpustakaan Steam Anda sebagai game non-Steam untuk integrasi overlay Steam dan pengontrol penuh dalam Mode Game?
   steamDeckAddBtn: Tambahkan ke Steam ({btn})
   steamDeckCancelBtn: Batal ({btn})
   disconnected: Controller Disconnected

@@ -14,7 +14,7 @@ export async function removeShortcut(outputDir: string, man: InstalledAppManifes
 export async function createLinkWin32(app: LauncherApp, exePath: string, outputDir: string, man: InstalledAppManifest, globalShortcut: boolean): Promise<void> {
   const urlContent =
   `[InternetShortcut]
-  URL=xmcl://launcher/app?url=${man.url}
+  URL=zenith-launcher://launcher/app?url=${man.url}
   WorkingDirectory=.
   IconIndex=0
   IconFile=${man.iconSets.icon}`

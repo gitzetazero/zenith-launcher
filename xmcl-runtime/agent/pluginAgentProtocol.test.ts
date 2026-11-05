@@ -48,7 +48,7 @@ describe('agent protocol', () => {
 
     await handler(ctx)
 
-    expect(ctx.request.url.toString()).toBe('https://ai.xmcl.app/v1/chat/completions')
+    expect(ctx.request.url.toString()).toBe('https://ai.xmcl.disabled.invalid/v1/chat/completions')
     expect(ctx.request.headers).toEqual({
       authorization: 'Bearer xmcl-token',
       'x-xmcl-account-id': 'account-id',
@@ -73,7 +73,7 @@ describe('agent protocol', () => {
 
     expect(resolveXmclAuthorization).toHaveBeenCalledWith({
       method: 'POST',
-      url: new URL('https://ai.xmcl.app/v1/chat/completions'),
+      url: new URL('https://ai.xmcl.disabled.invalid/v1/chat/completions'),
     })
     expect(ctx.request.headers).toMatchObject({
       authorization: 'DPoP xmcl-token',

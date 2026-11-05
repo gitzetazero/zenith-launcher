@@ -4,10 +4,12 @@ import { join } from 'path'
 import { InjectionKey, LauncherApp } from '~/app'
 import { kFlights, Logger } from '~/infra'
 import { loadYggdrasilApiProfile } from './user'
+import { getZenithConfig } from '~/zenith/config'
 
-const BUILTIN_CLIENT = {
-  'open.littleskin.cn': '393'
-} as Record<string, string>
+// zenith: XMCL's registered LittleSkin client id is not carried over (set ZENITH_LITTLESKIN_CLIENT_ID to enable it)
+const BUILTIN_CLIENT = (getZenithConfig('littleskinClientId')
+  ? { 'open.littleskin.cn': getZenithConfig('littleskinClientId') }
+  : {}) as Record<string, string>
 
 export const kYggdrasilSeriveRegistry: InjectionKey<YggdrasilSeriveRegistry> = Symbol('YggdrasilSeriveRegistry')
 

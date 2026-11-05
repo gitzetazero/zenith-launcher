@@ -6,6 +6,7 @@ import { NetworkInterface, kNetworkInterface } from '~/network'
 import { AbstractService, ExposeServiceKey } from '~/service'
 import { LauncherApp } from '../app/LauncherApp'
 import { LittleSkinClient } from './LittleSkinClient'
+import { getZenithConfig } from '~/zenith/config'
 
 const LITTLE_SKIN_HOST = 'littleskin.cn'
 
@@ -44,7 +45,10 @@ export class LittleSkinUserService extends AbstractService implements ILittleSki
   }
 
   async authenticate(): Promise<void> {
-    const url = 'https://littleskin.cn/oauth/authorize?client_id=393&redirect_uri=http://localhost:25555/littleskin&response_type=code&scope'
+    // zenith: XMCL's LittleSkin OAuth app (client id and secret) is not carried over
+    throw new Error('LittleSkin OAuth is not available in Zenith Launcher (no OAuth app configured).')
+    // eslint-disable-next-line no-unreachable
+    const url = `https://littleskin.cn/oauth/authorize?client_id=${getZenithConfig('littleskinClientId')}&redirect_uri=http://localhost:25555/littleskin&response_type=code&scope`
     this.emit('authorize-url', url)
     await this.app.shell.openInBrowser(url)
     const code = await new Promise<string>((resolve, reject) => {
@@ -62,8 +66,7 @@ export class LittleSkinUserService extends AbstractService implements ILittleSki
     })
     const body = new FormData()
     body.append('grant_type', 'authorization_code')
-    body.append('client_id', '393')
-    body.append('client_secret', 'pGmFutnvu1H3eHfqJC8l80CYcCtjk3p4ykZaUzJW')
+    body.append('client_id', getZenithConfig('littleskinClientId'))
     body.append('redirect_uri', 'http://localhost:25555/littleskin')
     body.append('code', code)
     const response = await request('https://littleskin.cn/oauth/authorize', {

@@ -51,7 +51,7 @@ describe('pluginApiFallback', () => {
     const { handler } = createPlugin(resolveAuthorization)
     const request = {
       method: 'POST',
-      url: new URL('https://signaling.xmcl.app/v1/rtc/official?room=1'),
+      url: new URL('https://signaling.xmcl.disabled.invalid/v1/rtc/official?room=1'),
       headers,
     }
 
@@ -71,7 +71,7 @@ describe('pluginApiFallback', () => {
     const { handler } = createPlugin(async () => undefined)
     const request = {
       method: 'GET',
-      url: new URL('https://signaling.xmcl.app/v1/multiplayer/rooms'),
+      url: new URL('https://signaling.xmcl.disabled.invalid/v1/multiplayer/rooms'),
       headers,
     }
 
@@ -96,7 +96,7 @@ describe('pluginApiFallback', () => {
     })
     const request = {
       method: 'POST',
-      url: new URL('https://signaling.xmcl.app/v1/rtc/official'),
+      url: new URL('https://signaling.xmcl.disabled.invalid/v1/rtc/official'),
       headers: {},
     }
     const response: Record<string, any> = { headers: {} }

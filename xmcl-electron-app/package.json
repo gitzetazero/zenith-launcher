@@ -1,17 +1,17 @@
 {
-    "name": "xmcl",
+    "name": "zenith-launcher",
     "private": true,
     "main": "./index.js",
-    "version": "0.73.1",
-    "author": "ci010 <cijhn@hotmail.com>",
-    "description": "XMCL - An open-source launcher for Minecraft",
+    "version": "0.73.1-zenith.1",
+    "author": "Zenith contributors; based on XMCL by ci010 (Voxelum)",
+    "description": "Zenith Launcher - fork of XMCL, an open-source launcher for Minecraft",
     "license": "MIT",
     "engines": {
         "node": ">=22.16.0"
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/voxelum/x-minecraft-launcher"
+        "url": "https://github.com/gitzetazero/zenith-launcher"
     },
     "msstoreCliAppId": "9MXJWHXTP4B9",
     "scripts": {

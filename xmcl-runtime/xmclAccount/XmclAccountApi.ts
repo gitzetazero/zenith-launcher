@@ -91,7 +91,7 @@ export class XmclAccountApi {
 
   constructor(
     private readonly fetch: FetchLike,
-    private readonly baseUrl: BaseUrlProvider = 'https://api.xmcl.app',
+    private readonly baseUrl: BaseUrlProvider = 'https://api.xmcl.disabled.invalid', // zenith: disabled
     private readonly dpopKeyProvider: () => Promise<XmclDpopKey> | XmclDpopKey = () =>
       generateXmclDpopKey(),
     private readonly togetherBaseUrl: BaseUrlProvider = baseUrl,

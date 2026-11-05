@@ -101,8 +101,8 @@ export const vuetify = createVuetify({
       dark: {
         dark: true,
         colors: {
-          primary: '#4caf50',
-          accent: '#00e676',
+          primary: '#8B7FFF', // zenith: brand palette
+          accent: '#FFB938',
         },
       },
     },

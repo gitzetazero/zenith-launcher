@@ -25,7 +25,10 @@ export class ElyByService extends AbstractService implements IElyByService {
     const cachePath = join(this.app.appDataPath, 'ely-authlib.cache.json')
     const content = await readJSON(cachePath, 'utf-8').catch(() => undefined)
     const etag = content?.etag
-    const resp = await this.app.fetch('https://api.xmcl.app/elyby/authlib', {
+    // zenith: XMCL's mirror of the ely.by authlib list is not used; the cached copy (if any) stays valid
+    return
+    // eslint-disable-next-line no-unreachable
+    const resp = await this.app.fetch('https://api.xmcl.disabled.invalid/elyby/authlib', {
       headers: etag ? {
         'If-None-Match': etag,
       } : {},

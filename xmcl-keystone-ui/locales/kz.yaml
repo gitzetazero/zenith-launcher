@@ -85,8 +85,8 @@ backup:
   noInstancesFound: Лаунчерде инстанциялар табылмады.
   excludeLibrariesNotice: Негізгі кітапханалар, Minecraft ресурстары және уақытша кэштер мұрағат көлемін азайту үшін автоматты түрде қосылмайды.
   create: Сақтық көшірме жасау
-  createTitle: XMCL сақтық көшірме мұрағатын жасау
-  saveDialogTitle: XMCL сақтық көшірмесін сақтау
+  createTitle: Zenith Launcher сақтық көшірме мұрағатын жасау
+  saveDialogTitle: Zenith Launcher сақтық көшірмесін сақтау
   fileFilterName: 'XMCL сақтық көшірмесі (*.xmclbackup, *.zip)'
   createError: Сақтық көшірме жасау сәтсіз аяқталды
   loadManifestError: Сақтық көшірме мұрағатын оқу мүмкін болмады
@@ -128,7 +128,7 @@ backup:
   selectBackupFilePrompt: Қалпына келтіру үшін сақтық көшірме мұрағатын таңдаңыз
   selectBackupFileDescription: Сақталған XMCL деректері бар .xmclbackup немесе .zip файлын таңдаңыз.
   selectFile: Файлды таңдау
-  selectBackupFileTitle: XMCL сақтық көшірмесін ашу
+  selectBackupFileTitle: Zenith Launcher сақтық көшірмесін ашу
   createdOn: 'Жасалған күні: {date}'
   changeFile: Файлды өзгерту
   dataToRestore: Қалпына келтірілетін деректер
@@ -436,7 +436,7 @@ importModpack:
   selectVersionDescription: 'Орнатылатын {name} нұсқасын таңдаңыз:'
   pmcProtected: Planet Minecraft сайты Cloudflare арқылы қорғалған. Беттен тікелей жүктеу сілтемесін немесе айна сілтемесін көшіріңіз.
   netdiskTitle: Бұлттық дискіден жүктеу
-  netdiskDescription: Модпактың бұл нұсқасы сыртқы бұлттық дискіде орналасқан. Жүктеу бетін браузерде ашу үшін төмендегі түймені басыңыз, содан кейін жүктелген .zip немесе .mrpack файлын XMCL терезесіне сүйреп апарыңыз.
+  netdiskDescription: Модпактың бұл нұсқасы сыртқы бұлттық дискіде орналасқан. Жүктеу бетін браузерде ашу үшін төмендегі түймені басыңыз, содан кейін жүктелген .zip немесе .mrpack файлын Zenith Launcher терезесіне сүйреп апарыңыз.
   openNetdisk: Бұлттық дискіні ашу
   netdiskOpened: Бұлттық диск сілтемесі браузерде ашылып, алмасу буферіне көшірілді.
   noReleasesFound: Бұл репозиторийде .mrpack немесе .zip пішіміндегі модпак шығарылымдары табылмады.
@@ -588,7 +588,7 @@ instances:
   addMMCDescription: Бар болып тұрған MultiMC жеке жағдайын импорттау. Сіз MultiMC-ден деректер қалтасын таңдауыңыз керек.
   addModrinthDescription: Бар болып тұрған Modrinth жеке жағдайын импорттау. Сіз Modrinth түбірлік деректер қалтасын таңдауыңыз керек.
   addVanilla: Vanilla тәрізді Minecraft-тан жасау
-  addVanillaDescription: Жалпы .minecraft қалтасынан импорттау. Бұл түпнұсқа ойын профилін XMCL-ге екі еселеп көшіреді.
+  addVanillaDescription: Жалпы .minecraft қалтасынан импорттау. Бұл түпнұсқа ойын профилін Zenith Launcher-ге екі еселеп көшіреді.
   fix: Жөндеу
   folder: Қалта
   folderSetting: Қалта баптаулары
@@ -1041,7 +1041,7 @@ multiplayer:
   openConsumerPortal: Тұтынушы порталын ашу
   refundHint: Қаражатты қайтару керек пе? Тапсырыстар мен жазылымдарды басқару үшін Waffo тұтынушы порталына кіріңіз.
   togetherSupportHint: Көп ойыншы режимі жұмыс істемесе, Discord-қа қосылып, әзірлеушілер тобымен хабарласыңыз. Мәселені шешуге көмектесеміз.
-  autoShareAmbiguous: Бірнеше ойын іске қосылған. XMCL бөлісе алуы үшін LAN әлемін орналастырып тұрған дананы таңдаңыз.
+  autoShareAmbiguous: Бірнеше ойын іске қосылған. Zenith Launcher бөлісе алуы үшін LAN әлемін орналастырып тұрған дананы таңдаңыз.
   editSharingScope: Бөлісу ауқымын өзгерту
   gameAvailable: LAN ойыны қолжетімді
   joinGame: Ойынға қосылу
@@ -1078,7 +1078,7 @@ multiplayer:
     available: Тегін сынақ нұсқасы қолжетімді
     expired: Сынақ нұсқасы қолданылды
     unavailable: Сынақ нұсқасы қолжетімсіз
-  loginRequiredDescription: P2P көп ойыншысы XMCL онлайн қызметтерін пайдаланады. Жалғастыру үшін XMCL тіркелгісіне кіріңіз.
+  loginRequiredDescription: P2P көп ойыншысы Zenith Launcher онлайн қызметтерін пайдаланады. Жалғастыру үшін Zenith Launcher тіркелгісіне кіріңіз.
   loginRequiredTitle: P2P көп ойыншысы үшін кіру
   complete: Аяқтау
   confirm: Растау
@@ -1429,7 +1429,7 @@ serverStatus:
   refuse: §4Сервер бас тартты!
   timeout: §4Серверге қосылу уақыты аяқталды!
 agent:
-  accessRequiredHint: Кірістірілген агентті пайдалану үшін XMCL қызметіне жазылыңыз немесе баптауларда өз ЖИ провайдеріңізді реттеңіз.
+  accessRequiredHint: Кірістірілген агентті пайдалану үшін Zenith Launcher қызметіне жазылыңыз немесе баптауларда өз ЖИ провайдеріңізді реттеңіз.
   subscribeXmcl: XMCL қызметіне жазылу
   notConfiguredHint: Баптаулар → Жалпы → ЖИ агенті бөлімінде API кілтін, модельді және OpenAI-мен үйлесімді соңғы нүктені орнатыңыз. Мысалы, OpenAI немесе Claude-пен үйлесімді шлюзді қолданыңыз.
 setting:
@@ -1637,7 +1637,7 @@ setup:
   appearance:
     name: '@:setting.appearance'
   dataRoot:
-    description: Деректер түбірі әдеттегі .minecraft қалтасы емес. XMCL деректер қалтасының құрылымы vanilla-ден өзгеше болғандықтан, біз деректер түбірі ретінде әдеттегі .minecraft қалтасын қолдануға ұсынбаймыз.
+    description: Деректер түбірі әдеттегі .minecraft қалтасы емес. Zenith Launcher деректер қалтасының құрылымы vanilla-ден өзгеше болғандықтан, біз деректер түбірі ретінде әдеттегі .minecraft қалтасын қолдануға ұсынбаймыз.
     drives: Ұсынылған орындар
     name: Деректер қалтасын орнату
   defaultLayoutDescription: Әдепкі макет ойын "жеке жағдай" ұғымын күшейтуге тырысады. Ол Discord сияқты қосымшаларға ұқсайды. Ол сондай-ақ Steam сияқты басқа ойын іске қосқыш қосымшаларынан шабыт алған.
@@ -1762,7 +1762,7 @@ theme:
   selectImage: Суретті таңдау
   selectMusic: Музыканы таңдау
   selectVideo: Видеоны таңдау
-  title: XMCL
+  title: Zenith Launcher
 transportType:
   host: Хост кандидаты
   prflx: Қарым-қатынас рефлексивті кандидаты
@@ -2104,7 +2104,7 @@ gamepad:
   steamAddedNotify: Launcher added to Steam Library successfully! Please restart Steam to see it.
   steamAlreadyAddedNotify: Launcher is already in your Steam Library.
   steamDeckTitle: Steam Deck Detected
-  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add XMCL to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
+  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add Zenith Launcher to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
   steamDeckAddBtn: Add to Steam ({btn})
   steamDeckCancelBtn: Cancel ({btn})
 bigPicture:

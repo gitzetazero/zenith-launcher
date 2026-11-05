@@ -1,5 +1,5 @@
 import { EventEmitter } from 'events'
-import { describe, expect, it, vi } from 'vitest'
+import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
 import { ExternalCredentialService } from '~/credential/ExternalCredentialService'
 import { loginModrinth } from './loginModrinth'
 import { createModrinthAuthenticatedFetch, formatModrinthAuthorization } from './loginModrinth'
@@ -16,6 +16,15 @@ function createStorage() {
 }
 
 describe('loginModrinth', () => {
+  // zenith: no embedded Modrinth OAuth client id; tests provide their own
+  beforeEach(() => { vi.stubEnv('ZENITH_MODRINTH_CLIENT_ID', 'test-client') })
+  afterEach(() => { vi.unstubAllEnvs() })
+
+  it('refuses to sign in without a configured OAuth client id', async () => {
+    vi.stubEnv('ZENITH_MODRINTH_CLIENT_ID', '')
+    await expect(loginModrinth({ registry: { getOrCreate: async () => ({ getValidAccessToken: async () => ({ status: 'missing' }) }) } } as any, {} as any, [], false))
+      .rejects.toMatchObject({ name: 'ZenithModrinthLoginUnavailable' })
+  })
   it('stores successful OAuth credentials once and emits one lifecycle signal', async () => {
     const storage = createStorage()
     const app = Object.assign(new EventEmitter(), {

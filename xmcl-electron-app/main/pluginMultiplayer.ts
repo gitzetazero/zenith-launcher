@@ -1,4 +1,5 @@
 import type { LauncherAppPlugin } from '@xmcl/runtime/app'
+import { isBlockedUpstreamUrl } from '@xmcl/runtime/zenith/blockedHosts'
 import {
   kMultiplayerHostFactory,
   type MultiplayerHost,
@@ -38,7 +39,7 @@ export const pluginMultiplayer: LauncherAppPlugin = (rawApp) => {
       launcherVersion: app.version,
       launcherBuild: String(app.build),
       isEnabled: options.isTelemetryEnabled,
-      fetch: (url, init) => electronSession.fetch(url, init),
+      fetch: (url, init) => (isBlockedUpstreamUrl(url) ? Promise.reject(new Error('Request to a disabled upstream service was blocked')) : electronSession.fetch(url, init)),
       warn: (message) => app.getLogger('MultiplayerTelemetry').warn(message),
     })
 
@@ -65,7 +66,7 @@ export const pluginMultiplayer: LauncherAppPlugin = (rawApp) => {
       setDownloadPort: async (port) => options.setDownloadPort(port),
       roomApi: createTogetherRoomApi({
         getBaseUrl: () => options.init.signalingBaseUrl,
-        fetch: (url, init) => electronSession.fetch(url, init),
+        fetch: (url, init) => (isBlockedUpstreamUrl(url) ? Promise.reject(new Error('Request to a disabled upstream service was blocked')) : electronSession.fetch(url, init)),
       }),
     })
 

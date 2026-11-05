@@ -186,7 +186,7 @@
         <div class="flex flex-col gap-1.5 pt-1">
           <a
             target="browser"
-            href="https://xmcl.app/en/guide/microsoft-login-issues"
+            href="https://github.com/gitzetazero/zenith-launcher/blob/master/docs/ZENITH-LAUNCHER.md"
             class="flex items-center gap-1.5 text-xs text-amber-500 hover:underline font-medium"
           >
             <v-icon size="14">help_outline</v-icon>
@@ -568,7 +568,7 @@ watch(error, (err) => {
           text: t('loginError.openLoginGuide'),
           icon: 'help_outline',
           handler() {
-            window.open('https://xmcl.app/en/guide/microsoft-login-issues', 'browser')
+            window.open('https://github.com/gitzetazero/zenith-launcher/blob/master/docs/ZENITH-LAUNCHER.md', 'browser')
           },
         },
         {

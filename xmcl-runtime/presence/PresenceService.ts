@@ -5,6 +5,7 @@ import { AbstractService, ExposeServiceKey } from '~/service'
 import { kSettings } from '~/settings'
 import { LauncherApp } from '../app/LauncherApp'
 import { LaunchService } from '../launch/LaunchService'
+import { getZenithConfig } from '../zenith/config'
 
 @ExposeServiceKey(PresenceServiceKey)
 export class PresenceService extends AbstractService implements IPresenceService {
@@ -28,8 +29,9 @@ export class PresenceService extends AbstractService implements IPresenceService
     })
 
     // Initialize Discord client first before setting up event listeners
+    // zenith: XMCL's Discord application id is not carried over; presence stays off until ZENITH_DISCORD_CLIENT_ID is set
     this.discord = new Client({
-      clientId: '1075044884400054363',
+      clientId: getZenithConfig('discordClientId'),
     })
 
     settings.subscribe('discordPresenceSet', async (state) => {

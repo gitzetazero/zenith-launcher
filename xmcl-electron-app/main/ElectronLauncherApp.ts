@@ -1,6 +1,7 @@
 import { NetworkErrorCode, NetworkException } from '@xmcl/runtime-api'
 import { LauncherApp, Shell } from '@xmcl/runtime/app'
 import { LAUNCHER_NAME } from '@xmcl/runtime/constant'
+import { isBlockedUpstreamUrl } from '@xmcl/runtime/zenith/blockedHosts'
 import { kFlights, runWithExternalHttpTrace } from '@xmcl/runtime/infra'
 import { AnyError } from '@xmcl/utils'
 import { Menu, app, net, shell } from 'electron'
@@ -154,6 +155,8 @@ export default class ElectronLauncherApp extends LauncherApp {
   private readonly reportedNonLatin1Headers = new Set<string>()
 
   constructor() {
+    // zenith: Chromium/Electron user data goes to the same folder as the launcher data
+    if (!process.env.XMCL_E2E_APP_DATA) app.setPath('userData', join(app.getPath('appData'), LAUNCHER_NAME))
     // E2E hook: when XMCL_E2E_APP_DATA is set, redirect Electron's appData
     // (and therefore both `app.getPath('appData')` calls below + the one in
     // xmcl-runtime/app/LauncherApp.ts) to a per-test temporary directory.
@@ -208,6 +211,8 @@ export default class ElectronLauncherApp extends LauncherApp {
   }
 
   fetch: typeof fetch = async (...args: any[]) => {
+    // zenith: refuse XMCL-hosted/telemetry origins
+    if (isBlockedUpstreamUrl(args[0])) throw new AnyError('NetworkError', 'Request to a disabled upstream service was blocked')
     const bodies = splitFetchBody(
       await adaptFormDataForElectron(args[1]?.body),
       isReplayableFetchBody(args[1]?.headers),
@@ -328,7 +333,7 @@ export default class ElectronLauncherApp extends LauncherApp {
       this.protocol.handle({ url })
     }).on('second-instance', (e, argv) => {
       const last = argv[argv.length - 1]
-      if (last.startsWith('xmcl://')) {
+      if (last.startsWith('xmcl://') || last.startsWith('zenith-launcher://')) {
         this.protocol.handle({ url: last })
       } else {
         this.emit('second-instance', argv)

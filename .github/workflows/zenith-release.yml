@@ -1,0 +1,117 @@
+name: Zenith Release
+
+# zenith: builds Zenith Launcher (this fork of XMCL) for Windows x64 and publishes a PRERELEASE.
+# No secrets: only the automatic GITHUB_TOKEN, and only the publish step uses it (contents: write).
+# The inherited XMCL workflows stay in the tree but are disabled in this repository (see docs/ZENITH-LAUNCHER.md).
+
+on:
+  workflow_dispatch:
+    inputs:
+      tag:
+        description: 'Release tag (prerelease), e.g. v0.73.1-zenith.1'
+        required: true
+        default: 'v0.73.1-zenith.1'
+
+permissions:
+  contents: read
+
+concurrency:
+  group: zenith-release
+  cancel-in-progress: false
+
+jobs:
+  release:
+    runs-on: windows-latest
+    timeout-minutes: 60
+    permissions:
+      contents: write
+    env:
+      ELECTRON_CACHE: ${{ github.workspace }}/.cache/electron
+      ELECTRON_BUILDER_CACHE: ${{ github.workspace }}/.cache/electron-builder
+      TAG: ${{ inputs.tag }}
+    steps:
+      - name: Check the tag name
+        shell: bash
+        run: |
+          [[ "$TAG" =~ ^v[0-9]+\.[0-9]+\.[0-9]+-zenith\.[0-9]+$ ]] || { echo "::error::the tag must look like v0.73.1-zenith.1"; exit 1; }
+      - uses: actions/checkout@3d3c42e5aac5ba805825da76410c181273ba90b1 # v7
+        with:
+          persist-credentials: false
+      - uses: pnpm/action-setup@73e46992e05b19abd31f2f3c20e0e7370d762115 # v6
+      - uses: actions/setup-node@a0853c24544627f65ddf259abe73b1d18a591444 # v5
+        with:
+          node-version: 22
+          cache: pnpm
+      - name: Python build helpers for node-gyp
+        shell: bash
+        run: python -m pip install --user packaging setuptools
+      - name: Install
+        shell: bash
+        run: pnpm install --frozen-lockfile
+      - name: Zenith bridge (signature of SHA256SUMS and SHA-256 verified, fail closed)
+        shell: bash
+        run: node tools/zenith/fetch-bridge.mjs xmcl-electron-app/build/zenith
+      - name: Unit tests of the Zenith changes
+        shell: bash
+        run: pnpm vitest run xmcl-runtime/zenith xmcl-runtime/app xmcl-runtime/infra/plugins xmcl-runtime/moddb xmcl-electron-app/build
+      - name: Build
+        shell: bash
+        env:
+          BUILD_NUMBER: ${{ github.run_number }}
+          NODE_ENV: production
+          NODE_OPTIONS: --max-old-space-size=8192
+          # optional, empty unless the maintainer defines the repository variable (a variable, never a secret)
+          ZENITH_MSA_CLIENT_ID: ${{ vars.ZENITH_MSA_CLIENT_ID }}
+        run: |
+          pnpm run --prefix xmcl-keystone-ui build
+          pnpm run --prefix xmcl-electron-app build:all
+      - name: Collect the assets and write SHA256SUMS
+        shell: pwsh
+        run: |
+          New-Item -ItemType Directory -Force dist | Out-Null
+          foreach ($name in 'Zenith-Launcher-Setup-x64.exe', 'Zenith-Launcher-Portable-x64.exe') {
+            $src = Join-Path 'xmcl-electron-app/build/output' $name
+            if (-not (Test-Path $src)) { throw "missing build output: $name" }
+            Copy-Item $src dist/
+          }
+          $lines = Get-ChildItem dist -File | Sort-Object Name | ForEach-Object {
+            "$((Get-FileHash $_.FullName -Algorithm SHA256).Hash.ToLower())  $($_.Name)"
+          }
+          [System.IO.File]::WriteAllText("$PWD/dist/SHA256SUMS", (($lines -join "`n") + "`n"))
+          Get-Content dist/SHA256SUMS
+          Get-ChildItem dist | Format-Table Name, Length
+      - name: Release notes
+        shell: bash
+        run: |
+          cat > notes.md <<'NOTES'
+          ## Zenith Launcher (prerelease)
+
+          Zenith Launcher is a fork of [X Minecraft Launcher (XMCL)](https://github.com/Voxelum/x-minecraft-launcher) by Voxelum (MIT license) with Zenith branding and the Zenith bridge built in. This release is based on XMCL v0.73.1. Zenith Launcher is based on XMCL; the original credit and license are kept (see `LICENSE`).
+
+          ### What is included
+          - `Zenith-Launcher-Setup-x64.exe`: per-user installer (no administrator rights needed).
+          - `Zenith-Launcher-Portable-x64.exe`: portable build, a single exe.
+          - `SHA256SUMS`: SHA-256 sums of the two exes.
+          - The Zenith bridge (`zenith-bridge-windows-x64.exe`) is bundled inside the app; it is downloaded and verified at build time (Ed25519 signature of `SHA256SUMS` from the `nightly` release of gitzetazero/zenith, then the exe's SHA-256).
+          - On first start, once the data folder is chosen, the **Zenith** instance is created (only once).
+
+          ### Honest notes
+          - **Not code-signed**: Windows SmartScreen will warn you ("Windows protected your PC"). Check the SHA-256 below before running.
+          - **Microsoft sign-in**: Zenith Launcher does not carry XMCL's Microsoft application ID. It needs its own Azure app, registered and approved by Mojang (`ZENITH_MSA_CLIENT_ID`); without it, Microsoft sign-in shows a clear message. Other account types work as in XMCL. See `docs/ZENITH-LAUNCHER.md`.
+          - No telemetry and no XMCL-hosted services (api.xmcl.app, etc.). Updates are manual: the launcher links to this Releases page.
+          - Not verified on third-party PCs; this is a prerelease.
+
+          ### Verify your download (PowerShell)
+          ```powershell
+          Get-FileHash .\Zenith-Launcher-Setup-x64.exe -Algorithm SHA256
+          ```
+          and compare it with the matching line of `SHA256SUMS`.
+          NOTES
+      - name: Publish the prerelease
+        shell: bash
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if gh release view "$TAG" > /dev/null 2>&1; then echo "::error::release $TAG already exists; use a new tag"; exit 1; fi
+          gh release create "$TAG" --prerelease --target "$GITHUB_SHA" --title "Zenith Launcher $TAG (prerelease)" \
+            --notes-file notes.md dist/Zenith-Launcher-Setup-x64.exe dist/Zenith-Launcher-Portable-x64.exe dist/SHA256SUMS

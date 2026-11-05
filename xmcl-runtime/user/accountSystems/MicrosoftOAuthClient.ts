@@ -1,6 +1,7 @@
 import { AccountInfo, DeviceCodeResponse, INativeBrokerPlugin } from '@azure/msal-common'
 import { AuthenticationResult, LogLevel, PublicClientApplication } from '@azure/msal-node'
 import { AnyError } from '@xmcl/utils'
+import { MSA_NOT_CONFIGURED_MESSAGE } from '~/zenith/config'
 import { randomUUID } from 'crypto'
 import { copyFileSync, mkdirSync } from 'fs'
 import { tmpdir } from 'os'
@@ -150,6 +151,7 @@ export class MicrosoftOAuthClient {
     nativeBrokerPlugin?: INativeBrokerPlugin,
     onDiagnostic?: (diagnostic: MsalDiagnostic) => void,
   ) {
+    if (!this.clientId) throw new AnyError('ZenithMsaNotConfigured', MSA_NOT_CONFIGURED_MESSAGE)
     return new PublicClientApplication({
       auth: {
         authority: 'https://login.microsoftonline.com/consumers/',

@@ -60,7 +60,7 @@ async function downloadAsarUpdate(
     platformFlag += '-ia32'
   }
   const file = `app-${version}-${platformFlag}.asar`
-  const github = `https://github.com/Voxelum/x-minecraft-launcher/releases/download/v${version}/${file}`
+  const github = `https://github.com/gitzetazero/zenith-launcher/releases/download/v${version}/${file}`
 
   // Skip the download entirely if the pending file already matches the
   // published checksum.
@@ -197,7 +197,8 @@ async function downloadGzAsar(
 }
 
 async function hintUserDownload(): Promise<void> {
-  shell.openExternal('https://xmcl.app')
+  // zenith: no in-app updater yet; send the user to our Releases page
+  shell.openExternal('https://github.com/gitzetazero/zenith-launcher/releases')
 }
 
 async function downloadAppInstaller(
@@ -207,8 +208,9 @@ async function downloadAppInstaller(
     tracker?: Tracker<DownloadUpdateTrackerEvents>
   } & DownloadBaseOptions,
 ): Promise<void> {
-  const destination = join(app.getPath('downloads'), 'XMCL.appinstaller')
-  const url = 'https://xmcl.blob.core.windows.net/releases/xmcl.appinstaller'
+  // zenith: the appx channel is not published for Zenith Launcher
+  const destination = join(app.getPath('downloads'), 'Zenith-Launcher.appinstaller')
+  const url = 'https://github.com/gitzetazero/zenith-launcher/releases/latest/download/Zenith-Launcher.appinstaller'
 
   await download({
     url,
@@ -321,33 +323,26 @@ export class ElectronUpdater implements LauncherAppUpdater {
   async #getUpdateFromSelfHost(): Promise<ReleaseInfo> {
     const app = this.app
     this.logger.log('Try get update from selfhost')
-    const { allowPrerelease, locale } = await app.registry.get(kSettings)
-    const queryString = `version=v${app.version}&prerelease=${allowPrerelease || false}`
-    const primary = await this.app
-      .fetch(`https://api.xmcl.app/latest?${queryString}`, {
-        headers: {
-          'Accept-Language': locale,
-        },
-      })
-      .catch(() => undefined)
-    // The Deno edge may return a regional 404. Fall back for any non-success
-    // response as well as a transport failure.
-    const response = primary?.ok
-      ? primary
-      : await this.app.fetch(`https://xmcl-core-api.azurewebsites.net/api/latest?${queryString}`, {
-        headers: {
-          'Accept-Language': locale,
-        },
-      })
+    const { locale } = await app.registry.get(kSettings)
+    // zenith: releases come from this fork's GitHub Releases (prereleases included: the first Zenith builds are prereleases)
+    const response = await this.app.fetch('https://api.github.com/repos/gitzetazero/zenith-launcher/releases?per_page=10', {
+      headers: {
+        'Accept': 'application/vnd.github+json',
+        'Accept-Language': locale,
+      },
+    })
     if (!response.ok) {
       throw new AnyError(
         'UpdateError',
-        `Fail to get update from selfhost: ${await response.text()}`,
+        `Fail to get update from GitHub releases: ${await response.text()}`,
         {},
         { status: response.status },
       )
     }
-    const result = (await response.json()) as any
+    const json = (await response.json()) as any
+    const releases = (Array.isArray(json) ? json : [json]).filter((r: any) => !r.draft)
+    const result = releases[0]
+    if (!result) throw new AnyError('UpdateError', 'No Zenith Launcher release published yet')
     const files = result.assets.map((a: any) => ({
       url: a.browser_download_url,
       name: a.name,

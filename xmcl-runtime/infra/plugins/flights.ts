@@ -8,7 +8,7 @@ import { kFlights } from '../flights'
 const BUILTIN_FLIGHTS = {
 }
 
-export const DEVELOPMENT_XMCL_BILLING_API_BASE_URL = 'https://api-staging.xmcl.app'
+export const DEVELOPMENT_XMCL_BILLING_API_BASE_URL = 'https://api-staging.xmcl.disabled.invalid'
 
 export function applyDevelopmentApiFlight(
   flights: Record<string, any>,
@@ -41,16 +41,18 @@ export function applyRemoteFlights(
 export const pluginFlights: LauncherAppPlugin = async (app) => {
   const logger = app.getLogger('Flights')
   const fetchFlights = async (output: Record<string, any>, cachedPath: string) => {
+    // zenith: remote flights came from XMCL's servers; Zenith Launcher never fetches them
+    if (output) return
     try {
       const clientSession = await app.registry.get(kClientToken)
       const build = app.build
       const queryString = `version=${app.version}&build=${build}&locale=${app.host.getLocale()}&clientToken=${clientSession}`
-      const primary = await app.fetch(`https://api.xmcl.app/flights?${queryString}`).catch(() => undefined)
+      const primary = await app.fetch(`https://api.xmcl.disabled.invalid/flights?${queryString}`).catch(() => undefined)
       // Regional edges can return a 404 instead of failing the connection.
       // Try the Azure fallback for that case too, not only for fetch failures.
       const resp = primary?.ok
         ? primary
-        : await app.fetch(`https://xmcl-core-api.azurewebsites.net/api/flights?${queryString}`)
+        : await app.fetch(`https://core-api.xmcl.disabled.invalid/api/flights?${queryString}`)
       if (resp.status !== 200) {
         logger.error(new Error(`Failed to fetch flights: ${resp.status}`))
         return

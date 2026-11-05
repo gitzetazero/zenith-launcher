@@ -36,13 +36,14 @@ import {
   kMarketProvider,
 } from './marketProvider'
 import { getMarketFilePath } from './marketFilePath'
+import { getZenithConfig } from '~/zenith/config'
 
 type InstanceFile = _InstanceFile & { downloads: string[]; icon?: string }
 
 export const pluginMarketProvider: LauncherAppPlugin = async (app) => {
   const modrinth = new ModrinthV2Client({ fetch: createModrinthAuthenticatedFetch(app) })
   app.registry.register(ModrinthV2Client, modrinth)
-  const curseforge = new CurseforgeV1Client(process.env.CURSEFORGE_API_KEY || '', {
+  const curseforge = new CurseforgeV1Client(getZenithConfig('curseforgeApiKey'), { // zenith: no embedded key; set CURSEFORGE_API_KEY or zenith-config.json
     fetch: (...args) => app.fetch(...args),
   })
   app.registry.register(CurseforgeV1Client, curseforge)

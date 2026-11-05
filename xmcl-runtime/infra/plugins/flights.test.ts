@@ -8,22 +8,22 @@ import {
 describe('applyDevelopmentApiFlight', () => {
   it('forces local development onto the isolated staging API', () => {
     const flights = applyDevelopmentApiFlight(
-      { xmclApiBaseUrl: 'https://api.xmcl.app', builtinAgent: true },
+      { xmclApiBaseUrl: 'https://api.xmcl.disabled.invalid', builtinAgent: true },
       'development',
     )
 
     expect(flights).toEqual({
-      xmclApiBaseUrl: 'https://api.xmcl.app',
+      xmclApiBaseUrl: 'https://api.xmcl.disabled.invalid',
       xmclBillingApiBaseUrl: DEVELOPMENT_XMCL_BILLING_API_BASE_URL,
       builtinAgent: true,
     })
   })
 
   it('does not change production flights', () => {
-    const flights = { xmclApiBaseUrl: 'https://api.xmcl.app' }
+    const flights = { xmclApiBaseUrl: 'https://api.xmcl.disabled.invalid' }
 
     expect(applyDevelopmentApiFlight(flights, 'production')).toBe(flights)
-    expect(flights.xmclApiBaseUrl).toBe('https://api.xmcl.app')
+    expect(flights.xmclApiBaseUrl).toBe('https://api.xmcl.disabled.invalid')
   })
 
   it('does not persist the development-only staging override', () => {
@@ -31,12 +31,12 @@ describe('applyDevelopmentApiFlight', () => {
 
     const persisted = applyRemoteFlights(
       effective,
-      { xmclApiBaseUrl: 'https://api.xmcl.app' },
+      { xmclApiBaseUrl: 'https://api.xmcl.disabled.invalid' },
       'development',
     )
 
     expect(effective.xmclBillingApiBaseUrl).toBe(DEVELOPMENT_XMCL_BILLING_API_BASE_URL)
-    expect(persisted.xmclApiBaseUrl).toBe('https://api.xmcl.app')
+    expect(persisted.xmclApiBaseUrl).toBe('https://api.xmcl.disabled.invalid')
   })
 
   it('removes an inherited development override when remote flights omit it', () => {

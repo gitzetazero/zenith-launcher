@@ -1,6 +1,8 @@
-export const DEFAULT_XMCL_API_BASE_URL = 'https://api.xmcl.app'
-export const DEFAULT_XMCL_AI_API_BASE_URL = 'https://ai.xmcl.app'
-export const DEFAULT_XMCL_SIGNALING_API_BASE_URL = 'https://signaling.xmcl.app'
+// zenith: XMCL's hosted services (api/ai/signaling) are not used. These `.invalid` origins can never resolve and
+// the launcher refuses to send requests to them (xmcl-runtime/zenith/blockedHosts.ts).
+export const DEFAULT_XMCL_API_BASE_URL = 'https://api.xmcl.disabled.invalid'
+export const DEFAULT_XMCL_AI_API_BASE_URL = 'https://ai.xmcl.disabled.invalid'
+export const DEFAULT_XMCL_SIGNALING_API_BASE_URL = 'https://signaling.xmcl.disabled.invalid'
 
 export interface XmclApiEndpoints {
   common: string

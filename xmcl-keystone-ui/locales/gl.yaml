@@ -85,8 +85,8 @@ backup:
   noInstancesFound: No se encontraron instancias en el lanzador.
   excludeLibrariesNotice: Las librerías principales, recursos de Minecraft y cachés temporales se excluyen automáticamente para mantener el archivo compacto. Se descargarán al iniciar el juego.
   create: Crear copia de seguridade
-  createTitle: Crear archivo de copia de seguridad XMCL
-  saveDialogTitle: Guardar copia de seguridad XMCL
+  createTitle: Crear archivo de copia de seguridad Zenith Launcher
+  saveDialogTitle: Guardar copia de seguridad Zenith Launcher
   fileFilterName: 'Archivo de copia de seguridad XMCL (*.xmclbackup, *.zip)'
   createError: Error al crear la copia de seguridad
   loadManifestError: Error al leer el archivo de copia de seguridad
@@ -128,7 +128,7 @@ backup:
   selectBackupFilePrompt: Selecciona un archivo de copia de seguridad para restaurar
   selectBackupFileDescription: Elige un archivo .xmclbackup o .zip con tus datos e instancias de XMCL.
   selectFile: Elegir archivo
-  selectBackupFileTitle: Abrir copia de seguridad XMCL
+  selectBackupFileTitle: Abrir copia de seguridad Zenith Launcher
   createdOn: 'Creado el {date}'
   changeFile: Cambiar archivo
   dataToRestore: Datos a restaurar
@@ -436,7 +436,7 @@ importModpack:
   selectVersionDescription: 'Escolle a versión de {name} que queres instalar:'
   pmcProtected: Planet Minecraft está protexido por Cloudflare. Copia a ligazón de descarga directa ou unha ligazón alternativa da páxina.
   netdiskTitle: Descarga desde a nube
-  netdiskDescription: Esta versión do modpack está aloxada nun servizo de almacenamento na nube externo. Preme embaixo para abrir a páxina de descarga no navegador e despois arrastra o ficheiro .zip ou .mrpack descargado a XMCL.
+  netdiskDescription: Esta versión do modpack está aloxada nun servizo de almacenamento na nube externo. Preme embaixo para abrir a páxina de descarga no navegador e despois arrastra o ficheiro .zip ou .mrpack descargado a Zenith Launcher.
   openNetdisk: Abrir o almacenamento na nube
   netdiskOpened: A ligazón do almacenamento na nube abriuse no navegador e copiouse ao portapapeis.
   noReleasesFound: Non se atoparon versións de modpacks .mrpack ou .zip neste repositorio.
@@ -587,7 +587,7 @@ instances:
   addMMCDescription: Importeer bestaande MultiMC instantie. Je moet de datamap van MultiMC selecteren.
   addModrinthDescription: Importeer bestaande Modrinth instantie. Je moet de Modrinth root datamap selecteren.
   addVanilla: Aanmaken van vanilla-achtige Minecraft
-  addVanillaDescription: Importeer uit gewone .minecraft map. Dit dupliceert het originele game profiel naar XMCL.
+  addVanillaDescription: Importeer uit gewone .minecraft map. Dit dupliceert het originele game profiel naar Zenith Launcher.
   fix: Repareren
   folder: Map
   folderSetting: Mapinstellingen
@@ -1040,7 +1040,7 @@ multiplayer:
   openConsumerPortal: Abrir o portal de consumidores
   refundHint: Precisas un reembolso? Visita o portal de consumidores de Waffo para xestionar os teus pedidos e subscricións.
   togetherSupportHint: Se o modo multixogador non funciona, únete ao noso Discord e contacta co equipo de desenvolvemento. Axudarémosche a resolver o problema.
-  autoShareAmbiguous: Hai varios xogos en execución. Selecciona a instancia que aloxa o mundo LAN para que XMCL poida compartila.
+  autoShareAmbiguous: Hai varios xogos en execución. Selecciona a instancia que aloxa o mundo LAN para que Zenith Launcher poida compartila.
   editSharingScope: Editar o alcance da compartición
   gameAvailable: Xogo LAN dispoñible
   joinGame: Unirse ao xogo
@@ -1077,7 +1077,7 @@ multiplayer:
     available: Proba gratuíta dispoñible
     expired: Proba utilizada
     unavailable: Proba non dispoñible
-  loginRequiredDescription: O multixogador P2P usa os servizos en liña de XMCL. Inicia sesión nunha conta de XMCL para continuar.
+  loginRequiredDescription: O multixogador P2P usa os servizos en liña de Zenith Launcher. Inicia sesión nunha conta de Zenith Launcher para continuar.
   loginRequiredTitle: Inicia sesión para o multixogador P2P
   complete: Voltooid
   confirm: Bevestigen
@@ -1430,7 +1430,7 @@ serverStatus:
   refuse: §4Server weigerde!
   timeout: §4Verbind server time-out!
 agent:
-  accessRequiredHint: Subscríbete a XMCL para usar o axente integrado ou configura o teu propio provedor de IA nos axustes.
+  accessRequiredHint: Subscríbete a Zenith Launcher para usar o axente integrado ou configura o teu propio provedor de IA nos axustes.
   subscribeXmcl: Subscribirse a XMCL
   notConfiguredHint: Stel een API-sleutel, model en OpenAI-compatibel endpoint in via Instellingen → Algemeen → AI-agent. Gebruik bijvoorbeeld OpenAI of een Claude-compatibele gateway.
 setting:
@@ -1638,7 +1638,7 @@ setup:
   appearance:
     name: '@:setting.appearance'
   dataRoot:
-    description: De data root is geen gewone .minecraft map. Omdat XMCL data mapstructuur anders is dan vanilla, raden we niet aan om de gewone .minecraft map als data root te gebruiken.
+    description: De data root is geen gewone .minecraft map. Omdat Zenith Launcher data mapstructuur anders is dan vanilla, raden we niet aan om de gewone .minecraft map als data root te gebruiken.
     drives: Aanbevolen Locaties
     name: Stel Gegevensmap In
   defaultLayoutDescription: De standaard lay-out probeert het game "instantie" concept te verbeteren. Het lijkt op apps zoals Discord. Het is ook geïnspireerd door andere game launcher apps zoals Steam, enz.
@@ -1763,8 +1763,8 @@ theme:
   selectImage: Selecteer Afbeelding
   selectMusic: Selecteer Muziek
   selectVideo: Selecteer Video
-  title: XMCL
-title: XMCL
+  title: Zenith Launcher
+title: Zenith Launcher
 transportType:
   host: Host Kandidaat
   prflx: Peer Reflexive Kandidaat
@@ -2106,7 +2106,7 @@ gamepad:
   steamAddedNotify: Launcher added to Steam Library successfully! Please restart Steam to see it.
   steamAlreadyAddedNotify: Launcher is already in your Steam Library.
   steamDeckTitle: Steam Deck Detected
-  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add XMCL to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
+  steamDeckDesc: We detected that you are running on Steam Deck. Would you like to add Zenith Launcher to your Steam Library as a non-Steam game for full Steam overlay and controller integration in Gaming Mode?
   steamDeckAddBtn: Add to Steam ({btn})
   steamDeckCancelBtn: Cancel ({btn})
 bigPicture:

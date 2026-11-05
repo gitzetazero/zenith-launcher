@@ -9,7 +9,8 @@ import { Readable } from 'stream'
 import { pipeline } from 'stream/promises'
 import { setTimeout } from 'timers/promises'
 import { Logger } from '~/infra'
-import { IS_DEV, LAUNCHER_NAME } from '../constant'
+import { IS_DEV, LAUNCHER_NAME, LAUNCHER_PROTOCOL } from '../constant'
+import { setZenithConfigDirectory } from '../zenith/config'
 import { isSystemError } from '@xmcl/utils'
 import { handleMigrateRoot } from './migrate'
 import { listen } from '../util/server'
@@ -135,7 +136,7 @@ export class LauncherApp extends EventEmitter {
 
   get userAgent() {
     const version = IS_DEV ? '0.0.0' : this.host.getVersion()
-    return `voxelum/x_minecraft_launcher/${version} (xmcl.app)`
+    return `gitzetazero/zenith-launcher/${version} (zenith-launcher)`
   }
 
   #disposed = false
@@ -226,6 +227,7 @@ export class LauncherApp extends EventEmitter {
       arch: plat.arch as any,
     }
     this.appDataPath = join(appData, LAUNCHER_NAME)
+    setZenithConfigDirectory(this.appDataPath) // zenith
     this.minecraftDataPath = join(appData, this.platform.os === 'osx' ? 'minecraft' : '.minecraft')
 
     this.registry.register(LauncherAppKey, this)
@@ -332,8 +334,9 @@ export class LauncherApp extends EventEmitter {
     this.logger.log(`Boot from ${this.appDataPath}`)
 
     // register xmcl protocol
-    if (!this.host.isDefaultProtocolClient('xmcl')) {
-      const result = this.host.setAsDefaultProtocolClient('xmcl')
+    // zenith: the OS-level deep link scheme is zenith-launcher://
+    if (!this.host.isDefaultProtocolClient(LAUNCHER_PROTOCOL)) {
+      const result = this.host.setAsDefaultProtocolClient(LAUNCHER_PROTOCOL)
       if (result) {
         this.logger.log('Successfully register the xmcl protocol')
       } else {
@@ -406,7 +409,7 @@ export class LauncherApp extends EventEmitter {
           }
         }
         this.logger.log('Didn\'t find --url options')
-        const protocolOption = process.argv.find(a => a.startsWith('xmcl://'))
+        const protocolOption = process.argv.find(a => a.startsWith('xmcl://') || a.startsWith(`${LAUNCHER_PROTOCOL}://`))
         if (protocolOption) {
           const u = new URL(protocolOption)
           if (u.host === 'launcher' && u.pathname === '/app' && u.searchParams.has('url')) {
