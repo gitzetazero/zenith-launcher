@@ -10,19 +10,20 @@ NOT AN OFFICIAL MINECRAFT PRODUCT. NOT APPROVED BY OR ASSOCIATED WITH MOJANG OR 
 
 ## Download
 
-Get the latest (pre)release from the [Releases page](https://github.com/gitzetazero/zenith-launcher/releases):
+Get the latest release from the [Zenith Releases page](https://github.com/gitzetazero/zenith/releases):
 
 - `Zenith-Launcher-Setup-x64.exe`: per-user installer (no administrator needed).
 - `Zenith-Launcher-Portable-x64.exe`: portable, a single exe.
 - `SHA256SUMS`: check your download with `Get-FileHash .\Zenith-Launcher-Setup-x64.exe -Algorithm SHA256`.
 
-On first start, choose the data folder and a **Zenith** instance is created for you; pick it and press Play.
+On first start, choose the data folder (default `%APPDATA%\.minecraftz`, Zenith's own game data folder; the official `.minecraft` is never touched) and a **Zenith** instance is created for you; pick it and press Play.
+The launcher plays Zenith only: there are no Java settings, mod loaders or other Minecraft versions. Mods, shader packs, resource packs and data packs come from the **Zenith Market**.
 
 ## Honest limits
 
 - The exes are **not code-signed**: Windows SmartScreen will warn you.
 - **Microsoft sign-in needs an Azure app registered and approved by Mojang**, which this project does not have yet. XMCL's own application ID is deliberately not used. Until one is configured (`ZENITH_MSA_CLIENT_ID`), Microsoft sign-in shows a clear message. Other account types work as in XMCL.
-- No telemetry and no XMCL-hosted services. Updates are manual (the launcher links to Releases).
+- No telemetry and no XMCL-hosted services. Updates are manual (the launcher links to the Zenith Releases).
 - Not verified on third-party PCs. Windows x64 only.
 
 ## What changed from XMCL
@@ -33,7 +34,7 @@ The app keeps XMCL's multi-language support; Zenith's own strings are in English
 ## Build
 
 Node 22+ and pnpm: `pnpm install`, then `pnpm run --prefix xmcl-keystone-ui build && pnpm run --prefix xmcl-electron-app build:all`
-(the release workflow `.github/workflows/zenith-release.yml` also downloads and verifies the Zenith bridge first: `node tools/zenith/fetch-bridge.mjs xmcl-electron-app/build/zenith`).
+(the release workflow `.github/workflows/zenith-release.yml` also downloads and verifies the Zenith bridge first: `node tools/zenith/fetch-bridge.mjs xmcl-electron-app/build/zenith`). The launcher moves into the Zenith repository (`zenith/launcher/`): see [`tools/zenith/import-instructions.md`](tools/zenith/import-instructions.md).
 
 ## Credits and license
 

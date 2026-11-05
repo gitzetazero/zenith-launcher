@@ -23,6 +23,8 @@ function createApp(env = 'appimage') {
     fetch: vi.fn().mockResolvedValue({ ok: true, json: async () => ({
       tag_name: 'v0.74.0', body: 'notes', published_at: '', assets: [
         { name: 'app-0.74.0-linux.asar', browser_download_url: 'https://example.test/update' },
+        // zenith: the feed is the Zenith repository, so a launcher release is told apart by its installer
+        { name: 'Zenith-Launcher-Setup-x64.exe', browser_download_url: 'https://example.test/setup' },
       ],
     }) }),
   }

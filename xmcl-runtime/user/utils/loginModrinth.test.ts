@@ -1,5 +1,4 @@
-import { EventEmitter } from 'events'
-import { afterEach, beforeEach, describe, expect, it, vi } from 'vitest'
+import { describe, expect, it, vi } from 'vitest'
 import { ExternalCredentialService } from '~/credential/ExternalCredentialService'
 import { loginModrinth } from './loginModrinth'
 import { createModrinthAuthenticatedFetch, formatModrinthAuthorization } from './loginModrinth'
@@ -16,70 +15,9 @@ function createStorage() {
 }
 
 describe('loginModrinth', () => {
-  // zenith: no embedded Modrinth OAuth client id; tests provide their own
-  beforeEach(() => { vi.stubEnv('ZENITH_MODRINTH_CLIENT_ID', 'test-client') })
-  afterEach(() => { vi.unstubAllEnvs() })
-
-  it('refuses to sign in without a configured OAuth client id', async () => {
-    vi.stubEnv('ZENITH_MODRINTH_CLIENT_ID', '')
+  it('refuses to sign in: Zenith has no Modrinth OAuth exchange service', async () => {
     await expect(loginModrinth({ registry: { getOrCreate: async () => ({ getValidAccessToken: async () => ({ status: 'missing' }) }) } } as any, {} as any, [], false))
       .rejects.toMatchObject({ name: 'ZenithModrinthLoginUnavailable' })
-  })
-  it('stores successful OAuth credentials once and emits one lifecycle signal', async () => {
-    const storage = createStorage()
-    const app = Object.assign(new EventEmitter(), {
-      secretStorage: storage,
-      getLogger: vi.fn().mockReturnValue({ log: vi.fn(), warn: vi.fn(), error: vi.fn() }),
-      serverPort: Promise.resolve(25555),
-      shell: {
-        openInBrowser: vi.fn(),
-      },
-      controller: {
-        requireFocus: vi.fn(),
-      },
-      registry: {
-        get: vi.fn().mockResolvedValue({
-          xmclApiBaseUrl: 'https://edge.example.test',
-        }),
-      },
-      fetch: vi.fn().mockResolvedValue({
-        ok: true,
-        json: vi.fn().mockResolvedValue({
-          access_token: 'modrinth-access-token',
-          expires_in: 3600,
-          token_type: 'Bearer',
-        }),
-      }),
-    })
-    const credentials = new ExternalCredentialService(app as any)
-    const changes: unknown[] = []
-    credentials.onCredentialChange((change) => changes.push(change))
-    const userService = new EventEmitter()
-    vi.mocked(app.shell.openInBrowser).mockImplementation(() => {
-      queueMicrotask(() =>
-        userService.emit('modrinth-authorize-code', undefined, 'authorization-code'),
-      )
-      return Promise.resolve(true)
-    })
-
-    await loginModrinth(
-      app as any,
-      userService as any,
-      ['USER_READ'],
-      false,
-      undefined,
-      credentials,
-    )
-
-    expect(JSON.parse(storage.values.get('xmcl-external-credentials/modrinth')!)).toMatchObject({
-      accessToken: 'modrinth-access-token',
-      scopes: ['USER_READ'],
-    })
-    expect(changes).toHaveLength(1)
-    expect(changes[0]).toMatchObject({ provider: 'modrinth', type: 'stored' })
-    expect(String(vi.mocked(app.fetch).mock.calls[0]![0])).toBe(
-      'https://edge.example.test/modrinth/auth?code=authorization-code&redirect_uri=http%3A%2F%2F127.0.0.1%3A25555%2Fmodrinth-auth',
-    )
   })
 })
 describe('formatModrinthAuthorization', () => {

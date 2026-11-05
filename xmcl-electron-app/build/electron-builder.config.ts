@@ -43,10 +43,6 @@ export const config = {
     filter: 'package.json',
   }],
   extraResources: [{
-    from: 'main/agent-documents',
-    to: 'agent-documents',
-    filter: ['**/*.md'],
-  }, {
     // zenith: the verified Zenith bridge, downloaded by the release workflow (tools/zenith/fetch-bridge.mjs)
     from: 'build/zenith',
     to: 'zenith',

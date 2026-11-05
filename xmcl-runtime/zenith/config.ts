@@ -22,6 +22,7 @@ const ENV: Record<ZenithConfigKey, string> = {
 const BUILD: Partial<Record<ZenithConfigKey, string>> = {
   msaClientId: process.env.ZENITH_MSA_CLIENT_ID_BUILD,
   curseforgeApiKey: process.env.CURSEFORGE_API_KEY_BUILD,
+  discordClientId: process.env.ZENITH_DISCORD_CLIENT_ID_BUILD,
 }
 
 let appDataDir = ''

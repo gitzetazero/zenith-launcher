@@ -1,8 +1,6 @@
-import { readFile, writeFile } from 'fs-extra'
+import { readFile } from 'fs-extra'
 import { join } from 'path'
-import { setTimeout } from 'timers/promises'
 import { LauncherAppPlugin } from '~/app'
-import { kClientToken } from '../client_token'
 import { kFlights } from '../flights'
 
 const BUILTIN_FLIGHTS = {
@@ -40,37 +38,7 @@ export function applyRemoteFlights(
 
 export const pluginFlights: LauncherAppPlugin = async (app) => {
   const logger = app.getLogger('Flights')
-  const fetchFlights = async (output: Record<string, any>, cachedPath: string) => {
-    // zenith: remote flights came from XMCL's servers; Zenith Launcher never fetches them
-    if (output) return
-    try {
-      const clientSession = await app.registry.get(kClientToken)
-      const build = app.build
-      const queryString = `version=${app.version}&build=${build}&locale=${app.host.getLocale()}&clientToken=${clientSession}`
-      const primary = await app.fetch(`https://api.xmcl.disabled.invalid/flights?${queryString}`).catch(() => undefined)
-      // Regional edges can return a 404 instead of failing the connection.
-      // Try the Azure fallback for that case too, not only for fetch failures.
-      const resp = primary?.ok
-        ? primary
-        : await app.fetch(`https://core-api.xmcl.disabled.invalid/api/flights?${queryString}`)
-      if (resp.status !== 200) {
-        logger.error(new Error(`Failed to fetch flights: ${resp.status}`))
-        return
-      }
-      const result = await resp.json()
-      const persisted = applyRemoteFlights(output, result)
-      logger.log('Fetched flights', JSON.stringify(output))
-      // Write to cache
-      await writeFile(cachedPath, JSON.stringify(persisted))
-    } catch (e) {
-      const err = e as any
-      if (err.code === 'ENOTFOUND' && err.syscall === 'getaddrinfo' && err.message === 'net::ERR_INTERNET_DISCONNECTED') {
-        logger.warn('Failed to fetch flights: Network error. Please check your network connection.')
-      } else {
-        logger.error(e as Error)
-      }
-    }
-  }
+  // zenith: remote flights came from XMCL's servers; Zenith Launcher never fetches them (only a cached flights.json is read)
   const readCachedFlights = async (output: Record<string, any>, cachedPath: string) => {
     try {
       const cached = JSON.parse(await readFile(cachedPath, 'utf-8'))
@@ -84,11 +52,7 @@ export const pluginFlights: LauncherAppPlugin = async (app) => {
     }
   }
   const readFlights = async (output: Record<string, any>, cachedPath: string) => {
-    if (await readCachedFlights(output, cachedPath)) {
-      await Promise.race([fetchFlights(output, cachedPath), setTimeout(2000)])
-    } else {
-      fetchFlights(output, cachedPath).catch(() => { })
-    }
+    await readCachedFlights(output, cachedPath)
   }
   try {
     const filtered = applyDevelopmentApiFlight({ ...BUILTIN_FLIGHTS }) as Record<string, string>

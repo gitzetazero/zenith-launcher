@@ -1,16 +1,9 @@
-import { createCommunityTranslator } from './communityTranslation'
-import { resolveXmclApiEndpoints, Settings } from '@xmcl/runtime-api'
+import { Settings } from '@xmcl/runtime-api'
 import { Ref } from 'vue'
 import { useLocale } from 'vuetify'
-import { kFlights, useI18nSearchFlights } from './flights'
+import { useI18nSearchFlights } from './flights'
 
 const locales = import.meta.glob('../../locales/*.yaml')
-const translateCommunityContent = createCommunityTranslator(fetch, (error) => {
-  console.warn(error)
-  // Keep the renderer telemetry/i18n bootstrap out of this composable's import graph.
-  // One sanitized diagnostic per failed key/cooldown, not one per watcher.
-  void import('@/telemetry').then(({ trackRendererException }) => trackRendererException(error)).catch(() => {})
-})
 
 export function useI18nSync(state: Ref<Settings | undefined>) {
   const { locale, setLocaleMessage } = useI18n()
@@ -66,19 +59,10 @@ export function useAutoI18nEnabled() {
   return false
 }
 
-export function useAutoI18nCommunityContent(allowLocale: string[] = []) {
-  const { locale } = useI18n()
-  const flights = inject(kFlights, {})
-
-  async function getContent(type: 'modrinth' | 'curseforge', id: string | number) {
-    if (!allowLocale.includes(locale.value)) {
-      return ''
-    }
-
-    return translateCommunityContent(
-      resolveXmclApiEndpoints(flights.xmclApiBaseUrl).common,
-      type, id, locale.value,
-    )
+// zenith: community translations of project pages came from XMCL's hosted service; there is none, so nothing is translated.
+export function useAutoI18nCommunityContent(_allowLocale: string[] = []) {
+  async function getContent(_type: 'modrinth' | 'curseforge', _id: string | number) {
+    return ''
   }
 
   return {

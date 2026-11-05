@@ -2,17 +2,6 @@ import { LauncherApp } from '~/app'
 import { AnyError } from '@xmcl/utils'
 import { UserService } from '../UserService'
 import { ExternalCredentialService } from '~/credential/ExternalCredentialService'
-import { resolveXmclApiEndpoints } from '~/app/xmclApiBaseUrl'
-import { kFlights } from '~/infra'
-import { getZenithConfig } from '~/zenith/config'
-
-interface ModrinthOAuthResponse {
-  access_token: string
-  refresh_token?: string
-  expires_in?: number
-  token_type?: string
-  scope?: string
-}
 
 export function formatModrinthAuthorization(accessToken: string, tokenType = 'Bearer') {
   if (/^[A-Za-z][\w-]*\s+/.test(accessToken)) return accessToken
@@ -40,10 +29,10 @@ export function createModrinthAuthenticatedFetch(app: LauncherApp): typeof fetch
 
 export async function loginModrinth(
   app: LauncherApp,
-  userService: UserService,
-  scopes: string[],
+  _userService: UserService,
+  _scopes: string[],
   invalidate: boolean,
-  signal?: AbortSignal,
+  _signal?: AbortSignal,
   credentials?: ExternalCredentialService,
 ) {
   const credentialService =
@@ -52,66 +41,10 @@ export async function loginModrinth(
 
   if (token) return
 
-  if (!token) {
-    // zenith: XMCL's Modrinth OAuth app (and its token-exchange backend) is not carried over.
-    const modrinthClientId = getZenithConfig('modrinthClientId')
-    if (!modrinthClientId) {
-      throw new AnyError(
-        'ZenithModrinthLoginUnavailable',
-        'Modrinth sign-in is not available in Zenith Launcher (it needs its own OAuth app; see docs/ZENITH-LAUNCHER.md).',
-      )
-    }
-    const redirect_uri = `http://127.0.0.1:${await app.serverPort}/modrinth-auth`
-    const scopesString = scopes.join(' ')
-    const url = new URL('https://modrinth.com/auth/authorize')
-    url.searchParams.set('client_id', modrinthClientId)
-    url.searchParams.set('redirect_uri', redirect_uri)
-    url.searchParams.set('scope', scopesString)
-    app.shell.openInBrowser(url.toString())
-    userService.emit('modrinth-authorize-url', url)
-    const code = await new Promise<string>((resolve, reject) => {
-      const abort = () => {
-        reject(
-          new AnyError(
-            'AuthCodeTimeoutError',
-            'Timeout to wait the auth code! Please try again later!',
-          ),
-        )
-      }
-      signal?.addEventListener('abort', abort)
-      userService.once('modrinth-authorize-code', (err, code) => {
-        app.controller.requireFocus()
-        if (err) {
-          reject(err)
-        } else {
-          resolve(code!)
-        }
-      })
-    })
-    const flights = await app.registry.get(kFlights)
-    const authUrl = new URL(
-      '/modrinth/auth',
-      resolveXmclApiEndpoints(flights.xmclApiBaseUrl).common,
-    )
-    authUrl.searchParams.set('code', code)
-    authUrl.searchParams.set('redirect_uri', redirect_uri)
-    const response = await app.fetch(authUrl)
-    if (!response.ok) {
-      throw new AnyError(
-        'ModrinthAuthError',
-        `Failed to get auth code: ${response.statusText}: ${await response.text()}`,
-      )
-    }
-    const data = (await response.json()) as ModrinthOAuthResponse
-    const issuedAt = Date.now()
-    await credentialService.store('modrinth', {
-      accessToken: data.access_token,
-      refreshToken: data.refresh_token,
-      scopes: data.scope?.split(' ').filter(Boolean) ?? scopes,
-      issuedAt,
-      expiresAt:
-        typeof data.expires_in === 'number' ? issuedAt + data.expires_in * 1_000 : undefined,
-      providerMetadata: data.token_type ? { tokenType: data.token_type } : undefined,
-    })
-  }
+  // zenith: XMCL's Modrinth OAuth app and its token-exchange backend are not carried over, and Zenith has no backend
+  // holding a client secret. The Market uses Modrinth anonymously; signing in is unavailable.
+  throw new AnyError(
+    'ZenithModrinthLoginUnavailable',
+    'Modrinth sign-in is not available in Zenith Launcher. The Zenith Market works without signing in.',
+  )
 }

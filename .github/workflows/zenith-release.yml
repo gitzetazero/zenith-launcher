@@ -1,6 +1,6 @@
 name: Zenith Release
 
-# zenith: builds Zenith Launcher (this fork of XMCL) for Windows x64 and publishes a PRERELEASE.
+# zenith: builds Zenith Launcher (this fork of XMCL) for Windows x64 and publishes a normal release (not a prerelease, marked latest).
 # No secrets: only the automatic GITHUB_TOKEN, and only the publish step uses it (contents: write).
 # The inherited XMCL workflows stay in the tree but are disabled in this repository (see docs/ZENITH-LAUNCHER.md).
 
@@ -8,9 +8,9 @@ on:
   workflow_dispatch:
     inputs:
       tag:
-        description: 'Release tag (prerelease), e.g. v0.73.1-zenith.1'
+        description: 'Release tag, e.g. v0.73.1-zenith.2'
         required: true
-        default: 'v0.73.1-zenith.1'
+        default: 'v0.73.1-zenith.2'
 
 permissions:
   contents: read
@@ -51,9 +51,12 @@ jobs:
       - name: Zenith bridge (signature of SHA256SUMS and SHA-256 verified, fail closed)
         shell: bash
         run: node tools/zenith/fetch-bridge.mjs xmcl-electron-app/build/zenith
+      - name: Typecheck (runtime API, runtime, Electron app, UI)
+        shell: bash
+        run: pnpm run check
       - name: Unit tests of the Zenith changes
         shell: bash
-        run: pnpm vitest run xmcl-runtime/zenith xmcl-runtime/app xmcl-runtime/infra/plugins xmcl-runtime/moddb xmcl-electron-app/build
+        run: pnpm vitest run xmcl-runtime/zenith xmcl-runtime/app xmcl-runtime/infra/plugins xmcl-runtime/moddb xmcl-runtime/instance/InstanceService.icon.test.ts xmcl-runtime/settings xmcl-electron-app/build xmcl-keystone-ui/src/telemetry.test.ts xmcl-keystone-ui/src/i18n.integration.test.ts
       - name: Build
         shell: bash
         env:
@@ -62,9 +65,16 @@ jobs:
           NODE_OPTIONS: --max-old-space-size=8192
           # optional, empty unless the maintainer defines the repository variable (a variable, never a secret)
           ZENITH_MSA_CLIENT_ID: ${{ vars.ZENITH_MSA_CLIENT_ID }}
+          ZENITH_DISCORD_CLIENT_ID: ${{ vars.ZENITH_DISCORD_CLIENT_ID }}
         run: |
           pnpm run --prefix xmcl-keystone-ui build
           pnpm run --prefix xmcl-electron-app build:all
+      - name: Verify app.asar (no XMCL services or removed features, Zenith data folder and name present)
+        shell: bash
+        run: |
+          ASAR="$(find xmcl-electron-app/build/output -name app.asar -path '*win-unpacked*' | head -n 1)"
+          test -n "$ASAR" || { echo "::error::app.asar not found"; exit 1; }
+          node tools/zenith/verify-asar.mjs "$ASAR"
       - name: Collect the assets and write SHA256SUMS
         shell: pwsh
         run: |
@@ -84,7 +94,7 @@ jobs:
         shell: bash
         run: |
           cat > notes.md <<'NOTES'
-          ## Zenith Launcher (prerelease)
+          ## Zenith Launcher
 
           Zenith Launcher is a fork of [X Minecraft Launcher (XMCL)](https://github.com/Voxelum/x-minecraft-launcher) by Voxelum (MIT license) with Zenith branding and the Zenith bridge built in. This release is based on XMCL v0.73.1. Zenith Launcher is based on XMCL; the original credit and license are kept (see `LICENSE`).
 
@@ -98,8 +108,9 @@ jobs:
           ### Honest notes
           - **Not code-signed**: Windows SmartScreen will warn you ("Windows protected your PC"). Check the SHA-256 below before running.
           - **Microsoft sign-in**: Zenith Launcher does not carry XMCL's Microsoft application ID. It needs its own Azure app, registered and approved by Mojang (`ZENITH_MSA_CLIENT_ID`); without it, Microsoft sign-in shows a clear message. Other account types work as in XMCL. See `docs/ZENITH-LAUNCHER.md`.
-          - No telemetry and no XMCL-hosted services (api.xmcl.app, etc.). Updates are manual: the launcher links to this Releases page.
-          - Not verified on third-party PCs; this is a prerelease.
+          - No telemetry and no XMCL-hosted services. The XMCL AI agent, Together/P2P multiplayer and the XMCL account are removed. Updates are manual: the launcher links to the Zenith Releases page.
+          - Zenith Launcher plays Zenith only: no Java settings, mod loaders or other Minecraft versions. Game data lives in `%APPDATA%\.minecraftz`.
+          - Not verified on third-party PCs.
 
           ### Verify your download (PowerShell)
           ```powershell
@@ -107,11 +118,11 @@ jobs:
           ```
           and compare it with the matching line of `SHA256SUMS`.
           NOTES
-      - name: Publish the prerelease
+      - name: Publish the release
         shell: bash
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
           if gh release view "$TAG" > /dev/null 2>&1; then echo "::error::release $TAG already exists; use a new tag"; exit 1; fi
-          gh release create "$TAG" --prerelease --target "$GITHUB_SHA" --title "Zenith Launcher $TAG (prerelease)" \
+          gh release create "$TAG" --prerelease=false --latest --target "$GITHUB_SHA" --title "Zenith Launcher $TAG" \
             --notes-file notes.md dist/Zenith-Launcher-Setup-x64.exe dist/Zenith-Launcher-Portable-x64.exe dist/SHA256SUMS

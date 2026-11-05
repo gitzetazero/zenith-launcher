@@ -2,7 +2,8 @@ import { createHash, generateKeyPairSync, sign } from 'crypto'
 import { existsSync, mkdtempSync, readFileSync, readdirSync } from 'fs'
 import { tmpdir } from 'os'
 import { join } from 'path'
-import { blake2b } from '@noble/hashes/blake2.js'
+import { createHash as hash } from 'crypto'
+import { blake2b512Js } from './blake2b'
 import { describe, expect, test } from 'vitest'
 import { destinationFor, downloadChecked, githubReleaseAsset, refuse, safeName } from './install'
 import { parsePublicKey, parseSignature, verifyMinisign } from './minisign'
@@ -65,6 +66,16 @@ describe('safe downloads', () => {
   })
 })
 
+describe('blake2b (JS fallback)', () => {
+  test('matches node:crypto on empty, short, block-sized and multi-block inputs', () => {
+    for (const n of [0, 1, 127, 128, 129, 300, 1000]) {
+      const data = Buffer.alloc(n, 7)
+      for (let i = 0; i < n; i++) data[i] = (i * 31 + 5) & 0xff
+      expect(Buffer.from(blake2b512Js(data)).toString('hex')).toBe(hash('blake2b512').update(data).digest('hex'))
+    }
+  })
+})
+
 describe('minisign', () => {
   // Builds a minisign key and signatures with node:crypto, in minisign's formats.
   const { publicKey, privateKey } = generateKeyPairSync('ed25519')
@@ -72,7 +83,7 @@ describe('minisign', () => {
   const keyId = Buffer.from('0123456789abcdef', 'hex')
   const keyText = Buffer.concat([Buffer.from('Ed'), keyId, rawPub]).toString('base64')
   const sigText = (alg: 'Ed' | 'ED', data: Buffer, id = keyId) => {
-    const msg = alg === 'ED' ? Buffer.from(blake2b(data, { dkLen: 64 })) : data
+    const msg = alg === 'ED' ? Buffer.from(hash('blake2b512').update(data).digest()) : data
     const s = sign(null, msg, privateKey)
     return `untrusted comment: signature\n${Buffer.concat([Buffer.from(alg), id, s]).toString('base64')}\ntrusted comment: t\nxx\n`
   }

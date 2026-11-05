@@ -5,7 +5,6 @@ import { getDefaultRendererActionName, ServiceFactoryImpl } from './service'
 describe('getDefaultRendererActionName', () => {
   it.each([
     ['LaunchService', 'launch', [], 'user_action.minecraft.launch'],
-    ['BedrockService', 'install', [], 'user_action.instance.install'],
     ['VersionInstallService', 'installInstance', [{}], 'user_action.instance.install'],
     ['VersionInstallService', 'install', [{ type: 'repair' }], 'user_action.instance.repair'],
     ['InstanceInstallService', 'resumeInstanceInstall', [], 'user_action.instance.repair'],
@@ -20,7 +19,6 @@ describe('getDefaultRendererActionName', () => {
     ['InstanceIOService', 'exportInstanceAsServer', [], 'user_action.instance.export'],
     ['InstanceSavesService', 'deleteSave', [], 'user_action.save.delete'],
     ['UserService', 'login', [], 'user_action.account.login'],
-    ['PeerServiceKey', 'shareInstance', [], 'user_action.peer.share_instance'],
     ['InstanceModsService', 'installFromMarket', [], 'user_action.resource.install'],
     ['InstanceResourcePacksService', 'uninstall', [], 'user_action.resource.remove'],
   ])('maps %s.%s to %s', (service, method, payload, expected) => {

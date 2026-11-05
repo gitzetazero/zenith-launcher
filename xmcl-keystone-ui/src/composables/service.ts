@@ -26,10 +26,6 @@ export function getDefaultRendererActionName(service: string, method: string, pa
   if (service === 'LaunchService' && method === 'launch') {
     return 'user_action.minecraft.launch'
   }
-  if (service === 'BedrockService') {
-    if (method === 'launch') return 'user_action.minecraft.launch'
-    if (method === 'install') return 'user_action.instance.install'
-  }
   if (
     service === 'VersionInstallService' &&
     (method === 'install' || method === 'installInstance')
@@ -85,11 +81,6 @@ export function getDefaultRendererActionName(service: string, method: string, pa
   if (service === 'UserService') {
     if (method === 'login' || method === 'loginModrinth') return 'user_action.account.login'
     if (method === 'removeUser') return 'user_action.account.logout'
-  }
-  if (service === 'PeerServiceKey') {
-    if (method === 'shareInstance') return 'user_action.peer.share_instance'
-    if (method === 'multiplayerJoinGroup') return 'user_action.peer.join_group'
-    if (method === 'multiplayerCreateGroup') return 'user_action.peer.create_group'
   }
   if (
     service === 'InstanceModsService' ||

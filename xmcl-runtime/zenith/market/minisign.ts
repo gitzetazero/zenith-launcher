@@ -1,6 +1,6 @@
 // zenith: minisign verification (https://jedisct1.github.io/minisign/) for registry files whose project has a `key`.
 // Legacy ("Ed", over the file) and prehashed ("ED", over BLAKE2b-512 of the file) signatures are accepted, like Horizon does.
-import { blake2b } from '@noble/hashes/blake2.js'
+import { blake2b512 } from './blake2b'
 import { createPublicKey, verify } from 'crypto'
 
 const SPKI_ED25519_PREFIX = Buffer.from('302a300506032b6570032100', 'hex')
@@ -28,7 +28,7 @@ export function verifyMinisign(publicKeyBase64: string, signatureText: string, d
     const key = parsePublicKey(publicKeyBase64)
     const sig = parseSignature(signatureText)
     if (!sig.keyId.equals(key.keyId)) return false
-    const message = sig.algorithm === 'ED' ? Buffer.from(blake2b(data, { dkLen: 64 })) : Buffer.from(data)
+    const message = sig.algorithm === 'ED' ? Buffer.from(blake2b512(data)) : Buffer.from(data)
     const pub = createPublicKey({ key: Buffer.concat([SPKI_ED25519_PREFIX, key.publicKey]), format: 'der', type: 'spki' })
     return verify(null, message, pub, sig.signature)
   } catch {
