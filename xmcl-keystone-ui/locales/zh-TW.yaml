@@ -1,35 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: |-
-    我們發現多個啟動設定檔案。
-    請選擇其中的一項進行匯入。
-  createTitle: 建立遊戲
-  serverTitle: 輸入您的伺服器位址
-AppShareInstanceDialog:
-  editScopeDescription: 選擇連線夥伴發現這個正在執行的區域網路遊戲後可以按需取得的檔案。
-  editScopeTitle: 編輯分享範圍
-  instanceToShare: 正在執行的遊戲
-  alterDownloadDescription: |-
-    如果您不想搞亂目前實例。
-    您也可以從對等方的設定建立一個新實例。
-    按一下下面的按鈕建立實例。
-  baseInfo: 分享的基本設定
-  description: 分享後，您的聯機夥伴將可以下載您分享的遊戲資源
-  downloadDescription: 請確認您的聯機夥伴提供的檔案，並選擇您要下載的項目。檔案將下載到目前實例 {name} 中。
-  downloadNotifyTitle: 從 {user} 下載實例
-  downloadTitle: 從其他玩家那獲得遊戲資源
-  filesToDownload: 選擇您想下載的檔案
-  filesToShare: 選擇分享的檔案
-  share: 分享
-  shareTitle: 分享啟動設定給其他玩家
 BaseSettingGeneral:
   title: 一般設定
-HomeJavaIssueDialog:
-  incompatibleJava: Java 版本可能不相容
-  incompatibleJavaHint: 目前 Java 可能無法執行已選擇的 Minecraft 版本
-  missingJava: 沒有找到 Java
-  missingJavaHint: 啟動器在您的電腦上沒有找到任何Java。您可以嘗試：
-  optionSwitch:
-    name: 切換到已有的 Java {version}
 HomeLaunchMultiInstanceDialog:
   confirm: 是的，多實例啟動
   description: 正在嘗試啟動多個 Minecraft 實例，您確定嗎？
@@ -41,34 +11,7 @@ ago:
   hour: '{duration} 小時前'
   minute: '{duration} 分鐘前'
   second: '{duration} 秒前'
-askAICrash:
-  agentNotConfigured: 在設定中配置 AI 供應商和 API 金鑰，即可讓啟動器內建的 AI 助手為你診斷並修復此問題。
-  askAgent: 使用內建 AI 助手診斷
-  copyPrompt: 複製提示詢問AI
-  description: 讓AI幫助您了解遊戲崩潰！請按照下面的說明向AI詢問有關此遊戲崩潰的信息！
-  orExternal: 或使用外部 AI
-  selectPlatform: 打開一個AI平台，粘貼您剛剛複制的提示。
-  setupAgent: 設定 AI 助手
 authProfileAddedNotification: 已新增第三方驗證 {name}
-bedrock:
-  installBedrockVersion: 正在下載基岩版 {version}
-  versionsTitle: 版本管理
-  versionsHint: 從 Microsoft 伺服器下載多個基岩版，並在版本之間切換。Windows 同時只能註冊一個版本。
-  versionsError: 無法載入版本清單，請檢查網路後再試一次。
-  channel: 頻道
-  channelRelease: 正式版
-  channelBeta: 測試版
-  channelPreview: 預覽版
-  active: 目前版本
-  play: 啟動
-  download: 下載
-  installedTag: 已安裝
-  developerModeRequired: 註冊下載的版本需要啟用 Windows 開發人員模式。
-  enableDeveloperMode: 啟用開發人員模式
-  enableDeveloperModeFailed: 啟用開發人員模式失敗
-  downloadFailed: 下載基岩版 {version} 失敗
-  launchFailed: 啟動此基岩版失敗
-  removeFailed: 移除基岩版 {version} 失敗
 backup:
   title: 備份與還原
   description: 備份與還原您的啟動器設定、收藏夾、主題與遊戲實例
@@ -301,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: 按一下以下載此版本
     name: Minecraft {version} 遊戲 Jar 檔案不完整。
-  incompatibleJava:
-    name: Java {javaVersion} 可能不符合 {version} 版本需求！
   instanceFiles:
     description: 實例安裝包括 {counts} 個檔案。
     title: 實例安裝未完成
-  invalidJava:
-    name: 目前 Java 路徑已經失效
   missingJava:
     message: 按一下來解決這個問題
     name: 沒有找到合適的 Java
@@ -334,11 +273,6 @@ duration:
   hour: '{duration} 小時'
   minute: '{duration} 分鐘'
   second: '{duration} 秒'
-env:
-  select:
-    all: 全選
-    fit: 選擇適合的
-    none: 全不選
 errors:
   BadForgeInstallerJarError: 無法解析 Forge 安裝包 Jar 檔案。也許 Forge 有了新的安裝包格式？如果經常遇到此問題，請聯絡開發團隊。
   BadInstanceType: '不是一個合法的實例: {type}'
@@ -359,8 +293,6 @@ errors:
   HeadersTimeoutError: 等待 HTTP 標頭資訊超時
   NotFoundError: 404 未找到資源
   SocketError: 伺服器連線中斷
-eula:
-  body: 勾選此複選框即表示您同意 Minecraft 的 {eula}。
 exception:
   http: '{url} 的 HTTP 請求失敗。狀態碼 {statusCode}。{code}。請重試或檢查您的網路。如果此問題持續出現，請回報給開發團隊。'
 extensions:
@@ -436,21 +368,6 @@ gameType:
   survival: 生存模式
 help: 幫助
 home: 主頁
-importModpack:
-  fromFileSubtitle: 選擇 .zip 或 .mrpack 檔案
-  fromUrl: 透過連結 / URL...
-  fromUrlSubtitle: 透過模組包連結安裝
-  fromUrlDescription: 請輸入或貼上模組包連結：
-  invalidUrl: 請輸入有效的連結（http:// 或 https://）
-  selectVersion: 選擇模組包版本
-  selectVersionDescription: 請選擇要安裝的 {name} 版本：
-  pmcProtected: Planet Minecraft 受到 Cloudflare 保護。請從頁面複製直接下載連結或鏡像連結。
-  netdiskTitle: 雲端硬碟下載
-  netdiskDescription: 此模組包版本存放於外部雲端硬碟。點擊下方按鈕在瀏覽器中開啟下載頁面，然後將下載的 .zip 或 .mrpack 檔案拖曳至 Zenith Launcher。
-  openNetdisk: 開啟雲端硬碟
-  netdiskOpened: 雲端硬碟連結已在瀏覽器中開啟並複製到剪貼簿。
-  noReleasesFound: 此儲存庫中找不到 .mrpack 或 .zip 格式的模組包發行版本。
-  name: 匯入模組包
 installAssets:
   asset: 下載 {count} 個資源檔案
   assetIndex: 下載資源檔案目錄
@@ -509,14 +426,11 @@ instance:
   iconUrl: 圖片 URL
   installModpack: 從模組包更新實例
   lastPlayed: 上次遊玩
-  launchArguments: 啟動命令預覽
   launchServer: 啟動本地主機伺服器
   linkFileDesc: |-
     這將使用全域 {file} 覆寫實例本地 {file}。
     您確定要連結嗎？
   linkFileTitle: 您確定要連結 {file} 嗎？
-  mcOptions: Minecraft 啟動選項
-  mcOptionsHint: 額外的 Minecraft 啟動引數
   name: 名稱
   nameHint: 名稱便於以後識別
   nameNoCyrillic: 名稱不應包含西里爾字母
@@ -524,10 +438,6 @@ instance:
   openCrashReportFolder: 開啟當機報告資料夾
   openLogFolder: 開啟日誌資料夾
   playtime: 遊玩時長
-  preExecCommand: 預先啟動指令
-  preExecCommandHint: 啟動 Minecraft 前要執行的指令
-  prependCommand: 前置命令
-  prependCommandHint: 這將在所有啟動命令之前添加此命令
   requireName: 必須填寫名稱
   resolution: 分辨率
   resolutionPreset: 分辨率預設
@@ -538,10 +448,6 @@ instance:
   useSharedOptionsDesc: 這會將 options.txt 連結到跨實例的共用檔案
   useSharedServersList: 共享伺服器列表
   useSharedServersListDesc: 這會將 servers.dat 連結到跨實例的共用檔案
-  vmOptions: JVM 啟動選項
-  vmOptionsHint: 額外的 JVM 的啟動引數
-  vmVar: 環境變數
-  vmVarHint: 按一下按鈕新增環境變數
   width: 寬度
   envVarKey: 變數名
   envVarValue: 值
@@ -585,9 +491,6 @@ instanceSetting:
   showLogHint: 遊戲開啟後將彈出一個顯示 Minecraft 日誌的視窗
   syncGameLanguage: 同步遊戲語言
   syncGameLanguageDescription: 啟動遊戲時自動將 Minecraft 語言同步為啟動器當前語言
-instanceTemplate:
-  ftb: 這是一個 FTB 的模組包設定
-  preview: 預覽
 instanceUpdate:
   basic: 設定更新
   files: 檔案更新
@@ -620,42 +523,15 @@ instances:
   fix: 修復
   folder: 資料夾
   folderSetting: 資料夾設定
-  importFolderDescription: 匯入 Minecraft 到啟動器
-  loadingFiles: 載入模組包檔案
-  edition: 版本
-  editionJava: Java 版
   editionBedrock: 基岩版
   editionBedrockHint: 基岩版透過 Microsoft Store 應用程式啟動。你需要擁有基岩版授權。模組、資源包及其他 Java 版專屬功能無法使用。
   editionBedrockWindowsOnly: 基岩版僅在 Windows 版本中受支援。
-  linkSharedFolders: 在多個實例間共享資料夾
-  linkSharedFoldersHint: 將這些資料夾建立為指向啟動器共享資料夾的連結，使此實例與其他所有已連結的實例共享其內容。這不是複製——在一個實例中所做的變更會顯示在所有實例中。未勾選的資料夾將保持此實例私有。
-  linkFailed: 無法將 {folder} 資料夾連結到共享資料夾
   addPrismDescription: 匯入現有的 PrismLauncher 實例。
 items:
   count: '{count} 個'
   total: 共 {total} 個
 java:
-  allocatedLong: 啟動器自動選擇 Java
-  allocatedShort: 自動分配
-  importFromFile: 從檔案匯入 Java
-  invalid: 無效的 Java 路徑
-  location: Java 路徑
-  maxMemory: 最大記憶體
-  memory: Java 記憶體
   memoryAuto: 自動
-  memoryManual: 手動指定
-  memoryUnassigned: 不指定記憶體
-  minMemory: 最小記憶體
-  name: Java
-  noMemory: 不設定記憶體限制
-  refresh: 重新整理本地 Java
-  systemMemory: '系統可用記憶體: {free} / {total}'
-  allocation: 已分配
-  autoHint: 最小記憶體隨已安裝 Mod 數量增長；最大記憶體使用系統可用記憶體。
-  change: 更換
-  locationHint: 未選擇 Java — 使用系統預設
-  openFolder: 開啟 Java 所在資料夾
-  presets: 預設
 labyMod:
   disable: 不使用 LabyMod
   empty: 目前 Minecraft 不支援 LabyMod
@@ -731,8 +607,6 @@ localVersion:
   auto: 自動選擇
   empty: 本地沒有安裝任何版本
   hint: 直接啟動某個本地版本
-  reinstallDescription: 如果您覺得此版本安裝的有問題，可以嘗試重新安裝該版本。
-  reinstallTitle: 重新安裝 {version}
   title: 本地版本
 logLevel:
   error: 錯誤
@@ -798,12 +672,10 @@ minecraftVersion:
   showAlpha: 顯示快照版
   snapshot: 快照版
 mod:
-  collapseAllGroups: 摺疊所有分組
   acceptVersion: 推薦 {version}
   applyGroupRules: 套用已儲存的分組規則
   autoCategorize: 自動整理到資料夾
   autoCategorizeHint: 自動根據分類（最佳化、程式庫、世界生成、玩法等）將模組整理到資料夾中
-  autoCategorizeSuccess: 成功整理到 {count} 個資料夾
   ungroupAll: 解散所有資料夾
   organization: 資料夾整理
   collapseAll: 折疊所有資料夾
@@ -823,7 +695,6 @@ mod:
   currentVersion: 目前是 {current}
   denseView: 密集檢視
   disableAll: 全部停用
-  dropHint: 將模組 Jar 檔案拖入此處來匯入
   duplicatedDetected: 有 {count} 個模組重複了
   duplicatedDetectedDescription: |-
     找到具有相同 mod id 但檔案不同的 mod。
@@ -833,9 +704,6 @@ mod:
   enabled: 一共啟用了 {count} 個模組
   filter: 篩選模組
   group: 分組
-  groupInstalled: 分開顯示已安裝模組
-  hideInstalled: 隱藏已安裝模組
-  installedFilterOff: 顯示所有模組
   groupName: 分組名稱
   groupNameRequired: 分組名稱是必填的
   hasUpdate: 模組有新版本！
@@ -845,29 +713,18 @@ mod:
     某些模組相依項可能遺失。
     或某些相依項版本不符。
   maybeCompatible: 也許相容於目前版本。
-  modloaderSelectHint: |-
-    此模組支援以下模組載入器。
-    請選擇一個進行安裝。
-  modloaderSelectNotSupported: 找不到 Minecraft {minecraft} 的 {modloader}
   mods: '{count} 個模組'
   name: 模組 | 模組
   newFolder: 新增資料夾
   noGroupsFound: 未找到分組
   noGroupsYet: 還沒有分組，建立一個吧！
-  noModLoaderHint: 請不要忘記選擇模組載入器來載入模組
   openLink: 開啟模組連結 {url}
-  search: 搜尋模組
   searchGroups: 搜尋分組...
   searchOnMcWiki: 在 MC 百科中查詢 {name}
   selectOrCreateGroup: 選擇或建立分組
-  showDirectory: 顯示模組資料夾
   showFile: 開啟模組所在位置 {file}
-  showInModrinth: 在 Modrinth 中顯示 {name}
-  switchDefaultSource: 本地模組預設顯示為
   syncGroupRules: 儲存分組規則
-  toUpdate: '{count} 個有新版本'
   ungroup: 取消分組
-  description: 描述
 modCategory:
   optimization: 最佳化與效能
   libraries: 程式庫與 API
@@ -922,26 +779,10 @@ modified:
   save: 儲存
   unsaved: 注意！您尚未儲存更改！
 modpack:
-  author: 署名
-  authorHint: 這個遊戲/模組包的製作人
-  description: 遊戲簡介
-  descriptionHint: 通用的模組包簡介。在匯出成 Curseforge 模組包或者其他格式時會使用。
   dropHint: 透過拖曳匯入模組包檔案
-  emitCurseforge: 匯出 Curseforge 模組包
-  emitModrinth: 匯出 Modrinth 模組包
-  emitModrinthStrict: 嚴格遵守 Modrinth 模組包格式
-  emitModrinthStrictDescription: 下載連結只允許包含 Modrinth 官網定義的四個網域
   export: 匯出模組包
-  exportDirectory: 导出目錄
-  exportDirectoryDescription: 默認情況下，modpack將導出到下載文件夾
-  includeAssets: 是否包含遊戲資源 (Assets) 檔案
-  includes: 打包檔案
   modpackVersion: 模組包版本
   name: 模組包
-  overrides: 模組包打包覆蓋 (overrides)
-  selectDefaultFiles: 選擇預設檔案
-  url: URL
-  urlHint: 模組包的主頁 URL 位址
 modpackImportConfirm:
   description: 偵測到您將檔案拖曳到啟動器。您是要匯入模組包嗎？
   title: 您是否要匯入模組包？
@@ -1105,112 +946,7 @@ modrinth:
   wikiUrl: 百科連結
 modrinthCard:
   currentVersion: 目前版本
-multiplayer:
-  joinDiscord: 加入 Discord
-  openConsumerPortal: 開啟消費者入口網站
-  refundHint: 如需退款，請前往 Waffo 消費者入口網站管理您的訂單與訂閱。
-  togetherSupportHint: 如果連線無法正常運作，請加入 Discord 聯絡開發團隊，我們會協助您解決問題。
-  autoShareAmbiguous: 有多個遊戲正在執行。請選擇主持區域網路世界的實例，讓 Zenith Launcher 可以分享它。
-  editSharingScope: 編輯分享範圍
-  gameAvailable: 有可用的區域網路遊戲
-  joinGame: 加入遊戲
-  noRunningInstanceToShare: 請先啟動遊戲，再編輯它的分享範圍
-  updateSharedInstanceConfirm: 更新並啟動
-  updateSharedInstanceDescription: 房主分享的模組與 {instance} 不一致。是否先將此實例更新為與房主一致再啟動？被取代的檔案會自動備份。
-  updateSharedInstanceTitle: 更新分享的實例？
-  addFunds: 儲值
-  availableBalance: 可用餘額
-  balanceHint: 可用於 XMCL Together 服務
-  billing: 帳務
-  billingDescription: 管理轉送連線存取權、Together Home 方案與付款。
-  billingError: 無法載入 Together 帳務資訊。請稍後再試。
-  buyTogether: 購買 Together
-  cancelTogether: 取消方案
-  checkout: 開啟 Waffo 付款頁面
-  connectionTogetherWarning: 房間中有一名成員已經一段時間無法連線到你。請嘗試 XMCL Together，改善房間內所有人的連線品質。只有房主需要使用 Together。
-  masterPurchaseHint: 只有房主需要 Together Home，就能改善房間內所有人的連線品質。
-  natTogetherWarning: 你的路由器可能難以連線到房主。如果連線失敗，請嘗試 XMCL Together，改善你和朋友之間的連線。房間只需要由房主購買 Together。
-  togetherName: Minecraft Together
-  trialDescription: 一次 7 天試用，包含 1 GB 轉送流量。
-  trialTitle: 連線試用
-  tryTogether: 試用 Together
-  month: 月
-  orderStatus: Waffo 訂單：{status}
-  planDescription: 每月 20 GB 的代管轉送流量，另提供模組包的 AI 疑難排解。
-  waffoHint: 付款會在 Waffo Pancake 上安全完成。XMCL 絕不會取得你的卡號。
-  subscription:
-    active: 使用中
-    cancelled: 已取消
-    payment_due: 待付款
-  trial:
-    active: 試用方案使用中
-    available: 提供免費試用
-    expired: 試用已使用
-    unavailable: 無法使用試用
-  loginRequiredDescription: P2P 多人遊戲使用 Zenith Launcher 線上服務。請登入 Zenith Launcher 帳戶以繼續。
-  loginRequiredTitle: 登入以使用 P2P 多人遊戲
-  complete: 完成
-  confirm: 確定
-  connections: 使用者連線管理
-  copied: 已複製！
-  copy: 複製
-  copyGroupToFriendHint: 讓您的聯機夥伴使用此 ID 加入聯機群組
-  copyLocalHint: |
-    <span>一段令牌只能用<span style="color: red; font-weight:bold;">一次</span>！您不能將一個令牌傳送給多個聯機夥伴！</span> <br> <span class="hint-text" style="font-style: italic;">如果有多個聯機夥伴要加入您需要<span style="font-weight: bold; color: rgba(245， 158， 11)">多次</span>建立連線。</span>
-  createLocalToken: 建立本地令牌
-  currentIpTitle: 偵測到公用 IP 位址
-  currentNatTitle: 目前網路 (NAT) 環境
-  difficultyLevelHint: 與他人聯機難度由低到高
-  disconnect: 中斷連線
-  disconnectDescription: 您確定您要中斷與 {user}({id}) 的連線嗎
-  disconnected: 連線已中斷
-  enterRemoteToken: 輸入對方的令牌
-  enterRemoteTokenHint: 當您的聯機夥伴輸入您的令牌後，您需要將他的令牌輸入到下面的文字框中，並按一下確定開始連線。
-  exposedPortDescription: 您向其他聯機夥伴開放的連接埠
-  exposedPorts: 開放連接埠
-  gatheringIce: |
-    請將<span class="v-chip v-chip--label v-size--small" style="text-font: bold">本地令牌</span>傳送給您的聯機夥伴，您的聯機夥伴在 <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> 加入連線 </span> 中輸入這段文字。 <br> 期間 ICE 伺服器可能需要時間收集足夠資訊來建立<span class="v-chip v-chip--label v-size--small" style="text-font: bold">本地令牌</span>。 <br> <span class="hint-text"> 您不需要等 ICE 伺服器完全收集完畢，當下面的令牌已經有內容並且不再明顯變動後，您可以提前將令牌複製給對方。 </span>
-  groupId: 小組 ID
-  illegalTokenDescription: 無效的令牌，請確認對方給您的令牌是完整且正確的。
-  initiateConnection: 發起連線
-  joinConnection: 如果您的聯機夥伴已經建立了連線，您需要選擇加入連結。
-  joinManual: 加入連線
-  joinOrCreateGroup: 加入/建立群組
-  joinOrCreateGroupHint: 從您的聯機夥伴那獲得群組 ID 或自己建立一個群組
-  kernel: P2P 核心
-  kernelDescription: |-
-    使用本地 WebRTC 或節點資料通道。
-    僅當您的 p2p 連線有時導致啟動器視窗當機時才切換此選項。
-  leaveGroup: 離開群組
-  localToken: 本地令牌
-  manualConnect: 手動連線
-  name: 跨區域網聯機
-  networkInfo: 目前網路狀況
-  next: 下一步
-  otherExposedPortDescription: '{user} 開放的連接埠'
-  placeholder: 和其他玩家建立連線，跨區域網聯機 Minecraft！
-  previous: 上一步
-  receiveHint: 在對方輸入您的令牌後，您們之間的連線會自動建立。現在您已經可以按一下完成了。
-  receiveRemoteTokenHint: 請將聯機夥伴的令牌貼上在此處，並按一下下一步。
-  remoteToken: 對方的令牌
-  routerInfo: 路由器資訊
-  sendTokenToRemote: 將本地令牌給您的聯機夥伴
-  share: 分享啟動設定
-  sharing: 正在共享遊戲設定...
-  start: 開始
-  startNewP2PConnection: 按一下開始按鈕來新建一個新的點對點連線
-  connectionError: 連線錯誤
-  connectionFailedHint: 無法建立連線。請檢查雙方的 NAT 類型是否相容。
 myStuff: 個人中心
-natType:
-  blocked: 無法存取網際網路
-  fullCone: 全開放 NAT
-  openInternet: 開放網際網路
-  restrictNat: 位址受限 NAT
-  restrictPortNat: 埠口受限 NAT
-  symmetricNat: 對稱 NAT
-  symmetricUDPFirewall: 對稱 UDP 防火牆
-  unknown: 未知
 neoForgedVersion:
   disable: 不使用 NeoForge
   empty: Minecraft {version} 不支援 NeoForge
@@ -1221,23 +957,6 @@ optifineVersion:
   disable: 不使用 Optifine
   empty: Minecraft {version} 不支援 Optifine
 optional: 可選
-peerConnectionState:
-  closed: 已關閉
-  connected: 已連線
-  connecting: 連線中
-  disconnected: 連線中斷
-  failed: 失敗
-  name: 連線狀態
-  new: 等待連線
-peerGroupState:
-  closed: 未加入小組
-  closing: 中斷中
-  connected: 小組線上
-  connecting: 加入中
-peerIceGatheringState:
-  gathering: 收集本地資訊中
-peerSignalingState:
-  have-local-offer: 等待對方資訊中
 presence:
   instance: 瀏覽實例 {instance}
   instanceSetting: 編輯實體設定：{instance}
@@ -1255,58 +974,9 @@ quiltVersion:
   empty: Minecraft {version} 不支援 Quilt
 blueprint:
   name: 藍圖 | 藍圖
-  count: '{count} 個藍圖'
-  searchLocal: 搜尋藍圖...
-  searchOnline: 線上搜尋...
-  market: 市集
-  local: 本機
-  provider: 來源
-  import: 匯入
-  openFolder: 開啟資料夾
-  refresh: 重新整理
   empty: 未找到藍圖。匯入 .litematic / .schem / .nbt 檔案或瀏覽市集。
-  dropHint: 將藍圖檔案（.litematic / .schem / .nbt）拖入此處來匯入。
   selectHint: 選擇一個藍圖以預覽。
-  blocks: '{count} 個方塊'
-  materials: 材料
-  allNamespaces: 全部
-  findMod: 尋找此命名空間對應的模組
-  compatible: 相容
-  incompatible: 缺少模組
-  missingNamespaces: 缺少以下模組：{namespaces}
-  delete: 刪除
-  cancel: 取消
   install: 安裝
-  goTo: 網站
-  byAuthor: 作者：{author}
-  noDescription: 暫無描述。
-  loadMore: 載入更多
-  cmsBrowseOnly: 此來源僅供瀏覽；請開啟網站下載。
-  mixedSources: 結果來自所有來源的混合。部分僅供瀏覽，請開啟其網站下載。
-  formats:
-    structure: 原版結構
-  preview:
-    title: 3D 預覽
-    loading: 正在載入預覽...
-    empty: 此藍圖沒有可顯示的方塊。
-    hint: '{count} 個方塊 · {x}×{y}×{z}'
-    controls: WASD：移動 · 空白鍵/Shift：上升/下降 · 拖曳：觀察 · 捲動：縮放
-  convert:
-    title: 轉換格式
-    hint: 將此藍圖轉換為其他格式。將建立一個新檔案。
-    target: 目標格式
-    action: 轉換
-  replace:
-    title: 取代方塊
-    simple: 簡單
-    precise: 精確
-    simpleHint: 僅依方塊 ID 比對，保留現有的方塊狀態屬性。
-    preciseHint: 比對完整的方塊狀態（ID + 屬性）並整體取代。
-    from: 從
-    to: 到
-    addRule: 新增規則
-    newFile: 另存為新檔案
-    action: 取代
 resourcepack:
   linkShared: 在實例間共用資源包
   linkSharedHint: 將此實例的 resourcepacks 資料夾連結到全域共用資料夾，讓所有實例共用相同的資源包。現有的資源包會被合併到共用資料夾中。
@@ -1424,141 +1094,25 @@ localCollection:
 server:
   launch: 啟動伺服端
   stop: 停止伺服端
-  acceptingMinecraftVersion: 接受 Minecraft 版本
   addServer: 添加伺服器
   address: 伺服器地址
   addressHint: 例如 mc.hypixel.net
   bindUpstream: 绑定为上游
-  boundUpstream: 已绑定伺服器上游
   boundUpstreamHint: 此執行個體将跟随所绑定伺服器的 Minecraft 版本。
-  creationHint: 请填写伺服器地址并尝试 Ping 伺服器
   editServer: 编辑伺服器
   emptyHint: 此執行個體的 servers.dat 中暂无伺服器，添加一个以开始。
   entryCount: '{count} 个伺服器'
-  expectedVersions: 已支持的版本
-  export: 匯出伺服器
-  exportNoFilesHint: 找不到伺服器檔案。 请先安裝一次伺服端以生成所需檔案。
-  exportOption: 伺服器匯出选项
-  exportSSHAuthenticationFailed: 所有身份驗證方法都失败了。 请检查用户名/密碼或私鑰。
-  exportSSHOptions: SSH选项
-  exportSSHPrivateKeyPath: SSH私鑰路径
-  exportSSHRemotePath: 遠端伺服器路径
-  exportToFolder: 匯出到檔案夹
-  filterVersion: 筛选伺服器相应的 Minecraft 版本
-  host: 伺服器地址
-  hostHint: 伺服器的 IP 地址（和連接埠号）
-  hostRequired: 请輸入伺服器IP地址
-  ipAddress: IP 地址
   launchClient: 改为啟動用戶端
   launchPinned: 已固定
   launchTargetHint: 此執行個體会直接啟動进入已固定的伺服器，要切换回用戶端吗？
   maxPlayers: 最大玩家数
-  motd: 伺服器 MOTD
   nameHint: 多人遊戲列表中顯示的名稱
-  nogui: 隐藏伺服器 GUI
-  onlineMode: 線上模式 (只允许正版)
   pin: 固定伺服器
   pinAfterSave: 儲存后固定为預設啟動目标
-  ping: Ping 伺服器
-  pings: 延迟
   pinnedHeader: 已固定：{name}
-  players: 玩家
   port: 連接埠
-  clearLog: 清空日志
-  log: 伺服端日志
-  logWaiting: 啟動伺服端后，输出将显示在这里。
-  remoteActionSuccess: 操作完成。
-  remoteAdmin: SSH 伺服端
-  remoteAuthMethod: 身份驗證
-  remoteAuthPassword: 密碼
-  remoteAuthPrivateKey: 私鑰
-  remoteBuildOfflinePackage: 生成離線包
-  remoteConnected: 已連線
-  remoteConnection: SSH 連線
-  remoteDeployment: 部署
-  remoteDeploy: 部署
-  remoteDisk: 磁碟
-  remoteConfigFiles: 配置檔案
-  remoteExtraFiles: 其他檔案
-  remoteForgetCredentials: 忘记已儲存的憑據
-  remoteInstallService: 安裝服务
-  remoteLoad: 系统负载
-  remoteLog: 遠端日志
-  remoteMemory: 記憶體
-  remoteMods: 模组
-  remoteNoWorldSelected: 未選擇執行個體世界
-  remoteJavaRequired: 遠端 Linux 主机上未找到 Java。
-  remoteLinuxRequired: 仅支持 Linux SSH 目标。
-  remoteNotConfiguredHint: 请填写并儲存連線信息，以启用狀態检查、服务控制和日志监控。
-  remotePathNotWritable: 遠端伺服端目录不可写。
-  remotePathWritable: 目录可写
-  remotePolicyInitialize: 仅初始化一次
-  remotePolicyMirror: 镜像同步
-  remotePolicyOverlay: 覆蓋写入
-  remotePolicyPreserve: 保留远端
-  remotePreview: 預覽变更
-  remotePhase:
-    connect: 正在連線
-    error: 协调失败
-    idle: 等待协调
-    inspect: 正在检查目标
-    install: 正在安裝伺服端
-    logs: 正在連線控制台
-    ready: 已套用期望狀態
-    service: 正在确保 systemd 服务
-    start: 正在啟動伺服端
-    sync: 正在同步期望狀態
-    world: 正在套用世界策略
-  remoteRememberCredentials: 在系统憑據库中记住憑據
-  remoteReconcileReady: 目标已与執行個體配置一致，控制台已連線。
-  remoteRestartService: 重新啟動
-  remoteSavedCredentialsHint: 正在使用已儲存的憑據；留空以保持不变，輸入新值可替换。
-  remoteService: systemd 服务
-  remoteServiceActive: 執行中
-  remoteServerInstalled: 已安裝伺服端檔案
-  remoteServiceName: 服务名称
-  remoteServiceNameHint: systemd --user 单元名称，例如 mc-server
-  remoteSelectedFiles: 已選擇 {count} 个伺服端檔案
-  remoteSelectFiles: 選擇檔案
-  remoteStartCommand: 啟動命令
-  remoteStartCommandHint: 例如 java -jar server.jar nogui
-  remoteStartService: 啟動
-  remoteStatus: 狀態
-  remoteSystemdRequired: 遠端 Linux 主机不支持 systemd 用户服务。
-  remoteTargetName: 目标名称
-  remoteStopService: 停止
-  remoteStopWatchLog: 停止监控
-  remoteTestConnection: 测试連線
-  remoteTestConnectionSuccess: 連線成功。
-  remoteUninstallConfirmMessage: 这会禁用并移除遠端主机上的 systemd 单元，不会删除伺服端檔案。
-  remoteUninstallService: 解除安裝服务
-  remoteRunInstall: 安裝或修复
-  remoteWatchLog: 监控实时日志
-  remoteWorldAlways: 每次协调时覆蓋
-  remoteWorldDeployment: 執行個體世界部署
-  remoteWorldDeploymentHint: 常规同步不会上传世界数据，只有此策略明确允许时才会上传。
-  remoteWorldFirstInstall: 仅在目标没有世界时初始化
-  remoteWorldNever: 永不上传世界
-  remoteWorldPresent: 目标世界
-  remoteWorld: 世界
-  remoteWorldWillDeploy: 本次协调将上传所选執行個體世界。
   serverName: 伺服器名称
-  serviceInstall: 安裝服务
-  serviceManagedLaunch: 使用系统服务执行啟動和停止操作
-  serviceManager: 系统服务
-  serviceName: 服务名称
-  serviceNameHint: 仅使用字母、数字、点、下划线或连字符的稳定标识
-  serviceNotInstalled: 未安裝
-  serviceStartCommand: 啟動命令
-  serviceSystemd: systemd --user
-  serviceWindows: Windows 服务
-  serviceWindowsCommandHint: 安裝服务时会根据目前執行個體自动生成 Java 啟動命令。
   serversListTitle: 伺服器列表
-  target: 伺服端目标
-  targetLocal: localhost
-  targetLocalHint: 在此电脑上安裝并執行伺服端。
-  targetRemote: SSH 目标
-  targetRemoteHint: 通过 SSH 連線、安裝、啟動并监控伺服端。
   unbindUpstream: 解绑
   unknown: 未知伺服器
   unknownDescription: 未知伺服器，请刷新。
@@ -1569,23 +1123,12 @@ server:
   upstreamUpdateAvailable: 伺服器现在執行 Minecraft {version}，点击套用。
   upstreamUpdateHint: 将建议的 Minecraft 版本套用到此執行個體。
   useAsUpstreamHint: 此執行個體将跟随伺服器所报告的 Minecraft 版本。
-  version: 伺服器推荐版本
-  versionHint: Ping 使用的 Minecraft 版本
-  worldPreserve: 保留目标现有世界
 serverStatus:
   nohost: 找不到伺服器！
   ping: 延遲
   refuse: 伺服器中斷了連線！
   timeout: 伺服器響應超時！
-agent:
-  accessRequiredHint: 訂閱 Zenith Launcher 即可使用內建 AI 助手，或前往設定自行配置 AI 供應商。
-  subscribeXmcl: 訂閱 XMCL
-  notConfiguredHint: 請在設定 → 基本設定 → AI 助手中設定 API 金鑰、模型和 OpenAI 相容端點，例如 OpenAI 或相容 Claude 的閘道。
 setting:
-  aiAgentApiKeyDescription: 配置 OpenAI 相容供應商，例如 OpenAI 或 Claude 閘道。API 金鑰僅儲存在本機裝置。
-  aiAgentApiKeyPlaceholder: OpenAI 或 Claude 供應商 API 金鑰
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 或 claude-sonnet-4-5
   themeStore:
     name: 主題庫
     description: 保存並管理全域主題
@@ -1605,7 +1148,6 @@ setting:
   aboutLicense: MIT 授權
   aboutLicenseInfo: Windows 代碼簽名由 SignPath.io 免費提供，簽署人為 SignPath Foundation
   aboutSponsors: 😇 贊助商 😇
-  advancedJavaOptions: 進階 Java 選項
   advancedSettings: 進階設定
   advancedSettingsHint: 危險區域 - 重置或管理啟動器資料
   apiSets:
@@ -1673,8 +1215,6 @@ setting:
   devModeLabel: 開發
   developerMode: 開發者模式
   developerModeDescription: 開發者模式旨在協助您測試自己寫的模組
-  disableTelemetry: 停用遙測
-  disableTelemetryDescription: XMCL 會收集遊戲啟動以及使用者登入事件
   enableDedicatedGPUOptimization: 分配專用 GPU
   enableDedicatedGPUOptimizationDescription: 此選項將為 Minecraft 程序分配專用 GPU。
   enableDiscord: 啟用 Discord Presence
@@ -1684,8 +1224,6 @@ setting:
   exportSettingsHint: 將目前設定儲存到檔案
   general: 基本設定
   githubRelease: Github
-  globalJava: 首選 Java
-  globalJavaHint: 在自動模式下會優先嘗試此 Java，僅當其與遊戲版本不相容時才回退到自動偵測。
   globalSetting: 全域性實例設定
   globalSettingHint: 實例預設情況下會使用這些全域性設定
   importSettings: 匯入設定
@@ -1715,7 +1253,6 @@ setting:
   maxSockets: (每個網站)最大連線數
   maxSocketsDescription: 控制最大的併發 HTTP 連結數量。0 代表不限制數量。
   maxSocketsTitle: 最大 HTTP 連線數量
-  memoryAssignment: 記憶體分配
   migrateFromOther: 從其他啟動器匯入
   minecraftOptions: Minecraft 選項
   name: 設定
@@ -1730,11 +1267,6 @@ setting:
     repulse: 擊退
   particleModeDescription: 選擇當您按一下粒子時的特效
   quickLaunchSettings: 快速啟動
-  replaceNative: 替換函式庫為 Native (原生)
-  replaceNativeDescription: 根據您的電腦架構替換原生函式庫。
-  replaceNatives:
-    all: 全部
-    legacy: 僅舊版本
   resetAllSettings: 重設所有設定
   resetAllSettingsConfirmMessage: 此操作將永久刪除所有設定、帳戶、實例、群組和快取資料。此操作無法撤銷。確定要繼續嗎？
   resetAllSettingsConfirmTitle: 重設所有設定？
@@ -1948,17 +1480,6 @@ theme:
   selectVideo: 選擇影片
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: 公網位址
-  prflx: 同伴反射位址
-  relay: 中繼位址
-  srflx: 伺服器反射位址
-turnRegion:
-  fr: 法國
-  guangzhou: 中國廣州
-  hk: 香港
-  liaoning: 中國遼寧
-  po: 波蘭
 tutorial:
   feedbackDescription: 如果您遇到了問題，請按一下這個按鈕來聯絡開發團隊。
   hideNewsHeaderDescription: |-
@@ -1969,10 +1490,6 @@ tutorial:
     appearanceThemeTitle: 實例自訂外觀
     iconDescription: 點選以更換圖示。
     iconTitle: 實例圖示
-    javaDescription: 選擇或切換 Java 版本。
-    javaImportDescription: 從本機儲存空間匯入 Java。
-    javaImportTitle: 匯入 Java
-    javaTitle: Java 清單
     modpackExportDescription: 建置並將設定好的實例打包為隨時可分享的整合包。
     modpackExportTitle: 匯出整合包
     modpackFilesDescription: 選擇客戶端與伺服器端需要打包的設定檔、模組與資源。
@@ -2039,15 +1556,6 @@ tutorial:
     profileDescription: 在您的帳號之間切換並管理登入認證。
     skinTitle: 外觀與披風自訂
     skinDescription: 3D 預覽您的角色，更換外觀並佩戴披風。
-  multiplayer:
-    railTitle: 網路與導覽
-    railDescription: 檢查 NAT 類型、網路連線狀態，並在連線與設定間切換。
-    groupTitle: 加入或主持房間
-    groupDescription: 輸入房間代碼加入好友，或留空點選以建立您自己的房間。
-    joinDescription: 點選加入現有房間或建立新房間。
-    contentTitle: 已連線成員與內容
-    contentDescription: 管理已連線成員，檢視延遲並分享執行中的 Minecraft 遊戲。
-    manualDescription: 使用 SDP 交換與好友進行手動直接 P2P 連線。
   resourcepack:
     searchTitle: 搜尋材質包
     searchDescription: 從 Modrinth、CurseForge 或本機檔案中搜尋材質包。
@@ -2092,10 +1600,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: 未解析的檔案
   via: 透過 {source}
-upstream:
-  downgrade: 降級
-  onlyShowCurrentVersion: 只顯示適合目前 Minecraft 的版本
-  update: 更新
 user:
   accessToken: 存取令牌
   authMode: 驗證服務
@@ -2227,36 +1731,6 @@ reinstall:
 resourceError:
   title: 無法讀取 {file}
   body: 「{path}」解析失敗（{code}）。該檔案可能已損毀、被佔用或下載不完整。 請嘗試重新下載或刪除該檔案。
-minecraftFriends:
-  title: Minecraft 好友
-  add: 新增好友
-  addPlaceholder: Minecraft 使用者名稱
-  send: 傳送
-  friends: 好友
-  incoming: 收到的請求
-  outgoing: 發出的請求
-  heroEmptyTitle: 你的好友列表為空
-  heroEmptyHint: 輸入 Minecraft 使用者名稱以傳送好友請求。
-  scopedTo: 已登入為 {name}
-  reconnectAction: 重新連線
-  accept: 接受
-  unsupported: 好友功能僅適用於 Microsoft 帳號。
-  requiresMicrosoft: 請使用 Microsoft 帳號登入以使用好友功能。
-  notifyAdded: 已向 {name} 傳送好友請求
-  addedRelative: '{time}新增'
-  expiresRelative: '{time}到期'
-  incomingHint: 1 個好友請求 | {count} 個好友請求
-  privacy:
-    friendsEnabled: 啟用好友列表
-    acceptInvites: 接受好友邀請
-    acceptInvitesHint: 關閉後，其他玩家無法向你傳送好友請求。
-  errors:
-    unknownProfile: 找不到該使用者名稱的玩家。
-    cannotAddSelf: 你不能向自己傳送好友請求。
-    duplicate: 該玩家已在你的列表中。
-    inviteRejected: 該玩家未啟用好友功能或不接受邀請。
-    tokenExpired: 你的 Microsoft 工作階段已過期，請重新登入。
-    generic: 出現了一些問題，請重試。
 relative:
   justNow: 剛剛
   secondsAgo: '{count} 秒前'

@@ -1,30 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: Meerdere opstartprofielen gedetecteerd. Selecteer er een om te importeren.
-  createTitle: Game aanmaken
-  serverTitle: Voer je serveradres in
-AppShareInstanceDialog:
-  editScopeDescription: Selecciona os ficheiros que os pares poderán obter despois de descubrir este xogo en execución na LAN.
-  editScopeTitle: Editar o alcance da compartición
-  instanceToShare: Xogo en execución
-  alterDownloadDescription: Als je de huidige instantie niet wilt aanpassen, kun je ook een nieuwe instantie maken van de configuratie van de ander. Klik op de knop hieronder om een instantie te maken.
-  baseInfo: Basisinstelling
-  description: Nadat je het profiel hebt gedeeld, kunnen anderen deze bestanden via jouw PC downloaden.
-  downloadDescription: Verifieer de bestanden die de ander je heeft aangeboden. Selecteer het bestand dat je wilt downloaden. Het wordt in de huidige instantie {name} geplaatst.
-  downloadNotifyTitle: Instantie downloaden van {user}
-  downloadTitle: Bestanden downloaden van anderen
-  filesToDownload: Kies bestanden om te downloaden
-  filesToShare: Kies bestanden om te delen
-  share: Delen
-  shareTitle: Deel gamebestanden met andere speler
 BaseSettingGeneral:
   title: Algemeen
-HomeJavaIssueDialog:
-  incompatibleJava: Incompatibele Java
-  incompatibleJavaHint: De huidige Java is mogelijk niet compatibel met de geselecteerde Minecraft!
-  missingJava: Java ontbreekt
-  missingJavaHint: 'De Launcher kan geen Java vinden op je computer. Je kunt:'
-  optionSwitch:
-    name: Schakel over naar {version}
 HomeLaunchMultiInstanceDialog:
   confirm: Ja, starten
   description: Je start meerdere instanties van Minecraft. Weet je het zeker?
@@ -36,30 +11,7 @@ ago:
   hour: '{duration} uur geleden | {duration} uur geleden'
   minute: '{duration} minuut geleden | {duration} minuten geleden'
   second: '{duration} seconde geleden | {duration} seconden geleden'
-askAICrash:
-  copyPrompt: Kopieer de prompt om aan AI te vragen
-  description: Laat AI je helpen de gamecrash te begrijpen! Volg de instructies hieronder om AI te vragen over deze gamecrash!
-  selectPlatform: Open een AI-platform en plak de prompt die je zojuist hebt gekopieerd.
 authProfileAddedNotification: Auth-profiel {name} toegevoegd
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
 backup:
   title: Copia de seguridade e restauración
   description: Haz copias de seguridad y restaura tus ajustes, colecciones, temas e instancias
@@ -292,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: Klik om deze versie te installeren
     name: Beschadigde versie jar voor Minecraft %{version}.
-  incompatibleJava:
-    name: De java-versie {javaVersion} is niet geschikt voor {version}!
   instanceFiles:
     description: De instantie-installatie bevat {counts} bestanden.
     title: Onvolledige instantie-installatie
-  invalidJava:
-    name: Ongeldige java-locatie.
   missingJava:
     message: Klik om dit probleem op te lossen
     name: Kan geen Java vinden om Minecraft te starten!
@@ -330,11 +278,6 @@ duration:
   hour: '{duration} uur | {duration} uur'
   minute: '{duration} minuut | {duration} minuten'
   second: '{duration} seconde | {duration} seconden'
-env:
-  select:
-    all: Alles selecteren
-    fit: Passend selecteren
-    none: Geen selecteren
 errors:
   BadForgeInstallerJarError: Kan forge installer jar-bestand niet parsen. Heeft Forge misschien een nieuw installer bestandsformaat? Neem contact op met ontwikkelaars als dit probleem aanhoudt.
   BadInstanceType: 'Geen geldige instantie: {type}'
@@ -349,8 +292,6 @@ errors:
   HeadersTimeoutError: HTTP Header time-out
   NotFoundError: 404 Niet Gevonden
   SocketError: Server socket fout
-eula:
-  body: Door het selectievakje aan te vinken, geef je aan akkoord te gaan met Minecraft's {eula}.
 exception:
   http: HTTP-verzoek naar {url} mislukt. Statuscode {statusCode}. {code}. Probeer het opnieuw of controleer je netwerk. Als deze fout aanhoudt, stuur dan een rapport naar het ontwikkelaarsteam.
 extensions:
@@ -426,21 +367,6 @@ gameType:
   survival: Survivalmodus
 help: Help
 home: Home
-importModpack:
-  fromFileSubtitle: Escolle un ficheiro .zip ou .mrpack
-  fromUrl: Desde unha ligazón / URL...
-  fromUrlSubtitle: Instala un modpack desde un URL
-  fromUrlDescription: 'Introduce ou pega o URL do modpack:'
-  invalidUrl: Introduce un URL válido (http:// ou https://)
-  selectVersion: Selecciona a versión do modpack
-  selectVersionDescription: 'Escolle a versión de {name} que queres instalar:'
-  pmcProtected: Planet Minecraft está protexido por Cloudflare. Copia a ligazón de descarga directa ou unha ligazón alternativa da páxina.
-  netdiskTitle: Descarga desde a nube
-  netdiskDescription: Esta versión do modpack está aloxada nun servizo de almacenamento na nube externo. Preme embaixo para abrir a páxina de descarga no navegador e despois arrastra o ficheiro .zip ou .mrpack descargado a Zenith Launcher.
-  openNetdisk: Abrir o almacenamento na nube
-  netdiskOpened: A ligazón do almacenamento na nube abriuse no navegador e copiouse ao portapapeis.
-  noReleasesFound: Non se atoparon versións de modpacks .mrpack ou .zip neste repositorio.
-  name: Modpack importeren
 installAssets:
   asset: Installeer {count} Assets
   assetIndex: Controleer Assets Indexbestand
@@ -499,12 +425,9 @@ instance:
   iconUrl: Icoon Url
   installModpack: Update instantie vanaf modpack
   lastPlayed: Laatst gespeeld
-  launchArguments: Startargumenten voorbeeld
   launchServer: Start localhost server
   linkFileDesc: Dit overschrijft het lokale instantiebestand {file} met het globale {file}. Weet je zeker dat je het wilt linken?
   linkFileTitle: Weet je zeker dat je {file} wilt linken?
-  mcOptions: Minecraft Opties
-  mcOptionsHint: Extra Minecraft startargumenten
   name: Profielnaam
   nameHint: De naam van het modpack
   nameNoCyrillic: De naam mag geen Cyrillische tekens bevatten
@@ -512,10 +435,6 @@ instance:
   openCrashReportFolder: Open map met crashrapporten
   openLogFolder: Open logmap
   playtime: Speeltijd
-  preExecCommand: Pre-Execute Commando
-  preExecCommandHint: Commando om uit te voeren vóór het starten van Minecraft
-  prependCommand: Commando voorvoegen
-  prependCommandHint: Dit voegt dit commando toe vóór alle startcommando's
   requireName: De naam is verplicht
   resolution: Resolutie
   resolutionPreset: Resolutie voorinstelling
@@ -526,10 +445,6 @@ instance:
   useSharedOptionsDesc: Dit linkt de options.txt naar een gedeeld bestand over instanties heen
   useSharedServersList: Gebruik gedeelde serverlijst
   useSharedServersListDesc: Dit linkt de servers.dat naar een gedeeld bestand over instanties heen
-  vmOptions: JVM Opties
-  vmOptionsHint: Extra argumenten om door te geven aan de JVM
-  vmVar: Omgevingsvariabelen
-  vmVarHint: Klik op + knop om omgevingsvariabelen toe te voegen
   width: Breedte
   envVarKey: Chave
   envVarValue: Valor
@@ -570,9 +485,6 @@ instanceSetting:
   showLogHint: Dit opent een venster om Minecraft-log te streamen nadat de game is gestart
   syncGameLanguage: Sincronizar idioma do xogo
   syncGameLanguageDescription: Sincronizar automaticamente o idioma de Minecraft co do iniciador ao iniciar
-instanceTemplate:
-  ftb: Dit is een FTB modpack
-  preview: Modpack voorbeeld
 instanceUpdate:
   basic: Instelling update
   files: Bestand updates
@@ -591,42 +503,15 @@ instances:
   fix: Repareren
   folder: Map
   folderSetting: Mapinstellingen
-  importFolderDescription: Importeer Minecraft naar Launcher
-  loadingFiles: Modpack-bestanden laden
-  edition: Edición
-  editionJava: Edición Java
   editionBedrock: Edición Bedrock
   editionBedrockHint: A edición Bedrock iníciase a través da aplicación Microsoft Store. Debes posuír unha licenza de Bedrock. Os mods, paquetes de recursos e outras funcións exclusivas de Java non están dispoñibles.
   editionBedrockWindowsOnly: A edición Bedrock só é compatible coa versión de Windows.
-  linkSharedFolders: Compartir cartafoles entre instancias
-  linkSharedFoldersHint: 'Crea estes cartafoles como ligazóns aos cartafoles compartidos do iniciador para que esta instancia comparta o seu contido con todas as demais instancias ligadas. Isto non é unha copia: os cambios feitos nunha instancia aparecen en todas. Os cartafoles non marcados permanecen privados desta instancia.'
-  linkFailed: Non se puido ligar o cartafol {folder} ao cartafol compartido
   addPrismDescription: Importar unha instancia de PrismLauncher existente.
 items:
   count: '{count} items'
   total: '{total} totaal'
 java:
-  allocatedLong: Gebruik systeemstandaard java
-  allocatedShort: Auto Toegewezen
-  importFromFile: Importeer Java uit bestand
-  invalid: Ongeldige Java Locatie
-  location: Java Locatie
-  maxMemory: Max Geheugen
-  memory: Java Geheugen
   memoryAuto: Auto
-  memoryManual: Handmatig
-  memoryUnassigned: Niet toewijzen
-  minMemory: Min Geheugen
-  name: Java
-  noMemory: Geheugengebruik niet beperken
-  refresh: Ververs Lokale Java
-  systemMemory: 'Systeem Vrij Geheugen: {free} / {total}'
-  allocation: Asignado
-  autoHint: O mínimo crece coa cantidade de mods instalados; o máximo usa a memoria dispoñible do sistema.
-  change: Cambiar
-  locationHint: Ningún Java seleccionado — usando o predeterminado do sistema
-  openFolder: Abrir cartafol de Java
-  presets: Predefinicións
 labyMod:
   disable: Schakel LabyMod uit
   empty: LabyMod ondersteunt huidige Minecraft niet
@@ -699,8 +584,6 @@ localVersion:
   auto: Automatisch berekend
   empty: Geen versie geïnstalleerd
   hint: Start direct een specifieke lokale versie
-  reinstallDescription: Als je denkt dat deze versie-installatie problemen heeft, kun je proberen het opnieuw te installeren.
-  reinstallTitle: Herinstalleer {version}
   title: Lokale Versie | Lokale Versies
 logLevel:
   error: Fout
@@ -763,25 +646,19 @@ minecraftVersion:
   showAlpha: Toon Snapshot
   snapshot: Snapshot
 mod:
-  collapseAllGroups: Contraer todos os grupos
   acceptVersion: Accepteer {version}
   applyGroupRules: Pas opgeslagen groepsregels toe
   compatible: Compatibele Mod.
   createGroup: Maak Groep
   currentVersion: Huidige {current}
   denseView: Compacte weergave
-  description: Descrición
   disableAll: Alles uitschakelen
-  dropHint: Sleep mod's .jar/.litemod hierheen om te importeren.
   duplicatedDetected: '{count} gedupliceerde mods'
   duplicatedDetectedDescription: Mods gevonden met dezelfde mod id maar verschillende bestanden. Dit kan Minecraft laten crashen. Selecteer het bestand dat je wilt behouden.
   enableAll: Alles inschakelen
   enabled: '{count} Mods ingeschakeld'
   filter: Filter Mods
   group: Groeperen
-  groupInstalled: Groepeer Geïnstalleerde Mods
-  hideInstalled: Verberg Geïnstalleerde Mods
-  installedFilterOff: Toon Alle Mods
   groupName: Groepsnaam
   groupNameRequired: Groepsnaam is verplicht
   hasUpdate: Mod heeft een nieuwe versie!
@@ -789,25 +666,17 @@ mod:
   incompatibleHint: Toon Incompatibel
   incompatibleHintDescription: Sommige mod-afhankelijkheden ontbreken mogelijk. Of sommige afhankelijkheidsversies komen niet overeen.
   maybeCompatible: Misschien Compatibel.
-  modloaderSelectHint: De mod ondersteunt de volgende mod loaders. Selecteer er een om te installeren.
-  modloaderSelectNotSupported: Niet gevonden {modloader} voor Minecraft {minecraft}
   mods: '{count} Mods'
   name: Mod | Mods
   newFolder: Nieuwe Map
   noGroupsFound: Geen groepen gevonden
   noGroupsYet: Nog geen groepen. Maak er een!
-  noModLoaderHint: Vergeet niet een modloader in te schakelen om mods te gebruiken!
   openLink: Open de mod url {url}
-  search: Zoek Mods
   searchGroups: Zoek groepen...
   searchOnMcWiki: Zoek {name} op in de MC encyclopedie.
   selectOrCreateGroup: Selecteer of Maak Groep
-  showDirectory: Toon mods map
   showFile: Toon het mod pad {file}
-  showInModrinth: Toon {name} in Modrinth
-  switchDefaultSource: Standaard Mod Bron
   syncGroupRules: Sla groepsregels op
-  toUpdate: '{count} updates'
   ungroup: Degroeperen
 modFilter:
   clear: Wis Filter
@@ -853,25 +722,10 @@ modified:
   save: Opslaan
   unsaved: Je wijziging is niet opgeslagen!
 modpack:
-  author: Aueurnaam
-  authorHint: Dit kan worden gebruikt om een geëxporteerd modpack te ondertekenen (Curseforge)
-  description: Beschrijving
-  descriptionHint: Algemene beschrijving voor je modpack. Kan worden gebruikt voor exporteren als curseforge modpack.
   dropHint: Sleep modpack zip hierheen om te importeren
-  emitCurseforge: Exporteer Curseforge Modpack
-  emitModrinth: Exporteer Modrinth Modpack
-  emitModrinthStrict: Strikt Modrinth Formaat
-  emitModrinthStrictDescription: Alleen URL's van 4 domeinen vermeld in modrinth document zijn toegestaan
   export: Exporteer als Modpack
-  exportDirectory: Exportmap
-  exportDirectoryDescription: Het modpack wordt standaard geëxporteerd naar de map Downloads
-  includeAssets: Inclusief Assets
-  includes: Bestanden om op te nemen
   modpackVersion: Modpack-versie
   name: Modpack | Modpacks
-  overrides: Overrides
-  url: URL
-  urlHint: De startpagina url van je modpack
 modpackImportConfirm:
   description: Gedetecteerd dat je een bestand in de launcher sleept. Probeer je een modpack te importeren?
   title: Probeer je een modpack te importeren?
@@ -1035,110 +889,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: Huidige Versie
-multiplayer:
-  joinDiscord: Unirse a Discord
-  openConsumerPortal: Abrir o portal de consumidores
-  refundHint: Precisas un reembolso? Visita o portal de consumidores de Waffo para xestionar os teus pedidos e subscricións.
-  togetherSupportHint: Se o modo multixogador non funciona, únete ao noso Discord e contacta co equipo de desenvolvemento. Axudarémosche a resolver o problema.
-  autoShareAmbiguous: Hai varios xogos en execución. Selecciona a instancia que aloxa o mundo LAN para que Zenith Launcher poida compartila.
-  editSharingScope: Editar o alcance da compartición
-  gameAvailable: Xogo LAN dispoñible
-  joinGame: Unirse ao xogo
-  noRunningInstanceToShare: Inicia un xogo antes de editar o seu alcance de compartición
-  updateSharedInstanceConfirm: Actualizar e iniciar
-  updateSharedInstanceDescription: Os mods compartidos son diferentes dos de {instance}. Queres actualizar esta instancia para que coincida co anfitrión antes de iniciala? Farase unha copia de seguranza dos ficheiros modificados.
-  updateSharedInstanceTitle: Actualizar a instancia compartida?
-  addFunds: Engadir fondos
-  availableBalance: Saldo dispoñible
-  balanceHint: Dispoñible para os servizos de XMCL Together
-  billing: Facturación
-  billingDescription: Xestiona o acceso ao relay, o teu plan Together Home e os pagamentos.
-  billingError: Non se puido cargar a facturación de Together. Téntao de novo nun momento.
-  buyTogether: Mercar Together
-  cancelTogether: Cancelar o plan
-  checkout: Abrir o pagamento de Waffo
-  connectionTogetherWarning: Un membro da sala non puido conectarse contigo durante un tempo. Proba XMCL Together para mellorar a conectividade de todos na sala. Só o mestre da sala necesita Together.
-  masterPurchaseHint: Só o mestre da sala necesita Together Home para mellorar a conectividade de todos na sala.
-  natTogetherWarning: É posible que o teu router teña problemas para conectarse ao mestre da sala. Se fallan as conexións, proba XMCL Together para mellorar a conectividade entre ti e os teus amigos. Só o mestre da sala ten que mercar Together para a sala.
-  togetherName: Minecraft Together
-  trialDescription: Unha proba de 7 días con 1 GB de tráfico de relay.
-  trialTitle: Proba de conectividade
-  tryTogether: Probar Together
-  month: mes
-  orderStatus: 'Pedido de Waffo: {status}'
-  planDescription: 20 GB de tráfico de relay xestionado ao mes, ademais de resolución de problemas con IA para o teu modpack.
-  waffoHint: Os pagamentos complétanse de forma segura en Waffo Pancake. XMCL nunca recibe o teu número de tarxeta.
-  subscription:
-    active: Activa
-    cancelled: Cancelada
-    payment_due: Pagamento pendente
-  trial:
-    active: Proba activa
-    available: Proba gratuíta dispoñible
-    expired: Proba utilizada
-    unavailable: Proba non dispoñible
-  loginRequiredDescription: O multixogador P2P usa os servizos en liña de Zenith Launcher. Inicia sesión nunha conta de Zenith Launcher para continuar.
-  loginRequiredTitle: Inicia sesión para o multixogador P2P
-  complete: Voltooid
-  confirm: Bevestigen
-  connections: Verbindingen
-  copied: Gekopieerd!
-  copy: Kopiëren
-  copyGroupToFriendHint: Laat je vrienden lid worden van de groep met deze id
-  copyLocalHint: |
-    "Kopieer de lokale SDP-tekst en stuur deze naar je partner en laat je partner deze tekst invoeren in de join verbinding <span>Een token kan slechts voor <span style="color: red; font-weight: bold;">één peer</span> gebruikt worden! Je kunt niet hetzelfde token naar meerdere peers sturen!</span> <br> <span class="hint-text" style="font-style: italic;">Als je meerdere peers moet verbinden, moet je <span style="font-weight: bold; color: rgba(245, 158, 11)">meerdere</span> verbindingen maken.</span>"
-  createLocalToken: Maak Lokaal Token
-  currentIpTitle: Gedetecteerd Openbaar IP
-  currentNatTitle: 'Huidig netwerk (NAT):'
-  difficultyLevelHint: De moeilijkheidsgraad om een verbinding te maken
-  disconnect: Verbinding verbreken
-  disconnectDescription: Weet je zeker dat je de verbinding met gebruiker {user}({id}) wilt verbreken?
-  disconnected: verbonden verbroken
-  enterRemoteToken: Voer Remote Token In
-  enterRemoteTokenHint: Zodra je partner jouw token invoert, moet jij zijn token invoeren in het tekstvak hieronder. Klik op bevestigen om te verbinden.
-  exposedPortDescription: De poort die je openstelt voor andere peers
-  exposedPorts: Doorgestuurde Poorten
-  gatheringIce: |
-    "Wacht tot de ICE-server genoeg informatie heeft verzameld over je netwerk. Als je ongeduldig bent en er is genoeg informatie, kun je de huidige SDP alvast aan de andere partij geven en op Volgende klikken Stuur het <span class="v-chip v-chip--label v-size--small" style="text-font: bold" >Lokaal Token</span> naar je partner, je partner voert jouw token in bij de <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> Join Verbinding </span> sectie. <br> De ICE-server heeft mogelijk even nodig om je info te verzamelen om een <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Lokaal token</span> te maken.<br> Je hoeft niet te wachten tot de ICE-status voltooid is. Als het token hieronder ongewijzigd blijft, kun je het kopiëren en naar je partner sturen."
-  groupId: Groep Id
-  illegalTokenDescription: Illegaal token, zorg ervoor dat het token van je partner correct is
-  initiateConnection: Verbinding Initiëren
-  joinConnection: Als je partner al een verbinding heeft geïnitieerd, moet jij Verbinden (Join Connection).
-  joinManual: Deelnemen
-  joinOrCreateGroup: Deelnemen/Maak Groep
-  joinOrCreateGroupHint: Krijg groep id van je vrienden of maak een groep
-  kernel: P2P Kernel
-  kernelDescription: Gebruik ofwel native WebRTC of node-datachannel. Schakel dit alleen om als je p2p verbinding soms het launcher-venster laat crashen.
-  leaveGroup: Groep verlaten
-  localToken: Lokaal Token
-  manualConnect: Handmatig Verbinden
-  name: Multiplayer op LAN
-  networkInfo: Netwerkinfo
-  next: Volgende
-  otherExposedPortDescription: De poort doorgestuurd door {user}
-  placeholder: Verbind met andere gebruikers om Minecraft op LAN te spelen!
-  previous: Vorige
-  receiveHint: Nadat de andere partij jouw token heeft ingevoerd, wordt je verbinding automatisch gemaakt. Nu kun je het dialoogvenster sluiten.
-  receiveRemoteTokenHint: Voer hier het token van je partner in.
-  remoteToken: Remote Token
-  routerInfo: Router Info
-  sendTokenToRemote: Stuur Token naar Remote
-  share: Deel Instantieconfiguratie
-  sharing: Bestanden delen...
-  start: Start
-  startNewP2PConnection: Klik op de Start knop om een nieuwe peer-verbinding te maken
-  connectionError: Erro de conexión
-  connectionFailedHint: Non se pode establecer a conexión. Comproba que ambos os pares teñan tipos de NAT compatibles.
 myStuff: Mijn Spullen
-natType:
-  blocked: Geblokkeerd
-  fullCone: Full Cone
-  openInternet: Open Internet
-  restrictNat: Restrict NAT
-  restrictPortNat: Restrict Port NAT
-  symmetricNat: Symmetric NAT
-  symmetricUDPFirewall: Symmetric UDP Firewall
-  unknown: Onbekend
 neoForgedVersion:
   disable: NeoForged uitschakelen
   empty: NeoForged ondersteunt {version} niet
@@ -1149,23 +900,6 @@ optifineVersion:
   disable: Optifine uitschakelen
   empty: Optifine ondersteunt Minecraft {version} niet
 optional: Optioneel
-peerConnectionState:
-  closed: Gesloten
-  connected: Verbonden
-  connecting: Verbinden
-  disconnected: Verbinding verbroken
-  failed: Mislukt
-  name: Verbindingsstatus
-  new: Nieuw
-peerGroupState:
-  closed: Niet in Groep
-  closing: Gesloten
-  connected: Groep Deelgenomen
-  connecting: Verbinden
-peerIceGatheringState:
-  gathering: ICE Server verzamelen
-peerSignalingState:
-  have-local-offer: Wachten op peer beschrijving
 presence:
   instance: Idle in Instantie {instance}
   instanceSetting: 'Instantie-instelling bewerken: {instance}'
@@ -1276,141 +1010,25 @@ search:
 server:
   launch: Launch server
   stop: Stop server
-  acceptingMinecraftVersion: Accepteert Minecraft Versie
   addServer: Engadir servidor
   address: Enderezo do servidor
   addressHint: ex. mc.hypixel.net
   bindUpstream: Vincular como upstream
-  boundUpstream: Servidor upstream vinculado
   boundUpstreamHint: Esta instancia segue a versión de Minecraft do servidor vinculado.
-  creationHint: Vul het serveradres in en ping de server
   editServer: Editar servidor
   emptyHint: Non hai servidores no ficheiro servers.dat desta instancia. Engade un para comezar.
   entryCount: '{count} servidor | {count} servidores'
-  expectedVersions: Ondersteunde Versies
-  export: Exporteer Server
-  exportNoFilesHint: Geen serverbestanden gevonden. Je kunt server lokaal eens draaien om enkele bestanden te genereren.
-  exportOption: Server Exportopties
-  exportSSHAuthenticationFailed: Alle authenticatiemethoden mislukt. Controleer gebruikersnaam/wachtwoord of privésleutel.
-  exportSSHOptions: SSH Opties
-  exportSSHPrivateKeyPath: Ruta da chave privada SSH
-  exportSSHRemotePath: Remote Server Pad
-  exportToFolder: Exporteer Naar Map
-  filterVersion: Filter server reageerde Minecraft-versie
-  host: Host
-  hostHint: De host (met poort) van de server
-  hostRequired: Voer het server ip-adres in
-  ipAddress: IP Adres
   launchClient: Iniciar cliente no seu lugar
   launchPinned: Fixado
   launchTargetHint: Esta instancia conéctase directamente ao servidor fixado. Volver ao cliente?
   maxPlayers: Max Spelers
-  motd: Server MOTD
   nameHint: Nome amosado na lista multixogador
-  nogui: Geen Server Gui
-  onlineMode: Online Modus
   pin: Fixar servidor
   pinAfterSave: Fixar como destino predeterminado tras gardar
-  ping: Ping
-  pings: Pings
   pinnedHeader: 'Fixado: {name}'
-  players: Spelers
   port: Poort
-  clearLog: Limpar rexistro
-  log: Rexistro do servidor
-  logWaiting: Agardando pola saída do servidor...
-  remoteActionSuccess: Done.
-  remoteAdmin: Administración de servidor remoto
-  remoteAuthMethod: Autenticación
-  remoteAuthPassword: Contrasinal
-  remoteAuthPrivateKey: Chave privada
-  remoteBuildOfflinePackage: Crear paquete fóra de liña
-  remoteConnected: Conectado
-  remoteConnection: Conexión
-  remoteDeployment: Despregamento
-  remoteDeploy: Despregar
-  remoteDisk: Disk
-  remoteConfigFiles: Ficheiros de configuración
-  remoteExtraFiles: Ficheiros adicionais
-  remoteForgetCredentials: Esquecer credenciais gardadas
-  remoteInstallService: Instalar servizo
-  remoteLoad: Cargar
-  remoteLog: Rexistro do servidor remoto
-  remoteMemory: Memoria
-  remoteMods: Mods
-  remoteNoWorldSelected: Ningún mundo seleccionado
-  remoteJavaRequired: Java non está dispoñible no servidor Linux remoto.
-  remoteLinuxRequired: Só se admiten destinos Linux mediante SSH.
-  remoteNotConfiguredHint: Enche os datos de conexión arriba para habilitar estado, servizo e rexistros.
-  remotePathNotWritable: O directorio do servidor remoto non ten permisos de escritura.
-  remotePathWritable: Directorio con permisos de escritura
-  remotePolicyInitialize: Inicializar unha vez
-  remotePolicyMirror: Espello (Mirror)
-  remotePolicyOverlay: Superposición (Overlay)
-  remotePolicyPreserve: Conservar
-  remotePreview: Vista previa dos cambios
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: Lembrar credenciais (chaveiro do SO)
-  remoteReconcileReady: O destino coincide con esta instancia e a consola está conectada.
-  remoteRestartService: Reiniciar servizo
-  remoteSavedCredentialsHint: Usando credenciais gardadas — deixa en branco para manter ou escribe para substituír.
-  remoteService: Servizo systemd
-  remoteServiceActive: En execución
-  remoteServerInstalled: Ficheiros do servidor instalados
-  remoteServiceName: Nome do servizo
-  remoteServiceNameHint: Nome da unidade systemd --user, ex. mc-server
-  remoteSelectedFiles: '{count} ficheiros do servidor seleccionados'
-  remoteSelectFiles: Seleccionar ficheiros
-  remoteStartCommand: Orde de inicio
-  remoteStartCommandHint: ex. java -jar server.jar nogui
-  remoteStartService: Start
-  remoteStatus: Estado
-  remoteSystemdRequired: Os servizos de usuario systemd non están dispoñibles no servidor remoto.
-  remoteTargetName: Nome do destino
-  remoteStopService: Stop
-  remoteStopWatchLog: Deter seguimento
-  remoteTestConnection: Probar conexión
-  remoteTestConnectionSuccess: Conexión correcta.
-  remoteUninstallConfirmMessage: Isto desactiva e elimina a unidade systemd no servidor remoto. Os ficheiros non se tocan.
-  remoteUninstallService: Desinstalar servizo
-  remoteRunInstall: Instalar ou reparar
-  remoteWatchLog: Ver rexistro en directo
-  remoteWorldAlways: Substituír en cada sincronización
-  remoteWorldDeployment: Despregamento do mundo da instancia
-  remoteWorldDeploymentHint: A sincronización rutineira nunca envía mundos agás autorización expresa.
-  remoteWorldFirstInstall: Inicializar só se o destino non ten mundo
-  remoteWorldNever: Nunca subir un mundo
-  remoteWorldPresent: Mundo do destino
-  remoteWorld: World
-  remoteWorldWillDeploy: O mundo seleccionado subirase durante esta sincronización.
   serverName: Nome do servidor
-  serviceInstall: Instalar servizo
-  serviceManagedLaunch: Inicio xestionado polo servizo
-  serviceManager: Xestor de servizos
-  serviceName: Nome do servizo
-  serviceNameHint: Nome do servizo do sistema
-  serviceNotInstalled: Servizo non instalado
-  serviceStartCommand: Orde de inicio do servizo
-  serviceSystemd: systemd --user
-  serviceWindows: Servizo de Windows
-  serviceWindowsCommandHint: Orde do servizo de Windows
   serversListTitle: Servidores
-  target: Destino
-  targetLocal: localhost
-  targetLocalHint: Executar localmente neste ordenador
-  targetRemote: Servidor remoto (SSH)
-  targetRemoteHint: Xestionar un servidor Linux remoto a través de SSH
   unbindUpstream: Desvincular
   unknown: Onbekende Server
   unknownDescription: Onbekende Server. Vernieuw aub
@@ -1421,23 +1039,12 @@ server:
   upstreamUpdateAvailable: O servidor agora executa Minecraft {version}. Fai clic para aplicar.
   upstreamUpdateHint: Aplica a versión suxerida de Minecraft a esta instancia.
   useAsUpstreamHint: A instancia seguirá a versión de Minecraft indicada polo servidor.
-  version: Server Vereist Versie
-  versionHint: De Minecraft Versie Om Te Pingen
-  worldPreserve: Conservar mundo de destino
 serverStatus:
   nohost: §4Kan host niet vinden!
   ping: Pingen...
   refuse: §4Server weigerde!
   timeout: §4Verbind server time-out!
-agent:
-  accessRequiredHint: Subscríbete a Zenith Launcher para usar o axente integrado ou configura o teu propio provedor de IA nos axustes.
-  subscribeXmcl: Subscribirse a XMCL
-  notConfiguredHint: Stel een API-sleutel, model en OpenAI-compatibel endpoint in via Instellingen → Algemeen → AI-agent. Gebruik bijvoorbeeld OpenAI of een Claude-compatibele gateway.
 setting:
-  aiAgentApiKeyDescription: Configureer een OpenAI-compatibele provider, zoals OpenAI of een gateway voor Claude. De sleutel wordt lokaal op dit apparaat opgeslagen.
-  aiAgentApiKeyPlaceholder: API-sleutel van OpenAI- of Claude-provider
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 of claude-sonnet-4-5
   themeStore:
     name: Almacén de temas
     description: Gardar e xestionar temas globais
@@ -1457,7 +1064,6 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: Asinatura de código gratuíta en Windows proporcionada por SignPath.io, certificado por SignPath Foundation
   aboutSponsors: 😇 Patrocinadores 😇
-  advancedJavaOptions: Geavanceerde Java Opties
   advancedSettings: Geavanceerde Instellingen
   advancedSettingsHint: Gevarenzone - reset of beheer launcherdata
   apiSets:
@@ -1512,8 +1118,6 @@ setting:
   darkThemeDescription: Kies tussen donker of licht thema
   developerMode: Ontwikkelaarsmodus
   developerModeDescription: Ontwikkelaarsmodus is voor het testen van je eigen mods
-  disableTelemetry: Telemetrie Uitschakelen
-  disableTelemetryDescription: XMCL verzamelt de game start- en inloggebeurtenissen.
   enableDedicatedGPUOptimization: Wijs Toegewijde GPU Toe
   enableDedicatedGPUOptimizationDescription: Deze optie wijst toegewijde GPU toe aan Minecraft-proces.
   enableDiscord: Schakel Discord Presence in
@@ -1523,8 +1127,6 @@ setting:
   exportSettingsHint: Sla je huidige instellingen op in een bestand
   general: Algemeen
   githubRelease: Github Release
-  globalJava: Java preferido
-  globalJavaHint: No modo automático próbase primeiro este Java e só se recorre á detección automática cando non é compatible coa versión do xogo.
   globalSetting: Globale Instantie Instelling
   globalSettingHint: Instantie gebruikt deze instellingen standaard.
   importSettings: Importeer Instellingen
@@ -1551,7 +1153,6 @@ setting:
   maxSockets: Per Host
   maxSocketsDescription: Beperk het maximale aantal sockets toegestaan per host of voor alle hosts in totaal. 0 betekent geen limiet.
   maxSocketsTitle: Max HTTP sockets
-  memoryAssignment: Geheugentoewijzing
   migrateFromOther: Importeren van andere launcher
   minecraftOptions: Minecraft Opties
   name: Globale Instelling | Globale Instellingen
@@ -1566,11 +1167,6 @@ setting:
     repulse: Afstoten
   particleModeDescription: Selecteer het deeltjes klikgedrag
   quickLaunchSettings: Snelstart
-  replaceNative: Vervang Native Bibliotheken
-  replaceNativeDescription: Vervang native bibliotheken volgens je computer's arch.
-  replaceNatives:
-    all: Alles
-    legacy: Alleen Legacy Versie
   resetAllSettings: Reset Alle Instellingen
   resetAllSettingsConfirmMessage: Dit verwijdert permanent alle instellingen, accounts, instanties, groepen en gecachete gegevens. Deze actie kan niet ongedaan worden gemaakt. Weet je het zeker?
   resetAllSettingsConfirmTitle: Alle Instellingen Resetten?
@@ -1765,17 +1361,6 @@ theme:
   selectVideo: Selecteer Video
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: Host Kandidaat
-  prflx: Peer Reflexive Kandidaat
-  relay: Relay Kandidaat
-  srflx: Server Reflexive Kandidaat
-turnRegion:
-  fr: Frankrijk
-  guangzhou: Guangzhou, China
-  hk: Hong Kong
-  liaoning: Liaoning, China
-  po: Polen
 tutorial:
   feedbackDescription: Als je problemen tegenkomt, klik op deze knop om feedback te sturen!
   hideNewsHeaderDescription: Je kunt de Nieuws showcase aan de linkerkant zien. Klikken op deze knop kan deze showcase verbergen.
@@ -1784,10 +1369,6 @@ tutorial:
     appearanceThemeTitle: Aparencia da instancia
     iconDescription: Fai clic para cambiar a icona.
     iconTitle: Icona da instancia
-    javaDescription: Selecciona ou cambia a versión de Java.
-    javaImportDescription: Importa unha versión de Java dende o almacenamento local.
-    javaImportTitle: Importar Java
-    javaTitle: Lista de Java
     modpackExportDescription: Compila a túa instancia nun modpack listo para compartir.
     modpackExportTitle: Exportar modpack
     modpackFilesDescription: Elixe os ficheiros de configuración, mods e recursos para cliente e servidor.
@@ -1841,15 +1422,6 @@ tutorial:
     profileDescription: Cambia entre as túas contas e xestiona as credenciais de acceso.
     skinTitle: Personalizador de aspecto e capa
     skinDescription: Visualiza o teu personaxe en 3D, cambia de aspecto e equipa capas.
-  multiplayer:
-    railTitle: Rede e Navegación
-    railDescription: Comproba o tipo de NAT, estado da rede e cambia entre conexións e axustes.
-    groupTitle: Unirse ou Crear Sala
-    groupDescription: Introduce un código para unirte ou déixao baleiro para crear a túa propia sala.
-    joinDescription: Fai clic para unirte a unha sala existente ou crear unha nova.
-    contentTitle: Membros Conectados e Contido
-    contentDescription: Xestiona membros, comproba a latencia e comparte xogos en execución.
-    manualDescription: Conexión directa P2P manual con amigos mediante intercambio de SDP.
   resourcepack:
     searchTitle: Buscar paquetes de recursos
     searchDescription: Busca paquetes de recursos en Modrinth, CurseForge ou ficheiros locais.
@@ -1894,10 +1466,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Ficheiros sen resolver
   via: mediante {source}
-upstream:
-  downgrade: Downgraden
-  onlyShowCurrentVersion: Toon Alleen Huidige Minecraft Versie
-  update: Update
 user:
   accessToken: Toegangstoken
   authMode: Auth Service
@@ -2024,51 +1592,9 @@ reinstall:
   name: Reinstalar {version}
 blueprint:
   name: Plano | Planos
-  count: '{count} planos'
-  searchLocal: Buscar planos...
-  searchOnline: Buscar en liña...
-  market: Mercado
-  provider: Fonte
-  import: Importar
-  openFolder: Abrir cartafol
-  refresh: Actualizar
   empty: Non se atoparon planos. Importa un ficheiro .litematic / .schem / .nbt ou explora o mercado.
-  dropHint: Solta aquí os ficheiros de plano (.litematic / .schem / .nbt) para importalos.
   selectHint: Selecciona un plano para previsualizalo.
-  blocks: '{count} bloques'
-  materials: Materiais
-  findMod: Atopar o mod para este espazo de nomes
-  compatible: Compatible
-  incompatible: Mods que faltan
-  missingNamespaces: 'Mods que faltan para: {namespaces}'
   install: Instalar
-  goTo: Sitio web
-  byAuthor: por {author}
-  noDescription: Non hai descrición.
-  mixedSources: Resultados mesturados de todas as fontes. Algúns só permiten explorar — abre o seu sitio web para descargar.
-  preview:
-    loading: Cargando a previsualización...
-    empty: Este plano non ten bloques para mostrar.
-    hint: '{count} bloques · {x}×{y}×{z}'
-    controls: 'WASD: mover · Espazo/Maiús: arriba/abaixo · Arrastrar: mirar · Roda: zoom'
-  convert:
-    title: Converter formato
-    hint: Converte este plano a outro formato. Crearase un ficheiro novo.
-    target: Formato de destino
-    action: Converter
-  replace:
-    title: Substituír bloques
-    simple: Substitución simple
-    precise: Substitución precisa
-    simpleHint: Substituír todos os bloques dun tipo.
-    preciseHint: Substituír só os bloques coas propiedades indicadas.
-    from: Desde
-    to: Ata
-    addRule: Engadir regra
-    newFile: Ficheiro novo
-    action: Substituír
-  formats:
-    structure: Estrutura de Vanilla
 gamepad:
   connected: Controller Connected
   guideTitle: Controller Controls

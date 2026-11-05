@@ -134,7 +134,7 @@ export class LauncherApp extends EventEmitter {
 
   get userAgent() {
     const version = IS_DEV ? '0.0.0' : this.host.getVersion()
-    return `gitzetazero/zenith-launcher/${version} (zenith-launcher)`
+    return `Zenith-Launcher/${version} (github.com/gitzetazero/zenith)` // zenith
   }
 
   #disposed = false

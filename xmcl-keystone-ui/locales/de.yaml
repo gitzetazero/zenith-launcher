@@ -1,38 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: |-
-    Es werden mehrere Startprofile erkannt.
-    Wählen Sie eine zum Importieren aus.
-  createTitle: Eine Instanz erstellen
-  serverTitle: Geben Sie Ihre Serveradresse ein
-AppShareInstanceDialog:
-  editScopeDescription: Wähle die Dateien aus, die andere Spieler abrufen können, nachdem sie dieses laufende Spiel im LAN gefunden haben.
-  editScopeTitle: Freigabebereich bearbeiten
-  instanceToShare: Laufendes Spiel
-  alterDownloadDescription: |-
-    Wenn Sie die aktuelle Instanz nicht durcheinander bringen möchten.
-    Sie können auch eine neue Instanz aus der Konfiguration Ihres Peers erstellen.
-    Klicken Sie auf die Schaltfläche unten, um eine Instanz zu erstellen.
-  baseInfo: Grundlegende Einrichtung
-  description: Nachdem Sie Ihr Profil freigegeben haben, können andere Benutzer die diese Dateien über Ihren PC installieren.
-  downloadDescription: |-
-    Bitte überprüfen Sie die Dateien, die Ihnen Ihr Kollege zur Verfügung gestellt hat.
-    Wählen Sie die Datei aus, die Sie herunterladen möchten.
-    Es wird in der aktuellen Instanz {name} platziert.
-  downloadNotifyTitle: Installieren Sie eine Instanz von {user}
-  downloadTitle: Dateien von anderen Peers installieren
-  filesToDownload: Wählen Sie die zu installierenden Dateien aus
-  filesToShare: Wählen Sie die Dateien aus, die Sie freigeben möchten
-  share: Teilen Sie
-  shareTitle: Teilen von Spieldateien mit anderen Spielern
 BaseSettingGeneral:
   title: Allgemein
-HomeJavaIssueDialog:
-  incompatibleJava: Inkompatibles Java
-  incompatibleJavaHint: Ihr aktuelles Java ist möglicherweise nicht mit dem von Ihnen gewählten Minecraft kompatibel!
-  missingJava: Java fehlt
-  missingJavaHint: 'Der Launcher kann Java auf Ihrem Computer nicht finden. Das können Sie:'
-  optionSwitch:
-    name: Wechseln zu {version}
 HomeLaunchMultiInstanceDialog:
   confirm: Laufen lassen
   description: Sie haben mehrere Instanzen von Minecraft laufen. Sind Sie sicher?
@@ -44,32 +11,7 @@ ago:
   hour: '{duration} Stunde | {duration} Stunden'
   minute: '{duration} Minute | {duration} Minuten'
   second: '{duration} Sekunde | {duration} Sekunden'
-askAICrash:
-  copyPrompt: Kopieren Sie die Eingabeaufforderung, KI zu fragen
-  description: |-
-    Lassen Sie sich von AI helfen, den Spielabsturz zu verstehen!
-    Befolgen Sie die folgenden Anweisungen, um KI nach diesem Spielabsturz zu fragen!
-  selectPlatform: Öffnen Sie eine KI -Plattform und fügen Sie die Eingabeaufforderung ein, die Sie gerade kopiert haben.
 authProfileAddedNotification: Authentifizierungsprofil {name} hinzugefügt.
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
 backup:
   title: 'Sicherung & Wiederherstellung'
   description: Sichere und stelle Einstellungen, Sammlungen, Designs und Spielinstanzen wieder her
@@ -304,13 +246,9 @@ diagnosis:
   corruptedVersionJar:
     message: Klicken Sie, um diese Version zu installieren
     name: Die jar-Version für Minecraft %{version} ist poshkodzhen.
-  incompatibleJava:
-    name: Die Java-Version {javaVersion} stimmt nicht mit {version} überein!
   instanceFiles:
     description: Die Instanzinstallation umfasst {counts} Dateien.
     title: Unvollständige Instanzinstallation
-  invalidJava:
-    name: Der Java-Standort ist falsch.
   missingJava:
     message: Klicken Sie, um dieses Problem zu lösen
     name: Ich konnte kein Java finden, um Minecraft auszuführen!
@@ -339,11 +277,6 @@ duration:
   hour: '{duration} Stunde  | {duration} Stunden'
   minute: '{duration} Minute | {duration} Minuten'
   second: '{duration} zweite | {duration} zweiten'
-env:
-  select:
-    all: Wählen Sie Alle
-    fit: Wählen Sie „Anpassen“.
-    none: Nichts ausgewählt
 errors:
   BadForgeInstallerJarError: Die jar-Datei des Forge-Installationsprogramms kann nicht analysiert werden. Vielleicht hat Forge ein neues Installer-Dateiformat Installer-Dateiformat? Bitte kontaktieren Sie die Entwickler, wenn das Problem weiterhin besteht.
   BadInstanceType: 'Ungültige Instanz: {type}'
@@ -365,8 +298,6 @@ errors:
   HeadersTimeoutError: HTTP-Header-Zeitüberschreitung ist aufgetreten
   NotFoundError: 404 Nicht gefunden
   SocketError: Server-Socket-Fehler
-eula:
-  body: Indem Sie das Kontrollkästchen aktivieren, erklären Sie sich mit der {eula} von Minecraft einverstanden.
 exception:
   http: HTTP-Anfrage von {url} fehlgeschlagen. Statuscode {statusCode}. {code}. Bitte versuchen Sie es erneut oder überprüfen Sie Ihre Internetverbindung. Wenn dieser Fehler weiterhin besteht, senden Sie bitte einen einen Bericht an das Entwicklungsteam.
 extensions:
@@ -442,21 +373,6 @@ gameType:
   survival: Überlebensmodus
 help: Referenz.
 home: Startseite
-importModpack:
-  fromFileSubtitle: Datei im Format .zip oder .mrpack auswählen
-  fromUrl: Über Link / URL...
-  fromUrlSubtitle: Modpack über eine URL installieren
-  fromUrlDescription: 'Modpack-URL eingeben oder einfügen:'
-  invalidUrl: Bitte eine gültige URL eingeben (http:// oder https://)
-  selectVersion: Modpack-Version auswählen
-  selectVersionDescription: 'Zu installierende Version von {name} auswählen:'
-  pmcProtected: Planet Minecraft ist durch Cloudflare geschützt. Bitte den direkten Download-Link oder einen Mirror-Link von der Seite kopieren.
-  netdiskTitle: Download vom Cloud-Speicher
-  netdiskDescription: Diese Modpack-Version liegt auf einem externen Cloud-Speicher. Unten klicken, um die Download-Seite im Browser zu öffnen, und anschließend die heruntergeladene .zip- oder .mrpack-Datei in Zenith Launcher ziehen.
-  openNetdisk: Cloud-Speicher öffnen
-  netdiskOpened: Der Cloud-Speicher-Link wurde im Browser geöffnet und in die Zwischenablage kopiert.
-  noReleasesFound: In diesem Repository wurden keine Modpack-Veröffentlichungen im Format .mrpack oder .zip gefunden.
-  name: Modpack importieren
 installAssets:
   asset: Installieren Sie {count} Assets
   assetIndex: Prüfen Sie die Asset-Indexdatei
@@ -515,14 +431,11 @@ instance:
   iconUrl: Url-Symbol
   installModpack: Aktualisieren Sie die Instanz von Modpack
   lastPlayed: Das letzte Mal spielten sie
-  launchArguments: Vorschau der Startargumente
   launchServer: Starten Sie den Localhost-Server
   linkFileDesc: |-
     Dadurch wird die lokale {file} der Instanz mit der globalen {file} überschrieben.
     Sind Sie sicher, dass Sie es verlinken?
   linkFileTitle: Sind Sie sicher, dass Sie {file} verlinken?
-  mcOptions: Minecraft Einstellungen
-  mcOptionsHint: Zusätzliche Anweisungen zum Starten von Minecraft
   name: Profilname
   nameHint: Der Name, der zur Identifizierung des Spiels verwendet wird
   nameNoCyrillic: Der Name darf keine kyrillischen Zeichen enthalten
@@ -530,10 +443,6 @@ instance:
   openCrashReportFolder: Öffnen Sie den Ordner mit den Absturzberichten
   openLogFolder: Öffnen Sie den Ordner logs
   playtime: Spielzeit
-  preExecCommand: Vor-Start-Befehl
-  preExecCommandHint: Befehl zum Ausführen vor dem Start von Minecraft
-  prependCommand: Befehl voranstellen
-  prependCommandHint: Dadurch wird dieser Befehl allen Startbefehlen vorangestellt
   requireName: Der Name ist erforderlich
   resolution: Fensterauflösung
   resolutionPreset: Auflösung Voreinstellung
@@ -544,10 +453,6 @@ instance:
   useSharedOptionsDesc: Dadurch wird die Datei „options.txt“ mit einer instanzübergreifenden Datei verknüpft
   useSharedServersList: Verwenden Sie die Liste der gemeinsam genutzten Server
   useSharedServersListDesc: Dadurch wird die Datei „servers.dat“ mit einer instanzübergreifenden Datei verknüpft
-  vmOptions: JVM-Parameter
-  vmOptionsHint: Zusätzliche Argumente, die an die JVM übergeben werden
-  vmVar: Umgebungsvariablen
-  vmVarHint: Klicken Sie auf die Schaltfläche, um Umgebungsvariablen hinzuzufügen
   width: Breite
   envVarKey: Schlüssel
   envVarValue: Wert
@@ -591,9 +496,6 @@ instanceSetting:
   showLogHint: Hier wird ein Fenster angezeigt, in dem die Minecraft-Logs nach dem Start des Spiels angezeigt werden
   syncGameLanguage: Spielsprache synchronisieren
   syncGameLanguageDescription: Synchronisiert die Minecraft-Sprache beim Start automatisch mit der Sprache des Launchers
-instanceTemplate:
-  ftb: Dieses FTB-Modpack
-  preview: Modpack-Vorschau
 instanceUpdate:
   basic: Aktualisieren Sie Ihre Einstellungen
   files: Dateien aktualisieren
@@ -625,42 +527,15 @@ instances:
   fix: Repariere es
   folder: Ordner
   folderSetting: Ordnereinstellungen
-  importFolderDescription: Minecraft in den Launcher importieren
-  loadingFiles: Laden von Modpack-Dateien
-  edition: Edition
-  editionJava: Java Edition
   editionBedrock: Bedrock Edition
   editionBedrockHint: Die Bedrock Edition wird über die Microsoft Store-App gestartet. Du musst eine Bedrock-Lizenz besitzen. Mods, Ressourcenpakete und andere Java-exklusive Funktionen sind nicht verfügbar.
   editionBedrockWindowsOnly: Die Bedrock Edition wird nur im Windows-Build unterstützt.
-  linkSharedFolders: Ordner zwischen Instanzen teilen
-  linkSharedFoldersHint: Erstelle diese Ordner als Verknüpfungen zu den gemeinsamen Ordnern des Launchers, damit diese Instanz ihren Inhalt mit allen anderen verknüpften Instanzen teilt. Dies ist keine Kopie — Änderungen in einer Instanz erscheinen in allen. Nicht ausgewählte Ordner bleiben für diese Instanz privat.
-  linkFailed: Verknüpfung des Ordners {folder} mit dem gemeinsamen Ordner fehlgeschlagen
   addPrismDescription: Bestehende PrismLauncher-Instanz importieren.
 items:
   count: '{count} Artikel'
   total: '{total} insgesamt'
 java:
-  allocatedLong: Java im System standardmäßig verwenden
-  allocatedShort: Automatische Auswahl
-  importFromFile: Java aus einer Datei importieren
-  invalid: Falscher Speicherort von Java
-  location: Java-Standort
-  maxMemory: Max. Speicherkapazität
-  memory: Java-Speicher
   memoryAuto: Auto
-  memoryManual: Manuell
-  memoryUnassigned: Den Termin absagen
-  minMemory: Min. Speicherkapazität
-  name: Java
-  noMemory: Speichernutzung nicht einschränken
-  refresh: Lokales Java aktualisieren
-  systemMemory: 'Freier Systemspeicher: {free} / {total}'
-  allocation: Zugewiesen
-  autoHint: Min wächst mit der Anzahl installierter Mods; Max nutzt den verfügbaren Systemspeicher.
-  change: Ändern
-  locationHint: Kein Java ausgewählt — Systemstandard wird verwendet
-  openFolder: Java-Ordner öffnen
-  presets: Voreinstellungen
 labyMod:
   disable: LabyMod ausschalten
   empty: LabyMod unterstützt nicht das aktuelle Minecraft
@@ -735,8 +610,6 @@ localVersion:
   auto: Automatische Berechnung
   empty: Version nicht installiert
   hint: Eine bestimmte lokale Version direkt ausführen
-  reinstallDescription: Wenn Sie feststellen, dass bei der Installation dieser Version Probleme auftreten, können Sie versuchen, sie neu zu installieren.
-  reinstallTitle: Neu installieren {version}
   title: Lokale Version | Lokale Versionen
 logLevel:
   error: Fehler.
@@ -803,7 +676,6 @@ minecraftVersion:
   showAlpha: Schnappschuss snapshot
   snapshot: Snapshot
 mod:
-  collapseAllGroups: Alle Gruppen einklappen
   acceptVersion: Akzeptieren {version}
   applyGroupRules: Anwenden von gespeicherten Gruppierungsregeln anwenden
   compatible: Kompatibler Mod.
@@ -811,7 +683,6 @@ mod:
   currentVersion: Aktuell {current}
   denseView: Dichte Sicht
   disableAll: Alle deaktivieren
-  dropHint: Ziehen Sie die .jar/.litemod-Mod hierher und importieren Sie sie.
   duplicatedDetected: '{count} duplizierte Mods'
   duplicatedDetectedDescription: |-
     Mods mit derselben Mod-ID, aber unterschiedlichen Dateien gefunden.
@@ -821,9 +692,6 @@ mod:
   enabled: 'Inklusive Mods: {count}'
   filter: Mod-Filter
   group: Gruppe
-  groupInstalled: Gruppensatz Mods
-  hideInstalled: Installierte Mods ausblenden
-  installedFilterOff: Alle Mods anzeigen
   groupName: Gruppenname
   groupNameRequired: Gruppenname ist erforderlich
   hasUpdate: Die Mod hat eine neue Version!
@@ -833,29 +701,18 @@ mod:
     Möglicherweise fehlen einige Mod-Abhängigkeiten.
     Oder einige Abhängigkeitsversionen stimmen nicht überein.
   maybeCompatible: Möglicherweise kompatibel.
-  modloaderSelectHint: |-
-    Der Mod unterstützt folgende Mod-Loader.
-    Bitte wählen Sie eines zur Installation aus.
-  modloaderSelectNotSupported: '{modloader} für Minecraft {minecraft} nicht gefunden'
   mods: '{count} Mods'
   name: Mods | Mods
   newFolder: Neuer Ordner
   noGroupsFound: Keine Gruppen gefunden
   noGroupsYet: Noch keine Gruppen. Erstellen Sie eine!
-  noModLoaderHint: Vergessen Sie nicht, den Modloader zu aktivieren, um Mods zu verwenden!
   openLink: Link zur Mod öffnen {url}
-  search: Suche nach Änderungen
   searchGroups: Gruppen suchen...
   searchOnMcWiki: Schlagen Sie {name} in der MC-Enzyklopädie nach.
   selectOrCreateGroup: Gruppe auswählen oder erstellen
-  showDirectory: Änderungskatalog anzeigen
   showFile: Den Weg zur Mode weisen {file}
-  showInModrinth: anzeigen {name} auf Modrinth
-  switchDefaultSource: Quelle der Standardänderung
   syncGroupRules: Gruppierungsregeln speichern
-  toUpdate: '{count} zu aktualisieren'
   ungroup: Ungruppierung
-  description: Beschreibung
 modFilter:
   clear: Klaren Filter
   dependenciesInstallOnly: Zeigen Sie nur verpasste Abhängigkeiten Mods
@@ -902,25 +759,10 @@ modified:
   save: Speichern Sie
   unsaved: Ihre Änderung wurde nicht gespeichert!
 modpack:
-  author: Name des Autors
-  authorHint: Dies kann verwendet werden, um das exportierte Modpack zu signieren. (Curseforge)
-  description: Beschreibung.
-  descriptionHint: Eine allgemeine Beschreibung für Ihr Modpack. Kann verwendet werden um als curseforge modpack.
   dropHint: Ziehen Sie das Zip-Archiv des Modpacks zum Importieren hierher
-  emitCurseforge: Freigabe des Curseforge Mod Packs
-  emitModrinth: Modrinth Modpack freigeben
-  emitModrinthStrict: Strenges Modrinth-Format
-  emitModrinthStrictDescription: Nur Links von den 4 im modrinth-Dokument aufgeführten Domains sind erlaubt
   export: Als Modpack exportieren
-  exportDirectory: Exportverzeichnis
-  exportDirectoryDescription: Der Modpack wird standardmäßig in den Ordner Downloads exportiert
-  includeAssets: Aktiva einbeziehen
-  includes: Einzuschließende Dateien
   modpackVersion: Modpack-Version
   name: Modpack | Modpacks
-  overrides: Überschreibt
-  url: Link
-  urlHint: Link zur Homepage deines Modpacks
 modpackImportConfirm:
   description: |-
     Erkennen Sie, dass Sie eine Datei in den Launcher fallen lassen.
@@ -1088,132 +930,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: Aktuelle Version
-multiplayer:
-  joinDiscord: Discord beitreten
-  openConsumerPortal: Kundenportal öffnen
-  refundHint: Du benötigst eine Rückerstattung? Im Waffo-Kundenportal kannst du deine Bestellungen und Abonnements verwalten.
-  togetherSupportHint: Wenn der Mehrspielermodus nicht funktioniert, tritt unserem Discord bei und kontaktiere das Entwicklungsteam. Wir helfen dir, das Problem zu lösen.
-  autoShareAmbiguous: Mehrere Spiele werden ausgeführt. Wähle die Instanz aus, die die LAN-Welt hostet, damit Zenith Launcher sie freigeben kann.
-  editSharingScope: Freigabebereich bearbeiten
-  gameAvailable: LAN-Spiel verfügbar
-  joinGame: Spiel beitreten
-  noRunningInstanceToShare: Starte ein Spiel, bevor du dessen Freigabebereich bearbeitest
-  updateSharedInstanceConfirm: Aktualisieren und starten
-  updateSharedInstanceDescription: Die freigegebenen Mods unterscheiden sich von {instance}. Soll diese Instanz vor dem Start an den Host angeglichen werden? Vorhandene geänderte Dateien werden gesichert.
-  updateSharedInstanceTitle: Freigegebene Instanz aktualisieren?
-  addFunds: Guthaben hinzufügen
-  availableBalance: Verfügbares Guthaben
-  balanceHint: Für XMCL Together-Dienste verfügbar
-  billing: Abrechnung
-  billingDescription: Verwalte Relay-Zugriff, deinen Together Home-Tarif und Zahlungen.
-  billingError: Die Together-Abrechnung konnte nicht geladen werden. Versuche es gleich noch einmal.
-  buyTogether: Together kaufen
-  cancelTogether: Tarif kündigen
-  checkout: Waffo-Kasse öffnen
-  connectionTogetherWarning: Ein Raummitglied kann seit einiger Zeit keine Verbindung zu dir herstellen. Versuche XMCL Together, um die Verbindung für alle im Raum zu verbessern. Nur der Raumleiter benötigt Together.
-  masterPurchaseHint: Nur der Raumleiter benötigt Together Home, um die Verbindung für alle im Raum zu verbessern.
-  natTogetherWarning: Dein Router hat möglicherweise Schwierigkeiten, eine Verbindung zum Raumleiter herzustellen. Falls Verbindungen fehlschlagen, versuche XMCL Together, um die Verbindung zwischen dir und deinen Freunden zu verbessern. Nur der Raumleiter muss Together für den Raum kaufen.
-  togetherName: Minecraft Together
-  trialDescription: Ein 7-tägiger Testzeitraum mit 1 GB Relay-Datenverkehr.
-  trialTitle: Verbindungstest
-  tryTogether: Together testen
-  month: Monat
-  orderStatus: 'Waffo-Bestellung: {status}'
-  planDescription: 20 GB verwalteter Relay-Datenverkehr pro Monat sowie KI-Fehlerbehebung für dein Modpack.
-  waffoHint: Zahlungen werden sicher über Waffo Pancake abgewickelt. XMCL erhält niemals deine Kartennummer.
-  subscription:
-    active: Aktiv
-    cancelled: Gekündigt
-    payment_due: Zahlung fällig
-  trial:
-    active: Testzeitraum aktiv
-    available: Kostenloser Testzeitraum verfügbar
-    expired: Testzeitraum genutzt
-    unavailable: Testzeitraum nicht verfügbar
-  loginRequiredDescription: P2P-Multiplayer verwendet die Zenith Launcher-Onlinedienste. Melden Sie sich bei einem Zenith Launcher-Konto an, um fortzufahren.
-  loginRequiredTitle: Für P2P-Multiplayer anmelden
-  complete: Bereit
-  confirm: Bestätigen Sie
-  connections: Verbindungen
-  copied: Kopiert!
-  copy: Kopieren
-  copyGroupToFriendHint: Erlauben Sie Ihren Freunden, der Gruppe mit dieser ID beizutreten
-  copyLocalHint: |
-    "Скопіюйте текст локального SDP та надішліть його своєму товаришу, щоб ваш
-     він ввів цей текст у з'єднанні приєднання <span>Токен може бути використаний
-     тільки для <span style="color: red; font-weight: bold;">віндого</span>! Не можна
-     відправляти той самий токен кільком вузлам!</span> <br> <span class="hint-text" style="font-style: italic;">Якщо вам потрібно підключити декілька
-     товаришів, вам потрібно створити<span style="font-weight: bold; color: rgba(245, 158, 11)">кілька</span> з'єднань.</span>"
-  createLocalToken: Ein lokales Token erstellen
-  currentIpTitle: Öffentliche IP-Adresse erkannt
-  currentNatTitle: 'Aktuelles Netzwerk (NAT):'
-  difficultyLevelHint: Grad der Schwierigkeit, mit anderen in Kontakt zu treten
-  disconnect: Ausschalten
-  disconnectDescription: Präzise Trennung vom Benutzer {user}({id})?
-  disconnected: Aus
-  enterRemoteToken: Eingabe des entfernten Tokens
-  enterRemoteTokenHint: |-
-    Sobald Ihr Freund Ihren Token eingegeben hat, müssen Sie seinen Token in das Textfeld
-    Feld unten eingeben. Klicken Sie auf die Schaltfläche Bestätigen, um die Verbindung herzustellen.
-  exposedPortDescription: Der Port, den Sie anderen Peers zugänglich gemacht haben
-  exposedPorts: Weitergeleitete Ports
-  gatheringIce: |
-    "Warten Sie, bis der ICE-Server genügend Informationen über Sie gesammelt hat
-      Netzwerk Wenn Sie ungeduldig sind und über genügend Informationen verfügen, können Sie vorankommen
-      Stellen Sie der anderen Partei das aktuelle SDP zur Verfügung und klicken Sie auf Weiter, senden Sie <span
-     class="v-chip v-chip--label v-size--small" style="text-font:bold">
-     Wenn Sie Ihrem Freund ein lokales Token</span> senden möchten, können Sie dort Ihr Token eingeben
-     Regionen <span class="v-chip v-chip--label v-size--small" style="text-font:
-     fett"> Verbindung herstellen</span>.<br> Der ICE-Server benötigt möglicherweise
-      etwas Zeit, um Daten zu sammeln, um ein <span class="v-chip v-chip--label." zu erstellen.
-     v-size--small" style="text-font:bold">lokales Token</span>.<br> Für Sie
-      Sie müssen nicht warten, bis der ICE-Status abgeschlossen ist. Wenn das Token unten
-      bleibt unverändert, Sie können es kopieren und an Ihren Freund senden.
-  groupId: Kennung der Gruppe
-  illegalTokenDescription: Unzulässiger Token, vergewissern Sie sich, dass der Token von Ihrem Partner korrekt ist
-  initiateConnection: Start der Verbindung
-  joinConnection: |-
-    Wenn Ihr Freund bereits eine Entnahme begonnen hat, müssen Sie sich
-      um ihn zu verbinden.
-  joinManual: Beitreten
-  joinOrCreateGroup: Gruppe beitreten/erstellen
-  joinOrCreateGroupHint: Erhalten Sie eine Gruppen-ID von Ihren Freunden oder erstellen Sie eine Gruppe
-  kernel: P2P-Kernel
-  kernelDescription: |-
-    Verwenden Sie entweder natives WebRTC oder Node-Datachannel.
-    Ändern Sie dies nur, wenn Ihre P2P-Verbindung irgendwann das Startfenster zum Absturz bringt.
-  leaveGroup: Verlassen Sie die Gruppe
-  localToken: Lokaler Token
-  manualConnect: Manuelle Verbindung
-  name: Multiplayer über ein lokales Netzwerk
-  networkInfo: Informationen über das Netzwerk
-  next: Nächste.
-  otherExposedPortDescription: Das Portvorwort von {user}
-  placeholder: Schließe dich anderen Leuten an, um Minecraft in deinem lokalen Netzwerk zu spielen Netzwerk!
-  previous: назад
-  receiveHint: |-
-    Nachdem die andere Partei Ihr Token eingegeben hat, wird Ihre Verbindung
-     automatisch hergestellt. Sie können nun das Dialogfeld schließen.
-  receiveRemoteTokenHint: Geben Sie den Token Ihres Freundes ein.
-  remoteToken: Entferntes Token
-  routerInfo: Informationen über den Router
-  sendTokenToRemote: Senden eines Tokens an eine entfernte
-  share: die Instanzkonfiguration freigeben
-  sharing: Filesharing...
-  start: Los geht's
-  startNewP2PConnection: Klicken Sie auf Start, um eine neue Peer-to-Peer-Verbindung zu erstellen
-  connectionError: Verbindungsfehler
-  connectionFailedHint: Verbindung kann nicht hergestellt werden. Prüfen Sie, ob beide Seiten kompatible NAT-Typen haben.
 myStuff: Meine Materialien
-natType:
-  blocked: Blockiert
-  fullCone: Voller Kegel
-  openInternet: Offenes Internet
-  restrictNat: NAT-Beschränkungen
-  restrictPortNat: NAT-Port-Beschränkungen
-  symmetricNat: Symmetrisches NAT
-  symmetricUDPFirewall: Symmetrische UDP-Firewall
-  unknown: Unbekannt
 neoForgedVersion:
   disable: Ausschalten NeoForged
   empty: NeoForged unterstützt nicht {version}
@@ -1224,23 +941,6 @@ optifineVersion:
   disable: Ausschalten Optifine
   empty: Optifine unterstützt Minecraft nicht {version}
 optional: Optional
-peerConnectionState:
-  closed: Geschlossen
-  connected: Verbunden
-  connecting: Verbindung
-  disconnected: Aus
-  failed: Erfolglos
-  name: Status der Verbindung
-  new: Neu
-peerGroupState:
-  closed: Nicht in der Gruppe
-  closing: Geschlossen
-  connected: Angeschlossene Gruppe
-  connecting: Verbindung
-peerIceGatheringState:
-  gathering: Aufbau eines Eisservers
-peerSignalingState:
-  have-local-offer: Beschreibung des erwarteten Knotens
 presence:
   instance: Untätigkeit in der Instanz {instance}
   instanceSetting: 'Bearbeiten Sie die Instanzparameter: {instance}'
@@ -1345,141 +1045,25 @@ search:
 server:
   launch: Server starten
   stop: Server stoppen
-  acceptingMinecraftVersion: Eine Version von Minecraft adoptieren
   addServer: Server hinzufügen
   address: Serveradresse
   addressHint: z. B. mc.hypixel.net
   bindUpstream: Als Upstream binden
-  boundUpstream: Server-Upstream gebunden
   boundUpstreamHint: Diese Instanz folgt der Minecraft-Version des gebundenen Servers.
-  creationHint: Geben Sie die Serveradresse und den Server-Ping an
   editServer: Server bearbeiten
   emptyHint: Noch keine Server in der servers.dat dieser Instanz. Füge einen hinzu, um zu beginnen.
   entryCount: '{count} Server | {count} Server'
-  expectedVersions: Unterstützte Versionen
-  export: Server exportieren
-  exportNoFilesHint: Keine Serverdateien gefunden. Sie können den Server einmal auf lokalem Ausführen ausführen, um einige Dateien zu generieren.
-  exportOption: Serverexportoptionen
-  exportSSHAuthenticationFailed: Alle Authentifizierungsmethoden sind fehlgeschlagen. Bitte überprüfen Sie den Benutzernamen/Passwort oder einen privaten Schlüssel.
-  exportSSHOptions: SSH -Optionen
-  exportSSHPrivateKeyPath: Pfad zum privaten SSH-Schlüssel
-  exportSSHRemotePath: Remote -Serverpfad
-  exportToFolder: In Ordner exportieren
-  filterVersion: Filter-Server reagiert auf Minecraft-Version
-  host: Gastgeber
-  hostHint: Server-Host (mit Port)
-  hostRequired: Bitte geben Sie die Server -IP -Adresse ein
-  ipAddress: IP-Adressen
   launchClient: Stattdessen Client starten
   launchPinned: Angeheftet
   launchTargetHint: Diese Instanz startet direkt in den angehefteten Server. Zurück zum Client wechseln?
   maxPlayers: Maximale Spieleranzahl
-  motd: Beschreibung des Servers
   nameHint: Im Mehrspieler-Menü angezeigter Name
-  nogui: Keine Server-GUI
-  onlineMode: Onlinemodus
   pin: Server anheften
   pinAfterSave: Nach dem Speichern als Standard-Startziel anheften
-  ping: Ping
-  pings: Pings
   pinnedHeader: 'Angeheftet: {name}'
-  players: Spieler.
   port: Hafen
-  clearLog: Protokoll löschen
-  log: Serverprotokoll
-  logWaiting: Die Serverausgabe wird hier nach dem Start angezeigt.
-  remoteActionSuccess: Done.
-  remoteAdmin: Remote-Server-Verwaltung
-  remoteAuthMethod: Authentifizierung
-  remoteAuthPassword: Passwort
-  remoteAuthPrivateKey: Privater Schlüssel
-  remoteBuildOfflinePackage: Offline-Paket erstellen
-  remoteConnected: Verbunden
-  remoteConnection: Verbindung
-  remoteDeployment: Bereitstellung
-  remoteDeploy: Bereitstellen
-  remoteDisk: Festplatte
-  remoteConfigFiles: Konfigurationsdateien
-  remoteExtraFiles: Zusätzliche Dateien
-  remoteForgetCredentials: Gespeicherte Zugangsdaten vergessen
-  remoteInstallService: Dienst installieren
-  remoteLoad: Durchschnittslast
-  remoteLog: Remote-Protokoll
-  remoteMemory: Speicher
-  remoteMods: Mods
-  remoteNoWorldSelected: Keine Instanz-Welt ausgewählt
-  remoteJavaRequired: Java ist auf dem entfernten Linux-Host nicht verfügbar.
-  remoteLinuxRequired: Nur Linux-SSH-Ziele werden unterstützt.
-  remoteNotConfiguredHint: Verbindungsdaten oben eingeben und speichern, um Status, Dienststeuerung und Logs zu aktivieren.
-  remotePathNotWritable: Das Remote-Serververzeichnis ist nicht beschreibbar.
-  remotePathWritable: Verzeichnis beschreibbar
-  remotePolicyInitialize: Einmalig initialisieren
-  remotePolicyMirror: Spiegeln
-  remotePolicyOverlay: Überlagern
-  remotePolicyPreserve: Beibehalten
-  remotePreview: Änderungen in der Vorschau
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: Zugangsdaten merken (Betriebssystem-Schlüsselbund)
-  remoteReconcileReady: Das Ziel stimmt mit dieser Instanz überein und die Konsole ist verbunden.
-  remoteRestartService: Neu starten
-  remoteSavedCredentialsHint: Gespeicherte Zugangsdaten aktiv — leer lassen zum Behalten oder tippen zum Ersetzen.
-  remoteService: systemd-Dienst
-  remoteServiceActive: Läuft
-  remoteServerInstalled: Serverdateien installiert
-  remoteServiceName: Dienstname
-  remoteServiceNameHint: systemd --user Einheitenname, z. B. mc-server
-  remoteSelectedFiles: '{count} Serverdateien ausgewählt'
-  remoteSelectFiles: Dateien auswählen
-  remoteStartCommand: Startbefehl
-  remoteStartCommandHint: z. B. java -jar server.jar nogui
-  remoteStartService: Starten
-  remoteStatus: Status
-  remoteSystemdRequired: systemd-Benutzerdienste sind auf dem entfernten Linux-Host nicht verfügbar.
-  remoteTargetName: Zielname
-  remoteStopService: Stoppen
-  remoteStopWatchLog: Beobachten beenden
-  remoteTestConnection: Verbindung testen
-  remoteTestConnectionSuccess: Verbindung erfolgreich.
-  remoteUninstallConfirmMessage: Dies deaktiviert und entfernt die systemd-Einheit auf dem Remote-Host. Serverdateien bleiben unberührt.
-  remoteUninstallService: Dienst deinstallieren
-  remoteRunInstall: Installieren oder Reparieren
-  remoteWatchLog: Live-Log anzeigen
-  remoteWorldAlways: Bei jedem Abgleich ersetzen
-  remoteWorldDeployment: Bereitstellung der Instanz-Welt
-  remoteWorldDeploymentHint: Die Routine-Synchronisierung lädt niemals Weltdaten hoch, es sei denn, diese Richtlinie erlaubt es ausdrücklich.
-  remoteWorldFirstInstall: Nur initialisieren, wenn das Ziel keine Welt hat
-  remoteWorldNever: Niemals eine Welt hochladen
-  remoteWorldPresent: Zielwelt
-  remoteWorld: Welt
-  remoteWorldWillDeploy: Die ausgewählte Instanzwelt wird bei diesem Abgleich hochgeladen.
   serverName: Servername
-  serviceInstall: Dienst installieren
-  serviceManagedLaunch: Betriebssystemdienst für Start- und Stopp-Aktionen verwenden
-  serviceManager: Systemdienst
-  serviceName: Dienstname
-  serviceNameHint: Eindeutige Kennung mit Buchstaben, Zahlen, Punkten oder Bindestrichen
-  serviceNotInstalled: Nicht installiert
-  serviceStartCommand: Startbefehl
-  serviceSystemd: systemd --user
-  serviceWindows: Windows-Dienst
-  serviceWindowsCommandHint: Der Java-Befehl wird bei der Installation aus dieser Instanz generiert.
   serversListTitle: Serverliste
-  target: Server-Ziel
-  targetLocal: localhost
-  targetLocalHint: Den Server auf diesem Computer installieren und ausführen.
-  targetRemote: SSH-Ziel
-  targetRemoteHint: Server über SSH verbinden, installieren, starten und überwachen.
   unbindUpstream: Trennen
   unknown: Unbekannter Server
   unknownDescription: Unbekannter Server. Aktualisieren
@@ -1490,23 +1074,12 @@ server:
   upstreamUpdateAvailable: Server läuft jetzt auf Minecraft {version}. Klicken zum Anwenden.
   upstreamUpdateHint: Wendet die vorgeschlagene Minecraft-Version auf diese Instanz an.
   useAsUpstreamHint: Die Instanz folgt der vom Server gemeldeten Minecraft-Version.
-  version: Der Server benötigt eine Version von
-  versionHint: Die Ping-Version von Minecraft
-  worldPreserve: Zielwelt beibehalten
 serverStatus:
   nohost: §4Host kann nicht gefunden werden!
   ping: Ping...
   refuse: §4Der Server wurde abgelehnt!
   timeout: §4Es ist Zeit, sich mit dem Server zu verbinden!
-agent:
-  accessRequiredHint: Abonniere XMCL, um den integrierten Agenten zu verwenden, oder konfiguriere deinen eigenen KI-Anbieter in den Einstellungen.
-  subscribeXmcl: XMCL abonnieren
-  notConfiguredHint: Legen Sie einen API-Schlüssel, ein Modell und einen OpenAI-kompatiblen Endpunkt unter Einstellungen → Allgemein → KI-Agent fest. Verwenden Sie zum Beispiel OpenAI oder ein Claude-kompatibles Gateway.
 setting:
-  aiAgentApiKeyDescription: Konfigurieren Sie einen OpenAI-kompatiblen Anbieter, z. B. OpenAI oder ein Gateway für Claude. Der Schlüssel wird lokal auf diesem Gerät gespeichert.
-  aiAgentApiKeyPlaceholder: API-Schlüssel für OpenAI- oder Claude-Anbieter
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 oder claude-sonnet-4-5
   themeStore:
     name: Theme-Speicher
     description: Globale Themes speichern und verwalten
@@ -1526,7 +1099,6 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: Kostenlose Code-Signierung unter Windows von SignPath.io, Zertifikat von SignPath Foundation
   aboutSponsors: 😇 Sponsoren 😇
-  advancedJavaOptions: Erweiterte Java-Optionen
   advancedSettings: Erweiterte Einstellungen
   advancedSettingsHint: Gefahrenzone - Launcher-Daten zurücksetzen oder verwalten
   apiSets:
@@ -1584,8 +1156,6 @@ setting:
   devModeLabel: ENTWICKLUNG
   developerMode: Entwickler-Modus
   developerModeDescription: Der Entwicklermodus ist dazu gedacht, die von Ihnen geschriebene Mod zu testen.
-  disableTelemetry: Telemetrie ausschalten
-  disableTelemetryDescription: XMCL sammelt die Ereignisse des Spielstarts und der Benutzeranmeldung.
   enableDedicatedGPUOptimization: Weisen Sie eine dedizierte GPU zu
   enableDedicatedGPUOptimizationDescription: Diese Option weist dem Minecraft-Prozess eine dedizierte GPU zu.
   enableDiscord: Discord-Präsenz einschalten (Discord-Spielstatus)
@@ -1595,8 +1165,6 @@ setting:
   exportSettingsHint: Aktuelle Einstellungen in Datei speichern
   general: Allgemein
   githubRelease: Github Release
-  globalJava: Bevorzugtes Java
-  globalJavaHint: Im Automatikmodus wird zuerst dieses Java versucht und nur dann auf die automatische Erkennung zurückgegriffen, wenn es mit der Spielversion nicht kompatibel ist.
   globalSetting: Globale Instanzkonfiguration
   globalSettingHint: Die Instanz wird diese Parameter standardmäßig verwenden.
   importSettings: Einstellungen importieren
@@ -1632,7 +1200,6 @@ setting:
     Begrenzen Sie die maximal zulässige Anzahl von Sockets pro Host oder für alle Rechner
      insgesamt. 0 bedeutet keine Einschränkungen.
   maxSocketsTitle: Maximale Anzahl von HTTP-Sockets
-  memoryAssignment: Speicherzuweisung
   migrateFromOther: Von einem anderen Launcher importieren
   minecraftOptions: Minecraft-Optionen
   name: Globale Einstellungen | Globale Einstellungen
@@ -1647,11 +1214,6 @@ setting:
     repulse: Abwehren
   particleModeDescription: Wählen Sie das Verhalten des Partikels beim Anklicken
   quickLaunchSettings: Schnellstart
-  replaceNative: Ersetzen Sie native Bibliotheken
-  replaceNativeDescription: Ersetzen Sie native Bibliotheken entsprechend der Architektur Ihres Computers.
-  replaceNatives:
-    all: Alle
-    legacy: Nur Legacy-Version
   resetAllSettings: Alle Einstellungen zurücksetzen
   resetAllSettingsConfirmMessage: Dies löscht dauerhaft alle Einstellungen, Konten, Instanzen, Gruppen und zwischengespeicherte Daten. Diese Aktion kann nicht rückgängig gemacht werden. Sind Sie sicher?
   resetAllSettingsConfirmTitle: Alle Einstellungen zurücksetzen?
@@ -1872,17 +1434,6 @@ theme:
   selectVideo: Wählen Sie Video
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: Gastgeber-Kandidat
-  prflx: Gastgeber-Peer Reflexive
-  relay: Gastgeber-Relay
-  srflx: Gastgeber-Server Reflexive
-turnRegion:
-  fr: Frankreich
-  guangzhou: Guangzhou, China
-  hk: Hongkong
-  liaoning: Liaoning, China
-  po: Polen
 tutorial:
   feedbackDescription: Wenn Sie Probleme haben, klicken Sie auf diese Schaltfläche, um eine Bewertung abzugeben!
   hideNewsHeaderDescription: |-
@@ -1893,10 +1444,6 @@ tutorial:
     appearanceThemeTitle: Instanz-Erscheinungsbild
     iconDescription: Klicken, um das Icon zu ändern.
     iconTitle: Instanz-Icon
-    javaDescription: Java-Version auswählen oder wechseln.
-    javaImportDescription: Java aus lokalem Speicher importieren.
-    javaImportTitle: Java importieren
-    javaTitle: Java-Liste
     modpackExportDescription: Erstelle und packe deine Instanz in ein teilbares Modpack.
     modpackExportTitle: Modpack exportieren
     modpackFilesDescription: Konfigurationsdateien, Mods und Ressourcen für Client und Server auswählen.
@@ -1963,15 +1510,6 @@ tutorial:
     profileDescription: Zwischen Konten wechseln und Zugangsdaten verwalten.
     skinTitle: Skin- & Umhang-Anpassung
     skinDescription: Deinen Charakter in 3D ansehen, Skins wechseln und Umhänge ausrüsten.
-  multiplayer:
-    railTitle: Netzwerk & Navigation
-    railDescription: NAT-Typ, Netzwerkstatus prüfen und zwischen Verbindungen und Einstellungen wechseln.
-    groupTitle: Raum beitreten oder hosten
-    groupDescription: Raumcode eingeben oder leer lassen, um deinen eigenen Raum zu erstellen.
-    joinDescription: Klicke, um einem Raum beizutreten oder einen neuen zu erstellen.
-    contentTitle: Verbundene Mitglieder & Inhalte
-    contentDescription: Mitglieder verwalten, Latenz prüfen und laufende Minecraft-Spiele teilen.
-    manualDescription: Direkte manuelle P2P-Verbindung mit Freunden über SDP-Austausch.
   resourcepack:
     searchTitle: Ressourcenpakete suchen
     searchDescription: Suche Ressourcenpakete auf Modrinth, CurseForge oder in lokalen Dateien.
@@ -2016,10 +1554,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Nicht aufgelöste Dateien
   via: über {source}
-upstream:
-  downgrade: Downgrade der Version
-  onlyShowCurrentVersion: Nur die aktuelle Version von Minecraft anzeigen
-  update: Update
 user:
   accessToken: Zugangstoken
   authMode: Autorisierungsdienst
@@ -2153,51 +1687,9 @@ reinstall:
   name: '{version} neu installieren'
 blueprint:
   name: Bauplan | Baupläne
-  count: '{count} Baupläne'
-  searchLocal: Baupläne durchsuchen...
-  searchOnline: Online suchen...
-  market: Markt
-  provider: Quelle
-  import: Importieren
-  openFolder: Ordner öffnen
-  refresh: Aktualisieren
   empty: Keine Baupläne gefunden. Importiere eine .litematic-, .schem- oder .nbt-Datei oder durchsuche den Markt.
-  dropHint: Bauplandateien (.litematic / .schem / .nbt) zum Import hier ablegen.
   selectHint: Bauplan zur Vorschau auswählen.
-  blocks: '{count} Blöcke'
-  materials: Materialien
-  findMod: Mod für diesen Namespace finden
-  compatible: Kompatibel
-  incompatible: Fehlende Mods
-  missingNamespaces: 'Fehlende Mods für: {namespaces}'
   install: Installieren
-  goTo: Website
-  byAuthor: von {author}
-  noDescription: Keine Beschreibung vorhanden.
-  mixedSources: Ergebnisse aus allen Quellen. Einige sind nur zum Durchsuchen — zum Herunterladen die Website öffnen.
-  preview:
-    loading: Vorschau wird geladen...
-    empty: Dieser Bauplan enthält keine anzuzeigenden Blöcke.
-    hint: '{count} Blöcke · {x}×{y}×{z}'
-    controls: 'WASD: Bewegen · Leertaste/Umschalt: Hoch/Runter · Ziehen: Blick · Scrollen: Zoom'
-  convert:
-    title: Format konvertieren
-    hint: Diesen Bauplan in ein anderes Format konvertieren. Eine neue Datei wird erstellt.
-    target: Zielformat
-    action: Konvertieren
-  replace:
-    title: Blöcke ersetzen
-    simple: Einfach ersetzen
-    precise: Präzise ersetzen
-    simpleHint: Alle Blöcke eines Typs ersetzen.
-    preciseHint: Nur Blöcke mit den angegebenen Eigenschaften ersetzen.
-    from: Von
-    to: Zu
-    addRule: Regel hinzufügen
-    newFile: Neue Datei
-    action: Ersetzen
-  formats:
-    structure: Vanilla-Struktur
 gamepad:
   connected: Controller Connected
   guideTitle: Controller Controls

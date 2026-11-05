@@ -1,30 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: Birden fazla başlatma profili algılandı. Lütfen içe aktarmak için birini seçin.
-  createTitle: Oyun Oluştur
-  serverTitle: Sunucu adresini girin
-AppShareInstanceDialog:
-  editScopeDescription: Eşlerin LAN'da çalışan bu oyunu keşfettikten sonra alabileceği dosyaları seçin.
-  editScopeTitle: Paylaşım kapsamını düzenle
-  instanceToShare: Çalışan oyun
-  alterDownloadDescription: Mevcut instance'ı bozmak istemiyorsanız, arkadaşınızın yapılandırmasından yeni bir instance oluşturabilirsiniz. Instance oluşturmak için aşağıdaki düğmeye tıklayın.
-  baseInfo: Temel Ayarlar
-  description: Profili paylaştıktan sonra, diğer yerler bu dosyaları bilgisayarınız üzerinden indirebilir.
-  downloadDescription: Lütfen arkadaşınızın sağladığı dosyaları doğrulayın. İndirmek istediğiniz dosyayı seçin. Mevcut instance {name} içine yerleştirilecektir.
-  downloadNotifyTitle: '{user} kullanıcısından Instance İndir'
-  downloadTitle: Diğer eşlerden dosya indir
-  filesToDownload: İndirilecek dosyaları seçin
-  filesToShare: Paylaşılacak dosyaları seçin
-  share: Paylaş
-  shareTitle: Oyun dosyalarını diğer oyuncuyla paylaş
 BaseSettingGeneral:
   title: Genel
-HomeJavaIssueDialog:
-  incompatibleJava: Uyumsuz Java
-  incompatibleJavaHint: Mevcut Java, seçilen Minecraft ile uyumsuz olabilir!
-  missingJava: Java Eksik
-  missingJavaHint: 'Başlatıcı bilgisayarınızda herhangi bir Java algılayamadı. Şunları yapabilirsiniz:'
-  optionSwitch:
-    name: '{version} sürümüne geç'
 HomeLaunchMultiInstanceDialog:
   confirm: Evet, Başlat
   description: Birden fazla Minecraft instance'ı başlatıyorsunuz. Emin misiniz?
@@ -36,41 +11,7 @@ ago:
   hour: '{duration} saat önce'
   minute: '{duration} dakika önce'
   second: '{duration} saniye önce'
-askAICrash:
-  copyPrompt: İstemi kopyala ve yapay zekaya sor
-  description: Yapay zekanın oyun çökmesini anlamanıza yardım etmesine izin verin! Bu oyun çökmesi hakkında yapay zekaya sormak için aşağıdaki talimatları izleyin!
-  selectPlatform: Bir yapay zeka platformu açın ve az önce kopyaladığınız istemi yapıştırın.
-  agentNotConfigured: Başlatıcının yerleşik temsilcisinin bunu sizin için teşhis edip düzeltmesine izin vermek için Ayarlar'a bir yapay zeka sağlayıcısı ve API anahtarı ekleyin.
-  askAgent: Yerleşik yapay zeka temsilcisiyle teşhis edin
-  orExternal: veya harici bir yapay zeka kullanın
-  setupAgent: Yapay zeka temsilcisini kurun
 authProfileAddedNotification: Kimlik Doğrulama Profili {name} Eklendi
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
-  description: Minecraft Bedrock Sürümü, Microsoft Store üzerinden yüklenir ve başlatılır. Microsoft hesabınızda bir Bedrock lisansına sahip olmanız gerekir.
-  install: Microsoft Store'dan edinin
-  installFailed: Microsoft Store açılamadı
-  installed: 'Yüklendi: {version}'
-  launchHint: Bedrock Sürümünü başlatmak için Başlat düğmesini kullanın.
-  licenseRequired: Bedrock Sürümünü yüklemek ve oynamak için Minecraft sahibi olan bir Microsoft hesabıyla oturum açın.
-  refresh: Yenile
 backup:
   title: Yedekleme ve Geri Yükleme
   description: Ayarlarınızı, koleksiyonlarınızı, temalarınızı ve oyun örneklerinizi yedekleyin ve geri yükleyin
@@ -303,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: Bu sürümü yüklemek için tıklayın
     name: Minecraft %{version} için bozuk sürüm jar dosyası.
-  incompatibleJava:
-    name: Java sürümü {javaVersion}, {version} için uygun değil!
   instanceFiles:
     description: Instance kurulumu {counts} dosya içeriyor.
     title: Tamamlanmamış instance kurulumu
-  invalidJava:
-    name: Geçersiz java konumu.
   missingJava:
     message: Bu sorunu çözmek için tıklayın
     name: Minecraft'ı başlatmak için Java bulunamadı!
@@ -341,11 +278,6 @@ duration:
   hour: '{duration} saat | {duration} saat'
   minute: '{duration} dakika | {duration} dakika'
   second: '{duration} saniye | {duration} saniye'
-env:
-  select:
-    all: Tümünü Seç
-    fit: Uygun Olanı Seç
-    none: Hiçbirini Seçme
 errors:
   BadForgeInstallerJarError: Forge yükleyici jar dosyası ayrıştırılamadı. Belki forge yeni yükleyici dosya formatına sahiptir? Bu sorun devam ederse geliştiricilerle iletişime geçin.
   BadInstanceType: 'Geçerli bir instance değil: {type}'
@@ -381,8 +313,6 @@ errors:
   InstallPermissionDenied:
     body: Bir anti-virüs programı veya kısıtlı klasör izinleri yüklemeyi engelledi. Başlatıcıyı anti-virüs dışlama listenize ekleyin veya başlatıcı ayarlarından farklı bir veri kök dizini seçin.
     title: Başlatıcı klasörüne yazılamıyor
-eula:
-  body: Onay kutusu düğmesini işaretleyerek, Minecraft'ın {eula} sözleşmesini kabul ettiğinizi belirtiyorsunuz.
 exception:
   http: '{url} adresine HTTP isteği başarısız oldu. Durum kodu {statusCode}. {code}. Lütfen tekrar deneyin veya ağınızı kontrol edin. Bu hata devam ederse, lütfen geliştirici ekibine bir rapor gönderin.'
 extensions:
@@ -463,21 +393,6 @@ gameType:
   survival: Hayatta Kalma Modu
 help: Yardım
 home: Ana Sayfa
-importModpack:
-  fromFileSubtitle: Bir .zip veya .mrpack dosyası seçin
-  fromUrl: Bağlantı / URL ile...
-  fromUrlSubtitle: Bir URL üzerinden mod paketi yükleyin
-  fromUrlDescription: 'Mod paketi URL’sini girin veya yapıştırın:'
-  invalidUrl: Geçerli bir URL girin (http:// veya https://)
-  selectVersion: Mod paketi sürümünü seçin
-  selectVersionDescription: '{name} için yüklenecek sürümü seçin:'
-  pmcProtected: Planet Minecraft, Cloudflare tarafından korunuyor. Sayfadan doğrudan indirme veya yansı bağlantısını kopyalayın.
-  netdiskTitle: Bulut depolamadan indirme
-  netdiskDescription: Bu mod paketi sürümü harici bir bulut depolama hizmetinde barındırılıyor. İndirme sayfasını tarayıcınızda açmak için aşağıya tıklayın, ardından indirilen .zip veya .mrpack dosyasını Zenith Launcher’ye sürükleyip bırakın.
-  openNetdisk: Bulut depolamayı aç
-  netdiskOpened: Bulut depolama bağlantısı tarayıcınızda açıldı ve panoya kopyalandı.
-  noReleasesFound: Bu depoda .mrpack veya .zip mod paketi sürümü bulunamadı.
-  name: Mod Paketi İçe Aktar
 installAssets:
   asset: '{count} Varlık Yükle'
   assetIndex: Varlık Dizin Dosyasını Kontrol Et
@@ -534,12 +449,9 @@ instance:
   iconUrl: Simge Url'si
   installModpack: Instance'ı mod paketinden güncelle
   lastPlayed: Son Oynanan
-  launchArguments: Başlatma Argümanları Önizlemesi
   launchServer: Localhost sunucusunu başlat
   linkFileDesc: Bu, yerel {file} dosyasının üzerine global {file} dosyasını yazacaktır. Bağlamak istediğinize emin misiniz?
   linkFileTitle: '{file} dosyasını bağlamak istediğinize emin misiniz?'
-  mcOptions: Minecraft Seçenekleri
-  mcOptionsHint: Ek Minecraft başlatma argümanları
   name: Profil Adı
   nameHint: Mod paketinin adı
   nameNoCyrillic: İsim Kiril karakterleri içeremez
@@ -547,10 +459,6 @@ instance:
   openCrashReportFolder: Çökme Raporu Klasörünü Aç
   openLogFolder: Günlük Klasörünü Aç
   playtime: Oynama Süresi
-  preExecCommand: Ön-Yürütme Komutu
-  preExecCommandHint: Minecraft başlatılmadan önce yürütülecek komut
-  prependCommand: Komut Ekle (Başa)
-  prependCommandHint: Bu, tüm başlatma komutlarından önce bu komutu ekleyecektir
   requireName: İsim gereklidir
   resolution: Çözünürlük
   resolutionPreset: Çözünürlük Ön Ayarı
@@ -560,10 +468,6 @@ instance:
   useSharedOptionsDesc: Bu, options.txt dosyasını instance'lar arasında paylaşılan bir dosyaya bağlayacaktır
   useSharedServersList: Paylaşılan sunucu listesini kullan
   useSharedServersListDesc: Bu, servers.dat dosyasını instance'lar arasında paylaşılan bir dosyaya bağlayacaktır
-  vmOptions: JVM Seçenekleri
-  vmOptionsHint: JVM'e iletilecek ek argümanlar
-  vmVar: Ortam Değişkenleri
-  vmVarHint: Ortam değişkenleri eklemek için + düğmesine tıklayın
   width: Genişlik
   envVarKey: Anahtar
   envVarValue: Değer
@@ -614,9 +518,6 @@ instanceSetting:
   showLogHint: Bu, oyun başladıktan sonra Minecraft günlüğünü yayınlamak için bir pencere açacaktır
   syncGameLanguage: Oyun Dilini Senkronize Et
   syncGameLanguageDescription: Başlatma sırasında Minecraft dilini başlatıcı diliyle otomatik olarak senkronize et
-instanceTemplate:
-  ftb: Bu bir FTB mod paketidir
-  preview: Mod Paketi Önizlemesi
 instanceUpdate:
   basic: Ayar Güncellemesi
   files: Dosya Güncellemeleri
@@ -636,42 +537,15 @@ instances:
   fix: Onar
   folder: Klasör
   folderSetting: Klasör Ayarları
-  importFolderDescription: Minecraft'ı Başlatıcıya İçe Aktar
-  loadingFiles: Mod Paketi Dosyaları Yükleniyor
-  edition: Sürüm
-  editionJava: Java Sürümü
   editionBedrock: Bedrock Sürümü
   editionBedrockHint: Bedrock Sürümü, Microsoft Store uygulaması üzerinden başlatılır. Bir Bedrock lisansına sahip olmanız gerekir. Modlar, kaynak paketleri ve diğer Java'ya özgü özellikler kullanılamaz.
   editionBedrockWindowsOnly: Bedrock Sürümü yalnızca Windows yapımında desteklenir.
-  linkSharedFolders: Klasörleri örnekler arasında paylaş
-  linkSharedFoldersHint: Bu klasörleri başlatıcının paylaşılan klasörlerine bağlantı olarak oluşturun, böylece bu örnek içeriklerini bağlı diğer tüm örneklerle paylaşır. Bu bir kopya değildir — bir örnekte yapılan değişiklikler tümünde görünür. İşaretlenmemiş klasörler bu örneğe özel kalır.
-  linkFailed: '{folder} klasörü paylaşılan klasöre bağlanamadı'
   addPrismDescription: Mevcut PrismLauncher örneğini içe aktar.
 items:
   count: '{count} öğe'
   total: '{total} toplam'
 java:
-  allocatedLong: Sistem varsayılan java'sını kullan
-  allocatedShort: Otomatik Tahsis
-  importFromFile: Dosyadan Java İçe Aktar
-  invalid: Geçersiz Java Konumu
-  location: Java Konumu
-  maxMemory: Maks Bellek
-  memory: Java Belleği
   memoryAuto: Otomatik
-  memoryManual: Manuel
-  memoryUnassigned: Atanmamış
-  minMemory: Min Bellek
-  name: Java
-  noMemory: Bellek kullanımını sınırlama
-  refresh: Yerel Java'yı Yenile
-  systemMemory: 'Sistem Boş Belleği: {free} / {total}'
-  allocation: Atanan
-  autoHint: Minimum, kurulu mod sayısıyla artar; maksimum, kullanılabilir sistem belleğini kullanır.
-  change: Değiştir
-  locationHint: Java seçilmedi — sistem varsayılanı kullanılıyor
-  openFolder: Java klasörünü aç
-  presets: Hazır ayarlar
 labyMod:
   disable: LabyMod'u Devre Dışı Bırak
   empty: LabyMod mevcut Minecraft'ı desteklemiyor
@@ -745,8 +619,6 @@ localVersion:
   auto: Otomatik Hesaplanmış
   empty: Yüklü Sürüm Yok
   hint: Belirli bir yerel sürümü doğrudan başlat
-  reinstallDescription: Bu sürüm kurulumunda bazı sorunlar olduğunu düşünüyorsanız, yeniden yüklemeyi deneyebilirsiniz.
-  reinstallTitle: '{version} Yeniden Yükle'
   title: Yerel Sürüm | Yerel Sürümler
 logLevel:
   error: Hata
@@ -824,25 +696,19 @@ minecraftVersion:
   showAlpha: Snapshot Göster
   snapshot: Snapshot
 mod:
-  collapseAllGroups: Tüm grupları daralt
   acceptVersion: Kabul Et {version}
   applyGroupRules: Kaydedilen gruplama kurallarını uygula
   compatible: Uyumlu Mod.
   createGroup: Grup Oluştur
   currentVersion: Mevcut {current}
   denseView: Yoğun Görünüm
-  description: Açıklama
   disableAll: Tümünü Devre Dışı Bırak
-  dropHint: İçe aktarmak için modun .jar/.litemod dosyasını buraya bırakın.
   duplicatedDetected: '{count} yinelenen mod'
   duplicatedDetectedDescription: Aynı mod kimliğine sahip ancak farklı dosyalar bulundu. Bu Minecraft'ın çökmesine neden olabilir. Lütfen tutmak istediğiniz dosyayı seçin.
   enableAll: Tümünü Etkinleştir
   enabled: '{count} Mod etkin'
   filter: Modları Filtrele
   group: Grupla
-  groupInstalled: Yüklü Modları Grupla
-  hideInstalled: Yüklü Modları Gizle
-  installedFilterOff: Tüm Modları Göster
   groupName: Grup Adı
   groupNameRequired: Grup adı gereklidir
   hasUpdate: Modun yeni bir sürümü var!
@@ -850,25 +716,17 @@ mod:
   incompatibleHint: Uyumsuzu Göster
   incompatibleHintDescription: Bazı mod bağımlılıkları eksik olabilir. Veya bazı bağımlılık sürümleri eşleşmiyor.
   maybeCompatible: Belki Uyumlu.
-  modloaderSelectHint: Mod aşağıdaki mod yükleyicileri destekler. Lütfen yüklemek için birini seçin.
-  modloaderSelectNotSupported: Minecraft {minecraft} için {modloader} bulunamadı
   mods: '{count} Mod'
   name: Mod | Modlar
   newFolder: Yeni Klasör
   noGroupsFound: Grup bulunamadı
   noGroupsYet: Henüz grup yok. Bir tane oluşturun!
-  noModLoaderHint: Modları kullanmak için bir mod yükleyici etkinleştirmeyi unutmayın!
   openLink: Mod url'sini aç {url}
-  search: Mod Ara
   searchGroups: Grupları ara...
   searchOnMcWiki: MC ansiklopedisinde {name} bak.
   selectOrCreateGroup: Grup Seç veya Oluştur
-  showDirectory: Modlar dizinini göster
   showFile: Mod yolunu göster {file}
-  showInModrinth: '{name} Modrinth''te göster'
-  switchDefaultSource: Varsayılan Mod Kaynağı
   syncGroupRules: Gruplama kurallarını kaydet
-  toUpdate: '{count} güncelleme'
   ungroup: Grubu Çöz
 modFilter:
   clear: Filtreyi Temizle
@@ -914,25 +772,10 @@ modified:
   save: Kaydet
   unsaved: Değişikliğiniz kaydedilmedi!
 modpack:
-  author: Yazar Adı
-  authorHint: Bu, dışa aktarılan bir mod paketini imzalamak için kullanılabilir (Curseforge)
-  description: Açıklama
-  descriptionHint: Mod paketiniz için genel açıklama. Curseforge mod paketi olarak dışa aktarmak için kullanılabilir.
   dropHint: İçe aktarmak için mod paketi zip dosyasını buraya bırakın
-  emitCurseforge: Curseforge Mod Paketini Dışa Aktar
-  emitModrinth: Modrinth Mod Paketini Dışa Aktar
-  emitModrinthStrict: Katı Modrinth Formatı
-  emitModrinthStrictDescription: Sadece modrinth belgesinde listelenen 4 alandan URL'lere izin verilir
   export: Mod Paketi Olarak Dışa Aktar
-  exportDirectory: Dışa Aktarma Dizini
-  exportDirectoryDescription: Mod paketi varsayılan olarak İndirilenler klasörüne aktarılacaktır
-  includeAssets: Varlıkları Dahil Et
-  includes: Dahil edilecek dosyalar
   modpackVersion: Mod Paketi Sürümü
   name: Mod Paketi | Mod Paketleri
-  overrides: Geçersiz Kılmalar (Overrides)
-  url: URL
-  urlHint: Mod paketinizin ana sayfa url'si
 modpackImportConfirm:
   description: Başlatıcıya bir dosya bıraktığınız algılandı. Bir mod paketini içe aktarmaya mı çalışıyorsunuz?
   title: Bir mod paketini içe aktarmaya mı çalışıyorsunuz?
@@ -1096,110 +939,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: Mevcut Sürüm
-multiplayer:
-  joinDiscord: Discord'a Katıl
-  openConsumerPortal: Tüketici Portalını Aç
-  refundHint: Para iadesine mi ihtiyacınız var? Siparişlerinizi ve aboneliklerinizi yönetmek için Waffo Tüketici Portalı'nı ziyaret edin.
-  togetherSupportHint: Çok oyunculu mod çalışmıyorsa Discord'umuza katılın ve geliştirme ekibiyle iletişime geçin. Sorunu çözmenize yardımcı olacağız.
-  autoShareAmbiguous: Birden fazla oyun çalışıyor. Zenith Launcher'nin paylaşabilmesi için LAN dünyasını barındıran örneği seçin.
-  editSharingScope: Paylaşım kapsamını düzenle
-  gameAvailable: LAN oyunu mevcut
-  joinGame: Oyuna katıl
-  noRunningInstanceToShare: Paylaşım kapsamını düzenlemeden önce bir oyun başlatın
-  updateSharedInstanceConfirm: Güncelle ve başlat
-  updateSharedInstanceDescription: Paylaşılan modlar {instance} ile farklı. Başlatmadan önce bu örnek ana bilgisayarla eşleşecek şekilde güncellensin mi? Değiştirilmiş mevcut dosyalar yedeklenecektir.
-  updateSharedInstanceTitle: Paylaşılan örnek güncellensin mi?
-  addFunds: Bakiye ekle
-  availableBalance: Kullanılabilir bakiye
-  balanceHint: XMCL Together hizmetleri için kullanılabilir
-  billing: Faturalandırma
-  billingDescription: Aktarma erişimini, Together Home planını ve ödemelerini yönet.
-  billingError: Together faturalandırması yüklenemedi. Biraz sonra tekrar dene.
-  buyTogether: Together satın al
-  cancelTogether: Planı iptal et
-  checkout: Waffo ödeme sayfasını aç
-  connectionTogetherWarning: Bir oda üyesi bir süredir sana bağlanamıyor. Odadaki herkesin bağlantısını iyileştirmek için XMCL Together'ı dene. Together'a yalnızca oda sahibi ihtiyaç duyar.
-  masterPurchaseHint: Odadaki herkesin bağlantısını iyileştirmek için Together Home'a yalnızca oda sahibinin ihtiyacı vardır.
-  natTogetherWarning: Yönlendiricin oda sahibine bağlanmakta zorlanıyor olabilir. Bağlantılar başarısız olursa, seninle arkadaşların arasındaki bağlantıyı iyileştirmek için XMCL Together'ı dene. Oda için Together'ı yalnızca oda sahibinin satın alması gerekir.
-  togetherName: Minecraft Together
-  trialDescription: 1 GB aktarma trafiği içeren 7 günlük bir deneme.
-  trialTitle: Bağlantı denemesi
-  tryTogether: Together'ı dene
-  month: ay
-  orderStatus: 'Waffo siparişi: {status}'
-  planDescription: Aylık 20 GB yönetilen aktarma trafiği ve modpack'in için yapay zekâ destekli sorun giderme.
-  waffoHint: Ödemeler Waffo Pancake üzerinden güvenli bir şekilde tamamlanır. XMCL kart numaranı asla almaz.
-  subscription:
-    active: Aktif
-    cancelled: İptal edildi
-    payment_due: Ödeme bekleniyor
-  trial:
-    active: Deneme etkin
-    available: Ücretsiz deneme kullanılabilir
-    expired: Deneme kullanıldı
-    unavailable: Deneme kullanılamıyor
-  loginRequiredDescription: P2P çok oyunculu oyun Zenith Launcher çevrimiçi hizmetlerini kullanır. Devam etmek için bir Zenith Launcher Hesabında oturum açın.
-  loginRequiredTitle: P2P çok oyunculu oyun için giriş yapın
-  complete: Tamamla
-  confirm: Onayla
-  connections: Bağlantılar
-  copied: Kopyalandı!
-  copy: Kopyala
-  copyGroupToFriendHint: Arkadaşlarınızın bu id ile gruba katılmasına izin verin
-  copyLocalHint: |
-    "Lütfen yerel SDP metnini kopyalayın ve nesnenize gönderin, nesnenizin bu metni katılma bağlantısına girmesini sağlayın <span>Bir belirteç sadece <span style="color: red; font-weight: bold;">bir eş</span> için kullanılabilir! Aynı belirteci birden fazla eşe gönderemezsiniz!</span> <br> <span class="hint-text" style="font-style: italic;">Birden fazla eş bağlamanız gerekiyorsa, <span style="font-weight: bold; color: rgba(245, 158, 11)">birden fazla</span> bağlantı oluşturmanız gerekir.</span>"
-  createLocalToken: Yerel Belirteç Oluştur
-  currentIpTitle: Algılanan Genel IP
-  currentNatTitle: 'Mevcut ağ (NAT):'
-  difficultyLevelHint: Bağlantı oluşturma zorluk seviyesi
-  disconnect: Bağlantıyı Kes
-  disconnectDescription: '{user}({id}) kullanıcısı ile bağlantıyı kesmek istediğinize emin misiniz?'
-  disconnected: bağlantı kesildi
-  enterRemoteToken: Uzak Belirteci Girin
-  enterRemoteTokenHint: Eşiniz belirtecinizi girdikten sonra, onun belirtecini aşağıdaki metin alanına girmelisiniz. Bağlanmak için onayla'ya tıklayın.
-  exposedPortDescription: Diğer eşlere açtığınız port
-  exposedPorts: Yönlendirilen Portlar
-  gatheringIce: |
-    "Lütfen ICE sunucusunun ağınız hakkında yeterli bilgi toplamasını bekleyin. Sabırsızsanız ve yeterli bilgi varsa, mevcut SDP'yi karşı tarafa önceden verebilir ve İleri'ye tıklayabilirsiniz. Lütfen <span class="v-chip v-chip--label v-size--small" style="text-font: bold" >Yerel Belirteci</span> eşinize gönderin, eşiniz belirtecinizi <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> Bağlantıya Katıl </span> bölümüne girer. <br> ICE sunucusu <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Yerel belirteç</span> oluşturmak için bilgilerinizi toplamak üzere biraz zamana ihtiyaç duyabilir.<br> ICE durumu tamamlanana kadar beklemenize gerek yoktur. Aşağıdaki belirteç değişmeden kalırsa, kopyalayıp eşinize gönderebilirsiniz."
-  groupId: Grup Kimliği
-  illegalTokenDescription: Geçersiz belirteç, lütfen eşinizden gelen belirtecin doğru olduğundan emin olun
-  initiateConnection: Bağlantıyı Başlat
-  joinConnection: Eşiniz zaten bir bağlantı başlattıysa, Bağlantıya Katılmanız gerekir.
-  joinManual: Katıl
-  joinOrCreateGroup: Gruba Katıl/Oluştur
-  joinOrCreateGroupHint: Arkadaşlarınızdan grup kimliğini alın veya bir grup oluşturun
-  kernel: P2P Çekirdeği
-  kernelDescription: Yerel WebRTC veya node-datachannel kullanın. Bunu yalnızca p2p bağlantınız bazen başlatıcı penceresini çökerttiğinde değiştirin.
-  leaveGroup: Gruptan ayrıl
-  localToken: Yerel Belirteç
-  manualConnect: Manuel Bağlan
-  name: LAN üzerinden Çok Oyunculu
-  networkInfo: Ağ Bilgisi
-  next: İleri
-  otherExposedPortDescription: '{user} tarafından yönlendirilen port'
-  placeholder: LAN üzerinde Minecraft oynamak için diğer kullanıcılarla bağlanın!
-  previous: Önceki
-  receiveHint: Diğer taraf belirtecinizi girdikten sonra, bağlantınız otomatik olarak oluşturulacaktır. Şimdi iletişim kutusunu kapatabilirsiniz.
-  receiveRemoteTokenHint: Lütfen eşinizden gelen belirteci buraya girin.
-  remoteToken: Uzak Belirteç
-  routerInfo: Yönlendirici Bilgisi
-  sendTokenToRemote: Belirteci Uzaktakine Gönder
-  share: Instance Yapılandırmasını Paylaş
-  sharing: Dosyalar paylaşılıyor...
-  start: Başlat
-  startNewP2PConnection: Yeni bir eş bağlantısı oluşturmak için Başlat düğmesine tıklayın
-  connectionError: Bağlantı hatası
-  connectionFailedHint: Bağlantı kurulamıyor. Her iki tarafın da uyumlu NAT türlerine sahip olduğunu kontrol edin.
 myStuff: Eşyalarım
-natType:
-  blocked: Engellendi
-  fullCone: Full Cone
-  openInternet: Açık İnternet
-  restrictNat: Kısıtlı NAT
-  restrictPortNat: Kısıtlı Port NAT
-  symmetricNat: Simetrik NAT
-  symmetricUDPFirewall: Simetrik UDP Güvenlik Duvarı
-  unknown: Bilinmiyor
 neoForgedVersion:
   disable: NeoForged'ı Devre Dışı Bırak
   empty: NeoForged {version} sürümünü desteklemiyor
@@ -1210,23 +950,6 @@ optifineVersion:
   disable: Optifine'ı Devre Dışı Bırak
   empty: Optifine Minecraft {version} sürümünü desteklemiyor
 optional: İsteğe Bağlı
-peerConnectionState:
-  closed: Kapalı
-  connected: Bağlandı
-  connecting: Bağlanıyor
-  disconnected: Bağlantı Kesildi
-  failed: Başarısız
-  name: Bağlantı Durumu
-  new: Yeni
-peerGroupState:
-  closed: Grupta Değil
-  closing: Kapandı
-  connected: Gruba Katıldı
-  connecting: Bağlanıyor
-peerIceGatheringState:
-  gathering: Ice Sunucusu Toplanıyor
-peerSignalingState:
-  have-local-offer: Eş açıklaması bekleniyor
 presence:
   instance: '{instance} Instance''ında Boşta'
   instanceSetting: '{instance} Instance Ayarı Düzenleniyor'
@@ -1369,141 +1092,25 @@ search:
 server:
   launch: Sunucuyu Başlat
   stop: Sunucuyu Durdur
-  acceptingMinecraftVersion: Kabul Edilen Minecraft Sürümü
   addServer: Sunucu Ekle
   address: Sunucu Adresi
   addressHint: örn. mc.hypixel.net
   bindUpstream: Üst kaynak olarak bağla
-  boundUpstream: Üst sunucu bağlandı
   boundUpstreamHint: Bu örnek bağlı sunucunun Minecraft sürümünü takip eder.
-  creationHint: Lütfen sunucu adresini doldurun ve sunucuya ping atın
   editServer: Sunucuyu Düzenle
   emptyHint: Bu örneğin servers.dat dosyasında sunucu yok. Başlamak için bir tane ekleyin.
   entryCount: '{count} sunucu'
-  expectedVersions: Desteklenen Sürümler
-  export: Sunucuyu Dışa Aktar
-  exportNoFilesHint: Sunucu dosyası bulunamadı. Bazı dosyalar oluşturmak için sunucuyu yerel olarak bir kez çalıştırabilirsiniz.
-  exportOption: Sunucu Dışa Aktarma Seçenekleri
-  exportSSHAuthenticationFailed: Tüm kimlik doğrulama yöntemleri başarısız oldu. Lütfen kullanıcı adı/şifre veya özel anahtarı kontrol edin.
-  exportSSHOptions: SSH Seçenekleri
-  exportSSHPrivateKeyPath: SSH Özel Anahtar Yolu
-  exportSSHRemotePath: Uzak Sunucu Yolu
-  exportToFolder: Klasöre Dışa Aktar
-  filterVersion: Sunucunun yanıt verdiği Minecraft sürümünü filtrele
-  host: Ana Bilgisayar
-  hostHint: Sunucunun ana bilgisayarı (port ile)
-  hostRequired: Lütfen sunucu ip adresini girin
-  ipAddress: IP Adresi
   launchClient: Bunun yerine istemciyi başlat
   launchPinned: Sabitlendi
   launchTargetHint: Bu örnek doğrudan sabitlenen sunucuya bağlanır. İstemciye dönmek ister misiniz?
   maxPlayers: Maks Oyuncu
-  motd: Sunucu MOTD
   nameHint: Çok oyunculu listesinde görünen ad
-  nogui: Sunucu Arayüzü Yok
-  onlineMode: Çevrimiçi Mod
   pin: Sunucuyu sabitle
   pinAfterSave: Kaydettikten sonra varsayılan başlatma hedefi olarak sabitle
-  ping: Ping
-  pings: Pingler
   pinnedHeader: 'Sabitlendi: {name}'
-  players: Oyuncular
   port: Port
-  clearLog: Günlüğü temizle
-  log: Sunucu Günlüğü
-  logWaiting: Sunucu çıktısı başlatıldıktan sonra burada görünecektir.
-  remoteActionSuccess: Done.
-  remoteAdmin: Uzak Sunucu Yönetimi
-  remoteAuthMethod: Kimlik Doğrulama
-  remoteAuthPassword: Şifre
-  remoteAuthPrivateKey: Özel anahtar
-  remoteBuildOfflinePackage: Çevrimdışı paket oluştur
-  remoteConnected: Bağlandı
-  remoteConnection: Bağlantı
-  remoteDeployment: Dağıtım
-  remoteDeploy: Dağıt
-  remoteDisk: Disk
-  remoteConfigFiles: Yapılandırma dosyaları
-  remoteExtraFiles: Ek dosyalar
-  remoteForgetCredentials: Kayıtlı giriş bilgilerini unut
-  remoteInstallService: Hizmeti yükle
-  remoteLoad: Ortalama yük
-  remoteLog: Uzak Günlük
-  remoteMemory: Bellek
-  remoteMods: Modlar
-  remoteNoWorldSelected: Hiçbir örnek dünyası seçilmedi
-  remoteJavaRequired: Uzak Linux sunucusunda Java bulunamadı.
-  remoteLinuxRequired: Yalnızca SSH üzerinden Linux hedefleri desteklenir.
-  remoteNotConfiguredHint: Durum, hizmet kontrolü ve günlükleri etkinleştirmek için yukarıdaki bağlantı bilgilerini doldurun.
-  remotePathNotWritable: Uzak sunucu dizinine yazma izni yok.
-  remotePathWritable: Dizin yazılabilir
-  remotePolicyInitialize: Bir kez başlat
-  remotePolicyMirror: Ayna (Mirror)
-  remotePolicyOverlay: Üzerine yaz (Overlay)
-  remotePolicyPreserve: Koru
-  remotePreview: Değişiklikleri önizle
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: Kimlik bilgilerini hatırla (İşletim sistemi anahtarlığı)
-  remoteReconcileReady: Hedef bu örnekle eşleşiyor ve konsol bağlı.
-  remoteRestartService: Yeniden Başlat
-  remoteSavedCredentialsHint: Kayıtlı kimlik bilgileri etkin — korumak için boş bırakın veya değiştirmek için yazın.
-  remoteService: systemd Hizmeti
-  remoteServiceActive: Çalışıyor
-  remoteServerInstalled: Sunucu dosyaları yüklendi
-  remoteServiceName: Hizmet adı
-  remoteServiceNameHint: systemd --user birim adı, örn. mc-server
-  remoteSelectedFiles: '{count} sunucu dosyası seçildi'
-  remoteSelectFiles: Dosyaları seç
-  remoteStartCommand: Başlatma komutu
-  remoteStartCommandHint: örn. java -jar server.jar nogui
-  remoteStartService: Başlat
-  remoteStatus: Durum
-  remoteSystemdRequired: Uzak sunucuda systemd kullanıcı hizmetleri kullanılamıyor.
-  remoteTargetName: Hedef adı
-  remoteStopService: Durdur
-  remoteStopWatchLog: İzlemeyi durdur
-  remoteTestConnection: Bağlantıyı test et
-  remoteTestConnectionSuccess: Bağlantı başarılı.
-  remoteUninstallConfirmMessage: Bu işlem uzak ana bilgisayardaki systemd birimini kaldırır. Dosyalar silinmez.
-  remoteUninstallService: Hizmeti kaldır
-  remoteRunInstall: Yükle veya onar
-  remoteWatchLog: Canlı günlüğü izle
-  remoteWorldAlways: Her eşitlemede değiştir
-  remoteWorldDeployment: Örnek dünyası dağıtımı
-  remoteWorldDeploymentHint: Rutin eşitleme açıkça izin verilmedikçe dünya verilerini asla yüklemez.
-  remoteWorldFirstInstall: Yalnızca hedefte dünya yoksa başlat
-  remoteWorldNever: Asla dünya yükleme
-  remoteWorldPresent: Hedef dünya
-  remoteWorld: Dünya
-  remoteWorldWillDeploy: Seçilen örnek dünyası bu eşitlemede yüklenecektir.
   serverName: Sunucu adı
-  serviceInstall: Hizmeti kur
-  serviceManagedLaunch: Başlatma ve durdurma işlemleri için işletim sistemi hizmetini kullanın
-  serviceManager: Sistem hizmeti
-  serviceName: Hizmet adı
-  serviceNameHint: Harf, rakam, nokta veya tire içeren tanımlayıcı
-  serviceNotInstalled: Kurulu değil
-  serviceStartCommand: Başlatma komutu
-  serviceSystemd: systemd --user
-  serviceWindows: Windows Hizmeti
-  serviceWindowsCommandHint: Java komutu bu örnekten oluşturulur.
   serversListTitle: Sunucu Listesi
-  target: Sunucu hedefi
-  targetLocal: localhost
-  targetLocalHint: Sunucuyu bu bilgisayara kurun ve çalıştırın.
-  targetRemote: SSH hedefi
-  targetRemoteHint: SSH üzerinden sunucuya bağlanın, kurun, başlatın ve izleyin.
   unbindUpstream: Bağı kaldır
   unknown: Bilinmeyen Sunucu
   unknownDescription: Bilinmeyen Sunucu. Lütfen Yenileyin
@@ -1514,9 +1121,6 @@ server:
   upstreamUpdateAvailable: Sunucu artık Minecraft {version} çalıştırıyor. Uygulamak için tıklayın.
   upstreamUpdateHint: Önerilen Minecraft sürümünü bu örneğe uygular.
   useAsUpstreamHint: Örnek, sunucunun bildirdiği Minecraft sürümünü takip edecektir.
-  version: Sunucu Sürümü Gerektiriyor
-  versionHint: Ping Atılacak Minecraft Sürümü
-  worldPreserve: Hedef dünyayı koru
 serverStatus:
   nohost: §4Ana bilgisayar bulunamıyor!
   ping: Ping...
@@ -1536,7 +1140,6 @@ setting:
     loadConfirmMessage: Kaydedilmiş bir temayı yüklemek mevcut temayı değiştirir. Gerekirse yedekleyin.
     loadTheme: Tema yükle
   about: Hakkında
-  advancedJavaOptions: Gelişmiş Java Seçenekleri
   advancedSettings: Gelişmiş Ayarlar
   advancedSettingsHint: Tehlike bölgesi - başlatıcı verilerini sıfırla veya yönet
   apiSets:
@@ -1591,8 +1194,6 @@ setting:
   darkThemeDescription: Koyu veya açık tema arasında seçim yapın
   developerMode: Geliştirici Modu
   developerModeDescription: Geliştirici Modu kendi modlarınızı test etmek içindir
-  disableTelemetry: Telemetriyi Devre Dışı Bırak
-  disableTelemetryDescription: XMCL oyun başlatma ve kullanıcı giriş olaylarını toplayacaktır.
   enableDedicatedGPUOptimization: Özel GPU Ata
   enableDedicatedGPUOptimizationDescription: Bu seçenek Minecraft işlemine özel GPU atayacaktır.
   enableDiscord: Discord Durumunu Etkinleştir
@@ -1602,8 +1203,6 @@ setting:
   exportSettingsHint: Mevcut ayarlarınızı bir dosyaya kaydedin
   general: Genel
   githubRelease: Github Yayını
-  globalJava: Tercih edilen Java
-  globalJavaHint: Otomatik modda önce bu Java denenir ve yalnızca oyun sürümüyle uyumlu olmadığında otomatik algılamaya geri dönülür.
   globalSetting: Global Instance Ayarı
   globalSettingHint: Instance varsayılan olarak bu ayarları kullanacaktır.
   importSettings: Ayarları İçe Aktar
@@ -1630,7 +1229,6 @@ setting:
   maxSockets: Ana Bilgisayar Başına
   maxSocketsDescription: Ana bilgisayar başına veya toplamda tüm ana bilgisayarlar için izin verilen maksimum soket sayısını sınırlayın. 0 sınır olmadığı anlamına gelir.
   maxSocketsTitle: Maks HTTP soketi
-  memoryAssignment: Bellek Atama
   migrateFromOther: Diğer başlatıcıdan içe aktar
   minecraftOptions: Minecraft Seçenekleri
   name: Global Ayar | Global Ayarlar
@@ -1645,11 +1243,6 @@ setting:
     repulse: Püskürt (Repulse)
   particleModeDescription: Parçacık tıklama davranışını seçin
   quickLaunchSettings: Hızlı Başlatma
-  replaceNative: Yerel Kütüphaneleri Değiştir
-  replaceNativeDescription: Yerel kütüphaneleri bilgisayarınızın mimarisine göre değiştirin.
-  replaceNatives:
-    all: Tümü
-    legacy: Sadece Eski Sürüm
   resetAllSettings: Tüm Ayarları Sıfırla
   resetAllSettingsConfirmMessage: Bu işlem tüm ayarları, hesapları, instance'ları, grupları ve önbelleğe alınmış verileri kalıcı olarak silecektir. Bu işlem geri alınamaz. Emin misiniz?
   resetAllSettingsConfirmTitle: Tüm Ayarlar Sıfırlansın mı?
@@ -1710,15 +1303,6 @@ setting:
   aboutLicense: MIT LİSANSI
   aboutLicenseInfo: Windows'ta ücretsiz kod imzalama SignPath.io tarafından, sertifika ise SignPath Foundation tarafından sağlanmaktadır
   aboutSponsors: 😇 Sponsorlar 😇
-  aiAgentApiKey: Yapay Zeka Temsilcisi API Anahtarı
-  aiAgentApiKeyDescription: OpenAI veya Claude için bir ağ geçidi gibi OpenAI uyumlu bir sağlayıcı yapılandırın. Anahtar bu cihazda yerel olarak saklanır.
-  aiAgentApiKeyPlaceholder: OpenAI veya Claude sağlayıcısı API anahtarı
-  aiAgentEndpoint: Yapay Zeka Temsilcisi Uç Noktası
-  aiAgentEndpointDescription: Sohbet tamamlama uç noktası URL'si.
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 veya claude-sonnet-4-5
-  aiAgentModel: Yapay Zeka Temsilcisi Modeli
-  aiAgentModelDescription: Sohbet tamamlama isteklerinde gönderilecek model adı.
   useDesktopBackground: Mevcut masaüstü duvar kağıdını kullan
   customCss:
     advancedDescription: Başlatıcının mevcut stilini kendi CSS'nizle geçersiz kılın.
@@ -1883,17 +1467,6 @@ theme:
   selectVideo: Video Seç
   title: X Minecraft Başlatıcısı
 title: X Minecraft Başlatıcısı
-transportType:
-  host: Ana Bilgisayar Adayı
-  prflx: Eş Yansıtmalı Aday
-  relay: Geçiş Adayı
-  srflx: Sunucu Yansıtmalı Aday
-turnRegion:
-  fr: Fransa
-  guangzhou: Guangzhou, Çin
-  hk: Hong Kong
-  liaoning: Liaoning, Çin
-  po: Polonya
 tutorial:
   feedbackDescription: Herhangi bir sorunla karşılaşırsanız, geri bildirim göndermek için lütfen bu düğmeye tıklayın!
   hideNewsHeaderDescription: Solda Haber vitrinini görebilirsiniz. Bu düğmeye tıklamak bu vitrini gizleyebilir.
@@ -1902,10 +1475,6 @@ tutorial:
     appearanceThemeTitle: Örnek Görünümü
     iconDescription: Simgesini değiştirmek için tıklayın.
     iconTitle: Örnek Simgesi
-    javaDescription: Java sürümünü seçin veya değiştirin.
-    javaImportDescription: Yerel depolamadan Java sürümünü içe aktarın.
-    javaImportTitle: Java İçe Aktar
-    javaTitle: Java Listesi
     modpackExportDescription: Yapılandırılmış örneğinizi paylaşıma hazır bir mod paketine dönüştürün.
     modpackExportTitle: Mod Paketini Dışa Aktar
     modpackFilesDescription: İstemci ve sunucu için paketlenecek yapılandırma dosyalarını ve modları seçin.
@@ -1959,15 +1528,6 @@ tutorial:
     profileDescription: Hesaplarınız arasında geçiş yapın ve giriş bilgilerinizi yönetin.
     skinTitle: Görünüm ve Pelerin Özelleştirme
     skinDescription: Karakterinizi 3D olarak görüntüleyin, dış görünüşü değiştirin ve pelerin takın.
-  multiplayer:
-    railTitle: Ağ ve Gezinme
-    railDescription: NAT türünü, ağ durumunu kontrol edin ve bağlantılar ile ayarlar arasında geçiş yapın.
-    groupTitle: Odaya Katıl veya Kur
-    groupDescription: Arkadaşlarınıza katılmak için oda kodu girin veya kendi odanızı açın.
-    joinDescription: Mevcut bir odaya katılmak veya yeni bir oda kurmak için tıklayın.
-    contentTitle: Bağlı Üyeler ve İçerik
-    contentDescription: Üyeleri yönetin, gecikmeyi kontrol edin ve açık Minecraft oyunlarını paylaşın.
-    manualDescription: SDP değişimi kullanarak arkadaşlarınızla doğrudan manuel P2P bağlantısı.
   resourcepack:
     searchTitle: Kaynak Paketlerini Ara
     searchDescription: Modrinth, CurseForge veya yerel dosyalardan kaynak paketi arayın.
@@ -2012,10 +1572,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Çözümlenmemiş dosyalar
   via: '{source} aracılığıyla'
-upstream:
-  downgrade: Sürüm Düşür
-  onlyShowCurrentVersion: Sadece Mevcut Minecraft Sürümünü Göster
-  update: Güncelle
 user:
   accessToken: Erişim Belirteci
   authMode: Yetkilendirme Servisi
@@ -2140,57 +1696,6 @@ migrateMinecraft:
   name: Minecraft dosyalarını taşı
 reinstall:
   name: '{version} yeniden kur'
-agent:
-  accessRequiredHint: Yerleşik temsilciyi kullanmak için Zenith Launcher’ye abone olun veya ayarlarda kendi yapay zeka sağlayıcınızı yapılandırın.
-  subscribeXmcl: XMCL’ye abone ol
-  callingTool: '{name} çağrılıyor…'
-  disabledPlaceholder: Temsilci devre dışı
-  emptyHint: Temsilciden örneğinizi incelemesini, modları değiştirmesini, günlükleri okumasını veya çökmeyi teşhis etmesini isteyin.
-  inputPlaceholder: Temsilciye sorun… (Göndermek için Enter, yeni satır için Shift+Enter)
-  notConfiguredHint: Ayarlar → Genel → Yapay Zeka Temsilcisi bölümünde API anahtarı, model ve OpenAI uyumlu uç nokta ayarlayın. Örneğin OpenAI veya Claude uyumlu bir ağ geçidi kullanın.
-  notConfiguredTitle: Temsilci yapılandırılmadı
-  openSettings: Ayarları aç
-  reset: Sohbeti sıfırla
-  setupGuide: Kurulum kılavuzu
-  statusDisabled: Devre Dışı — API anahtarı eksik
-  statusReady: Hazır
-  statusWorking: Çalışıyor…
-  suggestion1: Bu örneği daha yeni bir Minecraft sürümüne yükseltin ve modları buna göre güncelleyin
-  suggestion2: Modlarım çöküyor — nedenini bulun ve nasıl düzelteceğimi söyleyin
-  suggestion3: 'Mod paketi oluşturun: İstediğim bir özellik için modları bulun ve bu örneğe yükleyin'
-  thinking: düşünüyor…
-  title: Zenith Launcher Temsilcisi
-  toggleHint: geçiş yapmak için
-minecraftFriends:
-  accept: Kabul Et
-  add: Arkadaş ekle
-  addPlaceholder: Minecraft kullanıcı adı
-  addedRelative: '{time} eklendi'
-  errors:
-    cannotAddSelf: Kendinize arkadaşlık isteği gönderemezsiniz.
-    duplicate: Bu oyuncu zaten listenizde var.
-    generic: Bir şeyler yanlış gitti. Lütfen tekrar deneyin.
-    inviteRejected: Bu oyuncunun arkadaş özelliği etkin değil veya davetleri kabul etmiyor.
-    tokenExpired: Microsoft oturumunuzun süresi doldu. Lütfen tekrar oturum açın.
-    unknownProfile: Bu isimde bir oyuncu bulamadık.
-  expiresRelative: 'Süre dolum tarihi: {time}'
-  friends: Arkadaşlar
-  heroEmptyHint: Arkadaşlık isteği göndermek için yukarıya kullanıcı adına göre bir Minecraft oyuncusu ekleyin.
-  heroEmptyTitle: Arkadaş listeniz boş
-  incoming: Gelen istekler
-  incomingHint: 1 gelen istek | {count} gelen istek
-  notifyAdded: '{name} kullanıcısına arkadaşlık isteği gönderildi'
-  outgoing: Giden istekler
-  privacy:
-    acceptInvites: Arkadaşlık davetlerini kabul et
-    acceptInvitesHint: Kapalıyken diğer oyuncular size arkadaşlık isteği gönderemez.
-    friendsEnabled: Arkadaş listesi etkin
-  reconnectAction: Yeniden Bağlan
-  requiresMicrosoft: Arkadaş özelliğini kullanmak için bir Microsoft hesabıyla oturum açın.
-  scopedTo: '{name} olarak oturum açıldı'
-  send: Gönder
-  title: Minecraft Arkadaşlar
-  unsupported: Arkadaşlar özelliği yalnızca Microsoft hesapları için kullanılabilir.
 relative:
   daysAgo: '{count} gün önce | {count} gün önce'
   hoursAgo: '{count} saat önce | {count} saat önce'
@@ -2202,58 +1707,9 @@ resourceError:
   title: '{file} okunamıyor'
 blueprint:
   name: Şema | Şemalar
-  count: '{count} şema'
-  searchLocal: Şemalarda ara...
-  searchOnline: Çevrim içi ara...
-  market: Pazar
-  local: Yerel
-  provider: Sağlayıcı
-  import: İçe Aktar
-  openFolder: Klasörü aç
-  refresh: Yenile
   empty: Hiç şema bulunamadı. Bir .litematic / .schem / .nbt dosyası içe aktarın veya pazara göz atın.
-  dropHint: İçe aktarmak için şema dosyalarını (.litematic / .schem / .nbt) buraya sürükleyip bırakın.
   selectHint: Önizlemek için bir şema seçin.
-  blocks: '{count} blok'
-  materials: Malzemeler
-  allNamespaces: Tümü
-  findMod: Bu ad alanı için modu bul
-  compatible: Uyumlu
-  incompatible: Eksik modlar
-  missingNamespaces: 'Eksik modlar: {namespaces}'
-  delete: Sil
-  cancel: İptal Et
   install: Yükle
-  goTo: Web Sitesi
-  byAuthor: '{author} tarafından'
-  noDescription: Açıklama belirtilmedi.
-  loadMore: Daha fazla yükle
-  cmsBrowseOnly: Bu kaynak yalnızca göz atmaya yöneliktir; indirmek için web sitesini açın.
-  mixedSources: Sonuçlar tüm kaynaklardan karışıktır. Bazıları yalnızca göz atmaya yöneliktir — indirmek için web sitelerini açın.
-  formats:
-    structure: Vanilla Yapısı
-  preview:
-    title: 3D Önizleme
-    loading: Önizleme yükleniyor...
-    empty: Bu şemada gösterilecek blok yok.
-    hint: '{count} blok · {x}×{y}×{z}'
-    controls: 'WASD: Hareket · Boşluk/Shift: Yukarı/Aşağı · Sürükleme: Bakış · Kaydırma: Yakınlaştırma'
-  convert:
-    title: Biçimi dönüştür
-    hint: Bu şemayı başka bir biçime dönüştürün. Yeni bir dosya oluşturulacak.
-    target: Hedef biçim
-    action: Dönüştür
-  replace:
-    title: Blokları değiştir
-    simple: Basit
-    precise: Hassas
-    simpleHint: Yalnızca blok kimliğine göre eşleştirin, mevcut blok durumu özelliklerini koruyun.
-    preciseHint: Tam blok durumunu (kimlik + özellikler) eşleştirin ve tamamen değiştirin.
-    from: Kaynak
-    to: Hedef
-    addRule: Kural ekle
-    newFile: Yeni dosya olarak kaydet
-    action: Değiştir
 gamepad:
   detectedTitle: Oyun Kumandası Algılandı
   connected: Kontrolcü Bağlandı

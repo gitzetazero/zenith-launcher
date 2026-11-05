@@ -1,30 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: MANY LAUNCH PROFILEZ DETECTED! PLZ PICK ONE TO IMPORT.
-  createTitle: MAKE GAME
-  serverTitle: TYP IN DA SERVR ADDWESS
-AppShareInstanceDialog:
-  editScopeDescription: CHOOZ TEH FILEZ PEEPS CAN GRAB AFTER DEY FIND DIS RUNNIN GAEM ON LAN.
-  editScopeTitle: EDIT SHARIN RANGE
-  instanceToShare: RUNNIN GAEM
-  alterDownloadDescription: IF U NO WANT BREAK CURREN INSTANCE. U CAN ALSO MAKE NEW INSTANCE FROM UR FREN'S CONFIG. CLICK DA BUTTON BELOW TO MAKE INSTANCE.
-  baseInfo: BASIC SETTINGZ
-  description: AFTR U SHARE DA PROFILE, OTHR PLACE CAN DOWNLOD THESE FILEZ THRU UR COMPUTAH.
-  downloadDescription: PLZ CHECK DA FILEZ UR FREN GAVE U. PICK DA FILE U WANT TO DOWNLOD. IT WILL GO TO CURREN INSTANCE {name}.
-  downloadNotifyTitle: DOWNLOD INSTANCE FROM {user}
-  downloadTitle: DOWNLOD FILEZ FROM OTHR FRENS
-  filesToDownload: PICK FILEZ TO DOWNLOD
-  filesToShare: PICK FILEZ TO SHARE
-  share: SHAREZ
-  shareTitle: SHARE GAME FILEZ TO OTHR PLAYR
 BaseSettingGeneral:
   title: GENERAL
-HomeJavaIssueDialog:
-  incompatibleJava: BAD JAVA!
-  incompatibleJavaHint: CURREN JAVA MITE BE BAD FOR SELECTED MINECWAFT!
-  missingJava: WHERE IZ JAVA?
-  missingJavaHint: 'TEH LAUNCHER CANNOT FIND ANY JAVA IN UR COMPUTAH. U CAN:'
-  optionSwitch:
-    name: SWITCH TO {version}
 HomeLaunchMultiInstanceDialog:
   confirm: YAS, LAUNCH!
   description: U R LAUNCHING MANY INSTANCES OF MINECWAFT. U SURE?
@@ -36,30 +11,7 @@ ago:
   hour: '{duration} HOUR AGO | {duration} HOURZ AGO'
   minute: '{duration} MINIT AGO | {duration} MINITZ AGO'
   second: '{duration} SEC AGO | {duration} SECZ AGO'
-askAICrash:
-  copyPrompt: COPY DA PROMPT TO ASK AI
-  description: LET AI HALP U TO UNDERSTAND DA GAME CRASH! FOLLOW DA INSTRUKSHUNS BELOW TO ASK AI ABOUT THIS GAME CRASH!
-  selectPlatform: OPEN AN AI PLATFORM AN PASTE DA PROMPT U JUS COPIED.
 authProfileAddedNotification: AUTH PROFILE {name} ADDED
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
 backup:
   title: 'Backup & Restorez'
   description: Back up and restore your settings, collections, themes, and game instances
@@ -292,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: CLICK TO INSTALL THIS VERSHUN
     name: BAD VERSHUN JAR FUR MINECWAFT %{version}.
-  incompatibleJava:
-    name: TEH JAVA VERSHUN {javaVersion} IS NOT GOOD FOR {version}!
   instanceFiles:
     description: TEH INSTANCE INSTALLASHUN INCLUDES {counts} FILEZ.
     title: INCOMPLETED INSTANCE INSTALLASHUN
-  invalidJava:
-    name: BAD JAVA LOCASHUN.
   missingJava:
     message: CLICK TO FIX DIS PROBLEM
     name: CANNOT FIND JAVA TO LAUNCH MINECWAFT!
@@ -330,11 +278,6 @@ duration:
   hour: '{duration} HOUR | {duration} HOURZ'
   minute: '{duration} MINIT | {duration} MINITZ'
   second: '{duration} SEC | {duration} SECZ'
-env:
-  select:
-    all: PICK ALL
-    fit: PICK FIT
-    none: PICK NONE
 errors:
   BadForgeInstallerJarError: CANNOT PARSE FORGE INSTALLER JAR FILE. MAYBE DA FORGE HAZ NEW INSTALLER FILE FORMAT? CONTACT DEVS IF THIS ISSUE PERSISTS.
   BadInstanceType: 'NOT A VALID INSTANCE: {type}'
@@ -349,8 +292,6 @@ errors:
   HeadersTimeoutError: HTTP HEADER TIMEOUT
   NotFoundError: 404 NOT FOUND (SAD CAT)
   SocketError: SERVER SOCKET OOPSIE
-eula:
-  body: BY CHECKING DA CHECKBOX BUTTON, U R INDICATING UR AGREEMENT TO MINECWAFT'S {eula}.
 exception:
   http: HTTP REQUEST TO {url} FAILED. STATUS CODE {statusCode}. {code}. PLZ RETRY OR CHECK UR NETWORK. IF THIS ERROR PERSISTS, PLZ SEND A REPORT TO DEV TEAM.
 extensions:
@@ -426,21 +367,6 @@ gameType:
   survival: SURVIVUL MODE
 help: HALP
 home: HOME
-importModpack:
-  fromFileSubtitle: PICK A .zip OR .mrpack FILE
-  fromUrl: FROM LINK / URL...
-  fromUrlSubtitle: INSTALL MODPACK FROM URL
-  fromUrlDescription: 'TYPE OR PASTE TEH MODPACK URL:'
-  invalidUrl: PLZ GIV VALID URL (http:// OR https://)
-  selectVersion: PICK MODPACK VERSHUN
-  selectVersionDescription: 'PICK TEH VERSHUN OF {name} TO INSTALL:'
-  pmcProtected: Planet Minecraft IZ GUARDED BY Cloudflare. PLZ COPY DIRECT DOWNLOD OR MIRROR LINK FROM TEH PAGE.
-  netdiskTitle: CLOUD DRIVE DOWNLOD
-  netdiskDescription: DIS MODPACK VERSHUN LIVES ON AN OUTSIDE CLOUD DRIVE. CLICK BELOW TO OPEN DOWNLOD PAGE IN UR BROWSER, THEN DRAG AN DROP TEH DOWNLOADED .zip OR .mrpack INTO XMCL.
-  openNetdisk: OPEN CLOUD DRIVE
-  netdiskOpened: CLOUD DRIVE LINK OPENED IN UR BROWSER AN COPIED TO CLIPBOARD.
-  noReleasesFound: NO .mrpack OR .zip MODPACK RELEASEZ FOUND IN DIS REPO.
-  name: IMPORT MODPACK
 installAssets:
   asset: INSTALL {count} ASSETZ
   assetIndex: CHECK ASSETZ INDEX FILE
@@ -499,12 +425,9 @@ instance:
   iconUrl: ICON URL
   installModpack: UPDAT INSTANCE FROM MODPACK
   lastPlayed: LAST PLAYED
-  launchArguments: LAUNCH ARGUMENTS PREVUE
   launchServer: LAUNCH LOCALHOST SERVR
   linkFileDesc: THIS WILL OVERWRITE INSTANCE LOCAL {file} WITH DA GLOBAL {file}. ARE U SURE TO LINK IT?
   linkFileTitle: ARE U SURE TO LINK {file}?
-  mcOptions: MINECWAFT OPSHUNS
-  mcOptionsHint: ADDITIONAL MINECWAFT LAUNCH ARGUMENTS
   name: PROFILE NAME
   nameHint: TEH NAME OF DA MODPACK
   nameNoCyrillic: TEH NAME CANNOT CONTAIN CYRILLIC CHARACTRZ
@@ -512,10 +435,6 @@ instance:
   openCrashReportFolder: OPEN CRASH REPORT FOLDR
   openLogFolder: OPEN LOG FOLDR
   playtime: PLAYTIME
-  preExecCommand: PRE-EXECUTE COMMAND
-  preExecCommandHint: COMMAND TO EXECUTE BEFORE LAUNCHING MINECWAFT
-  prependCommand: PREPEND COMMAND
-  prependCommandHint: THIS WILL PREPEND THIS COMMAND BEFORE ALL DA LAUNCH COMMANDS
   requireName: TEH NAME IS REQUIRED
   resolution: RESOLUSHUN
   resolutionPreset: RESOLUSHUN PRESET
@@ -526,10 +445,6 @@ instance:
   useSharedOptionsDesc: THIS WILL LINK DA OPTIONS.TXT TO A SHARED FILE ACROSS INSTANCE
   useSharedServersList: USE SHARED SERVERZ LIST
   useSharedServersListDesc: THIS WILL LINK DA SERVERS.DAT TO A SHARED FILE ACROSS INSTANCE
-  vmOptions: JVM OPSHUNS
-  vmOptionsHint: EXTRA ARGUMENTS TO PASS TO DA JVM
-  vmVar: ENVIRONMENT VARIABLEZ
-  vmVarHint: CLICK + BUTTON TO ADD ENVIRONMENT VARIABLEZ
   width: WIDTH
   envVarKey: Keey
   envVarValue: Vallue
@@ -571,9 +486,6 @@ instanceSetting:
   showLogHint: THIS WILL POPUP A WINDOW TO STREAM MINECWAFT LOG AFTER GAME STARTED
   syncGameLanguage: SYNCRONIZ GAEM LANGWIDGE
   syncGameLanguageDescription: AUTOMATICKLY SYNC MAINCRAFT LANGWIDGE WIF LAUNCHR LANGWIDGE ON LAUNCH
-instanceTemplate:
-  ftb: THIS IS A FTB MODPACK
-  preview: MODPACK PREVUE
 instanceUpdate:
   basic: SETTING UPDAT
   files: FILE UPDATS
@@ -592,42 +504,15 @@ instances:
   fix: REPAIR
   folder: FOLDR
   folderSetting: FOLDR SETTINGZ
-  importFolderDescription: IMPORT MINECWAFT TO LAUNCHER
-  loadingFiles: LOADING MODPACK FILEZ
-  edition: EDISHUN
-  editionJava: JAVA EDISHUN
   editionBedrock: BEDROK EDISHUN
   editionBedrockHint: BEDROK EDISHUN LAUNCHZ THRU DA MICROSOFT STORE APP. U NEEDZ 2 OWN A BEDROK LICENSE. MODZ, REZORCE PAKZ AN OTHR JAVA-ONLY THINGZ R NOT AVAILABUL.
   editionBedrockWindowsOnly: BEDROK EDISHUN ONLY WERKZ ON DA WINDOWS BUILD.
-  linkSharedFolders: SHARE FOLDERZ AKROSS INSTANCEZ
-  linkSharedFoldersHint: MAEK DEEZ FOLDERZ INTO LINKZ TO DA LAUNCHR SHARD FOLDERZ SO DIS INSTANCE SHARE STUFFZ WIF ALL OTHR LINKD INSTANCEZ. DIS NOT A COPY — CHANGEZ IN ONE INSTANCE SHOW UP IN ALL OF DEM. UNCHEKD FOLDERZ STAY PRIVATE TO DIS INSTANCE.
-  linkFailed: COULD NOT LINK DA {folder} FOLDR TO DA SHARD FOLDR
   addPrismDescription: Imprt exsting PrismLauncher instnce.
 items:
   count: '{count} ITEMZ'
   total: '{total} TOTAL'
 java:
-  allocatedLong: USE SYSTEM DEFAULT JAVA
-  allocatedShort: AUTO ALLOCATED
-  importFromFile: IMPORT JAVA FROM FILE
-  invalid: BAD JAVA LOCASHUN
-  location: JAVA LOCASHUN
-  maxMemory: MAX MEMRY
-  memory: JAVA MEMRY
   memoryAuto: AUTO
-  memoryManual: MANUAL
-  memoryUnassigned: UNASSIGN
-  minMemory: MIN MEMRY
-  name: Java
-  noMemory: DO NOT LIMIT MEMRY USAG
-  refresh: REFRESH LOCAL JAVA
-  systemMemory: 'SYSTEM FREE MEMRY: {free} / {total}'
-  allocation: Allocaeted
-  autoHint: Min growz wif moar modz; max uzes ur freeshmemz.
-  change: Chaneg
-  locationHint: No Java pikd — uzin systmm defawlt
-  openFolder: Open Java fldr
-  presets: Presetz
 labyMod:
   disable: DISABL LABYMOD
   empty: LABYMOD DOES NOT SUPPORT CURREN MINECWAFT
@@ -700,8 +585,6 @@ localVersion:
   auto: AUTO COMPUTED
   empty: NO VERSHUN INSTALLED
   hint: LAUNCH A SPECIFIC LOCAL VERSHUN DIRECTLY
-  reinstallDescription: IF U THINK THIS VERSHUN INSTALLASHUN HAZ SOME PROBLEMZ, U CAN TRY TO REINSTALL IT.
-  reinstallTitle: REINSTALL {version}
   title: LOCAL VERSHUN | LOCAL VERSHUNS
 logLevel:
   error: OOPSIE
@@ -764,25 +647,19 @@ minecraftVersion:
   showAlpha: SHOW SNAPSHOT
   snapshot: SNAPSHOT
 mod:
-  collapseAllGroups: COLLAPSE ALL GROUPS
   acceptVersion: ACCEPT {version}
   applyGroupRules: APPLY SAVED GROUPING RULEZ
   compatible: COMPATIBLE MOD.
   createGroup: MAKE GROUP
   currentVersion: CURREN {current}
   denseView: DENSE VUE
-  description: Descripshun
   disableAll: DISABL ALL
-  dropHint: DROP MOD'S .JAR/.LITEMOD HERE TO IMPORT.
   duplicatedDetected: '{count} DUPLICATED MODZ'
   duplicatedDetectedDescription: FOUND MODZ WITH SAME MOD ID BUT DIFFERENT FILEZ. THIS MITE CAUSE MINECWAFT CRASH. PLZ PICK DA FILE U WANT TO KEEP.
   enableAll: ENABL ALL
   enabled: '{count} MODZ ENABLED'
   filter: FILTR MODZ
   group: GROUP UP
-  groupInstalled: GROUP INSTALLED MODZ
-  hideInstalled: HIDE INSTALLED MODZ
-  installedFilterOff: SHOW ALL MODZ
   groupName: GROUP NAME
   groupNameRequired: GROUP NAME IS REQUIRED
   hasUpdate: MOD HAZ A NEW VERSHUN!
@@ -790,25 +667,17 @@ mod:
   incompatibleHint: SHOW INCOMPATIBLE
   incompatibleHintDescription: SOME MODZ DEPENDENCIEZ MITE BE MISSING. OR SOME DEPENDENCIEZ VERSHUNS DO NOT MATCHED.
   maybeCompatible: MAYBE COMPATIBLE.
-  modloaderSelectHint: TEH MOD SUPPORT FOLLOWING MOD LOADERZ. PLZ PICK ONE TO INSTALL.
-  modloaderSelectNotSupported: NOT FOUND {modloader} FUR MINECWAFT {minecraft}
   mods: '{count} MODZ'
   name: MOD | MODZ
   newFolder: NEW FOLDR
   noGroupsFound: NO GROUPS FOUND
   noGroupsYet: NO GROUPS YET. MAKE ONE!
-  noModLoaderHint: DONT FORGET TO ENABL A MODLOADER TO USE MODZ!
   openLink: OPEN DA MOD URL {url}
-  search: SEARCH MODZ
   searchGroups: SEARCH GROUPS...
   searchOnMcWiki: LOOK UP {name} IN DA MC ENCYCLOPEDIA.
   selectOrCreateGroup: PICK OR MAKE GROUP
-  showDirectory: SHOW MODZ DIRECTORY
   showFile: SHOW DA MOD PATH {file}
-  showInModrinth: SHOW {name} IN MODRINTH
-  switchDefaultSource: DEFAULT MOD SOURC
   syncGroupRules: SAVE GROUPING RULEZ
-  toUpdate: '{count} UPDATS'
   ungroup: UNGROUP
 modFilter:
   clear: CLEAR FILTR
@@ -854,25 +723,10 @@ modified:
   save: SAVE
   unsaved: UR MODIFICASHUN IS UNSAVED!
 modpack:
-  author: AUTHOR NAME
-  authorHint: THIS MITE BE USED TO SIGN AN EXPORTED MODPACK (CURSEFORGE)
-  description: DESCRIPSHUN
-  descriptionHint: GENERAL DESCRIPSHUN FUR U MODPACK. MITE BE USED FUR EXPORTING AS CURSEFORGE MODPACK.
   dropHint: DROP MODPACK ZIP TO HERE TO IMPORT
-  emitCurseforge: EXPORT CURSEFORGE MODPACK
-  emitModrinth: EXPORT MODRINTH MODPACK
-  emitModrinthStrict: STRICT MODRINTH FORMAT
-  emitModrinthStrictDescription: ONLY DA URLS FROM 4 DOMAINS LISTED IN MODRINTH DOCUMENT ARE ALLOWED
   export: EXPORT AS MODPACK
-  exportDirectory: EXPORT DIRECTORY
-  exportDirectoryDescription: TEH MODPACK WILL BE EXPORTED TO DOWNLODS FOLDR BY DEFAULT
-  includeAssets: INCLUDE ASSETZ
-  includes: FILEZ TO INCLUDE
   modpackVersion: MODPACK VERSHUN
   name: MODPACK | MODPACKZ
-  overrides: OVERRIDES
-  url: URL
-  urlHint: TEH HOME PAGE URL OF UR MODPACK
 modpackImportConfirm:
   description: DETECT U DROP A FILE INTO DA LAWNCHER. ARE U TRYING TO IMPORT A MODPACK?
   title: ARE U TRYING TO IMPORT A MODPACK?
@@ -1036,110 +890,7 @@ modrinth:
   wikiUrl: WIKI
 modrinthCard:
   currentVersion: CURREN VERSHUN
-multiplayer:
-  joinDiscord: JOIN DISCORD
-  openConsumerPortal: OPEN CONSUMR PORTAL
-  refundHint: NEED REFUND? VISIT WAFFO CONSUMR PORTAL TO MANAGE UR ORDERS AN SUBSCRIPSHUNS.
-  togetherSupportHint: IF MULTIPLAYR NO WERK, JOIN R DISCORD AN CONTACT TEH DEV TEAM. WE HALP FIX IT.
-  autoShareAmbiguous: MANY GAEMS R RUNNIN. CHOOZ TEH INSTANCE HOSTIN TEH LAN WORLD SO XMCL CAN SHARE IT.
-  editSharingScope: EDIT SHARIN RANGE
-  gameAvailable: LAN GAEM IZ HERE
-  joinGame: JOIN GAEM
-  noRunningInstanceToShare: START A GAEM BFORE EDITIN ITS SHARIN RANGE
-  updateSharedInstanceConfirm: UPDAET AN PLAY
-  updateSharedInstanceDescription: SHARED MODZ R DIFFRUNT FROM {instance}. UPDAET DIS INSTANCE TO MATCH TEH HOST BFORE PLAYIN? CHANGED FILEZ WILL BE BAKD UP.
-  updateSharedInstanceTitle: UPDAET SHARED INSTANCE?
-  addFunds: Add moar funds
-  availableBalance: Funds nao available
-  balanceHint: Usable for XMCL Together servicez
-  billing: Billz
-  billingDescription: Manage relay access, ur Together Home plan, and payz.
-  billingError: Together billz cud not load. Try again in a lil moment.
-  buyTogether: Buy Together
-  cancelTogether: Cancel plan
-  checkout: Open Waffo checkout
-  connectionTogetherWarning: Room member haz been unable to connect to u fur a while. Try XMCL Together to make connectivity better fur everybuddy in teh room. Only teh room master needs Together.
-  masterPurchaseHint: Only teh room master needs Together Home to make connectivity better fur everybuddy in teh room.
-  natTogetherWarning: Ur router may haf trouble connecting to teh room master. If connections fail, try XMCL Together to improve connectivity between u and ur frenz. Only teh room master needs to buy Together fur teh room.
-  togetherName: Minecraft Together
-  trialDescription: One 7-day trial with 1 GB relay traffic. Much connect.
-  trialTitle: Connectivity trial
-  tryTogether: Try Together
-  month: month
-  orderStatus: 'Waffo order: {status}'
-  planDescription: 20 GB managed relay traffic every month, plus AI troubleshooting fur ur modpack.
-  waffoHint: Payments happen securely on Waffo Pancake. XMCL never gets ur card number, promise.
-  subscription:
-    active: Active nao
-    cancelled: Cancelled nao
-    payment_due: Payment due nao
-  trial:
-    active: Trial active nao
-    available: Free trial available, yay
-    expired: Trial used up
-    unavailable: Trial unavailable nao
-  loginRequiredDescription: P2P multiplayer uses XMCL onlinez. Sign in 2 an XMCL Account 2 continue.
-  loginRequiredTitle: Sign in 4 P2P multiplayer
-  complete: COMPLETE
-  confirm: CONFIRM
-  connections: CONNEKSHUNS
-  copied: COPIED!
-  copy: COPY
-  copyGroupToFriendHint: LET UR FRENS JOIN DA GROUP WITH THIS ID
-  copyLocalHint: |
-    "PLZ COPY DA LOCAL SDP TEXT AN SEND IT TO UR OBJECT TO HAZ UR OBJECT ENTER THIS TEXT IN DA JOIN CONNEKSHUN <SPAN>A TOKEN CAN BE ONLY USED FUR <SPAN STYLE="COLOR: RED; FONT-WEIGHT: BOLD;">ONE PEER</SPAN>! U CANNOT SEND DA SAME TOKEN TO MULTIPLE PEERS!</SPAN> <BR> <SPAN CLASS="HINT-TEXT" STYLE="FONT-STYLE: ITALIC;">IF U NEED TO CONNECT MULTIPLE PEERS, U NEED TO MAKE <SPAN STYLE="FONT-WEIGHT: BOLD; COLOR: RGBA(245, 158, 11)">MULTIPLE</SPAN> CONNEKSHUNS.</SPAN>"
-  createLocalToken: MAKE LOCAL TOKEN
-  currentIpTitle: DETECTED PUBLIC IP
-  currentNatTitle: 'CURREN NETWORK (NAT):'
-  difficultyLevelHint: TEH LEVEL OF DIFFICULTY CREATING A CONNEKSHUN
-  disconnect: DISCONNECT
-  disconnectDescription: ARE U SURE U WANT TO DISCONNECT WITH USER {user}({id})?
-  disconnected: DISCONNECTED
-  enterRemoteToken: ENTER REMOTE TOKEN
-  enterRemoteTokenHint: ONCE UR PEER ENTERS UR TOKEN, U NEED TO ENTER HIS TOKEN TO DA TEXT AREA BELOW. CLICK CONFIRM TO CONNECT.
-  exposedPortDescription: TEH PORT U EXPOSED TO OTHR PEERS
-  exposedPorts: FORWARDED PORTZ
-  gatheringIce: |
-    "PLZ WAIT FUR DA ICE SERVR TO COLLECT ENOUGH INFORMASHUN ABOUT UR NETWORK. IF U R IMPATIENT AN THERE IS ENOUGH INFORMASHUN, U CAN GIVE DA CURREN SDP TO DA OTHR PARTY IN ADVANCE AN CLICK NEXT PLZ SEND DA <SPAN CLASS="V-CHIP V-CHIP--LABEL V-SIZE--SMALL" STYLE="TEXT-FONT: BOLD" >LOCAL TOKEN</SPAN> TO UR PEER, U PEER ENTER UR TOKEN IN <SPAN CLASS="V-CHIP V-CHIP--LABEL V-SIZE--SMALL" STYLE="TEXT-FONT: BOLD"> JOIN CONNEKSHUN </SPAN> SECSHUN. <BR> TEH ICE SERVR MITE NEED SOME TIME TO COLLECT UR INFO TO MAKE <SPAN CLASS="V-CHIP V-CHIP--LABEL V-SIZE--SMALL" STYLE="TEXT-FONT: BOLD">LOCAL TOKEN</SPAN>.<BR> U DO NOT NEED TO WAIT UNTIL DA ICE STATUS IS COMPLETE. IF DA TOKEN BELOW REMAINS UNCHANGED, U CAN COPY IT AN SEND IT TO UR PEER."
-  groupId: GROUP ID
-  illegalTokenDescription: BAD TOKEN, PLZ MAKE SURE DA TOKEN FROM UR PEER IS CORRECT
-  initiateConnection: INITIATE CONNEKSHUN
-  joinConnection: IF UR PEER HAZ ALREADY INITIATED A CONNEKSHUN, U NEED TO JOIN CONNEKSHUN.
-  joinManual: JOIN
-  joinOrCreateGroup: JOIN/MAKE GROUP
-  joinOrCreateGroupHint: GET GROUP ID FROM UR FRENS OR MAKE A GROUP
-  kernel: P2P KERNEL
-  kernelDescription: USE EITHR NATIVE WEBRTC OR NODE-DATACHANNEL. ONLY SWITCH THIS WHEN UR P2P CONNEKSHUN SOMETIME CRASHES DA LAWNCHER WINDOW.
-  leaveGroup: LEAVE GROUP
-  localToken: LOCAL TOKEN
-  manualConnect: MANUALLY CONNECT
-  name: MULTIPLAYR ON LAN
-  networkInfo: NETWORK INFO
-  next: NEXT
-  otherExposedPortDescription: TEH PORT FORWARDED BY {user}
-  placeholder: CONNECT WITH OTHR USERS TO PLAY MINECWAFT ON LAN!
-  previous: PREVIOUS
-  receiveHint: AFTR DA OTHR PARTY ENTERS UR TOKEN, UR CONNEKSHUN WILL BE CREATED AUTOMATICALLY. NAO U CAN CLOSE DA DIALOG.
-  receiveRemoteTokenHint: PLZ ENTER DA TOKEN FROM UR PEER HERE.
-  remoteToken: REMOTE TOKEN
-  routerInfo: ROUTR INFO
-  sendTokenToRemote: SEND TOKEN TO REMOTE
-  share: SHARE INSTANCE CONFIG
-  sharing: SHARING FILEZ...
-  start: START
-  startNewP2PConnection: CLICK DA START BUTTON TO MAKE A NEW PEER CONNEKSHUN
-  connectionError: CONNEKSHN BORKED
-  connectionFailedHint: Cant connectz. Bof NAT typez maybe sad.
 myStuff: MAH STUFF
-natType:
-  blocked: BLOCKED
-  fullCone: FULL CONE
-  openInternet: OPEN INTERNET
-  restrictNat: RESTRICT NAT
-  restrictPortNat: RESTRICT PORT NAT
-  symmetricNat: SYMMETRIC NAT
-  symmetricUDPFirewall: SYMMETRIC UDP FIREWALL
-  unknown: UNKNOWN
 neoForgedVersion:
   disable: DISABL NEOFORGED
   empty: NEOFORGED DOES NOT SUPPORT {version}
@@ -1150,23 +901,6 @@ optifineVersion:
   disable: DISABL OPTIFINE
   empty: OPTIFINE DOES NOT SUPPORT MINECWAFT {version}
 optional: OPSHUNAL
-peerConnectionState:
-  closed: CLOSED
-  connected: CONNECTED
-  connecting: CONNECTING
-  disconnected: DISCONNECTED
-  failed: FAILED
-  name: CONNEKSHUN STATE
-  new: NEW
-peerGroupState:
-  closed: NOT IN GROUP
-  closing: CLOSED
-  connected: GROUP JOINED
-  connecting: CONNECTING
-peerIceGatheringState:
-  gathering: GATHERING ICE SERVR
-peerSignalingState:
-  have-local-offer: WAITING PEER DESCRIPSHUN
 presence:
   instance: IDLE IN INSTANCE {instance}
   instanceSetting: 'EDIT INSTANCE SETTING: {instance}'
@@ -1277,141 +1011,25 @@ search:
 server:
   launch: LAUNCH SERVR
   stop: STOP SERVR
-  acceptingMinecraftVersion: ACCEPTING MINECWAFT VERSHUN
   addServer: ADD SERVR
   address: SERVR ADDRSS
   addressHint: E.G. mc.hypixel.net
   bindUpstream: BIND 2 UPSTREAM
-  boundUpstream: UPSTREAM SERVR BOUND
   boundUpstreamHint: DIS INSTANC FOLLOWZ MINECRAFT VERSION OF DIS SERVR.
-  creationHint: PLZ FILL DA SERVR ADDWESS AN PING DA SERVR
   editServer: EDIT SERVR
   emptyHint: NO SERVRZ IN SERVERS.DAT YET. ADD ONE PLZ!
   entryCount: '{count} SERVR | {count} SERVRZ'
-  expectedVersions: SUPPORTED VERSHUNS
-  export: EXPORT SERVR
-  exportNoFilesHint: NO SERVR FILEZ FOUND. U CAN RUN SERVR ON LOCAL ONCE TO GENERATE SOME FILEZ.
-  exportOption: SERVER EXPORT OPSHUNS
-  exportSSHAuthenticationFailed: ALL AUTHENTICASHUN METHODS FAILED. PLZ CHECK USERNAME/PASSWORD OR PRIVATE KEY.
-  exportSSHOptions: SSH OPSHUNS
-  exportSSHPrivateKeyPath: SSH PRIVAT KEY PATH
-  exportSSHRemotePath: REMOTE SERVR PATH
-  exportToFolder: EXPORT TO FOLDR
-  filterVersion: FILTR SERVR RESPONDED MINECWAFT VERSHUN
-  host: HOST
-  hostHint: TEH HOST (WITH PORT) OF DA SERVR
-  hostRequired: PLZ ENTER DA SERVR IP ADDWESS
-  ipAddress: IP ADDWESS
   launchClient: LAUNCH CLIENT INSTEAD LOL
   launchPinned: PINNED
   launchTargetHint: DIS INSTANC JUMPS STRAIGHT INTO PINNED SERVR. SWITCH 2 CLIENT?
   maxPlayers: MAX PLAYRZ
-  motd: SERVER MOTD
   nameHint: NAME IN MULTIPLAYR LIST
-  nogui: NO SERVER GUI
-  onlineMode: ONLINE MODE
   pin: PIN SERVR
   pinAfterSave: PIN AS DEFAULT LAUNCH TARGET AFTER SAVIN
-  ping: PING
-  pings: PINGS
   pinnedHeader: 'PINNED: {name}'
-  players: PLAYRZ
   port: PORT
-  clearLog: CLEAR LOG
-  log: SERVR LOG
-  logWaiting: SERVR OUTPUT APPEARS HER AFTUR LAUNCH.
-  remoteActionSuccess: Done.
-  remoteAdmin: REMOTE SERVR BOSS
-  remoteAuthMethod: LOGIN WAY
-  remoteAuthPassword: PASSWURD
-  remoteAuthPrivateKey: SECRET KEY
-  remoteBuildOfflinePackage: MAEK OFFLINE PACKAG
-  remoteConnected: CONNECTD
-  remoteConnection: CONNECTSHUN
-  remoteDeployment: DEPLOYMNT
-  remoteDeploy: DEPLOY
-  remoteDisk: DISK
-  remoteConfigFiles: CONFIG FILEZ
-  remoteExtraFiles: EXTRA FILEZ
-  remoteForgetCredentials: FORGET SAVED LOGINS
-  remoteInstallService: INSTALL SERVIZ
-  remoteLoad: LOAD AVRG
-  remoteLog: REMOT LOG
-  remoteMemory: MEMORI
-  remoteMods: MODZ
-  remoteNoWorldSelected: NO WORLD PICKED
-  remoteJavaRequired: NO JAVA ON REMOTE LINUX BOX.
-  remoteLinuxRequired: ONLY LINUX SSH TARGETS ALLOWED.
-  remoteNotConfiguredHint: FILL IN CONNECTION DEETS ABOVE N SAVE 2 GET STATUS N LOGZ.
-  remotePathNotWritable: CANT WRITE 2 REMOTE SERVR DIR.
-  remotePathWritable: DIR IS WRITABLE YAY
-  remotePolicyInitialize: INIT ONCE
-  remotePolicyMirror: MIRROR
-  remotePolicyOverlay: OVERLAY
-  remotePolicyPreserve: KEEP ALONE
-  remotePreview: PREVIEW CHANGEZ
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: REMEMBER LOGINS (KEYCHAIN)
-  remoteReconcileReady: TARGET MATCHES INSTANC N CONSOLE IS CONNECTED.
-  remoteRestartService: RESTART
-  remoteSavedCredentialsHint: USIN SAVED LOGINS — LEAVE BLANK 2 KEEP.
-  remoteService: systemd SERVIZ
-  remoteServiceActive: RUNNIN
-  remoteServerInstalled: SERVR FILEZ INSTALLED
-  remoteServiceName: SERVIZ NAME
-  remoteServiceNameHint: systemd --user NAME, E.G. mc-server
-  remoteSelectedFiles: '{count} SERVR FILEZ PICKED'
-  remoteSelectFiles: PICK FILEZ
-  remoteStartCommand: START COMMAND
-  remoteStartCommandHint: E.G. java -jar server.jar nogui
-  remoteStartService: START
-  remoteStatus: STATUS
-  remoteSystemdRequired: systemd USER SERVIZ NOT FOUND ON REMOTE BOX.
-  remoteTargetName: TARGET NAME
-  remoteStopService: STOP
-  remoteStopWatchLog: STOP WATCHIN LOG
-  remoteTestConnection: TEST CONNECTION
-  remoteTestConnectionSuccess: CONNECTED OK!
-  remoteUninstallConfirmMessage: DIS DISABLEZ N REMOVES systemd UNIT ON REMOTE BOX. FILES STAY.
-  remoteUninstallService: UNINSTALL SERVIC
-  remoteRunInstall: INSTALL OR FIX
-  remoteWatchLog: WATCH LIVE LOGZ
-  remoteWorldAlways: REPLACE ON EVRY SYNC
-  remoteWorldDeployment: INSTANC WORLD UPLOAD
-  remoteWorldDeploymentHint: ROUTINE SYNC NEVER TOUCHES WORLD UNLESS TOLD 2.
-  remoteWorldFirstInstall: ONLY UPLOAD IF TARGET HAS NO WORLD
-  remoteWorldNever: NEVER UPLOAD WORLD
-  remoteWorldPresent: TARGET WORLD
-  remoteWorld: WURLD
-  remoteWorldWillDeploy: SELECTED WORLD WILL BE UPLOADED IN DIS SYNC.
   serverName: SERVR NAME
-  serviceInstall: INSTALL SERVIC
-  serviceManagedLaunch: USE OS SERVIC 4 LAUNCH N STOP ACTIONZ
-  serviceManager: SYSTM SERVIC
-  serviceName: SERVIC NAME
-  serviceNameHint: IDENTIFIR WIT LETTRS, NUMBRS, DOTS OR DASHES
-  serviceNotInstalled: NOT INSTALLD
-  serviceStartCommand: START COMMND
-  serviceSystemd: systemd --user
-  serviceWindows: Windows Servic
-  serviceWindowsCommandHint: JAVA COMMND IS GENERATD FRUM DIS INSTANZ.
   serversListTitle: SERVR LIST
-  target: SERVR TARGET
-  targetLocal: localhost
-  targetLocalHint: INSTALL N RUN SERVR ON DIS COMPUTUR.
-  targetRemote: SSH TARGET
-  targetRemoteHint: CONNECT, INSTALL, LAUNCH N WATCH SERVR OVER SSH.
   unbindUpstream: UNBIND
   unknown: UNKNOWN SERVR
   unknownDescription: UNKNOWN SERVR. PLZ REFRESH
@@ -1422,23 +1040,12 @@ server:
   upstreamUpdateAvailable: SERVR NOW RUNS MINECRAFT {version}. CLICK 2 APPLY.
   upstreamUpdateHint: APPLIES MINECRAFT VERSION 2 DIS INSTANC.
   useAsUpstreamHint: INSTANC WILL FOLLOW SERVR MINECRAFT VERSION.
-  version: SERVER REQUIRES VERSHUN
-  versionHint: TEH MINECWAFT VERSHUN TO PING
-  worldPreserve: KEEP TARGET WORLD
 serverStatus:
   nohost: §4CANNOT FIND HOST!
   ping: PING...
   refuse: §4SERVER REFUSED!
   timeout: §4CONNECT SERVR TIMEOUT!
-agent:
-  accessRequiredHint: SUBSCRIEB TO XMCL TO USE TEH BUILT-IN AGENT, OR CONFIGURE UR OWN AI PROVIDR IN SETTINGZ.
-  subscribeXmcl: SUBSCRIEB TO XMCL
-  notConfiguredHint: SET AN API KEY, MODEL AN OPENAI-COMPATIBL ENDPOINT IN SETTINGZ → GENERAL → AI AGENT. FUR EXAMPL, USE OPENAI OR A CLAUDE-COMPATIBL GATEWAY.
 setting:
-  aiAgentApiKeyDescription: CONFIGUR AN OPENAI-COMPATIBL PROVIDR, SUCH AS OPENAI OR A GATEWAY FUR CLAUDE. TEH KEY IZ STORED LOCALY ON DIS DEVICE.
-  aiAgentApiKeyPlaceholder: OPENAI OR CLAUDE PROVIDR API KEY
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 OR claude-sonnet-4-5
   themeStore:
     name: TEEM STOR
     description: SAVE N MANAGE GLOBL TEEMZ
@@ -1458,7 +1065,6 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: FRU CUD SINING ON WUNDUZ PROVDED BI SIGNPATH.IO, CERTIFICAT BI SIGNPATH FUNDASHUN
   aboutSponsors: 😇 SPONORZ 😇
-  advancedJavaOptions: ADVANCED JAVA OPSHUNS
   advancedSettings: ADVANCED SETTINGZ
   advancedSettingsHint: DANGR ZONE - RESET OR MANAG LAUNCHER DATA
   apiSets:
@@ -1513,8 +1119,6 @@ setting:
   darkThemeDescription: PICK BETWEEN DARK OR LIGHT THEEM
   developerMode: DEVELOPR MODE
   developerModeDescription: DEVELOPR MODE IS FUR TESTING UR OWN MODZ
-  disableTelemetry: DISABL TELEMETRY
-  disableTelemetryDescription: XMCL WILL COLLECT DA GAME LAUNCH AN USER LOGIN EVENTS.
   enableDedicatedGPUOptimization: ASSIGN DEDICATED GPU
   enableDedicatedGPUOptimizationDescription: THIS OPSHUN WILL ASSIGN DEDICATED GPU TO MINECWAFT PROCESS.
   enableDiscord: ENABL DISCORD PRESENCE
@@ -1524,8 +1128,6 @@ setting:
   exportSettingsHint: SAVE UR CURREN SETTINGZ TO A FILE
   general: GENERAL
   githubRelease: GITHUB RELEASE
-  globalJava: Favrit Java
-  globalJavaHint: In auto moad dis Java getz tride furst, an only fallz bak to auto-detekshun when it no can play nice wif teh gaem verzhun.
   globalSetting: GLOBAL INSTANCE SETTING
   globalSettingHint: INSTANCE WILL USE THESE SETTINGZ BY DEFAULT.
   importSettings: IMPORT SETTINGZ
@@ -1552,7 +1154,6 @@ setting:
   maxSockets: PER HOST
   maxSocketsDescription: LIMIT DA MAXIMUM NUMBR OF SOCKETS TO ALLOW PER HOST OR FUR ALL HOSTS IN TOTAL. 0 MEANS NO LIMIT.
   maxSocketsTitle: MAX HTTP SOCKETS
-  memoryAssignment: MEMRY ASSIGNMENT
   migrateFromOther: IMPORT FROM OTHR LAUNCHER
   minecraftOptions: MINECWAFT OPSHUNS
   name: GLOBAL SETTING | GLOBAL SETTINGZ
@@ -1567,11 +1168,6 @@ setting:
     repulse: REPULSE
   particleModeDescription: PICK DA PARTICLE CLICK BEHAVIOR
   quickLaunchSettings: QUICK LAUNCH
-  replaceNative: REPLACE NATIVE LIBRAWRIES
-  replaceNativeDescription: REPLACE NATIVE LIBRAWRIES ACCORDING TO UR COMPUTER'S ARCH.
-  replaceNatives:
-    all: ALL
-    legacy: LEGACY VERSHUN ONLY
   resetAllSettings: RESET ALL SETTINGZ
   resetAllSettingsConfirmMessage: THIS WILL PERMANENTLY DELET ALL SETTINGZ, ACCOUNTS, INSTANCES, GROUPS, AN CACHED DATA. THIS ACSHUN CANNOT BE UNDONE. U SURE?
   resetAllSettingsConfirmTitle: RESET ALL SETTINGZ?
@@ -1766,17 +1362,6 @@ theme:
   selectVideo: PICK VIDEO
   title: X MINECWAFT LAUNCHER
 title: X MINECWAFT LAUNCHER
-transportType:
-  host: HOST CANDIDATE
-  prflx: PEER REFLEXIVE CANDIDATE
-  relay: RELAY CANDIDATE
-  srflx: SERVER REFLEXIVE CANDIDATE
-turnRegion:
-  fr: FRENCE
-  guangzhou: GUANGZHOU, CHINA
-  hk: HONG KONG
-  liaoning: LIAONING, CHINA
-  po: POLAND
 tutorial:
   feedbackDescription: IF U ENCOUNTER ANY PROBLEMZ, PLZ CLICK THIS BUTTON TO SEND FEEDBACK!
   hideNewsHeaderDescription: U CAN SEE DA NEWZ SHOWCASE ON DA LEFT. CLICKING THIS BUTTON CAN HIDE THIS SHOWCASE.
@@ -1785,10 +1370,6 @@ tutorial:
     appearanceThemeTitle: INSTANC LOOKZ
     iconDescription: CLICK 2 CHANGE PICTUR.
     iconTitle: INSTANC PICTUR
-    javaDescription: PICK UR JAVA.
-    javaImportDescription: IMPORT JAVA FROM LOCAL DISK.
-    javaImportTitle: IMPORT JAVA
-    javaTitle: JAVA LIST
     modpackExportDescription: BUILD UR INSTANC INTO READY 2 SHARE PACK.
     modpackExportTitle: EXPORT PACK
     modpackFilesDescription: CHOOSE CONFIGS, MODS N STUFF 4 CLIENT N SERVR.
@@ -1836,15 +1417,6 @@ tutorial:
     profileDescription: SWAP UR ACCOONTS N LOGINS.
     skinTitle: PRETTY SKINZ N CAPEZ
     skinDescription: 3D PREVIEW UR CAT, SWAP SKINZ N WEAR CAPEZ.
-  multiplayer:
-    railTitle: INTERWEBS N STUFF
-    railDescription: CHECK NAT, INTERWEB STATUS N SETTINZ.
-    groupTitle: JOIN OR HOST ROOM
-    groupDescription: PUT IN ROOM CODE OR MAEK UR OWN ROOM PLZ.
-    joinDescription: CLICK 2 JOIN OR MAEK NEW ROOM.
-    contentTitle: FANZ IN ROOM
-    contentDescription: SEE PING N SHARE RUNNIN MINECRAFT TO TEH SQUAD.
-    manualDescription: DIRECT P2P WIF FRENZ USIN SDP HAX.
   resourcepack:
     searchTitle: FIND TEXTUREZ
     searchDescription: SEARCH PACKS ON MODRINTH, CURSEFORGE OR DISK.
@@ -1889,10 +1461,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Unrezolvd Filez
   via: via {source}
-upstream:
-  downgrade: DOWNGRADE
-  onlyShowCurrentVersion: ONLY SHOW CURREN MINECWAFT VERSHUN
-  update: UPDAT
 user:
   accessToken: ACCESS TOKEN
   authMode: AUTH SERVIC
@@ -2019,51 +1587,9 @@ reinstall:
   name: Reinstol {version}
 blueprint:
   name: BlooPrint | BlooPrints
-  count: '{count} blooPrints'
-  searchLocal: Find blooPrints here...
-  searchOnline: Find blooPrints on teh interwebs...
-  market: Market
-  provider: Source
-  import: Import
-  openFolder: Open teh folder
-  refresh: Refresh
   empty: No blooPrints found. Import a .litematic / .schem / .nbt file or browse teh market.
-  dropHint: Drop blooPrint files (.litematic / .schem / .nbt) here 2 import.
   selectHint: Pick a blooPrint 2 preview it.
-  blocks: '{count} blockz'
-  materials: Stuffz
-  findMod: Find teh mod 4 this namespace
-  compatible: Works good
-  incompatible: Missing modz
-  missingNamespaces: 'Missing modz 4: {namespaces}'
   install: Install
-  goTo: Web site
-  byAuthor: by {author}
-  noDescription: No description, soz.
-  mixedSources: Results mixed from all sources. Some iz browse-only — open teh web site 2 download.
-  preview:
-    loading: Loading preview...
-    empty: This blooPrint has no blockz 2 show.
-    hint: '{count} blockz · {x}×{y}×{z}'
-    controls: 'WASD: movez · Space/Shift: up/down · Drag: lookz · Scroll: zoomz'
-  convert:
-    title: Convert format
-    hint: Convert this blooPrint 2 another format. A new file will be made.
-    target: Target format
-    action: Convert
-  replace:
-    title: Replace blockz
-    simple: Simple replace
-    precise: Precise replace
-    simpleHint: Replace all blockz of one type.
-    preciseHint: Replace only blockz matching teh given properties.
-    from: From
-    to: To
-    addRule: Add rule
-    newFile: New file
-    action: Replace
-  formats:
-    structure: Vanilla Structure
 gamepad:
   connected: Controller Connected
   guideTitle: Controller Controls

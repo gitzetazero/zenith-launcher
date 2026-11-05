@@ -1,95 +1,17 @@
-AppAddInstanceDialog:
-  choiceTitle: Виявлено кілька профілів запуску. Будь ласка, виберіть один для імпорту.
-  createTitle: Створити гру
-  serverTitle: Введіть адресу вашого сервера
-AppShareInstanceDialog:
-  editScopeDescription: Виберіть файли, які інші учасники зможуть отримати після виявлення цієї запущеної гри в локальній мережі.
-  editScopeTitle: Змінити область поширення
-  instanceToShare: Запущена гра
-  alterDownloadDescription: Якщо ви не хочете псувати поточний екземпляр. Ви також можете створити новий екземпляр з конфігурації вашого колеги. Натисніть кнопку нижче, щоб створити екземпляр.
-  baseInfo: Основні налаштування
-  description: Після того, як ви поділитеся профілем, інші зможуть завантажувати ці файли через ваш ПК.
-  downloadDescription: Будь ласка, перевірте файли, надані вашим колегою. Виберіть файли, які ви хочете завантажити. Вони будуть розміщені в поточному екземплярі {name}.
-  downloadNotifyTitle: Завантажити екземпляр від {user}
-  downloadTitle: Завантажити файли від інших користувачів
-  filesToDownload: Виберіть файли для завантаження
-  filesToShare: Виберіть файли для спільного доступу
-  share: Поділитися
-  shareTitle: Поділитися файлами гри з іншим гравцем
 BaseSettingGeneral:
   title: Загальні
-HomeJavaIssueDialog:
-  incompatibleJava: Несумісна Java
-  incompatibleJavaHint: Поточна Java може бути несумісною з обраним Minecraft!
-  missingJava: Java відсутня
-  missingJavaHint: 'Лаунчер не може виявити жодної Java на вашому комп''ютері. Ви можете:'
-  optionSwitch:
-    name: Перемкнутися на {version}
 HomeLaunchMultiInstanceDialog:
   confirm: Так, запустити
   description: Ви запускаєте кілька екземплярів Minecraft. Ви впевнені?
   title: Кілька екземплярів
 SettingMigrationDialog:
   selectRootDirectory: Вибрати кореневий каталог
-agent:
-  accessRequiredHint: Оформіть підписку XMCL, щоб використовувати вбудований Agent, або налаштуйте власного постачальника ШІ в налаштуваннях.
-  subscribeXmcl: Оформити підписку XMCL
-  title: XMCL Agent
-  statusReady: Готово
-  statusWorking: Працюю…
-  statusDisabled: Вимкнено — немає API key
-  reset: Скинути розмову
-  notConfiguredTitle: Agent не налаштовано
-  notConfiguredHint: Вкажіть API key, модель та OpenAI-сумісний endpoint у Налаштування → Загальні → AI Agent. Наприклад, використайте OpenAI або gateway, сумісний із Claude.
-  openSettings: Відкрити налаштування
-  setupGuide: Посібник з налаштування
-  emptyHint: Попросіть агента перевірити екземпляр, увімкнути/вимкнути моди, читати логи або діагностувати краш.
-  suggestion1: Оновіть цей екземпляр до новішої версії Minecraft і оновіть моди
-  suggestion2: Мої моди падають — знайдіть причину та підкажіть, як виправити
-  suggestion3: 'Зібрати модпак: знайдіть моди для потрібної функції та встановіть їх у цей екземпляр'
-  thinking: думаю…
-  callingTool: виклик {name}…
-  inputPlaceholder: Запитайте агента… (Enter — надіслати, Shift+Enter — новий рядок)
-  disabledPlaceholder: Agent вимкнено
-  toggleHint: перемкнути
 ago:
   day: '{duration} день тому | {duration} дні тому | {duration} днів тому'
   hour: '{duration} годину тому | {duration} години тому | {duration} годин тому'
   minute: '{duration} хвилину тому | {duration} хвилини тому | {duration} хвилин тому'
   second: '{duration} секунду тому | {duration} секунди тому | {duration} секунд тому'
-askAICrash:
-  copyPrompt: Скопіюйте підказку, щоб запитати AI
-  description: |-
-    Нехай AI допоможе вам зрозуміти краху гри!
-    Дотримуйтесь інструкцій нижче, щоб запитати AI про цю гру!
-  selectPlatform: Відкрийте платформу AI та вставте підказку, яку ви щойно скопіювали.
 authProfileAddedNotification: Профіль автентифікації {name} додано
-bedrock:
-  description: Minecraft Bedrock Edition встановлюється та запускається через Microsoft Store. Вам потрібно мати ліцензію Bedrock на вашому обліковому записі Microsoft.
-  install: Завантажити через Microsoft Store
-  installFailed: Не вдалося відкрити Microsoft Store
-  installed: 'Встановлено: {version}'
-  launchHint: Використовуйте кнопку «Запуск», щоб запустити Bedrock Edition.
-  installBedrockVersion: Завантаження Bedrock {version}
-  licenseRequired: Увійдіть за допомогою облікового запису Microsoft, який володіє Minecraft, щоб установити та грати в Bedrock Edition.
-  refresh: Оновити
-  versionsTitle: Менеджер версій
-  versionsHint: Завантажуйте кілька версій Bedrock із серверів Microsoft і перемикайтеся між ними. Windows може зареєструвати лише одну версію одночасно.
-  versionsError: Не вдалося завантажити список версій. Перевірте мережу та спробуйте ще раз.
-  channel: Канал
-  channelRelease: Реліз
-  channelBeta: Бета
-  channelPreview: Попередня версія
-  active: Активна
-  play: Грати
-  download: Завантажити
-  installedTag: Встановлено
-  developerModeRequired: Для реєстрації завантаженої версії потрібно ввімкнути режим розробника Windows.
-  enableDeveloperMode: Увімкнути режим розробника
-  enableDeveloperModeFailed: Не вдалося ввімкнути режим розробника
-  downloadFailed: Не вдалося завантажити Bedrock {version}
-  launchFailed: Не вдалося запустити цю версію Bedrock
-  removeFailed: Не вдалося видалити Bedrock {version}
 backup:
   title: Резервне копіювання
   description: Створення та відновлення резервних копій налаштувань, колекцій, тем та інстанцій
@@ -322,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: Натисніть, щоб встановити цю версію
     name: Пошкоджено jar-файл версії для Minecraft %{version}.
-  incompatibleJava:
-    name: Версія Java {javaVersion} не підходить для {version}!
   instanceFiles:
     description: Встановлення екземпляра включає {counts} файлів.
     title: Незавершене встановлення екземпляра
-  invalidJava:
-    name: Недійсне розташування Java.
   missingJava:
     message: Натисніть, щоб вирішити цю проблему
     name: Не вдалося знайти Java для запуску Minecraft!
@@ -355,11 +273,6 @@ duration:
   hour: '{duration} година | {duration} години'
   minute: '{duration} хвилина | {duration} хвилини'
   second: '{duration} секунда | {duration} секунди'
-env:
-  select:
-    all: Вибрати все
-    fit: Вибрати відповідні
-    none: Нічого не вибирати
 errors:
   bedrockUnsupportedPlatform: Minecraft Bedrock Edition підтримується лише у Windows.
   bedrockNotInstalled: Minecraft Bedrock Edition не встановлено.
@@ -378,8 +291,6 @@ errors:
   HeadersTimeoutError: Час очікування заголовків HTTP-запиту вичерпано
   NotFoundError: 404 Не знайдено
   SocketError: Помилка сокета сервера
-eula:
-  body: Поставивши прапорець, ви погоджуєтеся з {eula} Minecraft.
 exception:
   http: HTTP-запит до {url} не вдався. Код стану {statusCode}. {code}. Будь ласка, спробуйте ще раз або перевірте ваше мережеве з'єднання. Якщо ця помилка не зникає, будь ласка, надішліть звіт команді розробників.
 extensions:
@@ -462,21 +373,6 @@ gameType:
   survival: Режим виживання
 help: Допомога
 home: Головна
-importModpack:
-  name: Імпортувати модпак
-  fromFileSubtitle: Виберіть файл .zip або .mrpack
-  fromUrl: Через посилання / URL...
-  fromUrlSubtitle: Встановити за посиланням на модпак
-  fromUrlDescription: 'Вставте посилання на модпак:'
-  invalidUrl: Будь ласка, введіть коректне посилання (http:// або https://)
-  selectVersion: Оберіть версію модпаку
-  selectVersionDescription: 'Виберіть версію {name} для встановлення:'
-  pmcProtected: Planet Minecraft захищений Cloudflare. Будь ласка, скопіюйте пряме посилання для завантаження або дзеркало зі сторінки.
-  netdiskTitle: Завантаження з хмарного диску
-  netdiskDescription: Ця версія модпаку розміщена на хмарному диску (Quark / Baidu / 123pan). Натисніть кнопку нижче, щоб відкрити сторінку завантаження, а після звантаження перетягніть отриманий файл .zip або .mrpack у вікно Zenith Launcher.
-  openNetdisk: Відкрити хмарний диск
-  netdiskOpened: Посилання на хмарний диск скопійовано та відкрито у вашому браузері.
-  noReleasesFound: У цьому репозиторії не знайдено релізів модпаків (.mrpack або .zip).
 installAssets:
   asset: Встановити {count} ресурсів
   assetIndex: Перевірити індексний файл ресурсів
@@ -536,12 +432,9 @@ instance:
   iconUrl: URL іконки
   installModpack: Оновити екземпляр з модпаку
   lastPlayed: Востаннє запущенно
-  launchArguments: Попередній перегляд аргументів запуску
   launchServer: Запустити локальний сервер
   linkFileDesc: Це перезапише локальний файл екземпляра {file} глобальним файлом {file}. Ви впевнені, що хочете зв'язати його?
   linkFileTitle: Ви впевнені, що хочете зв'язати {file}?
-  mcOptions: Опції Minecraft
-  mcOptionsHint: Додаткові аргументи запуску Minecraft
   name: Назва профілю
   nameHint: Назва модпаку
   nameNoCyrillic: Назва повинна бути без кирилиці
@@ -549,10 +442,6 @@ instance:
   openCrashReportFolder: Відкрити папку звітів про збої
   openLogFolder: Відкрити папку логів
   playtime: Час гри
-  preExecCommand: Команда попереднього запуску
-  preExecCommandHint: Команда для виконання перед запуском Minecraft
-  prependCommand: Додати команду на початку
-  prependCommandHint: Це додасть цю команду перед усіма командами запуску
   requireName: Назва обов'язкова
   resolution: Роздільна здатність вікон
   resolutionPreset: Позначена роздільна здатність
@@ -563,10 +452,6 @@ instance:
   useSharedOptionsDesc: Це зв'яже options.txt зі спільним файлом для всіх екземплярів
   useSharedServersList: Використовувати спільний список серверів
   useSharedServersListDesc: Це зв'яже servers.dat зі спільним файлом для всіх екземплярів
-  vmOptions: Опції JVM
-  vmOptionsHint: Додаткові аргументи для передачі JVM
-  vmVar: Змінні середовища
-  vmVarHint: Натисніть кнопку +, щоб додати змінні середовища
   width: Ширина
   envVarKey: Ключ
   envVarValue: Значення
@@ -604,9 +489,6 @@ instanceSetting:
   syncGameLanguage: Синхронізація мови гри
   syncGameLanguageDescription: Автоматично синхронізувати мову Minecraft із мовою лаунчера під час запуску
   showLogHint: Це відкриє вікно для потокової передачі логу Minecraft після запуску гри
-instanceTemplate:
-  ftb: Це модпак FTB
-  preview: Попередній перегляд модпаку
 instanceUpdate:
   basic: Оновлення налаштувань
   files: Оновлення файлів
@@ -625,42 +507,15 @@ instances:
   addVanillaDescription: Імпортувати зі звичайної папки .minecraft. Це продублює оригінальний ігровий профіль в Zenith Launcher.
   fix: Відновити
   folderSetting: Налаштування папки
-  importFolderDescription: Імпортувати Minecraft в лаунчер
-  loadingFiles: Завантаження файлів модпаку
-  edition: Видання
-  editionJava: Java-видання
   editionBedrock: Bedrock-видання
   editionBedrockHint: Видання Bedrock запускається через застосунок Microsoft Store. Ви повинні мати ліцензію Bedrock. Моди, набори ресурсів та інші функції, доступні лише в Java, недоступні.
   editionBedrockWindowsOnly: Видання Bedrock підтримується лише у збірці для Windows.
-  linkSharedFolders: Спільний доступ до папок між збірками
-  linkSharedFoldersHint: Створіть ці папки як посилання на спільні папки лаунчера, щоб ця збірка ділила їхній вміст з усіма іншими пов'язаними збірками. Це не копіювання — зміни в одній збірці з'являються в усіх. Непозначені папки залишаються приватними для цієї збірки.
-  linkFailed: Не вдалося пов'язати папку {folder} зі спільною папкою
   addPrismDescription: Імпортувати існуючий інстанс PrismLauncher.
 items:
   count: '{count} елементів'
   total: '{total} всього'
 java:
-  allocatedLong: Використовувати системну Java за замовчуванням
-  allocatedShort: Автоматично виділено
-  importFromFile: Імпортувати Java з файлу
-  invalid: Недійсне розташування Java
-  location: Розташування Java
-  maxMemory: Макс. пам'ять
-  memory: Пам'ять Java
   memoryAuto: Автоматично
-  memoryManual: Вручну
-  memoryUnassigned: Не призначати
-  minMemory: Мін. пам'ять
-  name: Java
-  noMemory: Не обмежувати використання пам'яті
-  refresh: Оновити локальні Java
-  systemMemory: 'Вільна системна пам''ять: {free} / {total}'
-  allocation: Виділено
-  autoHint: Мінімум зростає з кількістю встановлених модів; максимум використовує доступну системну пам'ять.
-  change: Змінити
-  locationHint: Java не обрана — використовується системна за замовчуванням
-  openFolder: Відкрити теку Java
-  presets: Налаштування
 labyMod:
   disable: Вимкнути LabyMod
   empty: LabyMod не підтримує поточний Minecraft
@@ -733,8 +588,6 @@ localVersion:
   auto: Обчислено автоматично
   empty: Жодної версії не встановлено
   hint: Запустити конкретну локальну версію безпосередньо
-  reinstallDescription: Якщо ви вважаєте, що з встановленням цієї версії є проблеми, ви можете спробувати перевстановити її.
-  reinstallTitle: Перевстановити {version}
   title: Локальна версія | Локальні версії
 logLevel:
   error: Помилка
@@ -804,12 +657,10 @@ minecraftVersion:
   showAlpha: Показати знімки стану (Snapshot)
   snapshot: Знімок стану (Snapshot)
 mod:
-  collapseAllGroups: Згорнути всі групи
   acceptVersion: Прийняти {version}
   applyGroupRules: Застосувати збережені правила групування
   autoCategorize: Авто-сортування по папках
   autoCategorizeHint: Автоматично групувати моди за папками категорій (Оптимізація, Бібліотеки, Світ, Геймплей тощо)
-  autoCategorizeSuccess: Моди успішно відсортовано у {count} папок
   ungroupAll: Розгрупувати все
   organization: Організація папок
   collapseAll: Згорнути всі папки
@@ -829,16 +680,12 @@ mod:
   currentVersion: Поточна {current}
   denseView: Компактний вигляд
   disableAll: Вимкнути все
-  dropHint: Перетягніть сюди .jar/.litemod файли модів для імпорту.
   duplicatedDetected: '{count} дубльованих модів'
   duplicatedDetectedDescription: Знайдено моди з однаковим ID, але різними файлами. Це може спричинити збій Minecraft. Будь ласка, виберіть файл, який ви хочете залишити.
   enableAll: Увімкнути все
   enabled: '{count} модів увімкнено'
   filter: Фільтрувати моди
   group: Згрупувати
-  groupInstalled: Згрупувати встановлені моди
-  hideInstalled: Приховати встановлені моди
-  installedFilterOff: Показати всі моди
   groupName: Назва групи
   groupNameRequired: Назва групи обов'язкова
   hasUpdate: Мод має нову версію!
@@ -846,27 +693,18 @@ mod:
   incompatibleHint: Перевірте звіт про сумісність ваших модів
   incompatibleHintDescription: Деякі залежності модів можуть бути відсутні. Або деякі версії залежностей не збігаються.
   maybeCompatible: Можливо сумісний.
-  modloaderSelectHint: Мод підтримує наступні завантажувачі модів. Будь ласка, виберіть один для встановлення.
-  modloaderSelectNotSupported: Не знайдено {modloader} для Minecraft {minecraft}
   mods: '{count} Модів'
   name: Мод | Моди
   newFolder: Нова папка
   noGroupsFound: Групи не знайдено
   noGroupsYet: Груп поки немає. Створіть одну!
-  noModLoaderHint: Не забудьте увімкнути завантажувач модів, щоб використовувати моди!
   openLink: Відкрити посилання на мод {url}
-  search: Пошук модів
   searchGroups: Пошук груп...
   searchOnMcWiki: Знайдіть {name} в енциклопедії MC.
   selectOrCreateGroup: Вибрати або створити групу
-  showDirectory: Показати каталог модів
   showFile: Показати шлях до мода {file}
-  showInModrinth: Показати {name} на Modrinth
-  switchDefaultSource: Типове джерело модів
   syncGroupRules: Зберегти правила групування
-  toUpdate: '{count} оновлень'
   ungroup: Розгрупувати
-  description: Опис
 modCategory:
   optimization: Оптимізація та продуктивність
   libraries: Бібліотеки та API
@@ -919,47 +757,10 @@ modified:
   save: Зберегти
   unsaved: Ваші зміни не збережено!
 modpack:
-  author: Автор збірки
-  authorHint: Ім'я автора або назва команди розробників
-  description: Опис модпаку
-  descriptionHint: Короткий опис або анотація вашого модпаку
   dropHint: Перетягніть сюди zip-файл модпаку для імпорту
-  emitCurseforge: Експортувати CurseForge (.zip)
-  emitCurseforgeDescription: Стандартний архів збірки для CurseForge
-  emitModrinth: Експортувати Modrinth (.mrpack)
-  emitModrinthDescription: Офіційний швидкий та легкий формат Modrinth
-  emitModrinthStrict: Сувора політика доменів Modrinth
-  emitModrinthStrictDescription: Дозволяти завантаження лише з перевірених джерел (Modrinth, GitHub, GitLab)
-  emitPackwiz: Експортувати Packwiz (.zip)
-  emitPackwizDescription: Зручний формат для Git (pack.toml, index.toml та посилання на моди)
   export: Експортувати як модпак
-  exportSuccess: Модпак успішно експортовано!
-  exportSuccessWithWarnings: Модпак експортовано з попередженнями
-  exportSkippedFiles: "{count} недоступних або заблокованих файлів було пропущено"
-  exportFailed: Не вдалося експортувати модпак
-  skippedFilesDialogTitle: Деякі файли не вдалося експортувати
-  skippedFilesDialogDescription: Модпак створено, але {count} файлів було пропущено
-  skippedReasonEperm: Доступ заборонено (заблоковано системою або іншим процесом)
-  skippedReasonEbusy: Файл зайнятий іншою програмою
-  skippedReasonEnoent: Файл не знайдено або пошкоджено
-  skippedFilesNotice: Решта файлів успішно збережена до вашого модпаку. Зазначені файли не вдалося додати через системні обмеження Windows або відсутність прав доступу.
-  openExportFolder: Відкрити папку з модпаком
-  closeDialog: Зрозуміло
-  exportDirectory: Каталог для збереження
-  exportDirectoryDescription: Папка, в яку буде збережено готовий файл збірки
-  includeAssets: Включити ресурси
-  includes: Файли для включення
-  expandAll: Розгорнути всі папки
-  collapseAll: Згорнути всі папки
   modpackVersion: Версія модпаку
-  modpackVersionHint: Версія збірки (наприклад, 1.0.0). Кнопки + збільшують патч або мінорну версію
   name: Модпак | Модпаки
-  overrides: Перевизначення
-  selectDefaultFiles: Обрати файли за замовчуванням
-  selectAllFiles: Обрати всі файли
-  deselectAllFiles: Зняти вибір з усіх файлів
-  url: URL
-  urlHint: URL-адреса домашньої сторінки вашого модпаку
 modpackImportConfirm:
   description: Виявлено, що ви перетягнули файл у лаунчер. Ви намагаєтеся імпортувати модпак?
   title: Ви намагаєтеся імпортувати модпак?
@@ -1123,110 +924,7 @@ modrinth:
   wikiUrl: Вікі
 modrinthCard:
   currentVersion: Поточна версія
-multiplayer:
-  joinDiscord: Приєднатися до Discord
-  openConsumerPortal: Відкрити портал клієнта
-  refundHint: Потрібне повернення коштів? Перейдіть на клієнтський портал Waffo, щоб керувати замовленнями та підписками.
-  togetherSupportHint: Якщо багатокористувацький режим не працює, приєднайтеся до нашого Discord і зв’яжіться з командою розробників. Ми допоможемо вирішити проблему.
-  autoShareAmbiguous: Запущено кілька ігор. Виберіть збірку, у якій відкрито світ для локальної мережі, щоб Zenith Launcher міг нею поділитися.
-  editSharingScope: Змінити область поширення
-  gameAvailable: Доступна гра в локальній мережі
-  joinGame: Приєднатися до гри
-  noRunningInstanceToShare: Запустіть гру перед зміною області поширення
-  updateSharedInstanceConfirm: Оновити й запустити
-  updateSharedInstanceDescription: Поширені моди відрізняються від модів у {instance}. Оновити цю збірку відповідно до збірки хоста перед запуском? Для змінених файлів буде створено резервну копію.
-  updateSharedInstanceTitle: Оновити поширену збірку?
-  addFunds: Додати кошти
-  availableBalance: Доступний баланс
-  balanceHint: Доступно для служб XMCL Together
-  billing: Оплата
-  billingDescription: Керуйте доступом до ретранслятора, планом Together Home і платежами.
-  billingError: Не вдалося завантажити дані про оплату Together. Спробуйте ще раз за мить.
-  buyTogether: Придбати Together
-  cancelTogether: Скасувати план
-  checkout: Відкрити оплату Waffo
-  connectionTogetherWarning: Один із учасників кімнати вже деякий час не може підключитися до вас. Спробуйте XMCL Together, щоб покращити з'єднання для всіх у кімнаті. Together потрібен лише власнику кімнати.
-  masterPurchaseHint: Together Home потрібен лише власнику кімнати, щоб покращити з'єднання для всіх у кімнаті.
-  natTogetherWarning: Ваш маршрутизатор може мати труднощі з підключенням до власника кімнати. Якщо підключення не вдаються, спробуйте XMCL Together, щоб покращити з'єднання між вами та друзями. Придбати Together для кімнати має лише її власник.
-  togetherName: Minecraft Together
-  trialDescription: Один 7-денний пробний період із 1 GB ретрансляційного трафіку.
-  trialTitle: Пробний період підключення
-  tryTogether: Спробувати Together
-  month: місяць
-  orderStatus: 'Замовлення Waffo: {status}'
-  planDescription: 20 GB керованого ретрансляційного трафіку щомісяця, а також усунення несправностей модпаку за допомогою ШІ.
-  waffoHint: Платежі безпечно здійснюються через Waffo Pancake. XMCL ніколи не отримує номер вашої картки.
-  subscription:
-    active: Активна
-    cancelled: Скасована
-    payment_due: Потрібна оплата
-  trial:
-    active: Пробний період активний
-    available: Доступний безкоштовний пробний період
-    expired: Пробний період використано
-    unavailable: Пробний період недоступний
-  loginRequiredDescription: Для мережевої гри P2P використовуються онлайн-сервіси Zenith Launcher. Увійдіть в обліковий запис Zenith Launcher, щоб продовжити.
-  loginRequiredTitle: Увійдіть для мережевої гри P2P
-  complete: Завершено
-  confirm: Підтвердити
-  connections: З'єднання
-  copied: Скопійовано!
-  copy: Копіювати
-  copyGroupToFriendHint: Дозвольте друзям приєднатися до групи за цим ID
-  copyLocalHint: |
-    "Будь ласка, скопіюйте локальний текст SDP і надішліть його вашому об'єкту, щоб ваш об'єкт ввів цей текст у вікні приєднання до з'єднання. <span>Токен може бути використаний лише для <span style="color: red; font-weight: bold;">одного вузла</span>! Ви не можете надсилати той самий токен кільком вузлам!</span> <br> <span class="hint-text" style="font-style: italic;">Якщо вам потрібно підключити кілька вузлів, вам потрібно створити <span style="font-weight: bold; color: rgba(245, 158, 11)">кілька</span> з'єднань.</span>"
-  createLocalToken: Створити локальний токен
-  currentIpTitle: Виявлена публічна IP-адреса
-  currentNatTitle: 'Поточна мережа (NAT):'
-  difficultyLevelHint: Рівень складності створення з'єднання
-  disconnect: Роз'єднати
-  disconnectDescription: Ви впевнені, що хочете роз'єднатися з користувачем {user}({id})?
-  disconnected: роз'єднано
-  enterRemoteToken: Ввести віддалений токен
-  enterRemoteTokenHint: Після того, як ваш вузол введе ваш токен, вам потрібно ввести його токен у текстове поле нижче. Натисніть "Підтвердити", щоб з'єднатися.
-  exposedPortDescription: Порт, який ви відкрили для інших вузлів
-  exposedPorts: Перенаправлені порти
-  gatheringIce: |
-    "Будь ласка, зачекайте, поки сервер ICE збере достатньо інформації про вашу мережу. Якщо ви нетерплячі і інформації достатньо, ви можете заздалегідь надати поточний SDP іншій стороні та натиснути "Далі". Будь ласка, надішліть <span class="v-chip v-chip--label v-size--small" style="text-font: bold" >Локальний токен</span> вашому вузлу, ваш вузол введе ваш токен у розділі <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Приєднатися до з'єднання</span>. <br> Серверу ICE може знадобитися деякий час, щоб зібрати вашу інформацію для створення <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Локального токена</span>.<br> Вам не потрібно чекати, поки статус ICE стане "завершено". Якщо токен нижче залишається незмінним, ви можете скопіювати його та надіслати своєму вузлу."
-  groupId: ID групи
-  illegalTokenDescription: Недійсний токен, будь ласка, переконайтеся, що токен від вашого вузла правильний
-  initiateConnection: Ініціювати з'єднання
-  joinConnection: Якщо ваш вузол вже ініціював з'єднання, вам потрібно приєднатися до з'єднання.
-  joinManual: Приєднатися
-  joinOrCreateGroup: Приєднатися/Створити групу
-  joinOrCreateGroupHint: Отримайте ID групи від друзів або створіть групу
-  kernel: Ядро P2P
-  kernelDescription: Використовуйте нативний WebRTC або node-datachannel. Перемикайте це лише тоді, коли ваше P2P з'єднання іноді призводить до збою вікна лаунчера.
-  leaveGroup: Покинути групу
-  localToken: Локальний токен
-  manualConnect: Підключитися вручну
-  name: Мультиплеєр
-  networkInfo: Інформація про мережу
-  next: Далі
-  otherExposedPortDescription: Порт, перенаправлений {user}
-  placeholder: З'єднуйтеся з іншими користувачами, щоб грати в Minecraft по локальній мережі!
-  previous: Назад
-  receiveHint: Після того, як інша сторона введе ваш токен, ваше з'єднання буде створено автоматично. Тепер ви можете закрити діалогове вікно.
-  receiveRemoteTokenHint: Будь ласка, введіть тут токен від вашого вузла.
-  remoteToken: Віддалений токен
-  routerInfo: Інформація про маршрутизатор
-  sendTokenToRemote: Надіслати токен віддаленому вузлу
-  share: Поділитися конфігурацією екземпляра
-  sharing: Обмін файлами...
-  start: Почати
-  startNewP2PConnection: Натисніть кнопку "Почати", щоб створити нове з'єднання з вузлом
-  connectionError: Помилка з'єднання
-  connectionFailedHint: Не вдалося встановити з'єднання. Перевірте, чи мають обидві сторони сумісні типи NAT.
 myStuff: Мої речі
-natType:
-  blocked: Заблоковано
-  fullCone: Повний конус
-  openInternet: Відкритий Інтернет
-  restrictNat: Обмежений NAT
-  restrictPortNat: Обмежений NAT порту
-  symmetricNat: Симетричний NAT
-  symmetricUDPFirewall: Симетричний UDP-брандмауер
-  unknown: Невідомо
 neoForgedVersion:
   disable: Вимкнути NeoForged
   empty: NeoForged не підтримує {version}
@@ -1237,23 +935,6 @@ optifineVersion:
   disable: Вимкнути Optifine
   empty: Optifine не підтримує Minecraft {version}
 optional: Необов'язково
-peerConnectionState:
-  closed: Закрито
-  connected: Підключено
-  connecting: Підключення
-  disconnected: Відключено
-  failed: Невдача
-  name: Стан з'єднання
-  new: Новий
-peerGroupState:
-  closed: Не в групі
-  closing: Закривається
-  connected: Приєднано до групи
-  connecting: Підключення
-peerIceGatheringState:
-  gathering: Збір сервера ICE
-peerSignalingState:
-  have-local-offer: Очікування опису вузла
 presence:
   instance: Бездіяльність в екземплярі {instance}
   instanceSetting: 'Редагування налаштувань екземпляра: {instance}'
@@ -1446,141 +1127,25 @@ search:
 server:
   launch: Запустити сервер
   stop: Зупинити сервер
-  acceptingMinecraftVersion: Приймає версію Minecraft
   addServer: Додати сервер
   address: Адреса сервера
   addressHint: наприклад mc.hypixel.net
   bindUpstream: Прив'язати як апстрім
-  boundUpstream: Апстрім сервера прив'язано
   boundUpstreamHint: Цей екземпляр слідує версії Minecraft прив'язаного сервера.
-  creationHint: Будь ласка, заповніть адресу сервера та пропінгуйте сервер
   editServer: Редагувати сервер
   emptyHint: У servers.dat цього екземпляра ще немає серверів. Додайте один, щоб почати.
   entryCount: '{count} сервер | {count} сервери | {count} серверів'
-  expectedVersions: Підтримувані версії
-  export: Експортувати сервер
-  exportNoFilesHint: Файлів сервера не знайдено. Встановіть сервер один раз, щоб згенерувати потрібні файли.
-  exportOption: Опції експорту сервера
-  exportSSHAuthenticationFailed: Усі методи автентифікації не вдалися. Перевірте ім'я користувача/пароль або приватний ключ.
-  exportSSHOptions: Опції SSH
-  exportSSHPrivateKeyPath: Шлях до приватного ключа SSH
-  exportSSHRemotePath: Віддалений шлях сервера
-  exportToFolder: Експортувати в папку
-  filterVersion: Фільтрувати версію Minecraft, на яку відповів сервер
-  host: Хост
-  hostHint: Хост (з портом) сервера
-  hostRequired: Будь ласка, введіть IP-адресу сервера
-  ipAddress: IP-адреса
   launchClient: Запустити клієнт
   launchPinned: Закріплено
   launchTargetHint: Цей екземпляр запускається безпосередньо у закріплений сервер. Перемкнутися назад на клієнт?
   maxPlayers: Макс. гравців
-  motd: MOTD сервера
   nameHint: Відображувана назва у списку мережевої гри
-  nogui: Без графічного інтерфейсу сервера
-  onlineMode: Онлайн-режим (тільки ліцензія)
   pin: Закріпити сервер
   pinAfterSave: Закріпити як ціль запуску за замовчуванням після збереження
-  ping: Пінг
-  pings: Пінги
   pinnedHeader: 'закріплено: {name}'
-  players: Гравці
   port: Порт
-  clearLog: Очистити журнал
-  log: Журнал сервера
-  logWaiting: Вивід сервера з'явиться тут після запуску.
-  remoteActionSuccess: Готово.
-  remoteAdmin: Керування віддаленим сервером
-  remoteAuthMethod: Автентифікація
-  remoteAuthPassword: Пароль
-  remoteAuthPrivateKey: Приватний ключ
-  remoteBuildOfflinePackage: Створити автономний пакет
-  remoteConnected: Підключено
-  remoteConnection: З'єднання
-  remoteDeployment: Розгортання
-  remoteDeploy: Розгорнути
-  remoteDisk: Диск
-  remoteConfigFiles: Файли конфігурації
-  remoteExtraFiles: Додаткові файли
-  remoteForgetCredentials: Забути збережені облікові дані
-  remoteInstallService: Встановити службу
-  remoteLoad: Середнє навантаження
-  remoteLog: Віддалений журнал
-  remoteMemory: Пам'ять
-  remoteMods: Моди
-  remoteNoWorldSelected: Світ екземпляра не вибрано
-  remoteJavaRequired: Java недоступна на віддаленому хості Linux.
-  remoteLinuxRequired: Підтримуються лише цілі Linux через SSH.
-  remoteNotConfiguredHint: Заповніть дані підключення вище та збережіть, щоб увімкнути статус, керування службою та журнал.
-  remotePathNotWritable: Віддалена папка сервера недоступна для запису.
-  remotePathWritable: Папка доступна для запису
-  remotePolicyInitialize: Ініціалізувати один раз
-  remotePolicyMirror: Дзеркало
-  remotePolicyOverlay: Накладання
-  remotePolicyPreserve: Зберегти
-  remotePreview: Попередній перегляд змін
-  remotePhase:
-    connect: Підключення
-    error: Помилка узгодження
-    idle: Готово до узгодження
-    inspect: Перевірка цілі
-    install: Встановлення сервера
-    logs: Підключення консолі
-    ready: Бажаний стан застосовано
-    service: Забезпечення служби systemd
-    start: Запуск сервера
-    sync: Синхронізація бажаного стану
-    world: Застосування політики світу
-  remoteRememberCredentials: Запам'ятати облікові дані (зв'язка ключів ОС)
-  remoteReconcileReady: Ціль відповідає цьому екземпляру, консоль підключена.
-  remoteRestartService: Перезапустити
-  remoteSavedCredentialsHint: Використовуються збережені дані — залиште порожнім, щоб зберегти, або введіть нові.
-  remoteService: Служба systemd
-  remoteServiceActive: Працює
-  remoteServerInstalled: Файли сервера встановлено
-  remoteServiceName: Назва служби
-  remoteServiceNameHint: назва юніта systemd --user, наприклад mc-server
-  remoteSelectedFiles: Вибрано {count} файлів сервера
-  remoteSelectFiles: Вибрати файли
-  remoteStartCommand: Команда запуску
-  remoteStartCommandHint: наприклад java -jar server.jar nogui
-  remoteStartService: Запустити
-  remoteStatus: Стан
-  remoteSystemdRequired: Користувацькі служби systemd недоступні на віддаленому хості Linux.
-  remoteTargetName: Назва цілі
-  remoteStopService: Зупинити
-  remoteStopWatchLog: Зупинити стеження
-  remoteTestConnection: Перевірити з'єднання
-  remoteTestConnectionSuccess: З'єднання успішне.
-  remoteUninstallConfirmMessage: Це вимкне та видалить юніт systemd на віддаленому хості. Файли сервера не видаляються.
-  remoteUninstallService: Видалити службу
-  remoteRunInstall: Встановити або відновити
-  remoteWatchLog: Стежити за журналом наживо
-  remoteWorldAlways: Замінювати під час кожного узгодження
-  remoteWorldDeployment: Розгортання світу екземпляра
-  remoteWorldDeploymentHint: Звичайна синхронізація ніколи не завантажує світ, якщо це явно не дозволено цією політикою.
-  remoteWorldFirstInstall: Ініціалізувати, лише якщо на цілі немає світу
-  remoteWorldNever: Ніколи не завантажувати світ
-  remoteWorldPresent: Світ на цілі
-  remoteWorld: Світ
-  remoteWorldWillDeploy: Вибраний світ екземпляра буде завантажено цим узгодженням.
   serverName: Назва сервера
-  serviceInstall: Встановити службу
-  serviceManagedLaunch: Використовувати службу ОС для запуску та зупинки
-  serviceManager: Системна служба
-  serviceName: Назва служби
-  serviceNameHint: Стабільний ідентифікатор із літер, цифр, крапок, підкреслень або дефісів
-  serviceNotInstalled: Не встановлено
-  serviceStartCommand: Команда запуску
-  serviceSystemd: systemd --user
-  serviceWindows: Служба Windows
-  serviceWindowsCommandHint: Команда Java генерується з цього екземпляра під час встановлення служби.
   serversListTitle: Список серверів
-  target: Ціль сервера
-  targetLocal: localhost
-  targetLocalHint: Встановити та запустити сервер на цьому комп'ютері.
-  targetRemote: SSH-сервер
-  targetRemoteHint: Підключення, встановлення, запуск та моніторинг сервера через SSH.
   unbindUpstream: Відв'язати
   unknown: Невідомий сервер
   unknownDescription: Невідомий сервер. Будь ласка, оновіть
@@ -1591,9 +1156,6 @@ server:
   upstreamUpdateAvailable: На сервері працює Minecraft {version}. Натисніть, щоб застосувати.
   upstreamUpdateHint: Застосовує рекомендовану версію Minecraft до цього екземпляра.
   useAsUpstreamHint: Екземпляр слідуватиме за версією Minecraft, про яку повідомляє сервер.
-  version: Сервер вимагає версію
-  versionHint: Версія Minecraft для пінгування
-  worldPreserve: Зберегти світ на цілі
 serverStatus:
   nohost: §4Не вдалося знайти хост!
   ping: Пінг...
@@ -1625,18 +1187,8 @@ setting:
     title: Власний CSS
     warning: Власний CSS дозволяє налаштувати будь-який аспект лаунчера. Будьте обережні при вставленні CSS з ненадійних джерел, оскільки це може змінити інтерфейс.
   about: Про
-  advancedJavaOptions: Розширені параметри Java
   advancedSettings: Розширені налаштування
   advancedSettingsHint: Небезпечна зона - скидання або керування даними лаунчера
-  aiAgentApiKey: API key AI Agent
-  aiAgentApiKeyDescription: Налаштуйте OpenAI-сумісного провайдера, наприклад OpenAI або gateway для Claude. Ключ зберігається локально на цьому пристрої.
-  aiAgentApiKeyPlaceholder: API key провайдера OpenAI або Claude
-  aiAgentEndpoint: Endpoint AI Agent
-  aiAgentEndpointDescription: URL endpoint для chat completions.
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 або claude-sonnet-4-5
-  aiAgentModel: Модель AI Agent
-  aiAgentModelDescription: Назва моделі для запитів chat completion.
   apiSets:
     auto: Автоматично (визначається мережею)
     official: Офіційний (Mojang)
@@ -1689,8 +1241,6 @@ setting:
   darkThemeDescription: Виберіть між темною або світлою темою
   developerMode: Режим розробника
   developerModeDescription: Режим розробника призначений для тестування ваших власних модів
-  disableTelemetry: Вимкнути телеметрію
-  disableTelemetryDescription: XMCL збиратиме події запуску гри та входу користувачів.
   enableDedicatedGPUOptimization: Призначити дискретну відеокарту
   enableDedicatedGPUOptimizationDescription: Ця опція призначить дискретну відеокарту процесу Minecraft.
   enableDiscord: Увімкнути присутність Discord
@@ -1700,8 +1250,6 @@ setting:
   exportSettingsHint: Зберегти поточні налаштування у файл
   general: Загальні
   githubRelease: Реліз на Github
-  globalJava: Бажана Java
-  globalJavaHint: В автоматичному режимі спочатку використовується ця Java, і лише за несумісності з версією гри відбувається перехід до автовизначення.
   globalSetting: Глобальні налаштування екземпляра
   globalSettingHint: Екземпляр використовуватиме ці налаштування за замовчуванням.
   importSettings: Імпорт налаштувань
@@ -1732,7 +1280,6 @@ setting:
   maxSockets: На хост
   maxSocketsDescription: Обмежити максимальну кількість сокетів на хост або для всіх хостів загалом. 0 означає без обмежень.
   maxSocketsTitle: Макс. HTTP-сокетів
-  memoryAssignment: Призначення пам’яті
   migrateFromOther: Імпортувати з іншого лаунчера
   minecraftOptions: Налаштування Minecraft
   name: Глобальне налаштування | Глобальні налаштування
@@ -1747,11 +1294,6 @@ setting:
     repulse: Відштовхування (сильне)
   particleModeDescription: Виберіть поведінку частинок при натисканні
   quickLaunchSettings: Швидкий запуск
-  replaceNative: Замінити нативні бібліотеки
-  replaceNativeDescription: Замінити нативні бібліотеки відповідно до архітектури вашого комп'ютера.
-  replaceNatives:
-    all: Усі
-    legacy: Лише застарілі версії
   resetAllSettings: Скинути всі налаштування
   resetAllSettingsConfirmMessage: Це назавжди видалить всі налаштування, облікові записи, екземпляри, групи та кешовані дані. Цю дію неможливо скасувати. Ви впевнені?
   resetAllSettingsConfirmTitle: Скинути всі налаштування?
@@ -1956,17 +1498,6 @@ theme:
   selectVideo: Вибрати відео
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: Кандидат хоста
-  prflx: Кандидат Peer Reflexive
-  relay: Кандидат Relay
-  srflx: Кандидат Server Reflexive
-turnRegion:
-  fr: Франція
-  guangzhou: Гуанчжоу, Китай
-  hk: Гонконг
-  liaoning: Ляонін, Китай
-  po: Польща
 tutorial:
   feedbackDescription: Якщо у вас виникнуть проблеми, будь ласка, натисніть цю кнопку, щоб надіслати відгук!
   hideNewsHeaderDescription: Зліва ви бачите вітрину новин. Натискання цієї кнопки може приховати цю вітрину.
@@ -1975,10 +1506,6 @@ tutorial:
     appearanceThemeTitle: Зовнішній вигляд екземпляра
     iconDescription: Натисніть, щоб змінити іконку.
     iconTitle: Іконка екземпляра
-    javaDescription: Виберіть або змініть версію Java.
-    javaImportDescription: Імпортувати Java з локального сховища.
-    javaImportTitle: Імпортувати Java
-    javaTitle: Список Java
     modpackExportDescription: Зберіть та запакуйте налаштований екземпляр у готовий для поширення модпак.
     modpackExportTitle: Експорт модпаку
     modpackFilesDescription: Виберіть, які конфігураційні файли, моди та ресурси слід включити в експортований модпак для клієнта та сервера.
@@ -2032,15 +1559,6 @@ tutorial:
     profileDescription: Перемикайтеся між акаунтами та керуйте обліковими записами.
     skinTitle: Налаштування скіна й плаща
     skinDescription: Переглядайте персонажа у 3D, змінюйте скіни та надягайте плащі.
-  multiplayer:
-    railTitle: Мережа та навігація
-    railDescription: Перевіряйте тип NAT, стан мережі та перемикайтеся між підключеннями й налаштуваннями.
-    groupTitle: Приєднання або створення кімнати
-    groupDescription: Введіть код кімнати, щоб приєднатися до друзів, або залиште порожнім для створення власної.
-    joinDescription: Натисніть, щоб приєднатися до наявної кімнати або створити нову.
-    contentTitle: Підключені учасники та контент
-    contentDescription: Керуйте учасниками, переглядайте пінг та діліться запущеними клієнтами Minecraft.
-    manualDescription: Ручне пряме P2P-з'єднання з друзями через обмін даними SDP.
   resourcepack:
     searchTitle: Пошук ресурспаків
     searchDescription: Шукайте ресурспаки на Modrinth, CurseForge або у локальних файлах.
@@ -2085,10 +1603,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Нерозв'язані файли
   via: через {source}
-upstream:
-  downgrade: Понизити версію
-  onlyShowCurrentVersion: Показувати лише поточну версію Minecraft
-  update: Оновити
 user:
   accessToken: Токен доступу
   authMode: Служба автентифікації
@@ -2220,36 +1734,6 @@ migrateMinecraft:
   name: Перенести файли Minecraft
 reinstall:
   name: Перевстановити {version}
-minecraftFriends:
-  title: Друзі Minecraft
-  add: Додати друга
-  addPlaceholder: Ім'я гравця Minecraft
-  send: Надіслати
-  friends: Друзі
-  incoming: Вхідні запити
-  outgoing: Вихідні запити
-  heroEmptyTitle: Ваш список друзів порожній
-  heroEmptyHint: Додайте гравця Minecraft за ім'ям, щоб надіслати запит на дружбу.
-  scopedTo: Увійдено як {name}
-  reconnectAction: Перепідключитися
-  accept: Прийняти
-  unsupported: Друзі доступні лише для облікових записів Microsoft.
-  requiresMicrosoft: Увійдіть за допомогою облікового запису Microsoft для використання друзів.
-  notifyAdded: Запит на дружбу надіслано {name}
-  addedRelative: Додано {time}
-  expiresRelative: Закінчується {time}
-  incomingHint: 1 вхідний запит | {count} вхідних запитів
-  privacy:
-    friendsEnabled: Список друзів увімкнено
-    acceptInvites: Приймати запити на дружбу
-    acceptInvitesHint: Якщо вимкнено, інші гравці не зможуть надсилати вам запити на дружбу.
-  errors:
-    unknownProfile: Гравця з таким ім'ям не знайдено.
-    cannotAddSelf: Ви не можете надіслати запит на дружбу собі.
-    duplicate: Цей гравець вже у вашому списку.
-    inviteRejected: Цей гравець не має увімкнених друзів або не приймає запити.
-    tokenExpired: Сесія Microsoft закінчилась. Будь ласка, увійдіть знову.
-    generic: Щось пішло не так. Спробуйте ще раз.
 relative:
   justNow: щойно
   secondsAgo: '{count} секунду тому | {count} секунд тому'
@@ -2286,58 +1770,9 @@ gamepad:
   disconnected: Геймпад відключено
 blueprint:
   name: Креслення | Креслення
-  count: '{count} креслень'
-  searchLocal: Шукати креслення...
-  searchOnline: Шукати в мережі...
-  market: Ринок
-  local: Локальні
-  provider: Джерело
-  import: Імпортувати
-  openFolder: Відкрити папку
-  refresh: Оновити
   empty: Креслень не знайдено. Імпортуйте файл .litematic / .schem / .nbt або відкрийте ринок.
-  dropHint: Перетягніть файли креслень (.litematic / .schem / .nbt) сюди для імпорту.
   selectHint: Виберіть креслення для перегляду.
-  blocks: '{count} блоків'
-  materials: Матеріали
-  allNamespaces: Всі
-  findMod: Знайти мод для цього простору імен
-  compatible: Сумісно
-  incompatible: Відсутні моди
-  missingNamespaces: 'Відсутні моди для: {namespaces}'
-  delete: Видалити
-  cancel: Скасувати
   install: Встановити
-  goTo: Вебсайт
-  byAuthor: від {author}
-  noDescription: Опис відсутній.
-  loadMore: Завантажити ще
-  cmsBrowseOnly: Це джерело тільки для перегляду; відкрийте вебсайт для завантаження.
-  mixedSources: Результати об'єднані з усіх джерел. Деякі тільки для перегляду — відкрийте їх вебсайт для завантаження.
-  formats:
-    structure: Ванільна структура
-  preview:
-    title: 3D Перегляд
-    loading: Завантаження перегляду...
-    empty: Це креслення не містить блоків для відображення.
-    hint: '{count} блоків · {x}×{y}×{z}'
-    controls: 'WASD (ЦФИВ): Рух · Пробіл/Shift: Вгору/Вниз · Перетягування: Огляд · Колесо: Масштаб'
-  convert:
-    title: Конвертувати формат
-    hint: Конвертувати це креслення в інший формат. Буде створено новий файл.
-    target: Цільовий формат
-    action: Конвертувати
-  replace:
-    title: Замінити блоки
-    simple: Проста
-    precise: Точна
-    simpleHint: Збіг лише за ID блоку, зберігаючи наявні властивості стану.
-    preciseHint: Точний збіг за ID та всіма властивостями стану блоку.
-    from: Замінити
-    to: На
-    addRule: Додати правило
-    newFile: Новий файл
-    action: Замінити блоки
 bigPicture:
   title: Режим Big Picture
   description: Повноекранний інтерфейс для дивану та геймпада у стилі Steam Big Picture.

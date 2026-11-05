@@ -1,30 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: 여러 개의 실행 프로필이 감지되었습니다. 하나를 선택하여 가져오세요.
-  createTitle: 게임 생성
-  serverTitle: 서버 주소를 입력하세요.
-AppShareInstanceDialog:
-  editScopeDescription: LAN에서 실행 중인 이 게임을 발견한 피어가 가져갈 수 있는 파일을 선택하세요.
-  editScopeTitle: 공유 범위 편집
-  instanceToShare: 실행 중인 게임
-  alterDownloadDescription: 현재 인스턴스를 망가트리고 싶지 않다면, 다른 사용자의 설정으로 새 인스턴스를 생성할 수도 있습니다.  아래 버튼을 눌러 인스턴스를 생성하세요.
-  baseInfo: 기본 설정
-  description: 프로필을 공유하면 다른 곳에서 이 파일들을 사용자의 PC를  통해 다운로드 할 수 있습니다.
-  downloadDescription: 상대방이 제공한 파일을 확인해주세요. 다운로드할 파일을 선택하면 현재 인스턴스 {name} 에 저장됩니다.
-  downloadNotifyTitle: '{user} 에게서 인스턴트 다운로드'
-  downloadTitle: 다른 사용자에게서 파일 다운로드
-  filesToDownload: 다우놀드 받을 파일들을 선택해주세요.
-  filesToShare: 공유할 파일들을 선택해주세요.
-  share: 공유
-  shareTitle: 다른 플레이어에게 게임 파일들을 공유
 BaseSettingGeneral:
   title: 기본
-HomeJavaIssueDialog:
-  incompatibleJava: 호한되지 않는 자바
-  incompatibleJavaHint: 현재 자바는 선택된 마인크래프트와 호환되지 않을 거예요.
-  missingJava: 자바 없음
-  missingJavaHint: '런처가 사용자의 컴퓨터에서 자바를 감지하지 못했어요 시도해보세요:'
-  optionSwitch:
-    name: '{version} 로 변경했어요.'
 HomeLaunchMultiInstanceDialog:
   confirm: 예, 실행
   description: Minecraft 인스턴스를 여러 개 실행하려고 해요. 계속하시겠습니까?
@@ -36,41 +11,7 @@ ago:
   hour: '{duration} 시간 전 | {duration} 시간 전'
   minute: '{duration} 분 전 | {duration} 분 전'
   second: '{duration} 초 전 | {duration} 초 전'
-askAICrash:
-  copyPrompt: AI에게 물어볼 프롬프트 복사
-  description: AI가 게임 충돌을 이해할 수 있도록 도와줄 거예요! 아래 안내를 따라 게임 충돌에 대해 AI에게 물어보세요
-  selectPlatform: AI 플랫폼을 열고, 방금 복사한 프롬프트를 붙여 넣으세요.
-  agentNotConfigured: 런처의 내장 에이전트가 이를 진단하고 수정할 수 있도록 설정에서 AI 제공업체와 API 키를 추가해 주세요.
-  askAgent: 내장 AI 에이전트로 진단하기
-  orExternal: 또는 외부 AI 사용하기
-  setupAgent: AI 에이전트 설정하기
 authProfileAddedNotification: 인증 프로필 {name} 이 추가됐어요
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
-  description: 마인크래프트 베드락 에디션은 Microsoft Store를 통해 설치 및 실행됩니다. Microsoft 계정에 베드락 라이선스를 소유하고 있어야 합니다.
-  install: Microsoft Store에서 다운로드
-  installFailed: Microsoft Store 열기 실패
-  installed: '설치됨: {version}'
-  launchHint: 베드락 에디션을 시작하려면 실행 버튼을 누르세요.
-  licenseRequired: 베드락 에디션을 설치하고 플레이하려면 마인크래프트를 소유한 Microsoft 계정으로 로그인하세요.
-  refresh: 새로고침
 backup:
   title: 백업 및 복원
   description: 설정, 컬렉션, 테마 및 게임 인스턴스를 백업하고 복원합니다
@@ -303,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: 클릭하여 이 버전을 설치하세요
     name: 마인크래프트 %{version} 의 버전 JAR가 손상되었습니다.
-  incompatibleJava:
-    name: 자바 {javaVersion} 는 {version} 과(와) 호환되지 않습니다!
   instanceFiles:
     description: 인스턴스 설치에는 {counts}개의 파일이 포함됩니다.
     title: 불완전한 인스턴스 설치
-  invalidJava:
-    name: 잘못된 자바 경로입니다.
   missingJava:
     message: 클릭하여 이 문제를 해결하세요
     name: 마인크래프트를 실행할 자바를 찾을 수 없습니다!
@@ -336,11 +273,6 @@ duration:
   hour: '{duration} 시간 | {duration} 시간'
   minute: '{duration} 분 | {duration} 분'
   second: '{duration} 초 | {duration} 초'
-env:
-  select:
-    all: 모두 선택
-    fit: 맞게 선택
-    none: 모두 해제
 errors:
   BadForgeInstallerJarError: Forge 설치용 JAR 파일을 파싱할 수 없습니다. Forge 설치 파일 형식이 변경된 것일 수 있습니다. 문제가 계속되면 개발자에게 문의하세요.
   BadInstanceType: '{type} 은(는) 잘못된 인스턴스 유형입니다!'
@@ -376,8 +308,6 @@ errors:
   InstallPermissionDenied:
     body: 백신 프로그램 또는 폴더 권한 제한으로 인해 설치가 차단되었습니다. 백신의 제외 목록에 런처를 추가하거나 런처 설정에서 다른 데이터 루트를 선택해 주세요.
     title: 런처 폴더에 쓸 수 없음
-eula:
-  body: 체크박스를 선택하면 마인크래프트 {eula}에 동의하게 됩니다.
 exception:
   http: '{url} 로의 HTTP 요청이 실패했습니다. 상태 코드 {statusCode}. {code}. 다시 시도하거나 네트워크를 확인하세요. 오류가 지속되면 개발팀에 보고서를 보내주세요.'
 extensions:
@@ -458,21 +388,6 @@ gameType:
   survival: 서바이벌 모드
 help: 도움말
 home: 홈
-importModpack:
-  fromFileSubtitle: .zip 또는 .mrpack 파일 선택
-  fromUrl: 링크 / URL에서...
-  fromUrlSubtitle: URL에서 모드팩 설치
-  fromUrlDescription: '모드팩 URL을 입력하거나 붙여넣으세요:'
-  invalidUrl: 올바른 URL을 입력하세요 (http:// 또는 https://)
-  selectVersion: 모드팩 버전 선택
-  selectVersionDescription: '설치할 {name} 버전을 선택하세요:'
-  pmcProtected: Planet Minecraft는 Cloudflare로 보호됩니다. 페이지에서 직접 다운로드 링크 또는 미러 링크를 복사하세요.
-  netdiskTitle: 클라우드 드라이브에서 다운로드
-  netdiskDescription: 이 모드팩 버전은 외부 클라우드 드라이브에 저장되어 있습니다. 아래 버튼을 눌러 브라우저에서 다운로드 페이지를 연 다음, 다운로드한 .zip 또는 .mrpack 파일을 XMCL로 끌어다 놓으세요.
-  openNetdisk: 클라우드 드라이브 열기
-  netdiskOpened: 클라우드 드라이브 링크를 브라우저에서 열고 클립보드에 복사했습니다.
-  noReleasesFound: 이 저장소에서 .mrpack 또는 .zip 모드팩 릴리스를 찾을 수 없습니다.
-  name: 모드팩 가져오기
 installAssets:
   asset: 에셋 {count} 개 설치
   assetIndex: 에셋 인덱스 파일 확인
@@ -529,12 +444,9 @@ instance:
   iconUrl: 아이콘 URL
   installModpack: 모드팩으로 인스턴스 업데이트
   lastPlayed: 마지막 플레이
-  launchArguments: 실행 인수 미리보기
   launchServer: 로컬호스트 서버 실행
   linkFileDesc: 인스턴스의 로컬 {file} 을(를) 전역 {file} 로 덮어씁니다. 링크하시겠습니까?
   linkFileTitle: '{file} 을(를) 링크하시겠습니까?'
-  mcOptions: 마인크래프트 옵션
-  mcOptionsHint: 추가 마인크래프트 실행 인수
   name: 프로필 이름
   nameHint: 모드팩 이름
   nameNoCyrillic: 이름에는 키릴 문자를 포함할 수 없습니다
@@ -542,10 +454,6 @@ instance:
   openCrashReportFolder: 크래시 리포트 폴더 열기
   openLogFolder: 로그 폴더 열기
   playtime: 플레이 시간
-  preExecCommand: 사전 실행 명령
-  preExecCommandHint: 마인크래프트 실행 전에 수행할 명령
-  prependCommand: 명령 앞에 추가
-  prependCommandHint: 모든 실행 명령 앞에 이 명령을 추가합니다
   requireName: 이름은 필수입니다
   resolution: 해상도
   resolutionPreset: 해상도 프리셋
@@ -555,10 +463,6 @@ instance:
   useSharedOptionsDesc: 인스턴스 간에 공유되는 파일에 options.txt를 링크합니다
   useSharedServersList: 공유 서버 목록 사용
   useSharedServersListDesc: 인스턴스 간에 공유되는 파일에 servers.dat를 링크합니다
-  vmOptions: JVM 옵션
-  vmOptionsHint: JVM에 전달할 추가 인수
-  vmVar: 환경 변수
-  vmVarHint: + 버튼을 눌러 환경 변수를 추가하세요
   width: 너비
   envVarKey: 키
   envVarValue: 값
@@ -605,9 +509,6 @@ instanceSetting:
   showLogHint: 게임 시작 후 마인크래프트 로그를 스트리밍하는 창이 팝업됩니다
   syncGameLanguage: 게임 언어 동기화
   syncGameLanguageDescription: 실행 시 마인크래프트의 언어를 런처 언어와 자동으로 동기화합니다
-instanceTemplate:
-  ftb: 이것은 FTB 모드팩입니다
-  preview: 모드팩 미리보기
 instanceUpdate:
   basic: 설정 업데이트
   files: 파일 업데이트
@@ -626,43 +527,16 @@ instances:
   addVanillaDescription: 일반 .minecraft 폴더에서 가져오기. 원본 게임 프로필을 XMCL로 복제합니다.
   fix: 수리
   folderSetting: 폴더 설정
-  importFolderDescription: 마인크래프트를 런처로 가져오기
-  loadingFiles: 모드팩 파일 로딩 중
-  edition: 에디션
-  editionJava: 자바 에디션
   editionBedrock: 베드락 에디션
   editionBedrockHint: 베드락 에디션은 Microsoft Store 앱을 통해 실행됩니다. 베드락 라이선스를 소유해야 합니다. 모드, 리소스 팩 및 기타 자바 전용 기능은 사용할 수 없습니다.
   editionBedrockWindowsOnly: 베드락 에디션은 Windows 빌드에서만 지원됩니다.
-  linkSharedFolders: 인스턴스 간에 폴더 공유
-  linkSharedFoldersHint: 이 폴더들을 런처의 공유 폴더에 대한 링크로 만들어 이 인스턴스가 연결된 다른 모든 인스턴스와 내용을 공유하도록 합니다. 이것은 복사가 아닙니다. 한 인스턴스에서 변경한 내용이 모든 인스턴스에 나타납니다. 선택하지 않은 폴더는 이 인스턴스 전용으로 유지됩니다.
-  linkFailed: '{folder} 폴더를 공유 폴더에 연결하지 못했습니다'
   addPrismDescription: 기존 PrismLauncher 인스턴스 가져오기.
   folder: 폴더
 items:
   count: '{count} 아이템'
   total: '{total} 총합'
 java:
-  allocatedLong: 시스템 기본 자바 사용
-  allocatedShort: 자동 할당
-  importFromFile: 파일에서 자바 가져오기
-  invalid: 잘못된 자바 버전
-  location: 자바 버전
-  maxMemory: 최대 메모리
-  memory: 자바 메모리
   memoryAuto: 자동
-  memoryManual: 수동
-  memoryUnassigned: 할당 해제
-  minMemory: 최소 메모리
-  name: Java
-  noMemory: 메모리 사용량을 제한하지 않음
-  refresh: 로컬 자바 새로고침
-  systemMemory: '시스템 여유 메모리: {free} / {total}'
-  allocation: 할당됨
-  autoHint: 최소값은 설치된 모드 수에 따라 증가하고, 최대값은 사용 가능한 시스템 메모리를 사용합니다.
-  change: 변경
-  locationHint: Java가 선택되지 않음 — 시스템 기본값 사용
-  openFolder: Java 폴더 열기
-  presets: 프리셋
 labyMod:
   disable: LabyMod 비활성화
   empty: 현재 마인크래프트 버전을 LabyMod가 지원하지 않습니다
@@ -736,8 +610,6 @@ localVersion:
   auto: 자동 계산됨
   empty: 설치된 버전 없음
   hint: 특정 로컬 버전을 직접 실행합니다
-  reinstallDescription: 이 버전 설치에 문제가 있다고 생각되면 재설치를 시도해 보세요.
-  reinstallTitle: '{version} 재설치'
   title: 로컬 버전
 logLevel:
   error: 오류
@@ -815,7 +687,6 @@ minecraftVersion:
   showAlpha: 스냅샷 표시
   snapshot: 스냅샷
 mod:
-  collapseAllGroups: 모든 그룹 접기
   acceptVersion: '{version} 적용'
   applyGroupRules: 저장된 그룹 규칙 적용
   compatible: 호환되는 모드입니다.
@@ -823,16 +694,12 @@ mod:
   currentVersion: 현재 {current}
   denseView: 밀집 보기
   disableAll: 모두 비활성화
-  dropHint: 모드의 .jar/.litemod를 여기로 드래그하여 가져오세요.
   duplicatedDetected: 중복된 모드 {count}개 발견
   duplicatedDetectedDescription: Found mods with same mod id but different files. This might cause Minecraft crash. Please select the file you want to keep.
   enableAll: 모두 활성화
   enabled: '{count} 개 모드 활성화됨'
   filter: 모드 필터
   group: 그룹화
-  groupInstalled: 설치된 모드 그룹화
-  hideInstalled: 설치된 모드 숨기기
-  installedFilterOff: 모든 모드 표시
   groupName: 그룹 이름
   groupNameRequired: 그룹 이름이 필요합니다
   hasUpdate: 새 버전의 모드가 있습니다!
@@ -840,27 +707,18 @@ mod:
   incompatibleHint: 모드 호환성 보고서를 확인하세요
   incompatibleHintDescription: Some mods dependencies might be missing. Or some dependencies versions do not matched.
   maybeCompatible: 아마도 호환됨.
-  modloaderSelectHint: 이 모드는 다음 모드 로더를 지원합니다. 설치할 항목을 선택하세요.
-  modloaderSelectNotSupported: 마인크래프트 {minecraft}에 대한 {modloader}를 찾을 수 없습니다
   mods: 모드 {count} 개
   name: 모드
   newFolder: 새 폴더
   noGroupsFound: 그룹을 찾을 수 없음
   noGroupsYet: 아직 그룹이 없습니다. 하나 만드세요!
-  noModLoaderHint: 모드를 사용하려면 모드 로더를 활성화하는 것을 잊지 마세요!
   openLink: 모드 URL 열기 {url}
-  search: 모드 검색
   searchGroups: 그룹 검색...
   searchOnMcWiki: '{name} 을(를) MC 백과사전에서 찾기'
   selectOrCreateGroup: 그룹 선택 또는 생성
-  showDirectory: 모드 디렉터리 열기
   showFile: 모드 경로 열기 {file}
-  showInModrinth: Modrinth에서 {name} 보기
-  switchDefaultSource: 기본 모드 소스
   syncGroupRules: 그룹 규칙 저장
-  toUpdate: 업데이트 {count}개
   ungroup: 그룹 해제
-  description: 설명
 modFilter:
   clear: 필터 지우기
   dependenciesInstallOnly: 누락된 의존성 모드만 표시
@@ -905,25 +763,10 @@ modified:
   save: 저장
   unsaved: 수정 사항이 저장되지 않았습니다!
 modpack:
-  author: 제작자 이름
-  authorHint: 내보낸 모드팩(Curseforge) 서명에 사용될 수 있습니다
-  description: 설명
-  descriptionHint: 모드팩에 대한 일반적인 설명입니다. Curseforge 모드팩으로 내보낼 때 사용될 수 있습니다.
   dropHint: 모드팩 zip을 여기로 드래그하여 가져오기
-  emitCurseforge: Curseforge 모드팩 내보내기
-  emitModrinth: Modrinth 모드팩 내보내기
-  emitModrinthStrict: 엄격한 Modrinth 형식
-  emitModrinthStrictDescription: Modrinth 문서에 기재된 4개 도메인의 URL만 허용됩니다
   export: 모드팩으로 내보내기
-  exportDirectory: 내보내기 디렉터리
-  exportDirectoryDescription: 모드팩은 기본적으로 다운로드 폴더에 내보내집니다.
-  includeAssets: 에셋 포함
-  includes: 포함할 파일
   modpackVersion: 모드팩 버전
   name: 모드팩
-  overrides: 오버라이드
-  url: URL
-  urlHint: 모드팩의 홈페이지 URL
 modpackImportConfirm:
   description: 런처에 파일을 드롭한 것을 감지했습니다. 모드팩을 가져오려는 중인가요?
   title: 모드팩을 가져오려는 중인가요?
@@ -1087,110 +930,7 @@ modrinth:
   wikiUrl: 위키
 modrinthCard:
   currentVersion: 현재 버전
-multiplayer:
-  joinDiscord: Discord 참여
-  openConsumerPortal: 소비자 포털 열기
-  refundHint: 환불이 필요하신가요? Waffo 소비자 포털에서 주문과 구독을 관리하세요.
-  togetherSupportHint: 멀티플레이가 작동하지 않으면 Discord에 참여하여 개발팀에 문의하세요. 문제 해결을 도와드리겠습니다.
-  autoShareAmbiguous: 여러 게임이 실행 중입니다. XMCL이 공유할 수 있도록 LAN 월드를 호스팅하는 인스턴스를 선택하세요.
-  editSharingScope: 공유 범위 편집
-  gameAvailable: LAN 게임 사용 가능
-  joinGame: 게임 참가
-  noRunningInstanceToShare: 공유 범위를 편집하기 전에 게임을 실행하세요
-  updateSharedInstanceConfirm: 업데이트 후 실행
-  updateSharedInstanceDescription: 공유된 모드가 {instance}와 다릅니다. 실행하기 전에 이 인스턴스를 호스트와 일치하도록 업데이트할까요? 기존에 변경된 파일은 백업됩니다.
-  updateSharedInstanceTitle: 공유 인스턴스를 업데이트할까요?
-  addFunds: 잔액 추가
-  availableBalance: 사용 가능 잔액
-  balanceHint: XMCL Together 서비스에 사용 가능
-  billing: 결제
-  billingDescription: 릴레이 액세스, Together Home 플랜 및 결제를 관리합니다.
-  billingError: Together 결제를 불러오지 못했습니다. 잠시 후 다시 시도하세요.
-  buyTogether: Together 구매
-  cancelTogether: 플랜 취소
-  checkout: Waffo 결제 열기
-  connectionTogetherWarning: 방 구성원 한 명이 한동안 사용자에게 연결하지 못하고 있습니다. 방의 모든 구성원이 더 원활하게 연결되도록 XMCL Together를 사용해 보세요. Together는 방장만 필요합니다.
-  masterPurchaseHint: 방의 모든 구성원이 더 원활하게 연결되도록 Together Home은 방장만 필요합니다.
-  natTogetherWarning: 라우터가 방장에게 연결하는 데 문제가 있을 수 있습니다. 연결에 실패하면 사용자와 친구들의 연결을 개선하기 위해 XMCL Together를 사용해 보세요. 이 방에서 Together를 구매해야 하는 사람은 방장뿐입니다.
-  togetherName: Minecraft Together
-  trialDescription: 1 GB 릴레이 트래픽이 포함된 7일 체험판 1회입니다.
-  trialTitle: 연결성 체험판
-  tryTogether: Together 사용해 보기
-  month: 개월
-  orderStatus: 'Waffo 주문: {status}'
-  planDescription: 매월 20 GB의 관리형 릴레이 트래픽과 모드팩 문제 해결을 위한 AI 지원을 제공합니다.
-  waffoHint: 결제는 Waffo Pancake에서 안전하게 처리됩니다. XMCL은 카드 번호를 받지 않습니다.
-  subscription:
-    active: 활성
-    cancelled: 취소됨
-    payment_due: 결제 기한 도래
-  trial:
-    active: 체험 활성
-    available: 무료 체험 사용 가능
-    expired: 체험판 사용됨
-    unavailable: 체험판 사용 불가
-  loginRequiredDescription: P2P 멀티플레이어는 Zenith Launcher 온라인 서비스를 사용합니다. 계속하려면 Zenith Launcher 계정에 로그인하세요.
-  loginRequiredTitle: P2P 멀티플레이어 로그인
-  complete: 완료
-  confirm: 확인
-  connections: 연결
-  copied: 복사됨!
-  copy: 복사
-  copyGroupToFriendHint: 친구들이 이 ID로 그룹에 참여할 수 있도록 하세요
-  copyLocalHint: |
-    "로컬 SDP 텍스트를 복사하여 상대방에게 보내고, 상대방이 이 텍스트를 연결 참여 섹션에 입력하도록 하세요. <span>토큰은 <span style="color: red; font-weight: bold;">한 명의 피어</span>에게만 사용할 수 있습니다! 같은 토큰을 여러 피어에게 보낼 수 없습니다!</span> <br> <span class="hint-text" style="font-style: italic;">여러 피어와 연결해야 한다면 <span style="font-weight: bold; color: rgba(245, 158, 11)">여러 개의</span> 연결을 생성해야 합니다.</span>"
-  createLocalToken: 로컬 토큰 생성
-  currentIpTitle: 감지된 외부 IP
-  currentNatTitle: '현재 네트워크 (NAT):'
-  difficultyLevelHint: 서버 접속 난이도
-  disconnect: 연결 해제
-  disconnectDescription: 사용자 {user} ( {id} )와의 연결을 해제하시겠습니까?
-  disconnected: 연결 해제됨
-  enterRemoteToken: 원격 토큰 입력
-  enterRemoteTokenHint: 상대방이 당신의 토큰을 입력하면, 아래 텍스트 영역에 상대방의 토큰을 입력해야 합니다. 연결하려면 확인을 클릭하세요.
-  exposedPortDescription: 다른 플레이어에게 노출된 포트
-  exposedPorts: 포워딩된 포트
-  gatheringIce: |
-    "ICE 서버가 네트워크에 대한 충분한 정보를 수집할 때까지 기다려 주세요. 참을 수 없고 충분한 정보가 있다면, 현재 SDP를 미리 상대방에게 주고 다음을 클릭하세요. <span class="v-chip v-chip--label v-size--small" style="text-font: bold" >로컬 토큰</span>을 상대방에게 보내고, 상대방이 <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> 연결 참여 </span> 섹션에 토큰을 입력하도록 하세요. <br> ICE 서버가 <span class="v-chip v-chip--label v-size--small" style="text-font: bold">로컬 토큰</span>을 생성하기 위해 정보를 수집하는 데 시간이 걸릴 수 있습니다.<br> ICE 상태가 완료될 때까지 기다릴 필요는 없습니다. 아래 토큰이 변경되지 않으면 복사해서 상대방에게 보낼 수 있습니다."
-  groupId: 그룹 ID
-  illegalTokenDescription: 잘못된 토큰입니다. 상대방의 토큰이 올바른지 확인하세요
-  initiateConnection: 연결 시작
-  joinConnection: 상대방이 이미 연결을 시작했다면, 연결 참여를 해야 합니다.
-  joinManual: 참여
-  joinOrCreateGroup: 그룹 참여/생성
-  joinOrCreateGroupHint: 친구들로부터 그룹 ID를 받거나 그룹을 생성하세요
-  kernel: P2P 커널
-  kernelDescription: 네이티브 WebRTC 또는 node-datachannel을 사용합니다. P2P 연결이 때때로 런처 창을 크래시시킬 때만 이 설정을 변경하세요.
-  leaveGroup: 그룹 떠나기
-  localToken: 로컬 토큰
-  manualConnect: 수동 연결
-  name: LAN 멀티플레이어
-  networkInfo: 네트워크 정보
-  next: 다음
-  otherExposedPortDescription: '{user} 가 포워딩한 포트'
-  placeholder: 다른 사용자와 연결하여 LAN에서 마인크래프트를 플레이하세요!
-  previous: 이전
-  receiveHint: 상대방이 당신의 토큰을 입력하면 연결이 자동으로 생성됩니다. 이제 대화상자를 닫을 수 있습니다.
-  receiveRemoteTokenHint: 상대방의 토큰을 여기에 입력하세요.
-  remoteToken: 원격 토큰
-  routerInfo: 라우터 정보
-  sendTokenToRemote: 원격으로 토큰 보내기
-  share: 인스턴스 설정 공유
-  sharing: 파일 공유 중...
-  start: 시작
-  startNewP2PConnection: 시작 버튼을 클릭하여 새로운 피어 연결을 생성하세요
-  connectionError: 연결 오류
-  connectionFailedHint: 연결을 설정할 수 없습니다. 양쪽 피어의 NAT 유형이 호환되는지 확인하세요.
 myStuff: 내 자료
-natType:
-  blocked: 차단됨
-  fullCone: 완전 개방형
-  openInternet: 개방형 인터넷
-  restrictNat: 제한 NAT
-  restrictPortNat: 포트 제한 NAT
-  symmetricNat: 대칭 NAT
-  symmetricUDPFirewall: 대칭 UDP 방화벽
-  unknown: 알 수 없음
 neoForgedVersion:
   disable: NeoForged 비활성화
   empty: NeoForged는 {version}을(를) 지원하지 않습니다
@@ -1201,23 +941,6 @@ optifineVersion:
   disable: Optifine 비활성화
   empty: Optifine은 마인크래프트 {version} 을(를) 지원하지 않습니다
 optional: 선택사항
-peerConnectionState:
-  closed: 닫힘
-  connected: 연결됨
-  connecting: 연결 중
-  disconnected: 연결 해제됨
-  failed: 실패
-  name: 연결 상태
-  new: 새로
-peerGroupState:
-  closed: 그룹에 없음
-  closing: 닫는 중
-  connected: 그룹 참여됨
-  connecting: 연결 중
-peerIceGatheringState:
-  gathering: ICE 서버 수집 중
-peerSignalingState:
-  have-local-offer: 피어 설명 대기 중
 presence:
   instance: '{instance} 인스턴스 에서 대기 중'
   instanceSetting: '설정 편집 중: {instance}'
@@ -1360,141 +1083,25 @@ search:
 server:
   launch: 서버 시작
   stop: 서버 중지
-  acceptingMinecraftVersion: 허용하는 마인크래프트 버전
   addServer: 서버 추가
   address: 서버 주소
   addressHint: '예: mc.hypixel.net'
   bindUpstream: 업스트림으로 연결
-  boundUpstream: 서버 업스트림 연결됨
   boundUpstreamHint: 이 인스턴스는 연결된 서버의 Minecraft 버전을 따릅니다.
-  creationHint: 서버 주소를 입력하고 서버에 핑을 보내세요
   editServer: 서버 편집
   emptyHint: 이 인스턴스의 servers.dat에 등록된 서버가 없습니다. 시작하려면 추가하세요.
   entryCount: '{count}개의 서버'
-  expectedVersions: 지원되는 버전
-  export: 서버 내보내기
-  exportNoFilesHint: 서버 파일을 찾을 수 없습니다. 일부 파일을 생성하려면 로컬에서 서버를 한 번 실행해 보세요.
-  exportOption: 서버 내보내기 옵션
-  exportSSHAuthenticationFailed: 모든 인증 방법이 실패했습니다. 사용자 이름/비밀번호 또는 개인 키를 확인하세요.
-  exportSSHOptions: SSH 옵션
-  exportSSHPrivateKeyPath: SSH 개인 키 경로
-  exportSSHRemotePath: 원격 서버 경로
-  exportToFolder: 폴더로 내보내기
-  filterVersion: 서버가 응답한 마인크래프트 버전 필터
-  host: 호스트
-  hostHint: 서버의 호스트(포트 포함)
-  hostRequired: 서버 IP 주소를 입력하세요
-  ipAddress: IP 주소
   launchClient: 대신 클라이언트 실행
   launchPinned: 고정됨
   launchTargetHint: 이 인스턴스는 고정된 서버로 즉시 접속합니다. 클라이언트로 전환하시겠습니까?
   maxPlayers: 최대 플레이어
-  motd: 서버 MOTD
   nameHint: 멀티플레이 목록에 표시될 이름
-  nogui: 서버 GUI 없음
-  onlineMode: 온라인 모드
   pin: 서버 고정
   pinAfterSave: 저장 후 기본 시작 대상으로 고정
-  ping: 핑
-  pings: 핑들
   pinnedHeader: '고정됨: {name}'
-  players: 플레이어
   port: 포트
-  clearLog: 로그 지우기
-  log: 서버 로그
-  logWaiting: 서버 출력은 시작 후 여기에 표시됩니다.
-  remoteActionSuccess: Done.
-  remoteAdmin: 원격 서버 관리
-  remoteAuthMethod: 인증 방식
-  remoteAuthPassword: 비밀번호
-  remoteAuthPrivateKey: 개인 키
-  remoteBuildOfflinePackage: 오프라인 패키지 빌드
-  remoteConnected: 연결됨
-  remoteConnection: 연결
-  remoteDeployment: 배포
-  remoteDeploy: 배포
-  remoteDisk: 디스크
-  remoteConfigFiles: 설정 파일
-  remoteExtraFiles: 추가 파일
-  remoteForgetCredentials: 저장된 인증 정보 지우기
-  remoteInstallService: 서비스 설치
-  remoteLoad: 평균 부하
-  remoteLog: 원격 로그
-  remoteMemory: 메모리
-  remoteMods: 모드
-  remoteNoWorldSelected: 선택된 인스턴스 월드가 없습니다
-  remoteJavaRequired: 원격 Linux 호스트에서 Java를 찾을 수 없습니다.
-  remoteLinuxRequired: Linux SSH 대상만 지원됩니다.
-  remoteNotConfiguredHint: 위의 연결 세부 정보를 입력하고 저장하여 상태, 서비스 제어 및 로그를 활성화하세요.
-  remotePathNotWritable: 원격 서버 디렉터리에 쓰기 권한이 없습니다.
-  remotePathWritable: 디렉터리 쓰기 가능
-  remotePolicyInitialize: 최초 1회 초기화
-  remotePolicyMirror: 미러 동기화
-  remotePolicyOverlay: 오버레이
-  remotePolicyPreserve: 유지
-  remotePreview: 변경 사항 미리보기
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: 자격 증명 기억 (OS 키체인)
-  remoteReconcileReady: 원격 대상이 이 인스턴스와 일치하며 콘솔이 연결되었습니다.
-  remoteRestartService: 재시작
-  remoteSavedCredentialsHint: 저장된 자격 증명 사용 중 — 유지하려면 비워 두고, 변경하려면 입력하세요.
-  remoteService: systemd 서비스
-  remoteServiceActive: 실행 중
-  remoteServerInstalled: 서버 파일 설치됨
-  remoteServiceName: 서비스 이름
-  remoteServiceNameHint: 'systemd --user 유닛 이름, 예: mc-server'
-  remoteSelectedFiles: '{count}개의 서버 파일 선택됨'
-  remoteSelectFiles: 파일 선택
-  remoteStartCommand: 시작 명령
-  remoteStartCommandHint: '예: java -jar server.jar nogui'
-  remoteStartService: 시작
-  remoteStatus: 상태
-  remoteSystemdRequired: 원격 호스트에서 systemd 사용자 서비스를 사용할 수 없습니다.
-  remoteTargetName: 대상 이름
-  remoteStopService: 중지
-  remoteStopWatchLog: 로그 감시 중지
-  remoteTestConnection: 연결 테스트
-  remoteTestConnectionSuccess: 연결 성공.
-  remoteUninstallConfirmMessage: 원격 호스트의 systemd 유닛을 비활성화하고 제거합니다. 서버 파일은 유지됩니다.
-  remoteUninstallService: 서비스 제거
-  remoteRunInstall: 설치 또는 복구
-  remoteWatchLog: 실시간 로그 보기
-  remoteWorldAlways: 동기화할 때마다 교체
-  remoteWorldDeployment: 인스턴스 월드 배포
-  remoteWorldDeploymentHint: 이 정책에서 허용하지 않는 한 일반 동기화 시 월드 데이터는 업로드되지 않습니다.
-  remoteWorldFirstInstall: 대상에 월드가 없을 때만 초기화
-  remoteWorldNever: 월드 업로드 안 함
-  remoteWorldPresent: 대상 서버 월드
-  remoteWorld: 월드
-  remoteWorldWillDeploy: 이번 동기화에서 선택된 인스턴스 월드가 업로드됩니다.
   serverName: 서버 이름
-  serviceInstall: 서비스 설치
-  serviceManagedLaunch: 시작 및 중지 작업에 OS 서비스 사용
-  serviceManager: 시스템 서비스
-  serviceName: 서비스 이름
-  serviceNameHint: 문자, 숫자, 점, 하이픈이 포함된 고유 식별자
-  serviceNotInstalled: 설치되지 않음
-  serviceStartCommand: 시작 명령
-  serviceSystemd: systemd --user
-  serviceWindows: Windows 서비스
-  serviceWindowsCommandHint: Java 명령은 이 인스턴스에서 생성됩니다.
   serversListTitle: 서버 목록
-  target: 서버 대상
-  targetLocal: localhost
-  targetLocalHint: 이 컴퓨터에 서버를 설치하고 실행합니다.
-  targetRemote: SSH 대상
-  targetRemoteHint: SSH를 통해 서버를 연결, 설치, 시작 및 모니터링합니다.
   unbindUpstream: 연결 해제
   unknown: 알 수 없는 서버
   unknownDescription: 알 수 없는 서버입니다. 새로고침하세요
@@ -1505,9 +1112,6 @@ server:
   upstreamUpdateAvailable: 서버가 현재 Minecraft {version} 버전입니다. 적용하려면 클릭하세요.
   upstreamUpdateHint: 제안된 Minecraft 버전을 이 인스턴스에 적용합니다.
   useAsUpstreamHint: 인스턴스가 서버에서 보고된 Minecraft 버전을 따르게 됩니다.
-  version: 서버가 요구하는 버전
-  versionHint: 핑을 보낼 마인크래프트 버전
-  worldPreserve: 대상 서버 월드 보존
 serverStatus:
   nohost: §4호스트를 찾을 수 없습니다!
   ping: 핑 중...
@@ -1533,7 +1137,6 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: SignPath.io가 제공하는 Windows의 무료 코드 서명, SignPath Foundation에서 인증
   aboutSponsors: 😇 스폰서 😇
-  advancedJavaOptions: 고급 Java 옵션
   advancedSettings: 고급 설정
   advancedSettingsHint: 위험 구역 - 런처 데이터 재설정 또는 관리
   apiSets:
@@ -1589,8 +1192,6 @@ setting:
   devModeLabel: 개발
   developerMode: 개발자 모드
   developerModeDescription: 개발자 모드는 자신의 모드를 테스트하기 위한 것입니다
-  disableTelemetry: 원격 분석 비활성화
-  disableTelemetryDescription: XMCL이 게임 실행 및 사용자 로그인 이벤트를 수집합니다.
   enableDedicatedGPUOptimization: 전용 GPU 할당
   enableDedicatedGPUOptimizationDescription: 이 옵션은 마인크래프트 프로세스에 전용 GPU를 할당합니다.
   enableDiscord: Discord 상태 표시 활성화
@@ -1600,8 +1201,6 @@ setting:
   exportSettingsHint: 현재 설정을 파일로 저장
   general: 일반
   githubRelease: Github 릴리스
-  globalJava: 선호하는 Java
-  globalJavaHint: 자동 모드에서 이 Java를 먼저 시도하고, 게임 버전과 호환되지 않을 때만 자동 감지로 대체합니다.
   globalSetting: 전체 인스턴스 설정
   globalSettingHint: 인스턴스는 기본적으로 이 설정을 사용합니다.
   importSettings: 설정 가져오기
@@ -1633,7 +1232,6 @@ setting:
   maxSockets: 호스트당
   maxSocketsDescription: 호스트당 또는 전체 호스트에 대해 허용할 최대 소켓 수를 제한합니다. 0은 제한 없음을 의미합니다.
   maxSocketsTitle: 최대 HTTP 소켓
-  memoryAssignment: 메모리 할당
   migrateFromOther: 다른 런처에서 가져오기
   minecraftOptions: Minecraft 옵션
   name: 전체 설정
@@ -1648,11 +1246,6 @@ setting:
     repulse: 밀어내기
   particleModeDescription: 파티클 클릭 동작 선택
   quickLaunchSettings: 빠른 실행
-  replaceNative: 시스템 라이브러리
-  replaceNativeDescription: '사용 중인 컴퓨터 환경(예: 32비트/64비트)에 맞게 필요한 라이브러리를 교체합니다.'
-  replaceNatives:
-    all: 모두
-    legacy: 레거시 버전만
   resetAllSettings: 모든 설정 재설정
   resetAllSettingsConfirmMessage: 이 작업은 모든 설정, 계정, 인스턴스, 그룹 및 캐시 데이터를 영구적으로 삭제합니다. 이 작업은 취소할 수 없습니다. 계속하시겠습니까?
   resetAllSettingsConfirmTitle: 모든 설정을 재설정하시겠습니까?
@@ -1709,15 +1302,6 @@ setting:
     successGlobal: 배경 이미지가 업데이트되었습니다.
     successInstance: 인스턴스 배경 이미지가 업데이트되었습니다.
     failed: 배경 이미지 설정에 실패했습니다
-  aiAgentApiKey: AI 에이전트 API 키
-  aiAgentApiKeyDescription: OpenAI 또는 Claude용 게이트웨이처럼 OpenAI와 호환되는 제공자를 설정합니다. 키는 이 기기에 로컬로 저장됩니다.
-  aiAgentApiKeyPlaceholder: OpenAI 또는 Claude 제공자 API 키
-  aiAgentEndpoint: AI 에이전트 엔드포인트
-  aiAgentEndpointDescription: 채팅 완성 엔드포인트 URL입니다.
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 또는 claude-sonnet-4-5
-  aiAgentModel: AI 에이전트 모델
-  aiAgentModelDescription: 채팅 완성 요청 시 전송할 모델 이름입니다.
   useDesktopBackground: 현재 바탕화면 배경 이미지 사용
   customCss:
     advancedDescription: 사용자 지정 CSS로 런처의 현재 스타일을 덮어씁니다.
@@ -1878,17 +1462,6 @@ theme:
   selectVideo: 비디오 선택
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: 호스트 후보
-  prflx: 피어 반사 후보
-  relay: 릴레이 후보
-  srflx: 서버 반사 후보
-turnRegion:
-  fr: 프랑스
-  guangzhou: 중국 광저우
-  hk: 홍콩
-  liaoning: 중국 랴오닝
-  po: 폴란드
 tutorial:
   feedbackDescription: 문제가 발생하면 이 버튼을 클릭하여 피드백을 보내세요!
   hideNewsHeaderDescription: 왼쪽에서 뉴스 쇼케이스를 볼 수 있습니다. 이 버튼을 클릭하면 쇼케이스를 숨길 수 있습니다.
@@ -1897,10 +1470,6 @@ tutorial:
     appearanceThemeTitle: 인스턴스 외형
     iconDescription: 아이콘을 클릭하여 변경합니다.
     iconTitle: 인스턴스 아이콘
-    javaDescription: Java 버전을 선택하거나 변경합니다.
-    javaImportDescription: 로컬 스토리지에서 Java 버전을 가져옵니다.
-    javaImportTitle: Java 가져오기
-    javaTitle: Java 목록
     modpackExportDescription: 구성된 인스턴스를 공유 가능한 모드팩 파일로 패키징합니다.
     modpackExportTitle: 모드팩 내보내기
     modpackFilesDescription: 클라이언트 및 서버용으로 포함할 설정 파일, 모드, 리소스를 선택합니다.
@@ -1954,15 +1523,6 @@ tutorial:
     profileDescription: 계정을 전환하고 로그인 자격 증명을 관리합니다.
     skinTitle: 스킨 및 망토 사용자 정의
     skinDescription: 캐릭터를 3D로 미리 보고 스킨을 변경하며 망토를 착용합니다.
-  multiplayer:
-    railTitle: 네트워크 및 탐색
-    railDescription: NAT 유형, 네트워크 상태를 확인하고 연결과 설정을 전환합니다.
-    groupTitle: 방 참가 또는 호스팅
-    groupDescription: 방 코드를 입력하여 참가하거나 빈 칸으로 두어 직접 방을 엽니다.
-    joinDescription: 클릭하여 기존 방에 참가하거나 새 방을 만듭니다.
-    contentTitle: 연결된 멤버 및 콘텐츠
-    contentDescription: 멤버 관리, 핑 확인 및 실행 중인 Minecraft 게임을 공유합니다.
-    manualDescription: SDP 교환을 통한 친구와의 수동 직접 P2P 연결.
   resourcepack:
     searchTitle: 리소스팩 검색
     searchDescription: Modrinth, CurseForge 또는 로컬 파일에서 리소스팩을 검색합니다.
@@ -2007,10 +1567,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: 확인되지 않은 파일
   via: '{source} 통해'
-upstream:
-  downgrade: 다운그레이드
-  onlyShowCurrentVersion: 현재 마인크래프트 버전만 표시
-  update: 업데이트
 user:
   accessToken: 액세스 토큰
   authMode: 인증 서비스
@@ -2139,62 +1695,11 @@ migrateMinecraft:
   name: Minecraft 파일 마이그레이션
 reinstall:
   name: '{version} 재설치'
-agent:
-  accessRequiredHint: 기본 제공 에이전트를 사용하려면 XMCL을 구독하거나 설정에서 자체 AI 제공자를 구성하세요.
-  subscribeXmcl: XMCL 구독
-  callingTool: '{name} 호출 중…'
-  disabledPlaceholder: 에이전트 비활성화됨
-  emptyHint: 에이전트에게 인스턴스 검사, 모드 활성화/비활성화, 로그 읽기 또는 충돌 진단을 요청하세요.
-  inputPlaceholder: 에이전트에게 질문하기… (전송하려면 Enter, 줄바꿈은 Shift+Enter)
-  notConfiguredHint: 설정 → 일반 → AI 에이전트에서 API 키, 모델 및 OpenAI 호환 엔드포인트를 설정하세요. 예를 들어 OpenAI 또는 Claude 호환 게이트웨이를 사용할 수 있습니다.
-  notConfiguredTitle: 에이전트가 설정되지 않음
-  openSettings: 설정 열기
-  reset: 대화 초기화
-  setupGuide: 설정 가이드
-  statusDisabled: 비활성화됨 — API 키 누락
-  statusReady: 준비됨
-  statusWorking: 작업 중…
-  suggestion1: 이 인스턴스를 더 최신 마인크래프트 버전으로 업그레이드하고, 그에 맞게 모드를 업데이트하세요.
-  suggestion2: 모드가 충돌합니다 — 원인을 찾고 해결 방법을 알려주세요.
-  suggestion3: '모드팩 빌드: 원하는 기능이 있는 모드를 찾아 이 인스턴스에 설치해 주세요.'
-  thinking: 생각 중…
-  title: Zenith Launcher 에이전트
-  toggleHint: 토글하려면
 difficulty:
   easy: 쉬움
   hard: 어려움
   normal: 보통
   peaceful: 평화로움
-minecraftFriends:
-  accept: 수락
-  add: 친구 추가
-  addPlaceholder: 마인크래프트 사용자 이름
-  addedRelative: '{time}에 추가됨'
-  errors:
-    cannotAddSelf: 자기 자신에게는 친구 요청을 보낼 수 없습니다.
-    duplicate: 해당 플레이어는 이미 친구 목록에 있습니다.
-    generic: 오류가 발생했습니다. 다시 시도해 주세요.
-    inviteRejected: 해당 플레이어가 친구 기능을 활성화하지 않았거나 초대를 수락하지 않습니다.
-    tokenExpired: Microsoft 세션이 만료되었습니다. 다시 로그인해 주세요.
-    unknownProfile: 해당 이름의 플레이어를 찾을 수 없습니다.
-  expiresRelative: '{time}에 만료됨'
-  friends: 친구
-  heroEmptyHint: 위의 사용자 이름으로 마인크래프트 플레이어를 추가하여 친구 요청을 보내세요.
-  heroEmptyTitle: 친구 목록이 비어 있습니다
-  incoming: 받은 요청
-  incomingHint: 받은 요청 1개 | 받은 요청 {count}개
-  notifyAdded: '{name}님에게 친구 요청을 보냈습니다'
-  outgoing: 보낸 요청
-  privacy:
-    acceptInvites: 친구 초대 수락
-    acceptInvitesHint: 비활성화 시 다른 플레이어가 나에게 친구 요청을 보낼 수 없습니다.
-    friendsEnabled: 친구 목록 활성화됨
-  reconnectAction: 재연결
-  requiresMicrosoft: 친구 기능을 사용하려면 Microsoft 계정으로 로그인하세요.
-  scopedTo: '{name}(으)로 로그인됨'
-  send: 전송
-  title: 마인크래프트 친구
-  unsupported: 친구 기능은 Microsoft 계정에서만 사용할 수 있습니다.
 relative:
   daysAgo: '{count}일 전 | {count}일 전'
   hoursAgo: '{count}시간 전 | {count}시간 전'
@@ -2206,58 +1711,9 @@ resourceError:
   title: '{file}을(를) 읽을 수 없음'
 blueprint:
   name: 설계도 | 설계도
-  count: '{count}개의 설계도'
-  searchLocal: 설계도 검색...
-  searchOnline: 온라인 검색...
-  market: 마켓
-  local: 로컬
-  provider: 제공처
-  import: 가져오기
-  openFolder: 폴더 열기
-  refresh: 새로고침
   empty: 설계도를 찾을 수 없습니다. .litematic / .schem / .nbt 파일을 가져오거나 마켓을 찾아보세요.
-  dropHint: 가져올 설계도 파일(.litematic / .schem / .nbt)을 여기에 끌어다 놓으세요.
   selectHint: 설계도를 선택하여 미리보세요.
-  blocks: '{count}개의 블록'
-  materials: 재료
-  allNamespaces: 전체
-  findMod: 이 네임스페이스의 모드 찾기
-  compatible: 호환됨
-  incompatible: 모드 누락됨
-  missingNamespaces: '누락된 모드: {namespaces}'
-  delete: 삭제
-  cancel: 취소
   install: 설치
-  goTo: 웹사이트
-  byAuthor: '작성자: {author}'
-  noDescription: 설명이 제공되지 않았습니다.
-  loadMore: 더 보기
-  cmsBrowseOnly: 이 출처는 열람 전용입니다. 다운로드하려면 웹사이트를 여세요.
-  mixedSources: 결과에 모든 출처가 혼합되어 있습니다. 일부는 열람 전용이므로 다운로드하려면 웹사이트를 여세요.
-  formats:
-    structure: 바닐라 구조물
-  preview:
-    title: 3D 미리보기
-    loading: 미리보기 로딩 중...
-    empty: 이 설계도에는 표시할 블록이 없습니다.
-    hint: '{count}개 블록 · {x}×{y}×{z}'
-    controls: 'WASD: 이동 · Space/Shift: 위/아래 · 드래그: 둘러보기 · 스크롤: 확대/축소'
-  convert:
-    title: 포맷 변환
-    hint: 이 설계도를 다른 포맷으로 변환합니다. 새 파일이 생성됩니다.
-    target: 대상 포맷
-    action: 변환
-  replace:
-    title: 블록 교체
-    simple: 간단히
-    precise: 정밀하게
-    simpleHint: 블록 ID만 매칭하여 기존 블록 상태 속성을 유지합니다.
-    preciseHint: 전체 블록 상태(ID + 속성)를 매칭하고 완전히 교체합니다.
-    from: 대상 블록
-    to: 교체할 블록
-    addRule: 규칙 추가
-    newFile: 새 파일로 저장
-    action: 교체
 gamepad:
   detectedTitle: 게임패드 감지됨
   connected: 컨트롤러 연결됨

@@ -12,6 +12,7 @@ import {
   ReleaseInfo,
 } from '@xmcl/runtime-api'
 import { DownloadUpdateOptions, LauncherAppUpdater } from '@xmcl/runtime/app'
+import { pickLauncherRelease, versionOfTag, ZENITH_RELEASES_API, ZENITH_RELEASES_URL } from '@xmcl/runtime/zenith/release'
 import { AnyError, isSystemError } from '@xmcl/utils'
 import { spawn } from 'child_process'
 import { app, shell } from 'electron'
@@ -60,7 +61,7 @@ async function downloadAsarUpdate(
     platformFlag += '-ia32'
   }
   const file = `app-${version}-${platformFlag}.asar`
-  const github = `https://github.com/gitzetazero/zenith-launcher/releases/download/v${version}/${file}`
+  const github = `${ZENITH_RELEASES_URL}/download/v${version}/${file}`
 
   // Skip the download entirely if the pending file already matches the
   // published checksum.
@@ -198,7 +199,7 @@ async function downloadGzAsar(
 
 async function hintUserDownload(): Promise<void> {
   // zenith: no in-app updater yet; send the user to our Releases page
-  shell.openExternal('https://github.com/gitzetazero/zenith-launcher/releases')
+  shell.openExternal(ZENITH_RELEASES_URL)
 }
 
 async function downloadAppInstaller(
@@ -210,7 +211,7 @@ async function downloadAppInstaller(
 ): Promise<void> {
   // zenith: the appx channel is not published for Zenith Launcher
   const destination = join(app.getPath('downloads'), 'Zenith-Launcher.appinstaller')
-  const url = 'https://github.com/gitzetazero/zenith-launcher/releases/latest/download/Zenith-Launcher.appinstaller'
+  const url = `${ZENITH_RELEASES_URL}/latest/download/Zenith-Launcher.appinstaller`
 
   await download({
     url,
@@ -324,8 +325,8 @@ export class ElectronUpdater implements LauncherAppUpdater {
     const app = this.app
     this.logger.log('Try get update from selfhost')
     const { locale } = await app.registry.get(kSettings)
-    // zenith: releases come from this fork's GitHub Releases (prereleases included: the first Zenith builds are prereleases)
-    const response = await this.app.fetch('https://api.github.com/repos/gitzetazero/zenith-launcher/releases?per_page=10', {
+    // zenith: launcher releases come from the Zenith repository's GitHub Releases (the same repository publishes the game)
+    const response = await this.app.fetch(ZENITH_RELEASES_API, {
       headers: {
         'Accept': 'application/vnd.github+json',
         'Accept-Language': locale,
@@ -341,7 +342,7 @@ export class ElectronUpdater implements LauncherAppUpdater {
     }
     const json = (await response.json()) as any
     const releases = (Array.isArray(json) ? json : [json]).filter((r: any) => !r.draft)
-    const result = releases[0]
+    const result = pickLauncherRelease(releases)
     if (!result) throw new AnyError('UpdateError', 'No Zenith Launcher release published yet')
     const files = result.assets.map((a: any) => ({
       url: a.browser_download_url,
@@ -349,13 +350,13 @@ export class ElectronUpdater implements LauncherAppUpdater {
     })) as Array<{ url: string; name: string }>
     const platformString =
       app.platform.os === 'windows' ? 'win' : app.platform.os === 'osx' ? 'mac' : 'linux'
-    const version = result.tag_name.substring(1)
+    const version = versionOfTag(result.tag_name)
     const updateInfo: ReleaseInfo = {
       name: result.tag_name,
       body: result.body,
       date: result.published_at,
       files,
-      newUpdate: !isSameVersion(app.version, result.tag_name),
+      newUpdate: !isSameVersion(app.version, version),
       operation: ElectronUpdateOperation.Manual,
     }
 

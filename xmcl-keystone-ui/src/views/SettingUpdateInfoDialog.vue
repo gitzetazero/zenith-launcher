@@ -92,7 +92,7 @@
       hover
 
       style="width: 100%"
-      to="https://github.com/gitzetazero/zenith-launcher/releases"
+      to="https://github.com/gitzetazero/zenith/releases"
       target="browser"
       push
     >
@@ -140,10 +140,10 @@ const hintRedownload = computed(() =>
 )
 
 const openOfficialWebsite = () => {
-  window.open('https://github.com/gitzetazero/zenith-launcher', 'browser')
+  window.open('https://github.com/gitzetazero/zenith', 'browser')
 }
 const openGithub = () => {
-  window.open('https://github.com/gitzetazero/zenith-launcher/releases', 'browser')
+  window.open('https://github.com/gitzetazero/zenith/releases', 'browser')
 }
 </script>
 

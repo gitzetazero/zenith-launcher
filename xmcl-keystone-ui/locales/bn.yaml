@@ -1,97 +1,17 @@
-AppAddInstanceDialog:
-  choiceTitle: একাধিক লঞ্চ প্রোফাইল পাওয়া গেছে। অনুগ্রহ করে আমদানি করার জন্য একটি বেছে নিন।
-  createTitle: গেম তৈরি করুন
-  serverTitle: আপনার সার্ভার ঠিকানা লিখুন
-AppShareInstanceDialog:
-  editScopeDescription: ল্যানে চলমান এই গেমটি শনাক্ত করার পর পিয়াররা যেসব ফাইল আনতে পারবে সেগুলো নির্বাচন করুন।
-  editScopeTitle: শেয়ারের পরিধি সম্পাদনা করুন
-  instanceToShare: চলমান গেম
-  alterDownloadDescription: আপনি যদি বর্তমান ইনস্ট্যান্সটি এলোমেলো করতে না চান, তবে আপনি অন্য পিয়ারের কনফিগারেশন থেকে একটি নতুন ইনস্ট্যান্স তৈরি করতে পারেন। ইনস্ট্যান্স তৈরি করতে নিচের বোতামে ক্লিক করুন।
-  baseInfo: প্রাথমিক সেটিংস
-  description: আপনি প্রোফাইলটি শেয়ার করার পর, অন্য স্থান থেকে আপনার পিসির মাধ্যমে এই ফাইলগুলো ডাউনলোড করা যাবে।
-  downloadDescription: অনুগ্রহ করে আপনার পিয়ারের প্রদান করা ফাইলগুলো যাচাই করুন। আপনি যে ফাইলটি ডাউনলোড করতে চান তা নির্বাচন করুন। এটি বর্তমান ইনস্ট্যান্স {name}-এ রাখা হবে।
-  downloadNotifyTitle: '{user}-এর থেকে ইনস্ট্যান্স ডাউনলোড করুন'
-  downloadTitle: অন্যান্য পিয়ারদের থেকে ফাইল ডাউনলোড করুন
-  filesToDownload: ডাউনলোড করার জন্য ফাইল বেছে নিন
-  filesToShare: শেয়ার করার জন্য ফাইল বেছে নিন
-  share: শেয়ার করুন
-  shareTitle: অন্যান্য খেলোয়াড়দের সাথে গেম ফাইল শেয়ার করুন
 BaseSettingGeneral:
   title: সাধারণ
-HomeJavaIssueDialog:
-  incompatibleJava: অসংগতিপূর্ণ জাভা
-  incompatibleJavaHint: বর্তমান জাভাটি নির্বাচিত মাইনক্রাফটের সাথে অসংগতিপূর্ণ হতে পারে!
-  missingJava: জাভা অনুপস্থিত
-  missingJavaHint: 'লঞ্চারটি আপনার কম্পিউটারে কোনো জাভা সনাক্ত করতে পারছে না। আপনি করতে পারেন:'
-  optionSwitch:
-    name: '{version}-এ পরিবর্তন করুন'
 HomeLaunchMultiInstanceDialog:
   confirm: হ্যাঁ, চালু করুন
   description: আপনি মাইনক্রাফটের একাধিক ইনস্ট্যান্স চালু করছেন। আপনি কি নিশ্চিত?
   title: একাধিক ইনস্ট্যান্স
 SettingMigrationDialog:
   selectRootDirectory: রুট ডিরেক্টরি নির্বাচন করুন
-agent:
-  accessRequiredHint: বিল্ট-ইন এজেন্ট ব্যবহার করতে Zenith Launcher-এ সাবস্ক্রাইব করুন, অথবা সেটিংসে নিজের AI প্রদানকারী কনফিগার করুন।
-  subscribeXmcl: XMCL-এ সাবস্ক্রাইব করুন
-  callingTool: '{name}-কে কল করা হচ্ছে…'
-  disabledPlaceholder: এজেন্ট নিষ্ক্রিয়
-  emptyHint: এজেন্টকে আপনার ইনস্ট্যান্স পরীক্ষা করতে, মড চালু/বন্ধ করতে, লগ পড়তে অথবা ক্র্যাশ নির্ণয় করতে বলুন।
-  inputPlaceholder: এজেন্টকে জিজ্ঞাসা করুন… (পাঠাতে Enter, নতুন লাইনের জন্য Shift+Enter চাপুন)
-  notConfiguredHint: সেটিংস → সাধারণ → এআই এজেন্ট-এ একটি API কী, মডেল এবং OpenAI-সামঞ্জস্যপূর্ণ এন্ডপয়েন্ট সেট করুন। উদাহরণস্বরূপ, OpenAI বা Claude-সামঞ্জস্যপূর্ণ গেটওয়ে ব্যবহার করুন।
-  notConfiguredTitle: এজেন্ট কনফিগার করা হয়নি
-  openSettings: সেটিংস খুলুন
-  reset: কথোপকথন রিসেট করুন
-  setupGuide: সেটআপ নির্দেশিকা
-  statusDisabled: নিষ্ক্রিয় — API কী অনুপস্থিত
-  statusReady: প্রস্তুত
-  statusWorking: কাজ করছে…
-  suggestion1: এই ইনস্ট্যান্সটিকে একটি নতুন মাইনক্রাফট সংস্করণে আপগ্রেড করুন এবং তার সাথে সামঞ্জস্য রাখতে মডগুলো আপডেট করুন
-  suggestion2: আমার মডগুলো ক্র্যাশ করছে — কারণটি খুঁজুন এবং কীভাবে এটি ঠিক করা যায় তা আমাকে বলুন
-  suggestion3: 'একটি মডপ্যাক তৈরি করুন: আমার পছন্দের ফিচারের জন্য মড খুঁজুন এবং সেগুলো এই ইনস্ট্যান্সে ইনস্টল করুন'
-  thinking: ভাবছে…
-  title: Zenith Launcher এজেন্ট
-  toggleHint: টগল করার জন্য
 ago:
   day: '{duration} দিন আগে | {duration} দিন আগে'
   hour: '{duration} ঘণ্টা আগে | {duration} ঘণ্টা আগে'
   minute: '{duration} মিনিট আগে | {duration} মিনিট আগে'
   second: '{duration} সেকেন্ড আগে | {duration} সেকেন্ড আগে'
-askAICrash:
-  agentNotConfigured: লঞ্চারের বিল্ট-ইন এজেন্টকে এটি নির্ণয় এবং সমাধান করতে দেওয়ার জন্য সেটিংসে একজন এআই প্রোভাইডার এবং এপিআই কী যুক্ত করুন।
-  askAgent: বিল্ট-ইন এআই এজেন্টের সাহায্যে ক্র্যাশ নির্ণয় করুন
-  copyPrompt: এআই-কে জিজ্ঞাসা করার প্রম্পটটি কপি করুন
-  description: গেম ক্র্যাশ বুঝতে এআই-এর সাহায্য নিন! এই গেম ক্র্যাশ সম্পর্কে এআই-কে জিজ্ঞাসা করতে নিচের নির্দেশাবলী অনুসরণ করুন!
-  orExternal: অথবা একটি এক্সটার্নাল এআই ব্যবহার করুন
-  selectPlatform: একটি এআই প্ল্যাটফর্ম খুলুন এবং এইমাত্র কপি করা প্রম্পটটি পেস্ট করুন।
-  setupAgent: এআই এজেন্ট সেট আপ করুন
 authProfileAddedNotification: অথ প্রোফাইল {name} যোগ করা হয়েছে
-bedrock:
-  description: মাইনক্রাফট বেডরক এডিশন মাইক্রোসফট স্টোরের মাধ্যমে ইনস্টল ও চালু করা হয়। আপনার মাইক্রোসফট অ্যাকাউন্টে একটি বেডরক লাইসেন্স থাকতে হবে।
-  install: মাইক্রোসফট স্টোর থেকে পান
-  installFailed: মাইক্রোসফট স্টোর খুলতে ব্যর্থ হয়েছে
-  installed: 'ইনস্টল করা হয়েছে: {version}'
-  launchHint: বেডরক এডিশন শুরু করতে লঞ্চ বোতামটি ব্যবহার করুন।
-  installBedrockVersion: বেডরক {version} ডাউনলোড করা হচ্ছে
-  licenseRequired: বেডরক এডিশন ইনস্টল করতে এবং খেলতে মাইনক্রাফটের মালিকানাধীন একটি মাইক্রোসফট অ্যাকাউন্ট দিয়ে সাইন ইন করুন।
-  refresh: রিফ্রেশ করুন
-  versionsTitle: সংস্করণ ম্যানেজার
-  versionsHint: মাইক্রোসফটের সার্ভার থেকে একাধিক বেডরক সংস্করণ ডাউনলোড করুন এবং সেগুলির মধ্যে পরিবর্তন করুন। উইন্ডোজে একবারে কেবল একটি সংস্করণই নিবন্ধিত করা যেতে পারে, তাই কোনো সংস্করণ খেললে সেটি পুনরায় নিবন্ধিত হয়।
-  versionsError: সংস্করণ তালিকা লোড করতে ব্যর্থ হয়েছে। আপনার নেটওয়ার্ক পরীক্ষা করে আবার চেষ্টা করুন।
-  channel: চ্যানেল
-  channelRelease: রিলিজ
-  channelBeta: বেটা
-  channelPreview: প্রিভিউ
-  active: সক্রিয়
-  play: খেলুন
-  download: ডাউনলোড করুন
-  installedTag: ইনস্টল করা
-  developerModeRequired: ডাউনলোড করা সংস্করণ নিবন্ধনের জন্য উইন্ডোজ ডেভেলপার মোড প্রয়োজন। এটি সক্রিয় করতে প্রশাসকের (administrator) অনুমতির অনুরোধ করা হবে।
-  enableDeveloperMode: ডেভেলপার মোড সক্রিয় করুন
-  enableDeveloperModeFailed: ডেভেলপার মোড সক্রিয় করতে ব্যর্থ হয়েছে
-  downloadFailed: বেডরক {version} ডাউনলোড করতে ব্যর্থ হয়েছে
-  launchFailed: এই বেডরক সংস্করণটি চালু করতে ব্যর্থ হয়েছে
-  removeFailed: Bedrock {version} অপসারণ করতে ব্যর্থ হয়েছে
 backup:
   title: ব্যাকআপ এবং পুনরুদ্ধার
   description: আপনার সেটিংস, কালেকশন, থিম এবং গেম ইনস্ট্যান্স ব্যাকআপ ও পুনরুদ্ধার করুন
@@ -324,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: এই সংস্করণটি ইনস্টল করতে ক্লিক করুন
     name: Minecraft %{version} এর জন্য ক্ষতিগ্রস্ত সংস্করণ জার (jar)।
-  incompatibleJava:
-    name: জাভা সংস্করণ {javaVersion} সংস্করণ {version} এর জন্য উপযুক্ত নয়!
   instanceFiles:
     description: ইনস্ট্যান্স ইনস্টলেশনে {counts} টি ফাইল অন্তর্ভুক্ত রয়েছে।
     title: অসম্পূর্ণ ইনস্ট্যান্স ইনস্টলেশন
-  invalidJava:
-    name: অকার্যকর জাভা অবস্থান।
   missingJava:
     message: এই সমস্যাটি সমাধান করতে ক্লিক করুন
     name: Minecraft চালু করার জন্য জাভা খুঁজে পাওয়া যাচ্ছে না!
@@ -366,11 +282,6 @@ duration:
   hour: '{duration} ঘণ্টা | {duration} ঘণ্টা'
   minute: '{duration} মিনিট | {duration} মিনিট'
   second: '{duration} সেকেন্ড | {duration} সেকেন্ড'
-env:
-  select:
-    all: সব নির্বাচন করুন
-    fit: মানানসই নির্বাচন করুন
-    none: কিছুই নির্বাচন করবেন না
 errors:
   bedrockUnsupportedPlatform: Minecraft Bedrock Edition শুধুমাত্র Windows বিল্ডে সমর্থিত।
   bedrockNotInstalled: Minecraft Bedrock Edition ইনস্টল করা নেই।
@@ -406,8 +317,6 @@ errors:
     title: লঞ্চার ফোল্ডারে লেখা যাচ্ছে না
   NotFoundError: ৪০৪ নট ফাউন্ড (খুঁজে পাওয়া যায়নি)
   SocketError: সার্ভার সকেট ত্রুটি
-eula:
-  body: চেকবক্স বোতামটি টিক দেওয়ার মাধ্যমে, আপনি Minecraft এর {eula} এর প্রতি সম্মতি জ্ঞাপন করছেন।
 exception:
   http: '{url} এ HTTP অনুরোধ ব্যর্থ হয়েছে। স্ট্যাটাস কোড {statusCode}। {code}। অনুগ্রহ করে আবার চেষ্টা করুন অথবা আপনার নেটওয়ার্ক পরীক্ষা করুন। এই ত্রুটিটি অব্যাহত থাকলে অনুগ্রহ করে ডেভেলপার টিমকে একটি রিপোর্ট পাঠান।'
 exportModpack:
@@ -490,21 +399,6 @@ gameType:
   survival: সারভাইভাল মোড
 help: সাহায্য
 home: হোম
-importModpack:
-  fromFileSubtitle: .zip বা .mrpack ফাইল বেছে নিন
-  fromUrl: লিঙ্ক / URL থেকে...
-  fromUrlSubtitle: URL থেকে মডপ্যাক ইনস্টল করুন
-  fromUrlDescription: 'মডপ্যাকের URL লিখুন বা পেস্ট করুন:'
-  invalidUrl: একটি বৈধ URL লিখুন (http:// বা https://)
-  selectVersion: মডপ্যাকের সংস্করণ বেছে নিন
-  selectVersionDescription: 'ইনস্টল করার জন্য {name}-এর সংস্করণ বেছে নিন:'
-  pmcProtected: Planet Minecraft সাইটটি Cloudflare দ্বারা সুরক্ষিত। পৃষ্ঠা থেকে সরাসরি ডাউনলোড লিঙ্ক বা মিরর লিঙ্ক কপি করুন।
-  netdiskTitle: ক্লাউড ড্রাইভ থেকে ডাউনলোড
-  netdiskDescription: মডপ্যাকের এই সংস্করণটি একটি বাহ্যিক ক্লাউড ড্রাইভে রাখা আছে। ব্রাউজারে ডাউনলোড পৃষ্ঠা খুলতে নিচে ক্লিক করুন, তারপর ডাউনলোড করা .zip বা .mrpack ফাইলটি টেনে Zenith Launcher-এ ছেড়ে দিন।
-  openNetdisk: ক্লাউড ড্রাইভ খুলুন
-  netdiskOpened: ক্লাউড ড্রাইভের লিঙ্ক ব্রাউজারে খোলা হয়েছে এবং ক্লিপবোর্ডে কপি করা হয়েছে।
-  noReleasesFound: এই রিপোজিটরিতে .mrpack বা .zip মডপ্যাক রিলিজ পাওয়া যায়নি।
-  name: মডপ্যাক ইম্পোর্ট করুন
 installAssets:
   asset: '{count}টি অ্যাসেট ইনস্টল করুন'
   assetIndex: অ্যাসেট ইনডেক্স ফাইল পরীক্ষা করুন
@@ -573,12 +467,9 @@ instance:
   iconUrl: আইকন URL
   installModpack: মডপ্যাক থেকে ইনস্ট্যান্স আপডেট করুন
   lastPlayed: সর্বশেষ খেলা হয়েছে
-  launchArguments: লঞ্চ আর্গুমেন্টগুলির প্রিভিউ
   launchServer: লোকালহোস্ট (localhost) সার্ভার লঞ্চ করুন
   linkFileDesc: এটি ইনস্ট্যান্সের লোকাল {file}-কে গ্লোবাল {file} দিয়ে ওভাররাইট করবে। আপনি কি এটি লিঙ্ক করতে নিশ্চিত?
   linkFileTitle: আপনি কি {file} লিঙ্ক করতে নিশ্চিত?
-  mcOptions: Minecraft বিকল্পসমূহ
-  mcOptionsHint: অতিরিক্ত Minecraft লঞ্চ আর্গুমেন্ট
   name: প্রোফাইলের নাম
   nameHint: মডপ্যাকের নাম
   nameInvalidChars: 'নামে এই অক্ষরগুলি থাকতে পারবে না: < > : " / \\ | ? *'
@@ -591,10 +482,6 @@ instance:
   openCrashReportFolder: ক্র্যাশ রিপোর্টের ফোল্ডার খুলুন
   openLogFolder: লগ ফোল্ডার খুলুন
   playtime: খেলার সময়
-  preExecCommand: প্রি-এক্সিকিউট কমান্ড
-  preExecCommandHint: Minecraft লঞ্চ করার আগে চালানোর কমান্ড
-  prependCommand: প্রিপেন্ড (Prepend) কমান্ড
-  prependCommandHint: এটি সমস্ত লঞ্চ কমান্ডের আগে এই কমান্ডটি প্রিপেন্ড করবে
   requireName: নাম আবশ্যক
   resolution: রেজোলিউশন
   resolutionPreset: রেজোলিউশন প্রিসেট
@@ -605,10 +492,6 @@ instance:
   useSharedOptionsDesc: এটি options.txt-কে ইনস্ট্যান্স জুড়ে একটি শেয়ার্ড ফাইলের সাথে লিঙ্ক করবে
   useSharedServersList: শেয়ার্ড সার্ভার তালিকা ব্যবহার করুন
   useSharedServersListDesc: এটি servers.dat-কে ইনস্ট্যান্স জুড়ে একটি শেয়ার্ড ফাইলের সাথে লিঙ্ক করবে
-  vmOptions: JVM বিকল্পসমূহ
-  vmOptionsHint: JVM-এ পাঠানোর জন্য অতিরিক্ত আর্গুমেন্টসমূহ
-  vmVar: এনভায়রনমেন্ট ভেরিয়েবলসমূহ
-  vmVarHint: এনভায়রনমেন্ট ভেরিয়েবল যোগ করতে + বোতামে ক্লিক করুন
   width: প্রস্থ
 instanceAge:
   older: পুরানো
@@ -645,9 +528,6 @@ instanceSetting:
   showLogHint: গেম শুরু হওয়ার পর এটি Minecraft লগ স্ট্রিম করার জন্য একটি উইন্ডো পপআপ করবে
   syncGameLanguage: গেমের ভাষা সিঙ্ক করুন
   syncGameLanguageDescription: লঞ্চ করার সময় স্বয়ংক্রিয়ভাবে মাইনক্রাফ্টের ভাষা লঞ্চারের ভাষার সাথে সিঙ্ক করুন
-instanceTemplate:
-  ftb: এটি একটি FTB মডপ্যাক
-  preview: মডপ্যাক প্রিভিউ
 instanceUpdate:
   basic: সেটিং আপডেট
   files: ফাইল আপডেট
@@ -665,41 +545,17 @@ instances:
   addPrismDescription: বিদ্যমান PrismLauncher ইন্সট্যান্স ইম্পোর্ট করুন।
   addVanilla: ভ্যানিলা-সদৃশ Minecraft থেকে তৈরি করুন
   addVanillaDescription: সাধারণ .minecraft ফোল্ডার থেকে ইম্পোর্ট করুন। এটি আসল গেম প্রোফাইলটিকে Zenith Launcher-এ অনুলিপি (duplicate) করবে।
-  edition: সংস্করণ
-  editionJava: জাভা সংস্করণ
   editionBedrock: বেডরক সংস্করণ
   editionBedrockHint: বেডরক সংস্করণটি মাইক্রোসফ্ট স্টোর অ্যাপের মাধ্যমে চালু করা হয়। আপনার একটি বেডরক লাইসেন্স থাকতে হবে। মড, রিসোর্স প্যাক এবং অন্যান্য শুধুমাত্র-জাভা ফিচারগুলো উপলব্ধ নয়।
   editionBedrockWindowsOnly: বেডরক সংস্করণটি শুধুমাত্র উইন্ডোজ বিল্ডে সমর্থিত।
   fix: মেরামত করুন
   folder: ফোল্ডার
   folderSetting: ফোল্ডার সেটিংস
-  importFolderDescription: লঞ্চারে Minecraft ইম্পোর্ট করুন
-  loadingFiles: মডপ্যাক ফাইল লোড হচ্ছে
 items:
   count: '{count}টি আইটেম'
   total: মোট {total}টি
 java:
-  allocatedLong: সিস্টেমের ডিফল্ট জাভা ব্যবহার করুন
-  allocatedShort: স্বয়ংক্রিয়ভাবে বরাদ্দকৃত
-  allocation: বরাদ্দকৃত
-  autoHint: ইন্সটল করা মডের সংখ্যার সাথে সাথে সর্বনিম্ন বরাদ্দ বৃদ্ধি পায়; সর্বোচ্চ বরাদ্দ সিস্টেমের উপলব্ধ মেমরি ব্যবহার করে।
-  change: পরিবর্তন করুন
-  importFromFile: ফাইল থেকে জাভা ইম্পোর্ট করুন
-  invalid: অবৈধ জাভা অবস্থান
-  location: জাভা অবস্থান
-  locationHint: কোনো জাভা নির্বাচিত হয়নি — সিস্টেম ডিফল্ট ব্যবহার করা হচ্ছে
-  maxMemory: সর্বোচ্চ মেমরি
-  memory: জাভা মেমরি
   memoryAuto: স্বয়ংক্রিয়
-  memoryManual: ম্যানুয়াল
-  memoryUnassigned: অনির্ধারিত করুন
-  minMemory: সর্বনিম্ন মেমরি
-  name: Java
-  noMemory: মেমরি ব্যবহার সীমাবদ্ধ করবেন না
-  openFolder: জাভা ফোল্ডার খুলুন
-  presets: প্রিসেট
-  refresh: লোকাল জাভা রিফ্রেশ করুন
-  systemMemory: 'সিস্টেমের খালি মেমরি: {free} / {total}'
 labyMod:
   disable: LabyMod নিষ্ক্রিয় করুন
   empty: LabyMod বর্তমান Minecraft সমর্থন করে না
@@ -767,8 +623,6 @@ localVersion:
   auto: স্বয়ংক্রিয়ভাবে গণনা করা হয়েছে
   empty: কোনো সংস্করণ ইনস্টল করা নেই
   hint: সরাসরি একটি নির্দিষ্ট লোকাল সংস্করণ চালু করুন
-  reinstallDescription: যদি আপনি মনে করেন এই সংস্করণটির ইনস্টলেশনে কোনো সমস্যা আছে, তবে আপনি এটি পুনরায় ইনস্টল করার চেষ্টা করতে পারেন।
-  reinstallTitle: '{version} পুনরায় ইনস্টল করুন'
   title: লোকাল সংস্করণ | লোকাল সংস্করণসমূহ
 logLevel:
   error: ত্রুটি
@@ -832,36 +686,6 @@ me:
   recentPlay: সাম্প্রতিক খেলা
 migrateMinecraft:
   name: মাইনক্রাফ্ট ফাইলগুলি মাইগ্রেট করুন
-minecraftFriends:
-  accept: গ্রহণ করুন
-  add: বন্ধু যোগ করুন
-  addPlaceholder: মাইনক্রাফ্ট ইউজারনেম
-  addedRelative: '{time} যোগ করা হয়েছে'
-  errors:
-    cannotAddSelf: আপনি নিজেকে বন্ধুর অনুরোধ পাঠাতে পারবেন না।
-    duplicate: সেই খেলোয়াড় ইতিমধ্যে আপনার তালিকায় রয়েছেন।
-    generic: কিছু ভুল হয়েছে। অনুগ্রহ করে আবার চেষ্টা করুন।
-    inviteRejected: সেই খেলোয়াড়ের বন্ধু তালিকা সক্রিয় নেই অথবা তিনি আমন্ত্রণ গ্রহণ করছেন না।
-    tokenExpired: আপনার মাইক্রোসফ্ট সেশনের মেয়াদ শেষ হয়ে গেছে। অনুগ্রহ করে আবার লগইন করুন।
-    unknownProfile: আমরা ওই নামের কোনো খেলোয়াড় খুঁজে পাইনি।
-  expiresRelative: মেয়াদ শেষ হবে {time}
-  friends: বন্ধুরা
-  heroEmptyHint: বন্ধুর অনুরোধ পাঠাতে উপরে ইউজারনেম দিয়ে মাইনক্রাফ্ট খেলোয়াড় যোগ করুন।
-  heroEmptyTitle: আপনার বন্ধুর তালিকা খালি
-  incoming: আগত অনুরোধ
-  incomingHint: ১টি আগত অনুরোধ | {count}টি আগত অনুরোধ
-  notifyAdded: '{name}-কে বন্ধুর অনুরোধ পাঠানো হয়েছে'
-  outgoing: বহির্গামী অনুরোধ
-  privacy:
-    acceptInvites: বন্ধুর আমন্ত্রণ গ্রহণ করুন
-    acceptInvitesHint: বন্ধ থাকলে, অন্য খেলোয়াড়রা আপনাকে বন্ধুর অনুরোধ পাঠাতে পারবে না।
-    friendsEnabled: বন্ধুর তালিকা সক্রিয়
-  reconnectAction: পুনরায় সংযোগ করুন
-  requiresMicrosoft: বন্ধুদের সুবিধা ব্যবহার করতে একটি মাইক্রোসফ্ট অ্যাকাউন্ট দিয়ে সাইন ইন করুন।
-  scopedTo: '{name} হিসেবে সাইন ইন করা আছে'
-  send: পাঠান
-  title: মাইনক্রাফ্ট বন্ধুরা
-  unsupported: বন্ধুদের সুবিধা শুধুমাত্র মাইক্রোসফ্ট অ্যাকাউন্টের জন্য উপলব্ধ।
 migrationWindow:
   title: ডেটা স্থানান্তর (Migration)
   preparing: স্থানান্তরের প্রস্তুতি চলছে…
@@ -878,25 +702,19 @@ minecraftVersion:
   showAlpha: স্ন্যাপশট দেখান
   snapshot: স্ন্যাপশট (Snapshot)
 mod:
-  collapseAllGroups: সব গ্রুপ গুটিয়ে নিন
   acceptVersion: '{version} গ্রহণ করুন'
   applyGroupRules: সংরক্ষিত গ্রুপিং নিয়ম প্রয়োগ করুন
   compatible: সামঞ্জস্যপূর্ণ মড।
   createGroup: গ্রুপ তৈরি করুন
   currentVersion: বর্তমান {current}
   denseView: ঘন ভিউ (Dense View)
-  description: বর্ণনা
   disableAll: সব নিষ্ক্রিয় করুন
-  dropHint: ইম্পোর্ট করতে মডের .jar/.litemod এখানে ড্রপ করুন।
   duplicatedDetected: '{count}টি ডুপ্লিকেট মড'
   duplicatedDetectedDescription: একই মড আইডি বিশিষ্ট কিন্তু ভিন্ন ভিন্ন ফাইল পাওয়া গেছে। এর ফলে মাইনক্রাফ্ট ক্র্যাশ হতে পারে। অনুগ্রহ করে আপনি যে ফাইলটি রাখতে চান সেটি নির্বাচন করুন।
   enableAll: সব সক্রিয় করুন
   enabled: '{count}টি মড সক্রিয় করা হয়েছে'
   filter: মড ফিল্টার করুন
   group: গ্রুপ করুন
-  groupInstalled: ইনস্টল করা মড গ্রুপ করুন
-  hideInstalled: ইনস্টল করা মড লুকান
-  installedFilterOff: সব মড দেখান
   groupName: গ্রুপের নাম
   groupNameRequired: গ্রুপের নাম প্রয়োজন
   hasUpdate: মডের একটি নতুন সংস্করণ উপলব্ধ!
@@ -904,25 +722,17 @@ mod:
   incompatibleHint: অসামঞ্জস্যপূর্ণ দেখান
   incompatibleHintDescription: কিছু মডের ডিপেন্ডেন্সি অনুপস্থিত থাকতে পারে। অথবা কিছু ডিপেন্ডেন্সির সংস্করণ মেলেনি।
   maybeCompatible: সামঞ্জস্যপূর্ণ হতে পারে।
-  modloaderSelectHint: এই মডটি নিম্নলিখিত মড লোডারগুলো সমর্থন করে। অনুগ্রহ করে ইনস্টল করার জন্য একটি নির্বাচন করুন।
-  modloaderSelectNotSupported: Minecraft {minecraft}-এর জন্য {modloader} পাওয়া যায়নি
   mods: '{count}টি মড'
   name: মড | মডসমূহ
   newFolder: নতুন ফোল্ডার
   noGroupsFound: কোনো গ্রুপ পাওয়া যায়নি
   noGroupsYet: এখনো কোনো গ্রুপ নেই। একটি তৈরি করুন!
-  noModLoaderHint: মড ব্যবহার করতে একটি মডলোডার সক্রিয় করতে ভুলবেন না!
   openLink: মডের ইউআরএল {url} খুলুন
-  search: মড অনুসন্ধান করুন
   searchGroups: গ্রুপ অনুসন্ধান করুন...
   searchOnMcWiki: MC বিশ্বকোষে {name} খুঁজুন।
   selectOrCreateGroup: গ্রুপ নির্বাচন বা তৈরি করুন
-  showDirectory: মড ডিরেক্টরি দেখান
   showFile: মড পাথ {file} দেখান
-  showInModrinth: Modrinth-এ {name} দেখান
-  switchDefaultSource: ডিফল্ট মড উৎস
   syncGroupRules: গ্রুপ করার নিয়মাবলী সংরক্ষণ করুন
-  toUpdate: '{count}টি আপডেট'
   ungroup: গ্রুপ মুক্ত করুন
 modFilter:
   clear: ফিল্টার মুছে ফেলুন
@@ -968,25 +778,10 @@ modified:
   save: সংরক্ষণ করুন
   unsaved: আপনার পরিবর্তন সংরক্ষিত হয়নি!
 modpack:
-  author: লেখকের নাম
-  authorHint: এটি এক্সপোর্ট করা মডপ্যাক (Curseforge) সাইন করতে ব্যবহৃত হতে পারে
-  description: বিবরণ
-  descriptionHint: আপনার মডপ্যাকের সাধারণ বিবরণ। এটি Curseforge মডপ্যাক হিসেবে এক্সপোর্ট করার জন্য ব্যবহৃত হতে পারে।
   dropHint: ইম্পোর্ট করতে এখানে মডপ্যাক জিপ (zip) ফাইলটি ড্রপ করুন
-  emitCurseforge: Curseforge মডপ্যাক এক্সপোর্ট করুন
-  emitModrinth: Modrinth মডপ্যাক এক্সপোর্ট করুন
-  emitModrinthStrict: কঠোর Modrinth ফরম্যাট
-  emitModrinthStrictDescription: শুধুমাত্র Modrinth নথিতে তালিকাভুক্ত ৪টি ডোমেইনের ইউআরএল অনুমোদিত
   export: মডপ্যাক হিসেবে এক্সপোর্ট করুন
-  exportDirectory: ডিরেক্টরি এক্সপোর্ট করুন
-  exportDirectoryDescription: মডপ্যাকটি ডিফল্টরূপে ডাউনলোড ফোল্ডারে এক্সপোর্ট করা হবে
-  includeAssets: রিসোর্স অন্তর্ভুক্ত করুন
-  includes: অন্তর্ভুক্ত করার মতো ফাইলসমূহ
   modpackVersion: মডপ্যাক সংস্করণ
   name: মডপ্যাক | মডপ্যাকসমূহ
-  overrides: ওভাররাইড
-  url: ইউআরএল
-  urlHint: আপনার মডপ্যাকের হোম পেজ ইউআরএল
 modpackImportConfirm:
   description: লঞ্চারে একটি ফাইল ড্রপ করার বিষয়টি সনাক্ত করা গেছে। আপনি কি একটি মডপ্যাক ইম্পোর্ট করার চেষ্টা করছেন?
   title: আপনি কি একটি মডপ্যাক ইম্পোর্ট করার চেষ্টা করছেন?
@@ -1150,110 +945,7 @@ modrinth:
   wikiUrl: উইকি
 modrinthCard:
   currentVersion: বর্তমান সংস্করণ
-multiplayer:
-  joinDiscord: Discord-এ যোগ দিন
-  openConsumerPortal: কনজিউমার পোর্টাল খুলুন
-  refundHint: রিফান্ড প্রয়োজন? আপনার অর্ডার ও সাবস্ক্রিপশন পরিচালনা করতে Waffo কনজিউমার পোর্টালে যান।
-  togetherSupportHint: মাল্টিপ্লেয়ার কাজ না করলে Discord-এ যোগ দিয়ে ডেভেলপমেন্ট টিমের সঙ্গে যোগাযোগ করুন। আমরা সমস্যা সমাধানে সাহায্য করব।
-  autoShareAmbiguous: একাধিক গেম চলছে। Zenith Launcher যাতে শেয়ার করতে পারে, ল্যান ওয়ার্ল্ড হোস্ট করা ইনস্ট্যান্সটি নির্বাচন করুন।
-  editSharingScope: শেয়ারের পরিধি সম্পাদনা করুন
-  gameAvailable: ল্যান গেম উপলভ্য
-  joinGame: গেমে যোগ দিন
-  noRunningInstanceToShare: শেয়ারের পরিধি সম্পাদনার আগে একটি গেম চালু করুন
-  updateSharedInstanceConfirm: আপডেট করে চালু করুন
-  updateSharedInstanceDescription: শেয়ার করা মডগুলো {instance}-এর মডগুলোর থেকে আলাদা। চালুর আগে হোস্টের সঙ্গে মিলিয়ে এই ইনস্ট্যান্সটি আপডেট করবেন? বর্তমানে পরিবর্তিত ফাইলগুলোর ব্যাকআপ নেওয়া হবে।
-  updateSharedInstanceTitle: শেয়ার করা ইনস্ট্যান্স আপডেট করবেন?
-  addFunds: অর্থ যোগ করুন
-  availableBalance: উপলভ্য ব্যালেন্স
-  balanceHint: XMCL Together পরিষেবার জন্য উপলভ্য
-  billing: বিলিং
-  billingDescription: রিলে অ্যাক্সেস, আপনার Together Home প্ল্যান এবং পেমেন্ট পরিচালনা করুন।
-  billingError: Together-এর বিলিং লোড করা যায়নি। কিছুক্ষণ পর আবার চেষ্টা করুন।
-  buyTogether: Together কিনুন
-  cancelTogether: প্ল্যান বাতিল করুন
-  checkout: Waffo চেকআউট খুলুন
-  connectionTogetherWarning: একজন রুম সদস্য কিছুক্ষণ ধরে আপনার সঙ্গে সংযোগ করতে পারছেন না। রুমের সবার সংযোগ উন্নত করতে XMCL Together ব্যবহার করে দেখুন। শুধু রুম মাস্টারের Together প্রয়োজন।
-  masterPurchaseHint: রুমের সবার সংযোগ উন্নত করতে শুধু রুম মাস্টারের Together Home প্রয়োজন।
-  natTogetherWarning: আপনার রাউটারের রুম মাস্টারের সঙ্গে সংযোগ করতে সমস্যা হতে পারে। সংযোগ ব্যর্থ হলে, আপনার বন্ধুদের সঙ্গে সংযোগ উন্নত করতে XMCL Together ব্যবহার করে দেখুন। রুমের জন্য শুধু রুম মাস্টারকেই Together কিনতে হবে।
-  togetherName: Minecraft Together
-  trialDescription: 1 GB রিলে ট্র্যাফিকসহ 7 দিনের একটি ট্রায়াল।
-  trialTitle: সংযোগ ট্রায়াল
-  tryTogether: Together ব্যবহার করে দেখুন
-  month: মাস
-  orderStatus: 'Waffo অর্ডার: {status}'
-  planDescription: প্রতি মাসে 20 GB পরিচালিত রিলে ট্র্যাফিক, সঙ্গে আপনার মডপ্যাকের সমস্যা সমাধানে AI সহায়তা।
-  waffoHint: Waffo Pancake-এ পেমেন্ট নিরাপদে সম্পন্ন হয়। XMCL কখনও আপনার কার্ড নম্বর পায় না।
-  subscription:
-    active: সক্রিয়
-    cancelled: বাতিল করা হয়েছে
-    payment_due: পেমেন্ট বাকি
-  trial:
-    active: ট্রায়াল সক্রিয়
-    available: বিনামূল্যের ট্রায়াল উপলভ্য
-    expired: ট্রায়াল ব্যবহার করা হয়েছে
-    unavailable: ট্রায়াল উপলভ্য নয়
-  loginRequiredDescription: P2P মাল্টিপ্লেয়ার Zenith Launcher অনলাইন পরিষেবা ব্যবহার করে। চালিয়ে যেতে একটি Zenith Launcher অ্যাকাউন্টে সাইন ইন করুন।
-  loginRequiredTitle: P2P মাল্টিপ্লেয়ারের জন্য সাইন ইন করুন
-  complete: সম্পন্ন
-  confirm: নিশ্চিত করুন
-  connectionError: সংযোগ ত্রুটি
-  connectionFailedHint: সংযোগ স্থাপন করা সম্ভব হয়নি। উভয় পিয়ারের সামঞ্জস্যপূর্ণ NAT প্রকার রয়েছে কিনা তা পরীক্ষা করুন।
-  connections: সংযোগসমূহ
-  copied: কপি করা হয়েছে!
-  copy: কপি করুন
-  copyGroupToFriendHint: আপনার বন্ধুদের এই আইডি দিয়ে গ্রুপে যোগ দিতে দিন
-  copyLocalHint: |
-    দয়া করে স্থানীয় SDP টেক্সটটি কপি করুন এবং আপনার অন্য পক্ষকে পাঠান যাতে সে জয়েন কানেকশনে এই টেক্সটটি প্রবেশ করাতে পারে। <span>একটি টোকেন শুধুমাত্র <span style="color: red; font-weight: bold;">একজন পিয়ার</span>-এর জন্য ব্যবহার করা যেতে পারে! আপনি একই টোকেন একাধিক পিয়ারকে পাঠাতে পারবেন না!</span> <br> <span class="hint-text" style="font-style: italic;">আপনার যদি একাধিক পিয়ারের সাথে সংযোগ করার প্রয়োজন হয়, তবে আপনাকে <span style="font-weight: bold; color: rgba(245, 158, 11)">একাধিক</span> সংযোগ তৈরি করতে হবে।</span>
-  createLocalToken: লোকাল টোকেন তৈরি করুন
-  currentIpTitle: শনাক্তকৃত পাবলিক আইপি
-  currentNatTitle: 'বর্তমান নেটওয়ার্ক (NAT):'
-  difficultyLevelHint: একটি সংযোগ তৈরি করার জটিলতার মাত্রা
-  disconnect: সংযোগ বিচ্ছিন্ন করুন
-  disconnectDescription: আপনি কি নিশ্চিত যে আপনি ব্যবহারকারী {user}({id}) এর সাথে সংযোগ বিচ্ছিন্ন করতে চান?
-  disconnected: সংযোগ বিচ্ছিন্ন
-  enterRemoteToken: রিমোট টোকেন লিখুন
-  enterRemoteTokenHint: আপনার পিয়ার (peer) আপনার টোকেনটি প্রবেশ করানোর পর, আপনাকে নিচের পাঠ্য ক্ষেত্রে তার টোকেনটি লিখতে হবে। সংযোগ স্থাপন করতে নিশ্চিত করুন ক্লিক করুন।
-  exposedPortDescription: অন্যান্য পিয়ারদের জন্য আপনার উন্মুক্ত করা পোর্ট
-  exposedPorts: ফরওয়ার্ড করা পোর্টসমূহ
-  gatheringIce: |
-    অনুগ্রহ করে অপেক্ষা করুন যাতে ICE সার্ভার আপনার নেটওয়ার্ক সম্পর্কে পর্যাপ্ত তথ্য সংগ্রহ করতে পারে। আপনি যদি অধৈর্য হন এবং পর্যাপ্ত তথ্য থাকে, তবে আপনি আগেই অন্য পক্ষকে বর্তমান SDP প্রদান করতে পারেন এবং পরবর্তীতে ক্লিক করতে পারেন। অনুগ্রহ করে আপনার পিয়ারকে <span class="v-chip v-chip--label v-size--small" style="text-font: bold" >Local Token</span> পাঠান, আপনার পিয়ার আপনার টোকেনটি <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> Join Connection </span> বিভাগে প্রবেশ করাবেন। <br> আপনার তথ্য সংগ্রহ করে <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Local token</span> তৈরি করতে ICE সার্ভারের কিছু সময় লাগতে পারে।<br> আপনাকে ICE এর স্থিতি সম্পূর্ণ হওয়া পর্যন্ত অপেক্ষা করতে হবে না। নিচের টোকেনটি অপরিবর্তিত থাকলে, আপনি এটি কপি করে আপনার পিয়ারকে পাঠাতে পারেন।
-  groupId: গ্রুপ আইডি
-  illegalTokenDescription: অবৈধ টোকেন, অনুগ্রহ করে নিশ্চিত করুন যে আপনার পিয়ারের দেওয়া টোকেনটি সঠিক
-  initiateConnection: সংযোগ শুরু করুন
-  joinConnection: আপনার পিয়ার যদি ইতিমধ্যেই একটি সংযোগ শুরু করে থাকে, তবে আপনাকে সংযোগে যোগ দিতে (Join Connection) হবে।
-  joinManual: যোগ দিন
-  joinOrCreateGroup: গ্রুপে যোগ দিন/তৈরি করুন
-  joinOrCreateGroupHint: আপনার বন্ধুদের থেকে গ্রুপ আইডি নিন অথবা একটি গ্রুপ তৈরি করুন
-  kernel: P2P কার্নেল
-  kernelDescription: নেটিভ WebRTC অথবা node-datachannel ব্যবহার করুন। এটি কেবল তখনই পরিবর্তন করুন যখন আপনার p2p সংযোগের কারণে কখনও কখনও লঞ্চার উইন্ডোটি ক্র্যাশ করে।
-  leaveGroup: গ্রুপ ত্যাগ করুন
-  localToken: লোকাল টোকেন
-  manualConnect: ম্যানুয়ালি সংযোগ করুন
-  name: ল্যান (LAN) এ মাল্টিপ্লেয়ার
-  networkInfo: নেটওয়ার্ক তথ্য (টগল করতে ক্লিক করুন)
-  next: পরবর্তী
-  otherExposedPortDescription: '{user} দ্বারা ফরওয়ার্ড করা পোর্ট'
-  placeholder: ল্যান (LAN) এ মাইনক্রাফট খেলতে অন্যান্য ব্যবহারকারীদের সাথে সংযোগ করুন!
-  previous: পূর্ববর্তী
-  receiveHint: অন্য পক্ষ আপনার টোকেনটি প্রবেশ করানোর পর, আপনার সংযোগটি স্বয়ংক্রিয়ভাবে তৈরি হয়ে যাবে। এখন আপনি ডায়ালগটি বন্ধ করতে পারেন।
-  receiveRemoteTokenHint: অনুগ্রহ করে আপনার পিয়ারের থেকে প্রাপ্ত টোকেনটি এখানে প্রবেশ করান।
-  remoteToken: রিমোট টোকেন
-  routerInfo: রাউটার তথ্য
-  sendTokenToRemote: রিমোটে টোকেন পাঠান
-  share: ইনস্ট্যান্স কনফিগারেশন শেয়ার করুন
-  sharing: ফাইল শেয়ার করা হচ্ছে...
-  start: শুরু করুন
-  startNewP2PConnection: একটি নতুন পিয়ার সংযোগ তৈরি করতে শুরু করুন বোতামে ক্লিক করুন
 myStuff: আমার জিনিসপত্র
-natType:
-  blocked: অবরুদ্ধ
-  fullCone: ফুল কোন
-  openInternet: উন্মুক্ত ইন্টারনেট
-  restrictNat: সীমাবদ্ধ NAT
-  restrictPortNat: সীমাবদ্ধ পোর্ট NAT
-  symmetricNat: সিমেট্রিক NAT
-  symmetricUDPFirewall: সিমেট্রিক UDP ফায়ারওয়াল
-  unknown: অজানা
 neoForgedVersion:
   disable: NeoForged নিষ্ক্রিয় করুন
   empty: NeoForged {version} সমর্থন করে না
@@ -1264,23 +956,6 @@ optifineVersion:
   disable: Optifine নিষ্ক্রিয় করুন
   empty: Optifine মাইনক্রাফট {version} সমর্থন করে না
 optional: ঐচ্ছিক
-peerConnectionState:
-  closed: বন্ধ
-  connected: সংযুক্ত
-  connecting: সংযোগ করা হচ্ছে
-  disconnected: সংযোগ বিচ্ছিন্ন
-  failed: ব্যর্থ
-  name: সংযোগের অবস্থা
-  new: নতুন
-peerGroupState:
-  closed: গ্রুপে নেই
-  closing: বন্ধ
-  connected: গ্রুপে যোগদান করা হয়েছে
-  connecting: সংযোগ করা হচ্ছে
-peerIceGatheringState:
-  gathering: আইস সার্ভার সংগ্রহ করা হচ্ছে
-peerSignalingState:
-  have-local-offer: পিয়ারের বিবরণের জন্য অপেক্ষা করা হচ্ছে
 presence:
   instance: '{instance} ইনস্ট্যান্সে নিষ্ক্রিয়'
   instanceSetting: 'ইনস্ট্যান্স সেটিং সম্পাদনা: {instance}'
@@ -1309,58 +984,9 @@ resourceError:
   title: '{file} পড়া যাচ্ছে না'
 blueprint:
   name: ব্লুপ্রিন্ট | ব্লুপ্রিন্টসমূহ
-  count: '{count}টি ব্লুপ্রিন্ট'
-  searchLocal: ব্লুপ্রিন্ট খুঁজুন...
-  searchOnline: অনলাইনে খুঁজুন...
-  market: মার্কেট
-  local: স্থানীয়
-  provider: সরবরাহকারী
-  import: আমদানি করুন
-  openFolder: ফোল্ডার খুলুন
-  refresh: রিফ্রেশ করুন
   empty: কোনো ব্লুপ্রিন্ট পাওয়া যায়নি। একটি .litematic / .schem / .nbt ফাইল আমদানি করুন অথবা মার্কেট ব্রাউজ করুন।
-  dropHint: আমদানি করতে এখানে ব্লুপ্রিন্ট ফাইল (.litematic / .schem / .nbt) ড্রপ করুন।
   selectHint: পূর্বরূপ দেখতে একটি ব্লুপ্রিন্ট নির্বাচন করুন।
-  blocks: '{count}টি ব্লক'
-  materials: উপকরণসমূহ
-  allNamespaces: সব
-  findMod: এই নেমস্পেসের জন্য মড খুঁজুন
-  compatible: সামঞ্জস্যপূর্ণ
-  incompatible: অনুপস্থিত মডসমূহ
-  missingNamespaces: 'অনুপস্থিত মডসমূহ: {namespaces}'
-  delete: মুছে ফেলুন
-  cancel: বাতিল করুন
   install: ইনস্টল করুন
-  goTo: ওয়েবসাইট
-  byAuthor: '{author} দ্বারা'
-  noDescription: কোনো বিবরণ প্রদান করা হয়নি।
-  loadMore: আরো লোড করুন
-  cmsBrowseOnly: এই উৎসটি শুধুমাত্র ব্রাউজ করার জন্য; ডাউনলোড করতে ওয়েবসাইটটি খুলুন।
-  mixedSources: ফলাফলগুলো সব উৎস থেকে মিশ্রিত। কিছু শুধুমাত্র ব্রাউজ করার জন্য — ডাউনলোড করতে তাদের ওয়েবসাইট খুলুন।
-  formats:
-    structure: ভ্যানিলা স্ট্রাকচার
-  preview:
-    title: ত্রিমাত্রিক (3D) পূর্বরূপ
-    loading: পূর্বরূপ লোড হচ্ছে...
-    empty: প্রদর্শনের জন্য এই ব্লুপ্রিন্টে কোনো ব্লক নেই।
-    hint: '{count}টি ব্লক · {x}×{y}×{z}'
-    controls: টেনে দেখুন · WASD দিয়ে নড়াচড়া করুন · Space/Shift দিয়ে উপরে/নিচে যান · স্ক্রল করে জুম করুন
-  convert:
-    title: বিন্যাস পরিবর্তন করুন
-    hint: এই ব্লুপ্রিন্টটিকে অন্য একটি বিন্যাসে পরিবর্তন করুন। একটি নতুন ফাইল তৈরি করা হবে।
-    target: লক্ষ্য বিন্যাস
-    action: রূপান্তর করুন
-  replace:
-    title: ব্লক প্রতিস্থাপন করুন
-    simple: সহজ
-    precise: সুনির্দিষ্ট
-    simpleHint: বিদ্যমান ব্লকের অবস্থার বৈশিষ্ট্যগুলো বজায় রেখে শুধুমাত্র ব্লক আইডি দিয়ে মেলান।
-    preciseHint: সম্পূর্ণ ব্লকের অবস্থা (আইডি + বৈশিষ্ট্য) মিলিয়ে তা সম্পূর্ণভাবে প্রতিস্থাপন করুন।
-    from: থেকে
-    to: এতে
-    addRule: নিয়ম যোগ করুন
-    newFile: নতুন ফাইল হিসেবে সংরক্ষণ করুন
-    action: প্রতিস্থাপন করুন
 resourcepack:
   compatible: '{version}-এর সাথে সামঞ্জস্যপূর্ণ বিন্যাস {format}'
   defaultDescription: মাইনক্রাফ্ট-এর ডিফল্ট রূপ ও অনুভূতি
@@ -1488,141 +1114,25 @@ search:
 server:
   launch: সার্ভার চালু করুন
   stop: সার্ভার বন্ধ করুন
-  acceptingMinecraftVersion: মাইনক্রাফট সংস্করণ গ্রহণ করা হচ্ছে
   addServer: সার্ভার যোগ করুন
   address: সার্ভারের ঠিকানা
   addressHint: যেমন mc.hypixel.net
   bindUpstream: আপস্ট্রিম হিসেবে বাঁধুন
-  boundUpstream: আপস্ট্রিম সার্ভার আবদ্ধ
   boundUpstreamHint: এই ইনস্ট্যান্সটি আবদ্ধ সার্ভারের Minecraft সংস্করণ অনুসরণ করে।
-  creationHint: অনুগ্রহ করে সার্ভারের ঠিকানাটি পূরণ করুন এবং সার্ভারে পিং করুন
   editServer: সার্ভার সম্পাদনা
   emptyHint: এই ইনস্ট্যান্সের servers.dat এ কোনো সার্ভার নেই। শুরু করতে একটি যোগ করুন।
   entryCount: '{count}টি সার্ভার'
-  expectedVersions: সমর্থিত সংস্করণসমূহ
-  export: সার্ভার এক্সপোর্ট করুন
-  exportNoFilesHint: কোনো সার্ভার ফাইল পাওয়া যায়নি। কিছু ফাইল তৈরি করতে আপনি লোকালভাবে সার্ভারটি একবার চালাতে পারেন।
-  exportOption: সার্ভার এক্সপোর্ট অপশন
-  exportSSHAuthenticationFailed: সমস্ত প্রমাণীকরণ পদ্ধতি ব্যর্থ হয়েছে। অনুগ্রহ করে ব্যবহারকারীর নাম/পাসওয়ার্ড বা প্রাইভেট কী পরীক্ষা করুন।
-  exportSSHOptions: SSH অপশনসমূহ
-  exportSSHPrivateKeyPath: SSH প্রাইভেট কী পাথ
-  exportSSHRemotePath: রিমোট সার্ভার পাথ
-  exportToFolder: ফোল্ডারে এক্সপোর্ট করুন
-  filterVersion: সার্ভারের প্রতিক্রিয়া জানানো মাইনক্রাফট সংস্করণ ফিল্টার করুন
-  host: হোস্ট
-  hostHint: সার্ভারের হোস্ট (পোর্ট সহ)
-  hostRequired: অনুগ্রহ করে সার্ভারের আইপি ঠিকানাটি লিখুন
-  ipAddress: আইপি ঠিকানা
   launchClient: পরিবর্তে ক্লায়েন্ট চালু করুন
   launchPinned: পিন করা
   launchTargetHint: এই ইনস্ট্যান্সটি সরাসরি পিন করা সার্ভারে চালু হয়। ক্লায়েন্টে ফিরে যাবেন?
   maxPlayers: সর্বোচ্চ খেলোয়াড়
-  motd: সার্ভারের MOTD
   nameHint: মাল্টিপ্লেয়ার তালিকায় প্রদর্শিত নাম
-  nogui: কোনো সার্ভার GUI নেই
-  onlineMode: অনলাইন মোড
   pin: সার্ভার পিন করুন
   pinAfterSave: সংরক্ষণের পর ডিফল্ট লঞ্চ টার্গেট হিসেবে পিন করুন
-  ping: পিং
-  pings: পিংসমূহ
   pinnedHeader: 'পিন করা: {name}'
-  players: খেলোয়াড়বৃন্দ
   port: পোর্ট
-  clearLog: লগ সাফ করুন
-  log: সার্ভার লগ
-  logWaiting: সার্ভার আউটপুটের জন্য অপেক্ষা করা হচ্ছে...
-  remoteActionSuccess: Done.
-  remoteAdmin: রিমোট সার্ভার অ্যাডমিন
-  remoteAuthMethod: প্রমাণীকরণ
-  remoteAuthPassword: পাসওয়ার্ড
-  remoteAuthPrivateKey: প্রাইভেট কী
-  remoteBuildOfflinePackage: অফলাইন প্যাকেজ তৈরি করুন
-  remoteConnected: সংযুক্ত
-  remoteConnection: সংযোগ
-  remoteDeployment: স্থাপনা
-  remoteDeploy: স্থাপন করুন
-  remoteDisk: Disk
-  remoteConfigFiles: কনফিগারেশন ফাইল
-  remoteExtraFiles: অতিরিক্ত ফাইল
-  remoteForgetCredentials: সংরক্ষিত তথ্য ভুলে যান
-  remoteInstallService: সার্ভিস ইনস্টল করুন
-  remoteLoad: লোড
-  remoteLog: রিমোট সার্ভার লগ
-  remoteMemory: মেমরি
-  remoteMods: Mods
-  remoteNoWorldSelected: কোনো বিশ্ব নির্বাচিত হয়নি
-  remoteJavaRequired: রিমোট লিনাক্স হোস্টে জাভা পাওয়া যায়নি।
-  remoteLinuxRequired: শুধুমাত্র SSH এর মাধ্যমে লিনাক্স সমর্থিত।
-  remoteNotConfiguredHint: স্ট্যাটাস, সার্ভিস এবং লগ সক্রিয় করতে উপরের সংযোগ বিবরণ পূরণ করুন।
-  remotePathNotWritable: রিমোট সার্ভার ডিরেক্টরিতে লেখার অনুমতি নেই।
-  remotePathWritable: ডিরেক্টরিটি লেখার যোগ্য
-  remotePolicyInitialize: একবার আরম্ভ করুন
-  remotePolicyMirror: মিরর
-  remotePolicyOverlay: ওভারলে
-  remotePolicyPreserve: সংরক্ষণ করুন
-  remotePreview: পরিবর্তনগুলোর পূর্বরূপ
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: তথ্য মনে রাখুন (OS কীচেন)
-  remoteReconcileReady: টার্গেট এই ইনস্ট্যান্সের সাথে মেলে এবং কনসোল সংযুক্ত।
-  remoteRestartService: সার্ভিস পুনরায় চালু করুন
-  remoteSavedCredentialsHint: সংরক্ষিত তথ্য ব্যবহার হচ্ছে — অপরিবর্তিত রাখতে ফাঁকা রাখুন।
-  remoteService: systemd সার্ভিস
-  remoteServiceActive: চলমান
-  remoteServerInstalled: সার্ভার ফাইল ইনস্টল করা হয়েছে
-  remoteServiceName: সার্ভিসের নাম
-  remoteServiceNameHint: systemd --user ইউনিট নাম, যেমন mc-server
-  remoteSelectedFiles: '{count}টি সার্ভার ফাইল নির্বাচিত'
-  remoteSelectFiles: ফাইল নির্বাচন করুন
-  remoteStartCommand: স্টার্ট কমান্ড
-  remoteStartCommandHint: যেমন java -jar server.jar nogui
-  remoteStartService: Start
-  remoteStatus: স্ট্যাটাস
-  remoteSystemdRequired: রিমোট হোস্টে systemd সার্ভিস উপলব্ধ নেই।
-  remoteTargetName: টার্গেট নাম
-  remoteStopService: Stop
-  remoteStopWatchLog: পর্যবেক্ষণ বন্ধ করুন
-  remoteTestConnection: সংযোগ পরীক্ষা করুন
-  remoteTestConnectionSuccess: সংযোগ সফল হয়েছে।
-  remoteUninstallConfirmMessage: এটি রিমোট হোস্টে systemd ইউনিটটি মুছে ফেলবে। সার্ভার ফাইল অপরিবর্তিত থাকবে।
-  remoteUninstallService: সার্ভিস আনইনস্টল করুন
-  remoteRunInstall: ইনস্টল বা মেরামত
-  remoteWatchLog: সরাসরি লগ দেখুন
-  remoteWorldAlways: প্রতিবার প্রতিস্থাপন করুন
-  remoteWorldDeployment: বিশ্ব স্থাপনা
-  remoteWorldDeploymentHint: অনুমতি না থাকলে রুটিন সিঙ্ক কখনো বিশ্ব আপলোড করবে না।
-  remoteWorldFirstInstall: টার্গেটে বিশ্ব না থাকলেই কেবল আরম্ভ করুন
-  remoteWorldNever: কখনো বিশ্ব আপলোড করবেন না
-  remoteWorldPresent: টার্গেট বিশ্ব
-  remoteWorld: World
-  remoteWorldWillDeploy: নির্বাচিত বিশ্বটি এই সিঙ্কে আপলোড করা হবে।
   serverName: সার্ভারের নাম
-  serviceInstall: সার্ভিস ইনস্টল
-  serviceManagedLaunch: সার্ভিস পরিচালিত লঞ্চ
-  serviceManager: সার্ভিস ম্যানেজার
-  serviceName: সার্ভিসের নাম
-  serviceNameHint: সিস্টেম সার্ভিসের নাম
-  serviceNotInstalled: সার্ভিস ইনস্টল করা নেই
-  serviceStartCommand: সার্ভিস স্টার্ট কমান্ড
-  serviceSystemd: systemd --user
-  serviceWindows: Windows সার্ভিস
-  serviceWindowsCommandHint: Windows সার্ভিস কমান্ড
   serversListTitle: সার্ভার তালিকা
-  target: টার্গেট
-  targetLocal: localhost
-  targetLocalHint: এই কম্পিউটারে স্থানীয়ভাবে চালান
-  targetRemote: রিমোট সার্ভার (SSH)
-  targetRemoteHint: SSH দিয়ে রিমোট লিনাক্স সার্ভার পরিচালনা করুন
   unbindUpstream: আনবাইন্ড
   unknown: অজানা সার্ভার
   unknownDescription: অজানা সার্ভার। অনুগ্রহ করে রিফ্রেশ করুন
@@ -1633,9 +1143,6 @@ server:
   upstreamUpdateAvailable: সার্ভার এখন Minecraft {version} চালাচ্ছে। প্রয়োগ করতে ক্লিক করুন।
   upstreamUpdateHint: এই ইনস্ট্যান্সে প্রস্তাবিত Minecraft সংস্করণ প্রয়োগ করে।
   useAsUpstreamHint: ইনস্ট্যান্সটি সার্ভারের জানানো Minecraft সংস্করণ অনুসরণ করবে।
-  version: সার্ভারের জন্য প্রয়োজনীয় সংস্করণ
-  versionHint: পিং করার জন্য মাইনক্রাফট সংস্করণ
-  worldPreserve: টার্গেট বিশ্ব সংরক্ষণ করুন
 serverStatus:
   nohost: §4হোস্ট খুঁজে পাওয়া যাচ্ছে না!
   ping: পিং করা হচ্ছে...
@@ -1649,18 +1156,8 @@ setting:
   aboutLicense: MIT লাইসেন্স
   aboutLicenseInfo: SignPath.io দ্বারা উইন্ডোজে বিনামূল্যে কোড সাইনিং এবং SignPath ফাউন্ডেশন দ্বারা সার্টিফিকেট প্রদান করা হয়েছে
   aboutSponsors: 😇 পৃষ্ঠপোষকগণ 😇
-  advancedJavaOptions: উন্নত জাভা অপশনসমূহ
   advancedSettings: উন্নত সেটিংস
   advancedSettingsHint: বিপদ অঞ্চল - লঞ্চারের ডেটা রিসেট বা পরিচালনা করুন
-  aiAgentApiKey: এআই এজেন্ট এপিআই কী (AI Agent API Key)
-  aiAgentApiKeyDescription: OpenAI-সামঞ্জস্যপূর্ণ প্রোভাইডার কনফিগার করুন, যেমন OpenAI অথবা Claude-এর জন্য একটি গেটওয়ে। কীটি এই ডিভাইসে স্থানীয়ভাবে সংরক্ষিত থাকে।
-  aiAgentApiKeyPlaceholder: OpenAI বা Claude প্রোভাইডারের API কী
-  aiAgentEndpoint: এআই এজেন্ট এন্ডপয়েন্ট (AI Agent Endpoint)
-  aiAgentEndpointDescription: চ্যাট সমাপ্তির এন্ডপয়েন্ট ইউআরএল (Endpoint URL)।
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 বা claude-sonnet-4-5
-  aiAgentModel: এআই এজেন্ট মডেল
-  aiAgentModelDescription: চ্যাট সমাপ্তির অনুরোধে পাঠানোর জন্য মডেলের নাম।
   apiSets:
     auto: স্বয়ংক্রিয় (নেটওয়ার্ক দ্বারা নির্ধারিত)
     official: অফিসিয়াল (Mojang)
@@ -1727,8 +1224,6 @@ setting:
   devModeLabel: DEV
   developerMode: ডেভেলপার মোড
   developerModeDescription: ডেভেলপার মোড আপনার নিজস্ব মড পরীক্ষার জন্য
-  disableTelemetry: টেলিমেট্রি নিষ্ক্রিয় করুন
-  disableTelemetryDescription: XMCL গেম চালু এবং ব্যবহারকারীর লগইন ইভেন্টগুলি সংগ্রহ করবে।
   enableDedicatedGPUOptimization: ডেডিকেটেড জিপিইউ বরাদ্দ করুন
   enableDedicatedGPUOptimizationDescription: এই বিকল্পটি মাইনক্রাফ্ট প্রসেসের জন্য ডেডিকেটেড জিপিইউ বরাদ্দ করবে।
   enableDiscord: ডিসকর্ড প্রেসেন্স সক্ষম করুন
@@ -1738,8 +1233,6 @@ setting:
   exportSettingsHint: আপনার বর্তমান সেটিংস একটি ফাইলে সংরক্ষণ করুন
   general: সাধারণ
   githubRelease: গিটহাব রিলিজ
-  globalJava: পছন্দের Java
-  globalJavaHint: স্বয়ংক্রিয় মোডে প্রথমে এই Java চেষ্টা করা হয়, এবং গেম সংস্করণের সাথে অসামঞ্জস্যপূর্ণ হলেই কেবল স্বয়ংক্রিয় শনাক্তকরণে ফিরে যায়।
   globalSetting: গ্লোবাল ইনস্ট্যান্স সেটিংস
   globalSettingHint: ইনস্ট্যান্স ডিফল্টরূপে এই সেটিংস ব্যবহার করবে।
   importSettings: সেটিংস ইম্পোর্ট করুন
@@ -1767,7 +1260,6 @@ setting:
   maxSockets: প্রতি হোস্ট
   maxSocketsDescription: প্রতি হোস্ট বা সামগ্রিকভাবে সমস্ত হোস্টের জন্য অনুমোদিত সর্বোচ্চ সকেটের সংখ্যা সীমাবদ্ধ করুন। ০ মানে কোনো সীমাবদ্ধতা নেই।
   maxSocketsTitle: সর্বোচ্চ এইচটিটিপি (HTTP) সকেট
-  memoryAssignment: মেমরি বরাদ্দ
   migrateFromOther: অন্য লঞ্চার থেকে ইম্পোর্ট করুন
   minecraftOptions: মাইনক্রাফ্ট অপশন
   name: গ্লোবাল সেটিং | গ্লোবাল সেটিংস
@@ -1782,11 +1274,6 @@ setting:
     repulse: রিপালস
   particleModeDescription: পার্টিকেল ক্লিক আচরণ নির্বাচন করুন
   quickLaunchSettings: কুইক লঞ্চ
-  replaceNative: নেটিভ লাইব্রেরি প্রতিস্থাপন করুন
-  replaceNativeDescription: আপনার কম্পিউটারের আর্কিটেকচার অনুযায়ী নেটিভ লাইব্রেরি প্রতিস্থাপন করুন।
-  replaceNatives:
-    all: সব
-    legacy: শুধুমাত্র লেগাসি সংস্করণ
   resetAllSettings: সব সেটিংস রিসেট করুন
   resetAllSettingsConfirmMessage: এটি স্থায়ীভাবে সমস্ত সেটিংস, অ্যাকাউন্ট, ইনস্ট্যান্স, গ্রুপ এবং ক্যাশে করা ডেটা মুছে ফেলবে। এই কাজটি আর পূর্বাবস্থায় ফিরিয়ে আনা যাবে না। আপনি কি নিশ্চিত?
   resetAllSettingsConfirmTitle: সব সেটিংস রিসেট করবেন?
@@ -2001,17 +1488,6 @@ theme:
   selectVideo: ভিডিও নির্বাচন করুন
   title: এক্স মাইনক্রাফ্ট লঞ্চার
 title: এক্স মাইনক্রাফ্ট লঞ্চার
-transportType:
-  host: হোস্ট ক্যান্ডিডেট
-  prflx: পিয়ার রিফ্লেক্সিভ ক্যান্ডিডেট
-  relay: রিলে ক্যান্ডিডেট
-  srflx: সার্ভার রিফ্লেক্সিভ ক্যান্ডিডেট
-turnRegion:
-  fr: ফ্রান্স
-  guangzhou: গুয়াংজু, চীন
-  hk: হংকং
-  liaoning: লিয়াওনিং, চীন
-  po: পোল্যান্ড
 tutorial:
   feedbackDescription: আপনি যদি কোনো সমস্যার সম্মুখীন হন, অনুগ্রহ করে প্রতিক্রিয়া পাঠাতে এই বোতামটিতে ক্লিক করুন!
   hideNewsHeaderDescription: আপনি বাম দিকে খবরের প্রদর্শনী দেখতে পাচ্ছেন। এই বোতামে ক্লিক করে এই প্রদর্শনীটি লুকানো যাবে।
@@ -2020,10 +1496,6 @@ tutorial:
     appearanceThemeTitle: ইনস্ট্যান্সের রূপরেখা
     iconDescription: আইকন পরিবর্তন করতে ক্লিক করুন।
     iconTitle: ইনস্ট্যান্স আইকন
-    javaDescription: Java সংস্করণ চয়ন করুন বা পরিবর্তন করুন।
-    javaImportDescription: স্থানীয় স্টোরেজ থেকে Java আমদানি করুন।
-    javaImportTitle: Java আমদানি করুন
-    javaTitle: Java তালিকা
     modpackExportDescription: কনফিগার করা ইনস্ট্যান্সটি শেয়ারযোগ্য মডপ্যাকে প্যাকেজ করুন।
     modpackExportTitle: মডপ্যাক রপ্তানি করুন
     modpackFilesDescription: ক্লায়েন্ট এবং সার্ভারের জন্য কনফিগারেশন ফাইল, মড এবং রিসোর্স নির্বাচন করুন।
@@ -2077,15 +1549,6 @@ tutorial:
     profileDescription: অ্যাকাউন্টের মধ্যে স্যুইচ করুন এবং লগইন তথ্য পরিচালনা করুন।
     skinTitle: স্কিন ও কেপ পরিবর্তন
     skinDescription: 3D-তে চরিত্র দেখুন, স্কিন পরিবর্তন করুন এবং কেপ পরিধান করুন।
-  multiplayer:
-    railTitle: নেটওয়ার্ক ও নেভিগেশন
-    railDescription: NAT প্রকার, নেটওয়ার্ক অবস্থা পরীক্ষা করুন এবং সংযোগ ও সেটিংসে স্যুইচ করুন।
-    groupTitle: রুমে যোগ দিন বা তৈরি করুন
-    groupDescription: বন্ধুদের সাথে যোগ দিতে রুম কোড দিন বা নিজস্ব রুম তৈরি করুন।
-    joinDescription: রুমটিতে যোগ দিতে বা নতুন রুম তৈরি করতে ক্লিক করুন।
-    contentTitle: সংযুক্ত সদস্য ও বিষয়বস্তু
-    contentDescription: সদস্য পরিচালনা করুন, পিং দেখুন এবং চলমান Minecraft গেম শেয়ার করুন।
-    manualDescription: SDP বিনিময়ের মাধ্যমে বন্ধুদের সাথে সরাসরি ম্যানুয়াল P2P সংযোগ।
   resourcepack:
     searchTitle: রিসোর্স প্যাক খুঁজুন
     searchDescription: Modrinth, CurseForge বা স্থানীয় ফাইল থেকে রিসোর্স প্যাক অনুসন্ধান করুন।
@@ -2136,10 +1599,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: অমীমাংসিত ফাইলসমূহ
   via: '{source}-এর মাধ্যমে'
-upstream:
-  downgrade: ডাউনগ্রেড
-  onlyShowCurrentVersion: শুধুমাত্র বর্তমান মাইনক্রাফ্ট সংস্করণ দেখান
-  update: আপডেট
 user:
   accessToken: অ্যাক্সেস টোকেন
   authMode: প্রমাণীকরণ পরিষেবা

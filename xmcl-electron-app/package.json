@@ -11,7 +11,8 @@
     },
     "repository": {
         "type": "git",
-        "url": "https://github.com/gitzetazero/zenith-launcher"
+        "url": "https://github.com/gitzetazero/zenith",
+        "directory": "zenith/launcher"
     },
     "msstoreCliAppId": "9MXJWHXTP4B9",
     "scripts": {

@@ -1,30 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: 複数のランチャー構成が検出されました。インポートするものを一つ選択してください。
-  createTitle: ゲームを作成
-  serverTitle: サーバーアドレスを入力
-AppShareInstanceDialog:
-  editScopeDescription: LAN上で実行中のこのゲームを検出したピアが取得できるファイルを選択します。
-  editScopeTitle: 共有範囲を編集
-  instanceToShare: 実行中のゲーム
-  alterDownloadDescription: 現在の起動構成をいじりたくなければ、ピアの構成から新しく起動構成を作ることができます。下のボタンをクリックすると起動構成を作成します。
-  baseInfo: 基本的な設定
-  description: プロファイルを共有すると、他の場所からあなたのPCを通してファイルをダウンロードできるようになります。
-  downloadDescription: ピアから提供されたファイルを確認し、ダウンロードするファイルを選択してください。これは現在の起動構成 {name} に配置されます。
-  downloadNotifyTitle: '{user} から起動構成をダウンロード'
-  downloadTitle: 他のピアからファイルをダウンロード
-  filesToDownload: ダウンロードするファイルを選択
-  filesToShare: 共有するファイルを選択
-  share: 共有
-  shareTitle: ゲームファイルを他のプレイヤーに共有
 BaseSettingGeneral:
   title: 一般
-HomeJavaIssueDialog:
-  incompatibleJava: 互換性のないJava
-  incompatibleJavaHint: 現在のJavaは選択されたMinecraftと互換性がない可能性があります!
-  missingJava: Javaが見つかりません
-  missingJavaHint: 'ランチャーはJavaを見つけることができませんでした。次のことを試すことができます:'
-  optionSwitch:
-    name: '{version} に切り替え'
 HomeLaunchMultiInstanceDialog:
   confirm: はい、起動します。
   description: 複数の起動構成を起動しようとしています。続行しますか?
@@ -36,32 +11,7 @@ ago:
   hour: '{duration} 時間前'
   minute: '{duration} 分前'
   second: '{duration} 秒前'
-askAICrash:
-  copyPrompt: プロンプトをコピーしてAIに尋ねます
-  description: |-
-    AIがゲームのクラッシュを理解するのを手伝ってください！
-    以下の指示に従って、このゲームのクラッシュについてAIに尋ねてください！
-  selectPlatform: AIプラットフォームを開き、コピーしたプロンプトを貼り付けます。
 authProfileAddedNotification: 認証プロファイル {name} が追加されました
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
 backup:
   title: バックアップと復元
   description: 設定、コレクション、テーマ、およびゲームインスタンスをバックアップ・復元します
@@ -294,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: クリックするとこのバージョンをインストールします。
     name: Minecraft %{version} のJarが壊れています。
-  incompatibleJava:
-    name: Javaバージョン {javaVersion} は {version} に適合しません!
   instanceFiles:
     description: 起動構成は {counts} 個のファイルを含みます。
     title: 終了していない起動構成のインストール
-  invalidJava:
-    name: Javaの場所が無効です。
   missingJava:
     message: クリックして問題を処理します。
     name: Minecraftを立ち上げるためのJavaが見つかりません!
@@ -327,11 +273,6 @@ duration:
   hour: '{duration} 時間'
   minute: '{duration} 分'
   second: '{duration} 秒'
-env:
-  select:
-    all: すべて選択
-    fit: 選択
-    none: 選択しない
 errors:
   BadForgeInstallerJarError: Forge インストーラーのJarを解析できません。Forgeが新しいインストーラーのフォーマットを採用したのかもしれません? この問題が続く場合は開発者に連絡してください。
   BadInstanceType: '有効な起動構成ではありません: {type}'
@@ -349,8 +290,6 @@ errors:
   HeadersTimeoutError: HTTPのヘッダーがタイムアウト
   NotFoundError: 404 Not Found
   SocketError: サーバーソケットエラー
-eula:
-  body: このチェックボックスを押すことで、Minecraftの {eula} に同意したことになります。
 exception:
   http: '{url} へのHTTPリクエストに失敗しました。エラーコードは {code}、ステータスコードは {statusCode} です。再度試すか、ネットワーク接続を確認してください。エラーが続く場合は、レポートを開発者に送ってください。'
 extensions:
@@ -426,21 +365,6 @@ gameType:
   survival: サバイバルモード
 help: ヘルプ
 home: ホーム
-importModpack:
-  fromFileSubtitle: .zip または .mrpack ファイルを選択
-  fromUrl: リンク / URL から...
-  fromUrlSubtitle: URL から Mod パックをインストール
-  fromUrlDescription: 'Mod パックの URL を入力または貼り付けてください:'
-  invalidUrl: 有効な URL（http:// または https://）を入力してください
-  selectVersion: Mod パックのバージョンを選択
-  selectVersionDescription: 'インストールする {name} のバージョンを選択してください:'
-  pmcProtected: Planet Minecraft は Cloudflare で保護されています。ページから直接ダウンロードリンクまたはミラーリンクをコピーしてください。
-  netdiskTitle: クラウドドライブからダウンロード
-  netdiskDescription: この Mod パックのバージョンは外部のクラウドドライブに保存されています。下のボタンをクリックしてブラウザーでダウンロードページを開き、ダウンロードした .zip または .mrpack ファイルを Zenith Launcher にドラッグ＆ドロップしてください。
-  openNetdisk: クラウドドライブを開く
-  netdiskOpened: クラウドドライブのリンクをブラウザーで開き、クリップボードにコピーしました。
-  noReleasesFound: このリポジトリに .mrpack または .zip 形式の Mod パックのリリースが見つかりませんでした。
-  name: Modpackをインポート
 installAssets:
   asset: '{count} 個のアセットをインストール'
   assetIndex: アセットインデックスファイルを確認
@@ -499,14 +423,11 @@ instance:
   iconUrl: アイコンのURL
   installModpack: ModPackからインスタンスを更新します
   lastPlayed: 最後にプレイ
-  launchArguments: 起動引数のプレビュー
   launchServer: Localhostサーバーを立ち上げる
   linkFileDesc: |-
     これはローカルの{file}インスタンスをグローバルの{file}インスタンスで上書きします。
     本当にマージしますか？
   linkFileTitle: 本当に{file}をリンクしますか？
-  mcOptions: Minecraftのオプション
-  mcOptionsHint: 追加のMinecraft実行引数
   name: 起動構成の名前
   nameHint: Modpackの名前
   nameNoCyrillic: キリル文字は使用できません
@@ -514,10 +435,6 @@ instance:
   openCrashReportFolder: クラッシュレポートフォルダを開く
   openLogFolder: ログフォルダを開く
   playtime: プレイ時間
-  preExecCommand: プレスタート・コマンド
-  preExecCommandHint: Minecraftを起動する前に実行するコマンド
-  prependCommand: 先頭にコマンドを追加
-  prependCommandHint: 全ての起動コマンドの先頭に追加されます
   requireName: 名前は必須項目です
   resolution: 解像度
   resolutionPreset: 解像度プリセット
@@ -528,10 +445,6 @@ instance:
   useSharedOptionsDesc: これでoptions.txtファイルがインスタンスの共有ファイルにリンクされる。
   useSharedServersList: 共有サーバーのリストを使う
   useSharedServersListDesc: これにより、server.datファイルがインスタンスの共有ファイルにリンクされる。
-  vmOptions: JVM実行引数
-  vmOptionsHint: JVMに渡される追加の引数
-  vmVar: 環境変数
-  vmVarHint: ボタンをクリックして環境変数を追加します
   width: 幅
   envVarKey: キー
   envVarValue: 値
@@ -573,9 +486,6 @@ instanceSetting:
   showLogHint: ゲーム起動後にMinecraftのログを流すポップアップウィンドウを表示します
   syncGameLanguage: ゲームの言語を同期
   syncGameLanguageDescription: 起動時にMinecraftの言語をランチャーの言語と自動的に同期します
-instanceTemplate:
-  ftb: FTB のModpackです
-  preview: Modpackのプレビュー
 instanceUpdate:
   basic: 設定の更新
   files: ファイルのアップデート
@@ -603,42 +513,15 @@ instances:
   fix: 直す
   folder: フォルダー
   folderSetting: フォルダーの設定
-  importFolderDescription: Minecraftをランチャーにインポート
-  loadingFiles: Modpackファイルを読み込み中
-  edition: エディション
-  editionJava: Java Edition
   editionBedrock: Bedrock Edition
   editionBedrockHint: Bedrock Edition は Microsoft Store アプリを通じて起動します。Bedrock のライセンスを所有している必要があります。Mod、リソースパックなどの Java 専用機能は利用できません。
   editionBedrockWindowsOnly: Bedrock Edition は Windows ビルドでのみサポートされています。
-  linkSharedFolders: インスタンス間でフォルダーを共有
-  linkSharedFoldersHint: これらのフォルダーをランチャーの共有フォルダーへのリンクとして作成し、このインスタンスがリンクされた他のすべてのインスタンスと内容を共有するようにします。これはコピーではありません。1つのインスタンスで加えた変更はすべてのインスタンスに反映されます。チェックしていないフォルダーはこのインスタンス専用のままです。
-  linkFailed: '{folder} フォルダーを共有フォルダーにリンクできませんでした'
   addPrismDescription: 既存のPrismLauncherインスタンスをインポート。
 items:
   count: '{count} 個'
   total: 合計 {total} 個
 java:
-  allocatedLong: システムのデフォルトのJavaを使用
-  allocatedShort: 自動割り当て
-  importFromFile: Javaをファイルからインポート
-  invalid: Javaの場所が無効です
-  location: Javaの場所
-  maxMemory: 最大メモリー割り当て
-  memory: Java メモリー
   memoryAuto: 自動
-  memoryManual: 手動
-  memoryUnassigned: 未割り当て
-  minMemory: 最低メモリー割り当て
-  name: Java
-  noMemory: メモリの使用を制限しない
-  refresh: ローカルのJavaをリフレッシュする
-  systemMemory: 'システム空きメモリ: {free} / {total}'
-  allocation: 割り当て済み
-  autoHint: 最小値はインストール済みModの数に応じて増加し、最大値は利用可能なシステムメモリを使用します。
-  change: 変更
-  locationHint: Javaが選択されていません — システムのデフォルトを使用
-  openFolder: Javaフォルダを開く
-  presets: プリセット
 labyMod:
   disable: LabyMod を使用しない
   empty: LabyMod は現在のMinecraftをサポートしていません
@@ -708,8 +591,6 @@ localVersion:
   auto: 自動で計算済み
   empty: バージョンがインストールされていません
   hint: 特定のローカルバージョンを直接起動する
-  reinstallDescription: もしこのバージョンのインストールに問題があるのなら、再インストールを試すことができます。
-  reinstallTitle: 再インストール {version}
   title: ローカルバージョン
 logLevel:
   error: エラー
@@ -776,7 +657,6 @@ minecraftVersion:
   showAlpha: スナップショットを表示
   snapshot: スナップショット
 mod:
-  collapseAllGroups: すべてのグループを折りたたむ
   acceptVersion: '{version} を受け入れる'
   applyGroupRules: 保存されたグループ化ルールを適用します
   compatible: 利用可能なModです。
@@ -784,7 +664,6 @@ mod:
   currentVersion: 現在 {current}
   denseView: コンパクトなビュー
   disableAll: すべて無効化
-  dropHint: ここにModファイル(.jar/.litemod)をドロップしてインポートします。
   duplicatedDetected: '{count} 個の重複した MOD'
   duplicatedDetectedDescription: |-
     同じ MOD ID で異なるファイルを持つ MOD が見つかりました。
@@ -794,9 +673,6 @@ mod:
   enabled: '{count} 個のModが有効'
   filter: Modをフィルタ
   group: グループアップ
-  groupInstalled: グループでインストールされたMod
-  hideInstalled: インストール済みModを非表示
-  installedFilterOff: 全てのModを表示
   groupName: グループ名
   groupNameRequired: グループ名は必須です
   hasUpdate: Modにアップデートがあります!
@@ -806,29 +682,18 @@ mod:
     一部の MOD の依存関係が欠落している可能性があります。
     または、一部の依存関係のバージョンが一致しません。
   maybeCompatible: おそらく適合しません。
-  modloaderSelectHint: |-
-    MOD は以下の MOD ローダーをサポートしています。
-    インストールするものを選択してください。
-  modloaderSelectNotSupported: Minecraft {minecraft} の {modloader} が見つかりません
   mods: '{count} Mods'
   name: Mod | Mods
   newFolder: 新しいフォルダ
   noGroupsFound: グループが見つかりません
   noGroupsYet: まだグループがありません。作成してください！
-  noModLoaderHint: Modを使うためにModloaderを有効化するのを忘れないでください!
   openLink: ModのURL {url} を開く
-  search: Modを検索
   searchGroups: グループを検索...
   searchOnMcWiki: Mod {name} をMcWikiで見る
   selectOrCreateGroup: グループを選択または作成
-  showDirectory: Modsディレクトリを見る
   showFile: Modディレクトリ {file} を表示
-  showInModrinth: Modrinthで {name} を見る
-  switchDefaultSource: Modのデフォルトソースを切り替え
   syncGroupRules: グループ化ルールの保存
-  toUpdate: '{count} 個のアップデート'
   ungroup: グループ化
-  description: 説明
 modFilter:
   clear: クリアフィルター
   dependenciesInstallOnly: 見逃された依存関係のMODのみを表示します
@@ -873,25 +738,10 @@ modified:
   save: 保存
   unsaved: 変更が保存されていません!
 modpack:
-  author: 著者名
-  authorHint: これらはエクスポートされたModpackに署名する際使われます (Curseforge)
-  description: 説明
-  descriptionHint: このModpackにおける全般的な説明です。Curseforge Modpackとしてエクスポートする際使われます。
   dropHint: ここにModpackのzipをドロップしてインポートします。
-  emitCurseforge: Curseforge modpackをエクスポートします
-  emitModrinth: Modrinth Modpackをエクスポートします
-  emitModrinthStrict: 厳密なModrinthフォーマット
-  emitModrinthStrictDescription: Modrinthのドキュメントに記載された4つのドメインのURLのみ許可します
   export: Modpackとしてエクスポート
-  exportDirectory: エクスポートディレクトリ
-  exportDirectoryDescription: ModPackはデフォルトでダウンロードフォルダーにエクスポートされます
-  includeAssets: アセットを含む
-  includes: 含めるファイル
   modpackVersion: Modpackのバージョン
   name: Modpack | Modpacks
-  overrides: オーバーライド
-  url: URL
-  urlHint: あなたのModpackのホームページのURL
 modpackImportConfirm:
   description: |-
     ファイルをランチャーにドロップすることを検出します。
@@ -1059,116 +909,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: 現在のバージョン
-multiplayer:
-  joinDiscord: Discord に参加
-  openConsumerPortal: コンシューマーポータルを開く
-  refundHint: 返金をご希望ですか？Waffo コンシューマーポータルで注文とサブスクリプションを管理できます。
-  togetherSupportHint: マルチプレイが動作しない場合は、Discord に参加して開発チームへお問い合わせください。問題解決をお手伝いします。
-  autoShareAmbiguous: 複数のゲームが実行中です。XMCLで共有するLANワールドをホストしているインスタンスを選択してください。
-  editSharingScope: 共有範囲を編集
-  gameAvailable: LANゲームが利用可能
-  joinGame: ゲームに参加
-  noRunningInstanceToShare: 共有範囲を編集する前にゲームを起動してください
-  updateSharedInstanceConfirm: 更新して起動
-  updateSharedInstanceDescription: 共有されたModが{instance}と異なります。起動前にこのインスタンスをホストに合わせて更新しますか？変更済みの既存ファイルはバックアップされます。
-  updateSharedInstanceTitle: 共有インスタンスを更新しますか？
-  addFunds: 残高を追加
-  availableBalance: 利用可能残高
-  balanceHint: XMCL Together のサービスに利用できます
-  billing: 請求
-  billingDescription: リレーアクセス、Together Home プラン、お支払いを管理します。
-  billingError: Together の請求情報を読み込めませんでした。しばらくしてからもう一度お試しください。
-  buyTogether: Together を購入
-  cancelTogether: プランを解約
-  checkout: Waffo の決済を開く
-  connectionTogetherWarning: ルームメンバーの1人がしばらくあなたに接続できていません。ルーム全員の接続性を改善するには XMCL Together をお試しください。Together が必要なのはルームマスターだけです。
-  masterPurchaseHint: ルーム全員の接続性を改善するには、ルームマスターだけが Together Home を必要とします。
-  natTogetherWarning: ルーターがルームマスターへの接続に問題を抱えている可能性があります。接続に失敗する場合は、あなたと友達の接続性を改善するため XMCL Together をお試しください。ルームの Together を購入する必要があるのはルームマスターだけです。
-  togetherName: Minecraft Together
-  trialDescription: 1 GB のリレートラフィックを含む7日間のトライアルを1回利用できます。
-  trialTitle: 接続性トライアル
-  tryTogether: Together を試す
-  month: 月
-  orderStatus: 'Waffo の注文: {status}'
-  planDescription: 毎月20 GBの管理リレートラフィックに加え、ModpackのAIトラブルシューティングを利用できます。
-  waffoHint: お支払いは Waffo Pancake で安全に完了します。XMCL がカード番号を受け取ることはありません。
-  subscription:
-    active: 有効
-    cancelled: 解約済み
-    payment_due: 支払い期限
-  trial:
-    active: トライアル有効
-    available: 無料トライアルを利用可能
-    expired: トライアル使用済み
-    unavailable: トライアル利用不可
-  loginRequiredDescription: P2P マルチプレイヤーでは Zenith Launcher のオンラインサービスを使用します。続行するには Zenith Launcher アカウントにサインインしてください。
-  loginRequiredTitle: P2P マルチプレイヤーにサインイン
-  complete: 完了
-  confirm: 続行
-  connections: 接続
-  copied: コピー済み!
-  copy: コピー
-  copyGroupToFriendHint: このIDでフレンドをグループに追加できます
-  copyLocalHint: '"ローカルSDPテキストをコピーして接続に参加してください <span>一つのトークンで接続できるピアは <span style="color: red; font-weight: bold;">1つ</span>のみです! 同じトークンを複数のピアに送ることはできません!</span> <br> <span class="hint-text" style="font-style: italic;">複数のピアに接続する必要がある場合、 <span style="font-weight: bold; color: rgba(245, 158, 11)">複数の</span>接続を作ってください</span>"'
-  createLocalToken: ローカルトークンを作成
-  currentIpTitle: 検出されたパブリックIP
-  currentNatTitle: '現在のネットワーク (NAT):'
-  difficultyLevelHint: 接続を作成する難易度
-  disconnect: 切断
-  disconnectDescription: ユーザー {user}({id}) との接続を切断しますか?
-  disconnected: 切断済み
-  enterRemoteToken: リモートトークンを入力
-  enterRemoteTokenHint: あなたのピアがトークンを入力したら、あなたが相手側のトークンを下に入力する必要があります。続行を押して接続します。
-  exposedPortDescription: ピアに公開されるポート
-  exposedPorts: 開かれたポート
-  gatheringIce: |-
-    "ICEサーバーがあなたのネットワークについての情報を収集するまでお待ち下さい。 もしあなたが急いでいて十分な情報をお持ちであれば、
-    現在のSDPを相手に事前に伝えておいて次へをクリックしてください。 次に <span class="v-chip v-chip--label
-    v-size--small" style="text-font: bold" >ローカルトークン</span> をあなたのピアに送って、
-    相手のトークンを <span class="v-chip v-chip--label v-size--small" style="text-font:
-    bold"> 接続に参加 </span> を押してください。 <br> ICEサーバーが <span class="v-chip
-    v-chip--label v-size--small" style="text-font:
-    bold">ローカルトークン</span>を作成するのに十分な情報を集めることに時間がかかることがあります<br>
-    ICEステータスが完了になるまで待つ必要はありません。 以下のトークンが変更されていない場合、それをコピーし相手のピアに送信できます。"
-  groupId: グループID
-  illegalTokenDescription: 無効なトークンです。あなたのピアから受け取ったトークンが正しいか確認してください。
-  initiateConnection: 接続を初期化
-  joinConnection: もしあなたのピアがすでに接続を初期化していた場合、接続に参加する必要があります。
-  joinManual: 参加
-  joinOrCreateGroup: グループに参加/グループを作成
-  joinOrCreateGroupHint: あなたのグループIDを取得するかグループを作成してください
-  kernel: P2P カーネル
-  kernelDescription: ネイティブ WebRTCまたはNode-Datachannelを使用します。P2P接続によりランチャーがクラッシュする時のみ切り替えてください。
-  leaveGroup: グループを抜ける
-  localToken: ローカルトークン
-  manualConnect: 手動接続
-  name: LAN マルチプレイヤー
-  networkInfo: ネットワーク情報
-  next: 次へ
-  otherExposedPortDescription: ポートは {user} によりフォワードされています
-  placeholder: 他のユーザーに接続しMinecraftでLANマルチプレイをしましょう!
-  previous: 戻る
-  receiveHint: 他のパーティーがあなたのトークンを入力した後、あなたの接続は自動で接続されます。ダイアログを閉じることができます
-  receiveRemoteTokenHint: あなたのピアから受け取ったトークンを入力してください
-  remoteToken: リモートトークン
-  routerInfo: ルーター情報
-  sendTokenToRemote: リモートにトークンを送る
-  share: 起動構成を共有する
-  sharing: ファイルを共有中...
-  start: スタート
-  startNewP2PConnection: スタートボタンをクリックして新しいピアへの接続を作成します
-  connectionError: 接続エラー
-  connectionFailedHint: 接続を確立できません。両方のピアのNATタイプが互換性があるか確認してください。
 myStuff: 私の作品
-natType:
-  blocked: ブロックされた
-  fullCone: Full Cone
-  openInternet: オープンインターネット
-  restrictNat: Ristrict NAT
-  restrictPortNat: Restrict Port NAT
-  symmetricNat: Symmetric NAT
-  symmetricUDPFirewall: Symmetric UDP Firewall
-  unknown: 未知
 neoForgedVersion:
   disable: NeoForge を使用しない
   empty: NeoForgeはMinecraft {version} をサポートしていません
@@ -1179,23 +920,6 @@ optifineVersion:
   disable: Optifine を使用しない
   empty: OptifineはMinecraft {version} をサポートしていません
 optional: オプション
-peerConnectionState:
-  closed: クローズ
-  connected: 接続済み
-  connecting: 接続中
-  disconnected: 切断済み
-  failed: 失敗
-  name: 接続状態
-  new: 新規
-peerGroupState:
-  closed: グループに未参加
-  closing: クローズ
-  connected: 参加済み
-  connecting: 接続中
-peerIceGatheringState:
-  gathering: ICEサーバーを取得中
-peerSignalingState:
-  have-local-offer: ピアの情報を待機中
 presence:
   instance: 起動構成 {instance} でアイドル中
   instanceSetting: '起動構成を編集: {instance}'
@@ -1213,58 +937,9 @@ quiltVersion:
   empty: QuiltはMinecraft {version} をサポートしていません
 blueprint:
   name: 設計図 | 設計図
-  count: '{count} 個の設計図'
-  searchLocal: 設計図を検索...
-  searchOnline: オンライン検索...
-  market: マーケット
-  local: ローカル
-  provider: 提供元
-  import: インポート
-  openFolder: フォルダーを開く
-  refresh: 更新
   empty: 設計図が見つかりません。.litematic / .schem / .nbt ファイルをインポートするか、マーケットを閲覧してください。
-  dropHint: 設計図ファイル（.litematic / .schem / .nbt）をここにドロップしてインポート。
   selectHint: プレビューする設計図を選択してください。
-  blocks: '{count} 個のブロック'
-  materials: 材料
-  allNamespaces: すべて
-  findMod: この名前空間に対応する Mod を探す
-  compatible: 互換性あり
-  incompatible: Mod が不足
-  missingNamespaces: '不足している Mod: {namespaces}'
-  delete: 削除
-  cancel: キャンセル
   install: インストール
-  goTo: ウェブサイト
-  byAuthor: '作者: {author}'
-  noDescription: 説明はありません。
-  loadMore: もっと読み込む
-  cmsBrowseOnly: このソースは閲覧専用です。ダウンロードはウェブサイトを開いてください。
-  mixedSources: 結果はすべてのソースの混合です。一部は閲覧専用のため、ウェブサイトを開いてダウンロードしてください。
-  formats:
-    structure: バニラ構造物
-  preview:
-    title: 3D プレビュー
-    loading: プレビューを読み込み中...
-    empty: この設計図には表示できるブロックがありません。
-    hint: '{count} 個のブロック · {x}×{y}×{z}'
-    controls: WASD：移動 · スペース/Shift：上昇/下降 · ドラッグ：視点移動 · スクロール：ズーム
-  convert:
-    title: フォーマットを変換
-    hint: この設計図を別のフォーマットに変換します。新しいファイルが作成されます。
-    target: 変換先フォーマット
-    action: 変換
-  replace:
-    title: ブロックを置換
-    simple: シンプル
-    precise: 詳細
-    simpleHint: ブロック ID のみで一致させ、既存のブロック状態のプロパティを保持します。
-    preciseHint: ブロック状態全体（ID + プロパティ）を一致させ、完全に置換します。
-    from: 置換前
-    to: 置換後
-    addRule: ルールを追加
-    newFile: 新しいファイルとして保存
-    action: 置換
 resourcepack:
   linkShared: リソースパックをインスタンス間で共有
   linkSharedHint: このインスタンスの resourcepacks フォルダーをグローバル共有フォルダーにリンクし、すべてのインスタンスで同じリソースパックを使用します。既存のパックは共有フォルダーに統合されます。
@@ -1371,141 +1046,25 @@ search:
 server:
   launch: サーバーを起動
   stop: サーバーを停止
-  acceptingMinecraftVersion: Minecraftバージョンを使用中
   addServer: サーバーを追加
   address: サーバーアドレス
   addressHint: '例: mc.hypixel.net'
   bindUpstream: アップストリームとしてバインド
-  boundUpstream: アップストリームサーバーをバインド済み
   boundUpstreamHint: このインスタンスはバインドされたサーバーのMinecraftバージョンに追従します。
-  creationHint: サーバーアドレスを入力し、pingしてください
   editServer: サーバーを編集
   emptyHint: このインスタンスのservers.datにはまだサーバーがありません。追加してください。
   entryCount: '{count} 件のサーバー'
-  expectedVersions: サポートされたバージョン
-  export: エクスポートサーバー
-  exportNoFilesHint: サーバーファイルは見つかりません。 ローカルでサーバーを1回実行して、いくつかのファイルを生成できます。
-  exportOption: サーバーエクスポートオプション
-  exportSSHAuthenticationFailed: すべての認証方法が失敗しました。 ユーザー名/パスワードまたは秘密鍵を確認してください。
-  exportSSHOptions: SSHオプション
-  exportSSHPrivateKeyPath: SSH秘密鍵のパス
-  exportSSHRemotePath: リモートサーバーパス
-  exportToFolder: フォルダーにエクスポートします
-  filterVersion: 対応したMinecraftバージョンのサーバーをフィルターします
-  host: ホスト
-  hostHint: サーバーのホスト(とポート)
-  hostRequired: サーバーIPアドレスを入力してください
-  ipAddress: IP アドレス
   launchClient: 代わりにクライアントを起動
   launchPinned: 固定中
   launchTargetHint: このインスタンスは固定されたサーバーに直接接続します。クライアント起動に戻しますか？
   maxPlayers: 最大プレイヤー数
-  motd: サーバー MOTD
   nameHint: マルチプレイリストに表示される表示名
-  nogui: サーバーのGUIなし
-  onlineMode: オンラインモード
   pin: サーバーをピン留め
   pinAfterSave: 保存後にデフォルトの起動ターゲットとしてピン留めする
-  ping: Ping
-  pings: Ping
   pinnedHeader: 'ピン留め: {name}'
-  players: プレイヤー数
   port: ポート
-  clearLog: ログをクリア
-  log: サーバーログ
-  logWaiting: サーバー出力は起動後にここに表示されます。
-  remoteActionSuccess: Done.
-  remoteAdmin: リモートサーバー管理
-  remoteAuthMethod: 認証方式
-  remoteAuthPassword: パスワード
-  remoteAuthPrivateKey: 秘密鍵
-  remoteBuildOfflinePackage: オフラインパッケージの作成
-  remoteConnected: 接続済み
-  remoteConnection: 接続
-  remoteDeployment: デプロイ
-  remoteDeploy: デプロイ
-  remoteDisk: ディスク
-  remoteConfigFiles: 設定ファイル
-  remoteExtraFiles: その他の追加ファイル
-  remoteForgetCredentials: 保存された認証情報を削除
-  remoteInstallService: サービスをインストール
-  remoteLoad: 平均負荷
-  remoteLog: リモートログ
-  remoteMemory: メモリ
-  remoteMods: Mod
-  remoteNoWorldSelected: インスタンスのワールドが選択されていません
-  remoteJavaRequired: リモートのLinuxホストでJavaが見つかりません。
-  remoteLinuxRequired: Linux SSHターゲットのみサポートされています。
-  remoteNotConfiguredHint: 上記の接続情報を入力して保存すると、ステータス、サービス制御、ログ追跡が有効になります。
-  remotePathNotWritable: リモートサーバーディレクトリに書き込み権限がありません。
-  remotePathWritable: ディレクトリ書き込み可能
-  remotePolicyInitialize: 初回のみ初期化
-  remotePolicyMirror: ミラー同期
-  remotePolicyOverlay: 上書き配置
-  remotePolicyPreserve: 現状を維持
-  remotePreview: 変更内容のプレビュー
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: 認証情報を記憶する (OSキーチェーン)
-  remoteReconcileReady: ターゲットはこのインスタンスと一致しており、コンソールが接続されています。
-  remoteRestartService: 再起動
-  remoteSavedCredentialsHint: 保存された認証情報を使用中 — 空欄のまま維持、または入力して上書き。
-  remoteService: systemd サービス
-  remoteServiceActive: 実行中
-  remoteServerInstalled: サーバーファイル配置済み
-  remoteServiceName: サービス名
-  remoteServiceNameHint: 'systemd --user のユニット名、例: mc-server'
-  remoteSelectedFiles: '{count} 個のサーバーファイルが選択されています'
-  remoteSelectFiles: ファイルを選択
-  remoteStartCommand: 起動コマンド
-  remoteStartCommandHint: '例: java -jar server.jar nogui'
-  remoteStartService: 開始
-  remoteStatus: ステータス
-  remoteSystemdRequired: リモートLinuxホストでsystemdユーザーサービスが利用できません。
-  remoteTargetName: ターゲット名
-  remoteStopService: 停止
-  remoteStopWatchLog: ログ追跡を停止
-  remoteTestConnection: 接続テスト
-  remoteTestConnectionSuccess: 接続に成功しました。
-  remoteUninstallConfirmMessage: リモートホストのsystemdユニットを無効化して削除します。サーバーファイルはそのまま残ります。
-  remoteUninstallService: サービスをアンインストール
-  remoteRunInstall: インストールまたは修復
-  remoteWatchLog: リアルタイムログを表示
-  remoteWorldAlways: 同期ごとに毎回置き換える
-  remoteWorldDeployment: インスタンスワールドの配置
-  remoteWorldDeploymentHint: このポリシーで明示的に許可されない限り、通常の同期でワールドデータは転送されません。
-  remoteWorldFirstInstall: ターゲットにワールドが存在しない場合のみ初期化
-  remoteWorldNever: ワールドをアップロードしない
-  remoteWorldPresent: ターゲット側ワールド
-  remoteWorld: ワールド
-  remoteWorldWillDeploy: この同期で選択されたワールドがアップロードされます。
   serverName: サーバー名
-  serviceInstall: サービスをインストール
-  serviceManagedLaunch: 起動および停止アクションに OS サービスを使用する
-  serviceManager: システムサービス
-  serviceName: サービス名
-  serviceNameHint: 文字、数字、ドット、ハイフンを含む識別子
-  serviceNotInstalled: 未インストール
-  serviceStartCommand: 起動コマンド
-  serviceSystemd: systemd --user
-  serviceWindows: Windows サービス
-  serviceWindowsCommandHint: Java コマンドはこのインスタンスから生成されます。
   serversListTitle: サーバー一覧
-  target: サーバーのターゲット
-  targetLocal: localhost
-  targetLocalHint: このコンピューターにサーバーをインストールして実行します。
-  targetRemote: SSH ターゲット
-  targetRemoteHint: SSH 経由でサーバーを接続、インストール、起動、監視します。
   unbindUpstream: バインド解除
   unknown: 未知のサーバー
   unknownDescription: 未知のサーバーです。情報を更新してください。
@@ -1516,23 +1075,12 @@ server:
   upstreamUpdateAvailable: サーバーが Minecraft {version} で稼働しています。クリックして適用。
   upstreamUpdateHint: 提案されたMinecraftバージョンをこのインスタンスに適用します。
   useAsUpstreamHint: インスタンスはサーバーから報告されたMinecraftバージョンに追従します。
-  version: サーバーの要求するバージョン
-  versionHint: PingするMinecraftのバージョン
-  worldPreserve: ターゲット側のワールドを保持
 serverStatus:
   nohost: §4ホストが見つかりません!
   ping: Ping...
   refuse: §4サーバーが拒否しました!
   timeout: §4サーバーへの接続がタイムアウト!
-agent:
-  accessRequiredHint: 内蔵エージェントを使用するには Zenith Launcher に登録するか、設定で独自の AI プロバイダーを構成してください。
-  subscribeXmcl: XMCL に登録
-  notConfiguredHint: 設定 → 一般 → AIエージェントで API キー、モデル、OpenAI 互換エンドポイントを設定してください。たとえば、OpenAI または Claude 互換ゲートウェイを使用します。
 setting:
-  aiAgentApiKeyDescription: OpenAI や Claude 用ゲートウェイなど、OpenAI 互換プロバイダーを設定します。キーはこのデバイスにローカル保存されます。
-  aiAgentApiKeyPlaceholder: OpenAI または Claude プロバイダーの API キー
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 または claude-sonnet-4-5
   themeStore:
     name: テーマストア
     description: グローバルテーマを保存・管理します
@@ -1552,7 +1100,6 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: SignPath.ioが提供するWindows上の無料コード署名、SignPath Foundationによる証明書
   aboutSponsors: 😇 スポンサー 😇
-  advancedJavaOptions: 高度なJavaオプション
   advancedSettings: 詳細設定
   advancedSettingsHint: 危険ゾーン - ランチャーデータのリセットまたは管理
   apiSets:
@@ -1608,8 +1155,6 @@ setting:
   devModeLabel: 開発
   developerMode: 開発者モード
   developerModeDescription: あなたの作成したModを簡単に試せます
-  disableTelemetry: テレメトリを無効化
-  disableTelemetryDescription: XMCLはゲームの立ち上げとユーザーイベントを収集します
   enableDedicatedGPUOptimization: 外部GPUを使用
   enableDedicatedGPUOptimizationDescription: Minecraftのプロセスに外部GPUを割り当てます
   enableDiscord: Discord RPCを有効化
@@ -1619,8 +1164,6 @@ setting:
   exportSettingsHint: 現在の設定をファイルに保存
   general: 一般
   githubRelease: Github リリース
-  globalJava: 優先する Java
-  globalJavaHint: 自動モードではまずこの Java を試し、ゲームバージョンと互換性がない場合のみ自動検出にフォールバックします。
   globalSetting: グローバル設定
   globalSettingHint: 起動構成はこれらの設定をデフォルトとして設定します
   importSettings: 設定をインポート
@@ -1652,7 +1195,6 @@ setting:
   maxSockets: ホスト毎
   maxSocketsDescription: ホスト毎の最大のソケット、または全ての最大のソケットを制限します。0で無制限。
   maxSocketsTitle: 最大HTTPソケット数
-  memoryAssignment: メモリ割り当て
   migrateFromOther: 他のランチャーからインポートする
   minecraftOptions: Minecraftオプション
   name: グローバル設定 | グローバル設定
@@ -1667,11 +1209,6 @@ setting:
     repulse: リパルス
   particleModeDescription: パーティクルの挙動を選ぶ
   quickLaunchSettings: クイック起動
-  replaceNative: ネイティブライブラリを置き換えます
-  replaceNativeDescription: ネイティブライブラリをあなたのコンピューターアーキテクチャに合わせて置き換えます
-  replaceNatives:
-    all: すべて
-    legacy: 古いバーキョンのみ
   resetAllSettings: すべての設定をリセット
   resetAllSettingsConfirmMessage: これはすべての設定、アカウント、インスタンス、グループ、キャッシュデータを完全に削除します。この操作は取り消すことができません。よろしいですか？
   resetAllSettingsConfirmTitle: すべての設定をリセットしますか？
@@ -1871,17 +1408,6 @@ theme:
   selectVideo: 映像を選択
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: ホスト候補
-  prflx: ピアの反射の候補
-  relay: リレー候補
-  srflx: サーバー反射候補
-turnRegion:
-  fr: フランス
-  guangzhou: 中国、広州
-  hk: 香港
-  liaoning: 中国、遼寧省
-  po: ポーランド
 tutorial:
   feedbackDescription: 問題に遭遇した場合は、このボタンを押してフィードバックを送ってください!
   hideNewsHeaderDescription: ニュースを左で見れます。このボタンを押すことで隠せます
@@ -1890,10 +1416,6 @@ tutorial:
     appearanceThemeTitle: インスタンスの外観
     iconDescription: クリックしてアイコンを変更します。
     iconTitle: インスタンスアイコン
-    javaDescription: Javaバージョンの選択と切り替えを行います。
-    javaImportDescription: ローカルストレージからJavaランタイムを取り込みます。
-    javaImportTitle: Javaのインポート
-    javaTitle: Java一覧
     modpackExportDescription: 設定済みインスタンスを配布可能なModパック形式にパッケージ化します。
     modpackExportTitle: Modパックのエクスポート
     modpackFilesDescription: クライアントやサーバーに同梱する設定ファイル、Mod、リソースを選択します。
@@ -1947,15 +1469,6 @@ tutorial:
     profileDescription: アカウントの切り替えとログイン認証情報の管理を行います。
     skinTitle: スキンとマントのカスタマイズ
     skinDescription: キャラクターを3Dプレビューし、スキン変更やマント装着ができます。
-  multiplayer:
-    railTitle: ネットワークとナビゲーション
-    railDescription: NATタイプ、ネットワーク接続状況を確認し、接続と設定を切り替えます。
-    groupTitle: ルームに参加または作成
-    groupDescription: ルームコードを入力して参加するか、空欄のままクリックして部屋を作成します。
-    joinDescription: クリックして既存のルームに参加するか、新規作成します。
-    contentTitle: 接続メンバーとコンテンツ
-    contentDescription: 接続中のメンバー管理、レイテンシ確認、起動中Minecraftの共有を行います。
-    manualDescription: SDP交換を用いた友人との手動直接P2P接続。
   resourcepack:
     searchTitle: リソースパックの検索
     searchDescription: Modrinth、CurseForge、またはローカルファイルからリソースパックを検索します。
@@ -2000,10 +1513,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: 未解決のファイル
   via: '{source} 経由'
-upstream:
-  downgrade: ダウングレード
-  onlyShowCurrentVersion: 現在のMinecraftバージョンのみ表示
-  update: アップデート
 user:
   accessToken: アクセストークン
   authMode: 認証サービス

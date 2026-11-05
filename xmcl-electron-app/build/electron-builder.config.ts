@@ -31,7 +31,7 @@ export const config = {
   publish: [{
     provider: 'github',
     owner: 'gitzetazero',
-    repo: 'zenith-launcher',
+    repo: 'zenith',
   }],
   files: [{
     from: 'dist',

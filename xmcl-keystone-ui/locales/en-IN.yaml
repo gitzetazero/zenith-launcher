@@ -1,97 +1,17 @@
-AppAddInstanceDialog:
-  choiceTitle: Multiple launch profiles detected. Please select one to import.
-  createTitle: Create Game
-  serverTitle: Input your server address
-AppShareInstanceDialog:
-  editScopeDescription: Select the files peers can pull after discovering this running game on LAN.
-  editScopeTitle: Edit Sharing Scope
-  instanceToShare: Running Game
-  alterDownloadDescription: If you don't want to mess up current instance. You can also create a new instance from your peer's config. Click the button below to create instance.
-  baseInfo: Basic Setting
-  description: After you share the profile, other place can download these files through your PC.
-  downloadDescription: Please verify the files your peer provided to you. Select the file you want to download. It will be placed to current instance {name}.
-  downloadNotifyTitle: Download Instance from {user}
-  downloadTitle: Download files from other peers
-  filesToDownload: Choose files to download
-  filesToShare: Choose files to share
-  share: Share
-  shareTitle: Share game files to other player
 BaseSettingGeneral:
   title: General
-HomeJavaIssueDialog:
-  incompatibleJava: Incompatible Java
-  incompatibleJavaHint: Current Java might be incompatible with selected Minecraft!
-  missingJava: Missing Java
-  missingJavaHint: 'The Launcher cannot detect any java in your computer. You can:'
-  optionSwitch:
-    name: Switch to {version}
 HomeLaunchMultiInstanceDialog:
   confirm: Yes, Launch
   description: You are launching multiple instances of Minecraft. Are you sure?
   title: Multiple Instances
 SettingMigrationDialog:
   selectRootDirectory: Select Root Directory
-agent:
-  accessRequiredHint: Subscribe to XMCL to use the built-in Agent, or configure your own AI provider in Settings.
-  subscribeXmcl: Subscribe to XMCL
-  callingTool: calling {name}…
-  disabledPlaceholder: Agent disabled
-  emptyHint: Ask the agent to inspect your instance, toggle mods, read logs, or diagnose a crash.
-  inputPlaceholder: Ask the agent…  (Enter to send, Shift+Enter for newline)
-  notConfiguredHint: Set an API key, model and OpenAI-compatible endpoint in Settings → General → AI Agent. For example, use OpenAI or a Claude-compatible gateway.
-  notConfiguredTitle: Agent not configured
-  openSettings: Open settings
-  reset: New conversation
-  setupGuide: Setup guide
-  statusDisabled: Disabled — missing API key
-  statusReady: Ready
-  statusWorking: Working…
-  suggestion1: Upgrade this instance to a newer Minecraft version, and update the mods to match
-  suggestion2: My mods are crashing — find the cause and tell me how to fix it
-  suggestion3: 'Build a modpack: find mods for a feature I want and install them into this instance'
-  thinking: thinking…
-  title: XMCL Agent
-  toggleHint: to toggle
 ago:
   day: '{duration} day ago | {duration} days ago'
   hour: '{duration} hour ago | {duration} hours ago'
   minute: '{duration} minute ago | {duration} minutes ago'
   second: '{duration} second ago | {duration} seconds ago'
-askAICrash:
-  agentNotConfigured: Add an AI provider and API key in Settings to let the launcher's built-in agent diagnose and fix this for you.
-  askAgent: Diagnose with the built-in AI agent
-  copyPrompt: Copy the prompt to ask AI
-  description: Let AI help you to understand the game crash! Follow the instructions below to ask AI about this game crash!
-  orExternal: or use an external AI
-  selectPlatform: Open an AI platform and paste the prompt you just copied.
-  setupAgent: Set up the AI agent
 authProfileAddedNotification: Auth Profile {name} Added
-bedrock:
-  description: Minecraft Bedrock Edition is installed and launched through the Microsoft Store. You need to own a Bedrock license on your Microsoft account.
-  install: Get from Microsoft Store
-  installFailed: Failed to open the Microsoft Store
-  installed: 'Installed: {version}'
-  launchHint: Use the Launch button to start Bedrock Edition.
-  installBedrockVersion: Downloading Bedrock {version}
-  licenseRequired: Sign in with a Microsoft account that owns Minecraft to install and play Bedrock Edition.
-  refresh: Refresh
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Only one version can be registered with Windows at a time, so playing a version re-registers it.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode. Enabling it prompts for administrator permission.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
 backup:
   title: 'Backup & Restore'
   description: Back up and restore your settings, collections, themes, and game instances
@@ -324,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: Click to install this version
     name: Corrupted version jar for Minecraft %{version}.
-  incompatibleJava:
-    name: The java version {javaVersion} is not suitable for {version}!
   instanceFiles:
     description: The instance installation includes {counts} files.
     title: Incompleted instance installation
-  invalidJava:
-    name: Invalid java location.
   missingJava:
     message: Click to resolve this problem
     name: Cannot find Java to launch Minecraft!
@@ -366,11 +282,6 @@ duration:
   hour: '{duration} hour | {duration} hours'
   minute: '{duration} minute | {duration} minutes'
   second: '{duration} second | {duration} seconds'
-env:
-  select:
-    all: Select All
-    fit: Select Fit
-    none: Select None
 errors:
   bedrockUnsupportedPlatform: Minecraft Bedrock Edition is only supported on the Windows build.
   bedrockNotInstalled: Minecraft Bedrock Edition is not installed.
@@ -406,8 +317,6 @@ errors:
     title: Cannot write to the launcher folder
   NotFoundError: 404 Not Found
   SocketError: Server socket error
-eula:
-  body: By checking the checkbox button, you are indicating your agreement to Minecraft's {eula}.
 exception:
   http: HTTP request to {url} failed. Status code {statusCode}. {code}. Please retry or check your network. If this error persists, please send a report to developer team.
 exportModpack:
@@ -490,21 +399,6 @@ gameType:
   survival: Survival Mode
 help: Help
 home: Home
-importModpack:
-  fromFileSubtitle: Choose a .zip or .mrpack file
-  fromUrl: From Link / URL...
-  fromUrlSubtitle: Install from a modpack URL
-  fromUrlDescription: 'Enter or paste the modpack URL:'
-  invalidUrl: Please enter a valid URL (http:// or https://)
-  selectVersion: Select Modpack Version
-  selectVersionDescription: 'Choose the version of {name} to install:'
-  pmcProtected: Planet Minecraft is protected by Cloudflare. Please copy the direct download or mirror link from the page.
-  netdiskTitle: Cloud Drive Download
-  netdiskDescription: This modpack version is hosted on an external cloud drive. Click below to open the download page in your browser, then drag and drop the downloaded .zip or .mrpack file into Zenith Launcher.
-  openNetdisk: Open Cloud Drive
-  netdiskOpened: The cloud drive link has been opened in your browser and copied to the clipboard.
-  noReleasesFound: No .mrpack or .zip modpack releases found for this repository.
-  name: Import Modpack
 installAssets:
   asset: Install {count} Assets
   assetIndex: Check Assets Index File
@@ -573,12 +467,9 @@ instance:
   iconUrl: Icon Url
   installModpack: Update instance from modpack
   lastPlayed: Last Played
-  launchArguments: Launch Arguments Preview
   launchServer: Launch localhost server
   linkFileDesc: This will overwrite instance local {file} with the global {file}. Are you sure to link it?
   linkFileTitle: Are you sure to link {file}?
-  mcOptions: Minecraft Options
-  mcOptionsHint: Additional Minecraft launch arguments
   name: Profile Name
   nameHint: The name of the modpack
   nameInvalidChars: 'The name cannot contain these characters: < > : " / \\ | ? *'
@@ -591,10 +482,6 @@ instance:
   openCrashReportFolder: Open Crash Report Folder
   openLogFolder: Open Log Folder
   playtime: Playtime
-  preExecCommand: Pre-Execute Command
-  preExecCommandHint: Command to execute before launching Minecraft
-  prependCommand: Prepend Command
-  prependCommandHint: This will prepend this command before all the launch commands
   requireName: The name is required
   resolution: Resolution
   resolutionPreset: Resolution Preset
@@ -605,10 +492,6 @@ instance:
   useSharedOptionsDesc: This will link the options.txt to a shared file across instance
   useSharedServersList: Use shared servers list
   useSharedServersListDesc: This will link the servers.dat to a shared file across instance
-  vmOptions: JVM Options
-  vmOptionsHint: Extra arguments to pass to the JVM
-  vmVar: Environment Variables
-  vmVarHint: Click + button to add environment variables
   width: Width
 instanceAge:
   older: Older
@@ -645,9 +528,6 @@ instanceSetting:
   showLogHint: This will popup a window to stream Minecraft log after game started
   syncGameLanguage: Synchronize Game Language
   syncGameLanguageDescription: Automatically synchronize Minecraft's language with the launcher language on launch
-instanceTemplate:
-  ftb: This is a FTB modpack
-  preview: Modpack Preview
 instanceUpdate:
   basic: Setting Update
   files: File Updates
@@ -665,41 +545,17 @@ instances:
   addPrismDescription: Import existing PrismLauncher instance.
   addVanilla: Create from vanilla-like Minecraft
   addVanillaDescription: Import from common .minecraft folder. This will duplciate the original game profile to Zenith Launcher.
-  edition: Edition
-  editionJava: Java Edition
   editionBedrock: Bedrock Edition
   editionBedrockHint: Bedrock Edition is launched through the Microsoft Store app. You need to own a Bedrock license. Mods, resource packs and other Java-only features are not available.
   editionBedrockWindowsOnly: Bedrock Edition is only supported on the Windows build.
   fix: Repair
   folder: Folder
   folderSetting: Folder Settings
-  importFolderDescription: Import Minecraft to Launcher
-  loadingFiles: Loading Modpack Files
 items:
   count: '{count} items'
   total: '{total} total'
 java:
-  allocatedLong: Use system default java
-  allocatedShort: Auto Allocated
-  allocation: Allocated
-  autoHint: Min grows with installed mod count; max uses available system memory.
-  change: Change
-  importFromFile: Import Java From File
-  invalid: Invalid Java Location
-  location: Java Location
-  locationHint: No Java selected — using system default
-  maxMemory: Max Memory
-  memory: Java Memory
   memoryAuto: Auto
-  memoryManual: Manual
-  memoryUnassigned: Unassign
-  minMemory: Min Memory
-  name: Java
-  noMemory: Do not limit memory usage
-  openFolder: Open Java Folder
-  presets: Presets
-  refresh: Refresh Local Java
-  systemMemory: 'System Free Memory: {free} / {total}'
 labyMod:
   disable: Disable LabyMod
   empty: LabyMod does not support current Minecraft
@@ -767,8 +623,6 @@ localVersion:
   auto: Auto Computed
   empty: No Version Installed
   hint: Launch a specific local version directly
-  reinstallDescription: If you think this version installation has some problems, you can try to reinstall it.
-  reinstallTitle: Reinstall {version}
   title: Local Version | Local Versions
 logLevel:
   error: Error
@@ -832,36 +686,6 @@ me:
   recentPlay: Recent Play
 migrateMinecraft:
   name: Migrate Minecraft Files
-minecraftFriends:
-  accept: Accept
-  add: Add a friend
-  addPlaceholder: Minecraft username
-  addedRelative: Added {time}
-  errors:
-    cannotAddSelf: You cannot send a friend request to yourself.
-    duplicate: That player is already in your list.
-    generic: Something went wrong. Please try again.
-    inviteRejected: That player does not have friends enabled or does not accept invites.
-    tokenExpired: Your Microsoft session expired. Please log in again.
-    unknownProfile: We could not find a player with that name.
-  expiresRelative: Expires {time}
-  friends: Friends
-  heroEmptyHint: Add a Minecraft player by username above to send a friend request.
-  heroEmptyTitle: Your friends list is empty
-  incoming: Incoming requests
-  incomingHint: 1 incoming request | {count} incoming requests
-  notifyAdded: Friend request sent to {name}
-  outgoing: Outgoing requests
-  privacy:
-    acceptInvites: Accept friend invites
-    acceptInvitesHint: When off, other players cannot send you friend requests.
-    friendsEnabled: Friends list enabled
-  reconnectAction: Reconnect
-  requiresMicrosoft: Sign in with a Microsoft account to use friends.
-  scopedTo: Signed in as {name}
-  send: Send
-  title: Minecraft Friends
-  unsupported: Friends are only available for Microsoft accounts.
 migrationWindow:
   title: Data Migration
   preparing: Preparing migration…
@@ -878,25 +702,19 @@ minecraftVersion:
   showAlpha: Show Snapshot
   snapshot: Snapshot
 mod:
-  collapseAllGroups: Collapse all groups
   acceptVersion: Accept {version}
   applyGroupRules: Apply saved grouping rules
   compatible: Compatible Mod.
   createGroup: Create Group
   currentVersion: Current {current}
   denseView: Dense View
-  description: Description
   disableAll: Disable All
-  dropHint: Drop mod's .jar/.litemod here to import.
   duplicatedDetected: '{count} duplicated mods'
   duplicatedDetectedDescription: Found mods with same mod id but different files. This might cause Minecraft crash. Please select the file you want to keep.
   enableAll: Enable All
   enabled: '{count} Mods enabled'
   filter: Filter Mods
   group: Group up
-  groupInstalled: Group Installed Mods
-  hideInstalled: Hide Installed Mods
-  installedFilterOff: Show All Mods
   groupName: Group Name
   groupNameRequired: Group name is required
   hasUpdate: Mod has a new version!
@@ -904,25 +722,17 @@ mod:
   incompatibleHint: Show Incompatible
   incompatibleHintDescription: Some mods dependencies might be missing. Or some dependencies versions do not matched.
   maybeCompatible: Maybe Compatible.
-  modloaderSelectHint: The mod support following mod loaders. Please select one to install.
-  modloaderSelectNotSupported: Not found {modloader} for Minecraft {minecraft}
   mods: '{count} Mods'
   name: Mod | Mods
   newFolder: New Folder
   noGroupsFound: No groups found
   noGroupsYet: No groups yet. Create one!
-  noModLoaderHint: Don't forget to enable a modloader to use mods!
   openLink: Open the mod url {url}
-  search: Search Mods
   searchGroups: Search groups...
   searchOnMcWiki: Look up {name} in the MC encyclopedia.
   selectOrCreateGroup: Select or Create Group
-  showDirectory: Show mods directory
   showFile: Show the mod path {file}
-  showInModrinth: Show {name} in Modrinth
-  switchDefaultSource: Default Mod Source
   syncGroupRules: Save grouping rules
-  toUpdate: '{count} updates'
   ungroup: Ungroup
 modFilter:
   clear: Clear Filter
@@ -968,25 +778,10 @@ modified:
   save: Save
   unsaved: Your modification is unsaved!
 modpack:
-  author: Author Name
-  authorHint: This might be used to sign an exported modpack (Curseforge)
-  description: Description
-  descriptionHint: General description for you modpack. Might be used for exporting as curseforge modpack.
   dropHint: Drop modpack zip to here to import
-  emitCurseforge: Export Curseforge Modpack
-  emitModrinth: Export Modrinth Modpack
-  emitModrinthStrict: Strict Modrinth Format
-  emitModrinthStrictDescription: Only the URLs from 4 domains listed in modrinth document are allowed
   export: Export as Modpack
-  exportDirectory: Export Directory
-  exportDirectoryDescription: The modpack will be exported to Downloads folder by default
-  includeAssets: Include Assets
-  includes: Files to include
   modpackVersion: Modpack Version
   name: Modpack | Modpacks
-  overrides: Overrides
-  url: URL
-  urlHint: The home page url of your modpack
 modpackImportConfirm:
   description: Detect you drop a file into the launcher. Are you trying to import a modpack?
   title: Are you trying to import a modpack?
@@ -1150,110 +945,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: Current Version
-multiplayer:
-  joinDiscord: Join Discord
-  openConsumerPortal: Open Consumer Portal
-  refundHint: Need a refund? Visit the Waffo Consumer Portal to manage your orders and subscriptions.
-  togetherSupportHint: If multiplayer is not working, join our Discord and contact the development team. We will help you resolve the problem.
-  autoShareAmbiguous: Multiple games are running. Select the instance hosting the LAN world so Zenith Launcher can share it.
-  editSharingScope: Edit Sharing Scope
-  gameAvailable: LAN game available
-  joinGame: Join game
-  noRunningInstanceToShare: Launch a game before editing its sharing scope
-  updateSharedInstanceConfirm: Update and launch
-  updateSharedInstanceDescription: The shared mods differ from {instance}. Update this instance to match the host before launching? Existing changed files will be backed up.
-  updateSharedInstanceTitle: Update shared instance?
-  addFunds: Add funds
-  availableBalance: Available balance
-  balanceHint: Available for XMCL Together services
-  billing: Billing
-  billingDescription: Manage relay access, your Together Home plan, and payments.
-  billingError: Together billing could not be loaded. Please try again in a moment.
-  buyTogether: Buy Together
-  cancelTogether: Cancel plan
-  checkout: Open Waffo checkout
-  connectionTogetherWarning: A room member has been unable to connect to you for a while. Try XMCL Together to improve connectivity for everyone in the room. Only the room master needs Together.
-  masterPurchaseHint: Only the room master needs Together Home to improve connectivity for everyone in the room.
-  natTogetherWarning: Your router may have trouble connecting to the room master. If connections fail, try XMCL Together to improve connectivity between you and your friends. Only the room master needs to purchase Together for the room.
-  togetherName: Minecraft Together
-  trialDescription: One 7-day trial with 1 GB of relay traffic.
-  trialTitle: Connectivity trial
-  tryTogether: Try Together
-  month: month
-  orderStatus: 'Waffo order: {status}'
-  planDescription: 20 GB of managed relay traffic each month, plus AI troubleshooting for your modpack.
-  waffoHint: Payments are completed securely on Waffo Pancake. XMCL never receives your card number.
-  subscription:
-    active: Active
-    cancelled: Cancelled
-    payment_due: Payment due
-  trial:
-    active: Trial active
-    available: Free trial available
-    expired: Trial used
-    unavailable: Trial unavailable
-  loginRequiredDescription: P2P multiplayer uses XMCL online services. Sign in to an XMCL Account to continue.
-  loginRequiredTitle: Sign in for P2P multiplayer
-  complete: Complete
-  confirm: Confirm
-  connectionError: Connection Error
-  connectionFailedHint: Unable to establish connection. Check if both peers have compatible NAT types.
-  connections: Connections
-  copied: Copied!
-  copy: Copy
-  copyGroupToFriendHint: Let your friends join the group with this id
-  copyLocalHint: |
-    "Please copy the local SDP text and send it to your object to have your object enter this text in the join connection <span>A token can be only used for <span style="color: red; font-weight: bold;">one peer</span>! You cannot send the same token to multiple peers!</span> <br> <span class="hint-text" style="font-style: italic;">If you need to connect multiple peers, you need to create <span style="font-weight: bold; color: rgba(245, 158, 11)">multiple</span> connections.</span>"
-  createLocalToken: Create Local Token
-  currentIpTitle: Detected Public IP
-  currentNatTitle: 'Current network (NAT):'
-  difficultyLevelHint: The level of difficulty creating a connection
-  disconnect: Disconnect
-  disconnectDescription: Are you sure you want to disconnect with user {user}({id})?
-  disconnected: disconnected
-  enterRemoteToken: Enter Remote Token
-  enterRemoteTokenHint: Once your peer enters your token, you need to enter his token to the text area below. Click confirm to connect.
-  exposedPortDescription: The port you exposed to other peers
-  exposedPorts: Forwarded Ports
-  gatheringIce: |
-    "Please wait for the ICE server to collect enough information about your network. If you are impatient and there is enough information, you can give the current SDP to the other party in advance and click Next Please send the <span class="v-chip v-chip--label v-size--small" style="text-font: bold" >Local Token</span> to your peer, you peer enter your token in <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> Join Connection </span> section. <br> The ICE server might need some time to collect your info to create <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Local token</span>.<br> You do not need to wait until the ICE status is complete. If the token below remains unchanged, you can copy it and send it to your peer."
-  groupId: Group Id
-  illegalTokenDescription: Illegal token, please make sure the token from your peer is correct
-  initiateConnection: Initiate Connection
-  joinConnection: If your peer has already initiated a connection, you need to Join Connection.
-  joinManual: Join
-  joinOrCreateGroup: Join/Create Group
-  joinOrCreateGroupHint: Get group id from your friends or create a group
-  kernel: P2P Kernel
-  kernelDescription: Use either native WebRTC or node-datachannel. Only switch this when your p2p connection sometime crashes the launcher window.
-  leaveGroup: Leave group
-  localToken: Local Token
-  manualConnect: Manually Connect
-  name: Multiplayer on LAN
-  networkInfo: Network Info (Click to toggle)
-  next: Next
-  otherExposedPortDescription: The port forwarded by {user}
-  placeholder: Connect with other users to play Minecraft on LAN!
-  previous: Previous
-  receiveHint: After the other party enters your token, your connection will be created automatically. Now you can close the dialog.
-  receiveRemoteTokenHint: Please enter the token from your peer here.
-  remoteToken: Remote Token
-  routerInfo: Router Info
-  sendTokenToRemote: Send Token to Remote
-  share: Share Instance Config
-  sharing: Sharing files...
-  start: Start
-  startNewP2PConnection: Click the Start button to create a new peer connection
 myStuff: My Stuff
-natType:
-  blocked: Blocked
-  fullCone: Full Cone
-  openInternet: Open Internet
-  restrictNat: Restrict NAT
-  restrictPortNat: Restrict Port NAT
-  symmetricNat: Symmetric NAT
-  symmetricUDPFirewall: Symmetric UDP Firewall
-  unknown: Unknown
 neoForgedVersion:
   disable: Disable NeoForged
   empty: NeoForged does not support {version}
@@ -1264,23 +956,6 @@ optifineVersion:
   disable: Disable Optifine
   empty: Optifine does not support Minecraft {version}
 optional: Optional
-peerConnectionState:
-  closed: Closed
-  connected: Connected
-  connecting: Connecting
-  disconnected: Disconnected
-  failed: Failed
-  name: Connection State
-  new: New
-peerGroupState:
-  closed: Not in Group
-  closing: Closed
-  connected: Group Joined
-  connecting: Connecting
-peerIceGatheringState:
-  gathering: Gathering Ice Server
-peerSignalingState:
-  have-local-offer: Waiting peer description
 presence:
   instance: Idle in Instance {instance}
   instanceSetting: 'Edit Instance Setting: {instance}'
@@ -1309,58 +984,9 @@ resourceError:
   title: Cannot read {file}
 blueprint:
   name: Blueprint | Blueprints
-  count: '{count} blueprints'
-  searchLocal: Search blueprints...
-  searchOnline: Search online...
-  market: Market
-  local: Local
-  provider: Provider
-  import: Import
-  openFolder: Open folder
-  refresh: Refresh
   empty: No blueprints found. Import a .litematic / .schem / .nbt file or browse the market.
-  dropHint: Drop blueprint files (.litematic / .schem / .nbt) here to import.
   selectHint: Select a blueprint to preview it.
-  blocks: '{count} blocks'
-  materials: Materials
-  allNamespaces: All
-  findMod: Find the mod for this namespace
-  compatible: Compatible
-  incompatible: Missing mods
-  missingNamespaces: 'Missing mods for: {namespaces}'
-  delete: Delete
-  cancel: Cancel
   install: Install
-  goTo: Website
-  byAuthor: by {author}
-  noDescription: No description provided.
-  loadMore: Load more
-  cmsBrowseOnly: This source is browse-only; open the website to download.
-  mixedSources: Results are mixed from all sources. Some are browse-only — open their website to download.
-  formats:
-    structure: Vanilla Structure
-  preview:
-    title: 3D Preview
-    loading: Loading preview...
-    empty: This blueprint has no blocks to display.
-    hint: '{count} blocks · {x}×{y}×{z}'
-    controls: 'WASD: Move · Space/Shift: Up/Down · Drag: Look · Scroll: Zoom'
-  convert:
-    title: Convert format
-    hint: Convert this blueprint to another format. A new file will be created.
-    target: Target format
-    action: Convert
-  replace:
-    title: Replace blocks
-    simple: Simple
-    precise: Precise
-    simpleHint: Match by block id only, keeping the existing block state properties.
-    preciseHint: Match the full block state (id + properties) and replace it entirely.
-    from: From
-    to: To
-    addRule: Add rule
-    newFile: Save as a new file
-    action: Replace
 resourcepack:
   compatible: Compatible format {format} with {version}
   defaultDescription: The default look and feel of Minecraft
@@ -1488,141 +1114,25 @@ search:
 server:
   launch: Launch server
   stop: Stop server
-  acceptingMinecraftVersion: Accepting Minecraft Version
   addServer: Add Server
   address: Server Address
   addressHint: e.g. mc.hypixel.net
   bindUpstream: Bind as upstream
-  boundUpstream: Server upstream bound
   boundUpstreamHint: This instance follows the bound server's Minecraft version.
-  creationHint: Please Fill the server address and ping the server
   editServer: Edit Server
   emptyHint: No servers in this instance's servers.dat yet. Add one to get started.
   entryCount: '{count} server | {count} servers'
-  expectedVersions: Supported Versions
-  export: Export Server
-  exportNoFilesHint: No server files found. You can run server on local once to generate some files.
-  exportOption: Server Export Options
-  exportSSHAuthenticationFailed: All authentication methods failed. Please check username/password or private key.
-  exportSSHOptions: SSH Options
-  exportSSHPrivateKeyPath: SSH Private Key Path
-  exportSSHRemotePath: Remote Server Path
-  exportToFolder: Export To Folder
-  filterVersion: Filter server responded Minecraft version
-  host: Host
-  hostHint: The host (with port) of the server
-  hostRequired: Please enter the server ip address
-  ipAddress: IP Address
   launchClient: Launch client instead
   launchPinned: Pinned
   launchTargetHint: This instance launches straight into the pinned server. Switch back to the client?
   maxPlayers: Max Players
-  motd: Server MOTD
   nameHint: Display name shown in the Multiplayer list
-  nogui: No Server Gui
-  onlineMode: Online Mode
   pin: Pin server
   pinAfterSave: Pin as default launch target after save
-  ping: Ping
-  pings: Pings
   pinnedHeader: 'pinned: {name}'
-  players: Players
   port: Port
-  clearLog: Clear log
-  log: Server Log
-  logWaiting: Server output will appear here after launch.
-  remoteActionSuccess: Done.
-  remoteAdmin: Remote Server Admin
-  remoteAuthMethod: Authentication
-  remoteAuthPassword: Password
-  remoteAuthPrivateKey: Private key
-  remoteBuildOfflinePackage: Build offline package
-  remoteConnected: Connected
-  remoteConnection: Connection
-  remoteDeployment: Deployment
-  remoteDeploy: Deploy
-  remoteDisk: Disk
-  remoteConfigFiles: Configuration files
-  remoteExtraFiles: Extra files
-  remoteForgetCredentials: Forget saved credentials
-  remoteInstallService: Install service
-  remoteLoad: Load average
-  remoteLog: Remote Log
-  remoteMemory: Memory
-  remoteMods: Mods
-  remoteNoWorldSelected: No instance world selected
-  remoteJavaRequired: Java is not available on the remote Linux host.
-  remoteLinuxRequired: Only Linux SSH targets are supported.
-  remoteNotConfiguredHint: Fill in the connection details above and save to enable status, service control, and log tailing.
-  remotePathNotWritable: The remote server directory is not writable.
-  remotePathWritable: Directory writable
-  remotePolicyInitialize: Initialize once
-  remotePolicyMirror: Mirror
-  remotePolicyOverlay: Overlay
-  remotePolicyPreserve: Preserve
-  remotePreview: Preview changes
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: Remember credentials (OS keychain)
-  remoteReconcileReady: The target matches this instance and the console is attached.
-  remoteRestartService: Restart
-  remoteSavedCredentialsHint: Using saved credentials — leave blank to keep, or type to replace.
-  remoteService: systemd Service
-  remoteServiceActive: Running
-  remoteServerInstalled: Server files installed
-  remoteServiceName: Service name
-  remoteServiceNameHint: systemd --user unit name, e.g. mc-server
-  remoteSelectedFiles: '{count} server files selected'
-  remoteSelectFiles: Select files
-  remoteStartCommand: Start command
-  remoteStartCommandHint: e.g. java -jar server.jar nogui
-  remoteStartService: Start
-  remoteStatus: Status
-  remoteSystemdRequired: systemd user services are not available on the remote Linux host.
-  remoteTargetName: Target name
-  remoteStopService: Stop
-  remoteStopWatchLog: Stop watching
-  remoteTestConnection: Test connection
-  remoteTestConnectionSuccess: Connection successful.
-  remoteUninstallConfirmMessage: This disables and removes the systemd unit on the remote host. Server files are not touched.
-  remoteUninstallService: Uninstall service
-  remoteRunInstall: Install or repair
-  remoteWatchLog: Watch live log
-  remoteWorldAlways: Replace on every reconciliation
-  remoteWorldDeployment: Instance world deployment
-  remoteWorldDeploymentHint: Routine sync never uploads world data unless this policy explicitly allows it.
-  remoteWorldFirstInstall: Initialize only when the target has no world
-  remoteWorldNever: Never upload a world
-  remoteWorldPresent: Target world
-  remoteWorld: World
-  remoteWorldWillDeploy: The selected instance world will be uploaded by this reconciliation.
   serverName: Server name
-  serviceInstall: Install service
-  serviceManagedLaunch: Use the OS service for launch and stop actions
-  serviceManager: System service
-  serviceName: Service name
-  serviceNameHint: Stable identifier containing letters, numbers, dot, underscore, or hyphen
-  serviceNotInstalled: Not installed
-  serviceStartCommand: Start command
-  serviceSystemd: systemd --user
-  serviceWindows: Windows Service
-  serviceWindowsCommandHint: The Java command is generated from this instance when the service is installed.
   serversListTitle: Server List
-  target: Server target
-  targetLocal: localhost
-  targetLocalHint: Install and run the server on this computer.
-  targetRemote: SSH target
-  targetRemoteHint: Connect, install, launch, and monitor a server over SSH.
   unbindUpstream: Unbind
   unknown: Unknown Server
   unknownDescription: Unknown Server. Please Refresh
@@ -1633,9 +1143,6 @@ server:
   upstreamUpdateAvailable: Server now runs Minecraft {version}. Click to apply.
   upstreamUpdateHint: Applies the suggested Minecraft version to this instance.
   useAsUpstreamHint: The instance will follow the server's reported Minecraft version.
-  version: Server Requires Version
-  versionHint: The Minecraft Version To Ping
-  worldPreserve: Preserve target world
 serverStatus:
   nohost: §4Cannot find host!
   ping: Ping...
@@ -1649,18 +1156,8 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: Free code signing on Windows provided by SignPath.io, certificate by SignPath Foundation
   aboutSponsors: 😇 Sponsors 😇
-  advancedJavaOptions: Advanced Java Options
   advancedSettings: Advanced Settings
   advancedSettingsHint: Danger zone - reset or manage launcher data
-  aiAgentApiKey: AI Agent API Key
-  aiAgentApiKeyDescription: Configure an OpenAI-compatible provider, such as OpenAI or a gateway for Claude. The key is stored locally on this device.
-  aiAgentApiKeyPlaceholder: OpenAI or Claude provider API key
-  aiAgentEndpoint: AI Agent Endpoint
-  aiAgentEndpointDescription: Chat completions endpoint URL.
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 or claude-sonnet-4-5
-  aiAgentModel: AI Agent Model
-  aiAgentModelDescription: Model name to send in chat completion requests.
   apiSets:
     auto: Auto (Determine by network)
     official: Official (Mojang)
@@ -1727,8 +1224,6 @@ setting:
   devModeLabel: DEV
   developerMode: Developer Mode
   developerModeDescription: Developer Mode is for testing your own mods
-  disableTelemetry: Disable Telemetry
-  disableTelemetryDescription: XMCL will collect the game launch and user login events.
   enableDedicatedGPUOptimization: Assign Dedicated GPU
   enableDedicatedGPUOptimizationDescription: This option will assign dedicated GPU to Minecraft process.
   enableDiscord: Enable Discord Presence
@@ -1738,8 +1233,6 @@ setting:
   exportSettingsHint: Save your current settings to a file
   general: General
   githubRelease: Github Release
-  globalJava: Preferred Java
-  globalJavaHint: In auto mode this Java is tried first, and only falls back to auto-detection when it is not compatible with the game version.
   globalSetting: Global Instance Setting
   globalSettingHint: Instance will use these settings by default.
   importSettings: Import Settings
@@ -1767,7 +1260,6 @@ setting:
   maxSockets: Per Host
   maxSocketsDescription: Limit the maximum number of sockets to allow per host or for all hosts in total. 0 means no limit.
   maxSocketsTitle: Max HTTP sockets
-  memoryAssignment: Memory Assignment
   migrateFromOther: Import from other launcher
   minecraftOptions: Minecraft Options
   name: Global Setting | Global Settings
@@ -1782,11 +1274,6 @@ setting:
     repulse: Repulse
   particleModeDescription: Select the particle click behavior
   quickLaunchSettings: Quick Launch
-  replaceNative: Replace Native Libraries
-  replaceNativeDescription: Replace native libraries according to your computer's arch.
-  replaceNatives:
-    all: All
-    legacy: Legacy Version Only
   resetAllSettings: Reset All Settings
   resetAllSettingsConfirmMessage: This will permanently delete all settings, accounts, instances, groups, and cached data. This action cannot be undone. Are you sure?
   resetAllSettingsConfirmTitle: Reset All Settings?
@@ -2002,17 +1489,6 @@ theme:
   selectVideo: Select Video
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: Host Candidate
-  prflx: Peer Reflexive Candidate
-  relay: Relay Candidate
-  srflx: Server Reflexive Candidate
-turnRegion:
-  fr: Frence
-  guangzhou: Guangzhou, China
-  hk: Hong Kong
-  liaoning: Liaoning, China
-  po: Poland
 tutorial:
   feedbackDescription: If you encounter any problems, please click this button to send feedback!
   hideNewsHeaderDescription: You can see the News showcase on the left. Clicking this button can hide this showcase.
@@ -2021,10 +1497,6 @@ tutorial:
     appearanceThemeTitle: Instance Appearance
     iconDescription: Click to change icon.
     iconTitle: Instance icon
-    javaDescription: Choose or switch java version.
-    javaImportDescription: Import java from local storage.
-    javaImportTitle: Import java
-    javaTitle: Java list
     modpackExportDescription: Build and package your configured instance into a ready-to-share modpack.
     modpackExportTitle: Export Modpack
     modpackFilesDescription: Select which configuration files, mods, and resources to include for client and server.
@@ -2078,15 +1550,6 @@ tutorial:
     profileDescription: Switch between your accounts and manage login credentials.
     skinTitle: Skin & Cape Customizer
     skinDescription: Preview your character in 3D, change skins, and equip capes.
-  multiplayer:
-    railTitle: Network & Navigation
-    railDescription: Check NAT type, network health, and switch between connections and settings.
-    groupTitle: Join or Host Room
-    groupDescription: Enter a room code to join friends, or leave it empty to host your own room.
-    joinDescription: Click to join an existing room or create a new one.
-    contentTitle: Connected Peers & Content
-    contentDescription: Manage connected members, view latency, and share your running Minecraft instances.
-    manualDescription: Direct manual P2P connection with friends using SDP exchange.
   resourcepack:
     searchTitle: Search Resource Packs
     searchDescription: Search resource packs from Modrinth, CurseForge, or local files.
@@ -2137,10 +1600,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Unresolved files
   via: via {source}
-upstream:
-  downgrade: Downgrade
-  onlyShowCurrentVersion: Only Show Current Minecraft Version
-  update: Update
 user:
   accessToken: Access Token
   authMode: Auth Service

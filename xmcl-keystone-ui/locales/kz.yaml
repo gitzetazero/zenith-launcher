@@ -1,30 +1,5 @@
-AppAddInstanceDialog:
-  choiceTitle: Бірнеше іске қосу профильдері табылды. Импорттау үшін бірін таңдаңыз.
-  createTitle: Ойын жасау
-  serverTitle: Сервер мекенжайын енгізіңіз
-AppShareInstanceDialog:
-  editScopeDescription: LAN желісінде іске қосылған осы ойынды анықтағаннан кейін пирлер жүктей алатын файлдарды таңдаңыз.
-  editScopeTitle: Бөлісу ауқымын өзгерту
-  instanceToShare: Іске қосылған ойын
-  alterDownloadDescription: Ағымдағы жеке жағдайды бұзғыңыз келмесе, сіз өзіңіздің қарым-қатынас серігіңіздің конфигурациясынан жаңа жеке жағдай жасай аласыз. Жеке жағдай жасау үшін төмендегі батырманы басыңыз.
-  baseInfo: Негізгі баптаулар
-  description: Профильді бөліскеннен кейін, басқа орындар сіздің компьютеріңіз арқылы бұл файлдарды жүктей алады.
-  downloadDescription: Өзіңіздің қарым-қатынас серігіңіз берген файлдарды тексеріңіз. Жүктегіңіз келетін файлды таңдаңыз. Ол ағымдағы {name} жеке жағдайына орналастырылады.
-  downloadNotifyTitle: '{user} жағдайын жүктеп алу'
-  downloadTitle: Басқа қарым-қатынас серіктерінен файлдарды жүктеп алу
-  filesToDownload: Жүктеп алуға арналған файлдарды таңдаңыз
-  filesToShare: Бөлісу үшін файлдарды таңдаңыз
-  share: Бөлісу
-  shareTitle: Ойын файлдарын басқа ойыншылармен бөлісу
 BaseSettingGeneral:
   title: Жалпы
-HomeJavaIssueDialog:
-  incompatibleJava: Үйлесімсіз Java
-  incompatibleJavaHint: Ағымдағы Java таңдалған Minecraft-пен үйлесімді болмауы мүмкін!
-  missingJava: Java табылмады
-  missingJavaHint: 'Launcher компьютеріңізден ешқандай Java-ны анықтай алмады. Сіз:'
-  optionSwitch:
-    name: '{version} нұсқасына ауысу'
 HomeLaunchMultiInstanceDialog:
   confirm: Иә, Іске қосу
   description: Сіз Minecraft-тың бірнеше жағдайын іске қосып отырсыз. Сенімдісіз бе?
@@ -36,30 +11,7 @@ ago:
   hour: '{duration} сағат бұрын | {duration} сағат бұрын'
   minute: '{duration} минут бұрын | {duration} минут бұрын'
   second: '{duration} секунд бұрын | {duration} секунд бұрын'
-askAICrash:
-  copyPrompt: Сұрақты ЖИ-ге сұрау үшін көшіріңіз
-  description: ЖИ ойын құлауын түсінуге көмектесіңіз! Төмендегі нұсқаулыққа сәйкес осы ойын құлауы туралы ЖИ-ге сұрақ жіберіңіз!
-  selectPlatform: ЖИ платформасын ашып, жаңа көшірілген сұрақты қойыңыз.
 authProfileAddedNotification: '{name} аутентификация профилі қосылды'
-bedrock:
-  installBedrockVersion: Downloading Bedrock {version}
-  versionsTitle: Version manager
-  versionsHint: Download multiple Bedrock versions from Microsoft's servers and switch between them. Windows can register only one version at a time.
-  versionsError: Failed to load the version list. Check your network and try again.
-  channel: Channel
-  channelRelease: Release
-  channelBeta: Beta
-  channelPreview: Preview
-  active: Active
-  play: Play
-  download: Download
-  installedTag: Installed
-  developerModeRequired: Registering a downloaded version requires Windows Developer Mode.
-  enableDeveloperMode: Enable Developer Mode
-  enableDeveloperModeFailed: Failed to enable Developer Mode
-  downloadFailed: Failed to download Bedrock {version}
-  launchFailed: Failed to launch this Bedrock version
-  removeFailed: Failed to remove Bedrock {version}
 backup:
   title: Сақтық көшірме және қалпына келтіру
   description: Баптауларды, жинақтарды, тақырыптарды және ойын нұсқаларын сақтық көшіріңіз және қалпына келтіріңіз
@@ -292,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: Бұл нұсқаны орнату үшін басыңыз
     name: Minecraft %{version} үшін бұзылған нұсқа jar файлы.
-  incompatibleJava:
-    name: '{javaVersion} java нұсқасы {version} үшін жарамсыз!'
   instanceFiles:
     description: Жеке жағдай орнатуы {counts} файлды қамтиды.
     title: Аяқталмаған жеке жағдай орнатуы
-  invalidJava:
-    name: Жарамсыз java орналасуы.
   missingJava:
     message: Бұл мәселені шешу үшін басыңыз
     name: Minecraft-ты іске қосу үшін Java табылмады!
@@ -330,11 +278,6 @@ duration:
   hour: '{duration} сағат | {duration} сағат'
   minute: '{duration} минут | {duration} минут'
   second: '{duration} секунд | {duration} секунд'
-env:
-  select:
-    all: Барлығын таңдау
-    fit: Сәйкестілерді таңдау
-    none: Ештеңе таңдамау
 errors:
   BadForgeInstallerJarError: Forge орнатушы jar файлын талдау мүмкін болмады. Мүмкін, Forge-де жаңа орнатушы файлы пішімі бар? Егер бұл мәселе жалғасса, әзірлеушілерге хабарласыңыз.
   BadInstanceType: 'Жарамды жеке жағдай емес: {type}'
@@ -349,8 +292,6 @@ errors:
   HeadersTimeoutError: HTTP тақырыбының уақыты аяқталды
   NotFoundError: 404 табылмады
   SocketError: Сервер сокет қатесі
-eula:
-  body: Құсбелгі қойындысын белгілеу арқылы, сіз Minecraft-тың {eula} шарттарымен келісетініңізді білдіресіз.
 exception:
   http: '{url} мекенжайына HTTP сұранысы сәтсіз аяқталды. Статус коды {statusCode}. {code}. Қайталап көріңіз немесе желіңізді тексеріңіз. Егер бұл қате жалқаса, әзірлеушілер тобына хабарлама жіберіңіз.'
 extensions:
@@ -426,21 +367,6 @@ gameType:
   survival: Тіршілік ету режимі
 help: Көмек
 home: Басты бет
-importModpack:
-  fromFileSubtitle: .zip немесе .mrpack файлын таңдаңыз
-  fromUrl: Сілтеме / URL арқылы...
-  fromUrlSubtitle: Модпакты URL арқылы орнату
-  fromUrlDescription: 'Модпактың URL мекенжайын енгізіңіз немесе қойыңыз:'
-  invalidUrl: Жарамды URL енгізіңіз (http:// немесе https://)
-  selectVersion: Модпак нұсқасын таңдау
-  selectVersionDescription: 'Орнатылатын {name} нұсқасын таңдаңыз:'
-  pmcProtected: Planet Minecraft сайты Cloudflare арқылы қорғалған. Беттен тікелей жүктеу сілтемесін немесе айна сілтемесін көшіріңіз.
-  netdiskTitle: Бұлттық дискіден жүктеу
-  netdiskDescription: Модпактың бұл нұсқасы сыртқы бұлттық дискіде орналасқан. Жүктеу бетін браузерде ашу үшін төмендегі түймені басыңыз, содан кейін жүктелген .zip немесе .mrpack файлын Zenith Launcher терезесіне сүйреп апарыңыз.
-  openNetdisk: Бұлттық дискіні ашу
-  netdiskOpened: Бұлттық диск сілтемесі браузерде ашылып, алмасу буферіне көшірілді.
-  noReleasesFound: Бұл репозиторийде .mrpack немесе .zip пішіміндегі модпак шығарылымдары табылмады.
-  name: Мод-пак импорттау
 installAssets:
   asset: '{count} ресурс орнату'
   assetIndex: Ресурстар индекс файлын тексеру
@@ -499,12 +425,9 @@ instance:
   iconUrl: Таңбаша URL-ы
   installModpack: Мод-пактан жеке жағдайды жаңарту
   lastPlayed: Соңғы ойналған
-  launchArguments: Іске қосу аргументтерінің алдын-ала қарауы
   launchServer: Жергілікті серверді іске қосу
   linkFileDesc: Бұл жергілікті {file} файлын глобалды {file} файлымен ауыстырады. Оны сілтеме жасауға сенімдісіз бе?
   linkFileTitle: '{file} файлын сілтеме жасауға сенімдісіз бе?'
-  mcOptions: Minecraft баптаулары
-  mcOptionsHint: Қосымша Minecraft іске қосу аргументтері
   name: Профиль атауы
   nameHint: Мод-пак атауы
   nameNoCyrillic: Атауда кирилл таңбалары болмауы керек
@@ -512,10 +435,6 @@ instance:
   openCrashReportFolder: Құлау есептері қалтасын ашу
   openLogFolder: Журнал қалтасын ашу
   playtime: Ойын уақыты
-  preExecCommand: Алдын-ала орындау командасы
-  preExecCommandHint: Minecraft-ты іске қосар алдында орындалатын команда
-  prependCommand: Алдына қосу командасы
-  prependCommandHint: Бұл команданы барлық іске қосу командаларының алдына қояды
   requireName: Атау міндетті
   resolution: Ажыратымдылық
   resolutionPreset: Ажыратымдылық алдын-ала орнатуы
@@ -526,10 +445,6 @@ instance:
   useSharedOptionsDesc: Бұл options.txt файлын жеке жағдайлар арасында ортақ файлға сілтеме жасайды
   useSharedServersList: Ортақ серверлер тізімін қолдану
   useSharedServersListDesc: Бұл servers.dat файлын жеке жағдайлар арасында ортақ файлға сілтеме жасайды
-  vmOptions: JVM баптаулары
-  vmOptionsHint: JVM-ға берілетін қосымша аргументтер
-  vmVar: Орта айнымалылары
-  vmVarHint: Орта айнымалыларын қосу үшін + батырмасын басыңыз
   width: ені
   envVarKey: Кілт
   envVarValue: Мән
@@ -571,9 +486,6 @@ instanceSetting:
   showLogHint: Бұл ойын басталғаннан кейін Minecraft журналын ағындату үшін терезе ашады
   syncGameLanguage: Ойын тілін синхрондау
   syncGameLanguageDescription: Іске қосу кезінде Minecraft тілін іске қосқыш тілімен автоматты түрде синхрондау
-instanceTemplate:
-  ftb: Бұл FTB мод-пагы
-  preview: Мод-пак алдын-ала қарауы
 instanceUpdate:
   basic: Баптаулар жаңартуы
   files: Файл жаңартулары
@@ -592,42 +504,15 @@ instances:
   fix: Жөндеу
   folder: Қалта
   folderSetting: Қалта баптаулары
-  importFolderDescription: Minecraft-ты іске қосқышқа импорттау
-  loadingFiles: Мод-пак файлдары жүктелуде
-  edition: Басылым
-  editionJava: Java басылымы
   editionBedrock: Bedrock басылымы
   editionBedrockHint: Bedrock басылымы Microsoft Store қолданбасы арқылы іске қосылады. Сізде Bedrock лицензиясы болуы керек. Модтар, ресурс жинақтары және басқа Java-ға ғана тән мүмкіндіктер қолжетімсіз.
   editionBedrockWindowsOnly: Bedrock басылымы тек Windows нұсқасында қолдау көрсетіледі.
-  linkSharedFolders: Даналар арасында қалталарды ортақ пайдалану
-  linkSharedFoldersHint: Бұл қалталарды іске қосу бағдарламасының ортақ қалталарына сілтеме ретінде жасаңыз, осылайша бұл дана олардың мазмұнын барлық басқа байланысқан даналармен бөліседі. Бұл көшірме емес — бір данадағы өзгерістер барлығында көрінеді. Белгіленбеген қалталар осы дана үшін жеке болып қалады.
-  linkFailed: '{folder} қалтасын ортақ қалтаға байланыстыру мүмкін болмады'
   addPrismDescription: Бар PrismLauncher данасын импорттау.
 items:
   count: '{count} элемент'
   total: Барлығы {total}
 java:
-  allocatedLong: Жүйелік әдепкі java-ны қолдану
-  allocatedShort: Автоматты бөлу
-  importFromFile: Java-ны файлдан импорттау
-  invalid: Жарамсыз Java орналасуы
-  location: Java орналасуы
-  maxMemory: Максимал жады
-  memory: Java жады
   memoryAuto: Авто
-  memoryManual: Қолмен
-  memoryUnassigned: Бөлінбеген
-  minMemory: Минимал жады
-  name: Java
-  noMemory: Жады қолданысын шектеуді болдырмау
-  refresh: Жергілікті Java-ны жаңарту
-  systemMemory: 'Жүйелік бос жады: {free} / {total}'
-  allocation: Бөлінген
-  autoHint: Минимум орнатылған модтар санына қарай өседі; максимум қолжетімді жүйелік жадты пайдаланады.
-  change: Өзгерту
-  locationHint: Java таңдалмаған — жүйелік әдепкі қолданылуда
-  openFolder: Java қалтасын ашу
-  presets: Алдын ала орнатулар
 labyMod:
   disable: LabyMod-ты өшіру
   empty: LabyMod ағымдағы Minecraft-ты қолдамайды
@@ -700,8 +585,6 @@ localVersion:
   auto: Автоматты есептелген
   empty: Нұсқалар орнатылмаған
   hint: Белгілі бір жергілікті нұсқаны тікелей іске қосу
-  reinstallDescription: Егер сіз бұл нұсқаның орнатуында кейбір мәселелер бар деп ойласаңыз, оны қайта орнатуға тырысуыңызға болады.
-  reinstallTitle: '{version} қайта орнату'
   title: Жергілікті нұсқа | Жергілікті нұсқалар
 logLevel:
   error: Қате
@@ -764,7 +647,6 @@ minecraftVersion:
   showAlpha: Snapshot-ты көрсету
   snapshot: Snapshot
 mod:
-  collapseAllGroups: Барлық топтарды жию
   acceptVersion: '{version} нұсқасын қабылдау'
   applyGroupRules: Сақталған топтастыру ережелерін қолдану
   compatible: Үйлесімді мод.
@@ -772,16 +654,12 @@ mod:
   currentVersion: Ағымдағы {current}
   denseView: Тығыз көрініс
   disableAll: Барлығын өшіру
-  dropHint: Импорттау үшін модтың .jar/.litemod файлын осы жерге апарыңыз.
   duplicatedDetected: '{count} қайталанған мод'
   duplicatedDetectedDescription: Бірдей мод идентификаторымен, бірақ әртүрлі файлдары бар модтар табылды. Бұл Minecraft-тың құлауына әкелуі мүмкін. Сақтағыңыз келетін файлды таңдаңыз.
   enableAll: Барлығын қосу
   enabled: '{count} мод қосулы'
   filter: Модтарды сүзгілеу
   group: Топтастыру
-  groupInstalled: Орнатылған модтарды топтастыру
-  hideInstalled: Орнатылған модтарды жасыру
-  installedFilterOff: Барлық модтарды көрсету
   groupName: Топ атауы
   groupNameRequired: Топ атауы міндетті
   hasUpdate: Модтың жаңа нұсқасы бар!
@@ -789,27 +667,18 @@ mod:
   incompatibleHint: Мод үйлесімділік есебіңізді тексеріңіз
   incompatibleHintDescription: Кейбір модтардың тәуелділіктері жоқ болуы мүмкін. Немесе кейбір тәуелділіктер нұсқалары сәйкес келмейді.
   maybeCompatible: Мүмкін үйлесімді.
-  modloaderSelectHint: Мод келесі мод жүктегіштерін қолдайды. Орнату үшін бірін таңдаңыз.
-  modloaderSelectNotSupported: Minecraft {minecraft} үшін {modloader} табылмады
   mods: '{count} мод'
   name: Мод | Модтар
   newFolder: Жаңа қалта
   noGroupsFound: Топтар табылмады
   noGroupsYet: Әлі топтар жоқ. Біреуін жасаңыз!
-  noModLoaderHint: Модтарды қолдану үшін мод жүктегішті қосуға ұмытпаңыз!
   openLink: Мод URL-ін ашу {url}
-  search: Модтарды іздеу
   searchGroups: Топтарды іздеу...
   searchOnMcWiki: '{name} модын MC энциклопедиясында іздеу.'
   selectOrCreateGroup: Топты таңдау немесе жасау
-  showDirectory: Модтар қалтасын көрсету
   showFile: Мод жолын көрсету {file}
-  showInModrinth: '{name} модын Modrinth-те көрсету'
-  switchDefaultSource: Әдепкі мод көзі
   syncGroupRules: Топтастыру ережелерін сақтау
-  toUpdate: '{count} жаңарту'
   ungroup: Топтан шығару
-  description: Сипаттама
 modFilter:
   clear: Сүзгіні тазалау
   dependenciesInstallOnly: Тек жетіспейтін тәуелділік модтарын көрсету
@@ -854,25 +723,10 @@ modified:
   save: Сақтау
   unsaved: Өзгертуіңіз сақталмаған!
 modpack:
-  author: Автор аты
-  authorHint: Бұл экспортталған мод-пакты қолтаңбалау үшін қолданылуы мүмкін (Curseforge)
-  description: Сипаттама
-  descriptionHint: Мод-пагыңыз үшін жалпы сипаттама. Curseforge мод-пагы ретінде экспорттау үшін қолданылуы мүмкін.
   dropHint: Импорттау үшін мод-пак zip файлын осы жерге апарыңыз
-  emitCurseforge: Curseforge мод-пагын экспорттау
-  emitModrinth: Modrinth мод-пагын экспорттау
-  emitModrinthStrict: Қатаң Modrinth пішімі
-  emitModrinthStrictDescription: Modrinth құжатында тізілген 4 доменнен URL-дарға рұқсат етілген
   export: Мод-пак ретінде экспорттау
-  exportDirectory: Экспорттау каталогы
-  exportDirectoryDescription: Мод-пак әдепкі түрде Жүктеп алу қалтасына экспортталады
-  includeAssets: Ресурстарды қосу
-  includes: Қосылатын файлдар
   modpackVersion: Мод-пак нұсқасы
   name: Мод-пак | Мод-пактар
-  overrides: Алмастырулар
-  url: URL
-  urlHint: Мод-пагыңыздың басты бетінің URL-і
 modpackImportConfirm:
   description: Сіз launcher-ға файл апарғаныңыз анықталды. Сіз мод-пак импорттағыңыз келе ме?
   title: Сіз мод-пак импорттағыңыз келе ме?
@@ -1036,108 +890,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: Ағымдағы нұсқа
-multiplayer:
-  joinDiscord: Discord-қа қосылу
-  openConsumerPortal: Тұтынушы порталын ашу
-  refundHint: Қаражатты қайтару керек пе? Тапсырыстар мен жазылымдарды басқару үшін Waffo тұтынушы порталына кіріңіз.
-  togetherSupportHint: Көп ойыншы режимі жұмыс істемесе, Discord-қа қосылып, әзірлеушілер тобымен хабарласыңыз. Мәселені шешуге көмектесеміз.
-  autoShareAmbiguous: Бірнеше ойын іске қосылған. Zenith Launcher бөлісе алуы үшін LAN әлемін орналастырып тұрған дананы таңдаңыз.
-  editSharingScope: Бөлісу ауқымын өзгерту
-  gameAvailable: LAN ойыны қолжетімді
-  joinGame: Ойынға қосылу
-  noRunningInstanceToShare: Бөлісу ауқымын өзгертпес бұрын ойынды іске қосыңыз
-  updateSharedInstanceConfirm: Жаңартып, іске қосу
-  updateSharedInstanceDescription: Бөлісілген модтар {instance} данасындағы модтардан өзгеше. Іске қоспас бұрын бұл дананы хостқа сәйкестендіріп жаңарту керек пе? Өзгертілген файлдардың сақтық көшірмесі жасалады.
-  updateSharedInstanceTitle: Бөлісілген дананы жаңарту керек пе?
-  addFunds: Қаражат қосу
-  availableBalance: Қолжетімді баланс
-  balanceHint: XMCL Together қызметтері үшін қолжетімді
-  billing: Төлемдер
-  billingDescription: Реле қатынасын, Together Home жоспарын және төлемдерді басқарыңыз.
-  billingError: Together төлемдері жүктелмеді. Біраздан кейін қайталап көріңіз.
-  buyTogether: Together сатып алу
-  cancelTogether: Жоспардан бас тарту
-  checkout: Waffo төлем бетін ашу
-  connectionTogetherWarning: Бөлме мүшелерінің бірі біраз уақыттан бері сізге қосыла алмай жүр. Бөлмедегі барлығына қосылымды жақсарту үшін XMCL Together қолданып көріңіз. Together тек бөлме иесіне қажет.
-  masterPurchaseHint: Бөлмедегі барлығына қосылымды жақсарту үшін Together Home тек бөлме иесіне қажет.
-  natTogetherWarning: Маршрутизаторыңыз бөлме иесіне қосылуда қиындыққа тап болуы мүмкін. Қосылым сәтсіз болса, достарыңызбен байланыс сапасын жақсарту үшін XMCL Together қолданып көріңіз. Бөлме үшін Together сатып алуы керек адам тек бөлме иесі.
-  togetherName: Minecraft Together
-  trialDescription: 1 GB реле трафигі бар бір 7 күндік сынақ мерзімі.
-  trialTitle: Қосылым сынағы
-  tryTogether: Together қолданып көру
-  month: ай
-  orderStatus: 'Waffo тапсырысы: {status}'
-  planDescription: Ай сайын 20 GB басқарылатын реле трафигі және модпак мәселелерін AI көмегімен анықтау.
-  waffoHint: Төлемдер Waffo Pancake арқылы қауіпсіз орындалады. XMCL карта нөміріңізді ешқашан алмайды.
-  subscription:
-    active: Белсенді
-    cancelled: Бас тартылды
-    payment_due: Төлем мерзімі келді
-  trial:
-    active: Сынақ мерзімі белсенді
-    available: Тегін сынақ нұсқасы қолжетімді
-    expired: Сынақ нұсқасы қолданылды
-    unavailable: Сынақ нұсқасы қолжетімсіз
-  loginRequiredDescription: P2P көп ойыншысы Zenith Launcher онлайн қызметтерін пайдаланады. Жалғастыру үшін Zenith Launcher тіркелгісіне кіріңіз.
-  loginRequiredTitle: P2P көп ойыншысы үшін кіру
-  complete: Аяқтау
-  confirm: Растау
-  connections: Байланыстар
-  copied: Көшірілді!
-  copy: Көшіру
-  copyGroupToFriendHint: Достарыңыздың осы id арқылы топқа қосылуына рұқсат етіңіз
-  copyLocalHint: '"Жергілікті SDP мәтінін көшіріп, объектіңізге жіберіңіз, содан кейін объектіңіз оны байланысқа қосылу <span>Токен тек <span style="color: red; font-weight: bold;">бір қарым-қатынас серігі үшін</span> ғана қолданыла алады! Сіз бірдей токенді бірнеше қарым-қатынас серігіне жібере алмайсыз!</span> <br> <span class="hint-text" style="font-style: italic;">Егер сізге бірнеше қарым-қатынас серігіне қосылу керек болса, сіз <span style="font-weight: bold; color: rgba(245, 158, 11)">бірнеше</span> байланыс жасауыңыз керек.</span>"'
-  createLocalToken: Жергілікті токен жасау
-  currentIpTitle: Анықталған жалпы IP
-  currentNatTitle: 'Ағымдағы желі (NAT):'
-  difficultyLevelHint: Байланыс жасаудың қиындық деңгейі
-  disconnect: Байланысты үзу
-  disconnectDescription: Сіз {user}({id}) пайдаланушысымен байланысты үзуге сенімдісіз бе?
-  disconnected: байланыс үзілді
-  enterRemoteToken: Қашықтаған токенді енгізу
-  enterRemoteTokenHint: Қарым-қатынас серігіңіз сіздің токеніңізді енгізгеннен кейін, сіз оның токенін төмендегі мәтін аймағына енгізуіңіз керек. Байланысу үшін растау батырмасын басыңыз.
-  exposedPortDescription: Басқа қарым-қатынас серіктеріне ашқан порттыңыз
-  exposedPorts: Қайта бағытталған порттар
-  gatheringIce: '"ICE сервері желіңіз туралы жеткілікті ақпарат жинауын күтіңіз. Егер сіз шамасы келсе және ақпарат жеткілікті болса, сіз ағымдағы SDP-ді алдын-ала қарсы жаққа жібере аласыз және Келесі батырмасын басыңыз <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Жергілікті токенді</span> өзіңіздің қарым-қатынас серігіңізге жіберіңіз, ол өзіңіздің токеніңізді <span class="v-chip v-chip--label v-size--small" style="text-font: bold"> Байланысқа қосылу </span> бөлімінде енгізеді. <br> ICE сервері <span class="v-chip v-chip--label v-size--small" style="text-font: bold">Жергілікті токенді</span> жасау үшін ақпаратты жинауға кейбір уақыт қажет етуі мүмкін.<br> Сіз ICE мәртебесі аяқталғанға дейін күтуіңіздің қажеті жоқ. Егер төмендегі токен өзгермесе, оны көшіріп, өзіңіздің қарым-қатынас серігіңізге жібере аласыз."'
-  groupId: Топ ID-і
-  illegalTokenDescription: Заңсыз токен, қарым-қатынас серігіңізден келген токеннің дұрыс екеніне көз жеткізіңіз
-  initiateConnection: Байланысты бастау
-  joinConnection: Егер сіздің қарым-қатынас серігіңіз байланысты бастаса, сіз Байланысқа қосылуыңыз керек.
-  joinManual: Қосылу
-  joinOrCreateGroup: Топқа қосылу/жасау
-  joinOrCreateGroupHint: Топ id-ін достарыңыздан алыңыз немесе топ жасаңыз
-  kernel: P2P ядросы
-  kernelDescription: Түпнұсқалы WebRTC немесе node-datachannel-ды қолданыңыз. P2P байланысы кейде launcher терезесін құлататын болса ғана ауыстырыңыз.
-  leaveGroup: Топтан шығу
-  localToken: Жергілікті токен
-  manualConnect: Қолмен байланысу
-  name: Жергілікті желідегі көп ойыншылы ойын
-  networkInfo: Желі ақпараты
-  next: Келесі
-  otherExposedPortDescription: '{user} қайта бағыттаған порт'
-  placeholder: Басқа пайдаланушылармен байланысып, жергілікті желіде Minecraft ойнаңыз!
-  previous: Алдыңғы
-  receiveHint: Қарсы жақ сіздің токеніңізді енгізгеннен кейін, байланысыңыз автоматты түрде жасалады. Енді сіз бұл диалогты жаба аласыз.
-  receiveRemoteTokenHint: Қарым-қатынас серігіңізден келген токенді осы жерге енгізіңіз.
-  remoteToken: Қашықтаған токен
-  routerInfo: Маршрутизатор ақпараты
-  sendTokenToRemote: Токенді қашықтағанға жіберу
-  share: Жеке жағдай конфигурациясын бөлісу
-  sharing: Файлдар бөлісуде...
-  start: Бастау
-  startNewP2PConnection: Жаңа қарым-қатынас серігі байланысын жасау үшін Бастау батырмасын басыңыз
-  connectionError: Байланыс қатесі
-  connectionFailedHint: Байланыс орнату мүмкін емес. Екі жағында да NAT түрлерінің сәйкестігін тексеріңіз.
 myStuff: Менің заттарым
-natType:
-  blocked: Блокталған
-  fullCone: Толық конус
-  openInternet: Ашық интернет
-  restrictNat: NAT-ты шектеу
-  restrictPortNat: Порт NAT-ты шектеу
-  symmetricNat: Симметриялық NAT
-  symmetricUDPFirewall: Симметриялық UDP желісі
-  unknown: Белгісіз
 neoForgedVersion:
   disable: NeoForged-ты өшіру
   empty: NeoForged {version} нұсқасын қолдамайды
@@ -1148,23 +901,6 @@ optifineVersion:
   disable: Optifine-ты өшіру
   empty: Optifine Minecraft {version} нұсқасын қолдамайды
 optional: Міндетті емес
-peerConnectionState:
-  closed: Жабық
-  connected: Қосылған
-  connecting: Қосылу
-  disconnected: Байланыс жоқ
-  failed: Сәтсіз
-  name: Байланыс күйі
-  new: Жаңа
-peerGroupState:
-  closed: Топта жоқ
-  closing: Жабылуда
-  connected: Топқа қосылды
-  connecting: Қосылу
-peerIceGatheringState:
-  gathering: ICE серверін жинау
-peerSignalingState:
-  have-local-offer: Қарым-қатынас серігі сипаттамасын күту
 presence:
   instance: '{instance} жеке жағдайында тығырықта'
   instanceSetting: 'Жеке жағдай баптауларын өңдеу: {instance}'
@@ -1275,141 +1011,25 @@ search:
 server:
   launch: Серверді іске қосу
   stop: Серверді тоқтату
-  acceptingMinecraftVersion: Қабылдайтын Minecraft нұсқасы
   addServer: Сервер қосу
   address: Сервер мекенжайы
   addressHint: мыс. mc.hypixel.net
   bindUpstream: Негізгі ретінде байлау
-  boundUpstream: Негізгі сервер байланды
   boundUpstreamHint: Бұл инстанс байланған сервердің Minecraft нұсқасын бақылайды.
-  creationHint: Сервер мекенжайын толтырып, серверге ping жасаңыз
   editServer: Серверді өңдеу
   emptyHint: Бұл инстанстың servers.dat файлында әзірге серверлер жоқ. Бастау үшін қосыңыз.
   entryCount: '{count} сервер'
-  expectedVersions: Қолдау көрсетілетін нұсқалар
-  export: Серверді экспорттау
-  exportNoFilesHint: Сервер файлдары табылмады. Кейбір файлдарды генерациялау үшін серверді жергіліктіде бір рет іске қосыңыз.
-  exportOption: Сервер экспорттау опциялары
-  exportSSHAuthenticationFailed: Барлық аутентификация әдістері сәтсіз аяқталды. Пайдаланушы аты/құпиясөзді немесе жеке кілтті тексеріңіз.
-  exportSSHOptions: SSH опциялары
-  exportSSHPrivateKeyPath: SSH жеке кілт жолы
-  exportSSHRemotePath: Қашықтағы сервер жолы
-  exportToFolder: Қалтаға экспорттау
-  filterVersion: Серверден жауап берген Minecraft нұсқасын сүзгілеу
-  host: Хост
-  hostHint: Сервердің хосты (портымен бірге)
-  hostRequired: Сервер IP мекенжайын енгізіңіз
-  ipAddress: IP мекенжайы
   launchClient: Оның орнына клиентті іске қосу
   launchPinned: Бекітілген
   launchTargetHint: Бұл инстанс тікелей бекітілген серверге қосылады. Клиентке қайта ауысу керек пе?
   maxPlayers: Максимал ойыншылар
-  motd: Сервер MOTD
   nameHint: Желілік тізімде көрсетілетін атау
-  nogui: Сервер интерфейсі жоқ
-  onlineMode: Онлайн режим
   pin: Серверді бекіту
   pinAfterSave: Сақтағаннан кейін әдепкі іске қосу мақсаты ретінде бекіту
-  ping: Ping
-  pings: Ping-тер
   pinnedHeader: 'Бекітілген: {name}'
-  players: Ойыншылар
   port: Порт
-  clearLog: Журналды тазалау
-  log: Сервер журналы
-  logWaiting: Сервер деректері күтілуде...
-  remoteActionSuccess: Done.
-  remoteAdmin: Қашықтағы сервер әкімшісі
-  remoteAuthMethod: Аутентификация
-  remoteAuthPassword: Құпия сөз
-  remoteAuthPrivateKey: Жеке кілт
-  remoteBuildOfflinePackage: Офлайн пакет жасау
-  remoteConnected: Қосылған
-  remoteConnection: Қосылым
-  remoteDeployment: Орналастыру
-  remoteDeploy: Орналастыру
-  remoteDisk: Disk
-  remoteConfigFiles: Баптау файлдары
-  remoteExtraFiles: Қосымша файлдар
-  remoteForgetCredentials: Сақталған деректерді ұмыту
-  remoteInstallService: Қызметті орнату
-  remoteLoad: Жүктеу
-  remoteLog: Қашықтағы сервер журналы
-  remoteMemory: Жад
-  remoteMods: Mods
-  remoteNoWorldSelected: Инстанс әлемі таңдалмаған
-  remoteJavaRequired: Қашықтағы Linux хостында Java табылмады.
-  remoteLinuxRequired: Тек SSH арқылы Linux қолдау табады.
-  remoteNotConfiguredHint: Күйді, қызметті және журналдарды қосу үшін жоғарыдағы қосылым мәліметтерін толтырыңыз.
-  remotePathNotWritable: Қашықтағы сервер каталогына жазу рұқсаты жоқ.
-  remotePathWritable: Каталогқа жазуға болады
-  remotePolicyInitialize: Бір рет іске қосу
-  remotePolicyMirror: Айна (Mirror)
-  remotePolicyOverlay: Қабаттастыру
-  remotePolicyPreserve: Сақтау
-  remotePreview: Өзгерістерді алдын ала қарау
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: Деректерді есте сақтау (ОЖ кілттер қоймасы)
-  remoteReconcileReady: Нысана осы инстансқа сәйкес келеді және консоль қосылған.
-  remoteRestartService: Қызметті қайта қосу
-  remoteSavedCredentialsHint: Сақталған деректер қолданылуда — өзгеріссіз қалдыру үшін бос қойыңыз.
-  remoteService: systemd қызметі
-  remoteServiceActive: Жұмыс істеп тұр
-  remoteServerInstalled: Сервер файлдары орнатылды
-  remoteServiceName: Қызмет атауы
-  remoteServiceNameHint: systemd --user бірлік атауы, мыс. mc-server
-  remoteSelectedFiles: '{count} сервер файлы таңдалды'
-  remoteSelectFiles: Файлдарды таңдау
-  remoteStartCommand: Іске қосу пәрмені
-  remoteStartCommandHint: мыс. java -jar server.jar nogui
-  remoteStartService: Start
-  remoteStatus: Күйі
-  remoteSystemdRequired: Қашықтағы хостта systemd пайдаланушы қызметтері қолжетімсіз.
-  remoteTargetName: Нысана атауы
-  remoteStopService: Stop
-  remoteStopWatchLog: Бақылауды тоқтату
-  remoteTestConnection: Қосылымды тексеру
-  remoteTestConnectionSuccess: Қосылым сәтті аяқталды.
-  remoteUninstallConfirmMessage: Бұл қашықтағы хосттағы systemd бірлігін өшіреді. Сервер файлдары өзгеріссіз қалады.
-  remoteUninstallService: Қызметті жою
-  remoteRunInstall: Орнату немесе жөндеу
-  remoteWatchLog: Журналды тікелей бақылау
-  remoteWorldAlways: Әр синхрондауда ауыстыру
-  remoteWorldDeployment: Инстанс әлемін орналастыру
-  remoteWorldDeploymentHint: Арнайы рұқсат берілмесе, кәдімгі синхрондау әлемді ешқашан жүктемейді.
-  remoteWorldFirstInstall: Тек серверде әлем болмағанда ғана іске қосу
-  remoteWorldNever: Әлемді ешқашан жүктемеу
-  remoteWorldPresent: Сервердегі әлем
-  remoteWorld: World
-  remoteWorldWillDeploy: Таңдалған әлем осы синхрондау кезінде жүктеледі.
   serverName: Сервер атауы
-  serviceInstall: Қызметті орнату
-  serviceManagedLaunch: Қызмет арқылы басқарылатын іске қосу
-  serviceManager: Қызмет реттегіші
-  serviceName: Қызмет атауы
-  serviceNameHint: Жүйелік қызмет атауы
-  serviceNotInstalled: Қызмет орнатылмаған
-  serviceStartCommand: Қызметті іске қосу пәрмені
-  serviceSystemd: systemd --user
-  serviceWindows: Windows қызметі
-  serviceWindowsCommandHint: Windows қызметінің пәрмені
   serversListTitle: Серверлер
-  target: Нысана
-  targetLocal: localhost
-  targetLocalHint: Осы компьютерде жергілікті орындау
-  targetRemote: Қашықтағы сервер (SSH)
-  targetRemoteHint: SSH арқылы қашықтағы Linux серверін басқару
   unbindUpstream: Байланысты үзу
   unknown: Белгісіз сервер
   unknownDescription: Белгісіз сервер. Жаңартып көріңіз
@@ -1420,23 +1040,12 @@ server:
   upstreamUpdateAvailable: Сервер қазір Minecraft {version} нұсқасын орындайды. Қолдану үшін басыңыз.
   upstreamUpdateHint: Ұсынылған Minecraft нұсқасын осы инстансқа қолданады.
   useAsUpstreamHint: Инстанс сервер хабарлаған Minecraft нұсқасын бақылайтын болады.
-  version: Сервер қажет ететін нұсқа
-  versionHint: Ping жасау үшін Minecraft нұсқасы
-  worldPreserve: Сервердегі әлемді сақтау
 serverStatus:
   nohost: §4Хост табылмады!
   ping: Ping...
   refuse: §4Сервер бас тартты!
   timeout: §4Серверге қосылу уақыты аяқталды!
-agent:
-  accessRequiredHint: Кірістірілген агентті пайдалану үшін Zenith Launcher қызметіне жазылыңыз немесе баптауларда өз ЖИ провайдеріңізді реттеңіз.
-  subscribeXmcl: XMCL қызметіне жазылу
-  notConfiguredHint: Баптаулар → Жалпы → ЖИ агенті бөлімінде API кілтін, модельді және OpenAI-мен үйлесімді соңғы нүктені орнатыңыз. Мысалы, OpenAI немесе Claude-пен үйлесімді шлюзді қолданыңыз.
 setting:
-  aiAgentApiKeyDescription: OpenAI-мен үйлесімді провайдерді баптаңыз, мысалы OpenAI немесе Claude үшін шлюз. Кілт осы құрылғыда жергілікті сақталады.
-  aiAgentApiKeyPlaceholder: OpenAI немесе Claude провайдерінің API кілті
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 немесе claude-sonnet-4-5
   themeStore:
     name: Тақырыптар қоймасы
     description: Жалпы тақырыптарды сақтау және басқару
@@ -1456,7 +1065,6 @@ setting:
   aboutLicense: MIT LICENSE
   aboutLicenseInfo: Windows-та SignPath.io ұсынған тегін коды имзалау, SignPath Foundation сертификаты
   aboutSponsors: 😇 Демеушілер 😇
-  advancedJavaOptions: Кеңейтілген Java опциялары
   advancedSettings: Кеңейтілген баптаулар
   advancedSettingsHint: Қауіпті аймақ - launcher деректерін қалпына келтіру немесе басқару
   apiSets:
@@ -1511,8 +1119,6 @@ setting:
   darkThemeDescription: Қараңғы немесе жарық тақырыпты таңдаңыз
   developerMode: Әзірлеуші режимі
   developerModeDescription: Әзірлеуші режимі өз модтарыңызды тестеу үшін
-  disableTelemetry: Телеметрияны өшіру
-  disableTelemetryDescription: XMCL ойынды іске қосу және пайдаланушы кіру оқиғаларын жинайды.
   enableDedicatedGPUOptimization: Арнайы графикалық процессорды тағайындау
   enableDedicatedGPUOptimizationDescription: Бұл опция Minecraft процесіне арнайы графикалық процессорды тағайындайды.
   enableDiscord: Discord қатысуын қосу
@@ -1522,8 +1128,6 @@ setting:
   exportSettingsHint: Ағымдағы баптауларыңызды файлға сақтаңыз
   general: Жалпы
   githubRelease: Github шығарылымы
-  globalJava: Таңдаулы Java
-  globalJavaHint: Автоматты режимде алдымен осы Java қолданылады, ол ойын нұсқасымен үйлеспеген жағдайда ғана автоанықтауға оралады.
   globalSetting: Глобалды жеке жағдай баптаулары
   globalSettingHint: Жеке жағдайлар әдепкі бұл баптауларды қолданады.
   importSettings: Баптауларды импорттау
@@ -1550,7 +1154,6 @@ setting:
   maxSockets: Хост сайын
   maxSocketsDescription: Әр хостқа немесе барлық хосттарға рұқсат етілетін максимал сокеттер санын шектеңіз. 0 шектеу жоқ дегенді білдіреді.
   maxSocketsTitle: Максимал HTTP сокеттері
-  memoryAssignment: Жадты бөлу
   migrateFromOther: Басқа іске қосқыштан импорттау
   minecraftOptions: Minecraft опциялары
   name: Глобалды баптау | Глобалды баптаулар
@@ -1565,11 +1168,6 @@ setting:
     repulse: Тебу
   particleModeDescription: Бөлшекті басу мінез-құлқын таңдаңыз
   quickLaunchSettings: Жылдам іске қосу
-  replaceNative: Түпнұсқалы кітапханаларды алмастыру
-  replaceNativeDescription: Компьютеріңіздің архитектурасына сәйкес түпнұсқалы кітапханаларды алмастырыңыз.
-  replaceNatives:
-    all: Барлығы
-    legacy: Тек ескі нұсқалар
   resetAllSettings: Барлық баптауларды қалпына келтіру
   resetAllSettingsConfirmMessage: Бұл барлық баптауларды, тіркелгілерді, жеке жағдайларды, топтарды және кэштелген деректерді мәңгі жояды. Бұл әрекетті болдырмау мүмкін емес. Сенімдісіз бе?
   resetAllSettingsConfirmTitle: Барлық баптауларды қалпына келтіру керек пе?
@@ -1763,17 +1361,6 @@ theme:
   selectMusic: Музыканы таңдау
   selectVideo: Видеоны таңдау
   title: Zenith Launcher
-transportType:
-  host: Хост кандидаты
-  prflx: Қарым-қатынас рефлексивті кандидаты
-  relay: Релей кандидаты
-  srflx: Сервер рефлексивті кандидаты
-turnRegion:
-  fr: Франция
-  guangzhou: Гуанчжоу, Қытай
-  hk: Гонконг
-  liaoning: Ляонин, Қытай
-  po: Польша
 tutorial:
   feedbackDescription: Егер сізде кез келген мәселе туындаса, бұл батырманы басып, кері байланыс жіберуіңізге болады!
   hideNewsHeaderDescription: Сіз сол жақта жаңалықтар көрмесін көре аласыз. Бұл көрмесіні жасыру үшін бұл батырманы басыңыз.
@@ -1782,10 +1369,6 @@ tutorial:
     appearanceThemeTitle: Инстанстың сыртқы көрінісі
     iconDescription: Белгішені өзгерту үшін басыңыз.
     iconTitle: Инстанс белгішесі
-    javaDescription: Java нұсқасын таңдаңыз немесе ауыстырыңыз.
-    javaImportDescription: Жергілікті жадтан Java ортасын импорттаңыз.
-    javaImportTitle: Java импорттау
-    javaTitle: Java тізімі
     modpackExportDescription: Бапталған инстансты бөлісуге дайын модпак ретінде жинақтаңыз.
     modpackExportTitle: Модпакты экспорттау
     modpackFilesDescription: Клиент пен сервер үшін қамтылатын конфигурацияларды, модтар мен ресурстарды таңдаңыз.
@@ -1839,15 +1422,6 @@ tutorial:
     profileDescription: Тіркелгілер арасында ауысыңыз және кіру деректерін басқарыңыз.
     skinTitle: Скин және Плащты баптау
     skinDescription: Кейіпкерді 3D форматта қараңыз, скиндерді ауыстырыңыз және плащ тағыңыз.
-  multiplayer:
-    railTitle: Желі және Навигация
-    railDescription: NAT түрін, желі күйін тексеріңіз және қосылымдар мен параметрлерді ауыстырыңыз.
-    groupTitle: Бөлмеге қосылу немесе ашу
-    groupDescription: Достарыңызға қосылу үшін бөлме кодын енгізіңіз немесе өз бөлмеңізді ашыңыз.
-    joinDescription: Бар бөлмеге қосылу немесе жаңасын жасау үшін басыңыз.
-    contentTitle: Қосылған қатысушылар мен Мазмұн
-    contentDescription: Қатысушыларды басқарыңыз, пингті тексеріңіз және Minecraft ойындарын бөлісіңіз.
-    manualDescription: SDP алмасу арқылы достармен тікелей қолмен P2P қосылымы.
   resourcepack:
     searchTitle: Ресурспактарды іздеу
     searchDescription: Modrinth, CurseForge немесе жергілікті файлдардан ресурспактарды іздеңіз.
@@ -1892,10 +1466,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Шешілмеген файлдар
   via: '{source} арқылы'
-upstream:
-  downgrade: Нұсқасын төмендету
-  onlyShowCurrentVersion: Тек ағымдағы Minecraft нұсқасын көрсету
-  update: Жаңарту
 user:
   accessToken: Кіру токені
   authMode: Аутентификация қызметі
@@ -2022,51 +1592,9 @@ reinstall:
   name: '{version} қайта орнату'
 blueprint:
   name: Сызба | Сызбалар
-  count: '{count} сызба'
-  searchLocal: Сызбаларды іздеу...
-  searchOnline: Онлайн іздеу...
-  market: Нарық
-  provider: Дереккөз
-  import: Импорттау
-  openFolder: Қалтаны ашу
-  refresh: Жаңарту
   empty: Сызбалар табылмады. .litematic / .schem / .nbt файлын импорттаңыз немесе нарықты шолыңыз.
-  dropHint: Импорттау үшін сызба файлдарын (.litematic / .schem / .nbt) осында тастаңыз.
   selectHint: Алдын ала көру үшін сызбаны таңдаңыз.
-  blocks: '{count} блок'
-  materials: Материалдар
-  findMod: Осы атау кеңістігіне арналған модты табу
-  compatible: Үйлесімді
-  incompatible: Модтар жетіспейді
-  missingNamespaces: 'Модтар жетіспейді: {namespaces}'
   install: Орнату
-  goTo: Веб-сайт
-  byAuthor: 'авторы: {author}'
-  noDescription: Сипаттама берілмеген.
-  mixedSources: Нәтижелер барлық дереккөзден біріктірілген. Кейбірі тек шолуға арналған — жүктеу үшін веб-сайтын ашыңыз.
-  preview:
-    loading: Алдын ала көру жүктелуде...
-    empty: Бұл сызбада көрсетілетін блоктар жоқ.
-    hint: '{count} блок · {x}×{y}×{z}'
-    controls: 'WASD: қозғалу · Space/Shift: жоғары/төмен · Сүйреу: қарау · Дөңгелек: масштаб'
-  convert:
-    title: Пішімді түрлендіру
-    hint: Бұл сызбаны басқа пішімге түрлендіріңіз. Жаңа файл жасалады.
-    target: Мақсатты пішім
-    action: Түрлендіру
-  replace:
-    title: Блоктарды ауыстыру
-    simple: Қарапайым ауыстыру
-    precise: Дәл ауыстыру
-    simpleHint: Бір түрдегі барлық блокты ауыстыру.
-    preciseHint: Тек көрсетілген қасиеттерге сәйкес блоктарды ауыстыру.
-    from: Бастапқы
-    to: Жаңа
-    addRule: Ереже қосу
-    newFile: Жаңа файл
-    action: Ауыстыру
-  formats:
-    structure: Vanilla құрылымы
 gamepad:
   connected: Controller Connected
   guideTitle: Controller Controls

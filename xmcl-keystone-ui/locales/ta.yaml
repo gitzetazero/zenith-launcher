@@ -1,97 +1,17 @@
-AppAddInstanceDialog:
-  choiceTitle: பல தொடக்க சுயவிவரங்கள் கண்டறியப்பட்டன. இறக்குமதி செய்ய ஒன்றைத் தேர்ந்தெடுக்கவும்.
-  createTitle: விளையாட்டை உருவாக்கு
-  serverTitle: உங்கள் சர்வர் முகவரியை உள்ளிடவும்
-AppShareInstanceDialog:
-  editScopeDescription: LAN-இல் இயங்கும் இந்த விளையாட்டைக் கண்டறிந்த பிறகு மற்றவர்கள் பெறக்கூடிய கோப்புகளைத் தேர்ந்தெடுக்கவும்.
-  editScopeTitle: பகிர்வு வரம்பைத் திருத்து
-  instanceToShare: இயங்கும் விளையாட்டு
-  alterDownloadDescription: தற்போதைய நிகழ்வை நீங்கள் குழப்ப விரும்பவில்லை என்றால், உங்கள் சக நண்பரின் கட்டமைப்பில் இருந்து புதிய நிகழ்வையும் உருவாக்கலாம். நிகழ்வை உருவாக்க கீழே உள்ள பொத்தானைக் கிளிக் செய்யவும்.
-  baseInfo: அடிப்படை அமைப்பு
-  description: நீங்கள் சுயவிவரத்தைப் பகிர்ந்த பிறகு, மற்ற இடங்கள் உங்கள் கணினி மூலம் இந்த கோப்புகளைப் பதிவிறக்கலாம்.
-  downloadDescription: உங்கள் சக நண்பர் உங்களுக்கு வழங்கிய கோப்புகளைச் சரிபார்க்கவும். நீங்கள் பதிவிறக்க விரும்பும் கோப்பைத் தேர்ந்தெடுக்கவும். அது தற்போதைய நிகழ்வான {name} இல் வைக்கப்படும்.
-  downloadNotifyTitle: '{user} இலிருந்து நிகழ்வைப் பதிவிறக்கவும்'
-  downloadTitle: மற்ற சக நண்பர்களிடமிருந்து கோப்புகளைப் பதிவிறக்கவும்
-  filesToDownload: பதிவிறக்க வேண்டிய கோப்புகளைத் தேர்ந்தெடுக்கவும்
-  filesToShare: பகிர வேண்டிய கோப்புகளைத் தேர்ந்தெடுக்கவும்
-  share: பகிர்
-  shareTitle: விளையாட்டு கோப்புகளை மற்ற வீரருடன் பகிர்ந்து கொள்ளுங்கள்
 BaseSettingGeneral:
   title: பொதுவானவை
-HomeJavaIssueDialog:
-  incompatibleJava: பொருந்தாத ஜாவா (Java)
-  incompatibleJavaHint: தற்போதைய ஜாவா தேர்ந்தெடுக்கப்பட்ட Minecraft உடன் பொருந்தாமல் இருக்கலாம்!
-  missingJava: ஜாவா இல்லை
-  missingJavaHint: 'லாஞ்சரால் உங்கள் கணினியில் எந்த ஜாவாவையும் கண்டறிய முடியவில்லை. நீங்கள் செய்யக்கூடியவை:'
-  optionSwitch:
-    name: '{version} க்கு மாறவும்'
 HomeLaunchMultiInstanceDialog:
   confirm: ஆம், தொடங்கு
   description: நீங்கள் Minecraft இன் பல நிகழ்வுகளைத் தொடங்குகிறீர்கள். நீங்கள் உறுதியாக இருக்கிறீர்களா?
   title: பல நிகழ்வுகள்
 SettingMigrationDialog:
   selectRootDirectory: மூல கோப்பகத்தைத் தேர்ந்தெடுக்கவும்
-agent:
-  accessRequiredHint: உள்ளமைந்த முகவரைப் பயன்படுத்த Zenith Launcher-க்கு சந்தா செலுத்தவும் அல்லது அமைப்புகளில் உங்கள் சொந்த AI வழங்குநரைக் கட்டமைக்கவும்.
-  subscribeXmcl: XMCL-க்கு சந்தா செலுத்தவும்
-  callingTool: '{name} ஐ அழைக்கிறது...'
-  disabledPlaceholder: முகவர் முடக்கப்பட்டது
-  emptyHint: உங்கள் நிகழ்வை ஆய்வு செய்ய, மோட்களை மாற்ற, பதிவுகளைப் படிக்க அல்லது செயலிழப்பைக் கண்டறிய முகவரிடம் கேளுங்கள்.
-  inputPlaceholder: முகவரிடம் கேளுங்கள்... (அனுப்ப Enter ஐயும், புதிய வரியைத் தொடங்க Shift+Enter ஐயும் அழுத்தவும்)
-  notConfiguredHint: அமைப்புகள் → பொது → AI முகவர் என்பதில் API விசை, மாதிரி மற்றும் OpenAI-இணக்கமான எண்ட்பாயிண்டை அமைக்கவும். எடுத்துக்காட்டாக, OpenAI அல்லது Claude-இணக்கமான கேட்வேயைப் பயன்படுத்தவும்.
-  notConfiguredTitle: முகவர் கட்டமைக்கப்படவில்லை
-  openSettings: அமைப்புகளைத் திறக்கவும்
-  reset: உரையாடலை மீட்டமை
-  setupGuide: அமைப்பு வழிகாட்டி
-  statusDisabled: முடக்கப்பட்டது — API விசை இல்லை
-  statusReady: தயார்
-  statusWorking: செயல்படுகிறது...
-  suggestion1: இந்த நிகழ்வை புதிய Minecraft பதிப்பிற்கு மேம்படுத்தி, அதற்குப் பொருந்தும் வகையில் மோட்களைப் புதுப்பிக்கவும்
-  suggestion2: எனது மோட்கள் செயலிழக்கின்றன — காரணத்தைக் கண்டறிந்து அதை எவ்வாறு சரிசெய்வது என்று கூறுங்கள்
-  suggestion3: 'ஒரு மோட்பேக்கை உருவாக்குங்கள்: எனக்குத் தேவையான அம்சத்திற்கான மோட்களைக் கண்டறிந்து அவற்றை இந்த நிகழ்வில் நிறுவவும்'
-  thinking: யோசிக்கிறது...
-  title: Zenith Launcher முகவர்
-  toggleHint: மாற்றுவதற்கு
 ago:
   day: '{duration} நாளுக்கு முன்பு | {duration} நாட்களுக்கு முன்பு'
   hour: '{duration} மணிநேரத்திற்கு முன்பு | {duration} மணிநேரத்திற்கு முன்பு'
   minute: '{duration} நிமிடத்திற்கு முன்பு | {duration} நிமிடங்களுக்கு முன்பு'
   second: '{duration} வினாடிக்கு முன்பு | {duration} வினாடிகளுக்கு முன்பு'
-askAICrash:
-  agentNotConfigured: லாஞ்சரின் உள்ளமைக்கப்பட்ட முகவர் இதை உங்களுக்காகக் கண்டறிந்து சரிசெய்ய, அமைப்புகளில் AI வழங்குநரையும் API விசையையும் சேர்க்கவும்.
-  askAgent: உள்ளமைக்கப்பட்ட AI முகவர் மூலம் கண்டறியவும்
-  copyPrompt: AI இடம் கேட்பதற்கான வரியில் நகலெடுக்கவும்
-  description: விளையாட்டு செயலிழப்பைப் புரிந்துகொள்ள AI உங்களுக்கு உதவட்டும்! இந்த விளையாட்டு செயலிழப்பு பற்றி AI இடம் கேட்க கீழே உள்ள வழிமுறைகளைப் பின்பற்றவும்!
-  orExternal: அல்லது வெளிப்புற AI ஐப் பயன்படுத்தவும்
-  selectPlatform: ஒரு AI தளத்தைத் திறந்து, நீங்கள் நகலெடுத்த வரியை ஒட்டவும்.
-  setupAgent: AI முகவரை அமைக்கவும்
 authProfileAddedNotification: அங்கீகார சுயவிவரம் {name} சேர்க்கப்பட்டது
-bedrock:
-  description: Minecraft Bedrock பதிப்பு மைக்ரோசாஃப்ட் ஸ்டோர் மூலம் நிறுவப்பட்டு தொடங்கப்படுகிறது. உங்கள் மைக்ரோசாஃப்ட் கணக்கில் பெட்ராக் உரிமம் இருக்க வேண்டும்.
-  install: மைக்ரோசாஃப்ட் ஸ்டோரிலிருந்து பெறவும்
-  installFailed: மைக்ரோசாஃப்ட் ஸ்டோரைத் திறக்க முடியவில்லை
-  installed: 'நிறுவப்பட்டது: {version}'
-  launchHint: பெட்ராக் பதிப்பைத் தொடங்க லாஞ்ச் பொத்தானைப் பயன்படுத்தவும்.
-  installBedrockVersion: பெட்ராக் {version} பதிவிறக்கம் செய்யப்படுகிறது
-  licenseRequired: பெட்ராக் பதிப்பை நிறுவவும் விளையாடவும் Minecraft ஐக் கொண்ட மைக்ரோசாஃப்ட் கணக்குடன் உள்நுழையவும்.
-  refresh: புதுப்பி
-  versionsTitle: பதிப்பு மேலாளர்
-  versionsHint: மைக்ரோசாஃப்ட் சேவையகங்களிலிருந்து பல பெட்ராக் பதிப்புகளைப் பதிவிறக்கி அவற்றுக்கிடையே மாறவும். விண்டோஸில் ஒரு நேரத்தில் ஒரு பதிப்பை மட்டுமே பதிவு செய்ய முடியும் என்பதால், ஒரு பதிப்பை விளையாடுவது அதை மீண்டும் பதிவு செய்கிறது.
-  versionsError: பதிப்புப் பட்டியலை ஏற்ற முடியவில்லை. உங்கள் பிணையத்தைச் சரிபார்த்து மீண்டும் முயற்சிக்கவும்.
-  channel: சேனல்
-  channelRelease: வெளியீடு
-  channelBeta: பீட்டா
-  channelPreview: முன்னோட்டம்
-  active: செயலில் உள்ளது
-  play: விளையாடு
-  download: பதிவிறக்கம்
-  installedTag: நிறுவப்பட்டது
-  developerModeRequired: பதிவிறக்கம் செய்யப்பட்ட பதிப்பைப் பதிவு செய்ய விண்டோஸ் டெவலப்பர் பயன்முறை தேவை. அதைச் செயல்படுத்துவது நிர்வாகி அனுமதியைக் கேட்கும்.
-  enableDeveloperMode: டெவலப்பர் பயன்முறையைச் செயல்படுத்து
-  enableDeveloperModeFailed: டெவலப்பர் பயன்முறையைச் செயல்படுத்த முடியவில்லை
-  downloadFailed: பெட்ராக் {version} ஐப் பதிவிறக்க முடியவில்லை
-  launchFailed: இந்த பெட்ராக் பதிப்பைத் தொடங்க முடியவில்லை
-  removeFailed: பெட்ராக் {version} ஐ நீக்க முடியவில்லை
 backup:
   title: 'காப்புப்பிரதி & மீட்டமைப்பு'
   description: உங்கள் அமைப்புகள், தொகுப்புகள், தீம்கள் மற்றும் கேம் இன்ஸ்டன்ஸ்களை காப்புப்பிரதி எடுத்து மீட்டமைக்கவும்
@@ -324,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: இந்த பதிப்பை நிறுவ கிளிக் செய்யவும்
     name: Minecraft %{version} க்கான சிதைந்த பதிப்பு ஜார் (jar).
-  incompatibleJava:
-    name: ஜாவா பதிப்பு {javaVersion} {version} பதிப்பிற்குப் பொருத்தமானது அல்ல!
   instanceFiles:
     description: நிகழ்வு நிறுவலில் {counts} கோப்புகள் உள்ளன.
     title: முழுமையடையாத நிகழ்வு நிறுவல்
-  invalidJava:
-    name: தவறான ஜாவா இருப்பிடம்.
   missingJava:
     message: இந்தப் பிரச்சனைக்குத் தீர்வு காண கிளிக் செய்யவும்
     name: Minecraft ஐத் தொடங்க ஜாவாவைக் கண்டறிய முடியவில்லை!
@@ -366,11 +282,6 @@ duration:
   hour: '{duration} மணிநேரம் | {duration} மணிநேரம்'
   minute: '{duration} நிமிடம் | {duration} நிமிடங்கள்'
   second: '{duration} வினாடி | {duration} வினாடிகள்'
-env:
-  select:
-    all: அனைத்தையும் தேர்ந்தெடு
-    fit: பொருத்தமானதைத் தேர்ந்தெடு
-    none: எதையும் தேர்ந்தெடுக்க வேண்டாம்
 errors:
   bedrockUnsupportedPlatform: Minecraft Bedrock பதிப்பு விண்டோஸ் உருவாக்கத்தில் மட்டுமே ஆதரிக்கப்படுகிறது.
   bedrockNotInstalled: Minecraft Bedrock பதிப்பு நிறுவப்படவில்லை.
@@ -406,8 +317,6 @@ errors:
     title: லாஞ்சர் கோப்புறையில் எழுத முடியவில்லை
   NotFoundError: 404 கண்டறியப்படவில்லை
   SocketError: சர்வர் சாக்கெட் பிழை
-eula:
-  body: தேர்வுப் பெட்டி பொத்தானைக் குறிப்பதன் மூலம், Minecraft இன் {eula} உடன் உங்கள் உடன்பாட்டைத் தெரிவிக்கிறீர்கள்.
 exception:
   http: '{url} க்கான HTTP கோரிக்கை தோல்வியடைந்தது. நிலைக் குறியீடு {statusCode}. {code}. தயவுசெய்து மீண்டும் முயற்சிக்கவும் அல்லது உங்கள் பிணையத்தைச் சரிபார்க்கவும். இந்த பிழை தொடர்ந்தால், டெவலப்பர் குழுவிற்கு ஒரு அறிக்கையை அனுப்பவும்.'
 exportModpack:
@@ -490,21 +399,6 @@ gameType:
   survival: வாழ்வாதார பயன்முறை
 help: உதவி
 home: முகப்பு
-importModpack:
-  fromFileSubtitle: .zip அல்லது .mrpack கோப்பைத் தேர்ந்தெடுக்கவும்
-  fromUrl: இணைப்பு / URL மூலம்...
-  fromUrlSubtitle: URL மூலம் மோட்பேக்கை நிறுவவும்
-  fromUrlDescription: 'மோட்பேக்கின் URL-ஐ உள்ளிடவும் அல்லது ஒட்டவும்:'
-  invalidUrl: சரியான URL-ஐ உள்ளிடவும் (http:// அல்லது https://)
-  selectVersion: மோட்பேக் பதிப்பைத் தேர்ந்தெடுக்கவும்
-  selectVersionDescription: 'நிறுவ வேண்டிய {name} பதிப்பைத் தேர்ந்தெடுக்கவும்:'
-  pmcProtected: Planet Minecraft தளம் Cloudflare மூலம் பாதுகாக்கப்படுகிறது. பக்கத்திலிருந்து நேரடிப் பதிவிறக்க இணைப்பை அல்லது மாற்று இணைப்பை நகலெடுக்கவும்.
-  netdiskTitle: மேகக்கணி இயக்ககத்திலிருந்து பதிவிறக்கம்
-  netdiskDescription: இந்த மோட்பேக் பதிப்பு வெளிப்புற மேகக்கணி இயக்ககத்தில் உள்ளது. உலாவியில் பதிவிறக்கப் பக்கத்தைத் திறக்கக் கீழே சொடுக்கவும். பின்னர் பதிவிறக்கிய .zip அல்லது .mrpack கோப்பை Zenith Launcher-க்குள் இழுத்து விடவும்.
-  openNetdisk: மேகக்கணி இயக்ககத்தைத் திறக்கவும்
-  netdiskOpened: மேகக்கணி இயக்கக இணைப்பு உலாவியில் திறக்கப்பட்டு இடைநிலைப் பலகையில் நகலெடுக்கப்பட்டது.
-  noReleasesFound: இந்தக் களஞ்சியத்தில் .mrpack அல்லது .zip மோட்பேக் வெளியீடுகள் எதுவும் கிடைக்கவில்லை.
-  name: மோட்பேக்கை இறக்குமதி செய்
 installAssets:
   asset: '{count} வளங்களை நிறுவு'
   assetIndex: வளங்களின் குறியீட்டுக் கோப்பைக் சரிபார்க்கவும்
@@ -573,12 +467,9 @@ instance:
   iconUrl: சின்னத்தின் Url
   installModpack: மோட்பேக்கிலிருந்து நிகழ்வைப் புதுப்பிக்கவும்
   lastPlayed: கடைசியாக விளையாடியது
-  launchArguments: தொடக்க வாதங்களின் முன்னோட்டம்
   launchServer: லோக்கல்ஹோஸ்ட் (localhost) சேவையகத்தைத் தொடங்கவும்
   linkFileDesc: இது தற்போதைய உள்ளூர் {file} கோப்பை உலகளாவிய {file} கோப்பைக் கொண்டு மாற்றும். அதை இணைக்க நீங்கள் உறுதியாக இருக்கிறீர்களா?
   linkFileTitle: '{file} ஐ இணைக்க நீங்கள் உறுதியாக இருக்கிறீர்களா?'
-  mcOptions: Minecraft விருப்பங்கள்
-  mcOptionsHint: கூடுதல் Minecraft தொடக்க வாதங்கள்
   name: சுயவிவரப் பெயர்
   nameHint: மோட்பேக்கின் பெயர்
   nameInvalidChars: 'பெயரில் இந்த எழுத்துக்கள் இருக்கக்கூடாது: < > : " / \\ | ? *'
@@ -591,10 +482,6 @@ instance:
   openCrashReportFolder: செயலிழப்பு அறிக்கை கோப்புறையைத் திறக்கவும்
   openLogFolder: பதிவுக் கோப்புறையைத் திறக்கவும்
   playtime: விளையாடிய நேரம்
-  preExecCommand: முன்-செயல்படுத்தும் கட்டளை
-  preExecCommandHint: Minecraft ஐத் தொடங்குவதற்கு முன் செயல்படுத்த வேண்டிய கட்டளை
-  prependCommand: முன்னொட்டுக் கட்டளை
-  prependCommandHint: இது அனைத்து தொடக்க கட்டளைகளுக்கும் முன் இந்தக் கட்டளையைச் சேர்க்கும்
   requireName: பெயர் தேவை
   resolution: தெளிவுத்திறன் (Resolution)
   resolutionPreset: முன்னமைக்கப்பட்ட தெளிவுத்திறன்
@@ -605,10 +492,6 @@ instance:
   useSharedOptionsDesc: இது options.txt ஐ நிகழ்வுகளுக்கு இடையே பகிரப்பட்ட கோப்புடன் இணைக்கும்
   useSharedServersList: பகிரப்பட்ட சேவையகங்களின் பட்டியலைப் பயன்படுத்தவும்
   useSharedServersListDesc: இது servers.dat ஐ நிகழ்வுகளுக்கு இடையே பகிரப்பட்ட கோப்புடன் இணைக்கும்
-  vmOptions: JVM விருப்பங்கள்
-  vmOptionsHint: JVMக்கு அனுப்ப வேண்டிய கூடுதல் வாதங்கள்
-  vmVar: சுற்றுச்சூழல் மாறிகள்
-  vmVarHint: சுற்றுச்சூழல் மாறிகளைச் சேர்க்க + பொத்தானைக் கிளிக் செய்யவும்
   width: அகலம்
 instanceAge:
   older: பழையது
@@ -645,9 +528,6 @@ instanceSetting:
   showLogHint: இது விளையாட்டு தொடங்கிய பிறகு Minecraft பதிவை ஸ்ட்ரீம் செய்ய ஒரு சாளரத்தை பாப்அப் செய்யும்
   syncGameLanguage: விளையாட்டு மொழியை ஒத்திசைக்கவும்
   syncGameLanguageDescription: துவக்கும்போது Minecraft மொழியை துவக்கி மொழியுடன் தானாக ஒத்திசைக்கவும்
-instanceTemplate:
-  ftb: இது ஒரு FTB மாட்பேக்
-  preview: மாட்பேக் முன்னோட்டம்
 instanceUpdate:
   basic: அமைப்புகள் புதுப்பிப்பு
   files: கோப்பு புதுப்பிப்புகள்
@@ -665,41 +545,17 @@ instances:
   addPrismDescription: ஏற்கனவே உள்ள PrismLauncher நிகழ்வை இறக்குமதி செய்யவும்.
   addVanilla: வெண்ணிலா போன்ற Minecraft இலிருந்து உருவாக்கு
   addVanillaDescription: பொதுவான .minecraft கோப்புறையிலிருந்து இறக்குமதி செய்யவும். இது அசல் விளையாட்டு சுயவிவரத்தை Zenith Launcher க்கு நகலெடுக்கும்.
-  edition: பதிப்பு
-  editionJava: ஜாவா பதிப்பு (Java Edition)
   editionBedrock: பெட்ராக் பதிப்பு (Bedrock Edition)
   editionBedrockHint: பெட்ராக் பதிப்பு மைக்ரோசாஃப்ட் ஸ்டோர் ஆப் மூலம் தொடங்கப்படுகிறது. உங்களிடம் பெட்ராக் உரிமம் இருக்க வேண்டும். மாட்கள், ரிசோர்ஸ் பேக்குகள் மற்றும் பிற ஜாவா-மட்டும் கொண்ட அம்சங்கள் கிடைக்காது.
   editionBedrockWindowsOnly: பெட்ராக் பதிப்பு விண்டோஸ் உருவாக்கத்தில் மட்டுமே ஆதரிக்கப்படுகிறது.
   fix: பழுதுபார்க்கவும்
   folder: கோப்புறை
   folderSetting: கோப்புறை அமைப்புகள்
-  importFolderDescription: Minecraft ஐ துவக்கிக்கு இறக்குமதி செய்
-  loadingFiles: மாட்பேக் கோப்புகளை ஏற்றுகிறது
 items:
   count: '{count} உருப்படிகள்'
   total: மொத்தம் {total}
 java:
-  allocatedLong: கணினியின் இயல்புநிலை ஜாவாவைப் பயன்படுத்தவும்
-  allocatedShort: தானாக ஒதுக்கப்பட்டது
-  allocation: ஒதுக்கப்பட்டது
-  autoHint: நிறுவப்பட்ட மாட் எண்ணிக்கையுடன் குறைந்தபட்ச அளவு வளரும்; அதிகபட்ச அளவு கணினியில் கிடைக்கும் நினைவகத்தைப் பயன்படுத்துகிறது.
-  change: மாற்று
-  importFromFile: கோப்பிலிருந்து ஜாவாவை இறக்குமதி செய்
-  invalid: தவறான ஜாவா இருப்பிடம்
-  location: ஜாவா இருப்பிடம்
-  locationHint: ஜாவா எதுவும் தேர்ந்தெடுக்கப்படவில்லை — கணினி இயல்புநிலையைப் பயன்படுத்துகிறது
-  maxMemory: அதிகபட்ச நினைவகம்
-  memory: ஜாவா நினைவகம்
   memoryAuto: தானியங்கி
-  memoryManual: கைமுறை
-  memoryUnassigned: ஒதுக்காதே
-  minMemory: குறைந்தபட்ச நினைவகம்
-  name: Java
-  noMemory: நினைவக பயன்பாட்டை கட்டுப்படுத்த வேண்டாம்
-  openFolder: ஜாவா கோப்புறையைத் திற
-  presets: முன்னமைப்புகள்
-  refresh: உள்ளூர் ஜாவாவை புதுப்பி
-  systemMemory: 'கணினியின் இலவச நினைவகம்: {free} / {total}'
 labyMod:
   disable: LabyMod ஐ முடக்கு
   empty: LabyMod தற்போதைய Minecraft ஐ ஆதரிக்காது
@@ -767,8 +623,6 @@ localVersion:
   auto: தானாக கணக்கிடப்பட்டது
   empty: பதிப்பு எதுவும் நிறுவப்படவில்லை
   hint: குறிப்பிட்ட உள்ளூர் பதிப்பை நேரடியாகத் துவக்கு
-  reinstallDescription: இந்த பதிப்பு நிறுவலில் சில சிக்கல்கள் இருப்பதாக நீங்கள் நினைத்தால், அதை மீண்டும் நிறுவ முயற்சி செய்யலாம்.
-  reinstallTitle: '{version} ஐ மீண்டும் நிறுவு'
   title: உள்ளூர் பதிப்பு | உள்ளூர் பதிப்புகள்
 logLevel:
   error: பிழை
@@ -832,36 +686,6 @@ me:
   recentPlay: சமீபத்திய விளையாட்டு
 migrateMinecraft:
   name: Minecraft கோப்புகளை இடமாற்றம் செய்
-minecraftFriends:
-  accept: ஏற்றுக்கொள்
-  add: நண்பரைச் சேர்
-  addPlaceholder: Minecraft பயனர் பெயர்
-  addedRelative: '{time} சேர்க்கப்பட்டது'
-  errors:
-    cannotAddSelf: உங்களுக்கு நீங்களே நட்பு கோரிக்கையை அனுப்ப முடியாது.
-    duplicate: அந்த வீரர் ஏற்கனவே உங்கள் பட்டியலில் உள்ளார்.
-    generic: ஏதோ தவறு நடந்துவிட்டது. மீண்டும் முயற்சிக்கவும்.
-    inviteRejected: அந்த வீரர் நண்பர்கள் விருப்பத்தை இயக்கவில்லை அல்லது அழைப்புகளை ஏற்கவில்லை.
-    tokenExpired: உங்கள் மைக்ரோசாஃப்ட் அமர்வு காலாவதியானது. மீண்டும் உள்நுழையவும்.
-    unknownProfile: அந்தப் பெயரில் ஒரு வீரரை எங்களால் கண்டறிய முடியவில்லை.
-  expiresRelative: '{time} காலாவதியாகிறது'
-  friends: நண்பர்கள்
-  heroEmptyHint: நட்பு கோரிக்கையை அனுப்ப மேலே உள்ள பயனர் பெயர் மூலம் ஒரு Minecraft வீரரைச் சேர்க்கவும்.
-  heroEmptyTitle: உங்கள் நண்பர்கள் பட்டியல் காலியாக உள்ளது
-  incoming: வரும் கோரிக்கைகள்
-  incomingHint: 1 வரும் கோரிக்கை | {count} வரும் கோரிக்கைகள்
-  notifyAdded: '{name} க்கு நட்பு கோரிக்கை அனுப்பப்பட்டது'
-  outgoing: வெளியேறும் கோரிக்கைகள்
-  privacy:
-    acceptInvites: நண்பர் அழைப்புகளை ஏற்றுக்கொள்
-    acceptInvitesHint: முடக்கப்பட்டிருக்கும் போது, பிற வீரர்கள் உங்களுக்கு நட்பு கோரிக்கைகளை அனுப்ப முடியாது.
-    friendsEnabled: நண்பர்கள் பட்டியல் இயக்கப்பட்டது
-  reconnectAction: மீண்டும் இணைக்கவும்
-  requiresMicrosoft: நண்பர்கள் அம்சத்தைப் பயன்படுத்த மைக்ரோசாஃப்ட் கணக்குடன் உள்நுழையவும்.
-  scopedTo: '{name} ஆக உள்நுழைந்துள்ளார்'
-  send: அனுப்பு
-  title: Minecraft நண்பர்கள்
-  unsupported: நண்பர்கள் அம்சம் மைக்ரோசாஃப்ட் கணக்குகளுக்கு மட்டுமே கிடைக்கும்.
 migrationWindow:
   title: தரவு இடமாற்றம்
   preparing: இடமாற்றத்திற்குத் தயாராகிறது…
@@ -878,25 +702,19 @@ minecraftVersion:
   showAlpha: ஸ்னாப்ஷாட்டைக்காட்டு
   snapshot: ஸ்னாப்ஷாட் (Snapshot)
 mod:
-  collapseAllGroups: அனைத்து குழுக்களையும் சுருக்கு
   acceptVersion: '{version} ஐ ஏற்றுக்கொள்'
   applyGroupRules: சேமித்த குழுவாக்க விதிகளைப் பயன்படுத்து
   compatible: இணக்கமான மாட்.
   createGroup: குழுவை உருவாக்கு
   currentVersion: தற்போதைய {current}
   denseView: நெருக்கமான காட்சி
-  description: விளக்கம்
   disableAll: அனைத்தையும் முடக்கு
-  dropHint: இறக்குமதி செய்ய மாட்டின் .jar/.litemod கோப்பை இங்கே இழுத்து விடவும்.
   duplicatedDetected: '{count} நகல் மாட்கள்'
   duplicatedDetectedDescription: ஒரே மாட் ஐடி கொண்ட ஆனால் வெவ்வேறு கோப்புகளைக் கொண்ட மாட்கள் கண்டறியப்பட்டுள்ளன. இது Minecraft செயலிழப்பை ஏற்படுத்தக்கூடும். நீங்கள் வைத்திருக்க விரும்பும் கோப்பைத் தேர்ந்தெடுக்கவும்.
   enableAll: அனைத்தையும் இயக்கு
   enabled: '{count} மாட்கள் இயக்கப்பட்டுள்ளன'
   filter: மாட்களை வடிகட்டு
   group: குழுவாக்கு
-  groupInstalled: நிறுவப்பட்ட மாட்களை குழுவாக்கு
-  hideInstalled: நிறுவப்பட்ட மாட்களை மறை
-  installedFilterOff: அனைத்து மாட்களையும் காட்டு
   groupName: குழு பெயர்
   groupNameRequired: குழு பெயர் தேவை
   hasUpdate: மாட்டின் புதிய பதிப்பு உள்ளது!
@@ -904,25 +722,17 @@ mod:
   incompatibleHint: இணக்கமற்றவற்றைக் காட்டு
   incompatibleHintDescription: சில மாட்களின் சார்புகள் விடுபட்டிருக்கலாம். அல்லது சில சார்புகளின் பதிப்புகள் பொருந்தாமல் இருக்கலாம்.
   maybeCompatible: ஒருவேளை இணக்கமாக இருக்கலாம்.
-  modloaderSelectHint: இந்த மாட் பின்வரும் மாட்லோடர்களை ஆதரிக்கிறது. நிறுவ ஒன்றைத் தேர்ந்தெடுக்கவும்.
-  modloaderSelectNotSupported: Minecraft {minecraft}-க்கான {modloader} கண்டறியப்படவில்லை
   mods: '{count} மாட்கள்'
   name: மாட் | மாட்கள்
   newFolder: புதிய கோப்புறை
   noGroupsFound: குழுக்கள் எதுவும் காணப்படவில்லை
   noGroupsYet: குழுக்கள் இன்னும் இல்லை. ஒன்றை உருவாக்குங்கள்!
-  noModLoaderHint: மாட்களைப் பயன்படுத்த மாட்லோடரை இயக்க மறக்காதீர்கள்!
   openLink: மாட் முகவரி {url} ஐத் திற
-  search: மாட்களைத் தேடு
   searchGroups: குழுக்களைத் தேடு...
   searchOnMcWiki: MC கலைக்களஞ்சியத்தில் {name} ஐத் தேடு.
   selectOrCreateGroup: குழுவைத் தேர்ந்தெடுக்கவும் அல்லது உருவாக்கவும்
-  showDirectory: மாட்ஸ் கோப்பகத்தைக் காட்டு
   showFile: மாட் பாதை {file} ஐக் காட்டு
-  showInModrinth: Modrinth இல் {name} ஐக் காட்டு
-  switchDefaultSource: இயல்புநிலை மாட் ஆதாரம்
   syncGroupRules: குழுவாக்க விதிகளைச் சேமி
-  toUpdate: '{count} புதுப்பிப்புகள்'
   ungroup: குழுவிலக்கு
 modFilter:
   clear: வடிகட்டியை அகற்று
@@ -968,25 +778,10 @@ modified:
   save: சேமி
   unsaved: உங்கள் மாற்றம் சேமிக்கப்படவில்லை!
 modpack:
-  author: ஆசிரியர் பெயர்
-  authorHint: ஏற்றுமதி செய்யப்பட்ட மாட்பேக்கில் (Curseforge) கையெழுத்திட இது பயன்படுத்தப்படலாம்
-  description: விளக்கம்
-  descriptionHint: உங்கள் மாட்பேக்கின் பொதுவான விளக்கம். Curseforge மாட்பேக்காக ஏற்றுமதி செய்யப் பயன்படுத்தப்படலாம்.
   dropHint: இறக்குமதி செய்ய மாட்பேக் ஜிப் (zip) கோப்பை இங்கே இழுத்து விடவும்
-  emitCurseforge: Curseforge மாட்பேக்கை ஏற்றுமதி செய்
-  emitModrinth: Modrinth மாட்பேக்கை ஏற்றுமதி செய்
-  emitModrinthStrict: கடுமையான Modrinth வடிவம்
-  emitModrinthStrictDescription: Modrinth ஆவணத்தில் பட்டியலிடப்பட்டுள்ள 4 டொமைன்களிலிருந்து வரும் URLகள் மட்டுமே அனுமதிக்கப்படும்
   export: மாட்பேக்காக ஏற்றுமதி செய்
-  exportDirectory: கோப்பகத்தை ஏற்றுமதி செய்
-  exportDirectoryDescription: இயல்பாகவே மாட்பேக் பதிவிறக்கங்கள் (Downloads) கோப்புறைக்கு ஏற்றுமதி செய்யப்படும்
-  includeAssets: அசெட்களை (Assets) சேர்
-  includes: சேர்க்க வேண்டிய கோப்புகள்
   modpackVersion: மாட்பேக் பதிப்பு
   name: மாட்பேக் | மாட்பேக்குகள்
-  overrides: மேலெழுதுதல்கள் (Overrides)
-  url: இணைய முகவரி (URL)
-  urlHint: உங்கள் மாட்பேக்கின் முகப்புப் பக்க இணைய முகவரி
 modpackImportConfirm:
   description: துவக்கிக்குள் நீங்கள் ஒரு கோப்பை இழுத்து விட்டது கண்டறியப்பட்டது. மாட்பேக் ஒன்றை இறக்குமதி செய்ய முயற்சிக்கிறீர்களா?
   title: மாட்பேக் ஒன்றை இறக்குமதி செய்ய முயற்சிக்கிறீர்களா?
@@ -1150,110 +945,7 @@ modrinth:
   wikiUrl: விக்கி
 modrinthCard:
   currentVersion: தற்போதைய பதிப்பு
-multiplayer:
-  joinDiscord: Discord-இல் இணையுங்கள்
-  openConsumerPortal: நுகர்வோர் தளத்தைத் திறக்கவும்
-  refundHint: பணத்தைத் திரும்பப் பெற வேண்டுமா? உங்கள் ஆர்டர்களையும் சந்தாக்களையும் நிர்வகிக்க Waffo நுகர்வோர் தளத்திற்குச் செல்லுங்கள்.
-  togetherSupportHint: மல்டிபிளேயர் வேலை செய்யவில்லை என்றால், எங்கள் Discord-இல் இணைந்து மேம்பாட்டுக் குழுவைத் தொடர்புகொள்ளுங்கள். சிக்கலைத் தீர்க்க நாங்கள் உதவுவோம்.
-  autoShareAmbiguous: பல விளையாட்டுகள் இயங்குகின்றன. Zenith Launcher பகிர்வதற்காக LAN உலகை நடத்தும் நிகழ்வைத் தேர்ந்தெடுக்கவும்.
-  editSharingScope: பகிர்வு வரம்பைத் திருத்து
-  gameAvailable: LAN விளையாட்டு கிடைக்கிறது
-  joinGame: விளையாட்டில் சேர்
-  noRunningInstanceToShare: பகிர்வு வரம்பைத் திருத்துவதற்கு முன் ஒரு விளையாட்டைத் தொடங்கவும்
-  updateSharedInstanceConfirm: புதுப்பித்து தொடங்கு
-  updateSharedInstanceDescription: பகிரப்பட்ட மோட்கள் {instance} உடன் வேறுபடுகின்றன. தொடங்குவதற்கு முன் ஹோஸ்டுடன் பொருந்துமாறு இந்த நிகழ்வைப் புதுப்பிக்கவா? தற்போது மாற்றப்பட்ட கோப்புகள் காப்புப்பிரதி எடுக்கப்படும்.
-  updateSharedInstanceTitle: பகிரப்பட்ட நிகழ்வைப் புதுப்பிக்கவா?
-  addFunds: நிதியைச் சேர்க்கவும்
-  availableBalance: கிடைக்கும் இருப்பு
-  balanceHint: XMCL Together சேவைகளுக்குக் கிடைக்கும்
-  billing: பில்லிங்
-  billingDescription: ரிலே அணுகல், உங்கள் Together Home திட்டம் மற்றும் கட்டணங்களை நிர்வகிக்கவும்.
-  billingError: Together பில்லிங்கை ஏற்ற முடியவில்லை. சிறிது நேரம் கழித்து மீண்டும் முயற்சிக்கவும்.
-  buyTogether: Together வாங்கவும்
-  cancelTogether: திட்டத்தை ரத்து செய்யவும்
-  checkout: Waffo செக்அவுட்டைத் திறக்கவும்
-  connectionTogetherWarning: அறை உறுப்பினர் ஒருவர் சிறிது நேரமாக உங்களுடன் இணைக்க முடியவில்லை. அறையில் உள்ள அனைவருக்கும் இணைப்பை மேம்படுத்த XMCL Together முயற்சிக்கவும். அறை மாஸ்டருக்கு மட்டும் Together தேவை.
-  masterPurchaseHint: அறையில் உள்ள அனைவருக்கும் இணைப்பை மேம்படுத்த அறை மாஸ்டருக்கு மட்டும் Together Home தேவை.
-  natTogetherWarning: உங்கள் ரூட்டரால் அறை மாஸ்டருடன் இணைப்பதில் சிக்கல் இருக்கலாம். இணைப்பு தோல்வியுற்றால், உங்களுக்கும் உங்கள் நண்பர்களுக்கும் இடையிலான இணைப்பை மேம்படுத்த XMCL Together முயற்சிக்கவும். அறைக்காக Together வாங்க வேண்டியது அறை மாஸ்டர் மட்டுமே.
-  togetherName: Minecraft Together
-  trialDescription: 1 GB ரிலே போக்குவரத்துடன் ஒரு 7 நாள் சோதனை.
-  trialTitle: இணைப்பு சோதனை
-  tryTogether: Together முயற்சிக்கவும்
-  month: மாதம்
-  orderStatus: 'Waffo ஆர்டர்: {status}'
-  planDescription: ஒவ்வொரு மாதமும் 20 GB நிர்வகிக்கப்படும் ரிலே போக்குவரத்து, மேலும் உங்கள் மோட்பேக்கைச் சரிசெய்ய AI உதவி.
-  waffoHint: Waffo Pancake-ல் கட்டணங்கள் பாதுகாப்பாக நிறைவேற்றப்படுகின்றன. XMCL உங்கள் அட்டை எண்ணைப் பெறாது.
-  subscription:
-    active: செயலில்
-    cancelled: ரத்து செய்யப்பட்டது
-    payment_due: கட்டணம் செலுத்த வேண்டியது
-  trial:
-    active: சோதனை செயலில்
-    available: இலவச சோதனை கிடைக்கிறது
-    expired: சோதனை பயன்படுத்தப்பட்டது
-    unavailable: சோதனை கிடைக்கவில்லை
-  loginRequiredDescription: P2P மல்டிபிளேயர் Zenith Launcher ஆன்லைன் சேவைகளைப் பயன்படுத்துகிறது. தொடர Zenith Launcher கணக்கில் உள்நுழையவும்.
-  loginRequiredTitle: P2P மல்டிபிளேயருக்காக உள்நுழைக
-  complete: முடிந்தது
-  confirm: உறுதிப்படுத்து
-  connectionError: இணைப்புப் பிழை
-  connectionFailedHint: இணைப்பை நிறுவ முடியவில்லை. இரு சாதனங்களும் இணக்கமான NAT வகைகளைக் கொண்டுள்ளனவா என்பதைச் சரிபார்க்கவும்.
-  connections: இணைப்புகள்
-  copied: நகலெடுக்கப்பட்டது!
-  copy: நகலெடு
-  copyGroupToFriendHint: இந்த ஐடி மூலம் உங்கள் நண்பர்களைக் குழுவில் சேர அனுமதிக்கவும்
-  copyLocalHint: |
-    "உள்ளூர் SDP உரையை நகலெடுத்து அதை உங்கள் இணைக்கும் நபருக்கு அனுப்பவும், இதனால் அவர்கள் இந்த உரையை இணைப்பு பிரிவில் உள்ளிடலாம். <span>ஒரு டோக்கனை <span style=\"color: red; font-weight: bold;\">ஒரு நபருக்கு</span> மட்டுமே பயன்படுத்த முடியும்! ஒரே டோக்கனை பல நபர்களுக்கு அனுப்ப முடியாது!</span> <br> <span class=\"hint-text\" style=\"font-style: italic;\">நீங்கள் பல நபர்களை இணைக்க வேண்டும் என்றால், நீங்கள் <span style=\"font-weight: bold; color: rgba(245, 158, 11)\">பல</span> இணைப்புகளை உருவாக்க வேண்டும்.</span>"
-  createLocalToken: உள்ளூர் டோக்கனை உருவாக்கு
-  currentIpTitle: கண்டறியப்பட்ட பொது ஐபி
-  currentNatTitle: 'தற்போதைய நெட்வொர்க் (NAT):'
-  difficultyLevelHint: இணைப்பை உருவாக்குவதில் உள்ள சிரமத்தின் அளவு
-  disconnect: துண்டி
-  disconnectDescription: பயனர் {user}({id}) உடனான இணைப்பைத் துண்டிக்க வேண்டுமா?
-  disconnected: துண்டிக்கப்பட்டது
-  enterRemoteToken: தொலைதூர டோக்கனை உள்ளிடவும்
-  enterRemoteTokenHint: உங்கள் இணைப்பாளர் உங்கள் டோக்கனை உள்ளிட்டதும், நீங்கள் அவர்களின் டோக்கனை கீழே உள்ள உரைப் பகுதியில் உள்ளிட வேண்டும். இணைக்க உறுதிப்படுத்து என்பதைத் கிளிக் செய்யவும்.
-  exposedPortDescription: பிற சாதனங்களுக்கு நீங்கள் திறந்துவிட்ட போர்ட்
-  exposedPorts: முன்னனுப்பப்பட்ட போர்ட்கள்
-  gatheringIce: |
-    "உங்கள் நெட்வொர்க்கைப் பற்றிய போதுமான தகவலைச் சேகரிக்க ICE சேவையகத்திற்காக காத்திருக்கவும். உங்களுக்கு அவசரமாக இருந்து, போதுமான தகவல் இருந்தால், தற்போதைய SDP-ஐ முன்கூட்டியே மற்ற தரப்பினருக்கு வழங்கி, அடுத்து என்பதைத் கிளிக் செய்யலாம். <span class=\"v-chip v-chip--label v-size--small\" style=\"text-font: bold\" >உள்ளூர் டோக்கனை</span> உங்கள் இணைப்பாளருக்கு அனுப்பவும், அவர்கள் உங்கள் டோக்கனை <span class=\"v-chip v-chip--label v-size--small\" style=\"text-font: bold\"> இணைப்பில் சேர் </span> பிரிவில் உள்ளிட வேண்டும். <br> <span class=\"v-chip v-chip--label v-size--small\" style=\"text-font: bold\">உள்ளூர் டோக்கனை</span> உருவாக்க உங்கள் தகவல்களைச் சேகரிக்க ICE சேவையகத்திற்கு சிறிது நேரம் தேவைப்படலாம்.<br> ICE நிலை முடியும் வரை நீங்கள் காத்திருக்க வேண்டியதில்லை. கீழே உள்ள டோக்கன் மாறாமல் இருந்தால், அதை நகலெடுத்து உங்கள் இணைப்பாளருக்கு அனுப்பலாம்."
-  groupId: குழு ஐடி
-  illegalTokenDescription: தவறான டோக்கன், உங்கள் இணைப்பாளரின் டோக்கன் சரியானது என்பதை உறுதிப்படுத்தவும்
-  initiateConnection: இணைப்பைத் தொடங்கு
-  joinConnection: உங்கள் இணைப்பாளர் ஏற்கனவே இணைப்பைத் தொடங்கியிருந்தால், நீங்கள் இணைப்பில் சேர வேண்டும்.
-  joinManual: சேர்
-  joinOrCreateGroup: குழுவில் சேர்/குழுவை உருவாக்கு
-  joinOrCreateGroupHint: உங்கள் நண்பர்களிடமிருந்து குழு ஐடியைப் பெறவும் அல்லது ஒரு குழுவை உருவாக்கவும்
-  kernel: P2P கெர்னல்
-  kernelDescription: நேட்டிவ் WebRTC அல்லது node-datachannel இரண்டில் ஒன்றைப் பயன்படுத்தவும். உங்கள் P2P இணைப்பு எப்போதாவது லான்ச்சர் சாளரத்தை செயலிழக்கச் செய்யும்போது மட்டுமே இதை மாற்றவும்.
-  leaveGroup: குழுவை விட்டு வெளியேறு
-  localToken: உள்ளூர் டோக்கன்
-  manualConnect: கைமுறையாக இணைக்கவும்
-  name: LAN இல் மல்டிபிளேயர்
-  networkInfo: நெட்வொர்க் தகவல் (மாற்ற கிளிக் செய்யவும்)
-  next: அடுத்து
-  otherExposedPortDescription: '{user} முன்னனுப்பிய போர்ட்'
-  placeholder: LAN இல் Minecraft விளையாட மற்ற பயனர்களுடன் இணையுங்கள்!
-  previous: முந்தைய
-  receiveHint: மற்ற தரப்பினர் உங்கள் டோக்கனை உள்ளிட்டதும், உங்கள் இணைப்பு தானாகவே உருவாக்கப்படும். இப்போது நீங்கள் இந்த உரையாடல் சாளரத்தை மூடலாம்.
-  receiveRemoteTokenHint: உங்கள் இணைப்பாளரின் டோக்கனை இங்கே உள்ளிடவும்.
-  remoteToken: தொலைதூர டோக்கன்
-  routerInfo: ரூட்டர் தகவல்
-  sendTokenToRemote: தொலைதூரத்திற்கு டோக்கனை அனுப்பவும்
-  share: இன்ஸ்டன்ஸ் உள்ளமைவைப் பகிர்
-  sharing: கோப்புகள் பகிரப்படுகின்றன...
-  start: தொடங்கு
-  startNewP2PConnection: புதிய இணைப்பை உருவாக்கத் தொடங்கு பொத்தானைக் கிளிக் செய்யவும்
 myStuff: எனது பொருட்கள்
-natType:
-  blocked: தடுக்கப்பட்டது
-  fullCone: முழு கூம்பு (Full Cone)
-  openInternet: திறந்த இணையம்
-  restrictNat: கட்டுப்படுத்தப்பட்ட NAT
-  restrictPortNat: கட்டுப்படுத்தப்பட்ட போர்ட் NAT
-  symmetricNat: சமச்சீர் NAT
-  symmetricUDPFirewall: சமச்சீர் UDP ஃபயர்வால்
-  unknown: தெரியாதது
 neoForgedVersion:
   disable: NeoForged முடக்கு
   empty: NeoForged {version} ஐ ஆதரிக்கவில்லை
@@ -1264,23 +956,6 @@ optifineVersion:
   disable: Optifine முடக்கு
   empty: Optifine Minecraft {version} ஐ ஆதரிக்கவில்லை
 optional: விருப்பத்திற்குரியது
-peerConnectionState:
-  closed: மூடப்பட்டது
-  connected: இணைக்கப்பட்டது
-  connecting: இணைக்கப்படுகிறது
-  disconnected: துண்டிக்கப்பட்டது
-  failed: தோல்வியடைந்தது
-  name: இணைப்பு நிலை
-  new: புதிய
-peerGroupState:
-  closed: குழுவில் இல்லை
-  closing: மூடப்பட்டது
-  connected: குழுவில் இணைந்தது
-  connecting: இணைக்கப்படுகிறது
-peerIceGatheringState:
-  gathering: Ice சேவையகத்தைச் சேகரிக்கிறது
-peerSignalingState:
-  have-local-offer: இணைப்பாளரின் விளக்கத்திற்காக காத்திருக்கிறது
 presence:
   instance: '{instance} இன்ஸ்டன்ஸில் சும்மா உள்ளது'
   instanceSetting: 'இன்ஸ்டன்ஸ் அமைப்பைத் திருத்து: {instance}'
@@ -1309,58 +984,9 @@ resourceError:
   title: '{file} ஐப் படிக்க முடியவில்லை'
 blueprint:
   name: புளூபிரிண்ட் | புளூபிரிண்ட்கள்
-  count: '{count} புளூபிரிண்ட்கள்'
-  searchLocal: புளூபிரிண்ட்களைத் தேடு...
-  searchOnline: ஆன்லைனில் தேடு...
-  market: சந்தை
-  local: உள்ளூர்
-  provider: வழங்குநர்
-  import: இறக்குமதி
-  openFolder: கோப்புறையைத் திற
-  refresh: புதுப்பி
   empty: புளூபிரிண்ட்கள் எதுவும் கிடைக்கவில்லை. .litematic / .schem / .nbt கோப்பை இறக்குமதி செய்யவும் அல்லது சந்தையை உலாவவும்.
-  dropHint: இறக்குமதி செய்ய புளூபிரிண்ட் கோப்புகளை (.litematic / .schem / .nbt) இங்கே இழுத்து விடவும்.
   selectHint: புளூபிரிண்ட்டை முற்காண்பதற்கு அதைத் தேர்ந்தெடுக்கவும்.
-  blocks: '{count} தொகுதிகள்'
-  materials: பொருட்கள்
-  allNamespaces: அனைத்தும்
-  findMod: இந்த பெயர்வெளிக்கான மாடைக் கண்டுபிடி
-  compatible: இணக்கமானது
-  incompatible: விடுபட்ட மாட்கள்
-  missingNamespaces: 'விடுபட்ட மாட்கள்: {namespaces}'
-  delete: அழி
-  cancel: ரத்துசெய்
   install: நிறுவு
-  goTo: இணையதளம்
-  byAuthor: '{author} மூலம்'
-  noDescription: விளக்கம் ஏதும் வழங்கப்படவில்லை.
-  loadMore: மேலும் ஏற்றுக
-  cmsBrowseOnly: இந்த மூலம் உலாவுவதற்கு மட்டுமே; பதிவிறக்க இணையதளத்தைத் திறக்கவும்.
-  mixedSources: முடிவுகள் அனைத்து மூலங்களிலிருந்தும் கலக்கப்பட்டுள்ளன. சில உலாவுவதற்கு மட்டுமே — பதிவிறக்க அவற்றின் இணையதளத்தைத் திறக்கவும்.
-  formats:
-    structure: Vanilla கட்டமைப்பு
-  preview:
-    title: முப்பரிமாண முற்காட்சி (3D Preview)
-    loading: முற்காட்சி ஏற்றப்படுகிறது...
-    empty: காண்பிக்க இந்த புளூபிரிண்ட்டில் தொகுதிகள் எதுவும் இல்லை.
-    hint: '{count} தொகுதிகள் · {x}×{y}×{z}'
-    controls: 'WASD: நகர்வு · Space/Shift: மேலே/கீழே · இழுத்தல்: பார்வை · ஸ்க்ரோல்: பெரிதாக்குதல்'
-  convert:
-    title: வடிவத்தை மாற்று
-    hint: இந்த புளூபிரிண்ட்டை மற்றொரு வடிவத்திற்கு மாற்றவும். ஒரு புதிய கோப்பு உருவாக்கப்படும்.
-    target: இலக்கு வடிவம்
-    action: மாற்று
-  replace:
-    title: தொகுதிகளை மாற்று
-    simple: எளிய
-    precise: துல்லியமான
-    simpleHint: தற்போதுள்ள தொகுதி நிலை பண்புகளை வைத்துக்கொண்டு, தொகுதி ஐடி மூலம் மட்டுமே பொருத்தவும்.
-    preciseHint: முழு தொகுதி நிலையை (ஐடி + பண்புகள்) பொருத்தி அதை முழுமையாக மாற்றவும்.
-    from: இருந்து
-    to: வரை
-    addRule: விதியைச் சேர்
-    newFile: புதிய கோப்பாகச் சேமி
-    action: மாற்று
 resourcepack:
   compatible: '{version} உடன் இணக்கமான வடிவம் {format}'
   defaultDescription: Minecraft இன் இயல்புநிலை தோற்றம் மற்றும் உணர்வு
@@ -1488,141 +1114,25 @@ search:
 server:
   launch: சேவையகத்தைத் தொடங்கு
   stop: சேவையகத்தை நிறுத்து
-  acceptingMinecraftVersion: Minecraft பதிப்பை ஏற்றுக்கொள்கிறது
   addServer: சேவையகத்தைச் சேர்
   address: சேவையக முகவரி
   addressHint: எ.கா. mc.hypixel.net
   bindUpstream: அப்ஸ்ட்ரீமாக இணைக்கவும்
-  boundUpstream: அப்ஸ்ட்ரீம் சேவையகம் இணைக்கப்பட்டது
   boundUpstreamHint: இந்த நிகழ்வு இணைக்கப்பட்ட சேவையகத்தின் Minecraft பதிப்பைப் பின்தொடரும்.
-  creationHint: சேவையக முகவரியை நிரப்பி, சேவையகத்தை பிங் செய்யவும்
   editServer: சேவையகத்தைத் திருத்து
   emptyHint: இந்த நிகழ்வின் servers.dat-ல் சேவையகங்கள் எதுவும் இல்லை. தொடங்க ஒன்றைச் சேர்க்கவும்.
   entryCount: '{count} சேவையகம்'
-  expectedVersions: ஆதரிக்கப்படும் பதிப்புகள்
-  export: சேவையகத்தை ஏற்றுமதி செய்
-  exportNoFilesHint: சேவையக கோப்புகள் எதுவும் கிடைக்கவில்லை. சில கோப்புகளை உருவாக்க உள்ளூரில் ஒரு முறை சேவையகத்தை இயக்கலாம்.
-  exportOption: சேவையக ஏற்றுமதி விருப்பங்கள்
-  exportSSHAuthenticationFailed: அனைத்து அங்கீகார முறைகளும் தோல்வியடைந்தன. பயனர்பெயர்/கடவுச்சொல் அல்லது தனிப்பட்ட விசையைச் சரிபார்க்கவும்.
-  exportSSHOptions: SSH விருப்பங்கள்
-  exportSSHPrivateKeyPath: SSH தனியார் விசை பாதை
-  exportSSHRemotePath: தொலைதூர சேவையக பாதை
-  exportToFolder: கோப்புறைக்கு ஏற்றுமதி செய்
-  filterVersion: பதிலளித்த Minecraft பதிப்பை வடிகட்டவும்
-  host: ஹோஸ்ட்
-  hostHint: சேவையகத்தின் ஹோஸ்ட் (போர்ட்டுடன்)
-  hostRequired: சேவையக ஐபி முகவரியை உள்ளிடவும்
-  ipAddress: ஐபி முகவரி
   launchClient: அதற்குப் பதிலாக கிளையண்டைத் தொடங்கு
   launchPinned: பின்தொடரப்பட்டது
   launchTargetHint: இந்த நிகழ்வு நேரடியாக பின் செய்யப்பட்ட சேவையகத்துடன் இணைகிறது. கிளையண்டிற்கு மாறவா?
   maxPlayers: அதிகபட்ச வீரர்கள்
-  motd: சேவையகத்தின் MOTD
   nameHint: மல்டிபிளேயர் பட்டியலில் காட்டப்படும் பெயர்
-  nogui: சேவையக வரைகலை இடைமுகம் இல்லை (No Server Gui)
-  onlineMode: ஆன்லைன் முறை
   pin: சேவையகத்தைப் பின் செய்
   pinAfterSave: சேமித்த பிறகு இயல்புநிலை தொடக்க இலக்காக பின் செய்யவும்
-  ping: பிங் (Ping)
-  pings: பிங்குகள்
   pinnedHeader: 'பின் செய்யப்பட்டது: {name}'
-  players: வீரர்கள்
   port: போர்ட்
-  clearLog: பதிவை அழி
-  log: சேவையக பதிவு
-  logWaiting: வெளியீட்டிற்காக காத்திருக்கிறது...
-  remoteActionSuccess: Done.
-  remoteAdmin: தொலை சேவையக நிர்வாகம்
-  remoteAuthMethod: அங்கீகாரம்
-  remoteAuthPassword: கடவுச்சொல்
-  remoteAuthPrivateKey: தனியார் விசை
-  remoteBuildOfflinePackage: ஆஃப்லைன் தொகுப்பை உருவாக்கவும்
-  remoteConnected: இணைக்கப்பட்டது
-  remoteConnection: இணைப்பு
-  remoteDeployment: வரிசைப்படுத்தல்
-  remoteDeploy: வரிசைப்படுத்து
-  remoteDisk: Disk
-  remoteConfigFiles: கட்டமைப்பு கோப்புகள்
-  remoteExtraFiles: கூடுதல் கோப்புகள்
-  remoteForgetCredentials: சேமிக்கப்பட்ட விவரங்களை மறந்துவிடு
-  remoteInstallService: சேவையை நிறுவவும்
-  remoteLoad: ஏற்று
-  remoteLog: தொலை சேவையக பதிவு
-  remoteMemory: நினைவகம்
-  remoteMods: Mods
-  remoteNoWorldSelected: எந்த உலகமும் தேர்ந்தெடுக்கப்படவில்லை
-  remoteJavaRequired: தொலை லினக்ஸ் கணினியில் Java கிடைக்கவில்லை.
-  remoteLinuxRequired: SSH வழியாக லினக்ஸ் இலக்குகள் மட்டுமே ஆதரிக்கப்படுகின்றன.
-  remoteNotConfiguredHint: நிலை, சேவைக் கட்டுப்பாடு மற்றும் பதிவுகளை இயக்க மேலே உள்ள விவரங்களை நிரப்பவும்.
-  remotePathNotWritable: தொலை சேவையக அடைவு எழுதக்கூடியதாக இல்லை.
-  remotePathWritable: அடைவு எழுதக்கூடியது
-  remotePolicyInitialize: ஒரு முறை தொடங்கவும்
-  remotePolicyMirror: மிரர்
-  remotePolicyOverlay: மேலடுக்கு
-  remotePolicyPreserve: பாதுகாக்கவும்
-  remotePreview: மாற்றங்களை முன்னோட்டமிடுங்கள்
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: விவரங்களை நினைவில் கொள்க
-  remoteReconcileReady: இலக்கு இந்த நிகழ்வோடு பொருந்துகிறது மற்றும் கன்சோல் இணைக்கப்பட்டுள்ளது.
-  remoteRestartService: சேவையை மறுதொடக்கம் செய்
-  remoteSavedCredentialsHint: சேமிக்கப்பட்ட விவரங்கள் பயன்பாட்டில் உள்ளன — மாற்ற விரும்பினால் தட்டச்சு செய்க.
-  remoteService: systemd சேவை
-  remoteServiceActive: செயலில் உள்ளது
-  remoteServerInstalled: சேவையக கோப்புகள் நிறுவப்பட்டன
-  remoteServiceName: சேவையின் பெயர்
-  remoteServiceNameHint: systemd --user அலகு பெயர், எ.கா. mc-server
-  remoteSelectedFiles: '{count} சேவையக கோப்புகள் தேர்ந்தெடுக்கப்பட்டன'
-  remoteSelectFiles: கோப்புகளைத் தேர்ந்தெடு
-  remoteStartCommand: தொடக்க கட்டளை
-  remoteStartCommandHint: எ.கா. java -jar server.jar nogui
-  remoteStartService: Start
-  remoteStatus: நிலை
-  remoteSystemdRequired: systemd பயனர் சேவைகள் தொலை கணினியில் கிடைக்கவில்லை.
-  remoteTargetName: இலக்கு பெயர்
-  remoteStopService: Stop
-  remoteStopWatchLog: கண்காணிப்பதை நிறுத்து
-  remoteTestConnection: இணைப்பைச் சோதிக்கவும்
-  remoteTestConnectionSuccess: இணைப்பு வெற்றிகரமாக முடிந்தது.
-  remoteUninstallConfirmMessage: இது systemd அலகை நீக்கும். சேவையக கோப்புகள் பாதிக்கப்படாது.
-  remoteUninstallService: சேவையை நீக்கு
-  remoteRunInstall: நிறுவவும் அல்லது சரிசெய்யவும்
-  remoteWatchLog: நேரலை பதிவைப் பார்க்கவும்
-  remoteWorldAlways: ஒவ்வொரு முறையும் மாற்றவும்
-  remoteWorldDeployment: நிகழ்வு உலக வரிசைப்படுத்தல்
-  remoteWorldDeploymentHint: அனுமதிக்கப்படாவிட்டால் வழக்கமான ஒத்திசைவு உலக தரவை பதிவேற்றாது.
-  remoteWorldFirstInstall: இலக்கில் உலகம் இல்லையென்றால் மட்டுமே தொடங்கவும்
-  remoteWorldNever: ஒருபோதும் உலகத்தைப் பதிவேற்ற வேண்டாம்
-  remoteWorldPresent: இலக்கு உலகம்
-  remoteWorld: World
-  remoteWorldWillDeploy: தேர்ந்தெடுக்கப்பட்ட உலகம் இந்த ஒத்திசைவில் பதிவேற்றப்படும்.
   serverName: சேவையகத்தின் பெயர்
-  serviceInstall: சேவையை நிறுவு
-  serviceManagedLaunch: சேவை நிர்வகிக்கும் தொடக்கம்
-  serviceManager: சேவை மேலாளர்
-  serviceName: சேவையின் பெயர்
-  serviceNameHint: கணினி சேவையின் பெயர்
-  serviceNotInstalled: சேவை நிறுவப்படவில்லை
-  serviceStartCommand: சேவை தொடக்க கட்டளை
-  serviceSystemd: systemd --user
-  serviceWindows: Windows சேவை
-  serviceWindowsCommandHint: Windows சேவை கட்டளை
   serversListTitle: சேவையகங்கள்
-  target: இலக்கு
-  targetLocal: localhost
-  targetLocalHint: இந்த கணினியில் இயக்கவும்
-  targetRemote: தொலை சேவையகம் (SSH)
-  targetRemoteHint: SSH வழியாக தொலை லினக்ஸ் சேவையகத்தை நிர்வகிக்கவும்
   unbindUpstream: இணைப்பை நீக்கு
   unknown: தெரியாத சேவையகம்
   unknownDescription: தெரியாத சேவையகம். புதுப்பிக்கவும்
@@ -1633,9 +1143,6 @@ server:
   upstreamUpdateAvailable: சேவையகம் இப்போது Minecraft {version}-ஐ இயக்குகிறது. பயன்படுத்த கிளிக் செய்க.
   upstreamUpdateHint: பரிந்துரைக்கப்பட்ட Minecraft பதிப்பை இந்த நிகழ்வுக்குப் பயன்படுத்துகிறது.
   useAsUpstreamHint: சேவையகம் தெரிவிக்கும் Minecraft பதிப்பை இந்த நிகழ்வு பின்தொடரும்.
-  version: சேவையகத்திற்குத் தேவையான பதிப்பு
-  versionHint: பிங் செய்ய வேண்டிய Minecraft பதிப்பு
-  worldPreserve: இலக்கு உலகத்தைப் பாதுகாக்கவும்
 serverStatus:
   nohost: §4ஹோஸ்டைக் கண்டறிய முடியவில்லை!
   ping: பிங் செய்யப்படுகிறது...
@@ -1649,18 +1156,8 @@ setting:
   aboutLicense: எம்ஐடி உரிமம் (MIT LICENSE)
   aboutLicenseInfo: விண்டோஸில் இலவச குறியீடு கையொப்பமிடுதல் SignPath.io வழங்குகிறது, சான்றிதழ் SignPath அறக்கட்டளையால் வழங்கப்படுகிறது
   aboutSponsors: 😇 ஸ்பான்சர்கள் 😇
-  advancedJavaOptions: மேம்பட்ட ஜாவா விருப்பங்கள்
   advancedSettings: மேம்பட்ட அமைப்புகள்
   advancedSettingsHint: ஆபத்தான பகுதி - லான்ச்சர் தரவை மீட்டமைக்கவும் அல்லது நிர்வகிக்கவும்
-  aiAgentApiKey: AI ஏஜென்ட் API விசை
-  aiAgentApiKeyDescription: OpenAI அல்லது Claude-க்கான கேட்வே போன்ற OpenAI-இணக்கமான வழங்குநரை கட்டமைக்கவும். விசை இந்த சாதனத்தில் உள்ளூரில் சேமிக்கப்படும்.
-  aiAgentApiKeyPlaceholder: OpenAI அல்லது Claude வழங்குநரின் API விசை
-  aiAgentEndpoint: AI ஏஜென்ட் எண்ட்பாயிண்ட்
-  aiAgentEndpointDescription: அரட்டை நிறைவு எண்ட்பாயிண்ட் URL.
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 அல்லது claude-sonnet-4-5
-  aiAgentModel: AI ஏஜென்ட் மாதிரி
-  aiAgentModelDescription: அரட்டை நிறைவு கோரிக்கைகளில் அனுப்ப வேண்டிய மாதிரியின் பெயர்.
   apiSets:
     auto: தானியங்கி (நெட்வொர்க் மூலம் தீர்மானிக்கவும்)
     official: அதிகாரப்பூர்வ (Mojang)
@@ -1727,8 +1224,6 @@ setting:
   devModeLabel: தேவ்
   developerMode: டெவலப்பர் பயன்முறை
   developerModeDescription: டெவலப்பர் பயன்முறை என்பது உங்கள் சொந்த மோட்களைச் சோதிப்பதற்கானது
-  disableTelemetry: டெலிமெட்ரியை முடக்கு
-  disableTelemetryDescription: XMCL விளையாட்டு தொடக்கம் மற்றும் பயனர் உள்நுழைவு நிகழ்வுகளைச் சேகரிக்கும்.
   enableDedicatedGPUOptimization: பிரத்யேக GPU-வை ஒதுக்கு
   enableDedicatedGPUOptimizationDescription: இந்த விருப்பம் மைன்கிராஃப்ட் செயல்முறைக்கு பிரத்யேக GPU-வை ஒதுக்கும்.
   enableDiscord: டிஸ்கார்ட் பிரசன்ஸை இயக்கு
@@ -1738,8 +1233,6 @@ setting:
   exportSettingsHint: உங்கள் தற்போதைய அமைப்புகளை ஒரு கோப்பில் சேமிக்கவும்
   general: பொதுவானது
   githubRelease: கிட்ஹப் வெளியீடு
-  globalJava: விருப்பமான Java
-  globalJavaHint: தானியங்கு பயன்முறையில் இந்த Java முதலில் முயற்சிக்கப்படும், விளையாட்டு பதிப்புடன் பொருந்தாதபோது மட்டுமே தானியங்கு கண்டறிதலுக்கு மாறும்.
   globalSetting: உலகளாவிய நிகழ்வு அமைப்பு
   globalSettingHint: நிகழ்வு இயல்பாக இந்த அமைப்புகளை பயன்படுத்தும்.
   importSettings: அமைப்புகளை இறக்குமதி செய்
@@ -1767,7 +1260,6 @@ setting:
   maxSockets: ஒரு ஹோஸ்ட்டிற்கு
   maxSocketsDescription: ஒரு ஹோஸ்ட்டிற்கு அல்லது அனைத்து ஹோஸ்ட்களுக்கும் அனுமதிக்கப்படும் அதிகபட்ச சாக்கெட்டுகளின் எண்ணிக்கையைக் கட்டுப்படுத்துங்கள். 0 என்பது வரம்பு இல்லை என்பதைக் குறிக்கிறது.
   maxSocketsTitle: அதிகபட்ச HTTP சாக்கெட்டுகள்
-  memoryAssignment: நினைவக ஒதுக்கீடு
   migrateFromOther: பிற துவக்கியில் இருந்து இறக்குமதி செய்
   minecraftOptions: மைன்கிராஃப்ட் விருப்பங்கள்
   name: உலகளாவிய அமைப்பு | உலகளாவிய அமைப்புகள்
@@ -1782,11 +1274,6 @@ setting:
     repulse: விரட்டு
   particleModeDescription: துகள் கிளிக் நடப்பதைத் தேர்ந்தெடுக்கவும்
   quickLaunchSettings: விரைவுத் தொடக்கம்
-  replaceNative: சொந்த நூலகங்களை மாற்றவும்
-  replaceNativeDescription: அமைப்புகளின் கட்டமைப்பிற்கு ஏற்ப சொந்த நூலகங்களை மாற்றவும்.
-  replaceNatives:
-    all: அனைத்தும்
-    legacy: மரபுப் பதிப்பு மட்டும்
   resetAllSettings: அனைத்து அமைப்புகளையும் மீட்டமை
   resetAllSettingsConfirmMessage: இது அனைத்து அமைப்புகளையும், கணக்குகளையும், நிகழ்வுகளையும், குழுக்களையும் மற்றும் தற்காலிக சேமிப்புத் தரவையும் நிரந்தரமாக நீக்கும். இந்தச் செயலைத் திரும்பப் பெற முடியாது. நிச்சயமாகத் தொடர வேண்டுமா?
   resetAllSettingsConfirmTitle: அனைத்து அமைப்புகளையும் மீட்டமைக்கவா?
@@ -2002,17 +1489,6 @@ theme:
   selectVideo: வீடியோவைத் தேர்ந்தெடு
   title: எக்ஸ் மைன்கிராஃப்ட் லாஞ்சர்
 title: எக்ஸ் மைன்கிராஃப்ட் லாஞ்சர்
-transportType:
-  host: ஹோஸ்ட் வேட்பாளர்
-  prflx: சகன் அனுப்புப் வேட்பாளர்
-  relay: இடைத்தாங்கி வேட்பாளர்
-  srflx: சேவையக அனுப்புப் வேட்பாளர்
-turnRegion:
-  fr: பிரான்ஸ்
-  guangzhou: குவாங்சோ, சீனா
-  hk: ஹாங்காங்
-  liaoning: லியோனிங், சீனா
-  po: போலந்து
 tutorial:
   feedbackDescription: ஏதேனும் சிக்கல்களைச் சந்தித்தால், கருத்து அனுப்ப இந்த பொத்தானைக் கிளிக் செய்யவும்!
   hideNewsHeaderDescription: இடதுபுறத்தில் நீங்கள் செய்தி காட்சியைக் காணலாம். இந்த பொத்தானைக் கிளிக் செய்வதன் மூலம் இந்தக் காட்சியை மறைக்க முடியும்.
@@ -2021,10 +1497,6 @@ tutorial:
     appearanceThemeTitle: நிகழ்வின் தோற்றம்
     iconDescription: ஐகானை மாற்ற கிளிக் செய்யவும்.
     iconTitle: நிகழ்வு ஐகான்
-    javaDescription: Java பதிப்பைத் தேர்வுசெய்யவும் அல்லது மாற்றவும்.
-    javaImportDescription: உள்ளூர் சேமிப்பகத்திலிருந்து Java-வை இறக்குமதி செய்யவும்.
-    javaImportTitle: Java இறக்குமதி செய்
-    javaTitle: Java பட்டியல்
     modpackExportDescription: நிகழ்வை பகிரக்கூடிய மோட்பேக் கோப்பாக தொகுக்கவும்.
     modpackExportTitle: மோட்பேக்கை ஏற்றுமதி செய்
     modpackFilesDescription: கிளையண்ட் மற்றும் சேவையகத்திற்காக தொகுக்க வேண்டிய கோப்புகளைத் தேர்ந்தெடுக்கவும்.
@@ -2078,15 +1550,6 @@ tutorial:
     profileDescription: கணக்குகளுக்கு இடையே மாறவும் உள்நுழைவு விவரங்களை நிர்வகிக்கவும்.
     skinTitle: தோல் மற்றும் ஆடை தனிப்பயனாக்கம்
     skinDescription: 3D-யில் உங்கள் கதாபாத்திரத்தைப் பார்க்கவும், தோல்களை மாற்றவும்.
-  multiplayer:
-    railTitle: பிணையம் மற்றும் வழிசெலுத்தல்
-    railDescription: NAT வகை, பிணைய நிலையை சரிபார்த்து இணைப்புகளுக்கு இடையே மாறவும்.
-    groupTitle: அறையில் சேரவும் அல்லது உருவாக்கவும்
-    groupDescription: நண்பர்களுடன் சேர அறை குறியீட்டை உள்ளிடவும் அல்லது சொந்த அறையை உருவாக்கவும்.
-    joinDescription: அறையில் சேர அல்லது புதியதை உருவாக்க கிளிக் செய்க.
-    contentTitle: இணைக்கப்பட்ட உறுப்பினர்கள்
-    contentDescription: உறுப்பினர்களை நிர்வகிக்கவும், தாமதத்தைக் கண்காணிக்கவும் மற்றும் விளையாட்டுகளைப் பகிரவும்.
-    manualDescription: SDP பரிமாற்றத்தைப் பயன்படுத்தி நண்பர்களுடன் நேரடி P2P இணைப்பு.
   resourcepack:
     searchTitle: ரிசோர்ஸ் பேக்குகளைத் தேடுங்கள்
     searchDescription: Modrinth, CurseForge அல்லது உள்ளூர் கோப்புகளிலிருந்து தேடுங்கள்.
@@ -2137,10 +1600,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: தீர்க்கப்படாத கோப்புகள்
   via: '{source} வழியாக'
-upstream:
-  downgrade: தரம் குறைத்தல்
-  onlyShowCurrentVersion: தற்போதைய மைன்கிராஃப்ட் பதிப்பை மட்டும் காட்டு
-  update: புதுப்பி
 user:
   accessToken: அணுகல் டோக்கன்
   authMode: அங்கீகார சேவை

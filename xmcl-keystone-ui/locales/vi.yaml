@@ -1,97 +1,17 @@
-AppAddInstanceDialog:
-  choiceTitle: Đã phát hiện nhiều hồ sơ khởi chạy. Vui lòng chọn một hồ sơ để nhập.
-  createTitle: Tạo game
-  serverTitle: Nhập địa chỉ máy chủ của bạn
-AppShareInstanceDialog:
-  editScopeDescription: Chọn các tệp mà người chơi khác có thể tải sau khi phát hiện trò chơi đang chạy này trên mạng LAN.
-  editScopeTitle: Chỉnh sửa phạm vi chia sẻ
-  instanceToShare: Trò chơi đang chạy
-  alterDownloadDescription: Nếu bạn không muốn làm xáo trộn phiên bản hiện tại. Bạn cũng có thể tạo một phiên bản mới từ cấu hình của bạn bè. Nhấp vào nút bên dưới để tạo phiên bản.
-  baseInfo: Thiết lập cơ bản
-  description: Sau khi bạn chia sẻ hồ sơ, các thiết bị khác có thể tải các tệp này xuống thông qua PC của bạn.
-  downloadDescription: Vui lòng xác minh các tệp mà bạn bè đã cung cấp cho bạn. Chọn tệp bạn muốn tải xuống. Tệp sẽ được đặt vào phiên bản hiện tại {name}.
-  downloadNotifyTitle: Tải xuống phiên bản từ {user}
-  downloadTitle: Tải xuống các tệp từ các máy khác
-  filesToDownload: Chọn tệp cần tải xuống
-  filesToShare: Chọn tệp cần chia sẻ
-  share: Chia sẻ
-  shareTitle: Chia sẻ tệp game cho người chơi khác
 BaseSettingGeneral:
   title: Chung
-HomeJavaIssueDialog:
-  incompatibleJava: Java không tương thích
-  incompatibleJavaHint: Phiên bản Java hiện tại có thể không tương thích với Minecraft đã chọn!
-  missingJava: Thiếu Java
-  missingJavaHint: 'Trình khởi chạy không thể phát hiện bất kỳ phiên bản Java nào trên máy tính của bạn. Bạn có thể:'
-  optionSwitch:
-    name: Chuyển sang {version}
 HomeLaunchMultiInstanceDialog:
   confirm: Có, Khởi chạy
   description: Bạn đang khởi chạy nhiều phiên bản Minecraft cùng lúc. Bạn có chắc chắn không?
   title: Nhiều phiên bản
 SettingMigrationDialog:
   selectRootDirectory: Chọn thư mục gốc
-agent:
-  accessRequiredHint: Đăng ký Zenith Launcher để sử dụng Trợ lý tích hợp hoặc cấu hình nhà cung cấp AI của riêng bạn trong phần cài đặt.
-  subscribeXmcl: Đăng ký XMCL
-  callingTool: đang gọi {name}…
-  disabledPlaceholder: Trợ lý đã bị vô hiệu hóa
-  emptyHint: Yêu cầu trợ lý kiểm tra phiên bản của bạn, bật/tắt mod, đọc nhật ký hoạt động hoặc chẩn đoán sự cố crash.
-  inputPlaceholder: Hỏi trợ lý… (Nhấn Enter để gửi, Shift+Enter để xuống dòng)
-  notConfiguredHint: Đặt khóa API, mô hình và endpoint tương thích OpenAI trong Cài đặt → Chung → Trợ lý AI. Ví dụ, dùng OpenAI hoặc gateway tương thích với Claude.
-  notConfiguredTitle: Trợ lý chưa được cấu hình
-  openSettings: Mở cài đặt
-  reset: Đặt lại cuộc hội thoại
-  setupGuide: Hướng dẫn thiết lập
-  statusDisabled: Đã vô hiệu hóa — thiếu khóa API
-  statusReady: Sẵn sàng
-  statusWorking: Đang xử lý…
-  suggestion1: Nâng cấp phiên bản Minecraft của hồ sơ này và cập nhật các mod tương thích
-  suggestion2: Các mod của tôi đang bị crash — hãy tìm nguyên nhân và chỉ tôi cách khắc phục
-  suggestion3: 'Tạo một modpack: tìm các mod có tính năng tôi muốn và cài đặt chúng vào phiên bản này'
-  thinking: đang suy nghĩ…
-  title: Trợ lý Zenith Launcher
-  toggleHint: để bật/tắt
 ago:
   day: '{duration} ngày trước | {duration} ngày trước'
   hour: '{duration} giờ trước | {duration} giờ trước'
   minute: '{duration} phút trước | {duration} phút trước'
   second: '{duration} giây trước | {duration} giây trước'
-askAICrash:
-  agentNotConfigured: Thêm nhà cung cấp AI và khóa API trong Cài đặt để trợ lý tích hợp của trình khởi chạy chẩn đoán và khắc phục sự cố này cho bạn.
-  askAgent: Chẩn đoán bằng trợ lý AI tích hợp
-  copyPrompt: Sao chép gợi ý để hỏi AI
-  description: Để AI giúp bạn hiểu lỗi crash game! Làm theo hướng dẫn dưới đây để hỏi AI về lỗi crash game này!
-  orExternal: hoặc sử dụng AI bên ngoài
-  selectPlatform: Mở một nền tảng AI và dán gợi ý bạn vừa sao chép.
-  setupAgent: Thiết lập trợ lý AI
 authProfileAddedNotification: Đã thêm hồ sơ xác thực {name}
-bedrock:
-  description: Minecraft Bedrock Edition được cài đặt và khởi chạy thông qua Microsoft Store. Bạn cần có bản quyền Bedrock trên tài khoản Microsoft của mình.
-  install: Tải từ Microsoft Store
-  installFailed: Không thể mở Microsoft Store
-  installed: 'Đã cài đặt: {version}'
-  launchHint: Sử dụng nút Khởi chạy để bắt đầu Bedrock Edition.
-  installBedrockVersion: Đang tải xuống Bedrock {version}
-  licenseRequired: Đăng nhập bằng tài khoản Microsoft có sở hữu Minecraft để cài đặt và chơi Bedrock Edition.
-  refresh: Làm mới
-  versionsTitle: Quản lý phiên bản
-  versionsHint: Tải xuống nhiều phiên bản Bedrock từ máy chủ của Microsoft và chuyển đổi giữa chúng. Chỉ có một phiên bản có thể đăng ký với Windows tại một thời điểm, vì vậy việc chơi một phiên bản sẽ đăng ký lại phiên bản đó.
-  versionsError: Không tải được danh sách phiên bản. Kiểm tra mạng của bạn và thử lại.
-  channel: Kênh
-  channelRelease: Chính thức
-  channelBeta: Thử nghiệm (Beta)
-  channelPreview: Bản xem trước (Preview)
-  active: Đang hoạt động
-  play: Chơi
-  download: Tải xuống
-  installedTag: Đã cài đặt
-  developerModeRequired: Đăng ký phiên bản đã tải xuống yêu cầu Chế độ nhà phát triển của Windows. Kích hoạt chế độ này yêu cầu quyền quản trị viên.
-  enableDeveloperMode: Bật Chế độ nhà phát triển
-  enableDeveloperModeFailed: Không thể bật Chế độ nhà phát triển
-  downloadFailed: Không tải được Bedrock {version}
-  launchFailed: Không thể khởi chạy phiên bản Bedrock này
-  removeFailed: Không thể xóa Bedrock {version}
 backup:
   title: 'Sao lưu & Khôi phục'
   description: Sao lưu và khôi phục cài đặt, bộ sưu tập, giao diện và các phiên bản trò chơi của bạn
@@ -324,13 +244,9 @@ diagnosis:
   corruptedVersionJar:
     message: Nhấp để cài đặt phiên bản này
     name: Tệp jar phiên bản bị hỏng đối với Minecraft %{version}.
-  incompatibleJava:
-    name: Phiên bản Java {javaVersion} không phù hợp với {version}!
   instanceFiles:
     description: Cài đặt phiên bản bao gồm {counts} tệp.
     title: Cài đặt phiên bản chưa hoàn tất
-  invalidJava:
-    name: Vị trí Java không hợp lệ.
   missingJava:
     message: Nhấp để giải quyết vấn đề này
     name: Không thể tìm thấy Java để chạy Minecraft!
@@ -366,11 +282,6 @@ duration:
   hour: '{duration} giờ | {duration} giờ'
   minute: '{duration} phút | {duration} phút'
   second: '{duration} giây | {duration} giây'
-env:
-  select:
-    all: Chọn tất cả
-    fit: Chọn phù hợp
-    none: Bỏ chọn tất cả
 errors:
   bedrockUnsupportedPlatform: Minecraft Bedrock Edition chỉ được hỗ trợ trên nền tảng Windows.
   bedrockNotInstalled: Minecraft Bedrock Edition chưa được cài đặt.
@@ -406,8 +317,6 @@ errors:
     title: Không thể ghi vào thư mục trình khởi chạy
   NotFoundError: 404 Không tìm thấy
   SocketError: Lỗi socket máy chủ
-eula:
-  body: Bằng cách tích vào hộp kiểm, bạn đồng ý với {eula} của Minecraft.
 exception:
   http: Yêu cầu HTTP tới {url} thất bại. Mã trạng thái {statusCode}. {code}. Vui lòng thử lại hoặc kiểm tra mạng của bạn. Nếu lỗi này vẫn tiếp diễn, vui lòng gửi báo cáo cho nhóm phát triển.
 exportModpack:
@@ -490,21 +399,6 @@ gameType:
   survival: Chế độ sinh tồn
 help: Trợ giúp
 home: Trang chủ
-importModpack:
-  fromFileSubtitle: Chọn tệp .zip hoặc .mrpack
-  fromUrl: Từ liên kết / URL...
-  fromUrlSubtitle: Cài đặt modpack từ URL
-  fromUrlDescription: 'Nhập hoặc dán URL của modpack:'
-  invalidUrl: Vui lòng nhập URL hợp lệ (http:// hoặc https://)
-  selectVersion: Chọn phiên bản modpack
-  selectVersionDescription: 'Chọn phiên bản của {name} để cài đặt:'
-  pmcProtected: Planet Minecraft được Cloudflare bảo vệ. Vui lòng sao chép liên kết tải trực tiếp hoặc liên kết dự phòng từ trang đó.
-  netdiskTitle: Tải từ ổ đĩa đám mây
-  netdiskDescription: Phiên bản modpack này được lưu trên ổ đĩa đám mây bên ngoài. Nhấn bên dưới để mở trang tải xuống trong trình duyệt, sau đó kéo và thả tệp .zip hoặc .mrpack đã tải vào Zenith Launcher.
-  openNetdisk: Mở ổ đĩa đám mây
-  netdiskOpened: Liên kết ổ đĩa đám mây đã được mở trong trình duyệt và sao chép vào bộ nhớ tạm.
-  noReleasesFound: Không tìm thấy bản phát hành modpack .mrpack hoặc .zip trong kho lưu trữ này.
-  name: Nhập Modpack
 installAssets:
   asset: Cài đặt {count} tài nguyên
   assetIndex: Kiểm tra tệp chỉ mục tài nguyên
@@ -573,12 +467,9 @@ instance:
   iconUrl: URL biểu tượng
   installModpack: Cập nhật phiên bản từ modpack
   lastPlayed: Chơi lần cuối
-  launchArguments: Xem trước đối số khởi chạy
   launchServer: Khởi chạy máy chủ nội bộ (localhost)
   linkFileDesc: Thao tác này sẽ ghi đè tệp cục bộ {file} bằng tệp chung {file}. Bạn có chắc chắn muốn liên kết không?
   linkFileTitle: Bạn có chắc chắn muốn liên kết {file} không?
-  mcOptions: Tùy chọn Minecraft
-  mcOptionsHint: Các đối số khởi chạy Minecraft bổ sung
   name: Tên hồ sơ
   nameHint: Tên của modpack
   nameInvalidChars: 'Tên không được chứa các ký tự này: < > : " / \\ | ? *'
@@ -591,10 +482,6 @@ instance:
   openCrashReportFolder: Mở thư mục báo cáo sự cố (Crash Report)
   openLogFolder: Mở thư mục nhật ký (Log)
   playtime: Thời gian chơi
-  preExecCommand: Lệnh thực thi trước (Pre-Execute)
-  preExecCommandHint: Lệnh cần thực thi trước khi khởi chạy Minecraft
-  prependCommand: Lệnh thêm vào trước (Prepend)
-  prependCommandHint: Thao tác này sẽ thêm lệnh này vào trước tất cả các lệnh khởi chạy
   requireName: Tên là bắt buộc
   resolution: Độ phân giải
   resolutionPreset: Độ phân giải cài sẵn
@@ -605,10 +492,6 @@ instance:
   useSharedOptionsDesc: Liên kết options.txt với một tệp chia sẻ giữa các phiên bản
   useSharedServersList: Sử dụng danh sách máy chủ chia sẻ
   useSharedServersListDesc: Liên kết servers.dat với một tệp chia sẻ giữa các phiên bản
-  vmOptions: Đối số JVM (JVM Options)
-  vmOptionsHint: Các đối số bổ sung để truyền vào JVM
-  vmVar: Biến môi trường
-  vmVarHint: Nhấp nút + để thêm biến môi trường
   width: Chiều rộng
 instanceAge:
   older: Cũ hơn
@@ -645,9 +528,6 @@ instanceSetting:
   showLogHint: Thao tác này sẽ hiển thị một cửa sổ để truyền nhật ký Minecraft sau khi game bắt đầu
   syncGameLanguage: Đồng bộ hóa ngôn ngữ trò chơi
   syncGameLanguageDescription: Tự động đồng bộ hóa ngôn ngữ của Minecraft với ngôn ngữ trình khởi chạy khi khởi động
-instanceTemplate:
-  ftb: Đây là một modpack FTB
-  preview: Xem trước Modpack
 instanceUpdate:
   basic: Cập nhật cài đặt
   files: Cập nhật tệp
@@ -665,41 +545,17 @@ instances:
   addPrismDescription: Nhập phiên bản PrismLauncher hiện có.
   addVanilla: Tạo từ Minecraft vanilla
   addVanillaDescription: Nhập từ thư mục .minecraft thông thường. Thao tác này sẽ sao chép hồ sơ game gốc sang Zenith Launcher.
-  edition: Phiên bản
-  editionJava: Phiên bản Java
   editionBedrock: Phiên bản Bedrock
   editionBedrockHint: Phiên bản Bedrock được khởi chạy thông qua ứng dụng Microsoft Store. Bạn cần có bản quyền Bedrock. Mod, gói tài nguyên và các tính năng chỉ dành cho Java khác sẽ không khả dụng.
   editionBedrockWindowsOnly: Phiên bản Bedrock chỉ được hỗ trợ trên Windows.
   fix: Sửa chữa
   folder: Thư mục
   folderSetting: Cài đặt thư mục
-  importFolderDescription: Nhập Minecraft vào trình khởi chạy
-  loadingFiles: Đang tải các tệp Modpack
 items:
   count: '{count} mục'
   total: Tổng cộng {total}
 java:
-  allocatedLong: Sử dụng Java mặc định của hệ thống
-  allocatedShort: Tự động phân bổ
-  allocation: Được phân bổ
-  autoHint: Bộ nhớ tối thiểu tăng theo số lượng mod đã cài đặt; tối đa sử dụng bộ nhớ hệ thống khả dụng.
-  change: Thay đổi
-  importFromFile: Nhập Java từ tệp
-  invalid: Vị trí Java không hợp lệ
-  location: Vị trí Java
-  locationHint: Chưa chọn Java — sử dụng mặc định hệ thống
-  maxMemory: Bộ nhớ tối đa
-  memory: Bộ nhớ Java
   memoryAuto: Tự động
-  memoryManual: Thủ công
-  memoryUnassigned: Hủy phân bổ
-  minMemory: Bộ nhớ tối thiểu
-  name: Java
-  noMemory: Không giới hạn sử dụng bộ nhớ
-  openFolder: Mở thư mục Java
-  presets: Thiết lập sẵn
-  refresh: Làm mới Java cục bộ
-  systemMemory: 'Bộ nhớ hệ thống còn trống: {free} / {total}'
 labyMod:
   disable: Vô hiệu hóa LabyMod
   empty: LabyMod không hỗ trợ phiên bản Minecraft hiện tại
@@ -767,8 +623,6 @@ localVersion:
   auto: Tự động tính toán
   empty: Chưa cài đặt phiên bản nào
   hint: Khởi chạy trực tiếp một phiên bản cục bộ cụ thể
-  reinstallDescription: If bạn nghĩ rằng việc cài đặt phiên bản này có vấn đề, bạn có thể thử cài đặt lại.
-  reinstallTitle: Cài đặt lại {version}
   title: Phiên bản cục bộ | Các phiên bản cục bộ
 logLevel:
   error: Lỗi
@@ -832,36 +686,6 @@ me:
   recentPlay: Chơi gần đây
 migrateMinecraft:
   name: Di chuyển tệp Minecraft
-minecraftFriends:
-  accept: Chấp nhận
-  add: Thêm bạn bè
-  addPlaceholder: Tên người dùng Minecraft
-  addedRelative: Đã thêm {time}
-  errors:
-    cannotAddSelf: Bạn không thể gửi yêu cầu kết bạn cho chính mình.
-    duplicate: Người chơi đó đã có trong danh sách của bạn.
-    generic: Đã xảy ra lỗi. Vui lòng thử lại.
-    inviteRejected: Người chơi đó chưa bật tính năng kết bạn hoặc không nhận lời mời.
-    tokenExpired: Phiên làm việc Microsoft của bạn đã hết hạn. Vui lòng đăng nhập lại.
-    unknownProfile: Chúng tôi không thể tìm thấy người chơi có tên đó.
-  expiresRelative: Hết hạn {time}
-  friends: Bạn bè
-  heroEmptyHint: Thêm một người chơi Minecraft bằng tên người dùng ở trên để gửi yêu cầu kết bạn.
-  heroEmptyTitle: Danh sách bạn bè trống
-  incoming: Yêu cầu đến
-  incomingHint: 1 yêu cầu đến | {count} yêu cầu đến
-  notifyAdded: Yêu cầu kết bạn đã gửi tới {name}
-  outgoing: Yêu cầu đi
-  privacy:
-    acceptInvites: Nhận lời mời kết bạn
-    acceptInvitesHint: Khi tắt, người chơi khác không thể gửi yêu cầu kết bạn cho bạn.
-    friendsEnabled: Đã bật danh sách bạn bè
-  reconnectAction: Kết nối lại
-  requiresMicrosoft: Đăng nhập bằng tài khoản Microsoft để sử dụng tính năng bạn bè.
-  scopedTo: Đăng nhập dưới tên {name}
-  send: Gửi
-  title: Bạn bè Minecraft
-  unsupported: Bạn bè chỉ khả dụng đối với tài khoản Microsoft.
 migrationWindow:
   title: Di chuyển dữ liệu
   preparing: Đang chuẩn bị di chuyển…
@@ -878,25 +702,19 @@ minecraftVersion:
   showAlpha: Hiển thị Snapshot
   snapshot: Bản thử nghiệm
 mod:
-  collapseAllGroups: Thu gọn tất cả các nhóm
   acceptVersion: Chấp nhận {version}
   applyGroupRules: Áp dụng các quy tắc nhóm đã lưu
   compatible: Mod tương thích.
   createGroup: Tạo nhóm
   currentVersion: Hiện tại {current}
   denseView: Chế độ xem gọn
-  description: Mô tả
   disableAll: Vô hiệu hóa tất cả
-  dropHint: Thả tệp .jar/.litemod của mod vào đây để nhập.
   duplicatedDetected: Phát hiện {count} mod bị trùng lặp
   duplicatedDetectedDescription: Tìm thấy các mod có cùng mod ID nhưng khác tệp. Điều này có thể gây crash Minecraft. Vui lòng chọn tệp bạn muốn giữ lại.
   enableAll: Bật tất cả
   enabled: Đã bật {count} Mod
   filter: Lọc Mod
   group: Nhóm lại
-  groupInstalled: Nhóm các mod đã cài đặt
-  hideInstalled: Ẩn các mod đã cài đặt
-  installedFilterOff: Hiển thị tất cả các mod
   groupName: Tên nhóm
   groupNameRequired: Tên nhóm là bắt buộc
   hasUpdate: Mod có phiên bản mới!
@@ -904,25 +722,17 @@ mod:
   incompatibleHint: Hiển thị không tương thích
   incompatibleHintDescription: Một số mod có thể bị thiếu phụ thuộc. Hoặc phiên bản phụ thuộc không khớp.
   maybeCompatible: Có thể tương thích.
-  modloaderSelectHint: Mod này hỗ trợ các modloader sau. Vui lòng chọn một cái để cài đặt.
-  modloaderSelectNotSupported: Không tìm thấy {modloader} cho Minecraft {minecraft}
   mods: '{count} Mod'
   name: Mod | Mod
   newFolder: Thư mục mới
   noGroupsFound: Không tìm thấy nhóm nào
   noGroupsYet: Chưa có nhóm nào. Hãy tạo một nhóm!
-  noModLoaderHint: Đừng quên bật một modloader để sử dụng mod!
   openLink: Mở URL của mod {url}
-  search: Tìm kiếm Mod
   searchGroups: Tìm kiếm nhóm...
   searchOnMcWiki: Tra cứu {name} trong từ điển bách khoa Minecraft.
   selectOrCreateGroup: Chọn hoặc Tạo Nhóm
-  showDirectory: Hiển thị thư mục mod
   showFile: Hiển thị đường dẫn mod {file}
-  showInModrinth: Hiển thị {name} trên Modrinth
-  switchDefaultSource: Nguồn Mod mặc định
   syncGroupRules: Lưu các quy tắc nhóm
-  toUpdate: '{count} bản cập nhật'
   ungroup: Hủy nhóm
 modFilter:
   clear: Xóa bộ lọc
@@ -968,25 +778,10 @@ modified:
   save: Lưu
   unsaved: Các thay đổi của bạn chưa được lưu!
 modpack:
-  author: Tên tác giả
-  authorHint: Điều này có thể được sử dụng để ký một modpack được xuất (Curseforge)
-  description: Mô tả
-  descriptionHint: Mô tả chung cho modpack của bạn. Có thể được sử dụng để xuất dưới dạng modpack Curseforge.
   dropHint: Thả tệp zip của modpack vào đây để nhập
-  emitCurseforge: Xuất Modpack Curseforge
-  emitModrinth: Xuất Modpack Modrinth
-  emitModrinthStrict: Định dạng Modrinth nghiêm ngặt
-  emitModrinthStrictDescription: Chỉ cho phép các URL từ 4 miền được liệt kê trong tài liệu Modrinth
   export: Xuất dưới dạng Modpack
-  exportDirectory: Thư mục xuất
-  exportDirectoryDescription: Modpack sẽ được xuất vào thư mục Tải xuống theo mặc định
-  includeAssets: Bao gồm các tài nguyên
-  includes: Các tệp cần bao gồm
   modpackVersion: Phiên bản Modpack
   name: Modpack | Modpack
-  overrides: Ghi đè
-  url: URL
-  urlHint: URL trang chủ của modpack của bạn
 modpackImportConfirm:
   description: Phát hiện bạn thả một tệp vào trình khởi chạy. Bạn có đang cố gắng nhập một modpack không?
   title: Bạn có đang cố gắng nhập một modpack không?
@@ -1150,110 +945,7 @@ modrinth:
   wikiUrl: Wiki
 modrinthCard:
   currentVersion: Phiên bản hiện tại
-multiplayer:
-  joinDiscord: Tham gia Discord
-  openConsumerPortal: Mở Cổng thông tin khách hàng
-  refundHint: Bạn cần hoàn tiền? Hãy truy cập Cổng thông tin khách hàng Waffo để quản lý đơn hàng và gói đăng ký.
-  togetherSupportHint: Nếu chế độ nhiều người chơi không hoạt động, hãy tham gia Discord và liên hệ với nhóm phát triển. Chúng tôi sẽ giúp bạn giải quyết vấn đề.
-  autoShareAmbiguous: Có nhiều trò chơi đang chạy. Hãy chọn phiên bản đang lưu trữ thế giới LAN để Zenith Launcher có thể chia sẻ.
-  editSharingScope: Chỉnh sửa phạm vi chia sẻ
-  gameAvailable: Có trò chơi LAN
-  joinGame: Tham gia trò chơi
-  noRunningInstanceToShare: Hãy khởi chạy trò chơi trước khi chỉnh sửa phạm vi chia sẻ
-  updateSharedInstanceConfirm: Cập nhật và khởi chạy
-  updateSharedInstanceDescription: Các mod được chia sẻ khác với {instance}. Cập nhật phiên bản này để khớp với máy chủ trước khi khởi chạy? Các tệp hiện có đã thay đổi sẽ được sao lưu.
-  updateSharedInstanceTitle: Cập nhật phiên bản được chia sẻ?
-  addFunds: Thêm tiền
-  availableBalance: Số dư khả dụng
-  balanceHint: Có thể sử dụng cho các dịch vụ XMCL Together
-  billing: Thanh toán
-  billingDescription: Quản lý quyền truy cập relay, gói Together Home và các khoản thanh toán.
-  billingError: Không thể tải thông tin thanh toán Together. Vui lòng thử lại sau ít phút.
-  buyTogether: Mua Together
-  cancelTogether: Hủy gói
-  checkout: Mở trang thanh toán Waffo
-  connectionTogetherWarning: Một thành viên trong phòng đã không thể kết nối với bạn trong một thời gian. Hãy thử XMCL Together để cải thiện kết nối cho mọi người trong phòng. Chỉ chủ phòng cần Together.
-  masterPurchaseHint: Chỉ chủ phòng cần Together Home để cải thiện kết nối cho mọi người trong phòng.
-  natTogetherWarning: Bộ định tuyến của bạn có thể gặp khó khăn khi kết nối với chủ phòng. Nếu kết nối thất bại, hãy thử XMCL Together để cải thiện kết nối giữa bạn và bạn bè. Chỉ chủ phòng cần mua Together cho phòng.
-  togetherName: Minecraft Together
-  trialDescription: Một lần dùng thử trong 7 ngày với 1 GB lưu lượng relay.
-  trialTitle: Dùng thử kết nối
-  tryTogether: Dùng thử Together
-  month: tháng
-  orderStatus: 'Đơn hàng Waffo: {status}'
-  planDescription: 20 GB lưu lượng relay được quản lý mỗi tháng, cùng với hỗ trợ AI khắc phục sự cố modpack.
-  waffoHint: Thanh toán được hoàn tất an toàn trên Waffo Pancake. XMCL không bao giờ nhận số thẻ của bạn.
-  subscription:
-    active: Đang hoạt động
-    cancelled: Đã hủy
-    payment_due: Đến hạn thanh toán
-  trial:
-    active: Đang dùng thử
-    available: Có bản dùng thử miễn phí
-    expired: Đã dùng bản dùng thử
-    unavailable: Không có bản dùng thử
-  loginRequiredDescription: Chế độ nhiều người chơi P2P sử dụng dịch vụ trực tuyến Zenith Launcher. Hãy đăng nhập vào Tài khoản Zenith Launcher để tiếp tục.
-  loginRequiredTitle: Đăng nhập để chơi nhiều người P2P
-  complete: Hoàn tất
-  confirm: Xác nhận
-  connectionError: Lỗi kết nối
-  connectionFailedHint: Không thể thiết lập kết nối. Hãy kiểm tra xem cả hai máy có loại NAT tương thích hay không.
-  connections: Các kết nối
-  copied: Đã sao chép!
-  copy: Sao chép
-  copyGroupToFriendHint: Cho bạn bè tham gia nhóm bằng ID này
-  copyLocalHint: |
-    "Vui lòng sao chép văn bản SDP cục bộ và gửi cho đối tác của bạn để họ nhập văn bản này vào mục tham gia kết nối. Một token chỉ có thể được sử dụng cho một máy duy nhất! Bạn không thể gửi cùng một token cho nhiều máy khác nhau! <br> Nếu bạn cần kết nối với nhiều máy, bạn cần tạo nhiều kết nối khác nhau."
-  createLocalToken: Tạo token cục bộ
-  currentIpTitle: IP công cộng phát hiện được
-  currentNatTitle: 'Mạng hiện tại (NAT):'
-  difficultyLevelHint: Mức độ khó khăn khi tạo kết nối
-  disconnect: Ngắt kết nối
-  disconnectDescription: Bạn có chắc chắn muốn ngắt kết nối với người dùng {user}({id}) không?
-  disconnected: đã ngắt kết nối
-  enterRemoteToken: Nhập token từ xa
-  enterRemoteTokenHint: Sau khi đối tác nhập token của bạn, bạn cần nhập token của họ vào vùng văn bản bên dưới. Nhấp xác nhận để kết nối.
-  exposedPortDescription: Cổng bạn đã mở cho các máy khác
-  exposedPorts: Các cổng đã chuyển tiếp
-  gatheringIce: |
-    "Vui lòng đợi máy chủ ICE thu thập đủ thông tin về mạng của bạn. Nếu bạn không muốn chờ và đã có đủ thông tin, bạn có thể gửi SDP hiện tại cho đối tác trước và nhấp Tiếp tục. Vui lòng gửi Token cục bộ cho bạn bè của bạn, họ sẽ nhập token của bạn vào phần Tham gia kết nối. <br> Máy chủ ICE có thể mất chút thời gian để thu thập thông tin của bạn nhằm tạo ra Token cục bộ. <br> Bạn không cần đợi cho đến khi trạng thái ICE hoàn tất. Nếu token bên dưới vẫn không đổi, bạn có thể sao chép nó và gửi cho bạn bè."
-  groupId: ID Nhóm
-  illegalTokenDescription: Token không hợp lệ, vui lòng đảm bảo token từ bạn bè của bạn là chính xác
-  initiateConnection: Khởi tạo kết nối
-  joinConnection: Nếu bạn bè của bạn đã khởi tạo kết nối, bạn cần Tham gia kết nối.
-  joinManual: Tham gia
-  joinOrCreateGroup: Tham gia/Tạo nhóm
-  joinOrCreateGroupHint: Nhận ID nhóm từ bạn bè của bạn hoặc tự tạo một nhóm
-  kernel: Nhân P2P (P2P Kernel)
-  kernelDescription: Sử dụng WebRTC gốc hoặc node-datachannel. Chỉ chuyển đổi tùy chọn này khi kết nối P2P thỉnh thoảng làm sập cửa sổ trình khởi chạy.
-  leaveGroup: Rời nhóm
-  localToken: Token cục bộ
-  manualConnect: Kết nối thủ công
-  name: Chơi mạng qua mạng LAN
-  networkInfo: Thông tin mạng (Nhấp để bật/tắt)
-  next: Tiếp theo
-  otherExposedPortDescription: Cổng được chuyển tiếp bởi {user}
-  placeholder: Kết nối với những người dùng khác để chơi Minecraft qua mạng LAN!
-  previous: Quay lại
-  receiveHint: Sau khi đối tác nhập token của bạn, kết nối sẽ tự động được tạo. Bây giờ bạn có thể đóng hộp thoại.
-  receiveRemoteTokenHint: Vui lòng nhập token của đối tác tại đây.
-  remoteToken: Token từ xa
-  routerInfo: Thông tin bộ định tuyến (Router)
-  sendTokenToRemote: Gửi token đến máy từ xa
-  share: Chia sẻ cấu hình phiên bản
-  sharing: Đang chia sẻ tệp...
-  start: Bắt đầu
-  startNewP2PConnection: Nhấp vào nút Bắt đầu để tạo một kết nối ngang hàng (peer connection) mới
 myStuff: Kho của tôi
-natType:
-  blocked: Bị chặn (Blocked)
-  fullCone: Full Cone
-  openInternet: Internet mở
-  restrictNat: NAT hạn chế (Restrict NAT)
-  restrictPortNat: NAT hạn chế cổng (Restrict Port NAT)
-  symmetricNat: Symmetric NAT
-  symmetricUDPFirewall: Tường lửa UDP đối xứng
-  unknown: Không rõ
 neoForgedVersion:
   disable: Vô hiệu hóa NeoForged
   empty: NeoForged không hỗ trợ phiên bản {version}
@@ -1264,23 +956,6 @@ optifineVersion:
   disable: Vô hiệu hóa Optifine
   empty: Optifine không hỗ trợ Minecraft {version}
 optional: Tùy chọn
-peerConnectionState:
-  closed: Đã đóng
-  connected: Đã kết nối
-  connecting: Đang kết nối
-  disconnected: Đã ngắt kết nối
-  failed: Thất bại
-  name: Trạng thái kết nối
-  new: Mới
-peerGroupState:
-  closed: Không ở trong nhóm
-  closing: Đang đóng
-  connected: Đã tham gia nhóm
-  connecting: Đang kết nối
-peerIceGatheringState:
-  gathering: Đang thu thập máy chủ Ice
-peerSignalingState:
-  have-local-offer: Đang đợi mô tả của bạn bè
 presence:
   instance: Đang rảnh trong Phiên bản {instance}
   instanceSetting: 'Chỉnh sửa Cài đặt Phiên bản: {instance}'
@@ -1309,58 +984,9 @@ resourceError:
   title: Không thể đọc {file}
 blueprint:
   name: Bản thiết kế | Bản thiết kế
-  count: '{count} bản thiết kế'
-  searchLocal: Tìm kiếm bản thiết kế...
-  searchOnline: Tìm kiếm trực tuyến...
-  market: Chợ thiết kế
-  local: Cục bộ
-  provider: Nhà cung cấp
-  import: Nhập
-  openFolder: Mở thư mục
-  refresh: Làm mới
   empty: Không tìm thấy bản thiết kế nào. Hãy nhập một tệp .litematic / .schem / .nbt hoặc duyệt qua chợ.
-  dropHint: Thả các tệp bản thiết kế (.litematic / .schem / .nbt) vào đây để nhập.
   selectHint: Chọn một bản thiết kế để xem trước.
-  blocks: '{count} khối'
-  materials: Nguyên liệu
-  allNamespaces: Tất cả
-  findMod: Tìm mod cho không gian tên này
-  compatible: Tương thích
-  incompatible: Thiếu mod
-  missingNamespaces: 'Thiếu mod cho: {namespaces}'
-  delete: Xóa
-  cancel: Hủy
   install: Cài đặt
-  goTo: Trang web
-  byAuthor: bởi {author}
-  noDescription: Không có mô tả nào được cung cấp.
-  loadMore: Tải thêm
-  cmsBrowseOnly: Nguồn này chỉ hỗ trợ duyệt xem; hãy mở trang web để tải xuống.
-  mixedSources: Kết quả được tổng hợp từ tất cả các nguồn. Một số nguồn chỉ hỗ trợ duyệt xem — hãy mở trang web của họ để tải xuống.
-  formats:
-    structure: Cấu trúc Vanilla
-  preview:
-    title: Xem trước 3D
-    loading: Đang tải xem trước...
-    empty: Bản thiết kế này không có khối nào để hiển thị.
-    hint: '{count} khối · {x}×{y}×{z}'
-    controls: 'WASD: di chuyển · Space/Shift: lên/xuống · Kéo: xoay nhìn · Cuộn: thu phóng'
-  convert:
-    title: Chuyển đổi định dạng
-    hint: Chuyển đổi bản thiết kế này sang định dạng khác. Một tệp mới sẽ được tạo.
-    target: Định dạng đích
-    action: Chuyển đổi
-  replace:
-    title: Thay thế các khối
-    simple: Đơn giản
-    precise: Chính xác
-    simpleHint: Chỉ so khớp theo ID khối, giữ nguyên các thuộc tính trạng thái khối hiện có.
-    preciseHint: So khớp toàn bộ trạng thái khối (ID + thuộc tính) và thay thế hoàn toàn.
-    from: Từ
-    to: Đến
-    addRule: Thêm quy tắc
-    newFile: Lưu thành tệp mới
-    action: Thay thế
 resourcepack:
   compatible: Định dạng tương thích {format} với {version}
   defaultDescription: Diện mạo mặc định của Minecraft
@@ -1488,141 +1114,25 @@ search:
 server:
   launch: Khởi chạy máy chủ
   stop: Dừng máy chủ
-  acceptingMinecraftVersion: Chấp nhận phiên bản Minecraft
   addServer: Thêm máy chủ
   address: Địa chỉ máy chủ
   addressHint: 'vd: mc.hypixel.net'
   bindUpstream: Liên kết làm nguồn
-  boundUpstream: Đã liên kết máy chủ nguồn
   boundUpstreamHint: Bản cài đặt này sẽ đi theo phiên bản Minecraft của máy chủ được liên kết.
-  creationHint: Vui lòng điền địa chỉ máy chủ và ping máy chủ
   editServer: Chỉnh sửa máy chủ
   emptyHint: Chưa có máy chủ nào trong servers.dat của bản cài đặt này. Hãy thêm một máy chủ.
   entryCount: '{count} máy chủ'
-  expectedVersions: Phiên bản được hỗ trợ
-  export: Xuất máy chủ
-  exportNoFilesHint: Không tìm thấy tệp máy chủ nào. Bạn có thể chạy máy chủ cục bộ một lần để tạo một số tệp.
-  exportOption: Tùy chọn xuất máy chủ
-  exportSSHAuthenticationFailed: Tất cả các phương thức xác thực đều thất bại. Vui lòng kiểm tra tên đăng nhập/mật khẩu hoặc khóa riêng tư.
-  exportSSHOptions: Tùy chọn SSH
-  exportSSHPrivateKeyPath: Đường dẫn khóa riêng SSH
-  exportSSHRemotePath: Đường dẫn máy chủ từ xa
-  exportToFolder: Xuất vào thư mục
-  filterVersion: Lọc phiên bản Minecraft máy chủ phản hồi
-  host: Địa chỉ host
-  hostHint: Địa chỉ host (kèm cổng) của máy chủ
-  hostRequired: Vui lòng nhập địa chỉ IP máy chủ
-  ipAddress: Địa chỉ IP
   launchClient: Khởi chạy client thay vào đó
   launchPinned: Đã ghim
   launchTargetHint: Bản cài đặt này sẽ vào thẳng máy chủ được ghim. Quay lại mở client?
   maxPlayers: Số người chơi tối đa
-  motd: MOTD của máy chủ
   nameHint: Tên hiển thị trong danh sách chơi mạng
-  nogui: Không hiển thị giao diện máy chủ
-  onlineMode: Chế độ chơi mạng bản quyền (Online Mode)
   pin: Ghim máy chủ
   pinAfterSave: Ghim làm mục tiêu khởi chạy mặc định sau khi lưu
-  ping: Ping
-  pings: Ping
   pinnedHeader: 'Đã ghim: {name}'
-  players: Người chơi
   port: Cổng
-  clearLog: Xóa nhật ký
-  log: Nhật ký máy chủ
-  logWaiting: Đầu ra máy chủ sẽ xuất hiện ở đây sau khi khởi chạy.
-  remoteActionSuccess: Done.
-  remoteAdmin: Quản trị máy chủ từ xa
-  remoteAuthMethod: Xác thực
-  remoteAuthPassword: Mật khẩu
-  remoteAuthPrivateKey: Khóa riêng (Private Key)
-  remoteBuildOfflinePackage: Tạo gói cài đặt ngoại tuyến
-  remoteConnected: Đã kết nối
-  remoteConnection: Kết nối
-  remoteDeployment: Triển khai
-  remoteDeploy: Triển khai
-  remoteDisk: Ổ đĩa
-  remoteConfigFiles: Tệp cấu hình
-  remoteExtraFiles: Tệp bổ sung
-  remoteForgetCredentials: Xóa thông tin đăng nhập đã lưu
-  remoteInstallService: Cài đặt dịch vụ
-  remoteLoad: Tải trung bình
-  remoteLog: Nhật ký từ xa
-  remoteMemory: Bộ nhớ
-  remoteMods: Mod
-  remoteNoWorldSelected: Chưa chọn thế giới nào
-  remoteJavaRequired: Không tìm thấy Java trên máy chủ Linux từ xa.
-  remoteLinuxRequired: Chỉ hỗ trợ máy chủ Linux qua SSH.
-  remoteNotConfiguredHint: Điền thông tin kết nối ở trên và lưu để kích hoạt trạng thái, quản lý dịch vụ và xem nhật ký.
-  remotePathNotWritable: Thư mục trên máy chủ từ xa không có quyền ghi.
-  remotePathWritable: Thư mục có thể ghi
-  remotePolicyInitialize: Khởi tạo một lần
-  remotePolicyMirror: Đồng bộ gương (Mirror)
-  remotePolicyOverlay: Ghi đè (Overlay)
-  remotePolicyPreserve: Bảo lưu
-  remotePreview: Xem trước thay đổi
-  remotePhase:
-    connect: Connecting
-    error: Reconciliation failed
-    idle: Ready to reconcile
-    inspect: Inspecting target
-    install: Installing server
-    logs: Attaching console
-    ready: Desired state applied
-    service: Ensuring systemd service
-    start: Starting server
-    sync: Syncing desired state
-    world: Applying world policy
-  remoteRememberCredentials: Ghi nhớ đăng nhập (Chuỗi khóa hệ điều hành)
-  remoteReconcileReady: Máy chủ đích khớp với bản cài đặt này và bảng điều khiển đã kết nối.
-  remoteRestartService: Khởi động lại
-  remoteSavedCredentialsHint: Đang dùng thông tin đã lưu — để trống để giữ nguyên hoặc nhập để thay thế.
-  remoteService: Dịch vụ systemd
-  remoteServiceActive: Đang chạy
-  remoteServerInstalled: Tệp máy chủ đã được cài đặt
-  remoteServiceName: Tên dịch vụ
-  remoteServiceNameHint: 'Tên đơn vị systemd --user, vd: mc-server'
-  remoteSelectedFiles: Đã chọn {count} tệp máy chủ
-  remoteSelectFiles: Chọn tệp
-  remoteStartCommand: Lệnh khởi động
-  remoteStartCommandHint: 'vd: java -jar server.jar nogui'
-  remoteStartService: Khởi chạy
-  remoteStatus: Trạng thái
-  remoteSystemdRequired: Dịch vụ người dùng systemd không khả dụng trên máy chủ Linux từ xa.
-  remoteTargetName: Tên mục tiêu
-  remoteStopService: Dừng
-  remoteStopWatchLog: Dừng theo dõi
-  remoteTestConnection: Kiểm tra kết nối
-  remoteTestConnectionSuccess: Kết nối thành công.
-  remoteUninstallConfirmMessage: Thao tác này sẽ gỡ bỏ đơn vị systemd trên máy chủ từ xa. Tệp máy chủ sẽ được giữ nguyên.
-  remoteUninstallService: Gỡ cài đặt dịch vụ
-  remoteRunInstall: Cài đặt hoặc sửa chữa
-  remoteWatchLog: Xem nhật ký trực tiếp
-  remoteWorldAlways: Thay thế trong mỗi lần đồng bộ
-  remoteWorldDeployment: Triển khai thế giới
-  remoteWorldDeploymentHint: Đồng bộ định kỳ không bao giờ tải lên dữ liệu thế giới trừ khi chính sách này cho phép.
-  remoteWorldFirstInstall: Chỉ khởi tạo khi máy chủ chưa có thế giới
-  remoteWorldNever: Không bao giờ tải lên thế giới
-  remoteWorldPresent: Thế giới trên máy chủ đích
-  remoteWorld: Thế giới
-  remoteWorldWillDeploy: Thế giới đã chọn sẽ được tải lên trong lần đồng bộ này.
   serverName: Tên máy chủ
-  serviceInstall: Cài đặt dịch vụ
-  serviceManagedLaunch: Sử dụng dịch vụ hệ điều hành cho khởi chạy và dừng
-  serviceManager: Dịch vụ hệ thống
-  serviceName: Tên dịch vụ
-  serviceNameHint: Định danh chứa chữ cái, số, dấu chấm hoặc gạch nối
-  serviceNotInstalled: Chưa cài đặt
-  serviceStartCommand: Lệnh khởi chạy
-  serviceSystemd: systemd --user
-  serviceWindows: Dịch vụ Windows
-  serviceWindowsCommandHint: Lệnh Java được tạo từ phiên bản này.
   serversListTitle: Danh sách máy chủ
-  target: Mục tiêu máy chủ
-  targetLocal: localhost
-  targetLocalHint: Cài đặt và chạy máy chủ trên máy tính này.
-  targetRemote: Mục tiêu SSH
-  targetRemoteHint: Kết nối, cài đặt, khởi chạy và giám sát máy chủ qua SSH.
   unbindUpstream: Hủy liên kết
   unknown: Máy chủ không xác định
   unknownDescription: Máy chủ không xác định. Vui lòng làm mới
@@ -1633,9 +1143,6 @@ server:
   upstreamUpdateAvailable: Máy chủ hiện đang chạy Minecraft {version}. Nhấp để áp dụng.
   upstreamUpdateHint: Áp dụng phiên bản Minecraft này cho bản cài đặt.
   useAsUpstreamHint: Bản cài đặt sẽ tự động điều chỉnh theo phiên bản Minecraft của máy chủ.
-  version: Phiên bản yêu cầu của máy chủ
-  versionHint: Phiên bản Minecraft cần Ping
-  worldPreserve: Bảo lưu thế giới trên máy chủ đích
 serverStatus:
   nohost: §4Không tìm thấy máy chủ!
   ping: Đang ping...
@@ -1649,18 +1156,8 @@ setting:
   aboutLicense: GIẤY PHÉP MIT
   aboutLicenseInfo: Ký mã Windows miễn phí được cung cấp bởi SignPath.io, chứng chỉ bởi SignPath Foundation
   aboutSponsors: 😇 Nhà tài trợ 😇
-  advancedJavaOptions: Tùy chọn Java nâng cao
   advancedSettings: Cài đặt nâng cao
   advancedSettingsHint: Vùng nguy hiểm - đặt lại hoặc quản lý dữ liệu trình khởi chạy
-  aiAgentApiKey: Khóa API trợ lý AI
-  aiAgentApiKeyDescription: Cấu hình một nhà cung cấp tương thích OpenAI, chẳng hạn OpenAI hoặc gateway cho Claude. Khóa được lưu trữ cục bộ trên thiết bị này.
-  aiAgentApiKeyPlaceholder: Khóa API của nhà cung cấp OpenAI hoặc Claude
-  aiAgentEndpoint: Máy chủ trợ lý AI (Endpoint)
-  aiAgentEndpointDescription: URL endpoint cho việc hoàn thành chat.
-  aiAgentEndpointPlaceholder: https://api.openai.com/v1/chat/completions
-  aiAgentModelPlaceholder: gpt-5.6 hoặc claude-sonnet-4-5
-  aiAgentModel: Mô hình trợ lý AI
-  aiAgentModelDescription: Tên mô hình gửi trong các yêu cầu hoàn thành chat.
   apiSets:
     auto: Tự động (Xác định theo mạng)
     official: Chính thức (Mojang)
@@ -1727,8 +1224,6 @@ setting:
   devModeLabel: DEV
   developerMode: Chế độ nhà phát triển
   developerModeDescription: Chế độ nhà phát triển dùng để thử nghiệm các bản mod của riêng bạn
-  disableTelemetry: Vô hiệu hóa đo lường từ xa (Telemetry)
-  disableTelemetryDescription: XMCL sẽ thu thập dữ liệu về các sự kiện khởi chạy trò chơi và đăng nhập của người dùng.
   enableDedicatedGPUOptimization: Chỉ định GPU rời
   enableDedicatedGPUOptimizationDescription: Tùy chọn này sẽ chỉ định GPU rời (Dedicated GPU) cho tiến trình Minecraft.
   enableDiscord: Bật trạng thái hoạt động Discord (Rich Presence)
@@ -1738,8 +1233,6 @@ setting:
   exportSettingsHint: Lưu các cài đặt hiện tại của bạn vào một tệp
   general: Chung
   githubRelease: Bản phát hành Github
-  globalJava: Java ưu tiên
-  globalJavaHint: Ở chế độ tự động, Java này được thử trước và chỉ quay lại dò tìm tự động khi nó không tương thích với phiên bản trò chơi.
   globalSetting: Cài đặt phiên bản toàn cục
   globalSettingHint: Các phiên bản game sẽ sử dụng các cài đặt này theo mặc định.
   importSettings: Nhập cài đặt
@@ -1767,7 +1260,6 @@ setting:
   maxSockets: Mỗi máy chủ
   maxSocketsDescription: Giới hạn số lượng socket tối đa được phép trên mỗi máy chủ hoặc tổng số tất cả máy chủ. 0 có nghĩa là không giới hạn.
   maxSocketsTitle: Số lượng socket HTTP tối đa
-  memoryAssignment: Phân bổ bộ nhớ
   migrateFromOther: Nhập dữ liệu từ trình khởi chạy khác
   minecraftOptions: Tùy chọn Minecraft
   name: Cài đặt toàn cục | Cài đặt toàn cục
@@ -1782,11 +1274,6 @@ setting:
     repulse: Đẩy ra (Repulse)
   particleModeDescription: Chọn hành vi khi nhấp chuột vào các hạt
   quickLaunchSettings: Khởi chạy nhanh
-  replaceNative: Thay thế thư viện gốc (Native Libraries)
-  replaceNativeDescription: Thay thế các thư viện gốc tùy thuộc vào kiến trúc máy tính của bạn.
-  replaceNatives:
-    all: Tài cả
-    legacy: Chỉ phiên bản Legacy
   resetAllSettings: Đặt lại tất cả cài đặt
   resetAllSettingsConfirmMessage: Thao tác này sẽ xóa vĩnh viễn tất cả cài đặt, tài khoản, phiên bản game, nhóm và dữ liệu bộ nhớ đệm. Thao tác này không thể hoàn tác. Bạn có chắc chắn không?
   resetAllSettingsConfirmTitle: Đặt lại tất cả cài đặt?
@@ -2002,17 +1489,6 @@ theme:
   selectVideo: Chọn video
   title: Zenith Launcher
 title: Zenith Launcher
-transportType:
-  host: Ứng viên máy chủ (Host Candidate)
-  prflx: Ứng viên phản chiếu ngang hàng
-  relay: Ứng viên chuyển tiếp (Relay Candidate)
-  srflx: Ứng viên phản chiếu máy chủ
-turnRegion:
-  fr: Pháp
-  guangzhou: Quảng Châu, Trung Quốc
-  hk: Hồng Kông
-  liaoning: Liêu Ninh, Trung Quốc
-  po: Ba Lan
 tutorial:
   feedbackDescription: Nếu bạn gặp bất kỳ sự cố nào, vui lòng nhấp vào nút này để gửi phản hồi!
   hideNewsHeaderDescription: Bạn có thể thấy phần tin tức hiển thị ở bên trái. Nhấp vào nút này có thể ẩn phần hiển thị này.
@@ -2021,10 +1497,6 @@ tutorial:
     appearanceThemeTitle: Giao diện phiên bản
     iconDescription: Nhấp để thay đổi biểu tượng.
     iconTitle: Biểu tượng phiên bản
-    javaDescription: Chọn hoặc thay đổi phiên bản Java.
-    javaImportDescription: Nhập môi trường Java từ bộ nhớ máy tính.
-    javaImportTitle: Nhập Java
-    javaTitle: Danh sách Java
     modpackExportDescription: Đóng gói phiên bản đã cấu hình thành một gói mod sẵn sàng chia sẻ.
     modpackExportTitle: Xuất gói mod
     modpackFilesDescription: Chọn tệp cấu hình, mod và tài nguyên để đóng gói cho client và server.
@@ -2078,15 +1550,6 @@ tutorial:
     profileDescription: Chuyển đổi giữa các tài khoản và quản lý thông tin đăng nhập.
     skinTitle: Tùy chỉnh Skin & Áo choàng
     skinDescription: Xem trước nhân vật dạng 3D, thay đổi trang phục và đeo áo choàng.
-  multiplayer:
-    railTitle: Mạng & Điều hướng
-    railDescription: Kiểm tra loại NAT, tình trạng mạng và chuyển đổi giữa kết nối và cài đặt.
-    groupTitle: Tham gia hoặc Tạo phòng
-    groupDescription: Nhập mã phòng để tham gia cùng bạn bè hoặc tạo phòng của riêng bạn.
-    joinDescription: Nhấp để tham gia phòng hiện có hoặc tạo phòng mới.
-    contentTitle: Thành viên kết nối & Nội dung
-    contentDescription: Quản lý thành viên, kiểm tra độ trễ và chia sẻ Minecraft đang chạy.
-    manualDescription: Kết nối P2P trực tiếp thủ công với bạn bè qua trao đổi SDP.
   resourcepack:
     searchTitle: Tìm gói tài nguyên
     searchDescription: Tìm gói tài nguyên từ Modrinth, CurseForge hoặc tệp cục bộ.
@@ -2137,10 +1600,6 @@ unresolvedFiles:
     modrinth-name: Modrinth
   title: Các tệp chưa giải quyết
   via: thông qua {source}
-upstream:
-  downgrade: Hạ cấp
-  onlyShowCurrentVersion: Chỉ hiển thị phiên bản Minecraft hiện tại
-  update: Cập nhật
 user:
   accessToken: Mã truy cập
   authMode: Dịch vụ xác thực
