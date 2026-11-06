@@ -2,7 +2,7 @@
     "name": "zenith-launcher",
     "private": true,
     "main": "./index.js",
-    "version": "0.73.1-zenith.1",
+    "version": "0.73.1-zenith.2",
     "author": "Zenith contributors; based on XMCL by ci010 (Voxelum)",
     "description": "Zenith Launcher - fork of XMCL, an open-source launcher for Minecraft",
     "license": "MIT",
