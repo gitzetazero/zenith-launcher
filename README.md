@@ -1,3 +1,5 @@
+> **Development moved to [gitzetazero/zenith](https://github.com/gitzetazero/zenith) (`zenith/launcher`).** This repository is archived. Releases (installer and portable zip) are published at <https://github.com/gitzetazero/zenith/releases>.
+
 <p align="center"><img src="docs/branding/banner-launcher.png" alt="Zenith Launcher: a fork of XMCL" width="720"></p>
 
 # Zenith Launcher
